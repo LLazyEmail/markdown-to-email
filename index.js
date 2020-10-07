@@ -36,6 +36,6 @@ const newFile = String.prototype.concat(header, promo, section, promo, socials, 
 
 fs.writeFile('./generated/newEmail.html', newFile, 'utf8', function(err) {
   if (err) throw new Error('file not written')
-  console.log(newFile);
+  // console.log(newFile);
   console.log('file successfully written')
 })
