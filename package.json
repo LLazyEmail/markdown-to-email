@@ -1,0 +1,11 @@
+{
+  "name": "markdown-to-email",
+  "version": "1.0.0",
+  "description": "translate markdown syntax to email",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hirdbluebird",
+  "license": "ISC"
+}
