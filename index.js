@@ -82,8 +82,8 @@ function parseSource(source) {
         console.log(src[1], href[1]);
 
         emailBody += fs.readFileSync(templatePath, 'utf8')
-                        .replace('{src}', src)
-                        .replace('{href}', href)
+                        .replace('{src}', src[1])
+                        .replace('{href}', href[1])
 
         thisSource = thisSource.slice(end + closingTag.length);
       }
