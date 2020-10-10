@@ -1,3 +1,5 @@
+~[https://ci4.googleusercontent.com/proxy/VPmnZrlAoM0HJsgs1VJyk45cKntJ9HwB7WYZmt1m67-kv7V7uzFmlB7cZ_v880uIEwAyE9inxyYBNJ3lWuDueLjOUBUgMbea0AZNjmke1HLaJTrGCnJ6LH-UJ4YM66gfFvQPoYs0nA1iaxyLxLSl8151TCFPXg5TfL_KFzFd4KnG=s0-d-e1-ft#https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/October/scoutAPM.png][https://www.noonifications.tech/l/Pl5Nsm0hdJac6HJJDrvuqw/vNlSkTgKPmNXOiO7kBnmFg/3XN6CWq763XqlKy1YC0rN763Pg][Find & fix application performance issues fast]
+
 # How To Fuel Your Company’s Performance With Customer Insights
 
 ‘Perfect is the enemy of the good’. We all know this saying. However, we somehow think that this is not applicable to running a business. Companies spend hours and hours on perfecting and fine-tuning product features. The problem is, these features seem meaningful and important to them, not their target audience.
@@ -42,3 +44,5 @@ You should be ready to react quickly to customer reactions. Even if it means squ
 
 ## Polish your processes.
 Feedback is ever-evolving. This means you should always stay on top of it. Probably, you’ll have to hire extra staff to handle your phone calls or respond to comments. But if you’re missing on your insights, you are missing your profit. Thus, various monitoring tools can help you keep an eye on customer feedback you are getting.
+
+~[https://ci4.googleusercontent.com/proxy/VPmnZrlAoM0HJsgs1VJyk45cKntJ9HwB7WYZmt1m67-kv7V7uzFmlB7cZ_v880uIEwAyE9inxyYBNJ3lWuDueLjOUBUgMbea0AZNjmke1HLaJTrGCnJ6LH-UJ4YM66gfFvQPoYs0nA1iaxyLxLSl8151TCFPXg5TfL_KFzFd4KnG=s0-d-e1-ft#https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/October/scoutAPM.png][https://www.noonifications.tech/l/Pl5Nsm0hdJac6HJJDrvuqw/vNlSkTgKPmNXOiO7kBnmFg/3XN6CWq763XqlKy1YC0rN763Pg][Find & fix application performance issues fast]

@@ -2,7 +2,7 @@ const fs = require('fs')
 let header,
   footer,
   socials,
-  promo,
+  promo = '',
   section,
   emailBody = '';
 
@@ -68,8 +68,19 @@ Object.defineProperties(convert, {
           }
       } while (m);
 
-
       return text
+    }
+  },
+  'sponsorship': {
+    value: function(text) {
+      const regex = /\[(.*?)\]/g
+      const [src, href, content] = text.match(regex).map(match => match.replace(/[\[\]]/g, ''))
+      // console.log(`src: ${src}` + '\n', `href: ${href}` + '\n', content)
+
+      return fs.readFileSync('./layouts/body/promo.html', 'utf8')
+                .replace('{src}', src)
+                .replace('{href}', href)
+                .replace('{content}', content)
     }
   }
 })
@@ -97,6 +108,9 @@ function parseSource() {
         break
       case '':
         emailBody += convert.linebreak()
+        break
+      case '~[':
+        promo = convert.sponsorship(line)
         break
       default:
         emailBody += convert.paragraph(line)
