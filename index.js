@@ -4,21 +4,18 @@ let header,
   socials,
   promo,
   section,
-  emailBody;
+  emailBody = '';
 
 
 header = fs.readFileSync(`./layouts/header.html`, 'utf8', function(err, data) {
   if (err) throw new Error(`file not found`)
 })
-
 socials = fs.readFileSync(`./layouts/socials.html`, 'utf8', function(err, data) {
   if (err) throw new Error(`file not found`)
 })
-
 footer = fs.readFileSync(`./layouts/footer.html`, 'utf8', function(err, data) {
   if (err) throw new Error(`file not found`)
 })
-
 promo = fs.readFileSync(`./layouts/body/promo.html`, 'utf8', function(err, data) {
   if (err) throw new Error(`file not found`)
 })
@@ -51,46 +48,46 @@ Object.defineProperties(convert, {
           .replace('{href}', href)
           .replace('{altText}', altText)
       }
+  },
+  'linebreak': {
+    value: function() {
+      return fs.readFileSync('./layouts/typography/devider.html', 'utf8')
+    }
   }
 })
 
-const source = fs.readFileSync('./source/source.md', 'utf8')
-
-function parseSource(source) {
-  let thisSource =
-    source
+function parseSource() {
+  let thisSource = fs.readFileSync('./source/source.md', 'utf8')
       .split('\n')
-      .map(line => line.replace('\r', ''))
-      .filter(string => string !== '');
+      .map(line => line.replace('\r', ''));
 
-  function replaceTags() {
-    thisSource.forEach(line => {
-      const tag = line.slice(0, 2)
+  thisSource.forEach(line => {
+    const tag = line.slice(0, 2)
+    // console.log(tag.length === 0);
 
-      switch(tag) {
-        case '# ':
-          convert.title(line)
-          break
-        case '##':
-          convert.subtitle(line)
-          break
-        case '![':
-          convert.image(line)
-          break
-        default:
-          convert.paragraph(line)
-          break
-      }
-    })
-  }
-  replaceTags()
-
+    switch(tag) {
+      case '# ':
+        emailBody += convert.title(line)
+        break
+      case '##':
+        emailBody += convert.subtitle(line)
+        break
+      case '![':
+        emailBody += convert.image(line)
+        break
+      case '':
+        emailBody += convert.linebreak()
+        break
+      default:
+        emailBody += convert.paragraph(line)
+        break
+    }
+  })
 
   section = fs.readFileSync('./layouts/body/section.html', 'utf8')
               .replace('{content}', emailBody)
-
 }
-parseSource(source)
+parseSource()
 
 
 const newFile = String.prototype.concat(header, promo, section, promo, socials, footer);
