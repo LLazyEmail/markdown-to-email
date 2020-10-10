@@ -1,4 +1,4 @@
 the section of body tag,
 the section of email tag
 
-![url][href][alt text]
+![src][href][alt text]
