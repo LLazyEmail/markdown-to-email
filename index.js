@@ -53,6 +53,24 @@ Object.defineProperties(convert, {
     value: function() {
       return fs.readFileSync('./layouts/typography/devider.html', 'utf8')
     }
+  },
+  'links': {
+    value: function(text) {
+      const regex = /\[(.*?)\]\((.*?)\)/g
+      const linkTemplate = fs.readFileSync('./layouts/typography/link.html', 'utf8')
+
+      let m;
+
+      do {
+          m = regex.exec(text);
+          if (m) {
+              text = text.replace(m[0], linkTemplate.replace('{href}', m[2]).replace('{content}', m[1]))
+          }
+      } while (m);
+
+
+      return text
+    }
   }
 })
 
@@ -63,7 +81,9 @@ function parseSource() {
 
   thisSource.forEach(line => {
     const tag = line.slice(0, 2)
-    // console.log(tag.length === 0);
+
+    // Inline typograpgy first
+    line = convert.links(line)
 
     switch(tag) {
       case '# ':
@@ -88,7 +108,6 @@ function parseSource() {
               .replace('{content}', emailBody)
 }
 parseSource()
-
 
 const newFile = String.prototype.concat(header, promo, section, promo, socials, footer);
 

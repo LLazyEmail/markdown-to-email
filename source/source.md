@@ -33,7 +33,7 @@ By encouraging feedback from the top down, you set the pace for a customer-drive
 Social media can be used not only for promoting your product but also for raising your brand awareness. There you have a chance to interact with customers directly, fetch the feedback you need, and address people’s comments. Forget praising reviews and A-list awards, direct communication is the king.
 
 ## Phone lines are still in.
-Although most people prefer introverted channels of communication, phone lines are still a powerful tool for winning over customers and getting feedback. Complaints, issues, problems, praise — everything will come in handy.
+Although [most people](https://www.manageengine.com/network-monitoring/faq/95th-percentile-calculation.html) prefer introverted channels of communication, phone lines are still a powerful tool for winning over customers and getting feedback. Complaints, issues, problems, praise — everything will come in handy.
 
 ![https://media.giphy.com/media/mQlIkJHFD8Wd98pGNG/giphy.gif][https://en.wikipedia.org/wiki/Gale_Sayers]["Alt text"]
 
