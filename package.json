@@ -1,12 +1,17 @@
 {
   "name": "markdown-to-email",
-  "version": "1.0.0",
+  "version": "0.0.9",
   "description": "translate markdown syntax to email",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "parse": "node index.js"
+    "test": "jest",
+    "parse": "node index.js",
+    "build:small":"node index.js"
   },
   "author": "hirdbluebird",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "jest": "^26.5.2"
+  }
 }
