@@ -22,8 +22,6 @@ Conversion notes:
 
 ----->
 
-
-
 # Cautious Optimism Visible In Companies As Countries Begin Flattening The Curve
 
 As a child, you never knew when the ice cream truck would arrive. They didn’t have schedules. But, a few tolls of that familiar bell ringing, and you’d know that the truck had entered your neighborhood.
@@ -33,8 +31,6 @@ Everything that is immeasurable on a scale, is measured using either **estimates
 When would this pandemic end? We don’t know.
 
 What we do know is that tech companies have decided to back in business, especially with respect to productivity and deliveries, by October-November.
-
-
 
 
 ![alt_text](https://github.com/atherdon/newsletters/blob/master/archive/img/memes/october/4/3.gif "image_tooltip")
@@ -51,10 +47,6 @@ Not only did the race to buy out all AD slots for the succeeding dates (Mid-Nove
 **The Result: [Hacker Noon Billboard AD slots](https://sponsor.hackernoon.com/billboard) are now 100% filled out for the rest of the year.**
 
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](https://github.com/atherdon/newsletters/blob/master/archive/img/memes/october/4/3.gif "image_tooltip")
 
 
@@ -63,8 +55,6 @@ Not only did the race to buy out all AD slots for the succeeding dates (Mid-Nove
 Not really.
 
 We created a tonne of more advertising options for tech companies to help them ensure advertisement up time during peak season.
-
-
 
 
 ![alt_text](https://github.com/atherdon/newsletters/blob/master/archive/img/memes/october/4/3.gif "image_tooltip")
@@ -83,11 +73,7 @@ We’re offering them on a CPC basis for the rest of the year and shall move to 
 At 65k+ subscribers and a 10%-16% open rates, the Hacker Noon Tech Briefs is the avenue to advertise on the Top and Bottom banner. [Buy your slots here](https://sponsorships.paperform.co/).
 
 
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.gif "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/6/3.gif "image_tooltip")
 
 
 
