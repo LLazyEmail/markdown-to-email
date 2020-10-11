@@ -75,8 +75,7 @@ Object.defineProperties(convert, {
     value: function(text) {
       const regex = /\[(.*?)\]/g
       const [src, href, content] = text.match(regex).map(match => match.replace(/[\[\]]/g, ''))
-      // console.log(`src: ${src}` + '\n', `href: ${href}` + '\n', content)
-
+      
       return fs.readFileSync('./layouts/body/promo.html', 'utf8')
                 .replace('{src}', src)
                 .replace('{href}', href)
