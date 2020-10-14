@@ -148,6 +148,7 @@ function parseSource() {
       .split('\n')
       .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
 
+  // Detect indexes of list items (via <li>)
   const lists = thisSource.reduce((accumulator, currentValue, currentIndex, array) => {
     if (currentValue.slice(0, 2) === '* ') {
       accumulator.push(currentIndex)
@@ -158,18 +159,10 @@ function parseSource() {
   const list = fs.readFileSync('./layouts/typography/list.html', 'utf8')
   const listItem = fs.readFileSync('./layouts/typography/listItem.html', 'utf8')
 
+  // Replace text with html tags 
   lists.map(listItemIndex => {
-      thisSource[listItemIndex] = listItem.replace('{content}', thisSource[listItemIndex].slice(2)) 
+      thisSource[listItemIndex] = listItem.replace('{content}', thisSource[listItemIndex].slice(2))
   })
-  // .reduce((accumulator, currentValue, currentIndex, array) => {
-  //   console.log(array);
-  //   if (Number(currentValue) !== Number((array[currentIndex - 1]) - 1) ) {
-  //     accumulator.push(array.slice(currentIndex))
-  //   }
-  //   return accumulator
-  // }, [])
-
-  console.log(lists);
 
   thisSource.forEach(line => {
     const tag = line.slice(0, 2)
