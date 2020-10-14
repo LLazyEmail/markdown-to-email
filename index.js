@@ -21,8 +21,18 @@ promo = fs.readFileSync(`./layouts/body/promo.html`, 'utf8', function(err, data)
 })
 
 
-const convert = new Object()
-Object.defineProperties(convert, {
+const Convert = new Object()
+Object.defineProperties(Convert, {
+  'subject': {
+    value: function(header, text) {
+      return header.replace('*|MC:SUBJECT|*', text.slice(3))
+    }
+  },
+  'previewText': {
+    value: function(header, text) {
+      return header.replace('*|MC_PREVIEW_TEXT|*', text.slice(3))
+    }
+  },
   'title': {
       value: function(text) {
         return fs.readFileSync('./layouts/typography/mainTitle.html', 'utf8').replace('{content}', text.slice(2))
@@ -97,6 +107,38 @@ Object.defineProperties(convert, {
       return text
     }
   },
+  'italic': {
+    value: function(text) {
+      const regex = /\_(.*?)\_/g
+
+      let m;
+
+      do {
+          m = regex.exec(text);
+          if (m) {
+              text = text.replace(m[0], '<em>' + m[1] + '</em>')
+          }
+      } while (m);
+
+      return text
+    }
+  },
+  'boldAndItalic': {
+    value: function(text) {
+      const regex = /\*\*\_(.*?)\_\*\*/g;
+
+      let m;
+
+      do {
+          m = regex.exec(text);
+          if (m) {
+              text = text.replace(m[0], '<em><strong style="font-weight: bolder;">' + m[1] + '</strong></em>')
+          }
+      } while (m);
+
+      return text
+    }
+  },
   'htmlComments': {
     value: function(text) {
       const regex = /<!--(([\r\n]|.)*?)-->/g
@@ -108,38 +150,47 @@ Object.defineProperties(convert, {
 
       return text;
     }
-  }
+  },
 })
 
 function parseSource() {
-  let thisSource = convert.htmlComments(fs.readFileSync('./tests/customer-insights.md', 'utf8'))
+  let thisSource = Convert.htmlComments(fs.readFileSync('./tests/customer-insights.md', 'utf8'))
       .trim()
       .split('\n')
-      .map(line => line.replace('\r', ''));
+      .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
 
   thisSource.forEach(line => {
     const tag = line.slice(0, 2)
 
+    line = Convert.bold(line)
+    line = Convert.italic(line)
+
+    // *|MC:SUBJECT|*
     switch(tag) {
+      case '#!':
+        header = Convert.subject(header, line)
+        break
+      case '#~':
+        header = Convert.previewText(header, line)
+        break
       case '# ':
-        emailBody += convert.title(line)
+        emailBody += Convert.title(line)
         break
       case '##':
-        emailBody += convert.subtitle(line)
+        emailBody += Convert.subtitle(line)
         break
       case '![':
-        emailBody += convert.image(line)
+        emailBody += Convert.image(line)
         break
       case '':
-        emailBody += convert.linebreak()
+        emailBody += Convert.linebreak()
         break
       case '~[':
-        promo = convert.sponsorship(line)
+        promo = Convert.sponsorship(line)
         break
       default:
-        line = convert.links(line)
-        line = convert.bold(line)
-        emailBody += convert.paragraph(line)
+        line = Convert.links(line)
+        emailBody += Convert.paragraph(line)
         break
     }
   })

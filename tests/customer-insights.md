@@ -29,7 +29,8 @@ You have 4 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 
 
 
-
+#! Mail subject
+#~ Mail preview text
 # Dear Companies: How To Fuel Your Performance With Customer Insights
 
 ‘Perfect is the enemy of the good’. We all know this saying. However, we somehow think that this is not applicable to running a business. Companies spend hours and hours on perfecting and fine-tuning product features. The problem is, these features seem meaningful and important to them, **not** their target audience.
