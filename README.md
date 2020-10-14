@@ -4,11 +4,17 @@ This simple and light tool generates email from markdown. The command is `npm ru
 ## Syntax
 Parser uses no libraries, so it copies markdown syntax and based on opening tag generates email component (image, paragraph, subtitle, etc.). There is a list of existing tags:
 
-### Sponsorship
+### Subject
 ```
-~[src][href][content]
+#!
 ```
-The first symbol should be tilde `~`, and all other attributes should be not empty, or this will cause errors. `src` - absolute path to image or may be url, `href` - the link of sponsorship block, `content` - the text near the image (also link, wrapped in `href`). Where ever you place sponsorship block, it will be concatenated and parsed at the top and bottom of email body.
+The subject of email, will be displayed in the email preview.
+
+### Preview text
+```
+#~
+```
+Preview text of email, will be displayed in the email preview.
 
 ### Title
 ```
@@ -21,6 +27,12 @@ Title of email, by default at the top of email body.
 ##
 ```
 Subtitle, can be seen anywhere in email body.
+
+### Sponsorship
+```
+~[src][href][content]
+```
+The first symbol should be tilde `~`, and all other attributes should be not empty, or this will cause errors. `src` - absolute path to image or may be url, `href` - the link of sponsorship block, `content` - the text near the image (also link, wrapped in `href`). Where ever you place sponsorship block, it will be concatenated and parsed at the top and bottom of email body.
 
 ### Image or GIF
 ```

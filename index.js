@@ -24,13 +24,13 @@ promo = fs.readFileSync(`./layouts/body/promo.html`, 'utf8', function(err, data)
 const Convert = new Object()
 Object.defineProperties(Convert, {
   'subject': {
-    value: function(header, text) {
-      return header.replace('*|MC:SUBJECT|*', text.slice(3))
+    value: function(text) {
+      return this.replace('*|MC:SUBJECT|*', text.slice(3))
     }
   },
   'previewText': {
-    value: function(header, text) {
-      return header.replace('*|MC_PREVIEW_TEXT|*', text.slice(3))
+    value: function(text) {
+      return this.replace('*|MC_PREVIEW_TEXT|*', text.slice(3))
     }
   },
   'title': {
@@ -123,22 +123,6 @@ Object.defineProperties(Convert, {
       return text
     }
   },
-  'boldAndItalic': {
-    value: function(text) {
-      const regex = /\*\*\_(.*?)\_\*\*/g;
-
-      let m;
-
-      do {
-          m = regex.exec(text);
-          if (m) {
-              text = text.replace(m[0], '<em><strong style="font-weight: bolder;">' + m[1] + '</strong></em>')
-          }
-      } while (m);
-
-      return text
-    }
-  },
   'htmlComments': {
     value: function(text) {
       const regex = /<!--(([\r\n]|.)*?)-->/g
@@ -151,13 +135,41 @@ Object.defineProperties(Convert, {
       return text;
     }
   },
+  'lists': {
+    value: function(text) {
+      // const regex =
+    }
+  }
 })
 
 function parseSource() {
-  let thisSource = Convert.htmlComments(fs.readFileSync('./tests/customer-insights.md', 'utf8'))
+  let thisSource = Convert.htmlComments(fs.readFileSync('./tests/data-cleanup.md', 'utf8'))
       .trim()
       .split('\n')
       .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
+
+  const lists = thisSource.reduce((accumulator, currentValue, currentIndex, array) => {
+    if (currentValue.slice(0, 2) === '* ') {
+      accumulator.push(currentIndex)
+    }
+    return accumulator
+  }, [])
+
+  const list = fs.readFileSync('./layouts/typography/list.html', 'utf8')
+  const listItem = fs.readFileSync('./layouts/typography/listItem.html', 'utf8')
+
+  lists.map(listItemIndex => {
+      thisSource[listItemIndex] = listItem.replace('{content}', thisSource[listItemIndex].slice(2)) 
+  })
+  // .reduce((accumulator, currentValue, currentIndex, array) => {
+  //   console.log(array);
+  //   if (Number(currentValue) !== Number((array[currentIndex - 1]) - 1) ) {
+  //     accumulator.push(array.slice(currentIndex))
+  //   }
+  //   return accumulator
+  // }, [])
+
+  console.log(lists);
 
   thisSource.forEach(line => {
     const tag = line.slice(0, 2)
@@ -165,13 +177,12 @@ function parseSource() {
     line = Convert.bold(line)
     line = Convert.italic(line)
 
-    // *|MC:SUBJECT|*
     switch(tag) {
       case '#!':
-        header = Convert.subject(header, line)
+        header = Convert.subject.call(header, line)
         break
       case '#~':
-        header = Convert.previewText(header, line)
+        header = Convert.previewText.call(header, line)
         break
       case '# ':
         emailBody += Convert.title(line)
