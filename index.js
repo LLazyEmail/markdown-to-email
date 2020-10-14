@@ -143,7 +143,7 @@ Object.defineProperties(Convert, {
 })
 
 function parseSource() {
-  let thisSource = Convert.htmlComments(fs.readFileSync('./tests/data-cleanup.md', 'utf8'))
+  let thisSource = Convert.htmlComments(fs.readFileSync('./source/source.md', 'utf8'))
       .trim()
       .split('\n')
       .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
@@ -159,7 +159,7 @@ function parseSource() {
   const list = fs.readFileSync('./layouts/typography/list.html', 'utf8')
   const listItem = fs.readFileSync('./layouts/typography/listItem.html', 'utf8')
 
-  // Replace text with html tags 
+  // Replace text with html tags
   lists.map(listItemIndex => {
       thisSource[listItemIndex] = listItem.replace('{content}', thisSource[listItemIndex].slice(2))
   })
