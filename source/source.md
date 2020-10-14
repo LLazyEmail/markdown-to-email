@@ -1,48 +1,124 @@
-~[https://ci4.googleusercontent.com/proxy/VPmnZrlAoM0HJsgs1VJyk45cKntJ9HwB7WYZmt1m67-kv7V7uzFmlB7cZ_v880uIEwAyE9inxyYBNJ3lWuDueLjOUBUgMbea0AZNjmke1HLaJTrGCnJ6LH-UJ4YM66gfFvQPoYs0nA1iaxyLxLSl8151TCFPXg5TfL_KFzFd4KnG=s0-d-e1-ft#https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/October/scoutAPM.png][https://www.noonifications.tech/l/Pl5Nsm0hdJac6HJJDrvuqw/vNlSkTgKPmNXOiO7kBnmFg/3XN6CWq763XqlKy1YC0rN763Pg][Find & fix application performance issues fast]
+<!-- Copy and paste the converted output. -->
 
-# How To Fuel Your Company’s Performance With Customer Insights
+<!-----
+NEW: Check the "Suppress top comment" option to remove this info from the output.
 
-‘Perfect is the enemy of the good’. We all know this saying. However, we somehow think that this is not applicable to running a business. Companies spend hours and hours on perfecting and fine-tuning product features. The problem is, these features seem meaningful and important to them, not their target audience.
+Conversion time: 2.743 seconds.
 
-![https://media.giphy.com/media/1yiP2cLGXa2ZZHXrMR/giphy.gif][https://en.wikipedia.org/wiki/Taco]["Alt text"]
 
-As a result, companies that fret over their visuals and site design end up losing to those brands that apply a consumer-centered approach. We don’t say that polishing various aspects of your product is bad. What we are trying to channel is that customers should be the center of your development process. Agile principles, remember?
+Using this Markdown file:
 
-![https://media.giphy.com/media/naxr701vpQl0leS9q1/giphy.gif][https://en.wikipedia.org/wiki/Donald_Trump]["Alt text"]
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
 
-So instead of burning cash on a flawless design, it is better to focus on customer feedback. No matter how technically impeccable your product is, you won’t generate revenue unless people want it.
+Conversion notes:
 
-## Integrating Consumers’ Feedback Into Your Business Strategy
-Customer feedback is the foundation of any profitable business, yet many companies and especially startups tend to avoid it like a mysterious disease (absolutely no COVID-related jokes intended here). And there is only one explanation – costs. The common myth is that collecting customer feedback is pricey and time-consuming. But is it really?
+* Docs to Markdown version 1.0β29
+* Sun Oct 11 2020 00:14:35 GMT-0700 (PDT)
+* Source doc: Flatfile #2: Brace Yourself - Data Cleanup Is Coming
+* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
 
-![https://media.giphy.com/media/3oz8xLSmmt0WaMTbX2/giphy.gif][https://en.wikipedia.org/wiki/October]["Alt text"]
 
-Also, some companies are afraid to step away and assess their product through the prism of a critic. Indeed, collecting negative feedback is painful, since we humans tend to cherish our brilliant ideas.
+WARNING:
+You have 2 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
 
-However, by fetching negative feedback, you get the opportunity to envisage and mitigate risks, thus improving your product as well.
+----->
 
-After all, when you’re crouched down, obsessing over the details for months, you can’t see the forest for the trees. Therefore, customer feedback is vital to make your company thrive. Otherwise, you are bound to go bust.
+# Brace Yourself - Data Cleanup Is Coming
 
-## Hold on, don’t run away in tears. You still can be saved.
+It goes without saying that data is the cornerstone of any data analysis. As for data, there are millions of things that can misfire. It can be messy arrangement, unnecessary extra spaces, incorrect formatting, duplications – the list goes on. And before you know it, data analysis can become your personal nightmare. Just think about it: data specialists spend up to 80% of their time organizing and cleansing data, and the other 20% analyzing the data itself. It’s quite a counter-effective ratio, isn’t it?
 
-Here are some useful tips on integrating customer IMHOes into your business strategy.
+(There exists an alternative joke: Data scientists spend up to 80% of their time organizing and cleaning data and 20% of their time – whining about it. [We feel you](https://hackernoon.com/tired-of-dirty-data-its-time-to-implement-a-data-scrubbing-initiative-7xbe3wxh). Data cleanup is like beating the wind.)
 
-## Your staff should be worried about customer opinions as well.
 
-By encouraging feedback from the top down, you set the pace for a customer-driven interaction. If your staff members are genuinely interested in fetching valuable insights, you will be able to loop these insights into other KPIs. This way, your customers will see that they are valued on every level.
 
-## Use social media.
-Social media can be used not only for promoting your product but also for raising your brand awareness. There you have a chance to interact with customers directly, fetch the feedback you need, and address people’s comments. Forget praising reviews and A-list awards, direct communication is the king.
+![alt_text](https://github.com/atherdon/newsletters/blob/master/archive/img/memes/october/4/7.jpg "image_tooltip")
 
-## Phone lines are still in.
-Although [most people](https://www.manageengine.com/network-monitoring/faq/95th-percentile-calculation.html) prefer introverted channels of communication, phone lines are still a powerful tool for winning over customers and getting feedback. Complaints, issues, problems, praise — everything will come in handy.
 
-![https://media.giphy.com/media/mQlIkJHFD8Wd98pGNG/giphy.gif][https://en.wikipedia.org/wiki/Gale_Sayers]["Alt text"]
+As you can see, proper [data analytics](https://hackernoon.com/data-analytics-is-a-journey-p4k3ugj) calls for various data cleansing techniques so that your data is all set for analysis.
 
-## Use your insights.
-You should be ready to react quickly to customer reactions. Even if it means squeezing various iterations in a short period of time. The key is to improve your product so it is up to or exceeds customer expectations.
 
-## Polish your processes.
-Feedback is ever-evolving. This means you should always stay on top of it. Probably, you’ll have to hire extra staff to handle your phone calls or respond to comments. But if you’re missing on your insights, you are missing your profit. Thus, various monitoring tools can help you keep an eye on customer feedback you are getting.
+## Anyway, What Is Data Cleaning?
 
-~[https://ci4.googleusercontent.com/proxy/VPmnZrlAoM0HJsgs1VJyk45cKntJ9HwB7WYZmt1m67-kv7V7uzFmlB7cZ_v880uIEwAyE9inxyYBNJ3lWuDueLjOUBUgMbea0AZNjmke1HLaJTrGCnJ6LH-UJ4YM66gfFvQPoYs0nA1iaxyLxLSl8151TCFPXg5TfL_KFzFd4KnG=s0-d-e1-ft#https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/October/scoutAPM.png][https://www.noonifications.tech/l/Pl5Nsm0hdJac6HJJDrvuqw/vNlSkTgKPmNXOiO7kBnmFg/3XN6CWq763XqlKy1YC0rN763Pg][Find & fix application performance issues fast]
+Essentially, data cleaning or cleansing refers to the process of pinpointing and fixing or deleting incorrect records from a database. It also presupposes identifying unfinished or non-relevant parts of the data and then replacing, altering, or deleting the coarse data.
+
+Although it may sound intimidating, it is not that painful in reality. After you master a few techniques, it will go off without a hitch.
+
+
+
+![alt_text](https://github.com/atherdon/newsletters/blob/master/archive/img/memes/october/4/7.jpg "image_tooltip")
+
+
+
+## 5 Steps to Do Your Cleanup
+
+
+
+1. **A little planning never hurts.**
+
+And by little, we mean thorough and profound planning. You didn’t [think](https://hackernoon.com/how-to-think-like-a-data-scientist-or-data-analyst-7s983yg9) it was that easy?
+
+Instead of focusing on the final objective at the very beginning, chart out an actual plan. It should include the necessary degree of precision, formatting, and the relevance of data itself. If it is still debatable, go for a pilot study first. Once you’ve outlined the phases of your study, you can anticipate the result you are getting (remember that guy-tapping-head meme?)
+
+
+
+![alt_text](https://github.com/atherdon/newsletters/blob/master/archive/img/memes/october/4/7.jpg "image_tooltip")
+
+
+
+
+2. **Actually clean your data.**
+
+You’d be surprised to know that data cleanup is not about cleaning. It’s more about being coherent and systematized. Here’s how to become a guru of data organizing:
+
+
+
+*   Create separate [worksheets](https://hackernoon.com/3-best-ways-to-import-json-to-google-sheets-ultimate-guide-3k8s24ya) for Raw Data, Currently Cleaning, Cleansed Data, and Ready Data
+*   Get rid of the Invisible Man. Extra spaces linger in your dataset looking arrogant and self-satisfied. Dump them
+*   Remove duplicates
+*   Standardize the case of your text data
+*   Do whatever it takes to [fix structural errors](https://hackernoon.com/use-up-sampling-and-weights-to-address-imbalance-data-problem-tc623y6v)
+3. **Look for one-off outliers.**
+
+If you spot an outlier that doesn’t fit within the analyzed data, make sure you delete it. However, not all unwanted outliers are irrelevant, sometimes they help to prove a theory you are working on.
+
+
+
+4. **Get hold of the missing data.**
+
+Most algorithms do not accept missing values. Therefore, [missing data](https://hackernoon.com/how-data-loss-without-any-data-recovery-can-destroy-tech-company-lw193ua5) will affect the efficiency of your data analysis. You have two options there: either skip observations that feature missing data or enter missing values relying on other observations. Both options are not ideal, yet worth trying.
+
+
+
+5. **Do basic validation.**
+
+Once your [data cleanup](https://hackernoon.com/the-essential-data-cleansing-checklist-0y443umt) is done, make sure you go over the following questions:
+
+
+
+*   Is all your data relevant?
+*   Does the data go by the rules necessary for its field?
+*   Does it prove or invalidate your hypothesis, or unravel any insight?
+
+Although these questions may seem plain as the nose on your face, most people don’t stop to mull over them.
+
+
+![alt_text](https://github.com/atherdon/newsletters/blob/master/archive/img/memes/october/4/7.jpg "image_tooltip")
+
+
+
+## You Cut-Out-‘N-Keep Summary
+
+Data sparseness and formatting inconsistencies are the biggest challenges in data analysis. Having clean data will ultimately boost overall [productivity](https://hackernoon.com/the-mass-storing-of-data-can-turn-the-consumer-into-the-new-farmer-m63d3ezn) and allow for the superior quality information in your decision-making. Cleanse your data and you won’t have to wade through countless outdated documents ever again.
+
+For the finale, shout out to our cool sponsor - [Flat File.io.](https://bit.ly/30AWyC4) This [elegant app](https://bit.ly/3notFmn) helps make your data organized, thus saving precious time and making the process more efficient for your customers.
+
+***
+
+[Got a tech story to share with our readers?](http://auth.hackernoon.com/) Everything you've ever wanted to know about how to get published on Hacker Noon - [get it here](https://hackernoon.com/how-to-get-published-on-hacker-noon-a-step-by-step-guide-zcp36rz).
+
+
+
+![alt_text](https://github.com/atherdon/newsletters/blob/master/archive/img/memes/october/4/7.jpg "image_tooltip")
