@@ -173,12 +173,12 @@ function parseSource() {
     line = Convert.italic(line)
 
     switch(tag) {
-      case '#!':
-        header = Convert.subject.call(header, line)
-        break
-      case '#~':
-        header = Convert.previewText.call(header, line)
-        break
+      // case '#!':
+      //   header = Convert.subject.call(header, line)
+      //   break
+      // case '#~':
+      //   header = Convert.previewText.call(header, line)
+      //   break
       case '# ':
         emailBody += Convert.title(line)
         break
@@ -215,9 +215,10 @@ if (!fs.existsSync(dir)){
 }
 
 
-const newFile = String.prototype.concat(header, promo, section, promo, socials, footer);
+// const newFile = String.prototype.concat(header, promo, section, promo, socials, footer);
+const newFile = String.prototype.concat(promo, section, promo);
 
-fs.writeFile('./generated/email.html', newFile, 'utf8', function(err) {
+fs.writeFile('./generated/content.html', newFile, 'utf8', function(err) {
   if (err) throw new Error('file not written')
   // console.log(newFile);
   console.log('file successfully written')

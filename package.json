@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "parse-full": "node index-full.js",
     "parse": "node index.js",
     "build:small": "node index.js"
   },
@@ -15,6 +16,7 @@
     "jest": "26.5.3"
   },
   "dependencies": {
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.20",
+    "remark": "^13.0.0"
   }
 }
