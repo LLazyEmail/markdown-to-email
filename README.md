@@ -1,6 +1,14 @@
 # Markdown-to-email
 This simple and light tool generates email from markdown. The command is `npm run parse`. The path to markdown file must be `./source/source.md`, and output directory is `generated/newEmail.html`.
 
+
+
+`yarn parse`
+
+
+
+
+
 ## Syntax
 Parser uses no libraries, so it copies markdown syntax and based on opening tag generates email component (image, paragraph, subtitle, etc.). There is a list of existing tags:
 

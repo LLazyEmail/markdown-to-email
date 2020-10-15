@@ -6,12 +6,15 @@
   "scripts": {
     "test": "jest",
     "parse": "node index.js",
-    "build:small":"node index.js"
+    "build:small": "node index.js"
   },
   "author": "hirdbluebird",
   "license": "ISC",
   "devDependencies": {
     "eslint": "7.11.0",
     "jest": "26.5.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
   }
 }
