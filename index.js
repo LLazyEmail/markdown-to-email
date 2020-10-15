@@ -204,6 +204,15 @@ function parseSource() {
 }
 parseSource()
 
+
+
+var dir = './generated';
+
+if (!fs.existsSync(dir)){
+    fs.mkdirSync(dir);
+}
+
+
 const newFile = String.prototype.concat(header, promo, section, promo, socials, footer);
 
 fs.writeFile('./generated/email.html', newFile, 'utf8', function(err) {
