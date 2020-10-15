@@ -144,6 +144,10 @@ Object.defineProperties(Convert, {
   }
 })
 
+function combineCombineReplaceMeLater(string, value){
+  return string += value;
+}
+
 function parseSource() {
   let thisSource = Convert.htmlComments(fs.readFileSync('./source/source.md', 'utf8'))
       .trim()
@@ -181,27 +185,36 @@ function parseSource() {
       //   break
       case '# ':
         emailBody += Convert.title(line)
+        emailBody = combineCombineReplaceMeLater(emailBody, );
         break
       case '##':
         emailBody += Convert.subtitle(line)
+        emailBody = combineCombineReplaceMeLater(emailBody, );
         break
       case '![':
         emailBody += Convert.image(line)
+        emailBody = combineCombineReplaceMeLater(emailBody, );
         break
       case '':
         emailBody += Convert.linebreak()
+        emailBody = combineCombineReplaceMeLater(emailBody, );
         break
       case '~[':
         promo = Convert.sponsorship(line)
+        emailBody = combineCombineReplaceMeLater(emailBody, );
         break
       default:
         line = Convert.links(line)
         emailBody += Convert.paragraph(line)
+        emailBody = combineCombineReplaceMeLater(emailBody, );
         break
     }
   })
 
   section = fs.readFileSync('./layouts/body/section.html', 'utf8')
+              .replace('{content}', emailBody)
+
+  THEsection = fs.readFileSync('./layouts/body/empty-section.html', 'utf8')
               .replace('{content}', emailBody)
 }
 parseSource()
@@ -216,9 +229,10 @@ if (!fs.existsSync(dir)){
 
 
 // const newFile = String.prototype.concat(header, promo, section, promo, socials, footer);
-const newFile = String.prototype.concat(section);
+// const newFile = String.prototype.concat(section);
+const newFile = String.prototype.concat(THEsection);
 
-fs.writeFile('./generated/content.html', newFile, 'utf8', function(err) {
+fs.writeFile("./generated/content-" + Date.now() + ".html", newFile, 'utf8', function(err) {
   if (err) throw new Error('file not written')
   // console.log(newFile);
   console.log('file successfully written')
