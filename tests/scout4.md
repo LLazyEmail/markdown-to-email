@@ -20,19 +20,28 @@ Conversion notes:
 * Source doc: Consumer Insights: The Secret Weapon
 * This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/18.10/image7.gif
+
+https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/18.10/image8.png
+
 ----->
 
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 5.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
 
 
 
@@ -44,10 +53,8 @@ It’s not revolutionary, you would say. But we can bet you’ve been overlookin
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
-![alt_text](images/image1.gif "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/18.10/image1.png "image_tooltip")
 
 
 
@@ -61,10 +68,8 @@ There are various places on your website that reference the customer. But our pl
 
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/18.10/image2.gif "image_tooltip")
 
 
 
@@ -74,10 +79,8 @@ There are various places on your website that reference the customer. But our pl
 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/18.10/image3.jpg "image_tooltip")
 
 
 
@@ -87,10 +90,9 @@ There are various places on your website that reference the customer. But our pl
 
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/18.10/image4.gif "image_tooltip")
 
 
 
@@ -103,14 +105,12 @@ There are various places on your website that reference the customer. But our pl
 *   Fetch user data so you can send it to the right people, answer faster, and cut unessential dialogue between your team and the customers;
 *   Boost customer engagement by allowing users to contribute to your company;
 *   Collect personal data like email addresses.
+
 4. **Offline customer service efforts (call centers)**
 
 
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.jpg "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/18.10/image5.gif "image_tooltip")
 
 
 
@@ -124,6 +124,22 @@ There are various places on your website that reference the customer. But our pl
 *   Direct feedback on marketing.
 
 If the obtained data seems minute, report it anyway. Indeed, even the inconsiderable insights may snowball into bigger experiences for those investigating your information. Set aside the effort to examine the information your clients are giving and devise a test system that will permit you to gauge their reaction to fine-tune your endeavors on the site and via telephone.
+
+
+
+![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/18.10/image6.png "image_tooltip")
+
+
+
+
+![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/18.10/image7.gif "image_tooltip")
+
+
+
+
+![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/18.10/image8.png "image_tooltip")
+
+
 
 
 ## The Bottom Line
