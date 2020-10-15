@@ -216,7 +216,7 @@ if (!fs.existsSync(dir)){
 
 
 // const newFile = String.prototype.concat(header, promo, section, promo, socials, footer);
-const newFile = String.prototype.concat(promo, section, promo);
+const newFile = String.prototype.concat(section);
 
 fs.writeFile('./generated/content.html', newFile, 'utf8', function(err) {
   if (err) throw new Error('file not written')
