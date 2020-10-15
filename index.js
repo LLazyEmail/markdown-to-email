@@ -184,29 +184,29 @@ function parseSource() {
       //   header = Convert.previewText.call(header, line)
       //   break
       case '# ':
-        emailBody += Convert.title(line)
-        emailBody = combineCombineReplaceMeLater(emailBody, );
+        // emailBody += Convert.title(line)
+        emailBody = combineCombineReplaceMeLater(emailBody, Convert.title(line));
         break
       case '##':
-        emailBody += Convert.subtitle(line)
-        emailBody = combineCombineReplaceMeLater(emailBody, );
+        // emailBody += Convert.subtitle(line)
+        emailBody = combineCombineReplaceMeLater(emailBody, Convert.subtitle(line));
         break
       case '![':
-        emailBody += Convert.image(line)
-        emailBody = combineCombineReplaceMeLater(emailBody, );
+        // emailBody += Convert.image(line)
+        emailBody = combineCombineReplaceMeLater(emailBody, Convert.image(line));
         break
       case '':
-        emailBody += Convert.linebreak()
-        emailBody = combineCombineReplaceMeLater(emailBody, );
+        // emailBody += Convert.linebreak()
+        emailBody = combineCombineReplaceMeLater(emailBody, Convert.linebreak());
         break
       case '~[':
-        promo = Convert.sponsorship(line)
-        emailBody = combineCombineReplaceMeLater(emailBody, );
+        // promo = Convert.sponsorship(line)
+        emailBody = combineCombineReplaceMeLater(emailBody, Convert.sponsorship(line));
         break
       default:
         line = Convert.links(line)
-        emailBody += Convert.paragraph(line)
-        emailBody = combineCombineReplaceMeLater(emailBody, );
+        // emailBody += Convert.paragraph(line)
+        emailBody = combineCombineReplaceMeLater(emailBody, Convert.paragraph(line));
         break
     }
   })
