@@ -64,7 +64,9 @@ Object.defineProperties(Convert, {
   },
   'linebreak': {
     value: function() {
-      return fs.readFileSync('./layouts/typography/devider.html', 'utf8')
+      return fs.readFileSync('./layouts/typography/simple-divider.html', 'utf8')
+      // return fs.readFileSync('./layouts/typography/devider.html', 'utf8')
+
     }
   },
   'links': {
