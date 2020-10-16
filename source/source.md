@@ -6,10 +6,10 @@ Did you know?
 
 
 
-*   **2,587 **of you were nominated for one or more of the
-*   **221 **Hacker Noon awards up for grabs this year, across **5** award categories: **[Technology](https://noonies.tech/#tech)**, **[Decentralization](https://noonies.tech/#decentralization)**, **[Software Development](https://noonies.tech/#development)**, **[Future Heroes](https://noonies.tech/#heroes)**, and **[Back to the Internet](https://noonies.tech/#internet)**.
-*   Eight weeks later: **over 200[ Noonie Nominee Interviews](https://hackernoon.com/tagged/noonies),[ AMAs](https://hackernoon.com/tagged/hackernoon-ama), **and[ Podcasts](https://hackernoon.com/tagged/hackernoon-podcast)** **are live on[ Hacker Noon](https://hackernoon.com/),
-*   and a whopping **232,444** votes have been cast over at**[ noonies.tech](https://noonies.tech/),** which means only one thing:
+XY**2,587 **of you were nominated for one or more of the
+XY**221 **Hacker Noon awards up for grabs this year, across **5** award categories: **[Technology](https://noonies.tech/#tech)**, **[Decentralization](https://noonies.tech/#decentralization)**, **[Software Development](https://noonies.tech/#development)**, **[Future Heroes](https://noonies.tech/#heroes)**, and **[Back to the Internet](https://noonies.tech/#internet)**.
+XYEight weeks later: **over 200[ Noonie Nominee Interviews](https://hackernoon.com/tagged/noonies),[ AMAs](https://hackernoon.com/tagged/hackernoon-ama), XY**and[ Podcasts](https://hackernoon.com/tagged/hackernoon-podcast)** **are live on[ Hacker Noon](https://hackernoon.com/),
+and a whopping **232,444** votes have been cast over at**[ noonies.tech](https://noonies.tech/),** which means only one thing:
 
 **The Winners of the Internet for 2020 can now be officially declared! 🥳**
 
@@ -36,8 +36,8 @@ This is what we’re tweeting/blogging with your name:
 
 
 
-*   Tweet
-*   Blog-Post - [https://app.hackernoon.com/drafts/lfOu5AElxnE2Dkcd2DMV](https://app.hackernoon.com/drafts/lfOu5AElxnE2Dkcd2DMV)
+XYTweet
+XYBlog-Post - [https://app.hackernoon.com/drafts/lfOu5AElxnE2Dkcd2DMV](https://app.hackernoon.com/drafts/lfOu5AElxnE2Dkcd2DMV)
 
 Wait a minute, what’s victory without spoils - tasteless. Right?
 
@@ -54,12 +54,12 @@ Here is/are the spoils from your victory: \
 
 
 
-*   A standard .TECH domain for 10 years \
+XY A standard .TECH domain for 10 years \
 
-    *   Search for your domain [here](https://get.tech/build-the-future)
-    *   Use this coupon code <xxxxxx> during checkout \
+XY Search for your domain [here](https://get.tech/build-the-future)
+XY Use this coupon code <xxxxxx> during checkout \
 
-*   <Any Award by Award Sponsor, if any>
+XY <Any Award by Award Sponsor, if any>
 
 **_A Note about Next Year's Noonies:_** The 2021 Nomination period is now less than a year away. Keep submitting your best tech stories to [the top tag pages on Hacker Noon](https://hackernoon.com/tagged) to make sure you're in the running for these prestigious internet awards again next year!
 

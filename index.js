@@ -1,5 +1,6 @@
 const fs = require('fs')
 // const parseSource = require(''./parseSource.js')
+const _ = require('lodash')
 
 let header,
   footer,
@@ -22,6 +23,13 @@ promo = fs.readFileSync(`./layouts/body/promo.html`, 'utf8', function(err, data)
   if (err) throw new Error(`file not found`)
 })
 
+// var the_list_as_it_should_be = '<ul>';
+// function the_list_as_it_should_be (array, indexes) {
+//   console.log(indexes);
+//   _.each(array, (value) => {
+//
+//   })
+// }
 
 
 
@@ -175,9 +183,12 @@ function parseSource() {
   }, [])
 
 
+  // the_list_as_it_should_be([], array_of_indexes_that_containing_list_items)
 
   const list = fs.readFileSync('./layouts/typography/list.html', 'utf8')
   const listItem = fs.readFileSync('./layouts/typography/listItem.html', 'utf8')
+
+
 
 
 
@@ -245,12 +256,18 @@ function parseSource() {
         // promo = Convert.sponsorship(line)
         emailBody = combineCombineReplaceMeLater(emailBody, Convert.sponsorship(line));
         break
-      case '<l':
+      // case '<l':
+      // console.log(line);
+      // console.log('----------') ; break
+      case 'XY':
       console.log(line);
-      console.log('----------') ; break
+      console.log('----------') ;
+      emailBody = combineCombineReplaceMeLater(emailBody, '++++++++XYZ IS HERE++++++++');
+      break
       default:
         line = Convert.links(line)
         // emailBody += Convert.paragraph(line)
+        // console.log(line);
         emailBody = combineCombineReplaceMeLater(emailBody, Convert.paragraph(line));
         break
     }
@@ -277,8 +294,10 @@ if (!fs.existsSync(dir)){
 // const newFile = String.prototype.concat(section);
 const newFile = String.prototype.concat(THEsection);
 
-fs.writeFile("./generated/content-" + Date.now() + ".html", newFile, 'utf8', function(err) {
+var fileName = "content-" + Date.now() + ".html";
+
+fs.writeFile("./generated/" + fileName, newFile, 'utf8', function(err) {
   if (err) throw new Error('file not written')
   // console.log(newFile);
-  console.log('file successfully written')
+  console.log('file successfully written ' + fileName)
 })
