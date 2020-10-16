@@ -77,6 +77,11 @@ Object.defineProperties(Convert, {
 
     }
   },
+  'separator': {
+    value: function() {
+      return fs.readFileSync('./layouts/typography/simple-divider.html', 'utf8')
+    }
+  },
   'links': {
     value: function(text) {
       const regex = /\[(.*?)\]\((.*?)\)/g
@@ -260,9 +265,10 @@ function parseSource() {
       // console.log(line);
       // console.log('----------') ; break
       case 'XY':
-      console.log(line);
-      console.log('----------') ;
-      emailBody = combineCombineReplaceMeLater(emailBody, '++++++++XYZ IS HERE++++++++');
+      // console.log(line);
+      // console.log('----------') ;
+
+      emailBody = combineCombineReplaceMeLater(emailBody, Convert.separator() + line + Convert.separator());
       break
       default:
         line = Convert.links(line)
