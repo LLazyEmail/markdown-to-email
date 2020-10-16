@@ -154,48 +154,69 @@ function combineCombineReplaceMeLater(string, value){
 }
 
 function parseSource() {
-  let thisSource = Convert.htmlComments(fs.readFileSync('./source/source.md', 'utf8'))
+  let thisSource =
+  Convert.htmlComments(fs.readFileSync('./source/source.md', 'utf8'))
       .trim()
       .split('\n')
       .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
 
 
+
+// ------------------------ move out ----------------
 // @todo list, lists, listItems - names sucks
 
   // Detect indexes of list items (via <li>)
-  const lists = thisSource.reduce((accumulator, currentValue, currentIndex, array) => {
+  // yes, feel free to change the name later
+  const array_of_indexes_that_containing_list_items = thisSource.reduce((accumulator, currentValue, currentIndex, array) => {
     if (currentValue.slice(0, 2) === '* ') {
       accumulator.push(currentIndex)
     }
     return accumulator
   }, [])
 
+
+
   const list = fs.readFileSync('./layouts/typography/list.html', 'utf8')
   const listItem = fs.readFileSync('./layouts/typography/listItem.html', 'utf8')
 
+
+
+  // console.log(thisSource);
+
   // Replace text with html tags
-  lists.map(listItemIndex => {
+  array_of_indexes_that_containing_list_items.map(listItemIndex => {
       var somethng = listItem.replace('{content}', thisSource[listItemIndex].slice(2));
       // console.log(somethng)
       thisSource[listItemIndex] = listItem.replace('{content}', thisSource[listItemIndex].slice(2))
 
   })
 
-
+// console.log('---------')
+// console.log(thisSource);
 
   // console.log(lists);
 
-  list.replace('{content}', listItem.slice(2));
-
-  console.log(list);
+  // list.replace('{content}', listItem.slice(2));
+  //
+  // console.log(list);
 
  //
+// ------------------------ move out ----------------
 
+// LINE IS AN ITEM OF OUR ARRAY WITH CONTENT INSIDE.
+// AS NOBODY WANTED TO DO A BETTER STRUCTURE - WE HAVE AN ARRAY OF STRINGS THAT FUCKING MA HEAD
   thisSource.forEach(line => {
+
+
+
+    // Below is the most stupid and un-reliable variable that this project has.
     const tag = line.slice(0, 2)
 
     line = Convert.bold(line)
     line = Convert.italic(line)
+
+    // console.log(tag)
+
 
     switch(tag) {
       // case '#!':
@@ -224,6 +245,9 @@ function parseSource() {
         // promo = Convert.sponsorship(line)
         emailBody = combineCombineReplaceMeLater(emailBody, Convert.sponsorship(line));
         break
+      case '<l':
+      console.log(line);
+      console.log('----------') ; break
       default:
         line = Convert.links(line)
         // emailBody += Convert.paragraph(line)
