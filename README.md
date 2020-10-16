@@ -64,3 +64,18 @@ You may use empty line in email body, just in the markdown document leave line e
 
 ## Work principles
 The parser reads source file from `source/source.md` and based on opening tag renders goes in `layouts` folder and chooses relevant typography or section (sponsorship) element. Supported tags displayed in this document.
+
+
+
+#### Remark plugins to try later later later
+- https://github.com/remarkjs/remark-html
+- https://github.com/remarkjs/remark-breaks
+- https://github.com/vercel/remark-capitalize
+- https://github.com/remarkjs/remark-html
+- https://github.com/laat/remark-first-heading
+- https://github.com/remarkjs/remark-images
+- https://github.com/remarkjs/remark-lint
+- https://github.com/remarkjs/remark-inline-links
+- https://github.com/dimerapp/remark-macro
+- https://github.com/remarkjs/remark-normalize-headings
+- https://github.com/remarkjs/remark-rehype

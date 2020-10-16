@@ -143,6 +143,7 @@ Object.defineProperties(Convert, {
   },
   'lists': {
     value: function(text) {
+      console.log('ooops, looks like Eugene forget something :(');
       // const regex =
     }
   }

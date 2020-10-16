@@ -43,8 +43,6 @@ Wait a minute, what’s victory without spoils - tasteless. Right?
 
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/16.10/image2.gif "image_tooltip")
 
