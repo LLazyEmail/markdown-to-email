@@ -159,6 +159,9 @@ function parseSource() {
       .split('\n')
       .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
 
+
+// @todo list, lists, listItems - names sucks
+
   // Detect indexes of list items (via <li>)
   const lists = thisSource.reduce((accumulator, currentValue, currentIndex, array) => {
     if (currentValue.slice(0, 2) === '* ') {
@@ -172,8 +175,21 @@ function parseSource() {
 
   // Replace text with html tags
   lists.map(listItemIndex => {
+      var somethng = listItem.replace('{content}', thisSource[listItemIndex].slice(2));
+      // console.log(somethng)
       thisSource[listItemIndex] = listItem.replace('{content}', thisSource[listItemIndex].slice(2))
+
   })
+
+
+
+  // console.log(lists);
+
+  list.replace('{content}', listItem.slice(2));
+
+  console.log(list);
+
+ //
 
   thisSource.forEach(line => {
     const tag = line.slice(0, 2)
