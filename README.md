@@ -8,7 +8,8 @@ This simple and light tool generates email from markdown. The command is `npm ru
 `yarn parse`
 
 
-
+Great Online Preview tool
+https://dillinger.io/
 
 
 ## Syntax

@@ -231,7 +231,7 @@ function parseSource() {
     line = Convert.bold(line)
     line = Convert.italic(line)
 
-    // console.log(tag)
+    console.log(tag)
 
 
     switch(tag) {
@@ -270,6 +270,8 @@ function parseSource() {
 
       emailBody = combineCombineReplaceMeLater(emailBody, Convert.separator() + line + Convert.separator());
       break
+      case '--':
+      emailBody = combineCombineReplaceMeLater(emailBody, line + Convert.separator()); break;
       default:
         line = Convert.links(line)
         // emailBody += Convert.paragraph(line)
