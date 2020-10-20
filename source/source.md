@@ -3,7 +3,7 @@
 <!-----
 NEW: Check the "Suppress top comment" option to remove this info from the output.
 
-Conversion time: 0.772 seconds.
+Conversion time: 0.317 seconds.
 
 
 Using this Markdown file:
@@ -16,51 +16,35 @@ Using this Markdown file:
 Conversion notes:
 
 * Docs to Markdown version 1.0β29
-* Mon Oct 19 2020 22:05:22 GMT-0700 (PDT)
-* Source doc: Noonies' 1st Runners Up Email Template
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
+* Mon Oct 19 2020 22:05:52 GMT-0700 (PDT)
+* Source doc: Noonies' 2nd Runners Up Email Template
 ----->
 
 
 Hi <Name>,
 
-YOU ARE the Buzz Aldrin of <Award Name> at Noonies 2020.
+Pat yourself on the back. Pop a bottle of champagne too if you’re into that.
 
-While Neil Armstrong might’ve been the first one to set foot on the moon, it was Buzz Aldrin that etched himself in our collective memory.
+You’ve beat back fierce competition at the #Noonies2020 and placed 2nd runner up while you were at it.
 
-Why?
+Along with <Winner Name> and <1st Runner Up>, you’re on the podium for <Award Name>.
 
-Well, in Aldrin’s case, he walked second because Armstrong outranked him.
+There are some cool prizes to help you get in the groove of the festive mood.
 
-At Noonies, there are no ranks to outrank you. However, the Internet is a strange place where cults are born and dissolved on a daily basis.
-
-You might be the 1st Runner up this year. Maybe, next year, you get voted to the 1st place.
-
-But that’s something to think about tomorrow.
+You’ve won:
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+XY *   Hacker Noon Stickers <Links>
+XY *   A standard .TECH domain for 1 year \
 
+XY     *   Search for your domain [here](https://get.tech/build-the-future)
+XY     *   Use this coupon code **<xxxxxx>** during checkout \
 
-![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/21.10/image1.gif "image_tooltip")
-_ \
-_☝️ _Here is a gif of the real Buzz Aldrin._
-
-Today, let’s check out what you’ve won:
-
-
-
-XY  *   Hacker Noon Stickers <Links>
-XY  *   A standard .TECH domain for 3 years \
-
-XY      *   Search for your domain [here](https://get.tech/build-the-future)
-XY      *   Use this coupon code **<xxxxxx>** during checkout \
-
-XY  *   **<Any Award by Award Sponsor, if any>**
+XY *   **<Any Award by Award Sponsor, if any>**
 
 **_A Note about Next Year's Noonies:_** The 2021 Nomination period is now less than a year away. Keep submitting your best tech stories to [the top tag pages on Hacker Noon](https://hackernoon.com/tagged) to make sure you're in the running for these prestigious internet awards again next year!
 
 Congratulations and Best of Luck,
+
 The Hacker Noon Editorial Team
