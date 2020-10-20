@@ -1,78 +1,66 @@
-Call your mom <Name>,
+<!-- Copy and paste the converted output. -->
 
-Today, you’re no longer a Noonies Nominee.
+<!-----
+NEW: Check the "Suppress top comment" option to remove this info from the output.
 
-Did you know?
-
----
-
-XY  **2,587 **of you were nominated for one or more of the
-XY  **221 **Hacker Noon awards up for grabs this year, across **5** award categories: **[Technology](https://noonies.tech/#tech)**, **[Decentralization](https://noonies.tech/#decentralization)**, **[Software Development](https://noonies.tech/#development)**, **[Future Heroes](https://noonies.tech/#heroes)**, and **[Back to the Internet](https://noonies.tech/#internet)**.
-XY  Eight weeks later: **over 200[ Noonie Nominee Interviews](https://hackernoon.com/tagged/noonies)**, **[ AMAs](https://hackernoon.com/tagged/hackernoon-ama)**,
- XY  **and [Podcasts](https://hackernoon.com/tagged/hackernoon-podcast)** **are live on [Hacker Noon](https://hackernoon.com/)**,
-and a whopping **232,444** votes have been cast over at**[ noonies.tech](https://noonies.tech/),** which means only one thing:
-
----
-
-**The Winners of the Internet for 2020 can now be officially declared! 🥳**
-
-And you, <Name>, have been voted by the Hacker Noon Community as the WINNER of <award-name>.
-
-Congratulations!!! 🥳
+Conversion time: 0.772 seconds.
 
 
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β29
+* Mon Oct 19 2020 22:05:22 GMT-0700 (PDT)
+* Source doc: Noonies' 1st Runners Up Email Template
+* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
+
+----->
+
+
+Hi <Name>,
+
+YOU ARE the Buzz Aldrin of <Award Name> at Noonies 2020.
+
+While Neil Armstrong might’ve been the first one to set foot on the moon, it was Buzz Aldrin that etched himself in our collective memory.
+
+Why?
+
+Well, in Aldrin’s case, he walked second because Armstrong outranked him.
+
+At Noonies, there are no ranks to outrank you. However, the Internet is a strange place where cults are born and dissolved on a daily basis.
+
+You might be the 1st Runner up this year. Maybe, next year, you get voted to the 1st place.
+
+But that’s something to think about tomorrow.
 
 
 
-![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/16.10/image3.gif "image_tooltip")
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-https://noonies.tech/
+![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/21.10/image1.gif "image_tooltip")
+_ \
+_☝️ _Here is a gif of the real Buzz Aldrin._
 
-Your 365 days of fame start now.
-
-Here are some stickers to share your victory with the rest of the world:
-
-(Attachments)
-
-This is what we’re tweeting/blogging with your name:
-
----
-
-XY  Tweet
-XY  Blog-Post - [https://app.hackernoon.com/drafts/lfOu5AElxnE2Dkcd2DMV](https://app.hackernoon.com/drafts/lfOu5AElxnE2Dkcd2DMV)
-
-Wait a minute, what’s victory without spoils - tasteless. Right?
-
----
+Today, let’s check out what you’ve won:
 
 
-![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/16.10/image2.gif "image_tooltip")
 
+XY  *   Hacker Noon Stickers <Links>
+XY  *   A standard .TECH domain for 3 years \
 
-https://media.giphy.com/media/3o6fJ0mUt4WWF1qox2/giphy.gif
+XY      *   Search for your domain [here](https://get.tech/build-the-future)
+XY      *   Use this coupon code **<xxxxxx>** during checkout \
 
-Here is/are the spoils from your victory: \
-
-
----
-
-XY  A standard .TECH domain for 10 years \
-
-XY  Search for your domain [here](https://get.tech/build-the-future)
-XY  Use this coupon code <xxxxxx> during checkout \
-
-XY  <Any Award by Award Sponsor, if any>
-
----
+XY  *   **<Any Award by Award Sponsor, if any>**
 
 **_A Note about Next Year's Noonies:_** The 2021 Nomination period is now less than a year away. Keep submitting your best tech stories to [the top tag pages on Hacker Noon](https://hackernoon.com/tagged) to make sure you're in the running for these prestigious internet awards again next year!
 
 Congratulations and Best of Luck,
-
 The Hacker Noon Editorial Team
-
-
-![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/16.10/image1.gif "image_tooltip")
-
-https://giphy.com/hackernoon

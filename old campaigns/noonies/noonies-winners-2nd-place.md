@@ -52,7 +52,7 @@ But that’s something to think about tomorrow.
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image1.gif "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/21.10/image1.gif "image_tooltip")
 _ \
 _☝️ _Here is a gif of the real Buzz Aldrin._
 
