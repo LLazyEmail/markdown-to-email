@@ -138,11 +138,11 @@ Object.defineProperties(Convert, {
 
           if (m) {
 
-            // @todo shitties code that I made in 2020
+
 
               text = text.replace(m[0], '<strong style="font-weight: bolder;">' + m[1] + '</strong>')
 
-              // if()
+          
 
 
           }
