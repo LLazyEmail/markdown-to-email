@@ -88,3 +88,14 @@ The parser reads source file from `source/source.md` and based on opening tag re
 - https://github.com/dimerapp/remark-macro
 - https://github.com/remarkjs/remark-normalize-headings
 - https://github.com/remarkjs/remark-rehype
+
+
+
+Links
+https://codepen.io/rh/pen/BoyNdy
+https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
+https://github.com/Chalarangelo/parse-md-js/blob/master/parsemd.js
+https://www.bigomega.dev/markdown-parser
+https://gist.github.com/budparr/112f08a3033dd878d0e271e2af61faef
+https://gist.github.com/jbroadway/2836900
+https://stackoverflow.com/questions/47016770/replace-markdown-characters-with-regex
