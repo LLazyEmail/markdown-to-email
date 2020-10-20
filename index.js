@@ -31,7 +31,22 @@ promo = fs.readFileSync(`./layouts/body/promo.html`, 'utf8', function(err, data)
 //   })
 // }
 
+const REGEX_MARKDOWN_LINK = '';
 
+function parseMarkdown(markdownText) {
+	const htmlText = markdownText
+		.replace(/^### (.*$)/gim, '<h3>$1</h3>')
+		.replace(/^## (.*$)/gim, '<h2>$1</h2>')
+		.replace(/^# (.*$)/gim, '<h1>$1</h1>')
+		.replace(/^\> (.*$)/gim, '<blockquote>$1</blockquote>')
+		.replace(/\*\*(.*)\*\*/gim, '<b>$1</b>')
+		.replace(/\*(.*)\*/gim, '<i>$1</i>')
+		.replace(/!\[(.*?)\]\((.*?)\)/gim, "<img alt='$1' src='$2' />")
+		.replace(/\[(.*?)\]\((.*?)\)/gim, "<a href='$2'>$1</a>")
+		.replace(/\n$/gim, '<br />')
+
+	return htmlText.trim()
+}
 
 const Convert = new Object()
 Object.defineProperties(Convert, {
@@ -118,8 +133,18 @@ Object.defineProperties(Convert, {
 
       do {
           m = regex.exec(text);
+
+          // console.log(m);
+
           if (m) {
+
+            // @todo shitties code that I made in 2020
+
               text = text.replace(m[0], '<strong style="font-weight: bolder;">' + m[1] + '</strong>')
+
+              // if()
+
+
           }
       } while (m);
 
@@ -231,7 +256,7 @@ function parseSource() {
     line = Convert.bold(line)
     line = Convert.italic(line)
 
-    console.log(tag)
+    // console.log(tag)
 
 
     switch(tag) {
@@ -300,6 +325,10 @@ if (!fs.existsSync(dir)){
 
 // const newFile = String.prototype.concat(header, promo, section, promo, socials, footer);
 // const newFile = String.prototype.concat(section);
+
+// console.log(parseMarkdown(THEsection)); process.exit(1);
+// const just_a_guess = parseMarkdown(THEsection);
+
 const newFile = String.prototype.concat(THEsection);
 
 var fileName = "content-" + Date.now() + ".html";
@@ -309,3 +338,10 @@ fs.writeFile("./generated/" + fileName, newFile, 'utf8', function(err) {
   // console.log(newFile);
   console.log('file successfully written ' + fileName)
 })
+
+
+// fs.writeFile("./generated/xxxxxxx" + fileName, just_a_guess, 'utf8', function(err) {
+//   if (err) throw new Error('file not written')
+//   // console.log(newFile);
+//   console.log('file successfully written ' + fileName)
+// })

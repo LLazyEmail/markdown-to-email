@@ -3,6 +3,14 @@
 # Markdown-to-email
 This simple and light tool generates email from markdown. The command is `npm run parse`. The path to markdown file must be `./source/source.md`, and output directory is `generated/newEmail.html`.
 
+We tried to create our own wheel, then we failed.
+Arthur get bored trying to fix it and make it work properly.
+So he just decide to google a working version that can solve his problems.
+
+I find this link https://gist.github.com/jbroadway/2836900
+then this link https://gist.github.com/budparr/112f08a3033dd878d0e271e2af61faef
+and then I added javascript into my google Search https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
+
 
 
 `yarn parse`
