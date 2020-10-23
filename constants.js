@@ -73,3 +73,10 @@ const shippingMethods = {
 //   {regex: /<\/ol>\s?<ol>/g, replacement: ''},                                        // fix extra ol
 //   {regex: /<\/blockquote><blockquote>/g, replacement: '\n'}                          // fix extra blockquote
 // ];
+
+
+
+
+/// @TODO add const for newsletter_sponsor_link
+// for hackernoon_logo_path
+// for HN socials, with images and shit
