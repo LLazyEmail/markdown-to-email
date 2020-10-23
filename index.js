@@ -142,7 +142,7 @@ Object.defineProperties(Convert, {
 
               text = text.replace(m[0], '<strong style="font-weight: bolder;">' + m[1] + '</strong>')
 
-          
+
 
 
           }
@@ -260,12 +260,12 @@ function parseSource() {
 
 
     switch(tag) {
-      // case '#!':
-      //   header = Convert.subject.call(header, line)
-      //   break
-      // case '#~':
-      //   header = Convert.previewText.call(header, line)
-      //   break
+      case '#!':
+        header = Convert.subject.call(header, line)
+        break
+      case '#~':
+        header = Convert.previewText.call(header, line)
+        break
       case '# ':
         // emailBody += Convert.title(line)
         emailBody = combineCombineReplaceMeLater(emailBody, Convert.title(line));
