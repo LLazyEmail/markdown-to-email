@@ -10,16 +10,16 @@ let header,
   emailBody = '';
 
 
-header = fs.readFileSync(`./layouts/header.html`, 'utf8', function(err, data) {
+header = fs.readFileSync(`layouts/header.html`, 'utf8', function(err, data) {
   if (err) throw new Error(`file not found`)
 })
-socials = fs.readFileSync(`./layouts/socials.html`, 'utf8', function(err, data) {
+socials = fs.readFileSync(`layouts/socials.html`, 'utf8', function(err, data) {
   if (err) throw new Error(`file not found`)
 })
-footer = fs.readFileSync(`./layouts/footer.html`, 'utf8', function(err, data) {
+footer = fs.readFileSync(`layouts/footer.html`, 'utf8', function(err, data) {
   if (err) throw new Error(`file not found`)
 })
-promo = fs.readFileSync(`./layouts/body/promo.html`, 'utf8', function(err, data) {
+promo = fs.readFileSync(`layouts/body/promo.html`, 'utf8', function(err, data) {
   if (err) throw new Error(`file not found`)
 })
 
@@ -62,17 +62,17 @@ Object.defineProperties(Convert, {
   },
   'title': {
       value: function(text) {
-        return fs.readFileSync('./layouts/typography/mainTitle.html', 'utf8').replace('{content}', text.slice(2))
+        return fs.readFileSync('layouts/typography/mainTitle.html', 'utf8').replace('{content}', text.slice(2))
       }
   },
   'subtitle': {
       value: function(text) {
-        return fs.readFileSync('./layouts/typography/subtitle.html', 'utf8').replace('{content}', text.slice(3))
+        return fs.readFileSync('layouts/typography/subtitle.html', 'utf8').replace('{content}', text.slice(3))
       }
   },
   'paragraph': {
       value: function(text) {
-        return fs.readFileSync('./layouts/typography/paragraph.html', 'utf8').replace('{content}', text)
+        return fs.readFileSync('layouts/typography/paragraph.html', 'utf8').replace('{content}', text)
       }
   },
   'image': {
@@ -80,27 +80,27 @@ Object.defineProperties(Convert, {
         const altText = text.match(/\[(.*?)\]/g)[0].replace(/[\[\]]/g, '');
         const src = text.match(/\((.*?)\)/g)[0].replace(/[\(\)]/g, '')
 
-        return fs.readFileSync('./layouts/typography/image.html', 'utf8')
+        return fs.readFileSync('layouts/typography/image.html', 'utf8')
           .replace('{src}', src)
           .replace('{altText}', altText)
       }
   },
   'linebreak': {
     value: function() {
-      return fs.readFileSync('./layouts/typography/simple-divider.html', 'utf8')
-      // return fs.readFileSync('./layouts/typography/devider.html', 'utf8')
+      return fs.readFileSync('layouts/typography/simple-divider.html', 'utf8')
+      // return fs.readFileSync('layouts/typography/devider.html', 'utf8')
 
     }
   },
   'separator': {
     value: function() {
-      return fs.readFileSync('./layouts/typography/simple-divider.html', 'utf8')
+      return fs.readFileSync('layouts/typography/simple-divider.html', 'utf8')
     }
   },
   'links': {
     value: function(text) {
       const regex = /\[(.*?)\]\((.*?)\)/g
-      const linkTemplate = fs.readFileSync('./layouts/typography/link.html', 'utf8')
+      const linkTemplate = fs.readFileSync('layouts/typography/link.html', 'utf8')
 
       let m;
 
@@ -119,7 +119,7 @@ Object.defineProperties(Convert, {
       const regex = /\[(.*?)\]/g
       const [src, href, content] = text.match(regex).map(match => match.replace(/[\[\]]/g, ''))
 
-      return fs.readFileSync('./layouts/body/promo.html', 'utf8')
+      return fs.readFileSync('layouts/body/promo.html', 'utf8')
                 .replace('{src}', src)
                 .replace('{href}', href)
                 .replace('{content}', content)
@@ -193,7 +193,7 @@ function combineCombineReplaceMeLater(string, value){
 
 function parseSource() {
   let thisSource =
-  Convert.htmlComments(fs.readFileSync('./source/source.md', 'utf8'))
+  Convert.htmlComments(fs.readFileSync('source/source.md', 'utf8'))
       .trim()
       .split('\n')
       .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
@@ -215,8 +215,8 @@ function parseSource() {
 
   // the_list_as_it_should_be([], array_of_indexes_that_containing_list_items)
 
-  const list = fs.readFileSync('./layouts/typography/list.html', 'utf8')
-  const listItem = fs.readFileSync('./layouts/typography/listItem.html', 'utf8')
+  const list = fs.readFileSync('layouts/typography/list.html', 'utf8')
+  const listItem = fs.readFileSync('layouts/typography/listItem.html', 'utf8')
 
 
 
@@ -306,17 +306,17 @@ function parseSource() {
     }
   })
 
-  section = fs.readFileSync('./layouts/body/section.html', 'utf8')
+  section = fs.readFileSync('layouts/body/section.html', 'utf8')
               .replace('{content}', emailBody)
 
-  THEsection = fs.readFileSync('./layouts/body/empty-section.html', 'utf8')
+  THEsection = fs.readFileSync('layouts/body/empty-section.html', 'utf8')
               .replace('{content}', emailBody)
 }
 parseSource()
 
 
 
-var dir = './generated';
+var dir = 'generated';
 
 if (!fs.existsSync(dir)){
     fs.mkdirSync(dir);
@@ -333,7 +333,7 @@ const newFile = String.prototype.concat(THEsection);
 
 var fileName = "content-" + Date.now() + ".html";
 
-fs.writeFile("./generated/" + fileName, newFile, 'utf8', function(err) {
+fs.writeFile("generated/" + fileName, newFile, 'utf8', function(err) {
   if (err) throw new Error('file not written')
   // console.log(newFile);
   console.log('file successfully written ' + fileName)
