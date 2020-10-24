@@ -2,6 +2,8 @@
 const fs = require('fs');
 const readFile = require('./parseSource');
 
+const {write} = require('./utils');
+
 'use strict';
 
 /**
@@ -132,7 +134,7 @@ if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir);
 }
 
-
+// @TODO replace it with our own method.
 const source = fs.readFileSync('./source/source.md', 'utf8');
 // console.log(source);
 
@@ -146,8 +148,14 @@ const source = fs.readFileSync('./source/source.md', 'utf8');
 //
 const just_a_guess = sd.render(source);
 var fileName = "content-" + Date.now() + ".html";
+
 fs.writeFile("./generated/xxxxxxx" + fileName, just_a_guess, 'utf8', function (err) {
   if (err) throw new Error('file not written')
   // console.log(newFile);
   console.log('file successfully written ' + fileName)
 })
+
+
+// OR you can use my new method
+
+// write("./generated/xxxxxxx" + fileName, just_a_guess)

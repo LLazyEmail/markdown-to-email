@@ -2,45 +2,6 @@
 // I know that everything is bad about this file.
 // please change that, I'll be very happy about it.
 
-// @todo add lodash here. will be pretty useful
-
-// @todo make it work
-
-
-
-const paymentMethods = {
-  STRIPE: {
-    key: 'STRIPE',
-    value: 1,
-    title: 'Stripe Payment',
-  },
-  PAYPAL: {
-    key: 'PAYPAL',
-    value: 2,
-    title: 'Paypal Payment',
-  },
-  AMAZON_PAYMENT: {
-    key: 'AMAZON_PAYMENT',
-    value: 3,
-    title: 'Amazon Payment',
-  }
-}
-
-const shippingMethods = {
-  SKYNET: 'SKYNET',
-  GDEX: 'GDEX',
-  DHL: 'DHL',
-  UPS: 'UPS',
-}
-
-// example paymentMethods.AMAZON_PAYMENT
-
-// how to make a loop?
-// Object.keys(paymentMethods).map(key => {
-//   console.log(paymentMethods[key])
-// })
-
-
 
 // @todo expand this thing
 // .replace(/^### (.*$)/gim, '<h3>$1</h3>')
