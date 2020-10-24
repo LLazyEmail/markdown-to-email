@@ -1,6 +1,9 @@
 const fs = require('fs')
 // const parseSource = require(''./parseSource.js')
 const _ = require('lodash')
+const readFile = require('./parseSource');
+
+const { REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B, REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR } = require('./constants');
 
 let header,
   footer,
@@ -10,18 +13,10 @@ let header,
   emailBody = '';
 
 
-header = fs.readFileSync(`./layouts/header.html`, 'utf8', function(err, data) {
-  if (err) throw new Error(`file not found`)
-})
-socials = fs.readFileSync(`./layouts/socials.html`, 'utf8', function(err, data) {
-  if (err) throw new Error(`file not found`)
-})
-footer = fs.readFileSync(`./layouts/footer.html`, 'utf8', function(err, data) {
-  if (err) throw new Error(`file not found`)
-})
-promo = fs.readFileSync(`./layouts/body/promo.html`, 'utf8', function(err, data) {
-  if (err) throw new Error(`file not found`)
-})
+header = readFile('header');
+socials = readFile('socials');
+footer = readFile('footer');
+promo = readFile('body/promo');
 
 // var the_list_as_it_should_be = '<ul>';
 // function the_list_as_it_should_be (array, indexes) {
@@ -34,141 +29,141 @@ promo = fs.readFileSync(`./layouts/body/promo.html`, 'utf8', function(err, data)
 const REGEX_MARKDOWN_LINK = '';
 
 function parseMarkdown(markdownText) {
-	const htmlText = markdownText
-		.replace(/^### (.*$)/gim, '<h3>$1</h3>')
-		.replace(/^## (.*$)/gim, '<h2>$1</h2>')
-		.replace(/^# (.*$)/gim, '<h1>$1</h1>')
-		.replace(/^\> (.*$)/gim, '<blockquote>$1</blockquote>')
-		.replace(/\*\*(.*)\*\*/gim, '<b>$1</b>')
-		.replace(/\*(.*)\*/gim, '<i>$1</i>')
-		.replace(/!\[(.*?)\]\((.*?)\)/gim, "<img alt='$1' src='$2' />")
-		.replace(/\[(.*?)\]\((.*?)\)/gim, "<a href='$2'>$1</a>")
-		.replace(/\n$/gim, '<br />')
+  const htmlText = markdownText
+    .replace(REGEXP_H3, '<h3>$1</h3>')
+    .replace(REGEXP_H2, '<h2>$1</h2>')
+    .replace(REGEXP_H1, '<h1>$1</h1>')
+    .replace(REGEXP_BLOCKQUOTE, '<blockquote>$1</blockquote>')
+    .replace(REGEXP_B, '<b>$1</b>')
+    .replace(REGEXP_I, '<i>$1</i>')
+    .replace(REGEXP_IMG, "<img alt='$1' src='$2' />")
+    .replace(REGEXP_A, "<a href='$2'>$1</a>")
+    .replace(REGEXP_BR, '<br />')
 
-	return htmlText.trim()
+  return htmlText.trim()
 }
 
 const Convert = new Object()
 Object.defineProperties(Convert, {
   'subject': {
-    value: function(text) {
+    value: function (text) {
       return this.replace('*|MC:SUBJECT|*', text.slice(3))
     }
   },
   'previewText': {
-    value: function(text) {
+    value: function (text) {
       return this.replace('*|MC_PREVIEW_TEXT|*', text.slice(3))
     }
   },
   'title': {
-      value: function(text) {
-        return fs.readFileSync('./layouts/typography/mainTitle.html', 'utf8').replace('{content}', text.slice(2))
-      }
+    value: function (text) {
+      return readFile('typography/mainTitle').replace('{content}', text.slice(2))
+    }
   },
   'subtitle': {
-      value: function(text) {
-        return fs.readFileSync('./layouts/typography/subtitle.html', 'utf8').replace('{content}', text.slice(3))
-      }
+    value: function (text) {
+      return readFile('typography/subtitle').replace('{content}', text.slice(3))
+    }
   },
   'paragraph': {
-      value: function(text) {
-        return fs.readFileSync('./layouts/typography/paragraph.html', 'utf8').replace('{content}', text)
-      }
+    value: function (text) {
+      return readFile('typography/paragraph').replace('{content}', text)
+    }
   },
   'image': {
-      value: function(text) {
-        const altText = text.match(/\[(.*?)\]/g)[0].replace(/[\[\]]/g, '');
-        const src = text.match(/\((.*?)\)/g)[0].replace(/[\(\)]/g, '')
+    value: function (text) {
+      const altText = text.match(/\[(.*?)\]/g)[0].replace(/[\[\]]/g, '');
+      const src = text.match(/\((.*?)\)/g)[0].replace(/[\(\)]/g, '')
 
-        return fs.readFileSync('./layouts/typography/image.html', 'utf8')
-          .replace('{src}', src)
-          .replace('{altText}', altText)
-      }
+      return readFile('typography/image')
+        .replace('{src}', src)
+        .replace('{altText}', altText)
+    }
   },
   'linebreak': {
-    value: function() {
-      return fs.readFileSync('./layouts/typography/simple-divider.html', 'utf8')
-      // return fs.readFileSync('./layouts/typography/devider.html', 'utf8')
+    value: function () {
+      return readFile('typography/simple-divider')
+      // return readFile('typography/devider')
 
     }
   },
   'separator': {
-    value: function() {
-      return fs.readFileSync('./layouts/typography/simple-divider.html', 'utf8')
+    value: function () {
+      return readFile('typography/simple-divider')
     }
   },
   'links': {
-    value: function(text) {
+    value: function (text) {
       const regex = /\[(.*?)\]\((.*?)\)/g
-      const linkTemplate = fs.readFileSync('./layouts/typography/link.html', 'utf8')
+      const linkTemplate = readFile('typography/link')
 
       let m;
 
       do {
-          m = regex.exec(text);
-          if (m) {
-              text = text.replace(m[0], linkTemplate.replace('{href}', m[2]).replace('{content}', m[1]))
-          }
+        m = regex.exec(text);
+        if (m) {
+          text = text.replace(m[0], linkTemplate.replace('{href}', m[2]).replace('{content}', m[1]))
+        }
       } while (m);
 
       return text
     }
   },
   'sponsorship': {
-    value: function(text) {
+    value: function (text) {
       const regex = /\[(.*?)\]/g
       const [src, href, content] = text.match(regex).map(match => match.replace(/[\[\]]/g, ''))
 
-      return fs.readFileSync('./layouts/body/promo.html', 'utf8')
-                .replace('{src}', src)
-                .replace('{href}', href)
-                .replace('{content}', content)
+      return readFile('body/promo')
+        .replace('{src}', src)
+        .replace('{href}', href)
+        .replace('{content}', content)
     }
   },
   'bold': {
-    value: function(text) {
+    value: function (text) {
       const regex = /\*\*(.*?)\*\*/g
 
       let m;
 
       do {
-          m = regex.exec(text);
+        m = regex.exec(text);
 
-          // console.log(m);
+        // console.log(m);
 
-          if (m) {
-
-
-
-              text = text.replace(m[0], '<strong style="font-weight: bolder;">' + m[1] + '</strong>')
+        if (m) {
 
 
 
+          text = text.replace(m[0], '<strong style="font-weight: bolder;">' + m[1] + '</strong>')
 
-          }
+
+
+
+        }
       } while (m);
 
       return text
     }
   },
   'italic': {
-    value: function(text) {
+    value: function (text) {
       const regex = /\_(.*?)\_/g
 
       let m;
 
       do {
-          m = regex.exec(text);
-          if (m) {
-              text = text.replace(m[0], '<em>' + m[1] + '</em>')
-          }
+        m = regex.exec(text);
+        if (m) {
+          text = text.replace(m[0], '<em>' + m[1] + '</em>')
+        }
       } while (m);
 
       return text
     }
   },
   'htmlComments': {
-    value: function(text) {
+    value: function (text) {
       const regex = /<!--(([\r\n]|.)*?)-->/g
       const a = text.match(regex);
 
@@ -180,28 +175,28 @@ Object.defineProperties(Convert, {
     }
   },
   'lists': {
-    value: function(text) {
+    value: function (text) {
       console.log('ooops, looks like Eugene forget something :(');
       // const regex =
     }
   }
 })
 
-function combineCombineReplaceMeLater(string, value){
+function combineCombineReplaceMeLater(string, value) {
   return string += value;
 }
 
 function parseSource() {
   let thisSource =
-  Convert.htmlComments(fs.readFileSync('./source/source.md', 'utf8'))
+    Convert.htmlComments(fs.readFileSync('source/source.md', 'utf8'))
       .trim()
       .split('\n')
       .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
 
 
 
-// ------------------------ move out ----------------
-// @todo list, lists, listItems - names sucks
+  // ------------------------ move out ----------------
+  // @todo list, lists, listItems - names sucks
 
   // Detect indexes of list items (via <li>)
   // yes, feel free to change the name later
@@ -215,8 +210,8 @@ function parseSource() {
 
   // the_list_as_it_should_be([], array_of_indexes_that_containing_list_items)
 
-  const list = fs.readFileSync('./layouts/typography/list.html', 'utf8')
-  const listItem = fs.readFileSync('./layouts/typography/listItem.html', 'utf8')
+  const list = readFile('typography/list')
+  const listItem = readFile('typography/listItem')
 
 
 
@@ -226,14 +221,14 @@ function parseSource() {
 
   // Replace text with html tags
   array_of_indexes_that_containing_list_items.map(listItemIndex => {
-      var somethng = listItem.replace('{content}', thisSource[listItemIndex].slice(2));
-      // console.log(somethng)
-      thisSource[listItemIndex] = listItem.replace('{content}', thisSource[listItemIndex].slice(2))
+    var somethng = listItem.replace('{content}', thisSource[listItemIndex].slice(2));
+    // console.log(somethng)
+    thisSource[listItemIndex] = listItem.replace('{content}', thisSource[listItemIndex].slice(2))
 
   })
 
-// console.log('---------')
-// console.log(thisSource);
+  // console.log('---------')
+  // console.log(thisSource);
 
   // console.log(lists);
 
@@ -241,11 +236,11 @@ function parseSource() {
   //
   // console.log(list);
 
- //
-// ------------------------ move out ----------------
+  //
+  // ------------------------ move out ----------------
 
-// LINE IS AN ITEM OF OUR ARRAY WITH CONTENT INSIDE.
-// AS NOBODY WANTED TO DO A BETTER STRUCTURE - WE HAVE AN ARRAY OF STRINGS THAT FUCKING MA HEAD
+  // LINE IS AN ITEM OF OUR ARRAY WITH CONTENT INSIDE.
+  // AS NOBODY WANTED TO DO A BETTER STRUCTURE - WE HAVE AN ARRAY OF STRINGS THAT FUCKING MA HEAD
   thisSource.forEach(line => {
 
 
@@ -259,7 +254,7 @@ function parseSource() {
     // console.log(tag)
 
 
-    switch(tag) {
+    switch (tag) {
       case '#!':
         header = Convert.subject.call(header, line)
         break
@@ -290,13 +285,13 @@ function parseSource() {
       // console.log(line);
       // console.log('----------') ; break
       case 'XY':
-      // console.log(line);
-      // console.log('----------') ;
+        // console.log(line);
+        // console.log('----------') ;
 
-      emailBody = combineCombineReplaceMeLater(emailBody, Convert.separator() + line + Convert.separator());
-      break
+        emailBody = combineCombineReplaceMeLater(emailBody, Convert.separator() + line + Convert.separator());
+        break
       case '--':
-      emailBody = combineCombineReplaceMeLater(emailBody, line + Convert.separator()); break;
+        emailBody = combineCombineReplaceMeLater(emailBody, line + Convert.separator()); break;
       default:
         line = Convert.links(line)
         // emailBody += Convert.paragraph(line)
@@ -306,20 +301,20 @@ function parseSource() {
     }
   })
 
-  section = fs.readFileSync('./layouts/body/section.html', 'utf8')
-              .replace('{content}', emailBody)
+  section = readFile('body/section')
+    .replace('{content}', emailBody)
 
-  THEsection = fs.readFileSync('./layouts/body/empty-section.html', 'utf8')
-              .replace('{content}', emailBody)
+  THEsection = readFile('body/empty-section', 'utf8')
+    .replace('{content}', emailBody)
 }
 parseSource()
 
 
 
-var dir = './generated';
+var dir = 'generated';
 
-if (!fs.existsSync(dir)){
-    fs.mkdirSync(dir);
+if (!fs.existsSync(dir)) {
+  fs.mkdirSync(dir);
 }
 
 
@@ -333,7 +328,7 @@ const newFile = String.prototype.concat(THEsection);
 
 var fileName = "content-" + Date.now() + ".html";
 
-fs.writeFile("./generated/" + fileName, newFile, 'utf8', function(err) {
+fs.writeFile("generated/" + fileName, newFile, 'utf8', function (err) {
   if (err) throw new Error('file not written')
   // console.log(newFile);
   console.log('file successfully written ' + fileName)

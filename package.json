@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "parse-full": "node index-full.js",
-    "parse": "node index.js",
-    "build:small": "node index.js",
-    "guess": "node just-a-guess.js"
+    "parse-full": "node ./src/index-full.js",
+    "parse": "node ./src/index.js",
+    "build:small": "node ./src/index.js",
+    "guess": "node ./src/just-a-guess.js"
   },
   "author": "hirdbluebird",
   "license": "ISC",

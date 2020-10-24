@@ -74,13 +74,25 @@ const shippingMethods = {
 //   {regex: /<\/blockquote><blockquote>/g, replacement: '\n'}                          // fix extra blockquote
 // ];
 
-this.rules =  [
-  {
-    regex: REGEX_HEADLINE, replacement: header
-  },
-}
+// this.rules = [
+//   {
+//     regex: REGEX_HEADLINE, replacement: header
+//   },
+// ]
 
 
 /// @TODO add const for newsletter_sponsor_link
 // for hackernoon_logo_path
 // for HN socials, with images and shit
+
+const REGEXP_H3 = /^### (.*$)/gim;
+const REGEXP_H2 = /^## (.*$)/gim;
+const REGEXP_H1 = /^# (.*$)/gim;
+const REGEXP_BLOCKQUOTE = /^\> (.*$)/gim;
+const REGEXP_B = /\*\*(.*)\*\*/gim;
+const REGEXP_I = /\*(.*)\*/gim;
+const REGEXP_IMG = /!\[(.*?)\]\((.*?)\)/gim;
+const REGEXP_A = /\[(.*?)\]\((.*?)\)/gim;
+const REGEXP_BR = /\n$/gim;
+
+module.export = { REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B, REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR };
