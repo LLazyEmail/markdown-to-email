@@ -31,7 +31,7 @@ function Slimdown() {
   this.rules = [
     { regex: /(#+)(.*)/g, replacement: header },                                         // headers
     { regex: /!\[([^\[]+)\]\(([^\)]+)\)/g, replacement: image }, // image
-    { regex: /\[([^\[]+)\]\(([^\)]+)\)/g, replacement: '<a href=\'$2\'>$1</a>' },        // hyperlink
+    { regex: /\[([^\[]+)\]\(([^\)]+)\)/g, replacement:  link},        // hyperlink
     { regex: /(\*\*|__)(.*?)\1/g, replacement: '<strong>$2</strong>' },                  // bold
     // { regex: /(\*|_)(.*?)\1/g, replacement: '<em>$2</em>' },    @FIX insirting it into alt                         // emphasis
     { regex: /\~\~(.*?)\~\~/g, replacement: '<del>$1</del>' },                           // del
@@ -62,7 +62,11 @@ function Slimdown() {
     });
     return text.trim();
   };
-
+  function link(text, title, href){
+    return readFile('typography/link').replace("{content}", title.trim()).replace("{href}", href.trim())
+  }
+  '<a href=\'$2\'>$1</a>'
+  
   function para(text, line) {
     debugger;
     var trimmed = line.trim();
