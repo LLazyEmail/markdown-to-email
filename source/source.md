@@ -8,7 +8,7 @@ With that being said, let us take you through the biggest reasons why [bad data]
 
 
 
-![alt_text](images/image1.gif "image_tooltip")
+![alt_text](images/image1.gif)
  \
 https://media3.giphy.com/media/3orieQAGU6rCIj75Ha/giphy.gif?cid=ecf05e475d3981fd19f9d478365abc19c0df9d9c3481f7d9&rid=giphy.gif
 
