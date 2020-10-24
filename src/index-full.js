@@ -1,5 +1,6 @@
 const fs = require('fs')
 // const parseSource = require(''./parseSource.js')
+const readFile = require('./parseSource');
 
 let header,
   footer,
@@ -9,19 +10,10 @@ let header,
   emailBody = '';
 
 
-header = fs.readFileSync(`./layouts/header.html`, 'utf8', function(err, data) {
-  if (err) throw new Error(`file not found`)
-})
-socials = fs.readFileSync(`./layouts/socials.html`, 'utf8', function(err, data) {
-  if (err) throw new Error(`file not found`)
-})
-footer = fs.readFileSync(`./layouts/footer.html`, 'utf8', function(err, data) {
-  if (err) throw new Error(`file not found`)
-})
-promo = fs.readFileSync(`./layouts/body/promo.html`, 'utf8', function(err, data) {
-  if (err) throw new Error(`file not found`)
-})
-
+header = readFile('header');
+socials = readFile('socials');
+footer = readFile('footer');
+promo = readFile('body/promo');
 
 const Convert = new Object()
 Object.defineProperties(Convert, {
@@ -37,17 +29,17 @@ Object.defineProperties(Convert, {
   },
   'title': {
       value: function(text) {
-        return fs.readFileSync('./layouts/typography/mainTitle.html', 'utf8').replace('{content}', text.slice(2))
+        return readFile('typography/mainTitle').replace('{content}', text.slice(2))
       }
   },
   'subtitle': {
       value: function(text) {
-        return fs.readFileSync('./layouts/typography/subtitle.html', 'utf8').replace('{content}', text.slice(3))
+        return readFile('typography/subtitle').replace('{content}', text.slice(3))
       }
   },
   'paragraph': {
       value: function(text) {
-        return fs.readFileSync('./layouts/typography/paragraph.html', 'utf8').replace('{content}', text)
+        return readFile('typography/paragraph').replace('{content}', text)
       }
   },
   'image': {
@@ -55,20 +47,20 @@ Object.defineProperties(Convert, {
         const altText = text.match(/\[(.*?)\]/g)[0].replace(/[\[\]]/g, '');
         const src = text.match(/\((.*?)\)/g)[0].replace(/[\(\)]/g, '')
 
-        return fs.readFileSync('./layouts/typography/image.html', 'utf8')
+        return readFile('typography/image')
           .replace('{src}', src)
           .replace('{altText}', altText)
       }
   },
   'linebreak': {
     value: function() {
-      return fs.readFileSync('./layouts/typography/divider.html', 'utf8')
+      return readFile('typography/divider')
     }
   },
   'links': {
     value: function(text) {
       const regex = /\[(.*?)\]\((.*?)\)/g
-      const linkTemplate = fs.readFileSync('./layouts/typography/link.html', 'utf8')
+      const linkTemplate = readFile('typography/link')
 
       let m;
 
@@ -87,7 +79,7 @@ Object.defineProperties(Convert, {
       const regex = /\[(.*?)\]/g
       const [src, href, content] = text.match(regex).map(match => match.replace(/[\[\]]/g, ''))
 
-      return fs.readFileSync('./layouts/body/promo.html', 'utf8')
+      return readFile('body/promo')
                 .replace('{src}', src)
                 .replace('{href}', href)
                 .replace('{content}', content)
@@ -145,7 +137,7 @@ Object.defineProperties(Convert, {
 })
 
 function parseSource() {
-  let thisSource = Convert.htmlComments(fs.readFileSync('./source/source.md', 'utf8'))
+  let thisSource = Convert.htmlComments(fs.readFileSync('source/source.md', 'utf8'))
       .trim()
       .split('\n')
       .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
@@ -158,8 +150,8 @@ function parseSource() {
     return accumulator
   }, [])
 
-  const list = fs.readFileSync('./layouts/typography/list.html', 'utf8')
-  const listItem = fs.readFileSync('./layouts/typography/listItem.html', 'utf8')
+  const list = readFile('typography/list')
+  const listItem = readFile('typography/listItem')
 
   // Replace text with html tags
   lists.map(listItemIndex => {
@@ -201,14 +193,14 @@ function parseSource() {
     }
   })
 
-  section = fs.readFileSync('./layouts/body/section.html', 'utf8')
+  section = readFile('body/section')
               .replace('{content}', emailBody)
 }
 parseSource()
 
 
 
-var dir = './generated';
+var dir = 'generated';
 
 if (!fs.existsSync(dir)){
     fs.mkdirSync(dir);
@@ -217,7 +209,7 @@ if (!fs.existsSync(dir)){
 
 const newFile = String.prototype.concat(header, promo, section, promo, socials, footer);
 
-fs.writeFile('./generated/email.html', newFile, 'utf8', function(err) {
+fs.writeFile('generated/email.html', newFile, 'utf8', function(err) {
   if (err) throw new Error('file not written')
   // console.log(newFile);
   console.log('file successfully written')
