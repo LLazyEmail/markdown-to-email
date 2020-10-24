@@ -1,3 +1,41 @@
+<!-- Copy and paste the converted output. -->
+
+<!-----
+NEW: Check the "Suppress top comment" option to remove this info from the output.
+
+Conversion time: 1 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β29
+* Sat Oct 24 2020 03:29:30 GMT-0700 (PDT)
+* Source doc: Flatfile #3: How Data Quality Issues Separate You From Your Perfect Data
+* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
+
+----->
+
+
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 5.</p>
+<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+
+<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
+<a href="#gdcalert2">alert2</a>
+<a href="#gdcalert3">alert3</a>
+<a href="#gdcalert4">alert4</a>
+<a href="#gdcalert5">alert5</a>
+
+<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
+
+
+
 # How Data Quality Issues Separate You From Your Perfect Data
 
 Did you know that 80% of all digital [data is incorrect](https://hackernoon.com/why-data-quality-is-key-to-successful-ml-ops-e61v3tle) according to Observe Point? Indeed, with data becoming a major buzzword, data quality has been a point of interest for most data specialists. Superior-quality data is the ultimate driver of [revenue for modern businesses](https://hackernoon.com/how-the-heck-did-robinhood-become-so-popular-a-data-driven-analysis-3rj3u2y). Good data quality can generate unprecedented lead conversion rates, account-based success, and closed-won deals. Poor quality, on the contrary, can significantly [drop the ROI](https://hackernoon.com/is-your-organization-truly-data-driven-a-5-point-checklist-na4z3y5q) of a company’s [CRM and marketing](https://hackernoon.com/our-outreach-setup-that-grew-an-e-commerce-store-to-25m-arr-how-we-did-it-vgcg3bbc) automation investment.
@@ -6,6 +44,7 @@ With that being said, let us take you through the biggest reasons why [bad data]
 
 
 
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image1.gif "image_tooltip")
@@ -41,6 +80,9 @@ Inconsistent data formatting is another issue that [haunts most organizations](h
 
 
 
+<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
 ![alt_text](images/image3.gif "image_tooltip")
  \
 https://media3.giphy.com/media/mG1MxDDEMSAVkF7da3/giphy.gif?cid=ecf05e47t79mz5376a9tysck7l1l9qxdkf5zlen3096xsjrz&rid=giphy.gif
@@ -52,6 +94,7 @@ Finally, it is pointless to carry out data analysis or interacting with users ba
 
 
 
+<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image4.jpg "image_tooltip")

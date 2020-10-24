@@ -74,7 +74,11 @@ const shippingMethods = {
 //   {regex: /<\/blockquote><blockquote>/g, replacement: '\n'}                          // fix extra blockquote
 // ];
 
-
+this.rules =  [
+  {
+    regex: REGEX_HEADLINE, replacement: header
+  },
+}
 
 
 /// @TODO add const for newsletter_sponsor_link
