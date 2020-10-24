@@ -86,10 +86,14 @@ function Slimdown() {
   }
   function image(text, alt, src) {
     const parsedSrc = src.trim().match(/^(?<src>(.*?))\s?((?<quote>")(?<tooltip>.*?)\k<quote>)?$/) || [];
-    if (parsedSrc && parsedSrc.groups && parsedSrc.groups.src)
+    if (parsedSrc && parsedSrc.groups && parsedSrc.groups.src){
       return readFile('typography/image')
-        .replace('{src}', parsedSrc.groups.src)
-        .replace('{altText}', alt)
+      .replace('{src}', parsedSrc.groups.src)
+      .replace('{altText}', alt)
+    }
+    return readFile('typography/image')
+    .replace('{src}', '#')
+    .replace('{altText}', alt)
   }
 
   function header(text, chars, content) {
