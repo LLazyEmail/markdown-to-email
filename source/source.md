@@ -26,11 +26,6 @@ But [who is to blame](https://hackernoon.com/how-to-segment-shopify-customer-bas
 *   Duplicates are also common when you are fetching users’ feedback. It’s almost the same as the first one. Data duplicates are also common when you are asking [for users’ feedback](https://hackernoon.com/how-ai-and-big-data-are-changing-customers-experience-rd2i3y2b). Like your employees, users are mistake-prone, although the reasons may vary.
 
 
-##
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image2.png "image_tooltip")
 
 
@@ -68,9 +63,6 @@ On a similar note, we’d like to thank [Flatfile.io](https://bit.ly/3kPloFW) fo
 
 [Got a tech story to share with our readers?](http://auth.hackernoon.com/) Everything you've ever wanted to know about how to get published on Hacker Noon - [get it here](https://hackernoon.com/how-to-get-published-on-hacker-noon-a-step-by-step-guide-zcp36rz).
 
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image5.gif "image_tooltip")

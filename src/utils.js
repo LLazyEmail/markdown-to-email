@@ -72,7 +72,7 @@ const Converter = {
 // module.export = Converter;
 
 
-function write(filename, content) = {
+function write(filename, content) {
     fs.writeFile(fileName, content, 'utf8', function (err) {
     if (err) throw new Error('file not written')
         // console.log(newFile);
