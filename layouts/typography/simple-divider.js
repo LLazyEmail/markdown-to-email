@@ -1,3 +1,1 @@
-module.exports = `<br>
-<br>
-`;
+module.exports = `<br><br>`;
