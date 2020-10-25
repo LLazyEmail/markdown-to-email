@@ -1,5 +1,5 @@
 const {
-    REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B, REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR
+  REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B, REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR
 } = require('./constants');
 
 const fs = require('fs');
@@ -55,7 +55,7 @@ const Converter = {
     value: 9,
     title: 'xxx',
   }
-  
+
 }
 
 
@@ -72,14 +72,24 @@ const Converter = {
 // module.export = Converter;
 
 
-function write(filename, content) {
-    fs.writeFile(fileName, content, 'utf8', function (err) {
+function write(fileName, content) {
+  fs.writeFile(`generated/${fileName}`, content, 'utf8', function (err) {
     if (err) throw new Error('file not written')
-        // console.log(newFile);
-        console.log('file successfully written ' + fileName)
-    })
+    // console.log(newFile);
+    console.log('file successfully written ' + fileName)
+  })
 }
 
-module.export = {
-    write
+function readSourceFile(fileName) {
+  return fs.readFileSync(fileName, 'utf8');
+}
+
+function readFile(fileName) {
+  return require(`../layouts/${fileName}`);
+}
+
+module.exports = {
+  write,
+  readFile,
+  readSourceFile
 }
