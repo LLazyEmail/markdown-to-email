@@ -1,49 +1,10 @@
-<!-- Copy and paste the converted output. -->
-
 <!-----
-NEW: Check the "Suppress top comment" option to remove this info from the output.
-
-Conversion time: 3.064 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β29
-* Thu Oct 15 2020 04:53:05 GMT-0700 (PDT)
-* Source doc: Consumer Insights: The Secret Weapon
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/18.10/image7.gif
 
 https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/october/18.10/image8.png
 
 ----->
-
-
-
 
 # Consumer Insights: The Secret Weapon
 
@@ -73,7 +34,7 @@ There are various places on your website that reference the customer. But our pl
 
 
 
-    If you haven’t seen those omnipresent boxes, you live under a rock. Let’s face the elephant in the room: it’s not the greatest insight-generator, since few people bother to fill those forms out. But if you have a decent amount of traffic, you can obtain quite a few valuable comments. As you keep track of those comments, you will begin seeing trends in the type of comments your customers are asking. This source does call for some analysis, but the bonus will be impressive.
+If you haven’t seen those omnipresent boxes, you live under a rock. Let’s face the elephant in the room: it’s not the greatest insight-generator, since few people bother to fill those forms out. But if you have a decent amount of traffic, you can obtain quite a few valuable comments. As you keep track of those comments, you will begin seeing trends in the type of comments your customers are asking. This source does call for some analysis, but the bonus will be impressive.
 
 2. **Customer service chat transcripts**
 
