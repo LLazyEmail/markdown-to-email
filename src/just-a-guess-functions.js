@@ -3,7 +3,6 @@ const readFile = require('./parseSource');
 function link(text, title, href) {
   return readFile('typography/link').replace("{content}", title.trim()).replace("{href}", href.trim())
 }
-'<a href=\'$2\'>$1</a>'
 
 function para(text, line) {
   debugger;

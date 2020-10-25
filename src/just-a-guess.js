@@ -99,7 +99,7 @@ if (!fs.existsSync(dir)) {
 }
 
 // @TODO replace it with our own method.
-const source = fs.readFileSync('./source/source.md', 'utf8');
+const source = fs.readFileSync('source/source.md', 'utf8');
 // console.log(source);
 
 

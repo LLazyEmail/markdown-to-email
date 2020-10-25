@@ -9,6 +9,7 @@
     "parse": "node ./src/index.js",
     "build:small": "node ./src/index.js",
     "guess": "node ./src/just-a-guess.js",
+    "parser": "node ./src/parser.js",
     "lint": "eslint ./src --fix --ignore-pattern \"./package.json\" "
   },
   "author": "hirdbluebird",
