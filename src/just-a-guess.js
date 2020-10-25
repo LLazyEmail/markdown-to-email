@@ -1,6 +1,7 @@
 // from https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
 const fs = require('fs');
-const { header, image, link, ulList, olList, blockquote, para } = require('./just-a-guess-functions')
+const { header, image, link, ulList, olList, blockquote, para } = require('./just-a-guess-functions');
+const readFile = require('./parseSource');
 const { write } = require('./utils');
 
 'use strict';
@@ -27,12 +28,33 @@ const { write } = require('./utils');
  * License: MIT
  */
 function Slimdown() {
-
+  // this.rules = [
+  //   { regex: /(#+)(.*)/g, replacement: header },                                         // headers
+  //   { regex: /!\[([^\[]+)\]\(([^\)]+)\)/g, replacement: image }, // image
+  //   { regex: /\[([^\[]+)\]\(([^\)]+)\)/g, replacement: link },        // hyperlink
+  //   { regex: /(\*\*|__)(.*?)\1/g, replacement: '<strong>$2</strong>' },                  // bold
+  //   // { regex: /(\*|_)(.*?)\1/g, replacement: '<em>$2</em>' },    @FIX insirting it into alt                         // emphasis
+  //   { regex: /\~\~(.*?)\~\~/g, replacement: '<del>$1</del>' },                           // del
+  //   { regex: /\:\"(.*?)\"\:/g, replacement: '<q>$1</q>' },                               // quote
+  //   { regex: /`(.*?)`/g, replacement: '<code>$1</code>' },                               // inline code
+  //   { regex: /\n\*(.*)/g, replacement: ulList },                                         // ul lists
+  //   { regex: /\n[0-9]+\.(.*)/g, replacement: olList },                                   // ol lists
+  //   { regex: /\n(&gt;|\>)(.*)/g, replacement: blockquote },                              // blockquotes
+  //   { regex: /\n-{5,}/g, replacement: '\n<hr />' },                                      // horizontal rule
+  //   { regex: /\n([^\n]+)\n/g, replacement: para },                                       // add paragraphs
+  //   { regex: /<\/ul>\s?<ul>/g, replacement: '' },                                        // fix extra ul
+  //   { regex: /<\/ol>\s?<ol>/g, replacement: '' },                                        // fix extra ol
+  //   { regex: /<\/blockquote><blockquote>/g, replacement: '\n' }                          // fix extra blockquote
+  // ];
   // Rules
   this.rules = [
+    // {regex: /\w(\n)*?/g, replacement: (text) => {
+    //   console.log("new line");
+    //   return '\n<br>'
+    // } },
     { regex: /(#+)(.*)/g, replacement: header },                                         // headers
     { regex: /!\[([^\[]+)\]\(([^\)]+)\)/g, replacement: image }, // image
-    { regex: /\[([^\[]+)\]\(([^\)]+)\)/g, replacement: link },        // hyperlink
+    { regex: /\[([^\[]+)\]\(([^\)]+)\)/g, replacement: link },   // hyperlink
     { regex: /(\*\*|__)(.*?)\1/g, replacement: '<strong>$2</strong>' },                  // bold
     // { regex: /(\*|_)(.*?)\1/g, replacement: '<em>$2</em>' },    @FIX insirting it into alt                         // emphasis
     { regex: /\~\~(.*?)\~\~/g, replacement: '<del>$1</del>' },                           // del
@@ -44,9 +66,11 @@ function Slimdown() {
     { regex: /\n-{5,}/g, replacement: '\n<hr />' },                                      // horizontal rule
     { regex: /\n([^\n]+)\n/g, replacement: para },                                       // add paragraphs
     { regex: /<\/ul>\s?<ul>/g, replacement: '' },                                        // fix extra ul
-    { regex: /<\/ol>\s?<ol>/g, replacement: '' },                                        // fix extra ol
+    { regex: /<\/ol>\s?<ol>/g, replacement: '' },      
+    { regex: /<\/div>\n?<br>\n*?<ul/g, replacement: '<\/div>\n<ul'},                     
     { regex: /<\/blockquote><blockquote>/g, replacement: '\n' }                          // fix extra blockquote
   ];
+
 
   // Add a rule.
   this.addRule = function (regex, replacement) {
