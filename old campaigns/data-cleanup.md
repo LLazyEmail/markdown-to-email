@@ -1,31 +1,3 @@
-<!-- Copy and paste the converted output. -->
-
-<!-----
-NEW: Check the "Suppress top comment" option to remove this info from the output.
-
-Conversion time: 2.743 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β29
-* Sun Oct 11 2020 00:14:35 GMT-0700 (PDT)
-* Source doc: Flatfile #2: Brace Yourself - Data Cleanup Is Coming
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
-
-WARNING:
-You have 2 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
------>
-
 # Brace Yourself - Data Cleanup Is Coming
 
 It goes without saying that data is the cornerstone of any data analysis. As for data, there are millions of things that can misfire. It can be messy arrangement, unnecessary extra spaces, incorrect formatting, duplications – the list goes on. And before you know it, data analysis can become your personal nightmare. Just think about it: data specialists spend up to 80% of their time organizing and cleansing data, and the other 20% analyzing the data itself. It’s quite a counter-effective ratio, isn’t it?

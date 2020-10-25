@@ -1,27 +1,3 @@
-<!-- Copy and paste the converted output. -->
-
-<!-----
-NEW: Check the "Suppress top comment" option to remove this info from the output.
-
-Conversion time: 2.25 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β29
-* Sun Oct 11 2020 00:02:15 GMT-0700 (PDT)
-* Source doc: Sponsorship Newsletter
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
-
 # Cautious Optimism Visible In Companies As Countries Begin Flattening The Curve
 
 As a child, you never knew when the ice cream truck would arrive. They didn’t have schedules. But, a few tolls of that familiar bell ringing, and you’d know that the truck had entered your neighborhood.

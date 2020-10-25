@@ -1,27 +1,4 @@
-<!-- Copy and paste the converted output. -->
-
-<!-----
-NEW: Check the "Suppress top comment" option to remove this info from the output.
-
-Conversion time: 0.636 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β29
-* Sun Oct 11 2020 00:16:26 GMT-0700 (PDT)
-* Source doc: Can We Make Data Tidy
-* Tables are currently converted to HTML tables.
------>
-
-**Can We Make Data Tidy?**
+## Can We Make Data Tidy?
 
 Imagine: You are going to sit down with a newly-fetched [data set](https://hackernoon.com/rare-datasets-for-computer-vision-every-machine-learning-expert-must-work-with-2ddaf52ad862), excited about the insights it will bring you and then you find out it is no use. If you’ve been there, then you know for sure what an [untidy dataset](https://hackernoon.com/tagged/dataset) is.
 

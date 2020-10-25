@@ -1,27 +1,3 @@
-<!-- Copy and paste the converted output. -->
-
-<!-----
-NEW: Check the "Suppress top comment" option to remove this info from the output.
-
-Conversion time: 2.093 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β29
-* Sun Oct 11 2020 00:11:47 GMT-0700 (PDT)
-* Source doc: Flatfile #3: How Data Quality Issues Separate You From Your Perfect Data
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
-
 # How Data Quality Issues Separate You From Your Perfect Data
 
 Did you know that 80% of all digital data is incorrect according to Observe Point? Indeed, with data becoming a major buzzword, data quality has been a point of interest for most data specialists. Superior-quality data is the ultimate driver of [revenue for modern businesses](https://hackernoon.com/how-the-heck-did-robinhood-become-so-popular-a-data-driven-analysis-3rj3u2y). Good data quality can generate unprecedented lead conversion rates, account-based success, and closed-won deals. Poor quality, on the contrary, can significantly drop the ROI of a company’s CRM and marketing automation investment.
