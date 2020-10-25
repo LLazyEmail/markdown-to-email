@@ -16,7 +16,12 @@ function para(text, line) {
 }
 
 function ulList(text, item) {
-  return '\n<ul>\n\t<li>' + item.trim() + '</li>\n</ul>';
+  console.log("item", item);
+  console.log("call");
+  const listItem = readFile('typography/listItem').replace('{content}', item.trim())
+  return readFile('typography/list').replace('{content}', listItem);
+
+  // return '\n<ul>\n\t<li>' + item.trim() + '</li>\n</ul>';
 }
 
 function olList(text, item) {

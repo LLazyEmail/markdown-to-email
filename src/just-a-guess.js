@@ -48,10 +48,10 @@ function Slimdown() {
   // ];
   // Rules
   this.rules = [
-    {regex: /[w0-9]\n/g, replacement: () => {
-      console.log();
-      return readFile('typography/simple-divider')
-    } },
+    // {regex: /\w(\n)*?/g, replacement: (text) => {
+    //   console.log("new line");
+    //   return '\n<br>'
+    // } },
     { regex: /(#+)(.*)/g, replacement: header },                                         // headers
     { regex: /!\[([^\[]+)\]\(([^\)]+)\)/g, replacement: image }, // image
     { regex: /\[([^\[]+)\]\(([^\)]+)\)/g, replacement: link },   // hyperlink

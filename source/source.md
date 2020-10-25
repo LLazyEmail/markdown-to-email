@@ -19,6 +19,7 @@ Automated testing is an indispensable technique due to the following reasons:
 
 
 *   Faster Feedback
+*   Faster Feedback2
 
 AT is a magic bullet for validation during different cycles of a software project. It facilitates communication among specialists and Product Owners and helps with fixing potential glitches.
 
