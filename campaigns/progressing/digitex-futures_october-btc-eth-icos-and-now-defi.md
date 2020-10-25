@@ -1,40 +1,8 @@
-<!-- Copy and paste the converted output. -->
-
-<!-----
-NEW: Check the "Suppress top comment" option to remove this info from the output.
-
-Conversion time: 0.433 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β29
-* Sun Oct 25 2020 05:57:55 GMT-0700 (PDT)
-* Source doc: BTC, ETH, ICOs, and now - DeFi: How Far Have We Come
------>
-
-
-AD Copy - Pool DGTX on Uniswap & Earn Rewards
-
-AD Link: [https://bit.ly/3knayr3](https://bit.ly/3knayr3)
-
-AD Logo: https://1drv.ms/u/s!AtXY62dbAD3K6X8Obh8rc0HBZiE9?e=OgX4cs
-
-
 # BTC, ETH, ICOs, and now - DeFi: How Far Have We Come?
 
 [Bitcoin](https://hackernoon.com/tagged/bitcoin) caught the attention of technologists and anarchists alike following the 2008 Global recession. [Ethereum](https://hackernoon.com/tagged/ethereum) took Bitcoin’s ‘Digital Gold’ status and gave us smart contracts. [ICOs](https://hackernoon.com/tagged/ico) took smart contracts and gave us supply chain management solutions for problems that we never knew existed.
 
 A crypto-winter later, just when we thought that:
-
-
 
 *   Altcoin season was over
 *   Decentralized Exchanges were dead in the water
@@ -69,8 +37,6 @@ Finally, on UniSwap, if you own UNI tokens, you have a say in the governance str
 
 ## Impact of UniSwap on The Crypto-verse
 
-
-
 *   Centralized exchanges are, for the first time, facing an existential crisis - and they face regulators
 *   Token issuers have started offering attractive liquidity mining fees for pooling funds in their token
 *   It is easier to pump and dump in the crypto-verse than ever before
@@ -80,8 +46,6 @@ Finally, on UniSwap, if you own UNI tokens, you have a say in the governance str
 
 
 ## A Word of the Wise
-
-
 
 *   D.Y.O.R - Do Your Own Research. Do not chase tokens that came up yesterday. They might be gone tomorrow
 *   Pooling in top hundred by trade volume coins are safer (as safe as crypto-investments can be) than those outside of the top thousand
