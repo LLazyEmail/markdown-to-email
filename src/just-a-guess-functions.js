@@ -11,17 +11,12 @@ function para(text, line) {
   if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
     return '\n' + line + '\n';
   }
-  // return '\n<p>' + trimmed + '</p>\n';
   return readFile('typography/paragraph').replace('{content}', trimmed);
 }
 
 function ulList(text, item) {
-  console.log("item", item);
-  console.log("call");
   const listItem = readFile('typography/listItem').replace('{content}', item.trim())
   return readFile('typography/list').replace('{content}', listItem);
-
-  // return '\n<ul>\n\t<li>' + item.trim() + '</li>\n</ul>';
 }
 
 function olList(text, item) {
@@ -45,26 +40,16 @@ function image(text, alt, src) {
 
 function header(text, chars, content) {
   var level = chars.length;
-  // console.log(content.trim());
-  // console.log(readFile('typography/mainTitle').replace('{content}', content.trim()));
   switch (level) {
     case 1:
       return readFile('typography/mainTitle').replace('{content}', content.trim());
-      break;
     case 2:
+    case 3:
       return readFile('typography/subtitle').replace('{content}', content.trim());
     default:
       break;
   }
-
-  // return '<h' + level + '>' + content.trim() + '</h' + level + '>';
 }
-
-// function subtitle (text, chars, content) {
-//   var level = chars.length;
-//   return readFile('typography/subtitle').replace('{content}', content.trim());
-//   // return '<h' + level + '>' + content.trim() + '</h' + level + '>';
-// }
 
 module.exports = {
   link, para, ulList, olList, blockquote, image, header

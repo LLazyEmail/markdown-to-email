@@ -66,7 +66,8 @@ function Slimdown() {
     { regex: /\n-{5,}/g, replacement: '\n<hr />' },                                      // horizontal rule
     { regex: /\n([^\n]+)\n/g, replacement: para },                                       // add paragraphs
     { regex: /<\/ul>\s?<ul>/g, replacement: '' },                                        // fix extra ul
-    { regex: /<\/ol>\s?<ol>/g, replacement: '' },                                        // fix extra ol
+    { regex: /<\/ol>\s?<ol>/g, replacement: '' },      
+    { regex: /<\/div>\n?<br>\n*?<ul/g, replacement: '<\/div>\n<ul'},                     
     { regex: /<\/blockquote><blockquote>/g, replacement: '\n' }                          // fix extra blockquote
   ];
 
