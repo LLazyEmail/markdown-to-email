@@ -23,7 +23,7 @@ Without further ado, let’s dive into our top picks for DevOps team success.
 You’d say, a revenue-first mindset won’t get you the probity medal. However, it’s not our point. In fact, profitability should be your top of mind not for the sake of money only. 
 
 
-Successful DevOps teams are more likely to tie their tech projects to revenue, mainly because it’s the #1 metric for their performance. As a result, teams that are business aligned tend to prioritize projects with business management and use business and tech scorecards to measure success. Therefore, just a simple shift from an activity-driven mindset to a revenue-first approach can guarantee a positive change in your team productivity and overall result.
+Successful DevOps teams are more likely to tie their tech projects to revenue, mainly because it’s the 1️⃣ metric for their performance. As a result, teams that are business aligned tend to prioritize projects with business management and use business and tech scorecards to measure success. Therefore, just a simple shift from an activity-driven mindset to a revenue-first approach can guarantee a positive change in your team productivity and overall result.
 
 
 (We’re not implying that you should ditch the customer-centric action, don’t compare apples and pears)
