@@ -7,17 +7,16 @@ We tried to create our own wheel, then we failed.
 Arthur get bored trying to fix it and make it work properly.
 So he just decide to google a working version that can solve his problems.
 
-I find this link https://gist.github.com/jbroadway/2836900
-then this link https://gist.github.com/budparr/112f08a3033dd878d0e271e2af61faef
-and then I added javascript into my google Search https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
+- I find this link https://gist.github.com/jbroadway/2836900
+- then this link https://gist.github.com/budparr/112f08a3033dd878d0e271e2af61faef
+- and then I added javascript into my google Search https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
 
 
 
 `yarn parse`
 
 
-Great Online Preview tool
-https://dillinger.io/
+Great Online Preview tool https://dillinger.io/
 
 
 ## Syntax
@@ -92,13 +91,13 @@ The parser reads source file from `source/source.md` and based on opening tag re
 
 
 Links
-https://codepen.io/rh/pen/BoyNdy
-https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
-https://github.com/Chalarangelo/parse-md-js/blob/master/parsemd.js
-https://www.bigomega.dev/markdown-parser
-https://gist.github.com/budparr/112f08a3033dd878d0e271e2af61faef
-https://gist.github.com/jbroadway/2836900
-https://stackoverflow.com/questions/47016770/replace-markdown-characters-with-regex
+- https://codepen.io/rh/pen/BoyNdy
+- https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
+- https://github.com/Chalarangelo/parse-md-js/blob/master/parsemd.js
+- https://www.bigomega.dev/markdown-parser
+- https://gist.github.com/budparr/112f08a3033dd878d0e271e2af61faef
+- https://gist.github.com/jbroadway/2836900
+- https://stackoverflow.com/questions/47016770/replace-markdown-characters-with-regex
 
 
 
