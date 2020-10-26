@@ -1,14 +1,14 @@
 const fs = require('fs')
 // const parseSource = require(''./parseSource.js')
 const _ = require('lodash')
-const readFile = require('./parseSource');
+const readFile = require('../parseSource');
 
 const { REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B, 
     REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR,
     REGEXP_HTML_COMMENTS, REGEXP_CUSTOM_SPONSORSHIP, REGEXP_CUSTOM_LINK, REGEXP_CUSTOM_MEME_IMAGE 
-} = require('./constants');
+} = require('../constants');
 
-const { write, isFolderExists } = require('./utils');
+const { write, isFolderExists } = require('../utils');
 
 let header,
   footer,
