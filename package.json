@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "parse-full": "node ./src/old/index-full.js",
-    "parse": "node ./src/old/index.js",
     "guess": "node ./src/just-a-guess.js",
     "parser": "node ./src/parser.js",
     "parse-second-way": "node ./src/parse-second-way",
     "lint": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
-    "build:small": "node ./src/index.js"
+    "build:small": "node ./src/index.js",
+    "parse-full": "node ./src/old/index-full.js",
+    "parse": "node ./src/old/index.js"
   },
   "author": "hirdbluebird",
   "license": "ISC",
