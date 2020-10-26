@@ -56,4 +56,15 @@ const REGEXP_IMG = /!\[(.*?)\]\((.*?)\)/gim;
 const REGEXP_A = /\[(.*?)\]\((.*?)\)/gim;
 const REGEXP_BR = /\n$/gim;
 
-module.export = { REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B, REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR };
+//2nd batch, related to custom markdown tags
+const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
+const REGEXP_CUSTOM_SPONSORSHIP = /\[(.*?)\]/g;
+const REGEXP_CUSTOM_LINK = /\[(.*?)\]\((.*?)\)/g;
+const REGEXP_CUSTOM_MEME_IMAGE = /\((.*?)\)/g; // @TODO or use gim as for other cases that we have?
+// const REGEXP_CUSTOM_
+
+module.export = { 
+    REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, 
+    REGEXP_B, REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR,
+    REGEXP_HTML_COMMENTS, REGEXP_CUSTOM_SPONSORSHIP, REGEXP_CUSTOM_LINK, REGEXP_CUSTOM_MEME_IMAGE
+ };

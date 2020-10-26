@@ -3,7 +3,10 @@ const fs = require('fs')
 const _ = require('lodash')
 const readFile = require('./parseSource');
 
-const { REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B, REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR } = require('./constants');
+const { REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B, 
+    REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR,
+    REGEXP_HTML_COMMENTS, REGEXP_CUSTOM_SPONSORSHIP, REGEXP_CUSTOM_LINK, REGEXP_CUSTOM_MEME_IMAGE 
+} = require('./constants');
 
 let header,
   footer,
@@ -45,16 +48,16 @@ function parseMarkdown(markdownText) {
 
 const Convert = new Object()
 Object.defineProperties(Convert, {
-  'subject': {
-    value: function (text) {
-      return this.replace('*|MC:SUBJECT|*', text.slice(3))
-    }
-  },
-  'previewText': {
-    value: function (text) {
-      return this.replace('*|MC_PREVIEW_TEXT|*', text.slice(3))
-    }
-  },
+//   'subject': {
+//     value: function (text) {
+//       return this.replace('*|MC:SUBJECT|*', text.slice(3))
+//     }
+//   },
+//   'previewText': {
+//     value: function (text) {
+//       return this.replace('*|MC_PREVIEW_TEXT|*', text.slice(3))
+//     }
+//   },
   'title': {
     value: function (text) {
       return readFile('typography/mainTitle').replace('{content}', text.slice(2))
