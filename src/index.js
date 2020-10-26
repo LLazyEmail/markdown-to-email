@@ -99,7 +99,11 @@ Object.defineProperties(Convert, {
   },
   'links': {
     value: function (text) {
+
+
       const regex = /\[(.*?)\]\((.*?)\)/g
+
+
       const linkTemplate = readFile('typography/link')
 
       let m;
@@ -116,8 +120,12 @@ Object.defineProperties(Convert, {
   },
   'sponsorship': {
     value: function (text) {
+
+
       const regex = /\[(.*?)\]/g
-      const [src, href, content] = text.match(regex).map(match => match.replace(/[\[\]]/g, ''))
+
+
+      const [ src, href, content ] = text.match(regex).map(match => match.replace(/[\[\]]/g, ''))
 
       return readFile('body/promo')
         .replace('{src}', src)
@@ -127,6 +135,7 @@ Object.defineProperties(Convert, {
   },
   'bold': {
     value: function (text) {
+
       const regex = /\*\*(.*?)\*\*/g
 
       let m;
@@ -153,6 +162,8 @@ Object.defineProperties(Convert, {
   },
   'italic': {
     value: function (text) {
+
+
       const regex = /\_(.*?)\_/g
 
       let m;
@@ -169,7 +180,11 @@ Object.defineProperties(Convert, {
   },
   'htmlComments': {
     value: function (text) {
+
+
       const regex = /<!--(([\r\n]|.)*?)-->/g
+
+
       const a = text.match(regex);
 
       for (match in a) {
@@ -178,12 +193,6 @@ Object.defineProperties(Convert, {
 
       return text;
     }
-  },
-  'lists': {
-    value: function (text) {
-      console.log('ooops, looks like Eugene forget something :(');
-      // const regex =
-    }
   }
 })
 
@@ -191,7 +200,12 @@ function combineCombineReplaceMeLater(string, value) {
   return string += value;
 }
 
+
+//@todo can we move it out?
 function parseSource() {
+
+
+
   let thisSource =
     Convert.htmlComments(fs.readFileSync('source/source-for-index.md', 'utf8'))
       .trim()
@@ -306,14 +320,18 @@ function parseSource() {
     }
   })
 
-  section = readFile('body/section')
-    .replace('{content}', emailBody)
+//   section = readFile('body/section')
+//     .replace('{content}', emailBody)
 
   THEsection = readFile('body/empty-section', 'utf8')
     .replace('{content}', emailBody)
 }
+
+
 parseSource()
 
+
+// === Replace with methods from utils
 
 
 var dir = 'generated';
@@ -335,3 +353,7 @@ fs.writeFile("generated/" + fileName, newFile, 'utf8', function (err) {
 
 
 // write("generated/" + fileName, newFile)
+
+
+
+// === Replace with methods from utils

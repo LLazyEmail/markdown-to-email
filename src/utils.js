@@ -73,7 +73,11 @@ const Converter = {
 
 
 function write(fileName, content) {
-  fs.writeFile(`generated/${fileName}`, content, 'utf8', function (err) {
+
+    var dir = 'generated';
+    var _path = dir + '/' + fileName; //@todo it's not an ideal thing
+
+  fs.writeFile(_path, content, 'utf8', function (err) {
     if (err) throw new Error('file not written')
     // console.log(newFile);
     console.log('file successfully written ' + fileName)
