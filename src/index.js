@@ -8,6 +8,8 @@ const { REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B,
     REGEXP_HTML_COMMENTS, REGEXP_CUSTOM_SPONSORSHIP, REGEXP_CUSTOM_LINK, REGEXP_CUSTOM_MEME_IMAGE 
 } = require('./constants');
 
+const { write, isFolderExists } = require('./utils');
+
 let header,
   footer,
   socials,
@@ -191,7 +193,7 @@ function combineCombineReplaceMeLater(string, value) {
 
 function parseSource() {
   let thisSource =
-    Convert.htmlComments(fs.readFileSync('source/source.md', 'utf8'))
+    Convert.htmlComments(fs.readFileSync('source/source-for-index.md', 'utf8'))
       .trim()
       .split('\n')
       .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
@@ -319,13 +321,7 @@ var dir = 'generated';
 if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir);
 }
-
-
-// const newFile = String.prototype.concat(header, promo, section, promo, socials, footer);
-// const newFile = String.prototype.concat(section);
-
-// console.log(parseMarkdown(THEsection)); process.exit(1);
-// const just_a_guess = parseMarkdown(THEsection);
+// isFolderExists();
 
 const newFile = String.prototype.concat(THEsection);
 
@@ -338,8 +334,4 @@ fs.writeFile("generated/" + fileName, newFile, 'utf8', function (err) {
 })
 
 
-// fs.writeFile("./generated/xxxxxxx" + fileName, just_a_guess, 'utf8', function(err) {
-//   if (err) throw new Error('file not written')
-//   // console.log(newFile);
-//   console.log('file successfully written ' + fileName)
-// })
+// write("generated/" + fileName, newFile)

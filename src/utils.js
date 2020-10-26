@@ -88,8 +88,15 @@ function readFile(fileName) {
   return require(`../layouts/${fileName}`);
 }
 
+function isFolderExists(){
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir);
+    }
+}
+
 module.exports = {
   write,
   readFile,
-  readSourceFile
+  readSourceFile,
+  isFolderExists
 }
