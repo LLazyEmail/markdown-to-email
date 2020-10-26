@@ -50,6 +50,16 @@ function header(text, chars, content) {
   }
 }
 
+function sponsorship(text){
+  const regex = /\[(.*?)\]/g;
+  const [src, href, content] = text.match(regex).map(match => match.replace(/[\[\]]/g, ''));
+
+  return readFile('body/promo')
+            .replace('{src}', src)
+            .replace('{href}', href)
+            .replace('{content}', content)
+}
+
 module.exports = {
-  link, para, ulList, olList, blockquote, image, header
+  link, para, ulList, olList, blockquote, image, header, sponsorship
 }

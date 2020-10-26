@@ -4,7 +4,8 @@
   "description": "Translate 'Markdown' Syntax into HTML For Email Newsletters",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest ./src/tests",
+    "test:watch": "jest --watch ./src/tests",
     "guess": "node ./src/just-a-guess.js",
     "parser": "node ./src/parser.js",
     "parse-second-way": "node ./src/parse-second-way",
