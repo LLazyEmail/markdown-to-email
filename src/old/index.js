@@ -3,9 +3,9 @@ const fs = require('fs')
 const _ = require('lodash')
 const readFile = require('../parseSource');
 
-// const { REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B, 
+// const { REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B,
 //     REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR,
-//     REGEXP_HTML_COMMENTS, REGEXP_CUSTOM_SPONSORSHIP, REGEXP_CUSTOM_LINK, REGEXP_CUSTOM_MEME_IMAGE 
+//     REGEXP_HTML_COMMENTS, REGEXP_CUSTOM_SPONSORSHIP, REGEXP_CUSTOM_LINK, REGEXP_CUSTOM_MEME_IMAGE
 // } = require('../constants');
 
 const { write, isFolderExists } = require('../utils');
@@ -32,21 +32,6 @@ promo = readFile('body/promo');
 // }
 
 const REGEX_MARKDOWN_LINK = '';
-
-// function parseMarkdown(markdownText) {
-//   const htmlText = markdownText
-//     .replace(REGEXP_H3, '<h3>$1</h3>')
-//     .replace(REGEXP_H2, '<h2>$1</h2>')
-//     .replace(REGEXP_H1, '<h1>$1</h1>')
-//     .replace(REGEXP_BLOCKQUOTE, '<blockquote>$1</blockquote>')
-//     .replace(REGEXP_B, '<b>$1</b>')
-//     .replace(REGEXP_I, '<i>$1</i>')
-//     .replace(REGEXP_IMG, "<img alt='$1' src='$2' />")
-//     .replace(REGEXP_A, "<a href='$2'>$1</a>")
-//     .replace(REGEXP_BR, '<br />')
-
-//   return htmlText.trim()
-// }
 
 const Convert = new Object()
 Object.defineProperties(Convert, {

@@ -1,6 +1,6 @@
 // from https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
 const fs = require('fs');
-const { header, image, link, ulList, olList, blockquote, para } = require('./just-a-guess-functions');
+const { header, image, link, ulList, olList, blockquote, paragraphWrapper } = require('./just-a-guess-functions');
 const readFile = require('./parseSource');
 const { write } = require('./utils');
 
@@ -28,24 +28,7 @@ const { write } = require('./utils');
  * License: MIT
  */
 function Slimdown() {
-  // this.rules = [
-  //   { regex: /(#+)(.*)/g, replacement: header },                                         // headers
-  //   { regex: /!\[([^\[]+)\]\(([^\)]+)\)/g, replacement: image }, // image
-  //   { regex: /\[([^\[]+)\]\(([^\)]+)\)/g, replacement: link },        // hyperlink
-  //   { regex: /(\*\*|__)(.*?)\1/g, replacement: '<strong>$2</strong>' },                  // bold
-  //   // { regex: /(\*|_)(.*?)\1/g, replacement: '<em>$2</em>' },    @FIX insirting it into alt                         // emphasis
-  //   { regex: /\~\~(.*?)\~\~/g, replacement: '<del>$1</del>' },                           // del
-  //   { regex: /\:\"(.*?)\"\:/g, replacement: '<q>$1</q>' },                               // quote
-  //   { regex: /`(.*?)`/g, replacement: '<code>$1</code>' },                               // inline code
-  //   { regex: /\n\*(.*)/g, replacement: ulList },                                         // ul lists
-  //   { regex: /\n[0-9]+\.(.*)/g, replacement: olList },                                   // ol lists
-  //   { regex: /\n(&gt;|\>)(.*)/g, replacement: blockquote },                              // blockquotes
-  //   { regex: /\n-{5,}/g, replacement: '\n<hr />' },                                      // horizontal rule
-  //   { regex: /\n([^\n]+)\n/g, replacement: para },                                       // add paragraphs
-  //   { regex: /<\/ul>\s?<ul>/g, replacement: '' },                                        // fix extra ul
-  //   { regex: /<\/ol>\s?<ol>/g, replacement: '' },                                        // fix extra ol
-  //   { regex: /<\/blockquote><blockquote>/g, replacement: '\n' }                          // fix extra blockquote
-  // ];
+
   // Rules
   this.rules = [
     // {regex: /\w(\n)*?/g, replacement: (text) => {
@@ -64,10 +47,10 @@ function Slimdown() {
     { regex: /\n[0-9]+\.(.*)/g, replacement: olList },                                   // ol lists
     { regex: /\n(&gt;|\>)(.*)/g, replacement: blockquote },                              // blockquotes
     { regex: /\n-{5,}/g, replacement: '\n<hr />' },                                      // horizontal rule
-    { regex: /\n([^\n]+)\n/g, replacement: para },                                       // add paragraphs
+    { regex: /\n([^\n]+)\n/g, replacement: paragraphWrapper },                                       // add paragraphs
     { regex: /<\/ul>\s?<ul>/g, replacement: '' },                                        // fix extra ul
-    { regex: /<\/ol>\s?<ol>/g, replacement: '' },      
-    { regex: /<\/div>\n?<br>\n*?<ul/g, replacement: '<\/div>\n<ul'},                     
+    { regex: /<\/ol>\s?<ol>/g, replacement: '' },
+    { regex: /<\/div>\n?<br>\n*?<ul/g, replacement: '<\/div>\n<ul'},
     { regex: /<\/blockquote><blockquote>/g, replacement: '\n' }                          // fix extra blockquote
   ];
 
@@ -76,10 +59,17 @@ function Slimdown() {
   this.addRule = function (regex, replacement) {
     regex.global = true;
     regex.multiline = false;
-    this.rules.push({ regex: regex, replacement: replacement });
+    // @TODO while this part working fine,
+    // I still think we can just make it better in terms of our own needs
+    this.rules.push({
+      regex: regex,
+      replacement: replacement
+    });
   };
 
   // Render some Markdown into HTML.
+  // @TODO we definitely must to explore this method and advance it for our purposes.
+  // it's works, but we cant play around it.
   this.render = function (text) {
     text = '\n' + text + '\n';
     this.rules.forEach(function (rule) {
@@ -102,18 +92,10 @@ if (!fs.existsSync(dir)) {
 const source = fs.readFileSync('source/source.md', 'utf8');
 // console.log(source);
 
-
-//
-//
-// sd.render()
-//
-//
-//
-//
-const just_a_guess = sd.render(source);
+const content = sd.render(source);
 var fileName = "content-" + Date.now() + ".html";
 
-fs.writeFile("./generated/xxxxxxx" + fileName, just_a_guess, 'utf8', function (err) {
+fs.writeFile("./generated/xxxxxxx" + fileName, content, 'utf8', function (err) {
   if (err) throw new Error('file not written')
   // console.log(newFile);
   console.log('file successfully written ' + fileName)
@@ -121,5 +103,4 @@ fs.writeFile("./generated/xxxxxxx" + fileName, just_a_guess, 'utf8', function (e
 
 
 // OR you can use my new method
-
 // write("./generated/xxxxxxx" + fileName, just_a_guess)
