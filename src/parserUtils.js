@@ -1,5 +1,9 @@
 const { readFile } = require('./utils');
 
+function replaceMarkdown(regexp, callback, sourceContent) {
+  return sourceContent.content = sourceContent.content.replace(regexp, callback);
+}
+
 function replaceHeaders(sourceContent) {
   function header(text, chars, content) {
     var level = chars.length;
@@ -41,23 +45,23 @@ function replaceLinks(sourceContent) {
   sourceContent.content = sourceContent.content.replace(/\[([^\[]+)\]\(([^\)]+)\)/g, link);
 }
 
-function replaceBolds(sourceContent){
+function replaceBolds(sourceContent) {
   sourceContent.content = sourceContent.content.replace(/(\*\*|__)(.*?)\1/g, '<strong>$2</strong>');
 }
 
-function replaceDels(sourceContent){
+function replaceDels(sourceContent) {
   sourceContent.content = sourceContent.content.replace(/\~\~(.*?)\~\~/g, '<del>$1</del>');
 }
 
-function replaceQ(sourceContent){
+function replaceQ(sourceContent) {
   sourceContent.content = sourceContent.content.replace(/\:\"(.*?)\"\:/g, '<q>$1</q>');
 }
 
-function replaceCode(sourceContent){
+function replaceCode(sourceContent) {
   sourceContent.content = sourceContent.content.replace(/`(.*?)`/g, '<code>$1</code>');
 }
 
-function replaceULLists(sourceContent){
+function replaceULLists(sourceContent) {
   function ulList(text, item) {
     const listItem = readFile('typography/listItem').replace('{content}', item.trim())
     return readFile('typography/list').replace('{content}', listItem);
@@ -66,7 +70,7 @@ function replaceULLists(sourceContent){
   sourceContent.content = sourceContent.content.replace(/\n\*(.*)/g, ulList);
 }
 
-function replaceOLLIsts(sourceContent){
+function replaceOLLIsts(sourceContent) {
   function olList(text, item) {
     return '\n<ol>\n\t<li>' + item.trim() + '</li>\n</ol>';
   }
@@ -74,18 +78,18 @@ function replaceOLLIsts(sourceContent){
   sourceContent.content = sourceContent.content.replace(/\n[0-9]+\.(.*)/g, olList);
 }
 
-function replaceBlockquotes(sourceContent){
+function replaceBlockquotes(sourceContent) {
   function blockquote(text, tmp, item) {
     return '\n<blockquote>' + item.trim() + '</blockquote>';
   }
   sourceContent.content = sourceContent.content.replace(/\n(&gt;|\>)(.*)/g, blockquote);
 }
 
-function replaceHRS(sourceContent){
+function replaceHRS(sourceContent) {
   sourceContent.content = sourceContent.content.replace(/\n-{5,}/g, '\n<hr />');
 }
 
-function replacePairs(sourceContent){
+function replacePairs(sourceContent) {
   function pair(text, line) {
     debugger;
     var trimmed = line.trim();
@@ -98,20 +102,20 @@ function replacePairs(sourceContent){
   sourceContent.content = sourceContent.content.replace(/\n([^\n]+)\n/g, pair);
 }
 
-function replaceEmptyULOLTags(sourceContent){
+function replaceEmptyULOLTags(sourceContent) {
   sourceContent.content = sourceContent.content.replace(/<\/ul>\s?<ul>/g, '');
   sourceContent.content = sourceContent.content.replace(/<\/ol>\s?<ol>/g, '');
 }
 
-function removeBRS(sourceContent){
+function removeBRS(sourceContent) {
   sourceContent.content = sourceContent.content.replace(/<\/div>\n?<br>\n*?<ul/g, '<\/div>\n<ul');
 }
 
-function removeBlockquotes(sourceContent){
+function removeBlockquotes(sourceContent) {
   sourceContent.content = sourceContent.content.replace(/<\/blockquote><blockquote>/g, '\n');
 }
 
-function replaceEMS(sourceContent){
+function replaceEMS(sourceContent) {
   sourceContent.content = sourceContent.content.replace(/(\*|_)(.*?)\1/g, '<em>$2</em>');
 }
 
@@ -131,5 +135,6 @@ module.exports = {
   replaceEmptyULOLTags,
   removeBRS,
   removeBlockquotes,
-  replaceEMS
+  replaceEMS,
+  replaceMarkdown
 }

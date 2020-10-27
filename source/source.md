@@ -52,3 +52,5 @@ Investing in the DevOps tools will not only make the team more effective, but it
 There's no panacea for successful DevOps team building, but the process itself is definitely easier than quantum physics. The majority of our tips and tricks dispensed above are of common-sense variety. In practice, our secrets call for good old-fashioned hard work and a sprinkle of knowledge.
 
 To deliver top-notch results, employees must be well-settled, teams well-structured, and objectives outlined based on business priorities. And it’s not enough to recruit the right people, retention and training are equally important. Overall, it takes a solid mix of all these components to build a team that truly thrives.
+
+~[src][href][Hello Man]
