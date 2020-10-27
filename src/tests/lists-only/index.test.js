@@ -1,10 +1,10 @@
-// const { write, readSourceFile } = require("../../utils");
+const { write, readSourceFile } = require("../../utils");
 // const { sponsorship } = require("../../just-a-guess-functions");
 // const { REGEXP_SPONSORSHIP } = require("../../constants");
 
-// const { replaceMarkdown } = require("../../parserUtils");
+const { replaceMarkdown } = require("../../parserUtils");
 
-// describe("testing sponsorship", () => {
+describe("testing sponsorship", () => {
 //   it("renders sponsorship", async () => {
 //     let markdown = await readSourceFile("src/tests/sponsorship/sponsorship.md");
 //     let parsedContent = {
@@ -15,4 +15,4 @@
 //     await write(fileName, parsedContent.content, "src/tests/sponsorship");
 //     expect(1).toBe(1);
 //   });
-// });
+});
