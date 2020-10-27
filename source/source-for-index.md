@@ -1,73 +1,67 @@
-# Magic Behind Test Automation
-
-Today most companies continue to demand faster releases and innovative software to stand up to the dynamic market scenario and steep competition.
-
-With companies leaning on DevOps and agile philosophy of software development, tech testing constitutes a crucial part of it. The once-popular manual testing doesn’t do the trick for some modern connected devices and intricate architecture applications. Can a software test another software? Yes. Let us tell you about automation testing.
 
 
-## What Is Automation Testing
+[demand faster releases](https://hackernoon.com/improving-software-development-productivity-16163tr4) 
 
-Automation testing (AT or TA) is exactly what the name implies. Instead of a human sitting computer-hunched, the process in question is, well, automated. From a technical standpoint, it is the act of assuring software quality by running tests automatically, managing test data, and analyzing test results. This is usually done by writing test scripts or utilizing any automation testing tool. Overall, TA is used to automatize monotonous tasks and other testing tasks which are beyond human capabilities.
+ [steep competition](https://hackernoon.com/technical-huddle-an-easy-way-to-turn-challenges-into-success-bjm3tew)
 
+[agile philosophy](https://hackernoon.com/tagged/agile\) 
 
-### Why Test Automation: Benefits
+ [software development](https://hackernoon.com/tagged/programming)
 
-Developers are often reluctant to switch to automated processes, haunted by fear and uncertainty. However, the benefits beat the costs in the long run.
+ [manual testing](https://hackernoon.com/functional-programming-techniques-in-java-with-examples-8k1m3w85) 
 
-Automated testing is an indispensable technique due to the following reasons:
+ [modern connected devices](https://hackernoon.com/tagged/iot)
 
+[architecture applications](https://www.hackernoon.com/how-developers-should-invest-their-time-2e1b3uww)
 
+ [automation testing](https://hackernoon.com/how-to-win-the-race-against-toctou-vulnerabilities-in-c-and-c-te193wc3)
 
-*   Faster Feedback
-*   Faster Feedback2
+[computer-hunched](https://hackernoon.com/40-thought-provoking-software-engineering-quotes-xp2z3tdr)
 
-AT is a magic bullet for validation during different cycles of a software project. It facilitates communication among specialists and Product Owners and helps with fixing potential glitches.
+[assuring software quality](https://hackernoon.com/5-easy-ways-software-development-managers-can-turn-their-1-on-1s-reports-into-success-w3173wxy) 
 
+[managing test data](https://hackernoon.com/how-to-tell-if-your-code-actually-sucks-qx1u3tz5)
 
+ [writing test scripts](https://hackernoon.com/equivalence-class-partitioning-and-boundary-value-analysis-in-black-box-testing-znh3umt) 
 
-*   It Improves Precision
+[testers make it break](https://hackernoon.com/12-ways-to-create-the-best-working-environments-for-devs-561j3t13)
 
-You should never underestimate the human factor. Even the most meticulous tester is mistake-prone while performing humdrum manual testing. Minimized human intervention in test automation contributes to more accuracy compared with testing applications manually. Automated tests follow the same procedure precisely and never forget to register detailed results.
+ [automatize monotonous tasks](https://hackernoon.com/machine-learning-in-static-code-analysis-0t293w3p) 
 
+ [beyond human capabilities](https://hackernoon.com/3-employee-performance-software-to-enhance-productivity-x3223ws8)
 
+ [reluctant to switch to automated processes](https://hackernoon.com/how-to-extend-your-devops-strategy-for-success-in-the-cloud-col3wee?source=rss)
 
-*   Fast-track Results
+ [helps with fixing potential glitches](https://hackernoon.com/fine-tune-your-product-in-no-time-8fw3tc8)
 
-Thanks to the immediate implementation of AT, priceless hours are saved even for elaborate and huge systems. This also means that tests can be executed on a regular basis, delivering accelerated results with no struggle and time wastes.
+ [never underestimate the human factor](https://hackernoon.com/6-driver-navigator-patterns-that-make-pair-programming-more-productive-532g3z5l)
 
+ [test automation contributes](https://hackernoon.com/the-difference-between-ci-and-cd-in-devops-bc2z3uae) 
 
+ [on a regular basis](https://hackernoon.com/how-is-a-dev-team-structured-ip1x3tim?source=rss)
 
-*   Cost-effectiveness
+ [high-performance processes](https://hackernoon.com/solid-software-design-principles-to-help-you-become-a-better-developer-v13j3woa) 
 
-Regardless of the initial funding, automated testing allows companies to save for a rainy day. Thanks to the sharp drop in the time needed to run tests, automation testing adds to high-performance processes and pares down the amount of bug fixing post-release.
+ [bug fixing post-release](https://hackernoon.com/shadow-mode-the-dark-side-of-outsourcing-that-nobody-tells-you-about-hv153uee)
 
+ [higher your test coverage is](https://hackernoon.com/best-15-mobile-testing-tools-2020-edition-ac123um6) 
 
+ [Automated testing doesn’t call for a massive team](https://hackernoon.com/life-changing-tips-for-productive-interaction-with-ukrainian-developers-ijp3tsi)
 
-*   Higher Test Coverage
+ [bring down the number of test cases run manually](https://hackernoon.com/equivalence-class-partitioning-and-boundary-value-analysis-in-black-box-testing-znh3umt) 
 
-The more tests are executed, the higher your test coverage is (flawless logic, right?). With that being said, maximized test coverage is no longer a far-fetched dream with the implementation of automated tests. Automated testing doesn’t call for a massive team, so more tests can be executed pertaining to an application.
+ [dealing with test cases](https://hackernoon.com/top-security-penetration-testing-companies-yk103u1f) 
 
-However, we are not talking about eliminating manual testing. Ideally, you should combine manual and automated tests, as certain apps may be too complex and not suitable for automated testing (besides, you don’t want a machine to evaluate usability and look-and-feel).  After all, the whole point of automated testing is to bring down the number of test cases run manually.  This brings us to our next part.
+ [packed with data](https://hackernoon.com/why-data-quality-is-key-to-successful-ml-ops-e61v3tle)
 
+ [ramp up your performance](https://hackernoon.com/real-devices-vs-emulators-vs-simulators-for-mobile-app-testing-myp3ue7)
 
-## When To Automate Your testing
+[reducing overall test execution time](https://hackernoon.com/7-ways-to-improve-testing-efficiency-in-application-development-o0143tt8) 
 
-The whole point of using TA depends on the number of test rounds. Thus, it’s better to leave tests that need to be run a few times for manual testing. But if you are dealing with test cases that are run frequently and packed with data, then automated testing can ramp up your performance.
+ [increase the productiveness](https://hackernoon.com/how-to-lead-free-remote-usability-tests-in-4-simple-steps-kz3l3t84) 
 
-You can leverage your test coverage powers by automating:
+ [accelerate execution cycles](https://hackernoon.com/automation-testing-with-selenium-cucumber-tool-and-testng-q8e3uu4)
 
+[minimize human efforts](https://hackernoon.com/what-is-abusability-testing-and-why-is-it-necessary-k1q3wib?source=rss)
 
-
-*   Repeated tests
-*   Error-prone tests
-*   Tests filled with data
-*   Time-wasting tests
-*   Regression testing
-*   Advanced GUI testing
-
-To cut it short, AT is great for reducing overall test execution time and overall cost of the project.
-
-
-## Bottom Line
-
-Test automation is a surefire tool to increase the productiveness and number of tests covered. It came on stage to accelerate execution cycles, rid testers of mundane tasks, minimize human efforts, and guarantee instant feedback. However, automated tests are not universally valid for all kinds of tasks. Sometimes, you are better off letting QA specialists do their job.
+ [better off letting QA specialists do their job](https://hackernoon.com/5-qa-mistakes-to-avoid-i0e3ti7)

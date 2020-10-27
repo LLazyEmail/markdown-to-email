@@ -12,7 +12,7 @@
     "lint": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
     "build:small": "node ./src/index.js",
     "parse-full": "node ./src/old/index-full.js",
-    "parse": "node ./src/old/index.js"
+    "parz": "node ./src/old/index.js"
   },
   "author": "hirdbluebird",
   "license": "ISC",

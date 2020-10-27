@@ -18,10 +18,10 @@ let header,
   emailBody = '';
 
 
-header = readFile('header');
-socials = readFile('socials');
-footer = readFile('footer');
-promo = readFile('body/promo');
+// header = readFile('header');
+// socials = readFile('socials');
+// footer = readFile('footer');
+// promo = readFile('body/promo');
 
 // var the_list_as_it_should_be = '<ul>';
 // function the_list_as_it_should_be (array, indexes) {
@@ -72,14 +72,14 @@ Object.defineProperties(Convert, {
   },
   'linebreak': {
     value: function () {
-      return readFile('typography/simple-divider')
+    //   return readFile('typography/simple-divider')
       // return readFile('typography/devider')
 
     }
   },
   'separator': {
     value: function () {
-      return readFile('typography/simple-divider')
+    //   return readFile('typography/simple-divider')
     }
   },
   'links': {
@@ -97,6 +97,7 @@ Object.defineProperties(Convert, {
         m = regex.exec(text);
         if (m) {
           text = text.replace(m[0], linkTemplate.replace('{href}', m[2]).replace('{content}', m[1]))
+          console.log(text);
         }
       } while (m);
 
@@ -260,10 +261,10 @@ function parseSource() {
 
     switch (tag) {
       case '#!':
-        header = Convert.subject.call(header, line)
+        // header = Convert.subject.call(header, line)
         break
       case '#~':
-        header = Convert.previewText.call(header, line)
+        // header = Convert.previewText.call(header, line)
         break
       case '# ':
         // emailBody += Convert.title(line)
