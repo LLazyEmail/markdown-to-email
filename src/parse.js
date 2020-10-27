@@ -38,6 +38,7 @@ async function parse() {
   let parsedContent = {
     content: markdown,
   };
+  replaceMarkdown(REGEXP_HTML_COMMENTS, '', parsedContent);
 
   replaceMarkdown(REGEXP_HEADER, header, parsedContent);
   replaceMarkdown(REGEXP_IMAGE, image, parsedContent);
@@ -50,7 +51,7 @@ async function parse() {
   replaceMarkdown(REGEXP_OL_LIST, olList, parsedContent);
   replaceMarkdown(REGEXP_BLOCKQUOTE, blockquote, parsedContent);
   replaceMarkdown(REGEXP_HR, "\n<hr />", parsedContent);
-  replaceMarkdown(REGEXP_PARAGRAPH, paragraphWrapper, parsedContent); // works badly
+  replaceMarkdown(REGEXP_PARAGRAPH, paragraphWrapper, parsedContent);
   replaceMarkdown(REGEXP_EMPTY_UL, "", parsedContent);
   replaceMarkdown(REGEXP_EMPTY_OL, "", parsedContent);
   replaceMarkdown(REGEXP_BR, "</div>\n<ul", parsedContent);
@@ -58,7 +59,7 @@ async function parse() {
   replaceMarkdown(REGEXP_EM, "<em>$2</em>", parsedContent);
 
   replaceMarkdown(REGEXP_SPONSORSHIP, sponsorship, parsedContent);
-  replaceMarkdown(REGEXP_HTML_COMMENTS, '', parsedContent);
+  
 
   const fileName = "parsed-content-second-" + Date.now() + ".html";
   await write(fileName, parsedContent.content);

@@ -24,7 +24,7 @@ function paragraphWrapper(text, line) {
 
   // var htmlBlock = readFile('typography/paragraph').replace('{content}', trimmed) + '\n FUCK YOU \n';
   // return htmlBlock;
-  return readFile("typography/paragraph").replace("{content}", trimmed);
+  return readFile("typography/paragraph").replace("{content}", trimmed) + '\n';
 }
 
 function ulList(text, item) {
