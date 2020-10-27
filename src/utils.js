@@ -77,8 +77,6 @@ const Converter = {
 
 async function write(fileName, content, dir = "generated") {
   var _path = dir + "/" + fileName; //@todo it's not an ideal thing
-  console.log("**************content");
-  console.log(content);
   await fs.writeFile(_path, content, "utf8", function (err) {
     if (err) throw new Error("file not written");
     // console.log(newFile);

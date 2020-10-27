@@ -94,6 +94,8 @@ function sponsorship(text) {
 }
 
 module.exports = {
+  replaceMarkdown,
+
   link,
   paragraphWrapper,
   ulList,
@@ -102,5 +104,4 @@ module.exports = {
   image,
   header,
   sponsorship,
-  replaceMarkdown,
 };

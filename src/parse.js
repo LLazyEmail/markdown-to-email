@@ -23,18 +23,18 @@ const {
   REGEXP_OL_LIST,
   REGEXP_BLOCKQUOTE,
   REGEXP_HR,
-  REGEXP_PAIR,
+  REGEXP_PARAGRAPH,
   REGEXP_EMPTY_UL,
   REGEXP_EMPTY_OL,
   REGEXP_BR,
   REGEXP_EMPTY_BLOCKQUOTE,
   REGEXP_EM,
   REGEXP_SPONSORSHIP,
+  REGEXP_HTML_COMMENTS
 } = require("./constants");
 
 async function parse() {
   let markdown = await readSourceFile("source/source.md");
-  console.log(markdown);
   let parsedContent = {
     content: markdown,
   };
@@ -50,7 +50,7 @@ async function parse() {
   replaceMarkdown(REGEXP_OL_LIST, olList, parsedContent);
   replaceMarkdown(REGEXP_BLOCKQUOTE, blockquote, parsedContent);
   replaceMarkdown(REGEXP_HR, "\n<hr />", parsedContent);
-  replaceMarkdown(REGEXP_PAIR, paragraphWrapper, parsedContent);
+  replaceMarkdown(REGEXP_PARAGRAPH, paragraphWrapper, parsedContent); // works badly
   replaceMarkdown(REGEXP_EMPTY_UL, "", parsedContent);
   replaceMarkdown(REGEXP_EMPTY_OL, "", parsedContent);
   replaceMarkdown(REGEXP_BR, "</div>\n<ul", parsedContent);
@@ -58,6 +58,7 @@ async function parse() {
   replaceMarkdown(REGEXP_EM, "<em>$2</em>", parsedContent);
 
   replaceMarkdown(REGEXP_SPONSORSHIP, sponsorship, parsedContent);
+  replaceMarkdown(REGEXP_HTML_COMMENTS, '', parsedContent);
 
   const fileName = "parsed-content-second-" + Date.now() + ".html";
   await write(fileName, parsedContent.content);
