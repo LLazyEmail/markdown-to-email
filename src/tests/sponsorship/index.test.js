@@ -1,8 +1,6 @@
 const { write, readSourceFile } = require("../../utils");
-const { sponsorship } = require("../../just-a-guess-functions");
+const { sponsorship, replaceMarkdown } = require("../../parse-functions");
 const { REGEXP_SPONSORSHIP } = require("../../constants");
-
-const { replaceMarkdown } = require("../../parserUtils");
 
 describe("testing sponsorship", () => {
   it("renders sponsorship", async () => {

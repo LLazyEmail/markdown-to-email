@@ -71,14 +71,15 @@ const REGEXP_UL_LIST = /\n\*(.*)/g;
 const REGEXP_OL_LIST = /\n[0-9]+\.(.*)/g;
 const REGEXP_BLOCKQUOTE = /\n(&gt;|\>)(.*)/g;
 const REGEXP_HR = /\n-{5,}/g;
-const REGEXP_PAIR = /\n([^\n]+)\n/g;
+const REGEXP_PARAGRAPH = /\n([^\n]+)\n/g;
 const REGEXP_EMPTY_UL = /<\/ul>\s?<ul>/g;
 const REGEXP_EMPTY_OL = /<\/ol>\s?<ol>/g;
-const REGEXP_BR = /<\/div>\n?<br>\n*?<ul/g;
+const REGEXP_BR = /(\n{2,})/g;
 const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
 const REGEXP_EM = /(\*|_)(.*?)\1/g;
 
 const REGEXP_SPONSORSHIP = /~(\[(.*?)\]){3}/g;
+const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
 
 module.exports = {
   REGEXP_HEADER,
@@ -92,13 +93,14 @@ module.exports = {
   REGEXP_OL_LIST,
   REGEXP_BLOCKQUOTE,
   REGEXP_HR,
-  REGEXP_PAIR,
+  REGEXP_PARAGRAPH,
   REGEXP_EMPTY_UL,
   REGEXP_EMPTY_OL,
   REGEXP_BR,
   REGEXP_EMPTY_BLOCKQUOTE,
   REGEXP_EM,
   REGEXP_SPONSORSHIP,
+  REGEXP_HTML_COMMENTS
 };
 // module.export = {
 //     REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE,
