@@ -4,7 +4,7 @@
 
  [steep competition](https://hackernoon.com/technical-huddle-an-easy-way-to-turn-challenges-into-success-bjm3tew)
 
-[agile philosophy](https://hackernoon.com/tagged/agile\) 
+[agile philosophy](https://hackernoon.com/tagged/agile) 
 
  [software development](https://hackernoon.com/tagged/programming)
 
