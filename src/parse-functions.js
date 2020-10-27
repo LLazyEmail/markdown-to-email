@@ -24,7 +24,7 @@ function paragraphWrapper(text, line) {
 
   // var htmlBlock = readFile('typography/paragraph').replace('{content}', trimmed) + '\n FUCK YOU \n';
   // return htmlBlock;
-  return readFile("typography/paragraph").replace("{content}", trimmed) + '\n';
+  return '\n' + readFile("typography/paragraph").replace("{content}", trimmed) + "\n";
 }
 
 function ulList(text, item) {
@@ -93,6 +93,12 @@ function sponsorship(text) {
     .replace("{content}", content);
 }
 
+function br(text, newLines) {
+  return Array.from(newLines).reduce((acc, current, index) => {
+    return index > 0 ? acc + "<br>" + current : current;
+  }, "");
+}
+
 module.exports = {
   replaceMarkdown,
 
@@ -104,4 +110,5 @@ module.exports = {
   image,
   header,
   sponsorship,
+  br
 };

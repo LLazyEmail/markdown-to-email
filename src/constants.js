@@ -74,7 +74,7 @@ const REGEXP_HR = /\n-{5,}/g;
 const REGEXP_PARAGRAPH = /\n([^\n]+)\n/g;
 const REGEXP_EMPTY_UL = /<\/ul>\s?<ul>/g;
 const REGEXP_EMPTY_OL = /<\/ol>\s?<ol>/g;
-const REGEXP_BR = /<\/div>\n?<br>\n*?<ul/g;
+const REGEXP_BR = /(\n{2,})/g;
 const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
 const REGEXP_EM = /(\*|_)(.*?)\1/g;
 

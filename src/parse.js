@@ -8,6 +8,7 @@ const {
   blockquote,
   paragraphWrapper,
   sponsorship,
+  br,
   replaceMarkdown,
 } = require("./parse-functions");
 
@@ -54,12 +55,11 @@ async function parse() {
   replaceMarkdown(REGEXP_PARAGRAPH, paragraphWrapper, parsedContent);
   replaceMarkdown(REGEXP_EMPTY_UL, "", parsedContent);
   replaceMarkdown(REGEXP_EMPTY_OL, "", parsedContent);
-  replaceMarkdown(REGEXP_BR, "</div>\n<ul", parsedContent);
   replaceMarkdown(REGEXP_EMPTY_BLOCKQUOTE, "\n", parsedContent);
   replaceMarkdown(REGEXP_EM, "<em>$2</em>", parsedContent);
 
+  replaceMarkdown(REGEXP_BR, br, parsedContent);
   replaceMarkdown(REGEXP_SPONSORSHIP, sponsorship, parsedContent);
-  
 
   const fileName = "parsed-content-second-" + Date.now() + ".html";
   await write(fileName, parsedContent.content);
