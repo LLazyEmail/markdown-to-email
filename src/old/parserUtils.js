@@ -1,9 +1,5 @@
 const { readFile } = require('./utils');
 
-function replaceMarkdown(regexp, callback, sourceContent) {
-  return sourceContent.content = sourceContent.content.replace(regexp, callback);
-}
-
 function replaceHeaders(sourceContent) {
   function header(text, chars, content) {
     var level = chars.length;

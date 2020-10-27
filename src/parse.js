@@ -6,10 +6,11 @@ const {
   ulList,
   olList,
   blockquote,
-  para,
+  paragraphWrapper,
   sponsorship,
-} = require("./just-a-guess-functions");
-const { replaceMarkdown } = require("./parserUtils");
+  replaceMarkdown,
+} = require("./parse-functions");
+
 const {
   REGEXP_HEADER,
   REGEXP_IMAGE,
@@ -33,7 +34,7 @@ const {
 
 async function parse() {
   let markdown = await readSourceFile("source/source.md");
-  console.log();
+  console.log(markdown);
   let parsedContent = {
     content: markdown,
   };
@@ -49,7 +50,7 @@ async function parse() {
   replaceMarkdown(REGEXP_OL_LIST, olList, parsedContent);
   replaceMarkdown(REGEXP_BLOCKQUOTE, blockquote, parsedContent);
   replaceMarkdown(REGEXP_HR, "\n<hr />", parsedContent);
-  replaceMarkdown(REGEXP_PAIR, para, parsedContent);
+  replaceMarkdown(REGEXP_PAIR, paragraphWrapper, parsedContent);
   replaceMarkdown(REGEXP_EMPTY_UL, "", parsedContent);
   replaceMarkdown(REGEXP_EMPTY_OL, "", parsedContent);
   replaceMarkdown(REGEXP_BR, "</div>\n<ul", parsedContent);

@@ -8,7 +8,7 @@
     "test:watch": "jest --watch ./src/tests",
     "guess": "node ./src/just-a-guess.js",
     "parser": "node ./src/parser.js",
-    "parse-second-way": "node ./src/parse-second-way",
+    "parse": "node ./src/parse",
     "lint": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
     "build:small": "node ./src/index.js",
     "parse-full": "node ./src/old/index-full.js",

@@ -1,4 +1,4 @@
-const { write, readSourceFile } = require('./utils');
+const { write, readSourceFile } = require('../utils');
 const { replaceHeaders,
   replaceImages,
   replaceLinks,
@@ -15,7 +15,7 @@ const { replaceHeaders,
   removeBRS,
   removeBlockquotes,
   replaceEMS
-} = require('./parserUtils');
+} = require('../parserUtils');
 
 let markdown = readSourceFile('source/source.md');
 
