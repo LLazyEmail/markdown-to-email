@@ -7,10 +7,11 @@ We tried to create our own wheel, then we failed.
 Arthur get bored trying to fix it and make it work properly.
 So he just decide to google a working version that can solve his problems.
 
-- I find this link https://gist.github.com/jbroadway/2836900
-- then this link https://gist.github.com/budparr/112f08a3033dd878d0e271e2af61faef
-- and then I added javascript into my google Search https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
-
+0. I find this link https://gist.github.com/jbroadway/2836900
+1. then this link https://gist.github.com/budparr/112f08a3033dd878d0e271e2af61faef
+2. and then I added javascript into my google Search https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
+3. then we tried different approaches, failed few times and find out how to fix some bugs.
+4. then I tried to google our repository and find out the latest version of this module - https://github.com/showdownjs/showdown
 
 
 `yarn parse`
