@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "jest ./src/tests",
-    "test:watch": "jest --watch ./src/tests",
-    "guess": "node ./src/just-a-guess.js",
+    "test:watch": "jest --watch ./src/tests", 
     "parser": "node ./src/parser.js",
     "parse": "node ./src/parse",
     "lint": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
     "build:small": "node ./src/index.js",
     "parse-full": "node ./src/old/index-full.js",
-    "parz": "node ./src/old/index.js"
+    "parz": "node ./src/old/index.js",
+    "guess": "node ./src/just-a-guess.js"
   },
   "author": "hirdbluebird",
   "license": "ISC",

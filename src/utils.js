@@ -76,7 +76,11 @@ const Converter = {
 // module.export = Converter;
 
 async function write(fileName, content, dir = "generated") {
+
+// isFolderExists(dir); // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
+
   var _path = dir + "/" + fileName; //@todo it's not an ideal thing
+
   await fs.writeFile(_path, content, "utf8", function (err) {
     if (err) throw new Error("file not written");
     // console.log(newFile);
@@ -95,7 +99,7 @@ function readFile(fileName) {
   return require(`../layouts/${fileName}`);
 }
 
-function isFolderExists() {
+function isFolderExists(dir) {
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir);
   }

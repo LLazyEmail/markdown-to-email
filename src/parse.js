@@ -39,6 +39,8 @@ async function parse() {
   let parsedContent = {
     content: markdown,
   };
+
+  
   replaceMarkdown(REGEXP_HTML_COMMENTS, '', parsedContent);
 
   replaceMarkdown(REGEXP_HEADER, header, parsedContent);
