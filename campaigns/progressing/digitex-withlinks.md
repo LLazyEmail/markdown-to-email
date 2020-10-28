@@ -1,33 +1,3 @@
-<!-- Copy and paste the converted output. -->
-
-<!-----
-NEW: Check the "Suppress top comment" option to remove this info from the output.
-
-Conversion time: 0.564 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β29
-* Wed Oct 28 2020 05:21:11 GMT-0700 (PDT)
-* Source doc: Digitex Future BTC, ETH, ICOs, and now - DeFi: How Far Have We Come
------>
-
-
-AD Copy - Pool DGTX on Uniswap & Earn Rewards
-
-AD Link: [https://bit.ly/3knayr3](https://bit.ly/3knayr3)
-
-AD Logo: https://1drv.ms/u/s!AtXY62dbAD3K6X8Obh8rc0HBZiE9?e=OgX4cs
-
-
 # BTC, ETH, ICOs, and now - DeFi: How Far Have We Come?
 
 [Bitcoin](https://hackernoon.com/tagged/bitcoin) caught the attention of technologists and anarchists alike following the 2008 Global recession. [Ethereum](https://hackernoon.com/tagged/ethereum) took Bitcoin’s ‘Digital Gold’ status and gave us [smart contracts](https://hackernoon.com/an-idea-by-lonero-that-can-change-millions-of-lives-ttr3t7x). [ICOs](https://hackernoon.com/tagged/ico) took [smart contracts](https://hackernoon.com/11-commandments-of-smart-contract-designing-ra2a3wy4) and gave us supply chain management solutions for problems that we never knew existed.
