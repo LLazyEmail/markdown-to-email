@@ -2,7 +2,7 @@
 const fs = require('fs');
 const { header, image, link, ulList, olList, blockquote, paragraphWrapper } = require('./just-a-guess-functions');
 const readFile = require('./parseSource');
-const { write } = require('./utils');
+const { write } = require('../utils');
 
 'use strict';
 

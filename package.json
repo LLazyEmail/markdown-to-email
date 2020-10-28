@@ -12,7 +12,7 @@
     "build:small": "node ./src/index.js",
     "parse-full": "node ./src/old/index-full.js",
     "parz": "node ./src/old/index.js",
-    "guess": "node ./src/just-a-guess.js"
+    "guess": "node ./src/old/just-a-guess.js"
   },
   "author": "hirdbluebird",
   "license": "ISC",
