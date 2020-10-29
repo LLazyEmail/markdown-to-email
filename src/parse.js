@@ -54,11 +54,11 @@ async function parse() {
   replaceMarkdown(REGEXP_OL_LIST, olList, parsedContent);
   replaceMarkdown(REGEXP_BLOCKQUOTE, blockquote, parsedContent);
   replaceMarkdown(REGEXP_HR, "\n<hr />", parsedContent);
-//   replaceMarkdown(REGEXP_PARAGRAPH, paragraphWrapper, parsedContent);
+  replaceMarkdown(REGEXP_PARAGRAPH, paragraphWrapper, parsedContent);
   replaceMarkdown(REGEXP_EMPTY_UL, "", parsedContent);
   replaceMarkdown(REGEXP_EMPTY_OL, "", parsedContent);
   replaceMarkdown(REGEXP_EMPTY_BLOCKQUOTE, "\n", parsedContent);
-  replaceMarkdown(REGEXP_EM, "<em>$2</em>", parsedContent);
+//   replaceMarkdown(REGEXP_EM, "<em>$2</em>", parsedContent);
 
   replaceMarkdown(REGEXP_BR, br, parsedContent);
   replaceMarkdown(REGEXP_SPONSORSHIP, sponsorship, parsedContent);
