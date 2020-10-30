@@ -4,8 +4,10 @@ const { write, readSourceFile } = require("../../utils");
 
 const { replaceMarkdown } = require("../../parserUtils");
 
-describe("testing sponsorship", () => {
-//   it("renders sponsorship", async () => {
+describe("testing images only", () => {
+
+//   it("renders xxx", async () => {
+
 //     let markdown = await readSourceFile("src/tests/sponsorship/sponsorship.md");
 //     let parsedContent = {
 //       content: markdown,
@@ -14,5 +16,6 @@ describe("testing sponsorship", () => {
 //     const fileName = "sponsorship.html";
 //     await write(fileName, parsedContent.content, "src/tests/sponsorship");
 //     expect(1).toBe(1);
+
 //   });
 });
