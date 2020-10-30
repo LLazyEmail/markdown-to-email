@@ -32,14 +32,17 @@ function ulList(text, item) {
     "{content}",
     item.trim()
   );
+
   return readFile("typography/list").replace("{content}", listItem);
 }
 
 function olList(text, item) {
+
   return "\n<ol>\n\t<li>" + item.trim() + "</li>\n</ol>";
 }
 
 function blockquote(text, tmp, item) {
+
   return "\n<blockquote>" + item.trim() + "</blockquote>";
 }
 
@@ -52,26 +55,32 @@ function image(text, alt, src) {
 
   // something going on here... @TODO
   if (parsedSrc && parsedSrc.groups && parsedSrc.groups.src) {
+
     return readFile("typography/image")
       .replace("{src}", parsedSrc.groups.src)
       .replace("{altText}", alt);
+  } else {
+
+    return readFile("typography/image")
+      .replace("{src}", "")
+      .replace("{altText}", alt);
   }
 
-  return readFile("typography/image")
-    .replace("{src}", "")
-    .replace("{altText}", alt);
+
 }
 
 function header(text, chars, content) {
   var level = chars.length;
   switch (level) {
     case 1:
+
       return readFile("typography/mainTitle").replace(
         "{content}",
         content.trim()
       );
     case 2: //@TODO ???
     case 3:
+
       return readFile("typography/subtitle").replace(
         "{content}",
         content.trim()

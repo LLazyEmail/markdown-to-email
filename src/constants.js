@@ -3,10 +3,6 @@
 // please change that, I'll be very happy about it.
 
 // @todo expand this thing
-// .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-// .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-// .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-// .replace(/^\> (.*$)/gim, '<blockquote>$1</blockquote>')
 // .replace(/\*\*(.*)\*\*/gim, '<b>$1</b>')
 // .replace(/\*(.*)\*/gim, '<i>$1</i>')
 // .replace(/!\[(.*?)\]\((.*?)\)/gim, "<img alt='$1' src='$2' />")
@@ -54,8 +50,6 @@
 // const REGEXP_BR = /\n$/gim;
 
 // //2nd batch, related to custom markdown tags
-// const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
-// const REGEXP_CUSTOM_SPONSORSHIP = /\[(.*?)\]/g;
 // const REGEXP_CUSTOM_LINK = /\[(.*?)\]\((.*?)\)/g;
 // const REGEXP_CUSTOM_MEME_IMAGE = /\((.*?)\)/g; // @TODO or use gim as for other cases that we have?
 // // const REGEXP_CUSTOM_
@@ -67,11 +61,15 @@ const REGEXP_STRONG = /(\*\*|__)(.*?)\1/g;
 const REGEXP_DEL = /\~\~(.*?)\~\~/g;
 const REGEXP_Q = /\:\"(.*?)\"\:/g;
 const REGEXP_CODE = /`(.*?)`/g;
+
 const REGEXP_UL_LIST = /\n\*(.*)/g;
 const REGEXP_OL_LIST = /\n[0-9]+\.(.*)/g;
+
 const REGEXP_BLOCKQUOTE = /\n(&gt;|\>)(.*)/g;
 const REGEXP_HR = /\n-{5,}/g;
+
 const REGEXP_PARAGRAPH = /\n([^\n]+)\n/g;
+
 const REGEXP_EMPTY_UL = /<\/ul>\s?<ul>/g;
 const REGEXP_EMPTY_OL = /<\/ol>\s?<ol>/g;
 const REGEXP_BR = /(\n{2,})/g;
@@ -80,6 +78,10 @@ const REGEXP_EM = /(\*|_)(.*?)\1/g;
 
 const REGEXP_SPONSORSHIP = /~(\[(.*?)\]){3}/g;
 const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
+
+// const REGEXP_H3 = /^### (.*$)/gim;
+// const REGEXP_H2 = /^## (.*$)/gim;
+
 
 module.exports = {
   REGEXP_HEADER,
@@ -102,8 +104,3 @@ module.exports = {
   REGEXP_SPONSORSHIP,
   REGEXP_HTML_COMMENTS
 };
-// module.export = {
-//     REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE,
-//     REGEXP_B, REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR,
-//     REGEXP_HTML_COMMENTS, REGEXP_CUSTOM_SPONSORSHIP, REGEXP_CUSTOM_LINK, REGEXP_CUSTOM_MEME_IMAGE
-//  };
