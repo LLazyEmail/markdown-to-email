@@ -8,3 +8,7 @@ As you can see, proper **[data analytics](https://hackernoon.com/data-analytics-
 
 
 You didn’t ** [think](https://hackernoon.com/how-to-think-like-a-data-scientist-or-data-analyst-7s983yg9)  ** it was that easy?
+
+
+
+[MEMES HERE](https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/october/24.10/image4.gif)

@@ -16,3 +16,12 @@ Today, DeFi has metamorphosed into the befitting reply to centralized exchanges 
 *italic text*  _italic text_  *italic text* 
 _italic tedddxt_
 
+
+
+[MEMES HERE1](https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/october/24.10/image4.gif)
+
+
+[MEMES HERE2](https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/october/24.10/image1.gif)
+
+[MEMES HERE3](https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/october/24.10/Screenshot_2000-20-12 at_19-30.png)
+
