@@ -29,7 +29,7 @@ function paragraphWrapper(text, line) {
   );
 }
 
-function ulList(text, list) {
+function ulList(text, list) { //@todo improve this crazy structure.
   const parsedSubListsParts = list.replace(
     /((\s{4}\*(.*?)\n){1,})/g,
     (text, subList) => {
