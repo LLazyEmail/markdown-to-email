@@ -42,6 +42,8 @@ async function parse() {
 
   
   replaceMarkdown(REGEXP_HTML_COMMENTS, '', parsedContent);
+  
+  replaceMarkdown(REGEXP_EM, "<em>$2</em>", parsedContent);
 
   replaceMarkdown(REGEXP_HEADER, header, parsedContent);
   replaceMarkdown(REGEXP_IMAGE, image, parsedContent);
@@ -58,7 +60,7 @@ async function parse() {
   replaceMarkdown(REGEXP_EMPTY_UL, "", parsedContent);
   replaceMarkdown(REGEXP_EMPTY_OL, "", parsedContent);
   replaceMarkdown(REGEXP_EMPTY_BLOCKQUOTE, "\n", parsedContent);
-//   replaceMarkdown(REGEXP_EM, "<em>$2</em>", parsedContent);
+
 
   replaceMarkdown(REGEXP_BR, br, parsedContent);
   replaceMarkdown(REGEXP_SPONSORSHIP, sponsorship, parsedContent);
