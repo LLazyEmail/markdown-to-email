@@ -1,5 +1,3 @@
-const readFile = require('./parseSource');
-
 function link(text, title, href) {
   // @TODO replace this shit
   return readFile('typography/link')
@@ -19,18 +17,7 @@ function paragraphWrapper(text, line) {
   return readFile('typography/paragraph').replace('{content}', trimmed);
 }
 
-function ulList(text, item) {
-  const listItem = readFile('typography/listItem').replace('{content}', item.trim())
-  return readFile('typography/list').replace('{content}', listItem);
-}
 
-function olList(text, item) {
-  return '\n<ol>\n\t<li>' + item.trim() + '</li>\n</ol>';
-}
-
-function blockquote(text, tmp, item) {
-  return '\n<blockquote>' + item.trim() + '</blockquote>';
-}
 
 function image(text, alt, src) {
   // @TODO OMG, it's huuuge
@@ -48,18 +35,7 @@ function image(text, alt, src) {
     .replace('{altText}', alt)
 }
 
-function header(text, chars, content) {
-  var level = chars.length;
-  switch (level) {
-    case 1:
-      return readFile('typography/mainTitle').replace('{content}', content.trim());
-    case 2: //@TODO ???
-    case 3:
-      return readFile('typography/subtitle').replace('{content}', content.trim());
-    default:
-      break;
-  }
-}
+
 
 function sponsorship(text){
   const regex = /\[(.*?)\]/g;
@@ -71,7 +47,3 @@ function sponsorship(text){
             .replace('{content}', content)
 }
 
-module.exports = {
-  link, paragraphWrapper, ulList, olList,
-  blockquote, image, header, sponsorship
-}
