@@ -59,7 +59,10 @@ function ulList(text, list) {
     }
   );
 
-  return `\n${readFile("typography/list").replace("{content}", parsedList + '\n')}\n`;
+  return `\n${readFile("typography/list").replace(
+    "{content}",
+    parsedList + "\n"
+  )}\n`;
 }
 
 function olList(text, item) {
@@ -98,8 +101,12 @@ function header(text, chars, content) {
         content.trim()
       );
     case 2: //@TODO ???
-    case 3:
       return readFile("typography/subtitle").replace(
+        "{content}",
+        content.trim()
+      );
+    case 3:
+      return readFile("typography/heading").replace(
         "{content}",
         content.trim()
       );

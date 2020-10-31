@@ -1,6 +1,6 @@
 
 
-## Paid Video Call Opportunities for [Nominee Name]? (beta)
+# Paid Video Call Opportunities for [Nominee Name]? (beta)
 
 Hey [writer name],
 
@@ -21,3 +21,9 @@ Kind Regards
     *   Sub item 2
     *   Sub item 3
 *   A standard .TECH domain for 5 years
+
+
+## The Bottom Line
+
+
+### The Bottom Line
