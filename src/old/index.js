@@ -286,17 +286,6 @@ function parseSource() {
         // promo = Convert.sponsorship(line)
         emailBody = combineCombineReplaceMeLater(emailBody, Convert.sponsorship(line));
         break
-      // case '<l':
-      // console.log(line);
-      // console.log('----------') ; break
-      case 'XY':
-        // console.log(line);
-        // console.log('----------') ;
-
-        emailBody = combineCombineReplaceMeLater(emailBody, Convert.separator() + line + Convert.separator());
-        break
-      case '--':
-        emailBody = combineCombineReplaceMeLater(emailBody, line + Convert.separator()); break;
       default:
         line = Convert.links(line)
         // emailBody += Convert.paragraph(line)
