@@ -12,4 +12,4 @@ Meet Tech Experts by Hacker Noon is a beta marketplace. Would be great to list a
 
 Kind Regards
 
-David Smooke
+*David Smooke*

@@ -74,7 +74,7 @@ const REGEXP_EMPTY_UL = /<\/ul>\s?<ul>/g;
 const REGEXP_EMPTY_OL = /<\/ol>\s?<ol>/g;
 const REGEXP_BR = /(\n{2,})/g;
 const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
-const REGEXP_EM = /(\*|_)(.*?)\1/g;
+const REGEXP_EM = /\s(\*|_)(.*?)\1\s/g;
 
 const REGEXP_SPONSORSHIP = /~(\[(.*?)\]){3}/g;
 const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
