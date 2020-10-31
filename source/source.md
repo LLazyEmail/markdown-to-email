@@ -13,3 +13,11 @@ Meet Tech Experts by Hacker Noon is a beta marketplace. Would be great to list a
 Kind Regards
 
 *David Smooke*
+
+*   Hacker Noon Stickers
+*   A standard .TECH domain for 3 years
+*   A standard .TECH domain for 2 years
+    *   Sub item 1
+    *   Sub item 2
+    *   Sub item 3
+*   A standard .TECH domain for 5 years

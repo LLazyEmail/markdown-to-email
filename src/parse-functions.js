@@ -29,15 +29,37 @@ function paragraphWrapper(text, line) {
   );
 }
 
-function ulList(text, item, second) {
-  const listItems = item.replace(/\*(.*)\n/g, (text, listItem) => {
-    return `\n${readFile("typography/listItem").replace(
-      "{content}",
-      listItem.trim()
-    )}`;
-  });
+function ulList(text, list) {
+  const parsedSubListsParts = list.replace(
+    /((\s{4}\*(.*?)\n){1,})/g,
+    (text, subList) => {
+      const parsedSubItem = subList.replace(
+        /\s{4}\*(.*?)\n/g,
+        (text, subItem) => {
+          return `\n${readFile("typography/listItem").replace(
+            "{content}",
+            subItem.trim()
+          )}`;
+        }
+      );
+      return `\n${readFile("typography/list").replace(
+        "{content}",
+        parsedSubItem + "\n"
+      )}`;
+    }
+  );
 
-  return `${readFile("typography/list").replace("{content}", listItems)}\n`;
+  const parsedList = parsedSubListsParts.replace(
+    /\*(.*?)\n/g,
+    (text, listItem) => {
+      return `\n${readFile("typography/listItem").replace(
+        "{content}",
+        listItem.trim()
+      )}`;
+    }
+  );
+
+  return `\n${readFile("typography/list").replace("{content}", parsedList + '\n')}\n`;
 }
 
 function olList(text, item) {
