@@ -62,7 +62,7 @@ const REGEXP_DEL = /\~\~(.*?)\~\~/g;
 const REGEXP_Q = /\:\"(.*?)\"\:/g;
 const REGEXP_CODE = /`(.*?)`/g;
 
-const REGEXP_UL_LIST = /\n\*(.*)/g;
+const REGEXP_UL_LIST = /\n((\*(.*?)\n){1,})/g;
 const REGEXP_OL_LIST = /\n[0-9]+\.(.*)/g;
 
 const REGEXP_BLOCKQUOTE = /\n(&gt;|\>)(.*)/g;
