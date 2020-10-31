@@ -34,6 +34,8 @@ const {
   REGEXP_HTML_COMMENTS
 } = require("./constants");
 
+
+// @todo update this method. I'm sure it can be improved.
 async function parse() {
   let markdown = await readSourceFile("source/source.md");
   let parsedContent = {
@@ -48,13 +50,17 @@ async function parse() {
   replaceMarkdown(REGEXP_HEADER, header, parsedContent);
   replaceMarkdown(REGEXP_IMAGE, image, parsedContent);
   replaceMarkdown(REGEXP_LINK, link, parsedContent);
+
   replaceMarkdown(REGEXP_STRONG, "<strong>$2</strong>", parsedContent);
   replaceMarkdown(REGEXP_DEL, "<del>$1</del>", parsedContent);
   replaceMarkdown(REGEXP_Q, "<q>$1</q>", parsedContent);
   replaceMarkdown(REGEXP_CODE, "<code>$1</code>", parsedContent);
+
   replaceMarkdown(REGEXP_UL_LIST, ulList, parsedContent);
   replaceMarkdown(REGEXP_OL_LIST, olList, parsedContent);
+
   replaceMarkdown(REGEXP_BLOCKQUOTE, blockquote, parsedContent);
+
   replaceMarkdown(REGEXP_HR, "\n<hr />", parsedContent);
   replaceMarkdown(REGEXP_PARAGRAPH, paragraphWrapper, parsedContent);
   replaceMarkdown(REGEXP_EMPTY_UL, "", parsedContent);

@@ -1,2 +1,2 @@
-module.exports = `
-ty pidar`;
+module.exports = 
+`content`;
