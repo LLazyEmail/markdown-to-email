@@ -8,7 +8,7 @@ describe("testing target-blank-em", () => {
     let parsedContent = {
       content: markdown,
     };
-    replaceMarkdown(REGEXP_EM, '<em>$2</em>', parsedContent);
+    replaceMarkdown(REGEXP_EM, '$1<em>$3</em>$4', parsedContent);
     const fileName = "target-blank-em.html";
     await write(fileName, parsedContent.content, "src/tests/target-blank-em");
     expect(1).toBe(1);
