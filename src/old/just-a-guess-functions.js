@@ -12,8 +12,6 @@ function paragraphWrapper(text, line) {
     return '\n' + line + '\n';
   }
 
-  // var htmlBlock = readFile('typography/paragraph').replace('{content}', trimmed) + '\n FUCK YOU \n';
-  // return htmlBlock;
   return readFile('typography/paragraph').replace('{content}', trimmed);
 }
 
