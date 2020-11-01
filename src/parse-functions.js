@@ -84,23 +84,12 @@ function blockquote(text, tmp, item) {
   return "\n<blockquote>" + item.trim() + "</blockquote>";
 }
 
-function image(text, alt, src) {
-  // @TODO OMG, it's huuuge
-  const parsedSrc =
-    src
-      .trim()
-      .match(/^(?<src>(.*?))\s?((?<quote>")(?<tooltip>.*?)\k<quote>)?$/) || [];
+function image(text, alt, srcWithTooltip) {
+  const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
 
-  // something going on here... @TODO
-  if (parsedSrc && parsedSrc.groups && parsedSrc.groups.src) {
-    return readFile("typography/image")
-      .replace("{src}", parsedSrc.groups.src)
+  return readFile("typography/image")
+      .replace("{src}", src.trim())
       .replace("{altText}", alt);
-  } else {
-    return readFile("typography/image")
-      .replace("{src}", "")
-      .replace("{altText}", alt);
-  }
 }
 
 function mem(text, src, href, altText) {
