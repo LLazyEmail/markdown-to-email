@@ -3,10 +3,7 @@ const fs = require('fs')
 const _ = require('lodash')
 const readFile = require('../parseSource');
 
-// const { REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B,
-//     REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR,
-//     REGEXP_HTML_COMMENTS, REGEXP_CUSTOM_SPONSORSHIP, REGEXP_CUSTOM_LINK, REGEXP_CUSTOM_MEME_IMAGE
-// } = require('../constants');
+
 
 const { write, isFolderExists } = require('../utils');
 
@@ -17,19 +14,6 @@ let header,
   section,
   emailBody = '';
 
-
-// header = readFile('header');
-// socials = readFile('socials');
-// footer = readFile('footer');
-// promo = readFile('body/promo');
-
-// var the_list_as_it_should_be = '<ul>';
-// function the_list_as_it_should_be (array, indexes) {
-//   console.log(indexes);
-//   _.each(array, (value) => {
-//
-//   })
-// }
 
 const REGEX_MARKDOWN_LINK = '';
 
@@ -45,21 +29,6 @@ Object.defineProperties(Convert, {
 //       return this.replace('*|MC_PREVIEW_TEXT|*', text.slice(3))
 //     }
 //   },
-  'title': {
-    value: function (text) {
-      return readFile('typography/mainTitle').replace('{content}', text.slice(2))
-    }
-  },
-  'subtitle': {
-    value: function (text) {
-      return readFile('typography/subtitle').replace('{content}', text.slice(3))
-    }
-  },
-  'paragraph': {
-    value: function (text) {
-      return readFile('typography/paragraph').replace('{content}', text)
-    }
-  },
   'image': {
     value: function (text) {
       const altText = text.match(/\[(.*?)\]/g)[0].replace(/[\[\]]/g, '');
@@ -68,18 +37,6 @@ Object.defineProperties(Convert, {
       return readFile('typography/image')
         .replace('{src}', src)
         .replace('{altText}', altText)
-    }
-  },
-  'linebreak': {
-    value: function () {
-    //   return readFile('typography/simple-divider')
-      // return readFile('typography/devider')
-
-    }
-  },
-  'separator': {
-    value: function () {
-    //   return readFile('typography/simple-divider')
     }
   },
   'links': {
@@ -164,22 +121,7 @@ Object.defineProperties(Convert, {
       return text
     }
   },
-  'htmlComments': {
-    value: function (text) {
 
-
-      const regex = /<!--(([\r\n]|.)*?)-->/g
-
-
-      const a = text.match(regex);
-
-      for (match in a) {
-        text = text.replace(a[match], '')
-      }
-
-      return text;
-    }
-  }
 })
 
 function combineCombineReplaceMeLater(string, value) {
