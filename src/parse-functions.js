@@ -7,6 +7,8 @@ function replaceMarkdown(regexp, callback, sourceContent) {
   ));
 }
 
+const italic = "$1<em>$3</em>$4";
+
 function link(text, title, href) {
   // @TODO replace this shit
   return readFile("typography/link")
@@ -29,7 +31,8 @@ function paragraphWrapper(text, line) {
   );
 }
 
-function ulList(text, list) { //@todo improve this crazy structure.
+function ulList(text, list) {
+  //@todo improve this crazy structure.
   const parsedSubListsParts = list.replace(
     /((\s{4}\*(.*?)\n){1,})/g,
     (text, subList) => {
@@ -161,4 +164,5 @@ module.exports = {
   header,
   sponsorship,
   br,
+  italic,
 };
