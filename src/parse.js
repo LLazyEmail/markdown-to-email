@@ -10,7 +10,8 @@ const {
   paragraphWrapper,
   sponsorship,
   br,
-  italic
+  italic,
+  strong
 } = require("./parse-functions");
 
 const {
@@ -43,14 +44,14 @@ async function parse() {
   };
 
   replaceMarkdown(REGEXP_HTML_COMMENTS, "", parsedContent);
-
+  replaceMarkdown(REGEXP_STRONG, strong , parsedContent);
   replaceMarkdown(REGEXP_EM, italic, parsedContent);
 
   replaceMarkdown(REGEXP_HEADER, header, parsedContent);
   replaceMarkdown(REGEXP_IMAGE, image, parsedContent);
   replaceMarkdown(REGEXP_LINK, link, parsedContent);
 
-  replaceMarkdown(REGEXP_STRONG, "<strong>$2</strong>", parsedContent);
+
   replaceMarkdown(REGEXP_DEL, "<del>$1</del>", parsedContent);
   replaceMarkdown(REGEXP_Q, "<q>$1</q>", parsedContent);
   replaceMarkdown(REGEXP_CODE, "<code>$1</code>", parsedContent);

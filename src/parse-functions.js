@@ -8,6 +8,7 @@ function replaceMarkdown(regexp, callback, sourceContent) {
 }
 
 const italic = "$1<em>$3</em>$4";
+const strong = "<strong>$2$3</strong>";
 
 function link(text, title, href) {
   // @TODO replace this shit
@@ -165,4 +166,5 @@ module.exports = {
   sponsorship,
   br,
   italic,
+  strong
 };

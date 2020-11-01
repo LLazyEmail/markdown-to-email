@@ -57,7 +57,7 @@
 const REGEXP_HEADER = /(#+)(.*)/g;
 const REGEXP_IMAGE = /!\[([^\[]+)\]\(([^\)]+)\)/g;
 const REGEXP_LINK = /\[([^\[]+)\]\(([^\)]+)\)/g;
-const REGEXP_STRONG = /(\*\*|__)(.*?)\1/g;
+const REGEXP_STRONG = /(\*\*|__)(.*?)(\*?)\1/g;
 const REGEXP_DEL = /\~\~(.*?)\~\~/g;
 const REGEXP_Q = /\:\"(.*?)\"\:/g;
 const REGEXP_CODE = /`(.*?)`/g;
@@ -74,7 +74,7 @@ const REGEXP_EMPTY_UL = /<\/ul>\s?<ul>/g;
 const REGEXP_EMPTY_OL = /<\/ol>\s?<ol>/g;
 const REGEXP_BR = /(\n{2,})/g;
 const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
-const REGEXP_EM = /(\s)(\*|_)(.*?)\2(\s)/g;
+const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
 
 const REGEXP_SPONSORSHIP = /~(\[(.*?)\]){3}/g;
 const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
