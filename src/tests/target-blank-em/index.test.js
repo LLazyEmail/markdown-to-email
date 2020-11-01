@@ -1,5 +1,5 @@
 const { write, readSourceFile } = require("../../utils");
-const { sponsorship, replaceMarkdown } = require("../../parse-functions");
+const { italic, replaceMarkdown } = require("../../parse-functions");
 const { REGEXP_EM } = require("../../constants");
 
 describe("testing target-blank-em", () => {
@@ -8,7 +8,7 @@ describe("testing target-blank-em", () => {
     let parsedContent = {
       content: markdown,
     };
-    replaceMarkdown(REGEXP_EM, '$1<em>$3</em>$4', parsedContent);
+    replaceMarkdown(REGEXP_EM, italic, parsedContent);
     const fileName = "target-blank-em.html";
     await write(fileName, parsedContent.content, "src/tests/target-blank-em");
     expect(1).toBe(1);

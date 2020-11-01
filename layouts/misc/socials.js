@@ -1,3 +1,8 @@
+const copyrights = require('./copyrights');
+const address = require('./address');
+const unsubscribe = require('./unsubscribe');
+const newsletterSponsorshipLink = require('./newsletter-sponsorship-link');
+
 module.exports = `
 <!-- / hackernoon logo at bottom -->
 <tr>
@@ -295,23 +300,14 @@ module.exports = `
                 <tbody>
                   <tr>
                     <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: center;">
-                      <em>Copyright © 2020 Hacker Noon. All rights reserved.</em>
+                      ${copyrights}
                       <br>
                       <br>
-                      <strong>Our mailing address is:</strong>
-                      <br>
-                      PO Box 2206, Edwards CO, 81632, U.S.A.
+                      ${address}
                       <br>
                       <br>
-                      <a href="*|UNSUB|*" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">
-                        unsubscribe
-                      </a>
-                      <div style="text-align: center;">
-                        <br>
-                        <a href="https://sponsor.hackernoon.com/contact" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">
-                          Click Here To Sponsor A Newsletter by Hacker Noon
-                        </a>
-                      </div>
+                      ${unsubscribe}
+                      ${newsletterSponsorshipLink}
                     </td>
                   </tr>
                 </tbody>

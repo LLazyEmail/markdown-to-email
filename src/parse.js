@@ -1,5 +1,6 @@
 const { write, readSourceFile } = require("./utils");
 const {
+  replaceMarkdown,
   header,
   image,
   link,
@@ -9,7 +10,8 @@ const {
   paragraphWrapper,
   sponsorship,
   br,
-  replaceMarkdown,
+  italic,
+  strong
 } = require("./parse-functions");
 
 const {
@@ -31,9 +33,8 @@ const {
   REGEXP_EMPTY_BLOCKQUOTE,
   REGEXP_EM,
   REGEXP_SPONSORSHIP,
-  REGEXP_HTML_COMMENTS
+  REGEXP_HTML_COMMENTS,
 } = require("./constants");
-
 
 // @todo update this method. I'm sure it can be improved.
 async function parse() {
@@ -42,16 +43,15 @@ async function parse() {
     content: markdown,
   };
 
-  
-  replaceMarkdown(REGEXP_HTML_COMMENTS, '', parsedContent);
-  
-  replaceMarkdown(REGEXP_EM, "<em>$2</em>", parsedContent);
+  replaceMarkdown(REGEXP_HTML_COMMENTS, "", parsedContent);
+  replaceMarkdown(REGEXP_STRONG, strong , parsedContent);
+  replaceMarkdown(REGEXP_EM, italic, parsedContent);
 
   replaceMarkdown(REGEXP_HEADER, header, parsedContent);
   replaceMarkdown(REGEXP_IMAGE, image, parsedContent);
   replaceMarkdown(REGEXP_LINK, link, parsedContent);
 
-  replaceMarkdown(REGEXP_STRONG, "<strong>$2</strong>", parsedContent);
+
   replaceMarkdown(REGEXP_DEL, "<del>$1</del>", parsedContent);
   replaceMarkdown(REGEXP_Q, "<q>$1</q>", parsedContent);
   replaceMarkdown(REGEXP_CODE, "<code>$1</code>", parsedContent);
@@ -66,7 +66,6 @@ async function parse() {
   replaceMarkdown(REGEXP_EMPTY_UL, "", parsedContent);
   replaceMarkdown(REGEXP_EMPTY_OL, "", parsedContent);
   replaceMarkdown(REGEXP_EMPTY_BLOCKQUOTE, "\n", parsedContent);
-
 
   replaceMarkdown(REGEXP_BR, br, parsedContent);
   replaceMarkdown(REGEXP_SPONSORSHIP, sponsorship, parsedContent);

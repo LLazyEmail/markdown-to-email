@@ -2,6 +2,13 @@
 
 # Paid Video Call Opportunities for [Nominee Name]? (beta)
 
+
+** I AM SO BOLD and _ME TOO_ **    
+
+**_YEP_**
+   
+***YEP*** 
+
 Hey [writer name],
 
 Good news, top Hacker Noon writers can now list themselves for paid video calls via Hacker Noon’s new Meet Tech Experts Program (beta). As a Noonie nominee, I thought you may be interested in joining this program. 
