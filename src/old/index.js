@@ -3,8 +3,6 @@ const fs = require('fs')
 const _ = require('lodash')
 const readFile = require('../parseSource');
 
-
-
 const { write, isFolderExists } = require('../utils');
 
 let header,
@@ -208,69 +206,19 @@ function parseSource() {
       case '#~':
         // header = Convert.previewText.call(header, line)
         break
-      case '# ':
-        // emailBody += Convert.title(line)
-        emailBody = combineCombineReplaceMeLater(emailBody, Convert.title(line));
-        break
-      case '##':
-        // emailBody += Convert.subtitle(line)
-        emailBody = combineCombineReplaceMeLater(emailBody, Convert.subtitle(line));
-        break
       case '![':
         // emailBody += Convert.image(line)
         emailBody = combineCombineReplaceMeLater(emailBody, Convert.image(line));
         break
-      case '':
-        // emailBody += Convert.linebreak()
-        emailBody = combineCombineReplaceMeLater(emailBody, Convert.linebreak());
-        break
+
       case '~[':
         // promo = Convert.sponsorship(line)
         emailBody = combineCombineReplaceMeLater(emailBody, Convert.sponsorship(line));
         break
-      default:
-        line = Convert.links(line)
-        // emailBody += Convert.paragraph(line)
-        // console.log(line);
-        emailBody = combineCombineReplaceMeLater(emailBody, Convert.paragraph(line));
-        break
+
     }
   })
-
-//   section = readFile('body/section')
-//     .replace('{content}', emailBody)
 
   THEsection = readFile('body/empty-section', 'utf8')
     .replace('{content}', emailBody)
 }
-
-
-parseSource()
-
-
-// === Replace with methods from utils
-
-
-var dir = 'generated';
-
-if (!fs.existsSync(dir)) {
-  fs.mkdirSync(dir);
-}
-// isFolderExists();
-
-const newFile = String.prototype.concat(THEsection);
-
-var fileName = "content-" + Date.now() + ".html";
-
-fs.writeFile("generated/" + fileName, newFile, 'utf8', function (err) {
-  if (err) throw new Error('file not written')
-  // console.log(newFile);
-  console.log('file successfully written ' + fileName)
-})
-
-
-// write("generated/" + fileName, newFile)
-
-
-
-// === Replace with methods from utils
