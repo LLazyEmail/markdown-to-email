@@ -1,18 +1,15 @@
 {
   "name": "markdown-to-email",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "description": "Translate 'Markdown' Syntax into HTML For Email Newsletters",
   "main": "index.js",
   "scripts": {
     "test": "jest ./src/tests",
-    "test:watch": "jest --watch ./src/tests", 
+    "test:watch": "jest --watch ./src/tests",
     "parser": "node ./src/parser.js",
     "parse": "node ./src/parse",
     "lint": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
-    "build:small": "node ./src/index.js",
-    "parse-full": "node ./src/old/index-full.js",
-    "parz": "node ./src/old/index.js",
-    "guess": "node ./src/old/just-a-guess.js"
+    "build:small": "node ./src/index.js"
   },
   "author": "hirdbluebird",
   "license": "ISC",

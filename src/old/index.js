@@ -3,11 +3,6 @@ const fs = require('fs')
 const _ = require('lodash')
 const readFile = require('../parseSource');
 
-// const { REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B,
-//     REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR,
-//     REGEXP_HTML_COMMENTS, REGEXP_CUSTOM_SPONSORSHIP, REGEXP_CUSTOM_LINK, REGEXP_CUSTOM_MEME_IMAGE
-// } = require('../constants');
-
 const { write, isFolderExists } = require('../utils');
 
 let header,
@@ -17,19 +12,6 @@ let header,
   section,
   emailBody = '';
 
-
-// header = readFile('header');
-// socials = readFile('socials');
-// footer = readFile('footer');
-// promo = readFile('body/promo');
-
-// var the_list_as_it_should_be = '<ul>';
-// function the_list_as_it_should_be (array, indexes) {
-//   console.log(indexes);
-//   _.each(array, (value) => {
-//
-//   })
-// }
 
 const REGEX_MARKDOWN_LINK = '';
 
@@ -94,9 +76,6 @@ function parseSource() {
   const listItem = readFile('typography/listItem')
 
 
-
-
-
   // console.log(thisSource);
 
   // Replace text with html tags
@@ -107,14 +86,6 @@ function parseSource() {
 
   })
 
-  // console.log('---------')
-  // console.log(thisSource);
-
-  // console.log(lists);
-
-  // list.replace('{content}', listItem.slice(2));
-  //
-  // console.log(list);
 
   //
   // ------------------------ move out ----------------
@@ -123,16 +94,8 @@ function parseSource() {
   // AS NOBODY WANTED TO DO A BETTER STRUCTURE - WE HAVE AN ARRAY OF STRINGS THAT FUCKING MA HEAD
   thisSource.forEach(line => {
 
-
-
     // Below is the most stupid and un-reliable variable that this project has.
     const tag = line.slice(0, 2)
-
-    line = Convert.bold(line)
-    line = Convert.italic(line)
-
-    // console.log(tag)
-
 
     switch (tag) {
       case '#!':
@@ -152,40 +115,6 @@ function parseSource() {
     }
   })
 
-//   section = readFile('body/section')
-//     .replace('{content}', emailBody)
-
   THEsection = readFile('body/empty-section', 'utf8')
     .replace('{content}', emailBody)
 }
-
-
-parseSource()
-
-
-// === Replace with methods from utils
-
-
-var dir = 'generated';
-
-if (!fs.existsSync(dir)) {
-  fs.mkdirSync(dir);
-}
-// isFolderExists();
-
-const newFile = String.prototype.concat(THEsection);
-
-var fileName = "content-" + Date.now() + ".html";
-
-fs.writeFile("generated/" + fileName, newFile, 'utf8', function (err) {
-  if (err) throw new Error('file not written')
-  // console.log(newFile);
-  console.log('file successfully written ' + fileName)
-})
-
-
-// write("generated/" + fileName, newFile)
-
-
-
-// === Replace with methods from utils
