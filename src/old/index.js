@@ -48,12 +48,12 @@ function combineCombineReplaceMeLater(string, value) {
 function parseSource() {
 
 
-
-  let thisSource =
-    Convert.htmlComments(fs.readFileSync('source/source-for-index.md', 'utf8'))
-      .trim()
-      .split('\n')
-      .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
+  // 
+  // let thisSource =
+  //   Convert.htmlComments(fs.readFileSync('source/source-for-index.md', 'utf8'))
+  //     .trim()
+  //     .split('\n')
+  //     .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
 
 
 
