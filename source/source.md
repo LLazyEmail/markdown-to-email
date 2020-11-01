@@ -1,55 +1,65 @@
-# Secrets Of High-Performing Teams: Part II
+# Magic Behind Test Automation
+
+_I test, therefore it works._
+
+Today most companies continue to demand faster releases and innovative software to stand up to the dynamic market scenario and steep competition.
+
+With companies leaning on DevOps and agile philosophy of software development, tech testing constitutes a crucial part of it. The once-popular manual testing doesn’t do the trick for some modern connected devices and intricate architecture applications. Can a software test another software? Yes. Let us tell you about automation testing.
 
 
+## What Is Automation Testing
 
-This is our second newsletter in the series of Secrets of Top-Performing DevOps Teams. In the first part, we’ve got to grips with the DevOps approach and the way it has amplified the IT workflow.
+Automation testing (AT or TA) is exactly what the name implies. Instead of a human sitting computer-hunched, the process in question is, well, automated. From a technical standpoint, it is the act of assuring software quality by running tests automatically, managing test data, and analyzing test results. This is usually done by writing test scripts or utilizing any automation testing tool. To put it simply, programmers make it work and testers make it break. 
 
-Here’s a quick reminder and a short introduction for the unaware:
-
-Tech role has germinated from "help fix my laptop" to "help me become the best." While many dev teams are trapped firefighting, leading teams align with the business, adopt agile principles and automation, and lead the digital transformation.
-
-What’s in it for DevOps, you’d ask? It’s simple: a robust DevOps team facilitates faster development of new products and easier maintenance of existing deployments.
-
-Read between the lines - agile-based DevOps approach yields an increase in development productivity. And with no silver bullet methods for improving IT efficiency, perfecting DevOps might be your best shot.
-
-Without further ado, let’s dive into our top picks for DevOps team success.
+Overall, TA is used to automatize monotonous tasks and other testing tasks which are beyond human capabilities.
 
 
-## Hacking Your Way Through to a High-Performing DevOps Team
+### Why Test Automation: Benefits
+
+Developers are often reluctant to switch to automated processes, haunted by fear and uncertainty. However, the benefits beat the costs in the long run. And if you are not into testing your product, chances are, your customers won’t bother to test it either.
+
+Automated testing is an indispensable technique due to the following reasons:
+
+**1. Faster Feedback**
+
+AT is a magic bullet for validation during different cycles of a software project. It facilitates communication among specialists and Product Owners and helps with fixing potential glitches.
+
+**2. It Improves Precision**
+
+You should never underestimate the human factor. Even the most meticulous tester is mistake-prone while performing humdrum manual testing. Minimized human intervention in test automation contributes to more accuracy compared with testing applications manually. Automated tests follow the same procedure precisely and never forget to register detailed results.
+
+**3. Fast-track Results**
+
+Thanks to the immediate implementation of AT, priceless hours are saved even for elaborate and huge systems. This also means that tests can be executed on a regular basis, delivering accelerated results with no struggle and time wastes.
+
+**4. Cost-effectiveness**
+
+Regardless of the initial funding, automated testing allows companies to save for a rainy day. Thanks to the sharp drop in the time needed to run tests, automation testing adds to high-performance processes and pares down the amount of bug fixing post-release.
+
+**5. Higher Test Coverage**
+
+The more tests are executed, the higher your test coverage is (flawless logic, right?). With that being said, maximized test coverage is no longer a far-fetched dream with the implementation of automated tests. Automated testing doesn’t call for a massive team, so more tests can be executed pertaining to an application.
+
+However, we are not talking about eliminating manual testing. Ideally, you should combine manual and automated tests, as certain apps may be too complex and not suitable for automated testing (besides, you don’t want a machine to evaluate usability and look-and-feel).  After all, the whole point of automated testing is to bring down the number of test cases run manually (and point out someone’s mistakes, of course). This brings us to our next part.
 
 
+## When To Automate Your testing
 
-### 1. High-performing teams put business first
+The whole point of using TA depends on the number of test rounds. Thus, it’s better to leave tests that need to be run a few times for manual testing. But if you are dealing with test cases that are run frequently and packed with data, then automated testing can ramp up your performance.
 
-You’d say, a revenue-first mindset won’t get you the probity medal. However, it’s not our point. In fact, profitability should be your top of mind not for the sake of money only.
-
-
-Successful DevOps teams are more likely to tie their tech projects to revenue, mainly because it’s the #1 metric for their performance. As a result, teams that are business aligned tend to prioritize projects with business management and use business and tech scorecards to measure success. Therefore, just a simple shift from an activity-driven mindset to a revenue-first approach can guarantee a positive change in your team productivity and overall result.
+You can leverage your test coverage powers by automating:
 
 
-(We’re not implying that you should ditch the customer-centric action, don’t compare apples and pears)
+*   Repeated tests
+*   Error-prone tests
+*   Tests filled with data
+*   Time-wasting tests
+*   Regression testing
+*   Advanced GUI testing
 
-### 2. They assign end-to-end responsibility
-
-Separating development and operations can present potential issues and pitfalls like performance problems and inconsistent environments. In DevOps, both groups cooperate as a team that's completely responsible for a product from beginning to end.
-
-
-Unlike the traditional approach or a low-performing team, where each team member is accountable for their own role, the perfect DevOps team obliterates those silos and makes an excellent result the focus of the entire crew.
-
-
-A developer is no longer just a developer in charge of X lines of code. A tester is no longer accountable for the expected functionality.  A high-performing team wears multiple hats and has got it ALL covered.
-
-### 3. Automation technology is not an option for a dazzling performance
-
-Let’s be honest: the bright minds like working with new and shiny technology. And you need those bright minds in your team to make it high-performing and guarantee superb results. It's a bit hard to employ and keep these big stars in a company that trusts in a creaky, legacy toolchain to build a product, right?
+To cut it short, AT is great for reducing overall test execution time and overall cost of the project.
 
 
-Investing in the DevOps tools will not only make the team more effective, but it will also make them want to stay. From a practical standpoint, automation tools can increase tech efficiency, eliminate errors, and help deploy apps faster. That refers to simplifying the process of configuring, monitoring, and maintaining the network infrastructure.
+## Bottom Line
 
-
-
-## Pull it all together
-
-There's no panacea for successful DevOps team building, but the process itself is definitely easier than quantum physics. The majority of our tips and tricks dispensed above are of common-sense variety. In practice, our secrets call for good old-fashioned hard work and a sprinkle of knowledge.
-
-To deliver top-notch results, employees must be well-settled, teams well-structured, and objectives outlined based on business priorities. And it’s not enough to recruit the right people, retention and training are equally important. Overall, it takes a solid mix of all these components to build a team that truly thrives.
+Test automation is a surefire tool to increase the productiveness and number of tests covered. It came on stage to accelerate execution cycles, rid testers of mundane tasks, minimize human efforts, and guarantee instant feedback. However, automated tests are not universally valid for all kinds of tasks. Sometimes, you are better off letting QA specialists do their job.
