@@ -36,3 +36,5 @@ Kind Regards
 
 
 ### The Bottom Line
+
+![https://github.com/atherdon/newsletters/blob/master/archive/img/memes/october/4/7.jpg][http://google.com][alt text]

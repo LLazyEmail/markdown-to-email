@@ -11,7 +11,8 @@ const {
   sponsorship,
   br,
   italic,
-  strong
+  strong,
+  mem
 } = require("./parse-functions");
 
 const {
@@ -34,6 +35,7 @@ const {
   REGEXP_EM,
   REGEXP_SPONSORSHIP,
   REGEXP_HTML_COMMENTS,
+  REGEXP_MEM
 } = require("./constants");
 
 // @todo update this method. I'm sure it can be improved.
@@ -69,6 +71,7 @@ async function parse() {
 
   replaceMarkdown(REGEXP_BR, br, parsedContent);
   replaceMarkdown(REGEXP_SPONSORSHIP, sponsorship, parsedContent);
+  replaceMarkdown(REGEXP_MEM, mem, parsedContent);
 
   const fileName = "parsed-content-second-" + Date.now() + ".html";
   await write(fileName, parsedContent.content);
