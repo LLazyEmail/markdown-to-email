@@ -81,26 +81,3 @@ function Slimdown() {
 }
 
 var sd = new Slimdown();
-
-var dir = './generated';
-
-if (!fs.existsSync(dir)) {
-  fs.mkdirSync(dir);
-}
-
-// @TODO replace it with our own method.
-const source = fs.readFileSync('source/source.md', 'utf8');
-// console.log(source);
-
-const content = sd.render(source);
-var fileName = "content-" + Date.now() + ".html";
-
-fs.writeFile("./generated/xxxxxxx" + fileName, content, 'utf8', function (err) {
-  if (err) throw new Error('file not written')
-  // console.log(newFile);
-  console.log('file successfully written ' + fileName)
-})
-
-
-// OR you can use my new method
-// write("./generated/xxxxxxx" + fileName, just_a_guess)
