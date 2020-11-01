@@ -8,7 +8,11 @@ function replaceMarkdown(regexp, callback, sourceContent) {
 }
 
 const italic = "$1<em>$3</em>$4";
-const strong = "<strong>$2$3</strong>";
+// const strong = "<strong>$2$3</strong>";
+
+function strong(text, content, character){
+  return readFile('typography/strong').replace('{content}', `${content + character}`)
+}
 
 function link(text, title, href) {
   // @TODO replace this shit

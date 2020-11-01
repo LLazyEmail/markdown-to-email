@@ -32,21 +32,6 @@ Object.defineProperties(Convert, {
       return this.replace('*|MC_PREVIEW_TEXT|*', text.slice(3))
     }
   },
-  'title': {
-      value: function(text) {
-        return readFile('typography/mainTitle').replace('{content}', text.slice(2))
-      }
-  },
-  'subtitle': {
-      value: function(text) {
-        return readFile('typography/subtitle').replace('{content}', text.slice(3))
-      }
-  },
-  'paragraph': {
-      value: function(text) {
-        return readFile('typography/paragraph').replace('{content}', text)
-      }
-  },
   'image': {
       value: function(text) {
         const altText = text.match(/\[(.*?)\]/g)[0].replace(/[\[\]]/g, '');
@@ -56,88 +41,6 @@ Object.defineProperties(Convert, {
           .replace('{src}', src)
           .replace('{altText}', altText)
       }
-  },
-  'linebreak': {
-    value: function() {
-      return readFile('typography/divider')
-    }
-  },
-  'links': {
-    value: function(text) {
-      const regex = /\[(.*?)\]\((.*?)\)/g
-      const linkTemplate = readFile('typography/link')
-
-      let m;
-
-      do {
-          m = regex.exec(text);
-          if (m) {
-              text = text.replace(m[0], linkTemplate.replace('{href}', m[2]).replace('{content}', m[1]))
-          }
-      } while (m);
-
-      return text
-    }
-  },
-  'sponsorship': {
-    value: function(text) {
-      const regex = /\[(.*?)\]/g
-      const [src, href, content] = text.match(regex).map(match => match.replace(/[\[\]]/g, ''))
-
-      return readFile('body/promo')
-                .replace('{src}', src)
-                .replace('{href}', href)
-                .replace('{content}', content)
-    }
-  },
-  'bold': {
-    value: function(text) {
-      const regex = /\*\*(.*?)\*\*/g
-
-      let m;
-
-      do {
-          m = regex.exec(text);
-          if (m) {
-              text = text.replace(m[0], '<strong style="font-weight: bolder;">' + m[1] + '</strong>')
-          }
-      } while (m);
-
-      return text
-    }
-  },
-  'italic': {
-    value: function(text) {
-      const regex = /\_(.*?)\_/g
-
-      let m;
-
-      do {
-          m = regex.exec(text);
-          if (m) {
-              text = text.replace(m[0], '<em>' + m[1] + '</em>')
-          }
-      } while (m);
-
-      return text
-    }
-  },
-  'htmlComments': {
-    value: function(text) {
-      const regex = /<!--(([\r\n]|.)*?)-->/g
-      const a = text.match(regex);
-
-      for (match in a) {
-        text = text.replace(a[match], '')
-      }
-
-      return text;
-    }
-  },
-  'lists': {
-    value: function(text) {
-      // const regex =
-    }
   }
 })
 
@@ -176,24 +79,11 @@ function parseSource() {
       case '#~':
         header = Convert.previewText.call(header, line)
         break
-      case '# ':
-        emailBody += Convert.title(line)
-        break
-      case '##':
-        emailBody += Convert.subtitle(line)
-        break
       case '![':
         emailBody += Convert.image(line)
         break
-      case '':
-        emailBody += Convert.linebreak()
-        break
       case '~[':
         promo = Convert.sponsorship(line)
-        break
-      default:
-        line = Convert.links(line)
-        emailBody += Convert.paragraph(line)
         break
     }
   })
@@ -203,14 +93,11 @@ function parseSource() {
 }
 parseSource()
 
-
-
 var dir = 'generated';
 
 if (!fs.existsSync(dir)){
     fs.mkdirSync(dir);
 }
-
 
 const newFile = String.prototype.concat(header, promo, section, promo, socials, footer);
 
