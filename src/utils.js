@@ -10,9 +10,7 @@
 //   REGEXP_BR,
 // } = require("./constants");
 
-const fs = require("fs").promises;
-
-
+const fs = require("fs");
 
 // @todo add lodash here. will be pretty useful
 
@@ -77,24 +75,22 @@ const fs = require("fs").promises;
 // this utls file should serve a source for a very small and common methods.
 // module.export = Converter;
 
-async function write(fileName, content, dir = "generated") {
-
-// isFolderExists(dir); // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
+function write(fileName, content, dir = "generated") {
+  // isFolderExists(dir); // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
 
   var _path = dir + "/" + fileName; //@todo it's not an ideal thing
 
-  await fs.writeFile(_path, content, "utf8", function (err) {
+  fs.writeFileSync(_path, content, function (err) {
     if (err) throw new Error("file not written");
     // console.log(newFile);
     console.log("file successfully written " + fileName);
   });
 
   console.log("file successfully written " + fileName);
-
 }
 
-async function readSourceFile(fileName) {
-  return await fs.readFile(fileName, "utf8");
+function readSourceFile(fileName) {
+  return fs.readFileSync(fileName, { encoding: "utf-8" });
 }
 
 function readFile(fileName) {
