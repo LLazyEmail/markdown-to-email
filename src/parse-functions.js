@@ -10,8 +10,11 @@ function replaceMarkdown(regexp, callback, sourceContent) {
 const italic = "$1<em>$3</em>$4";
 // const strong = "<strong>$2$3</strong>";
 
-function strong(text, doubleAsterix, content, asterix){
-  return readFile('typography/strong').replace('{content}', `${content + asterix}`)
+function strong(text, doubleAsterix, content, asterix) {
+  return readFile("typography/strong").replace(
+    "{content}",
+    `${content + asterix}`
+  );
 }
 
 function link(text, title, href) {
@@ -100,6 +103,13 @@ function image(text, alt, src) {
   }
 }
 
+function mem(text, src, href, altText) {
+  return readFile("typography/image")
+    .replace("{src}", src)
+    .replace("{altText}", altText)
+    .replace("{href}", href);
+}
+
 function header(text, chars, content) {
   var level = chars.length;
   switch (level) {
@@ -170,5 +180,6 @@ module.exports = {
   sponsorship,
   br,
   italic,
-  strong
+  strong,
+  mem,
 };

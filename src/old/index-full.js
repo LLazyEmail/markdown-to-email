@@ -82,9 +82,6 @@ function parseSource() {
       case '![':
         emailBody += Convert.image(line)
         break
-      case '~[':
-        promo = Convert.sponsorship(line)
-        break
     }
   })
 
