@@ -2,9 +2,9 @@ const fs = require('fs')
 // const parseSource = require(''./parseSource.js')
 const readFile = require('../parseSource');
 
-const { REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B, 
+const { REGEXP_H3, REGEXP_H2, REGEXP_H1, REGEXP_BLOCKQUOTE, REGEXP_B,
     REGEXP_I, REGEXP_IMG, REGEXP_A, REGEXP_BR,
-    REGEXP_HTML_COMMENTS, REGEXP_CUSTOM_SPONSORSHIP, REGEXP_CUSTOM_LINK, REGEXP_CUSTOM_MEME_IMAGE 
+    REGEXP_HTML_COMMENTS, REGEXP_CUSTOM_SPONSORSHIP, REGEXP_CUSTOM_LINK, REGEXP_CUSTOM_MEME_IMAGE
 } = require('../constants');
 
 let header,
@@ -45,10 +45,10 @@ Object.defineProperties(Convert, {
 })
 
 function parseSource() {
-  let thisSource = Convert.htmlComments(fs.readFileSync('source/source.md', 'utf8'))
-      .trim()
-      .split('\n')
-      .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
+  // let thisSource = Convert.htmlComments(fs.readFileSync('source/source.md', 'utf8'))
+  //     .trim()
+  //     .split('\n')
+  //     .map(line => line.replace('\r', '').replace('"image_tooltip"', ''));
 
   // Detect indexes of list items (via <li>)
   const lists = thisSource.reduce((accumulator, currentValue, currentIndex, array) => {
@@ -69,8 +69,6 @@ function parseSource() {
   thisSource.forEach(line => {
     const tag = line.slice(0, 2)
 
-    line = Convert.bold(line)
-    line = Convert.italic(line)
 
     switch(tag) {
       case '#!':
@@ -88,18 +86,3 @@ function parseSource() {
   section = readFile('body/section')
               .replace('{content}', emailBody)
 }
-parseSource()
-
-var dir = 'generated';
-
-if (!fs.existsSync(dir)){
-    fs.mkdirSync(dir);
-}
-
-const newFile = String.prototype.concat(header, promo, section, promo, socials, footer);
-
-fs.writeFile('generated/email.html', newFile, 'utf8', function(err) {
-  if (err) throw new Error('file not written')
-  // console.log(newFile);
-  console.log('file successfully written')
-})
