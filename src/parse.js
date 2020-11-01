@@ -1,4 +1,4 @@
-const { write, readSourceFile } = require("./utils");
+const { readSourceFile } = require("./utils");
 const {
   replaceMarkdown,
   header,
@@ -12,7 +12,7 @@ const {
   br,
   italic,
   strong,
-  mem
+  mem,
 } = require("./parse-functions");
 
 const {
@@ -35,24 +35,24 @@ const {
   REGEXP_EM,
   REGEXP_SPONSORSHIP,
   REGEXP_HTML_COMMENTS,
-  REGEXP_MEM
+  REGEXP_MEM,
 } = require("./constants");
 
 // @todo update this method. I'm sure it can be improved.
-async function parse() {
-  let markdown = await readSourceFile("source/source.md");
+function parse(source) {
+  let markdown = readSourceFile(source);
   let parsedContent = {
     content: markdown,
+    previewText:''
   };
 
   replaceMarkdown(REGEXP_HTML_COMMENTS, "", parsedContent);
-  replaceMarkdown(REGEXP_STRONG, strong , parsedContent);
+  replaceMarkdown(REGEXP_STRONG, strong, parsedContent);
   replaceMarkdown(REGEXP_EM, italic, parsedContent);
 
   replaceMarkdown(REGEXP_HEADER, header, parsedContent);
   replaceMarkdown(REGEXP_IMAGE, image, parsedContent);
   replaceMarkdown(REGEXP_LINK, link, parsedContent);
-
 
   replaceMarkdown(REGEXP_DEL, "<del>$1</del>", parsedContent);
   replaceMarkdown(REGEXP_Q, "<q>$1</q>", parsedContent);
@@ -73,8 +73,7 @@ async function parse() {
   replaceMarkdown(REGEXP_SPONSORSHIP, sponsorship, parsedContent);
   replaceMarkdown(REGEXP_MEM, mem, parsedContent);
 
-  const fileName = "parsed-content-second-" + Date.now() + ".html";
-  await write(fileName, parsedContent.content);
+  return parsedContent;
 }
 
-parse();
+module.exports = { parse };

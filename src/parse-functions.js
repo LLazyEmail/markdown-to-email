@@ -128,7 +128,7 @@ function sponsorship(text) {
     .match(regex)
     .map((match) => match.replace(/[\[\]]/g, ""));
 
-  return readFile("body/promo")
+  return readFile("body/sponsor")
     .replace("{src}", src)
     .replace("{href}", href)
     .replace("{content}", content);

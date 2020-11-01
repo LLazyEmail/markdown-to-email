@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest ./src/tests",
     "test:watch": "jest --watch ./src/tests",
-    "parser": "node ./src/parser.js",
-    "parse": "node ./src/parse",
+    "parse": "node ./src/parser",
+    "parse:full": "PARSE=full node ./src/parser",
     "lint": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
     "build:small": "node ./src/index.js"
   },
