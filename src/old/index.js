@@ -159,9 +159,6 @@ function parseSource() {
   const listItem = readFile('typography/listItem')
 
 
-
-
-
   // console.log(thisSource);
 
   // Replace text with html tags
@@ -172,14 +169,6 @@ function parseSource() {
 
   })
 
-  // console.log('---------')
-  // console.log(thisSource);
-
-  // console.log(lists);
-
-  // list.replace('{content}', listItem.slice(2));
-  //
-  // console.log(list);
 
   //
   // ------------------------ move out ----------------
@@ -188,16 +177,8 @@ function parseSource() {
   // AS NOBODY WANTED TO DO A BETTER STRUCTURE - WE HAVE AN ARRAY OF STRINGS THAT FUCKING MA HEAD
   thisSource.forEach(line => {
 
-
-
     // Below is the most stupid and un-reliable variable that this project has.
     const tag = line.slice(0, 2)
-
-    line = Convert.bold(line)
-    line = Convert.italic(line)
-
-    // console.log(tag)
-
 
     switch (tag) {
       case '#!':
@@ -210,12 +191,10 @@ function parseSource() {
         // emailBody += Convert.image(line)
         emailBody = combineCombineReplaceMeLater(emailBody, Convert.image(line));
         break
-
       case '~[':
         // promo = Convert.sponsorship(line)
         emailBody = combineCombineReplaceMeLater(emailBody, Convert.sponsorship(line));
         break
-
     }
   })
 
