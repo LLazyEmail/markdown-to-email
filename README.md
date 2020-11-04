@@ -68,7 +68,7 @@ Default paragraph contains no special opening symbols, just straight text.
 ```
 Consist of two parameters - `content`, the text of the link and `href` - the url of link. Can be placed at default paragraph.
 
-### Divider
+### Index
 You may use empty line in email body, just in the markdown document leave line empty, it will be parsed as real line break.
 
 ## Work principles

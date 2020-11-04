@@ -7,7 +7,9 @@ const App = () => {
   return (
       <html>
         <Head/>
-        <Body>
+        <Body
+            header={"Some Header"}
+        >
             Some content
         </Body>
       </html>
