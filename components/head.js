@@ -11,7 +11,7 @@ const Head = () => {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <title>The Secrets of High-Performing DevOps teams</title>
             <style>
-                {headStyles}
+                {/* headStyles */}
             </style>
             <Fonts/>
         </head>
