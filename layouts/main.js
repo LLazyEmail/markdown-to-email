@@ -1,13 +1,17 @@
-const head = require('./head');
-const body = require('./body');
+const Head = require('./head');
+const Body = require('./body');
 
-module.exports = `
-<!DOCTYPE html>
-<html
-  xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:v="urn:schemas-microsoft-com:vml"
-  xmlns:o="urn:schemas-microsoft-com:office:office"
->
-  ${head}
-  ${body}
-</html>`;
+const React = require('react');
+
+const App = () => {
+  return (
+      <html>
+        <Head/>
+        <Body>
+            Some content
+        </Body>
+      </html>
+  );
+}
+
+module.exports = App;

@@ -1,14 +1,21 @@
-module.exports = `<span
-class="mcnPreviewText"
-style="
-  display: none;
-  font-size: 0px;
-  line-height: 0px;
-  max-height: 0px;
-  max-width: 0px;
-  opacity: 0;
-  overflow: hidden;
-  visibility: hidden;
-  mso-hide: all;
-"
->{content}</span>`;
+const React = require('react');
+
+const PreviewText = (props) => {
+    return (
+        <span className="mcnPreviewText" style={{
+            display: 'none',
+            fontSize: '0px',
+            lineHeight: '0px',
+            maxHeight: '0px',
+            maxWidth: '0px',
+            opacity: 0,
+            overflow: 'hidden',
+            visibility: 'hidden',
+            msoHide: 'all'
+        }}>
+            {props.children}
+        </span>
+    );
+}
+
+module.exports = PreviewText;

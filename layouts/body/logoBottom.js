@@ -1,10 +1,14 @@
-module.exports = `<table
-border="0"
-cellpadding="0"
-cellspacing="0"
-width="100%"
-class="mcnImageBlock"
-style="
+const React = require('react');
+
+const LogoBottom = () => {
+    return (
+        <table
+            border="0"
+            cellPadding="0"
+            cellSpacing="0"
+            width="100%"
+            className="mcnImageBlock"
+            style="
   min-width: 100%;
   border-collapse: collapse;
   mso-table-lspace: 0pt;
@@ -12,27 +16,27 @@ style="
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 "
->
-<tbody class="mcnImageBlockOuter">
-  <tr>
-    <td
-      valign="top"
-      style="
+        >
+            <tbody className="mcnImageBlockOuter">
+            <tr>
+                <td
+                    valign="top"
+                    style="
         padding: 9px;
         mso-line-height-rule: exactly;
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
       "
-      class="mcnImageBlockInner"
-    >
-      <table
-        align="left"
-        width="100%"
-        border="0"
-        cellpadding="0"
-        cellspacing="0"
-        class="mcnImageContentContainer"
-        style="
+                    className="mcnImageBlockInner"
+                >
+                    <table
+                        align="left"
+                        width="100%"
+                        border="0"
+                        cellPadding="0"
+                        cellSpacing="0"
+                        className="mcnImageContentContainer"
+                        style="
           min-width: 100%;
           border-collapse: collapse;
           mso-table-lspace: 0pt;
@@ -40,13 +44,13 @@ style="
           -ms-text-size-adjust: 100%;
           -webkit-text-size-adjust: 100%;
         "
-      >
-        <tbody>
-          <tr>
-            <td
-              class="mcnImageContent"
-              valign="top"
-              style="
+                    >
+                        <tbody>
+                        <tr>
+                            <td
+                                className="mcnImageContent"
+                                valign="top"
+                                style="
                 padding-right: 9px;
                 padding-left: 9px;
                 padding-top: 0;
@@ -56,24 +60,24 @@ style="
                 -ms-text-size-adjust: 100%;
                 -webkit-text-size-adjust: 100%;
               "
-            >
-              <a
-                href="https://hackernoon.com/"
-                title=""
-                class=""
-                target="_blank"
-                style="
+                            >
+                                <a
+                                    href="https://hackernoon.com/"
+                                    title=""
+                                    className=""
+                                    target="_blank"
+                                    style="
                   mso-line-height-rule: exactly;
                   -ms-text-size-adjust: 100%;
                   -webkit-text-size-adjust: 100%;
                 "
-              >
-                <img
-                  align="center"
-                  alt=""
-                  src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/brand/hackernoon.png"
-                  width="564"
-                  style="
+                                >
+                                    <img
+                                        align="center"
+                                        alt=""
+                                        src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/brand/hackernoon.png"
+                                        width="564"
+                                        style="
                     max-width: 15426px;
                     padding-bottom: 0;
                     display: inline !important;
@@ -84,14 +88,17 @@ style="
                     text-decoration: none;
                     -ms-interpolation-mode: bicubic;
                   "
-                  class="mcnImage"
-                />
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-  </tr>
-</tbody>
-</table>`;
+                                        className="mcnImage"
+                                    />
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    );
+}
+module.exports = LogoBottom;

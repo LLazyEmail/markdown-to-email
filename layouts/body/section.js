@@ -1,90 +1,25 @@
-module.exports = `
-<table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                    class="mcnTextBlock"
-                    style="
-                      min-width: 100%;
-                      border-collapse: collapse;
-                      mso-table-lspace: 0pt;
-                      mso-table-rspace: 0pt;
-                      -ms-text-size-adjust: 100%;
-                      -webkit-text-size-adjust: 100%;
-                    "
-                  >
-                    <tbody class="mcnTextBlockOuter">
-                      <tr>
-                        <td
-                          valign="top"
-                          class="mcnTextBlockInner"
-                          style="
-                            padding-top: 9px;
-                            mso-line-height-rule: exactly;
-                            -ms-text-size-adjust: 100%;
-                            -webkit-text-size-adjust: 100%;
-                          "
-                        >
-                          <!--[if mso]>
-				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-				<tr>
-				<![endif]-->
+const React = require('react');
 
-                          <!--[if mso]>
-				<td valign="top" width="600" style="width:600px;">
-				<![endif]-->
-                          <table
-                            align="left"
-                            border="0"
-                            cellpadding="0"
-                            cellspacing="0"
-                            style="
-                              max-width: 100%;
-                              min-width: 100%;
-                              border-collapse: collapse;
-                              mso-table-lspace: 0pt;
-                              mso-table-rspace: 0pt;
-                              -ms-text-size-adjust: 100%;
-                              -webkit-text-size-adjust: 100%;
-                            "
-                            width="100%"
-                            class="mcnTextContentContainer"
-                          >
-                            <tbody>
-                              <tr>
-                                <td
-                                  valign="top"
-                                  class="mcnTextContent"
-                                  style="
-                                    padding: 0px 18px 9px;
-                                    line-height: 150%;
-                                    mso-line-height-rule: exactly;
-                                    -ms-text-size-adjust: 100%;
-                                    -webkit-text-size-adjust: 100%;
-                                    word-break: break-word;
-                                    color: #111111;
-                                    font-family: 'Source Sans Pro',
-                                      'Helvetica Neue', Helvetica, Arial,
-                                      sans-serif;
-                                    font-size: 18px;
-                                    text-align: left;
-                                  "
-                                >
-                                  {content}
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <!--[if mso]>
-				</td>
-				<![endif]-->
+const Section = (props) => {
+    return (
+        <table border={0} cellPadding={0} cellSpacing={0} width="100%" className="mcnTextBlock" style={{minWidth: '100%', borderCollapse: 'collapse', msoTableLspace: '0pt', msoTableRspace: '0pt', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%'}}>
+            <tbody className="mcnTextBlockOuter">
+            <tr>
+                <td valign="top" className="mcnTextBlockInner" style={{paddingTop: '9px', msoLineHeightRule: 'exactly', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%'}}>
+                    <table align="left" border={0} cellPadding={0} cellSpacing={0} style={{maxWidth: '100%', minWidth: '100%', borderCollapse: 'collapse', msoTableLspace: '0pt', msoTableRspace: '0pt', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%'}} width="100%" className="mcnTextContentContainer">
+                        <tbody>
+                        <tr>
+                            <td valign="top" className="mcnTextContent" style={{padding: '0px 18px 9px', lineHeight: '150%', msoLineHeightRule: 'exactly', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%', wordBreak: 'break-word', color: '#111111', fontFamily: '"Source Sans Pro","Helvetica Neue", Helvetica, Arial,sans-serif', fontSize: '18px', textAlign: 'left'}}>
+                                {props.children}
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    );
+}
 
-                          <!--[if mso]>
-				</tr>
-				</table>
-				<![endif]-->
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>`;
+module.exports = Section;
