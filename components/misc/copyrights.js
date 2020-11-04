@@ -5,4 +5,4 @@ const Copyright = () => {
         <em>Copyright © ${new Date().getFullYear()} Hacker Noon. All rights reserved.</em>
     );
 }
-    module.exports = Copyright;
+module.exports = Copyright;

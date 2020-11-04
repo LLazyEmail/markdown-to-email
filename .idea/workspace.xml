@@ -5,40 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09c90e9a-b56b-482d-a773-c089d8f51700" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/body/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/body/divider.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/divider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/body/empty-section.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/empty-section.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/body/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/body/headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/headline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/body/logoBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/logoBottom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/body/logoTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/logoTop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/body/previewText.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/previewText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/body/section.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/section.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/body/sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/sponsor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/head.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/head.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/misc/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/address.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/misc/copyrights.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/copyrights.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/misc/fonts.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/fonts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/misc/head-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/head-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/misc/head-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/head-styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/misc/newsletter-sponsorship-link.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/newsletter-sponsorship-link.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/misc/unsubscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/unsubscribe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/typography/divider.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/divider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/typography/heading.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/heading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/typography/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/typography/italic.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/italic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/typography/link.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/link.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/typography/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/typography/listItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/listItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/typography/mainTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/mainTitle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/typography/paragraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/paragraph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/typography/strong.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/strong.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/typography/subtitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/subtitle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/misc/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/misc/copyrights.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/copyrights.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +61,7 @@
       <updated>1604461981153</updated>
       <workItem from="1604461982343" duration="6904000" />
       <workItem from="1604498582387" duration="764000" />
-      <workItem from="1604508639764" duration="258000" />
+      <workItem from="1604508639764" duration="396000" />
     </task>
     <servers />
   </component>
