@@ -94,7 +94,7 @@ function readSourceFile(fileName) {
 }
 
 function readFile(fileName) {
-  return require(`../layouts/${fileName}`);
+  return require(`./components/${fileName}`);
 }
 
 function isFolderExists(dir) {

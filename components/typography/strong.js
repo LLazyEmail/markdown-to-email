@@ -2,7 +2,7 @@ const React = require('react');
 
 const Strong = (props) => {
     return (
-        <strong style="font-weight: bolder;">
+        <strong style={{fontWeight: "bolder"}}>
             {props.children}
         </strong>
     );
