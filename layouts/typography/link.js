@@ -1,1 +1,11 @@
-module.exports = `<a href="{href}" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #111111;font-weight: bold;text-decoration: underline;">{content}</a>`;
+const React = require('react');
+
+const Link = (props) => {
+    return (
+        <a href={props.href} target="_blank" style={{msoLineHeightRule: 'exactly', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%', color: '#111111', fontWeight: 'bold', textDecoration: 'underline'}}>
+            {props.children}
+        </a>
+    );
+}
+
+module.exports = Link;
