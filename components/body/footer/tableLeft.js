@@ -1,8 +1,7 @@
-const React = require('react');
+import React from 'react';
+import styles from './styles';
 
-const styles = require('./styles');
-
-const TableLeft = (props) => {
+export default function TableLeft(props){
     return (
         <table align="left" border={0} cellPadding={0} cellSpacing={0} style={styles.tableLeft}>
             <tbody>

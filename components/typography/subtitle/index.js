@@ -1,8 +1,7 @@
-const React = require('react');
+import React from 'react';
+import styles from './styles';
 
-const styles = require('./styles');
-
-const SubTitle = (props) => {
+export default function SubTitle(props) {
     return (
         <p dir="ltr" style={styles.ltr}>
             <span style={styles.spanFont}>
@@ -15,5 +14,3 @@ const SubTitle = (props) => {
         </p>
     );
 }
-
-module.exports = SubTitle;

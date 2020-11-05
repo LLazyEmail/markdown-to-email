@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     bodyTable: {borderCollapse: 'collapse', msoTableLspace: '0pt', msoTableRspace: '0pt', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%', height: '100%', margin: 0, padding: 0, width: '100%', backgroundColor: '#ffffff'},
     bodyCell: {msoLineHeightRule: 'exactly', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%', height: '100%', margin: 0, padding: '10px', width: '100%', borderTop: 0},
     templateContainer: {borderCollapse: 'collapse', msoTableLspace: '0pt', msoTableRspace: '0pt', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%', border: 0, maxWidth: '600px !important'},

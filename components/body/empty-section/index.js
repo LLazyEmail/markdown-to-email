@@ -1,11 +1,9 @@
-const React = require('react');
+import React from 'react';
 
-const EmptySection = (props) => {
+export default function EmptySection(props){
     return (
         <>
             {props.children}
         </>
     );
 }
-
-module.exports = EmptySection;

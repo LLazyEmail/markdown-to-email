@@ -1,8 +1,7 @@
-const React = require('react');
+import React from 'react';
+import styles from './styles';
 
-const styles = require('./styles');
-
-const Image = (props) => {
+export default function Image (props) {
     return (
         <p dir="ltr" style={styles.ltr}>
         <span style={styles.spanFont}>

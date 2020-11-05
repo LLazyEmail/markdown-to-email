@@ -1,13 +1,13 @@
-const Copyrights = require("../../misc/copyrights");
-const Address = require("../../misc/address");
-const Unsubscribe = require("../../misc/unsubscribe");
-const NewsletterSponsorshipLink = require("../../misc/newsletter-sponsorship-link");
-const TableLeft = require("./tableLeft");
-const styles = require("./styles");
+import React from 'react';
+import Copyrights from "../../misc/copyrights";
+import Address from "../../misc/address";
+import Unsubscribe from "../../misc/unsubscribe";
+import NewsletterSponsorshipLink from "../../misc/newsletter-sponsorship-link";
+import TableLeft from "./tableLeft";
+import styles from "./styles";
 
-const React = require('react');
 
-const Footer = () => {
+function Footer(){
     return (
         <div>
             <table border={0} cellPadding={0} cellSpacing={0} width="100%" className="mcnFollowBlock" style={styles.followBlock}>
@@ -99,4 +99,4 @@ const Footer = () => {
     );
 }
 
-module.exports = Footer;
+export default Footer;

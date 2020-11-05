@@ -1,11 +1,9 @@
-const React = require('react');
+import React from 'react';
 
-const Strong = (props) => {
+export default function Strong (props) {
     return (
         <strong style={{fontWeight: "bolder"}}>
             {props.children}
         </strong>
     );
 }
-
-module.exports = Strong;

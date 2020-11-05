@@ -1,9 +1,7 @@
-const headStyles = require('./misc/head-styles');
-const Fonts = require('./misc/fonts');
+import Fonts from './misc/fonts';
+import React from 'react';
 
-const React = require('react');
-
-const Head = () => {
+export default function Head() {
     return (
         <head>
             <meta charSet="UTF-8" />
@@ -17,5 +15,3 @@ const Head = () => {
         </head>
     );
 }
-
-module.exports = Head;

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     unsubscribe: {
         msoLineHeightRule: 'exactly',
         MsTextSizeAdjust: '100%',

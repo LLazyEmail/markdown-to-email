@@ -1,12 +1,9 @@
-const React = require('react');
+import React from 'react';
 
-const HeadLine = (props) => {
+export default function HeadLine(props){
     return (
         <>
             {props.children}
         </>
     );
 }
-
-module.exports = HeadLine;
-

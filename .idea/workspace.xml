@@ -5,59 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09c90e9a-b56b-482d-a773-c089d8f51700" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/body/footer/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/body/footer/tableLeft.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/body/logoBottom/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/body/logoTop/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/body/previewText/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/body/section/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/body/sponsor/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/misc/newsletter-sponsorship-link/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/misc/unsubscribe/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/typography/divider/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/typography/divider/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/typography/heading/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/typography/heading/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/typography/image/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/typography/italic/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/typography/link/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/typography/list/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/typography/mainTitle/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/typography/paragraph/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/typography/subtitle/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/body/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/content/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/body/divider.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/divider/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/body/empty-section.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/empty-section/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/body/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/footer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/body/headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/headline/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/body/logoBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/logoBottom/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/body/logoTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/logoTop/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/body/previewText.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/previewText/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/body/section.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/section/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/body/sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/sponsor/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/content/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/content/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/divider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/divider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/divider/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/divider/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/empty-section/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/empty-section/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/footer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/footer/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/footer/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/footer/tableLeft.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/footer/tableLeft.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/headline/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/headline/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/logoBottom/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/logoBottom/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/logoBottom/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/logoBottom/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/logoTop/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/logoTop/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/logoTop/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/logoTop/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/previewText/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/previewText/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/previewText/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/previewText/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/section/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/section/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/section/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/section/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/sponsor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/sponsor/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/body/sponsor/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/sponsor/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/head.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/head.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/misc/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/address/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/misc/copyrights.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/copyrights/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/misc/fonts.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/fonts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/misc/head-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/head-styles/head-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/misc/head-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/head-styles/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/misc/newsletter-sponsorship-link.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/newsletter-sponsorship-link/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/misc/unsubscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/unsubscribe/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/typography/divider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/typography/heading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/typography/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/image/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/typography/italic.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/body/divider/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/typography/link.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/link/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/typography/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/typography/listItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/list/item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/typography/mainTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/mainTitle/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/typography/paragraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/paragraph/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/typography/strong.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/strong/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/typography/subtitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/subtitle/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/misc/address/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/address/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/misc/copyrights/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/copyrights/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/misc/fonts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/fonts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/misc/head-styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/head-styles/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/misc/newsletter-sponsorship-link/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/newsletter-sponsorship-link/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/misc/newsletter-sponsorship-link/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/newsletter-sponsorship-link/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/misc/unsubscribe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/unsubscribe/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/misc/unsubscribe/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/misc/unsubscribe/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/divider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/divider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/divider/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/divider/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/heading/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/heading/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/heading/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/heading/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/image/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/image/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/image/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/image/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/link/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/link/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/link/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/link/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/list/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/list/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/list/item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/list/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/list/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/mainTitle/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/mainTitle/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/mainTitle/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/mainTitle/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/paragraph/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/paragraph/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/paragraph/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/paragraph/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/strong/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/strong/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/subtitle/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/subtitle/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/typography/subtitle/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/typography/subtitle/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +70,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -85,12 +88,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.14.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/body/logoTop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -124,7 +128,9 @@
       <updated>1604461981153</updated>
       <workItem from="1604461982343" duration="6904000" />
       <workItem from="1604498582387" duration="764000" />
-      <workItem from="1604508639764" duration="6902000" />
+      <workItem from="1604508639764" duration="7382000" />
+      <workItem from="1604561317275" duration="793000" />
+      <workItem from="1604591578067" duration="5832000" />
     </task>
     <servers />
   </component>

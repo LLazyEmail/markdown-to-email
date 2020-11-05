@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     previewText: {
         display: 'none',
         fontSize: '0px',

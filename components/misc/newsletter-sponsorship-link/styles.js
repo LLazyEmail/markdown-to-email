@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     news: {
         msoLineHeightRule: 'exactly',
         MsTextSizeAdjust: '100%',

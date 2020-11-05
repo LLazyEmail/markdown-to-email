@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     imageBlock: {
         minWidth: '100%',
         borderCollapse: 'collapse',

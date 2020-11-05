@@ -1,13 +1,10 @@
-const React = require('react');
+import React from 'react';
+import styles from './styles';
 
-const styles = require('./styles');
-
-const PreviewText = (props) => {
+export default function PreviewText (props){
     return (
         <span className="mcnPreviewText" style={styles.previewText}>
             {props.children}
         </span>
     );
 }
-
-module.exports = PreviewText;

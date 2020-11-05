@@ -1,8 +1,7 @@
-const React = require('react');
+import React from 'react';
 
-const Copyright = () => {
+export default function Copyright () {
     return (
         <em>Copyright © ${new Date().getFullYear()} Hacker Noon. All rights reserved.</em>
     );
 }
-module.exports = Copyright;

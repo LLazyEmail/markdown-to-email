@@ -1,19 +1,13 @@
-const Head = require('./head');
-const Body = require('./body');
+import React from 'react';
+import Head from './head';
+import Body from './body';
 
-const React = require('react');
-
-const App = () => {
+export default function App () {
   return (
-      <html>
-        <Head/>
         <Body
             header={"Some Header"}
         >
             Some content
         </Body>
-      </html>
   );
 }
-
-module.exports = App;

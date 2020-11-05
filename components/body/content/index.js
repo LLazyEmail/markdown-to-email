@@ -1,11 +1,9 @@
-const React = require('react');
+import React from 'react';
 
-const Content = () => {
+export default function Content(){
     return (
         <>
             content
         </>
     );
 }
-
-module.exports = Content;
