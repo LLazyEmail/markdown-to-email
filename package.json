@@ -9,30 +9,18 @@
     "parse": "node ./src/parser",
     "parse:full": "PARSE=full node ./src/parser",
     "lint": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
-    "build:small": "node ./src/index.js",
-    "build:react": "webpack --mode development",
-    "dev:react": "webpack-dev-server --mode development --open --hot"
+    "build:small": "node ./src/index.js"
   },
   "author": "hirdbluebird",
   "license": "ISC",
   "devDependencies": {
-    "babel-loader": "^8.1.0",
     "eslint": "7.12.1",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-plugin-import": "2.22.1",
-    "jest": "26.6.1",
-    "webpack": "^5.4.0",
-    "webpack-cli": "3.3.9",
-    "webpack-dev-server": "^3.11.0"
+    "jest": "26.6.1"
   },
   "dependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.5",
-    "html-webpack-plugin": "^4.5.0",
     "lodash": "^4.17.20",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
     "remark": "^13.0.0"
   }
 }
