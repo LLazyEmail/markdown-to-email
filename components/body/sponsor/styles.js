@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     imageCardRightContentOuter: {borderCollapse: 'collapse', msoTableLspace: '0pt', msoTableRspace: '0pt', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%'},
     imageCardRightContentInner: {padding: 0, msoLineHeightRule: 'exactly', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%'},
     imageCardRightContentContainer: {borderCollapse: 'collapse', msoTableLspace: '0pt', msoTableRspace: '0pt', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%'},

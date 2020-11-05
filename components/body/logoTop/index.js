@@ -1,8 +1,7 @@
-const React = require('react');
+import React from 'react';
+import styles from './styles';
 
-const styles = require('./styles');
-
-const LogoTop = ()=>{
+export default function LogoTop(){
     return (
         <table border={0} cellPadding={0} cellSpacing={0} width="100%" className="mcnImageBlock" style={styles.imageBlock}>
             <tbody className="mcnImageBlockOuter">
@@ -28,5 +27,3 @@ const LogoTop = ()=>{
         </table>
     );
 };
-
-module.exports = LogoTop;

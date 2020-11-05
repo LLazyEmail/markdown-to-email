@@ -1,12 +1,10 @@
-const React = require('react');
+import React from 'react';
+import styles from './styles';
 
-const styles = require('./styles');
-
-const Unsubscribe = () => {
+export default function Unsubscribe() {
     return (
         <a href="*|UNSUB|*" style={styles.unsubscribe}>
             unsubscribe
         </a>
     );
 }
-module.exports = Unsubscribe;

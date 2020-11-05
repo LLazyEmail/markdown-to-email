@@ -1,13 +1,10 @@
-const React = require('react');
+import React from 'react';
+import styles from './styles';
 
-const styles = require('./styles');
-
-const Link = (props) => {
+export default function Link (props)  {
     return (
         <a href={props.href} target="_blank" style={styles.link}>
             {props.children}
         </a>
     );
 }
-
-module.exports = Link;

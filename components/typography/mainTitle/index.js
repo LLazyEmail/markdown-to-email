@@ -1,8 +1,7 @@
-const React = require('react');
+import React from 'react';
+import styles from './styles';
 
-const styles = require('./styles');
-
-const MainTitle = (props) => {
+export default function MainTitle (props){
     return (
         <h1 className="mc-toc-title" dir="ltr" style={styles.title}>
             <span style={styles.spanFont}>
@@ -13,5 +12,3 @@ const MainTitle = (props) => {
         </h1>
     );
 }
-
-module.exports = MainTitle;

@@ -1,8 +1,7 @@
-const React = require('react');
+import React from 'react';
+import styles from './styles';
 
-const styles = require('./styles');
-
-const Divider = () => {
+export default function Divider(props){
     return (
         <table border={0} cellPadding={0} cellSpacing={0} width="100%" className="mcnDividerBlock" style={styles.dividerBlock}>
             <tbody className="mcnDividerBlockOuter">
@@ -12,7 +11,7 @@ const Divider = () => {
                         <tbody>
                         <tr>
                             <td style={styles.td}>
-                                <span />
+                                {props.children}
                             </td>
                         </tr>
                         </tbody>
@@ -23,5 +22,3 @@ const Divider = () => {
         </table>
     );
 }
-
-module.exports = Divider;

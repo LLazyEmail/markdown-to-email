@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     textBlock: {minWidth: '100%', borderCollapse: 'collapse', msoTableLspace: '0pt', msoTableRspace: '0pt', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%'},
     textBlockInner: {paddingTop: '9px', msoLineHeightRule: 'exactly', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%'},
     textContentContainer: {maxWidth: '100%', minWidth: '100%', borderCollapse: 'collapse', msoTableLspace: '0pt', msoTableRspace: '0pt', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%'},

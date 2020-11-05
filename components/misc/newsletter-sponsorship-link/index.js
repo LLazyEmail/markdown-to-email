@@ -1,11 +1,12 @@
-const React = require('react');
+import React from 'react';
+import styles from './styles';
+
 const config = {
-  contact: "https://sponsor.hackernoon.com/contact"
+    contact: "https://sponsor.hackernoon.com/contact"
 }
 
-const styles = require('./styles');
 
-const NewsletterSponsorshipLink = () => {
+export default function NewsletterSponsorshipLink (){
   return (
       <div style={styles.center}>
         <br/>
@@ -15,5 +16,3 @@ const NewsletterSponsorshipLink = () => {
       </div>
   );
 }
-
-module.exports = NewsletterSponsorshipLink;

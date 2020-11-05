@@ -1,11 +1,9 @@
-const React = require('react');
+import React from 'react';
 
-const List = (props) => {
+export default function List (props) {
     return (
         <ul dir="ltr">
             {props.children}
         </ul>
     )
 }
-
-module.exports = List;

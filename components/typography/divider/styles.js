@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     dividerBlock: {
         minWidth: '100%',
         borderCollapse: 'collapse',

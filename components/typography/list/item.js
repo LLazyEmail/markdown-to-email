@@ -1,8 +1,7 @@
-const React = require('react');
+import React from 'react';
+import styles from './styles';
 
-const styles = require('./styles');
-
-const ListItem = (props) => {
+export default function ListItem (props){
     return (
         <li style={styles.li}>
             <p dir="ltr" role="presentation" style={styles.presentation}>
@@ -11,5 +10,3 @@ const ListItem = (props) => {
         </li>
     );
 }
-
-module.exports = ListItem;

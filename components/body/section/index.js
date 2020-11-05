@@ -1,8 +1,7 @@
-const React = require('react');
+import React from 'react';
+import styles from './styles';
 
-const styles = require('./styles');
-
-const Section = (props) => {
+export default function Section(props){
     return (
         <table border={0} cellPadding={0} cellSpacing={0} width="100%" className="mcnTextBlock" style={styles.textBlock}>
             <tbody className="mcnTextBlockOuter">

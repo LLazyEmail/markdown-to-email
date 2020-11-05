@@ -1,6 +1,6 @@
-const React = require('react');
+import React from 'react';
 
-const Address = () => {
+export default function Address(){
     return (
         <>
             <strong>Our mailing address is:</strong>
@@ -9,4 +9,3 @@ const Address = () => {
         </>
     );
 }
-module.exports = Address;

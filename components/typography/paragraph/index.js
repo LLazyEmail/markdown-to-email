@@ -1,8 +1,7 @@
-const React = require('react');
+import React from 'react';
+import styles from './styles';
 
-const styles = require('./styles');
-
-const Paragraph = (props) => {
+export default function Paragraph (props) {
     return (
         <div dir="ltr" style={styles.ltr}>
             <span style={styles.spanFont}>
@@ -13,5 +12,3 @@ const Paragraph = (props) => {
         </div>
     );
 }
-
-module.exports = Paragraph;
