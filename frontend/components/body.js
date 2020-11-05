@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './styles';
-import LogoTop from'./body/logoTop';
-import LogoBottom from'./body/logoBottom';
-import Divider from'./body/divider';
-import PreviewText from'./body/previewText';
-import Footer from'./body/footer';
+import LogoTop from './body/logoTop';
+import LogoBottom from './body/logoBottom';
+import Divider from './body/divider';
+import PreviewText from './body/previewText';
+import Footer from './body/footer';
 
 export default function Body (props) {
     return (
