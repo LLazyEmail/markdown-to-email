@@ -1,8 +1,8 @@
+#~ this is previewText
 ~[https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png][https://bit.ly/30AWyC4][Ship the data importer you always dreamed of]
 
-# Paid Video Call Opportunities for [Nominee Name]? (beta)
 
-#~ this is previewText
+# Paid Video Call Opportunities for [Nominee Name]? (beta)
 
 ** I AM SO BOLD and _ME TOO_ **    
 
