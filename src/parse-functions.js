@@ -7,6 +7,16 @@ function replaceMarkdown(regexp, callback, sourceContent) {
   ));
 }
 
+function replaceMarkdownPreviewText(regexp, sourceContent){
+  return (sourceContent.content = sourceContent.content.replace(
+    regexp,
+    (text, content) => {
+      sourceContent.previewText = readFile("body/previewText").replace("{content}", content.trim());
+      return '';
+    }
+  ));
+}
+
 const italic = "$1<em>$3</em>$4";
 // const strong = "<strong>$2$3</strong>";
 
@@ -85,11 +95,11 @@ function blockquote(text, tmp, item) {
 }
 
 function image(text, alt, srcWithTooltip) {
-  const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
+  const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, "");
 
   return readFile("typography/image")
-      .replace("{src}", src.trim())
-      .replace("{altText}", alt);
+    .replace("{src}", src.trim())
+    .replace("{altText}", alt);
 }
 
 function mem(text, src, href, altText) {
@@ -158,7 +168,7 @@ function br(text, newLines) {
 
 module.exports = {
   replaceMarkdown,
-
+  replaceMarkdownPreviewText,
   link,
   paragraphWrapper,
   ulList,

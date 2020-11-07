@@ -101,16 +101,9 @@ function parseSource() {
       case '#!':
         // header = Convert.subject.call(header, line)
         break
-      case '#~':
-        // header = Convert.previewText.call(header, line)
-        break
       case '![':
         // emailBody += Convert.image(line)
         emailBody = combineCombineReplaceMeLater(emailBody, Convert.image(line));
-        break
-      case '~[':
-        // promo = Convert.sponsorship(line)
-        emailBody = combineCombineReplaceMeLater(emailBody, Convert.sponsorship(line));
         break
     }
   })
