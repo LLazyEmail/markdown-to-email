@@ -1,6 +1,7 @@
 const { readSourceFile } = require("./utils");
 const {
   replaceMarkdown,
+  replaceMarkdownPreviewText,
   header,
   image,
   link,
@@ -36,6 +37,7 @@ const {
   REGEXP_SPONSORSHIP,
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
+  REGEXP_PREVIEW_TEXT
 } = require("./constants");
 
 // @todo update this method. I'm sure it can be improved.
@@ -43,10 +45,12 @@ function parse(source) {
   let markdown = readSourceFile(source);
   let parsedContent = {
     content: markdown,
-    previewText:''
+    previewText: ''
   };
 
   replaceMarkdown(REGEXP_HTML_COMMENTS, "", parsedContent);
+  replaceMarkdownPreviewText(REGEXP_PREVIEW_TEXT, parsedContent);
+  
   replaceMarkdown(REGEXP_STRONG, strong, parsedContent);
   replaceMarkdown(REGEXP_EM, italic, parsedContent);
 
@@ -72,7 +76,8 @@ function parse(source) {
   replaceMarkdown(REGEXP_BR, br, parsedContent);
   replaceMarkdown(REGEXP_SPONSORSHIP, sponsorship, parsedContent);
   replaceMarkdown(REGEXP_MEM, mem, parsedContent);
-
+  
+  console.log(parsedContent);
   return parsedContent;
 }
 

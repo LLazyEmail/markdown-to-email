@@ -79,6 +79,7 @@ const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
 const REGEXP_SPONSORSHIP = /~(\[(.*?)\]){3}/g;
 const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
 const REGEXP_MEM = /\!\[(.*?)\]\[(.*?)\]\[(.*?)\]/g;
+const REGEXP_PREVIEW_TEXT = /#~(.*?)\n/;
 // const REGEXP_H3 = /^### (.*$)/gim;
 // const REGEXP_H2 = /^## (.*$)/gim;
 
@@ -103,5 +104,6 @@ module.exports = {
   REGEXP_EM,
   REGEXP_SPONSORSHIP,
   REGEXP_HTML_COMMENTS,
-  REGEXP_MEM
+  REGEXP_MEM,
+  REGEXP_PREVIEW_TEXT
 };

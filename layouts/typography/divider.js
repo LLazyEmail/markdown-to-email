@@ -20,9 +20,4 @@ style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table
     </td>
   </tr>
 </tbody>
-</table>
-
-
-DEVIDERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
----------------------------
-`;
+</table>`;
