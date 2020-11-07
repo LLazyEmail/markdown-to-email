@@ -27,11 +27,6 @@ Object.defineProperties(Convert, {
       return this.replace('*|MC:SUBJECT|*', text.slice(3))
     }
   },
-  'previewText': {
-    value: function(text) {
-      return this.replace('*|MC_PREVIEW_TEXT|*', text.slice(3))
-    }
-  },
   'image': {
       value: function(text) {
         const altText = text.match(/\[(.*?)\]/g)[0].replace(/[\[\]]/g, '');
@@ -73,9 +68,6 @@ function parseSource() {
     switch(tag) {
       case '#!':
         header = Convert.subject.call(header, line)
-        break
-      case '#~':
-        header = Convert.previewText.call(header, line)
         break
       case '![':
         emailBody += Convert.image(line)
