@@ -1,51 +1,30 @@
-# Cybersecurity tips when working from home
+IPFS (InterPlanetary File System) is an open-source hypermedia communication protocol by which peer-to-peer nodes store and distribute data in a single distributed file system.
 
-Pandemic-induced [remote worker boom](https://hackernoon.com/the-state-of-data-privacy-in-2020-21523yyk) seems to be making a comeback.  With the number of remote workers to [double in 2021](https://hackernoon.com/tagged/data-privacy), looks like it will be the [new normal for us](https://hackernoon.com/is-there-a-middle-ground-between-privacy-and-convenience-f6eo322s).  Although this migration worked fine as a band-aid, the implementation of remote working takes more than expected (and this is [not about children interrupting](https://hackernoon.com/how-to-protect-online-privacy-easy-steps-for-daily-activities-bet32a7) a BBC news interview, although this one’s epic). 
+The author of this solution is the founder and head of the American start-up Protocol Labs Juan Benet. He called it "Distributed, Permanent Web” - keep in mind that a site created in IPFS can never be closed by anyone.
 
-To make a remote job situation work, you [need a structured approach](https://hackernoon.com/privacy-protection-and-web3-analytics-ro1p3yga). And [robust cybersecurity](https://hackernoon.com/the-ultimate-guide-to-privacy-and-security-tools-zw463tsm) is what keeps your [digital environment](https://hackernoon.com/how-to-develop-a-human-centric-security-policy-j6h037wk) and your [company’s business safe](https://hackernoon.com/try-these-steps-for-increasing-privacy-and-security-on-windows-10-cn673tzg). This is why we’ve curated a list of vital [cybersecurity tips](https://hackernoon.com/tagged/privacy) that will help you mitigate risks and stay aware of [security vulnerabilities](https://www.hackernoon.com/how-developers-should-invest-their-time-2e1b3uww).
+Okay, okay. Enough with throwing around the big words. Now, IPFS simply explained. The Internet we use has pitfalls. Of all, the information on the web is mostly centralized. That means the information is stored on servers under the control of a central company.
 
+This, in turn, leads to further flaws. Thus, a central company that has servers becomes a single point of failure. Also, another major flaw of the centralized system is censorship. Since all data is hosted on a few main servers, the government can easily block access to them.
 
-## Use strong passwords
+*In 2017, the Turkish government blocked access to the Wikipedia site because they believed it was “A National Security Threat”.*
 
-Let’s face it: setting ‘beefstew1’ as your password [is not stroganoff](https://hackernoon.com/4-privacy-tips-for-distance-learning-students-g6g3u8s). You should never underestimate the [power of strong passwords](https://hackernoon.com/the-best-privacy-focused-browsers-in-2019-13xa2sp2). Long and unique passwords are utterly important – they [provide essential protection from hacking and identity theft](https://hackernoon.com/what-being-an-army-ranger-taught-me-about-being-a-project-manager-4m133eby). With that being said, avoid using the following combinations:
+And online space wouldn’t be completed without Wikipedia.
 
+At the moment, the project is only at the dawn of development and is distributed mainly among open-source evangelists. But this is only the beginning.
 
+Any technological innovation, which allows improving this or that aspect of human life, gets the deserved calling. Now we are confidently moving in the wrong direction. The cost of content and maintenance of sites will exceed the potential benefits of its use.
 
-*   any guessed combinations like 12345 (is it still a thing?)
-*   any string with sequential numbers or letters; (ABCDEFG – like, for real?)
-*   any pseudo confidential combinations like your birth date or address (Gone are the days when the most sensitive information on a phone was contact names and phone numbers.)
-*   adjacent keyboard combinations
+Large corporations are also beating the alarm, that is why a huge number of engineers are fighting to solve this problem.
 
-And remember: whatever password your go for, never store your [list of passwords on your device in plain text](https://hackernoon.com/tagged/facebook-privacy). Also, 2-step verification is a great [anti-hacking measure](https://hackernoon.com/how-is-anonymous-view-different-from-private-mode-8pr3twr), serving as an additional layer of security.
-
-
-## Use business devices (if possible)
-
-Okay, this one’s [a bit controversial](https://www.hackernoon.com/illusion-of-choice-you-arent-deciding-how-important-your-privacy-is-d65q3tfi). Undoubtedly, using business devices at home creates an [additional security threat](https://hackernoon.com/thanks-facebook-now-we-all-know-why-privacy-is-important-fccd630d73d1) – and [that is unauthorized use](https://hackernoon.com/artificial-intelligence-and-online-privacy-blessing-and-a-curse-8k1r3tap). However, since the pandemic cracked open, people are less likely to have somebody over, so this con is leveled off.
-
-In general, personal laptops tend to have [weaker security controls](https://hackernoon.com/security-for-pms-how-to-part-ii-oa1j3tm7) than your company-issued devices. Therefore, a remote worker cannot be sure whether the [device has been affected](https://hackernoon.com/what-about-the-illusion-of-choice-jz1r3wyd). And once a newly-minted remote specialist [signs in remotely to corporate networks](https://hackernoon.com/great-news-about-self-regulation-in-vpn-industry-i2coalitions-vti-essentials-hzk3t01) and uses [cloud-based applications](https://hackernoon.com/zero-trust-architecture-security-decoded-kl1g3wvd?source=rss), the [whole business gets infected in mere seconds](https://hackernoon.com/what-could-have-prevented-2020s-massive-twitter-hack-zm2m3ud8).
-
-If use of personal equipment cannot be avoided, make sure to keep [data protection measures](https://hackernoon.com/my-rights-to-privacy-8bbeb93dc8d2) close to [office security standards](https://hackernoon.com/how-to-make-an-internal-employee-survey-on-endpoint-security-vo103tag) (at least, [install an anti-virus](https://hackernoon.com/tagged/online-privacy), for god’s sake!).
-
+An additional threat is the widespread proliferation of cheap smartphones, which give people who have never had the opportunity to access the network before. The infrastructure can't take it.
  
+Alright, these were the blemishes of the centralized system. What about IPFS? Are there any benefits that can be interesting to simple users? In fact, there are some notable perks, including:
 
+1.Users in a local network can communicate with each other, even if the Wide Area network is blocked for some reason.
 
-## A phish is still a phish even at home
+2.Since no servers are required, creators can distribute their work without any cost.
 
-With many companies around the globe rolling out work-from-home arrangements, cybercriminals are already [looking to cash in on the trend](https://hackernoon.com/amazon-engineer-jackson-kelley-is-working-on-data-privacy-in-alexa-op723tym).  Typically, [phishing emails](https://hackernoon.com/a-beginners-guide-to-the-dark-web-and-online-anonymity-2p2j3uwi) will target remote workers in a bid to get hold of [their personal data](https://hackernoon.com/how-to-handle-eu-data-without-the-eu-us-privacy-shield-framework-co3t3uwr) or get access to company accounts. Thus, in one phishing campaign featured by security researchers at [Minecast Threat Intelligence,](https://www.mimecast.com/content/threat-intelligence/) [cybercriminals](https://hackernoon.com/why-we-should-all-care-about-privacy-onlineinterview-tutanotas-hanna-bozakov-07193uga) are sending out remote workers a [credential-stealing scam](https://hackernoon.com/detecting-and-preventing-insider-threats-to-your-company-an-overview-hw3r3wp0) that [takes employees](https://hackernoon.com/4-strategies-to-enhance-employee-engagement-vi1i3tta) to a [fake OneDrive login](https://www.hackernoon.com/12-ways-to-create-the-best-working-environments-for-devs-561j3t13). Cybercriminals are using COVID-19 as a subject matter for this phishing scam.
+3.Data loads faster as it has a higher bandwidth.
 
+As you see, IPFS is a relatively new notion. Since most people aren’t familiar with it, it hasn’t gained much popularity. However, as the flaws of the current system are now more obvious than ever, the need for a change is definitely pressing.
 
-
-
-
-![alt_text](https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/24.11/image1.png "image_tooltip")
-
-
- 
-
-Even if you follow a link and end up on a legitimate-looking site, make sure to check its trustworthiness before giving out any [personal data](https://hackernoon.com/amazon-engineer-jackson-kelley-is-working-on-data-privacy-in-alexa-op723tym). Ideally, [limit your online visits](https://hackernoon.com/7-basic-tips-for-surfing-the-internet-safely-ux3j3uof) to your go-to websites and don’t give away your credentials like it’s a party flyer. After all, you don’t come up to the strangers in the street and blurt out your card details, do you?
-
-
-## The Takeaway
-
-Whether you're a [work-from-home](https://hackernoon.com/easiest-guide-to-keep-your-zoom-meetings-safe-from-zoombombing-5f1j3uuw) pro or banished from the office due to the pandemic, make sure you are [able to handle cyber threats](https://community.hackernoon.com/t/ask-me-anything-with-ax-sharma-security-researcher-and-noonies-nominee/55445/13) stemming from remote work. Whereas, your company is accountable for the necessary infrastructure and [applicable security guidelines](https://hackernoon.com/securing-sensitive-customer-information-in-the-age-of-data-yfl3wgv) and plans, try [to minimize your exposure to cybersecurity risks](https://hackernoon.com/main-security-concepts-and-the-importance-of-data-privacy-mg8o3ur3), from your part. We hope that with these practices you can get started with making your home office running in a safe way. 
