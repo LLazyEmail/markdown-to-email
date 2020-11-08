@@ -1,30 +1,39 @@
-IPFS (InterPlanetary File System) is an open-source hypermedia communication protocol by which peer-to-peer nodes store and distribute data in a single distributed file system.
 
-The author of this solution is the founder and head of the American start-up Protocol Labs Juan Benet. He called it "Distributed, Permanent Web” - keep in mind that a site created in IPFS can never be closed by anyone.
+# Cybersecurity tips when working from home: Part II
 
-Okay, okay. Enough with throwing around the big words. Now, IPFS simply explained. The Internet we use has pitfalls. Of all, the information on the web is mostly centralized. That means the information is stored on servers under the control of a central company.
+Amidst the coronavirus pandemic, a remote work situation has become a necessity with companies rolling out mandatory work-from-home policies. The digital era and breakthrough innovations have made it utterly simple for most of us to carry out our regular duties from the comfort of our desk (okay, bed). But even before COVID-19 cases hit record, many people have already been working full-time from home or local coffee shops.  So whether it’s for social distancing sake or just a standard situation, working from home is gaining momentum.
 
-This, in turn, leads to further flaws. Thus, a central company that has servers becomes a single point of failure. Also, another major flaw of the centralized system is censorship. Since all data is hosted on a few main servers, the government can easily block access to them.
+With that being said, this luxury (or inconvenience) comes with its downsides, mainly by way of online scams and security threats. Not only can remote workers have their own credentials stolen, working from home could result in breaching company security too.
 
-*In 2017, the Turkish government blocked access to the Wikipedia site because they believed it was “A National Security Threat”.*
+In part I of our series we’ve got to grips with a few online security tips, including strong password combinations, business devices, and phish emails. On that note, let us go over other cybersecurity recommendations that will help remote workers keep their business, personal, and work data safe from hackers.
 
-And online space wouldn’t be completed without Wikipedia.
 
-At the moment, the project is only at the dawn of development and is distributed mainly among open-source evangelists. But this is only the beginning.
+## Encrypt your emails
 
-Any technological innovation, which allows improving this or that aspect of human life, gets the deserved calling. Now we are confidently moving in the wrong direction. The cost of content and maintenance of sites will exceed the potential benefits of its use.
+Encryption is one of the fundamentals of online security. You can disguise your emails or messages to safeguard potentially sensitive information from being read by anyone other than intended recipients. If you are sending personal data, contract papers, or company business secrets without encrypting the content, you might as well put it on the notice board for public display. And although encryption is seen as burdening and difficult, in reality, it is more straightforward than sending an email.
 
-Large corporations are also beating the alarm, that is why a huge number of engineers are fighting to solve this problem.
 
-An additional threat is the widespread proliferation of cheap smartphones, which give people who have never had the opportunity to access the network before. The infrastructure can't take it.
- 
-Alright, these were the blemishes of the centralized system. What about IPFS? Are there any benefits that can be interesting to simple users? In fact, there are some notable perks, including:
+## Have a backup strategy
 
-1.Users in a local network can communicate with each other, even if the Wide Area network is blocked for some reason.
+Important data can be lost due to a number of reasons, including cyber-attacks. Ransomware and other types of malware can obliterate entire systems without you knowing. That is why all important files should be backed up regularly. Clearly, hardware backups are how old-fashion guys do it, but cloud backup services are more convenient with their backup schedule and storage options. Although skeptics still question cloud computing's value, reliability, and security, it still remains the most viable backup option for business-related data.
 
-2.Since no servers are required, creators can distribute their work without any cost.
 
-3.Data loads faster as it has a higher bandwidth.
+## Use a virtual private network (VPN)
 
-As you see, IPFS is a relatively new notion. Since most people aren’t familiar with it, it hasn’t gained much popularity. However, as the flaws of the current system are now more obvious than ever, the need for a change is definitely pressing.
+You didn’t think we’ll skip this one? You’d be surprised, but VPNs value can extend beyond bypassing geographic restrictions on streaming sites. For those that are not computer savvy, a VPN implements technology that adds a security layer to private and public networks. In plain English, a VPN is your Invisibility Charm that renders your data through a secure tunnel.
 
+Note: A VPN comes in handy only if your devices have been checked for compromising malware.
+
+Also, VPNs can slow down internet speeds. So if you are planning a video conference, you need a speedy and reliable solution like NordVPN, for example. It comes with security adds-on as well. 
+
+
+## Patch your software regularly
+
+Updates to device software and other apps are truly annoying. Especially, when you get bombarded with software products asking you to patch them. However, they cover critical vulnerabilities and shield your systems from the updated threats. Some bugs if not fixed, can leave your software sensitive to cyber-attacks. At best, it may be nothing more than a minor inconvenience. At worst, it may mean your personal and business data being compromised or attackers taking control of your PC.
+
+Therefore, patching your software as needed is crucial for your peace of mind. Besides, most products now come with an automatic update feature so you can leave it for the night and go to sleep.
+
+
+## The Bottom Line
+
+In Coronavirus grim reality, businesses rely on remote working. As cybercriminals are exploiting the opportunities, there is a clear spike in phishing and other criminal activity. Without carefully crafted IT systems, it is hard for companies to spot potential cybersecurity weaknesses in remote workspaces. Therefore, protecting the business from hacking should become a top priority for newly-minted remote workers. We hope that our tips will help keep your personal and business data cyber-safe while working outside of the office during these trying times. Be vigilant. Stay safe.
