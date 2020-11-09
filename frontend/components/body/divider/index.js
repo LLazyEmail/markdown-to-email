@@ -10,7 +10,7 @@ export default function Divider(props){
                     <table className="mcnDividerContent" border={0} cellPadding={0} cellSpacing={0} width="100%" style={styles.dividerContent}>
                         <tbody>
                         <tr>
-                            <td style={styles.td}>
+                            <td style={styles.td} data-testid = "dividerChildrenTest">
                                 {props.children}
                             </td>
                         </tr>

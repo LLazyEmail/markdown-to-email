@@ -12,7 +12,7 @@ export default function Divider (){
                         <tbody>
                         <tr>
                             <td style={styles.td}>
-                                <span/>
+                                <span />
                             </td>
                         </tr>
                         </tbody>

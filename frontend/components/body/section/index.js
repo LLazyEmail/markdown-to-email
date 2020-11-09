@@ -10,7 +10,7 @@ export default function Section(props){
                     <table align="left" border={0} cellPadding={0} cellSpacing={0} style={styles.textContentContainer} width="100%" className="mcnTextContentContainer">
                         <tbody>
                         <tr>
-                            <td valign="top" className="mcnTextContent" style={styles.textContent}>
+                            <td valign="top" className="mcnTextContent" label = "sectionPropsChildren" data-testid = "sectionPropsChildren" style={styles.textContent}>
                                 {props.children}
                             </td>
                         </tr>

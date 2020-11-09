@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`heading/index component renders correctly 1`] = `
+<h3
+  className="mc-toc-title"
+  dir="ltr"
+  style={
+    Object {
+      "color": "#111111",
+      "display": "block",
+      "fontFamily": "\\"Merriweather Sans\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+      "fontSize": "18px",
+      "fontStyle": "normal",
+      "fontWeight": "bold",
+      "letterSpacing": "normal",
+      "lineHeight": "125%",
+      "margin": 0,
+      "padding": 0,
+      "textAlign": "center",
+    }
+  }
+>
+  <span
+    style={
+      Object {
+        "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+      }
+    }
+  >
+    <span
+      data-testid="headingChildrenTest"
+      style={
+        Object {
+          "fontSize": "18px",
+        }
+      }
+    >
+      <h1>
+        Some text
+      </h1>
+    </span>
+  </span>
+</h3>
+`;
