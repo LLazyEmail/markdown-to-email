@@ -7,23 +7,27 @@ import TableLeft from "./tableLeft";
 import styles from "./styles";
 
 
-function Footer(){
+function Footer() {
     return (
         <div>
-            <table border={0} cellPadding={0} cellSpacing={0} width="100%" className="mcnFollowBlock" style={styles.followBlock}>
+            <table border={0} cellPadding={0} cellSpacing={0} width="100%" className="mcnFollowBlock"
+                   style={styles.followBlock}>
                 <tbody className="mcnFollowBlockOuter">
                 <tr>
                     <td align="center" valign="top" style={styles.followBlockInner} className="mcnFollowBlockInner">
 
-                        <table border={0} cellPadding={0} cellSpacing={0} width="100%" className="mcnFollowContentContainer" style={styles.followContentContainer}>
+                        <table border={0} cellPadding={0} cellSpacing={0} width="100%"
+                               className="mcnFollowContentContainer" style={styles.followContentContainer}>
                             <tbody>
                             <tr>
                                 <td align="center" style={styles.tdCenter}>
-                                    <table border={0} cellPadding={0} cellSpacing={0} width="100%" style={styles.followContent} className="mcnFollowContent">
+                                    <table border={0} cellPadding={0} cellSpacing={0} width="100%"
+                                           style={styles.followContent} className="mcnFollowContent">
                                         <tbody>
                                         <tr>
                                             <td align="center" valign="top" style={styles.tdCenterTop}>
-                                                <table align="center" border={0} cellPadding={0} cellSpacing={0} style={styles.tableCenter}>
+                                                <table align="center" border={0} cellPadding={0} cellSpacing={0}
+                                                       style={styles.tableCenter}>
                                                     <tbody>
                                                     <tr>
                                                         <td align="center" valign="top" style={styles.tdCenterTop2}>
@@ -53,7 +57,7 @@ function Footer(){
                                                                 alt={"YouTube"}
                                                             />
                                                             <TableLeft
-                                                                href={"mailto:stories@hackernoon.com" }
+                                                                href={"mailto:stories@hackernoon.com"}
                                                                 src={"https://cdn-images.mailchimp.com/icons/social-block-v2/gray-forwardtofriend-48.png"}
                                                                 alt={"Email"}
                                                             />
@@ -73,28 +77,30 @@ function Footer(){
                 </tr>
                 </tbody>
             </table>
-            <table border={0} cellPadding={0} cellSpacing={0} width="100%" className="mcnTextBlock" style={styles.textBlock}>
+            <table border={0} cellPadding={0} cellSpacing={0} width="100%" className="mcnTextBlock"
+                   style={styles.textBlock}>
                 <tbody className="mcnTextBlockOuter">
                 <tr>
                     <td valign="top" className="mcnTextBlockInner" style={styles.textBlockInner}>
-                        <table align="left" border={0} cellPadding={0} cellSpacing={0} style={styles.textContentContainer} width="100%" className="mcnTextContentContainer">
+                        <table align="left" border={0} cellPadding={0} cellSpacing={0}
+                               style={styles.textContentContainer} width="100%" className="mcnTextContentContainer">
                             <tbody>
                             <tr>
                                 <td valign="top" className="mcnTextContent" style={styles.textContent}>
-                                            <Copyrights/>
-                                                <br />
-                                                <Address/>
-                                                <br />
-                                                <Unsubscribe/>
-                                                <NewsletterSponsorshipLink/>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                    <Copyrights/>
+                                    <br/>
+                                    <Address/>
+                                    <br/>
+                                    <Unsubscribe/>
+                                    <NewsletterSponsorshipLink/>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     );
 }

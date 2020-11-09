@@ -5,7 +5,7 @@ export default function MainTitle (props){
     return (
         <h1 className="mc-toc-title" dir="ltr" style={styles.title}>
             <span style={styles.spanFont}>
-                <span style={styles.spanSize}>
+                <span style={styles.spanSize} data-testid = "mainTitleChildrenTest">
                     {props.children}
                 </span>
             </span>

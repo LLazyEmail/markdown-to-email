@@ -11,8 +11,8 @@ export default function Sponsor(props){
                         <tbody>
                         <tr>
                             <td className="mcnImageCardRightImageContent" align="center" valign="top" style={styles.imageCardRightContent}>
-                                <a href={props.leftHref} title className target="_blank" style={styles.title}>
-                                    <img alt="" src={props.leftSrc} width={150} style={styles.image} className="mcnImage" />
+                                <a href={props.leftHref} data-testid = "sponsorHrefTest" title className target="_blank" style={styles.title}>
+                                    <img alt="" src={props.leftSrc} width={150} data-testid = "sponsorSrcTest" style={styles.image} className="mcnImage" />
                                 </a>
                             </td>
                         </tr>
@@ -25,7 +25,7 @@ export default function Sponsor(props){
                                 <h1 className="mc-toc-title" style={styles.docTitle}>
                                     <br />
                                     <a href={props.rightHref} style={styles.link}>
-                                    <strong id="docs-internal-guid-98b2620b-7fff-d936-82b8-a8d3a3d3c470">
+                                    <strong id="docs-internal-guid-98b2620b-7fff-d936-82b8-a8d3a3d3c470" data-testid = "sponsorChildrenTest">
                                         {props.children}
                                     </strong></a>
                                 </h1>

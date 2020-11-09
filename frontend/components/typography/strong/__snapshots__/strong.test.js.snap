@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`strong/index component renders correctly 1`] = `
+<strong
+  data-testid="strongChildrenTest"
+  style={
+    Object {
+      "fontWeight": "bolder",
+    }
+  }
+>
+  <h1>
+    Some text
+  </h1>
+</strong>
+`;

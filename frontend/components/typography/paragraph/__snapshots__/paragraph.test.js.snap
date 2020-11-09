@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`paragraph/index component renders correctly 1`] = `
+<div
+  dir="ltr"
+  style={
+    Object {
+      "textAlign": "justify",
+    }
+  }
+>
+  <span
+    style={
+      Object {
+        "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+      }
+    }
+  >
+    <span
+      data-testid="paragraphChildrenTest"
+      style={
+        Object {
+          "fontSize": "16px",
+        }
+      }
+    >
+      <h1>
+        Some text
+      </h1>
+    </span>
+  </span>
+</div>
+`;
