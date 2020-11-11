@@ -1,39 +1,43 @@
 
-# Cybersecurity tips when working from home: Part II
+# Combatting Increased Cybersecurity Gaps During The Pandemic
 
-Amidst the coronavirus pandemic, a remote work situation has become a necessity with companies rolling out mandatory work-from-home policies. The digital era and breakthrough innovations have made it utterly simple for most of us to carry out our regular duties from the comfort of our desk (okay, bed). But even before COVID-19 cases hit record, many people have already been working full-time from home or local coffee shops.  So whether it’s for social distancing sake or just a standard situation, working from home is gaining momentum.
+It seems a lifetime since organizations have been forced to adopt remote work practices to keep on track. Although almost[ half of the office workers](https://engage.morphisec.com/wfh-employee-cybersecurity-threat-index) have never dealt with working from home before, this mandatory evacuation is doing alright for itself. Backed up by communication tools like Slack and Zoom, teams have had critical digital connectivity even chilling in their pajamas. As a result, most companies have managed to keep the usual performance level and hold the line.  
 
-With that being said, this luxury (or inconvenience) comes with its downsides, mainly by way of online scams and security threats. Not only can remote workers have their own credentials stolen, working from home could result in breaching company security too.
-
-In part I of our series we’ve got to grips with a few online security tips, including strong password combinations, business devices, and phish emails. On that note, let us go over other cybersecurity recommendations that will help remote workers keep their business, personal, and work data safe from hackers.
+However, this sounds too good to be true. Still, the challenges of remote work are immense and exacerbated by technological gaps and non-hardened laptops. In particular, security departments are turning up the heat. With [around 55 percent of specialists](https://www.techrepublic.com/article/security-faux-pas-56-of-employees-use-personal-computers-to-wfh/#:~:text=During%20this%20unexpected%20remote%20work,protocols%20are%20on%20their%20devices.) using personal computers due to COVID-19 realities, the emerging security threats expose cybersecurity gaps and critical vulnerabilities.  
 
 
-## Encrypt your emails
+## The Evolution Of Cybersecurity Threats During The Pandemic
 
-Encryption is one of the fundamentals of online security. You can disguise your emails or messages to safeguard potentially sensitive information from being read by anyone other than intended recipients. If you are sending personal data, contract papers, or company business secrets without encrypting the content, you might as well put it on the notice board for public display. And although encryption is seen as burdening and difficult, in reality, it is more straightforward than sending an email.
+While the world is fighting the global health threats posed by COVID-19, cybercriminals around the world undoubtedly are cashing in on the dire straits.
 
+ Since February (can you believe it’s been that long?), companies have experienced the rapid expansion of hackers’ infrastructure used to storm the coronavirus-themed spear-phishing attacks and bait victims to seemingly legit platforms aiming to fetch Office 365 credentials.
 
-## Have a backup strategy
+According to [research](https://www.preprints.org/manuscript/202009.0630/v1/download), since April, the total number of spam messages has almost reached 1 mln, whereas the overall quantity of malware attack and malicious links has ramped up to 737 and 48k respectively.
 
-Important data can be lost due to a number of reasons, including cyber-attacks. Ransomware and other types of malware can obliterate entire systems without you knowing. That is why all important files should be backed up regularly. Clearly, hardware backups are how old-fashion guys do it, but cloud backup services are more convenient with their backup schedule and storage options. Although skeptics still question cloud computing's value, reliability, and security, it still remains the most viable backup option for business-related data.
-
-
-## Use a virtual private network (VPN)
-
-You didn’t think we’ll skip this one? You’d be surprised, but VPNs value can extend beyond bypassing geographic restrictions on streaming sites. For those that are not computer savvy, a VPN implements technology that adds a security layer to private and public networks. In plain English, a VPN is your Invisibility Charm that renders your data through a secure tunnel.
-
-Note: A VPN comes in handy only if your devices have been checked for compromising malware.
-
-Also, VPNs can slow down internet speeds. So if you are planning a video conference, you need a speedy and reliable solution like NordVPN, for example. It comes with security adds-on as well. 
+The first wake-up call grabbed headlines on April 21<sup>st</sup>, 2020. The [cybersecurity attack](https://www.washingtonpost.com/technology/2020/04/21/nearly-25000-email-addresses-passwords-allegedly-nih-who-gates-foundation-are-dumped-online/) allegedly affected NIH, WHO, World Bank, Gates Foundation, and other widely-known organizations. At that time, almost 25000 email addresses and passwords were dumped online by unknown hackers.  
 
 
-## Patch your software regularly
 
-Updates to device software and other apps are truly annoying. Especially, when you get bombarded with software products asking you to patch them. However, they cover critical vulnerabilities and shield your systems from the updated threats. Some bugs if not fixed, can leave your software sensitive to cyber-attacks. At best, it may be nothing more than a minor inconvenience. At worst, it may mean your personal and business data being compromised or attackers taking control of your PC.
-
-Therefore, patching your software as needed is crucial for your peace of mind. Besides, most products now come with an automatic update feature so you can leave it for the night and go to sleep.
+![alt_text](images/image1.png "image_tooltip")
 
 
-## The Bottom Line
+Source: https://www.preprints.org/manuscript/202009.0630/v1/download
 
-In Coronavirus grim reality, businesses rely on remote working. As cybercriminals are exploiting the opportunities, there is a clear spike in phishing and other criminal activity. Without carefully crafted IT systems, it is hard for companies to spot potential cybersecurity weaknesses in remote workspaces. Therefore, protecting the business from hacking should become a top priority for newly-minted remote workers. We hope that our tips will help keep your personal and business data cyber-safe while working outside of the office during these trying times. Be vigilant. Stay safe.
+
+## Not By Phishing Only
+
+As time goes by, the coronavirus outbreak threatens to overload the security of organizations across the world. Cybercriminals become more sophisticated and treacherous at the same time using brute-force attacks and online shopping frauds.
+
+According to the data provided by global agencies, the key cybersecurity threats in the context of COVID-19 have been:
+
+
+
+*   **Phishing and Malspam** – Phishing and malspam are surely the ‘pace-setters’ in the cybercriminal world. Coronavirus-related phishing emails attaching malicious Microsoft documents with health information have been all the rage lately. Seems only fair companies remind employees to be on guard when opening emails about the pandemic.
+*   **Credential Stuffing Attacks** –   Due to the global chaos criminals have had a lot of time on their hands to recheck their credential stuffing lists and target them against services that are going up in the world. Thus, in April, Zoom greeted the week with the growing concern for its privacy. It has been [reported](https://www.bleepingcomputer.com/news/security/over-500-000-zoom-accounts-sold-on-hacker-forums-the-dark-web/) that over 500,000 Zoom accounts were sold on the dark web and hacker forums.  So think twice before using the same credentials across multiple online accounts.
+*   **Ransomware** – COVID-19 has also created a ripe environment for ransomware infection. In most cases, it featured information about vaccines, government assistance, free downloads for conferencing platforms, and critical updates. Sometimes, cyber thieves were more creative using double extortion and encrypting all your data. While sabotaging ransomware attacks is the best solution, being all set with backups is the next best.
+*   **Remote Desktop Protocol (RDP) Targeting** – McAfee report has demonstrated a surge in the number of attacks targeting RDP. This spurt led to a growing number of dark web markets selling RDP credentials. While your personnel have to log into systems remotely, limited and secure access by VPN can reduce the scale of the disaster.
+
+
+## The Final Word
+
+With lockdowns and social distancing measures rolling into a new round, companies have to amplify distributed workforce cybersecurity as remote work continues into the future. Therefore, along with reassessing productivity tools, business leaders must re-examine the elements of their cybersecurity stacks to ramp up remote business continuity. As for the remote workers, cyber hygiene and increased vigilance are the best policies against thwarting most cyber attacks. 
