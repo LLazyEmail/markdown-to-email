@@ -1,61 +1,47 @@
-"use strict";
+import React from "react";
+import { create } from "react-test-renderer";
+import EmptySection from "./index";
+import ReactDOM from "react-dom";
+import { cleanup } from "@testing-library/react";
 
-var _react = require("react");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactTestRenderer = require("react-test-renderer");
-
-var _index = require("./index");
-
-var _index2 = _interopRequireDefault(_index);
-
-var _reactDom = require("react-dom");
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _react3 = require("@testing-library/react");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-afterEach(function () {
-    (0, _react3.cleanup)();
+afterEach(() => {
+    cleanup();
 });
 
-describe("empty-section/index component", function () {
+describe("empty-section/index component", () => {
 
-    test("renders without crashing", function () {
-        var div = document.createElement('div');
-        _reactDom2.default.render(_react2.default.createElement(_index2.default, null), div);
-        _reactDom2.default.unmountComponentAtNode(div);
+    test("renders without crashing", () => {
+        const div = document.createElement('div');
+        ReactDOM.render(React.createElement(EmptySection, null), div);
+        ReactDOM.unmountComponentAtNode(div);
     });
 
-    test("compoents children element should contain correct element", function () {
-        var component = (0, _reactTestRenderer.create)(_react2.default.createElement(
-            _index2.default,
+    test("compoents children element should contain correct element", () => {
+        const component = create(React.createElement(
+            EmptySection,
             null,
-            _react2.default.createElement(
+            React.createElement(
                 "h1",
                 null,
                 "Hello"
             )
         ));
-        var root = component.root;
+        const root = component.root;
 
         expect(root.props.children.type).toBe("h1");
     });
 
-    test("component has correct children elements", function () {
-        var component = (0, _reactTestRenderer.create)(_react2.default.createElement(
-            _index2.default,
+    test("component has correct children elements", () => {
+        const component = create(React.createElement(
+            EmptySection,
             null,
-            _react2.default.createElement(
+            React.createElement(
                 "h1",
                 null,
                 "Hello"
             )
         ));
-        var root = component.root;
+        const root = component.root;
 
         expect(root.children[0].type).toBe("h1");
     });
