@@ -1,8 +1,4 @@
-'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
 exports.default = {
     imageCardRightContentOuter: { borderCollapse: 'collapse', msoTableLspace: '0pt', msoTableRspace: '0pt', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%' },
     imageCardRightContentInner: { padding: 0, msoLineHeightRule: 'exactly', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%' },

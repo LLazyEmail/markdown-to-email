@@ -1,8 +1,4 @@
-'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
 exports.default = {
     ltr: { textAlign: 'justify' },
     spanSize: { fontSize: '16px' },

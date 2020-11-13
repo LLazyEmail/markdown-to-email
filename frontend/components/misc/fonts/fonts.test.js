@@ -16,9 +16,7 @@ var _react3 = require("@testing-library/react");
 
 var _reactTestRenderer = require("react-test-renderer");
 
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 afterEach(function () {
     (0, _react3.cleanup)();

@@ -1,8 +1,4 @@
-'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
 exports.default = {
     followBlock: { minWidth: '100%', borderCollapse: 'collapse', msoTableLspace: '0pt', msoTableRspace: '0pt', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%' },
     followBlockInner: { padding: '9px', msoLineHeightRule: 'exactly', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%' },
