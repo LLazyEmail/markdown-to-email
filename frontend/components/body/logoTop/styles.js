@@ -1,4 +1,9 @@
-export default {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
     imageBlock: {
         minWidth: '100%',
         borderCollapse: 'collapse',
@@ -47,4 +52,4 @@ export default {
         textDecoration: 'none',
         msInterpolationMode: 'bicubic'
     }
-}
+};

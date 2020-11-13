@@ -1,4 +1,9 @@
-export default {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
     dividerBlock: {
         minWidth: '100%',
         borderCollapse: 'collapse',
@@ -29,4 +34,4 @@ export default {
         msTextSizeAdjust: '100%',
         WebkitTextSizeAdjust: '100%'
     }
-}
+};

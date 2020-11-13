@@ -1,4 +1,9 @@
-export default {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
     previewText: {
         display: 'none',
         fontSize: '0px',
@@ -10,4 +15,4 @@ export default {
         visibility: 'hidden',
         msoHide: 'all'
     }
-}
+};

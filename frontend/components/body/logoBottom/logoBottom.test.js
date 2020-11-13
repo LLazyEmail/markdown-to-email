@@ -1,23 +1,39 @@
-import React from "react"
-import {create} from "react-test-renderer"
-import LogoBottom from "./index"
-import ReactDOM from "react-dom";
-import {cleanup} from "@testing-library/react";
+"use strict";
 
-afterEach(() => {
-    cleanup()
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactTestRenderer = require("react-test-renderer");
+
+var _index = require("./index");
+
+var _index2 = _interopRequireDefault(_index);
+
+var _reactDom = require("react-dom");
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _react3 = require("@testing-library/react");
+
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : { default: obj };
+}
+
+afterEach(function () {
+    (0, _react3.cleanup)();
 });
 
-describe("logoBottom/index component", () => {
+describe("logoBottom/index component", function () {
 
-    test("renders without crashing", () => {
-        const div = document.createElement('div')
-        ReactDOM.render(<LogoBottom />, div)
-        ReactDOM.unmountComponentAtNode(div)
-    })
+    test("renders without crashing", function () {
+        var div = document.createElement('div');
+        _reactDom2.default.render(_react2.default.createElement(_index2.default, null), div);
+        _reactDom2.default.unmountComponentAtNode(div);
+    });
 
-    test('renders correctly', () => {
-        const tree = create(<LogoBottom />)
+    test('renders correctly', function () {
+        var tree = (0, _reactTestRenderer.create)(_react2.default.createElement(_index2.default, null));
         expect(tree.toJSON()).toMatchSnapshot();
     });
-})
+});

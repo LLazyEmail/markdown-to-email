@@ -1,5 +1,10 @@
-export default {
-    ltr: {textAlign: 'justify'},
-    spanSize: {fontSize: '16px'},
-    spanFont: {fontFamily: 'trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif'}
-}
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    ltr: { textAlign: 'justify' },
+    spanSize: { fontSize: '16px' },
+    spanFont: { fontFamily: 'trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif' }
+};

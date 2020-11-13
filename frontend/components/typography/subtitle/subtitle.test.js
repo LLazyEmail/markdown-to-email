@@ -1,33 +1,50 @@
-import React from "react"
-import {create} from "react-test-renderer"
-import SubTitle from "./index"
-import ReactDOM from "react-dom";
-import {render} from "@testing-library/react";
+"use strict";
 
-describe("subtitle/index component", () => {
+var _react = require("react");
 
-    test("renders without crashing", () => {
-        const div = document.createElement('div')
-        ReactDOM.render(<SubTitle />, div)
-        ReactDOM.unmountComponentAtNode(div)
-    })
+var _react2 = _interopRequireDefault(_react);
 
-    test('renders correctly', () => {
-        const tree = create(<SubTitle><h1>Some text</h1></SubTitle>)
+var _reactTestRenderer = require("react-test-renderer");
+
+var _index = require("./index");
+
+var _index2 = _interopRequireDefault(_index);
+
+var _reactDom = require("react-dom");
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _react3 = require("@testing-library/react");
+
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : { default: obj };
+}
+
+describe("subtitle/index component", function () {
+
+    test("renders without crashing", function () {
+        var div = document.createElement('div');
+        _reactDom2.default.render(_react2.default.createElement(_index2.default, null), div);
+        _reactDom2.default.unmountComponentAtNode(div);
+    });
+
+    test('renders correctly', function () {
+        var tree = (0, _reactTestRenderer.create)(_react2.default.createElement(_index2.default, null, _react2.default.createElement("h1", null, "Some text")));
         expect(tree.toJSON()).toMatchSnapshot();
     });
 
-    test("compoents props should contain children(h1) elements", () => {
-        const component = create(<SubTitle><h1>Some text</h1></SubTitle>)
-        const root = component.root;
+    test("compoents props should contain children(h1) elements", function () {
+        var component = (0, _reactTestRenderer.create)(_react2.default.createElement(_index2.default, null, _react2.default.createElement("h1", null, "Some text")));
+        var root = component.root;
         expect(root.props.children.type).toBe("h1");
     });
 
-    test("<strong> has correct children elements", () => {
-        const {getByTestId} = render(<SubTitle><h1>Hello</h1></SubTitle>)
-        const strong = getByTestId("subtitleChildrenTest")
+    test("<strong> has correct children elements", function () {
+        var _render = (0, _react3.render)(_react2.default.createElement(_index2.default, null, _react2.default.createElement("h1", null, "Hello"))),
+            getByTestId = _render.getByTestId;
 
-        expect(strong.children[0].textContent).toBe("Hello")
+        var strong = getByTestId("subtitleChildrenTest");
+
+        expect(strong.children[0].textContent).toBe("Hello");
     });
-
-})
+});

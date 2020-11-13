@@ -1,31 +1,48 @@
-import ReactDOM from "react-dom";
-import NewsletterSponsorshipLink from "./index";
-import React from "react";
-import {cleanup, render} from "@testing-library/react";
-import {create} from "react-test-renderer";
+"use strict";
 
-afterEach(() => {
-    cleanup()
+var _reactDom = require("react-dom");
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _index = require("./index");
+
+var _index2 = _interopRequireDefault(_index);
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _react3 = require("@testing-library/react");
+
+var _reactTestRenderer = require("react-test-renderer");
+
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : { default: obj };
+}
+
+afterEach(function () {
+    (0, _react3.cleanup)();
 });
 
-describe("newslatter/index component", () => {
+describe("newslatter/index component", function () {
 
-    test("renders without crashing", () => {
-        const div = document.createElement('div')
-        ReactDOM.render(<NewsletterSponsorshipLink />, div)
-        ReactDOM.unmountComponentAtNode(div)
-    })
+    test("renders without crashing", function () {
+        var div = document.createElement('div');
+        _reactDom2.default.render(_react2.default.createElement(_index2.default, null), div);
+        _reactDom2.default.unmountComponentAtNode(div);
+    });
 
-    test('renders correctly', () => {
-        const tree = create(<NewsletterSponsorshipLink />)
+    test('renders correctly', function () {
+        var tree = (0, _reactTestRenderer.create)(_react2.default.createElement(_index2.default, null));
         expect(tree.toJSON()).toMatchSnapshot();
     });
 
-    test("<a> has correct href", () => {
-        const {getByTestId} = render(<NewsletterSponsorshipLink />)
-        const a = getByTestId("newslatterHrefTest")
+    test("<a> has correct href", function () {
+        var _render = (0, _react3.render)(_react2.default.createElement(_index2.default, null)),
+            getByTestId = _render.getByTestId;
 
-        expect(a.href).toBe("https://sponsor.hackernoon.com/contact")
+        var a = getByTestId("newslatterHrefTest");
+
+        expect(a.href).toBe("https://sponsor.hackernoon.com/contact");
     });
-
-})
+});

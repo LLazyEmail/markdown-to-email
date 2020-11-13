@@ -1,25 +1,39 @@
-import React from "react"
-import {create} from "react-test-renderer"
-import Divider from "./index"
-import ReactDOM from "react-dom";
+"use strict";
 
-describe("divider/index component", () => {
+var _react = require("react");
 
-    test("renders without crashing", () => {
-        const div = document.createElement('div')
-        ReactDOM.render(<Divider />, div)
-        ReactDOM.unmountComponentAtNode(div)
-    })
+var _react2 = _interopRequireDefault(_react);
 
-    test('renders correctly', () => {
-        const tree = create(<Divider><h1>Some text</h1></Divider>)
+var _reactTestRenderer = require("react-test-renderer");
+
+var _index = require("./index");
+
+var _index2 = _interopRequireDefault(_index);
+
+var _reactDom = require("react-dom");
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : { default: obj };
+}
+
+describe("divider/index component", function () {
+
+    test("renders without crashing", function () {
+        var div = document.createElement('div');
+        _reactDom2.default.render(_react2.default.createElement(_index2.default, null), div);
+        _reactDom2.default.unmountComponentAtNode(div);
+    });
+
+    test('renders correctly', function () {
+        var tree = (0, _reactTestRenderer.create)(_react2.default.createElement(_index2.default, null, _react2.default.createElement("h1", null, "Some text")));
         expect(tree.toJSON()).toMatchSnapshot();
     });
 
-    test("compoents props should contain children(h1) elements", () => {
-        const component = create(<Divider><h1>Some text</h1></Divider>)
-        const root = component.root;
+    test("compoents props should contain children(h1) elements", function () {
+        var component = (0, _reactTestRenderer.create)(_react2.default.createElement(_index2.default, null, _react2.default.createElement("h1", null, "Some text")));
+        var root = component.root;
         expect(root.props.children.type).toBe("h1");
     });
-
-})
+});

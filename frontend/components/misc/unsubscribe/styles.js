@@ -1,4 +1,9 @@
-export default {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
     unsubscribe: {
         msoLineHeightRule: 'exactly',
         MsTextSizeAdjust: '100%',
@@ -7,4 +12,4 @@ export default {
         fontWeight: 'normal',
         textDecoration: 'underline'
     }
-}
+};

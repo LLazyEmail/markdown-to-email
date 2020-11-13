@@ -1,4 +1,9 @@
-export default {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
     news: {
         msoLineHeightRule: 'exactly',
         MsTextSizeAdjust: '100%',
@@ -10,4 +15,4 @@ export default {
     center: {
         textAlign: 'center'
     }
-}
+};
