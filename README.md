@@ -49,7 +49,7 @@ Subtitle, can be seen anywhere in email body.
 
 ### Sponsorship
 ```
-~[src][href][content]
+~[content][href][src]
 ```
 The first symbol should be tilde `~`, and all other attributes should be not empty, or this will cause errors. `src` - absolute path to image or may be url, `href` - the link of sponsorship block, `content` - the text near the image (also link, wrapped in `href`). Where ever you place sponsorship block, it will be concatenated and parsed at the top and bottom of email body.
 
