@@ -1,13 +1,13 @@
-~[src][href][Hello Man]
+~[This is content][href][src]
 
 
 
-~[https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/October/Bridgecrew_stacked.jpg][https://bit.ly/3lF2kuB][The security-as-code platform for developers]
+~[Ship the data importer you always dreamed of][https://bit.ly/30AWyC4][https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png]
 
 
-~[https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/logos/thematic/2020/October/DF_logo.png][https://bit.ly/3knayr3][Pool DGTX on Uniswap & Earn Rewards]
+~[Ship the data importer you always dreamed of][https://bit.ly/30AWyC4][https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png]
 
 
-~[https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png][https://bit.ly/30AWyC4][Ship the data importer you always dreamed of]
+~[Ship the data importer you always dreamed of][https://bit.ly/30AWyC4][https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png]
 
-
+~[Ship the data importer you always dreamed of][https://bit.ly/30AWyC4][https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png]

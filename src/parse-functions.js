@@ -7,12 +7,15 @@ function replaceMarkdown(regexp, callback, sourceContent) {
   ));
 }
 
-function replaceMarkdownPreviewText(regexp, sourceContent){
+function replaceMarkdownPreviewText(regexp, sourceContent) {
   return (sourceContent.content = sourceContent.content.replace(
     regexp,
     (text, content) => {
-      sourceContent.previewText = readFile("body/previewText").replace("{content}", content.trim());
-      return '';
+      sourceContent.previewText = readFile("body/previewText").replace(
+        "{content}",
+        content.trim()
+      );
+      return "";
     }
   ));
 }
@@ -117,7 +120,7 @@ function header(text, chars, content) {
         "{content}",
         content.trim()
       );
-    case 2: //@TODO ???
+    case 2: // TODO ???
       return readFile("typography/subtitle").replace(
         "{content}",
         content.trim()
@@ -134,13 +137,13 @@ function header(text, chars, content) {
 
 function sponsorship(text) {
   const regex = /\[(.*?)\]/g;
-  const [src, href, content] = text
+  const [content, href, src] = text
     .match(regex)
     .map((match) => match.replace(/[\[\]]/g, ""));
 
   return readFile("body/sponsor")
     .replace("{src}", src)
-    .replace("{href}", href)
+    .replace(/{href}/g, href)
     .replace("{content}", content);
 }
 

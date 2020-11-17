@@ -1,6 +1,5 @@
 #~ this is previewText
-~[https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png][https://bit.ly/30AWyC4][Ship the data importer you always dreamed of]
-
+~[Ship the data importer you always dreamed of][https://bit.ly/30AWyC4][https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png]
 
 # Paid Video Call Opportunities for [Nominee Name]? (beta)
 
@@ -36,4 +35,4 @@ Kind Regards
 
 ### The Bottom Line
 
-~[https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png][https://bit.ly/30AWyC4][Ship the data importer you always dreamed of]
+~[Ship the data importer you always dreamed of][https://bit.ly/30AWyC4][https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png]
