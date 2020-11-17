@@ -1,4 +1,5 @@
-export default {
+
+exports.default = {
     unsubscribe: {
         msoLineHeightRule: 'exactly',
         MsTextSizeAdjust: '100%',
@@ -7,4 +8,4 @@ export default {
         fontWeight: 'normal',
         textDecoration: 'underline'
     }
-}
+};

@@ -3,15 +3,11 @@ import styles from './styles';
 import LogoTop from './body/logoTop';
 import LogoBottom from './body/logoBottom';
 import Divider from './body/divider';
-import PreviewText from './body/previewText';
 import Footer from './body/footer';
 
 export default function Body(props) {
     return (
-        <>
-            <PreviewText>
-                Some Preview Text
-            </PreviewText>
+        <div>
             <div style={{textAlign: "center"}}>
                 <table align="center" border={0} cellPadding={0} cellSpacing={0} height="100%" width="100%"
                        id="bodyTable" style={styles.bodyTable}>
@@ -48,6 +44,6 @@ export default function Body(props) {
                     </tbody>
                 </table>
             </div>
-        </>
+        </div>
     );
 }

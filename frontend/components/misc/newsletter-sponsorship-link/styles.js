@@ -1,4 +1,5 @@
-export default {
+
+exports.default = {
     news: {
         msoLineHeightRule: 'exactly',
         MsTextSizeAdjust: '100%',
@@ -10,4 +11,4 @@ export default {
     center: {
         textAlign: 'center'
     }
-}
+};

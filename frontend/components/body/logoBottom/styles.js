@@ -1,4 +1,5 @@
-export default {
+
+exports.default = {
     imageBlock: {
         minWidth: '100%',
         borderCollapse: 'collapse',
@@ -47,4 +48,4 @@ export default {
         textDecoration: 'none',
         msInterpolationMode: 'bicubic'
     }
-}
+};

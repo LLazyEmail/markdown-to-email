@@ -1,4 +1,5 @@
-export default {
+
+exports.default = {
     previewText: {
         display: 'none',
         fontSize: '0px',
@@ -10,4 +11,4 @@ export default {
         visibility: 'hidden',
         msoHide: 'all'
     }
-}
+};

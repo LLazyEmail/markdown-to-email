@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function HeadLine(props){
+export default function EmptySection(props){
     return (
-        <>
+        <div>
             {props.children}
-        </>
+        </div>
     );
 }
