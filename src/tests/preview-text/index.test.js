@@ -1,19 +1,20 @@
 const { write, readSourceFile } = require("../../utils");
-const { replaceMarkdownPreviewText } = require("../../parse-functions");
+const { replaceMarkdownPreviewText } = require("../../helpers");
 const { REGEXP_PREVIEW_TEXT } = require("../../constants");
 
+const outFolder = "src/tests/_generated";
+
 describe("testing preview-text", () => {
-  it("renders preview-text", async () => {
-    let markdown = await readSourceFile("src/tests/preview-text/content.md");
+  it("renders preview-text", () => {
+    let markdown = readSourceFile("src/tests/preview-text/content.md");
     let parsedContent = {
       content: markdown,
-      previewText: ''
+      previewText: "",
     };
 
     replaceMarkdownPreviewText(REGEXP_PREVIEW_TEXT, parsedContent);
-    console.log(parsedContent.previewText);
     const fileName = "preview.html";
-    write(fileName, parsedContent.content, "src/tests/preview-text/");
+    write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);
   });
 });

@@ -1,10 +1,13 @@
 const { write, readSourceFile } = require("../../utils");
-const { ulList, replaceMarkdown } = require("../../parse-functions");
+const { ulList } = require("../../callbacks");
+const {replaceMarkdown} = require('../../helpers');
 const { REGEXP_UL_LIST } = require("../../constants");
 
-describe("testing sponsorship", () => {
-  it("renders sponsorship", async () => {
-    let markdown = await readSourceFile("src/tests/complex-list/content.md");
+const outFolder = "src/tests/_generated";
+
+describe("testing complex-list", () => {
+  it("renders complex-list", () => {
+    let markdown = readSourceFile("src/tests/complex-list/content.md");
     let parsedContent = {
       content: markdown,
     };
@@ -12,7 +15,7 @@ describe("testing sponsorship", () => {
     replaceMarkdown(REGEXP_UL_LIST, ulList, parsedContent);
 
     const fileName = "complex-list.html";
-    await write(fileName, parsedContent.content, "src/tests/complex-list");
+    write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);
   });
 });

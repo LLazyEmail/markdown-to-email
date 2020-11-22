@@ -1,6 +1,9 @@
 const { write, readSourceFile } = require("../../../utils");
-const { link, replaceMarkdown } = require("../../../parse-functions");
+const { link } = require("../../../callbacks");
+const { replaceMarkdown } = require("../../../helpers");
 const { REGEXP_LINK } = require("../../../constants");
+
+const outFolder = "src/tests/_generated";
 
 describe("testing links-only", () => {
   it("renders links-only", () => {
@@ -12,7 +15,7 @@ describe("testing links-only", () => {
     replaceMarkdown(REGEXP_LINK, link, parsedContent);
 
     const fileName = "links-only.html";
-    write(fileName, parsedContent.content, "src/tests/link/links-only/");
+    write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);
   });
 });

@@ -1,19 +1,19 @@
 const { write, readSourceFile } = require("../../utils");
 const { REGEXP_HTML_COMMENTS } = require("../../constants");
-const {replaceMarkdown} = require('../../parse-functions');
+const { replaceMarkdown } = require("../../helpers");
+
+const outFolder = "src/tests/_generated";
 
 describe("testing html-comments", () => {
-  it("renders html-comments", async () => {
-
-    let markdown = await readSourceFile("src/tests/html-comments/html-comments.md");
+  it("renders html-comments", () => {
+    let markdown = readSourceFile("src/tests/html-comments/html-comments.md");
     let parsedContent = {
       content: markdown,
     };
 
-    replaceMarkdown(REGEXP_HTML_COMMENTS, '', parsedContent);
+    replaceMarkdown(REGEXP_HTML_COMMENTS, "", parsedContent);
     const fileName = "html-comments.html";
-    await write(fileName, parsedContent.content, "src/tests/html-comments");
+    write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);
-    
   });
 });

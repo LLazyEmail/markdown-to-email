@@ -1,6 +1,6 @@
 const { write, readSourceFile } = require("../../utils");
 // const { REGEXP_HTML_COMMENTS } = require("../../constants");
-// const {replaceMarkdown} = require('../../parse-functions');
+// const {replaceMarkdown} = require('../../callbacks');
 
 describe("testing html-comments", () => {
   // it("renders html-comments", async () => {

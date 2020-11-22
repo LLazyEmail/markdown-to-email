@@ -83,10 +83,10 @@ function write(fileName, content, dir = "generated") {
   fs.writeFileSync(_path, content, function (err) {
     if (err) throw new Error("file not written");
     // console.log(newFile);
-    console.log("file successfully written " + fileName);
+    console.log("file has been written successfully" + fileName);
   });
 
-  console.log("file successfully written " + fileName);
+  console.log("file has been written successfully" + fileName);
 }
 
 function readSourceFile(fileName) {
