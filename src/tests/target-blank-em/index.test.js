@@ -2,6 +2,8 @@ const { write, readSourceFile } = require("../../utils");
 const { italic, link, replaceMarkdown } = require("../../parse-functions");
 const { REGEXP_EM, REGEXP_LINK } = require("../../constants");
 
+const outFolder = "src/tests/_generated";
+
 describe("testing target-blank-em", () => {
   it("renders target-blank-em", () => {
     let markdown = readSourceFile("src/tests/target-blank-em/content.md");
@@ -10,7 +12,7 @@ describe("testing target-blank-em", () => {
     };
     replaceMarkdown(REGEXP_EM, italic, parsedContent);
     const fileName = "target-blank-em.html";
-    write(fileName, parsedContent.content, "src/tests/target-blank-em");
+    write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);
   });
   it("renders italic with link", () => {
@@ -20,7 +22,7 @@ describe("testing target-blank-em", () => {
     };
     replaceMarkdown(REGEXP_LINK, link, parsedContent);
     const fileName = "links.html";
-    write(fileName, parsedContent.content, "src/tests/target-blank-em");
+    write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);
   });
 });

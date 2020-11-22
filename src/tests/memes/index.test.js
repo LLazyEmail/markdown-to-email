@@ -2,6 +2,8 @@ const { write, readSourceFile } = require("../../utils");
 const { mem, replaceMarkdown } = require("../../parse-functions");
 const { REGEXP_MEM } = require("../../constants");
 
+const outFolder = "src/tests/_generated";
+
 describe("testing mem", () => {
   it("renders mem", () => {
     let markdown = readSourceFile("src/tests/memes/content.md");
@@ -12,7 +14,7 @@ describe("testing mem", () => {
     replaceMarkdown(REGEXP_MEM, mem, parsedContent);
 
     const fileName = "memes.html";
-    write(fileName, parsedContent.content, "src/tests/memes/");
+    write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);
   });
 });

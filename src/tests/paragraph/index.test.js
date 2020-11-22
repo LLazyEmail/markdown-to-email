@@ -2,6 +2,8 @@ const { write, readSourceFile } = require("../../utils");
 const { paragraphWrapper, replaceMarkdown } = require("../../parse-functions");
 const { REGEXP_PARAGRAPH } = require("../../constants");
 
+const outFolder = "src/tests/_generated";
+
 describe("testing paragraph", () => {
   it("renders sponsorship", () => {
     let markdown = readSourceFile("src/tests/paragraph/paragraph.md");
@@ -10,7 +12,7 @@ describe("testing paragraph", () => {
     };
     replaceMarkdown(REGEXP_PARAGRAPH, paragraphWrapper, parsedContent);
     const fileName = "paragraph.html";
-    write(fileName, parsedContent.content, "src/tests/paragraph");
+    write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);
   });
 });
