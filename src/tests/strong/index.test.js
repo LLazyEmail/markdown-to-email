@@ -1,5 +1,6 @@
 const { write, readSourceFile } = require("../../utils");
-const { strong, replaceMarkdown } = require("../../parse-functions");
+const { strong } = require("../../callbacks");
+const { replaceMarkdown } = require("../../helpers");
 const { REGEXP_STRONG } = require("../../constants");
 
 const outFolder = "src/tests/_generated";

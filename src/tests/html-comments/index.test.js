@@ -1,6 +1,6 @@
 const { write, readSourceFile } = require("../../utils");
 const { REGEXP_HTML_COMMENTS } = require("../../constants");
-const { replaceMarkdown } = require("../../parse-functions");
+const { replaceMarkdown } = require("../../helpers");
 
 const outFolder = "src/tests/_generated";
 

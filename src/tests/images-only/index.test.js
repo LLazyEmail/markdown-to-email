@@ -1,5 +1,6 @@
 const { write, readSourceFile } = require("../../utils");
-const { image, replaceMarkdown } = require("../../parse-functions");
+const { image } = require("../../callbacks");
+const { replaceMarkdown } = require("../../helpers");
 const { REGEXP_IMAGE } = require("../../constants");
 
 const outFolder = "src/tests/_generated";

@@ -1,5 +1,6 @@
 const { write, readSourceFile } = require("../../utils");
-const { paragraphWrapper, replaceMarkdown } = require("../../parse-functions");
+const { paragraphWrapper } = require("../../callbacks");
+const { replaceMarkdown } = require("../../helpers");
 const { REGEXP_PARAGRAPH } = require("../../constants");
 
 const outFolder = "src/tests/_generated";
