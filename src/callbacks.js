@@ -1,6 +1,12 @@
 const { replaceHTMLWrapper } = require("./helpers");
 
 const italic = "$1<em>$3</em>$4";
+const del = "<del>$1</del>";
+const q = "<q>$1</q>";
+const code = "<code>$1</code>";
+const hr = "\n<hr />";
+const empty = "";
+const newLine = "\n"; 
 // const strong = "<strong>$2$3</strong>";
 
 function strong(text, doubleAsterix, content, asterix) {
@@ -176,4 +182,10 @@ module.exports = {
   mem,
   //constants
   italic,
+  del,
+  q,
+  code,
+  hr,
+  empty,
+  newLine
 };

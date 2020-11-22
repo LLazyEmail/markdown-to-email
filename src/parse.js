@@ -9,9 +9,15 @@ const {
   paragraphWrapper,
   sponsorship,
   br,
-  italic,
   strong,
   mem,
+  italic, 
+  del,
+  q,
+  code,
+  hr,
+  empty,
+  newLine
 } = require("./callbacks");
 const { replaceMarkdown, replaceMarkdownPreviewText } = require("./helpers");
 
@@ -47,7 +53,7 @@ function parse(source) {
     previewText: "",
   };
 
-  replaceMarkdown(REGEXP_HTML_COMMENTS, "", parsedContent);
+  replaceMarkdown(REGEXP_HTML_COMMENTS, empty, parsedContent);
   replaceMarkdownPreviewText(REGEXP_PREVIEW_TEXT, parsedContent);
 
   replaceMarkdown(REGEXP_STRONG, strong, parsedContent);
@@ -57,20 +63,20 @@ function parse(source) {
   replaceMarkdown(REGEXP_IMAGE, image, parsedContent);
   replaceMarkdown(REGEXP_LINK, link, parsedContent);
 
-  replaceMarkdown(REGEXP_DEL, "<del>$1</del>", parsedContent);
-  replaceMarkdown(REGEXP_Q, "<q>$1</q>", parsedContent);
-  replaceMarkdown(REGEXP_CODE, "<code>$1</code>", parsedContent);
+  replaceMarkdown(REGEXP_DEL, del, parsedContent);
+  replaceMarkdown(REGEXP_Q, q, parsedContent);
+  replaceMarkdown(REGEXP_CODE, code, parsedContent);
 
   replaceMarkdown(REGEXP_UL_LIST, ulList, parsedContent);
   replaceMarkdown(REGEXP_OL_LIST, olList, parsedContent);
 
   replaceMarkdown(REGEXP_BLOCKQUOTE, blockquote, parsedContent);
 
-  replaceMarkdown(REGEXP_HR, "\n<hr />", parsedContent);
+  replaceMarkdown(REGEXP_HR, hr, parsedContent);
   replaceMarkdown(REGEXP_PARAGRAPH, paragraphWrapper, parsedContent);
-  replaceMarkdown(REGEXP_EMPTY_UL, "", parsedContent);
-  replaceMarkdown(REGEXP_EMPTY_OL, "", parsedContent);
-  replaceMarkdown(REGEXP_EMPTY_BLOCKQUOTE, "\n", parsedContent);
+  replaceMarkdown(REGEXP_EMPTY_UL, empty, parsedContent);
+  replaceMarkdown(REGEXP_EMPTY_OL, empty, parsedContent);
+  replaceMarkdown(REGEXP_EMPTY_BLOCKQUOTE, newLine, parsedContent);
 
   replaceMarkdown(REGEXP_BR, br, parsedContent);
   replaceMarkdown(REGEXP_SPONSORSHIP, sponsorship, parsedContent);
