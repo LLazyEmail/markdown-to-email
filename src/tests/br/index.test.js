@@ -2,18 +2,18 @@ const { write, readSourceFile } = require("../../utils");
 const { replaceMarkdown, br } = require("../../parse-functions");
 const { REGEXP_BR } = require("../../constants");
 
-describe("testing sponsorship", () => {
+describe("testing br", () => {
 
-  it("renders sponsorship", async () => {
+  it("renders br", () => {
 
-    let markdown = await readSourceFile("src/tests/br/br.md");
+    let markdown = readSourceFile("src/tests/br/br.md");
     let parsedContent = {
       content: markdown,
     };
 
     replaceMarkdown(REGEXP_BR, br, parsedContent);
     const fileName = "br.html";
-    await write(fileName, parsedContent.content, "src/tests/br");
+    write(fileName, parsedContent.content, "src/tests/br");
     expect(1).toBe(1);
     
   });
