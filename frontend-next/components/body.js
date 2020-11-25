@@ -5,7 +5,7 @@ import LogoBottom from './body/logoBottom';
 import Divider from './body/divider';
 import Footer from './body/footer';
 
-export default function Body(props) {
+const Body = ({header, children}) => {
   return (
     <div>
       <div style={{ textAlign: 'center' }}>
@@ -36,13 +36,13 @@ export default function Body(props) {
                     </tr>
                     <tr>
                       <td valign="top" id="templateHeader" style={styles.templateHeader} data-testid="bodyPropsTest">
-                        {props.header}
+                        {header}
                       </td>
                     </tr>
                     <tr>
                       <td valign="top" id="templateBody" style={styles.templateBody}>
                         <Divider>
-                          {props.children}
+                          {children}
                         </Divider>
                         <LogoBottom />
                       </td>
@@ -58,3 +58,5 @@ export default function Body(props) {
     </div>
   );
 }
+
+export default Body;

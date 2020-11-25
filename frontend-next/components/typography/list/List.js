@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default function List(props) {
+const List = ({children}) => {
   return (
     <ul dir="ltr" data-testid="listProsChildrenTest">
-      {props.children}
+      {children}
     </ul>
   );
 }
+
+export default List;

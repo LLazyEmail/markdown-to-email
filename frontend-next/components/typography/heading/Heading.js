@@ -1,14 +1,16 @@
 import React from 'react';
 import styles from './styles';
 
-export default function Heading(props) {
+const Heading = ({children}) => {
   return (
     <h3 className="mc-toc-title" dir="ltr" style={styles.title}>
       <span style={styles.spanFont}>
         <span style={styles.spanSize} data-testid="headingChildrenTest">
-          {props.children}
+          {children}
         </span>
       </span>
     </h3>
   );
 }
+
+export default Heading;
