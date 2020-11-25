@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Copyright() {
+const Copyright = () => {
   return (
     <em data-testid="copyTest">
       Copyright ©
@@ -10,3 +10,5 @@ export default function Copyright() {
     </em>
   );
 }
+
+export default Copyright;
