@@ -1,17 +1,17 @@
 import React from 'react';
 import styles from './styles';
 
-export default function Section(props) {
+const Section = ({children}) => {
   return (
-    <table border={0} cellPadding={0} cellSpacing={0} width="100%" className="mcnTextBlock" style={styles.textBlock}>
+    <table border={0} cellPadding={0} cellSpacing={0} className="mcnTextBlock" style={styles.textBlock}>
       <tbody className="mcnTextBlockOuter">
         <tr>
           <td valign="top" className="mcnTextBlockInner" style={styles.textBlockInner}>
-            <table align="left" border={0} cellPadding={0} cellSpacing={0} style={styles.textContentContainer} width="100%" className="mcnTextContentContainer">
+            <table align="left" border={0} cellPadding={0} cellSpacing={0} style={styles.textContentContainer} className="mcnTextContentContainer">
               <tbody>
                 <tr>
                   <td valign="top" className="mcnTextContent" label="sectionPropsChildren" data-testid="sectionPropsChildren" style={styles.textContent}>
-                    {props.children}
+                    {children}
                   </td>
                 </tr>
               </tbody>
@@ -23,4 +23,4 @@ export default function Section(props) {
   );
 }
 
-module.exports = Section;
+export default Section;

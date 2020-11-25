@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './styles';
 
-export default function Divider(props) {
+const Divider = ({children}) => {
   return (
-    <table border={0} cellPadding={0} cellSpacing={0} width="100%" className="mcnDividerBlock" style={styles.dividerBlock}>
+    <table border={0} cellPadding={0} cellSpacing={0} className="mcnDividerBlock" style={styles.dividerBlock}>
       <tbody className="mcnDividerBlockOuter">
         <tr>
           <td className="mcnDividerBlockInner" style={styles.dividerBlockInner}>
@@ -11,7 +11,7 @@ export default function Divider(props) {
               <tbody>
                 <tr>
                   <td style={styles.td} data-testid="dividerChildrenTest">
-                    {props.children}
+                    {children}
                   </td>
                 </tr>
               </tbody>
@@ -22,3 +22,5 @@ export default function Divider(props) {
     </table>
   );
 }
+
+export default Divider;

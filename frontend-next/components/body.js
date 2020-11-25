@@ -14,8 +14,6 @@ export default function Body(props) {
           border={0}
           cellPadding={0}
           cellSpacing={0}
-          height="100%"
-          width="100%"
           id="bodyTable"
           style={styles.bodyTable}
         >
@@ -27,7 +25,6 @@ export default function Body(props) {
                   border={0}
                   cellPadding={0}
                   cellSpacing={0}
-                  width="100%"
                   className="templateContainer"
                   style={styles.templateContainer}
                 >

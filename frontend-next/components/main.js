@@ -8,7 +8,7 @@ import Sponsor from './body/sponsor/index';
 import MainTitle from './typography/mainTitle/index';
 import Paragraph from './typography/paragraph/index';
 
-export default function App() {
+const App = () => {
   return (
     <Body>
       <Sponsor
@@ -90,3 +90,5 @@ export default function App() {
     </Body>
   );
 }
+
+export default App;

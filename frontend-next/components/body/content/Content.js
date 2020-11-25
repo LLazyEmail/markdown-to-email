@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default function Content() {
+const Content = () => {
   return (
     <div>
       content
     </div>
   );
 }
+
+export default Content;

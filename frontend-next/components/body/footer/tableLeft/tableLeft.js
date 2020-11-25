@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './styles';
+import styles from '../styles';
 
-export default function TableLeft(props) {
+const TableLeft = ({href, src, alt}) => {
   return (
     <table align="left" border={0} cellPadding={0} cellSpacing={0} style={styles.tableLeft}>
       <tbody>
@@ -11,7 +11,6 @@ export default function TableLeft(props) {
               border={0}
               cellPadding={0}
               cellSpacing={0}
-              width="100%"
               className="mcnFollowContentItem"
               style={styles.followContentItem}
             >
@@ -35,10 +34,10 @@ export default function TableLeft(props) {
                             className="mcnFollowIconContent"
                             style={styles.followIconContent}
                           >
-                            <a href={props.href} target="_blank" style={styles.followSocial} data-testid="tableLeftHrefTest">
+                            <a href={href} target="_blank" style={styles.followSocial} data-testid="tableLeftHrefTest">
                               <img
-                                src={props.src}
-                                alt={props.alt}
+                                src={src}
+                                alt={alt}
                                 style={styles.followSocialImg}
                                 height={24}
                                 width={24}
@@ -60,3 +59,5 @@ export default function TableLeft(props) {
     </table>
   );
 }
+
+export default TableLeft;

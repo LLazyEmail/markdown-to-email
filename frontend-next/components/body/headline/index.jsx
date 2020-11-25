@@ -1,9 +1,3 @@
-import React from 'react';
+import HeadLine from './Headline';
 
-export default function HeadLine(props) {
-  return (
-    <div>
-      {props.children}
-    </div>
-  );
-}
+export default HeadLine;

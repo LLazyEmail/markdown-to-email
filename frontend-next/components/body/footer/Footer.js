@@ -6,14 +6,13 @@ import NewsletterSponsorshipLink from '../../misc/newsletter-sponsorship-link';
 import TableLeft from './tableLeft';
 import styles from './styles';
 
-function Footer() {
+const Footer = () => {
   return (
     <div>
       <table
         border={0}
         cellPadding={0}
         cellSpacing={0}
-        width="100%"
         className="mcnFollowBlock"
         style={styles.followBlock}
       >
@@ -25,7 +24,6 @@ function Footer() {
                 border={0}
                 cellPadding={0}
                 cellSpacing={0}
-                width="100%"
                 className="mcnFollowContentContainer"
                 style={styles.followContentContainer}
               >
@@ -36,7 +34,6 @@ function Footer() {
                         border={0}
                         cellPadding={0}
                         cellSpacing={0}
-                        width="100%"
                         style={styles.followContent}
                         className="mcnFollowContent"
                       >
@@ -103,7 +100,6 @@ function Footer() {
         border={0}
         cellPadding={0}
         cellSpacing={0}
-        width="100%"
         className="mcnTextBlock"
         style={styles.textBlock}
       >
@@ -116,7 +112,6 @@ function Footer() {
                 cellPadding={0}
                 cellSpacing={0}
                 style={styles.textContentContainer}
-                width="100%"
                 className="mcnTextContentContainer"
               >
                 <tbody>
