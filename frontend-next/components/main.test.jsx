@@ -1,19 +1,17 @@
-import React from "react"
-import {create} from "react-test-renderer"
-import Main from "./main";
-import ReactDOM from "react-dom";
+import React from 'react';
+import { create } from 'react-test-renderer';
+import ReactDOM from 'react-dom';
+import Main from './main';
 
-describe("main component", () => {
+describe('main component', () => {
+  test('renders without crashing', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Main />, div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
 
-    test("renders without crashing", () => {
-        const div = document.createElement('div')
-        ReactDOM.render(<Main />, div)
-        ReactDOM.unmountComponentAtNode(div)
-    })
-
-    test('renders correctly', () => {
-        const tree = create(<Main/>)
-        expect(tree.toJSON()).toMatchSnapshot();
-    });
-
-})
+  test('renders correctly', () => {
+    const tree = create(<Main />);
+    expect(tree.toJSON()).toMatchSnapshot();
+  });
+});

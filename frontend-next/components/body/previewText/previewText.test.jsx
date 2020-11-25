@@ -1,46 +1,45 @@
-import React from "react"
-import {create} from "react-test-renderer"
-import PreviewText from "./index"
-import ReactDOM from "react-dom";
-import {cleanup} from "@testing-library/react";
+import React from 'react';
+import { create } from 'react-test-renderer';
+import ReactDOM from 'react-dom';
+import { cleanup } from '@testing-library/react';
+import PreviewText from './index';
 
 afterEach(() => {
-    cleanup()
+  cleanup();
 });
 
-describe("previewText/index component", () => {
+describe('previewText/index component', () => {
+  test('renders without crashing', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<PreviewText />, div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
 
-    test("renders without crashing", () => {
-        const div = document.createElement('div')
-        ReactDOM.render(<PreviewText />, div)
-        ReactDOM.unmountComponentAtNode(div)
-    })
+  test('renders correctly', () => {
+    const tree = create(<PreviewText><h1>Some text</h1></PreviewText>);
+    expect(tree.toJSON()).toMatchSnapshot();
+  });
 
-    test('renders correctly', () => {
-        const tree = create(<PreviewText><h1>Some text</h1></PreviewText>)
-        expect(tree.toJSON()).toMatchSnapshot();
-    });
+  test('compoents props contains anything', () => {
+    const component = create(<PreviewText><h1>Hello</h1></PreviewText>);
+    const { root } = component;
 
-    test("compoents props contains anything", () => {
-        const component = create(<PreviewText><h1>Hello</h1></PreviewText>)
-        const root = component.root;
+    expect(root.props.children).not.toBeNull();
+  });
 
-        expect(root.props.children).not.toBeNull();
-    });
+  test('span contains correct children elements', () => {
+    const component = create(<PreviewText><h1>Hello</h1></PreviewText>);
+    const { root } = component;
 
-    test("span contains correct children elements", () => {
-        const component = create(<PreviewText><h1>Hello</h1></PreviewText>)
-        const root = component.root;
+    const span = root.findByType('span');
 
-        let span = root.findByType("span")
+    expect(span.children[0].type).toBe('h1');
+  });
 
-        expect(span.children[0].type).toBe("h1");
-    });
+  test('compoents children element should contain correct element', () => {
+    const component = create(<PreviewText><h1>Hello</h1></PreviewText>);
+    const { root } = component;
 
-    test("compoents children element should contain correct element", () => {
-        const component = create(<PreviewText><h1>Hello</h1></PreviewText>)
-        const root = component.root;
-
-        expect(root.props.children.type).toBe("h1");
-    });
-})
+    expect(root.props.children.type).toBe('h1');
+  });
+});

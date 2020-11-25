@@ -1,2 +1,4 @@
 node_modules
 dist
+*components/__snapshots__
+*.test.js

@@ -1,31 +1,29 @@
-import ReactDOM from "react-dom";
-import NewsletterSponsorshipLink from "./index";
-import React from "react";
-import {cleanup, render} from "@testing-library/react";
-import {create} from "react-test-renderer";
+import ReactDOM from 'react-dom';
+import React from 'react';
+import { cleanup, render } from '@testing-library/react';
+import { create } from 'react-test-renderer';
+import NewsletterSponsorshipLink from './index';
 
 afterEach(() => {
-    cleanup()
+  cleanup();
 });
 
-describe("newslatter/index component", () => {
+describe('newslatter/index component', () => {
+  test('renders without crashing', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<NewsletterSponsorshipLink />, div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
 
-    test("renders without crashing", () => {
-        const div = document.createElement('div')
-        ReactDOM.render(<NewsletterSponsorshipLink />, div)
-        ReactDOM.unmountComponentAtNode(div)
-    })
+  test('renders correctly', () => {
+    const tree = create(<NewsletterSponsorshipLink />);
+    expect(tree.toJSON()).toMatchSnapshot();
+  });
 
-    test('renders correctly', () => {
-        const tree = create(<NewsletterSponsorshipLink />)
-        expect(tree.toJSON()).toMatchSnapshot();
-    });
+  test('<a> has correct href', () => {
+    const { getByTestId } = render(<NewsletterSponsorshipLink />);
+    const a = getByTestId('newslatterHrefTest');
 
-    test("<a> has correct href", () => {
-        const {getByTestId} = render(<NewsletterSponsorshipLink />)
-        const a = getByTestId("newslatterHrefTest")
-
-        expect(a.href).toBe("https://sponsor.hackernoon.com/contact")
-    });
-
-})
+    expect(a.href).toBe('https://sponsor.hackernoon.com/contact');
+  });
+});
