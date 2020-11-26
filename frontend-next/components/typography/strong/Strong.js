@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default function Strong(props) {
+const Strong = ({children}) => {
   return (
     <strong style={{ fontWeight: 'bolder' }} data-testid="strongChildrenTest">
-      {props.children}
+      {children}
     </strong>
   );
 }
+
+export default Strong;

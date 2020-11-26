@@ -1,12 +1,14 @@
 import React from 'react';
-import styles from './styles';
+import styles from '../styles';
 
-export default function ListItem(props) {
+const ListItem = ({children}) => {
   return (
     <li style={styles.li}>
       <p dir="ltr" role="presentation" style={styles.presentation} data-testid="listItemTest">
-        {props.children}
+        {children}
       </p>
     </li>
   );
 }
+
+export default ListItem;

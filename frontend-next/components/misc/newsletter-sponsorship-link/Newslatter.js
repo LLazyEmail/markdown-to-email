@@ -5,7 +5,7 @@ const config = {
   contact: 'https://sponsor.hackernoon.com/contact',
 };
 
-export default function NewsletterSponsorshipLink() {
+const NewsletterSponsorshipLink = () => {
   return (
     <div style={styles.center}>
       <br />
@@ -15,3 +15,5 @@ export default function NewsletterSponsorshipLink() {
     </div>
   );
 }
+
+export default NewsletterSponsorshipLink;

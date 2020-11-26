@@ -1,14 +1,16 @@
 import React from 'react';
 import styles from './styles';
 
-export default function Paragraph(props) {
+const Paragraph = ({children}) => {
   return (
     <div dir="ltr" style={styles.ltr}>
       <span style={styles.spanFont}>
         <span style={styles.spanSize} data-testid="paragraphChildrenTest">
-          {props.children}
+          {children}
         </span>
       </span>
     </div>
   );
 }
+
+export default Paragraph;

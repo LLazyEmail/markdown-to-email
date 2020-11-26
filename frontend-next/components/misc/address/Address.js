@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Address() {
+const Address = () => {
   return (
     <div>
       <strong>Our mailing address is:</strong>
@@ -9,3 +9,5 @@ export default function Address() {
     </div>
   );
 }
+
+export default Address;
