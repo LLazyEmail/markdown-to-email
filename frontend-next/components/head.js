@@ -1,7 +1,7 @@
 import React from 'react';
 import Fonts from './misc/fonts';
 
-export default function Head() {
+const Head = () => {
   return (
     <head>
       <meta charSet="UTF-8" />
@@ -15,3 +15,5 @@ export default function Head() {
     </head>
   );
 }
+
+export default Head;
