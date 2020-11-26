@@ -1,0 +1,35 @@
+.textBlock {
+    min-width: 100%;
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  .textBlockInner {
+    padding-top: 9px;
+    mso-line-height-rule: exactly;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  .textContentContainer {
+    max-width: 100%;
+    min-width: 100%;
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  .textContent {
+    padding: 0px 18px 9px;
+    line-height: 150%;
+    mso-line-height-rule: exactly;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    word-break: break-word;
+    color: #111111;
+    font-family: "Source Sans Pro","Helvetica Neue", Helvetica, Arial,sans-serif;
+    font-size: 18px;
+    text-align: left;
+  }

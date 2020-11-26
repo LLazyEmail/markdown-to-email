@@ -1,4 +1,4 @@
-exports.default = {
+export const styles = {
   bodyTable: {
     borderCollapse: 'collapse', msoTableLspace: '0pt', msoTableRspace: '0pt', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%', height: '100%', margin: 0, padding: 0, width: '100%', backgroundColor: '#ffffff',
   },
@@ -16,5 +16,5 @@ exports.default = {
   },
   templateBody: {
     background: '#ffffff none no-repeat center/cover', msoLineHeightRule: 'exactly', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%', backgroundColor: '#ffffff', backgroundImage: 'none', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', borderTop: 0, borderBottom: '4px solid #00ff00', paddingTop: 0, paddingBottom: '9px',
-  },
+  }
 };

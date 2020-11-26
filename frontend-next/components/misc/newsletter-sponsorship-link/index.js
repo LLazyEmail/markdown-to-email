@@ -1,3 +1,3 @@
-import NewsletterSponsorshipLink from './Newslatter';
+import NewsletterSponsorshipLink from './Newsletter';
 
 export default NewsletterSponsorshipLink;

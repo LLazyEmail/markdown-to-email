@@ -1,5 +1,9 @@
 import React from 'react';
-import styles from './styles';
+import { styles } from './styles';
+
+/**
+ * Todo: I think this component repeat 
+ */
 
 const Divider = () => {
   return (

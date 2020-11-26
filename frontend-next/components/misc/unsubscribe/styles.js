@@ -1,4 +1,4 @@
-exports.default = {
+export const styles = {
   unsubscribe: {
     msoLineHeightRule: 'exactly',
     MsTextSizeAdjust: '100%',

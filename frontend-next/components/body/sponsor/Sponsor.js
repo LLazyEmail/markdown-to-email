@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles';
+import { styles } from './styles';
 
 const Sponsor = ({leftHref, leftSrc, rightHref, children}) => {
   return (

@@ -1,4 +1,4 @@
-exports.default = {
+export const styles = {
   dividerBlock: {
     minWidth: '100%',
     borderCollapse: 'collapse',

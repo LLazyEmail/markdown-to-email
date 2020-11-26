@@ -1,4 +1,4 @@
-exports.default = {
+export const styles = {
   news: {
     msoLineHeightRule: 'exactly',
     MsTextSizeAdjust: '100%',

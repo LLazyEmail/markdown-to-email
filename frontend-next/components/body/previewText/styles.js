@@ -1,4 +1,4 @@
-exports.default = {
+export const styles = {
   previewText: {
     display: 'none',
     fontSize: '0px',
