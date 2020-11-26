@@ -1,5 +1,17 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## File structure
+`components/` - Folder with components   
+`pages/_app.js` - component for initialize pages    
+`pages/_document.js` - surrounding document's markup  
+`pages/index.js` - layout render  
+
+## Npm commands
+`npm run dev` - starts development server  
+`npm run build` - make build and HMTL build in `out/` folder  
+`npm run lint` - eslint check  
+`npm run lint:fix` - eslint auto fix  
+
 ## Getting Started
 
 First, run the development server:
