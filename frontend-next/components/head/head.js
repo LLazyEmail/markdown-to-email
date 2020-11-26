@@ -1,5 +1,5 @@
 import React from 'react';
-import Fonts from './misc/fonts';
+import Fonts from './fonts';
 
 const Head = () => {
   return (

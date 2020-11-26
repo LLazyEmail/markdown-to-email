@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './styles';
-import LogoTop from './body/logoTop';
-import LogoBottom from './body/logoBottom';
-import Divider from './body/divider';
-import Footer from './body/footer';
+import { styles } from '../styles';
+import LogoTop from './logoTop';
+import LogoBottom from './logoBottom';
+import Divider from './divider';
+import Footer from './footer';
 
 const Body = ({header, children}) => {
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import { create } from 'react-test-renderer';
 import ReactDOM from 'react-dom';
 import { render } from '@testing-library/react';
-import Body from './body';
+import Body from '.';
 
 describe('body component', () => {
   test('renders without crashing', () => {

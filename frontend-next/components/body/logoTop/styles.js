@@ -1,4 +1,4 @@
-exports.default = {
+export const styles = {
   imageBlock: {
     minWidth: '100%',
     borderCollapse: 'collapse',
