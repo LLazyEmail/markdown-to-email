@@ -1,16 +1,9 @@
-# Cybersecurity tips when working from home: Part II
 
-Amidst the coronavirus pandemic, **[a remote work](https://hackernoon.com/how-to-protect-against-cyberthreats-while-employees-work-from-home-8n2a3t51)** situation **[has become a necessity](https://hackernoon.com/a-beginners-guide-to-personal-privacy-online-33f4dd20fc43)** with companies rolling out mandatory work-from-home policies. The digital era and **[breakthrough innovations](https://hackernoon.com/4-important-web-security-tools-during-privacy-crisis-en223wpd)** have made it utterly simple for most of us to carry out our regular **[duties from the comfort of our desk (okay, bed)](https://hackernoon.com/new-age-threats-to-your-online-privacy-and-cybersecurity-bu2t3xtq)**. But even before COVID-19 cases hit record, many people have already been **[working full-time from home](https://hackernoon.com/tagged/tech-privacy)** or local coffee shops.  So whether it’s for social distancing sake or just a standard situation, working from home is **[gaining momentum](https://hackernoon.com/cyber-threats-what-are-the-dangers-au4k3we1)**.
+**AD Link: [https://bit.ly/3pGj1Zq](https://bit.ly/3pGj1Zq)**
 
+**AD Copy: Buy NordVPN's 2-year plan and get +3 months for free.**
 
-
-
-
-
-
-With that being said, this luxury (or inconvenience) comes with its downsides, mainly by way of **[online scams and security threats](https://hackernoon.com/privacy-alert-how-far-personalization-in-advertising-can-go-yrs3wmq)**. Not only can remote workers have their own **[credentials stolen](https://hackernoon.com/data-breach-wagner-campaign-leaks-names-and-emails-of-subscribers-first-cyber-error-for-b88948d46bd0)**, working from home could result in **[breaching company security](https://hackernoon.com/business-reputation-can-take-a-punch-0q19f3jcp)** too.
-
-In part I of our series we’ve got to grips with a few **[online security tips](https://hackernoon.com/digital-consumers-its-time-to-grow-up-kw323tax)**, including **[strong password combinations](https://hackernoon.com/insiders-breach-your-organizations-data-data-tells-us-so-pyv3uao)**, business devices, and **[phish emails](https://hackernoon.com/securing-sensitive-customer-information-in-the-age-of-data-yfl3wgv)**. On that note, let us go over other **[cybersecurity recommendations](https://hackernoon.com/multiple-universities-in-united-states-suffer-data-breach-ea11f331fb04)** that will help [remote workers](https://hackernoon.com/reflecting-on-five-years-of-remote-work-at-nodesk-4o1e3t8v) keep their business, personal, and **[work data safe from hackers](https://hackernoon.com/data-breach-costs-will-get-worse-before-they-get-better-heres-why-1p44u3xib)**.
+**They want to change this AD Copy to: Black Friday ONLY! Buy NordVPN's 2-year plan and get +3 months FREE**
 
 
 
@@ -18,54 +11,46 @@ In part I of our series we’ve got to grips with a few **[online security tips]
 
 
 
+# Combatting Increased Cybersecurity Gaps During The Pandemic
 
-## Encrypt your emails
+It seems a lifetime since organizations have been forced to adopt remote work practices to keep on track. Although almost[ half of the office workers](https://engage.morphisec.com/wfh-employee-cybersecurity-threat-index) have never dealt with working from home before, this mandatory evacuation is doing alright for itself. Backed up by communication tools like Slack and Zoom, teams have had critical digital connectivity even chilling in their pajamas. As a result, most companies have managed to keep the usual performance level and hold the line.  
 
-**[Encryption](https://hackernoon.com/end-to-end-encryption-basics-9s973yul) **is one of the fundamentals of **[online security](https://hackernoon.com/cyber-security-issues-in-2018-three-most-prominent-data-breaches-baac0b86f48)**. You can disguise your emails or messages to safeguard **[potentially sensitive information](https://hackernoon.com/security-for-pms-a-step-by-step-guide-8b1b3tgk)** from being read by anyone other than intended recipients. If you are sending personal data, contract papers, or **[company business secrets](https://hackernoon.com/top-security-penetration-testing-companies-yk103u1f)** without encrypting the content, you might as well put it on the **[notice board for public display](https://hackernoon.com/lessons-from-3-big-data-breaches-of-2017-6d2dd33305d5)**. And although encryption is seen as burdening and difficult, in reality, it is **[more straightforward than sending an email](https://hackernoon.com/phishing-my-company-an-infosec-lesson-for-businesses-ca69ab4ea906)**.
-
-
-
+However, this sounds too good to be true. Still, the challenges of remote work are immense and exacerbated by technological gaps and non-hardened laptops. In particular, security departments are turning up the heat. With [around 55 percent of specialists](https://www.techrepublic.com/article/security-faux-pas-56-of-employees-use-personal-computers-to-wfh/#:~:text=During%20this%20unexpected%20remote%20work,protocols%20are%20on%20their%20devices.) using personal computers due to COVID-19 realities, the emerging security threats expose cybersecurity gaps and critical vulnerabilities.  
 
 
+## The Evolution Of Cybersecurity Threats During The Pandemic
 
+While the world is fighting the global health threats posed by COVID-19, cybercriminals around the world undoubtedly are cashing in on the dire straits.
 
+ Since February (can you believe it’s been that long?), companies have experienced the rapid expansion of hackers’ infrastructure used to storm the coronavirus-themed spear-phishing attacks and bait victims to seemingly legit platforms aiming to fetch Office 365 credentials.
 
-## Have a backup strategy
+According to [research](https://www.preprints.org/manuscript/202009.0630/v1/download), since April, the total number of spam messages has almost reached 1 mln, whereas the overall quantity of malware attack and malicious links has ramped up to 737 and 48k respectively.
 
-**[Important data can be lost](https://hackernoon.com/experts-warn-amids-budget-cuts-the-pandemic-calls-for-stepping-up-security-efforts-wc683zox)** due to a number of reasons, including **[cyber-attacks](https://hackernoon.com/facebook-forced-me-to-use-a-password-manager-16af91e2885d)**. **[Ransomware](https://hackernoon.com/the-internet-of-today-is-broken-694df3b6526a)** and other types of malware can obliterate entire systems without you knowing. That is why all important files should be **[backed up regularly](https://hackernoon.com/how-to-get-started-with-threat-modeling-before-you-get-hacked-1bf0ea3310df)**. Clearly, **[hardware backups](https://hackernoon.com/protect-your-business-from-these-7-dangerous-cyber-threats-92403tm2)** are how old-fashion guys do it, but **[cloud backup services](https://hackernoon.com/in-depth-guide-to-connecting-your-aws-and-microsoft-azure-virtual-private-networks-vpn-cb3o3wjm)** are more convenient with their backup schedule and storage options. Although skeptics still question cloud computing's value, reliability, and **[security](https://hackernoon.com/symmetric-and-asymmetric-encryption-5122f9ec65b1)**, it still remains the most viable backup option for **[business-related data](https://hackernoon.com/5-life-saving-tips-about-cyber-security-3yx3w03)**.
-
-
-
+The first wake-up call grabbed headlines on April 21<sup>st</sup>, 2020. The [cybersecurity attack](https://www.washingtonpost.com/technology/2020/04/21/nearly-25000-email-addresses-passwords-allegedly-nih-who-gates-foundation-are-dumped-online/) allegedly affected NIH, WHO, World Bank, Gates Foundation, and other widely-known organizations. At that time, almost 25000 email addresses and passwords were dumped online by unknown hackers.  
 
 
 
 
-## Use a virtual private network (VPN)
-
-You didn’t think we’ll skip this one? You’d be surprised, but **[VPNs value can extend beyond bypassing geographic restrictions on streaming sites](https://hackernoon.com/the-case-for-the-defence-securing-the-future-with-vpn-technology-pn1z3z4m)**. For those that are not computer savvy, a VPN implements technology that adds a **[security layer](https://hackernoon.com/information-security-tools-threats-and-trends-in-2019-2c91a57b63f8)** to private and public networks. In plain English, a VPN is your **[Invisibility Charm](https://hackernoon.com/wireguard-vpn-protocol-and-nordlynx-p21t3tw3)** that renders your data through a **[secure tunnel](https://hackernoon.com/warrant-canaries-audits-and-linux-based-protocols-shake-up-vpns-dj4w3ykb)**.
-
-Note: A VPN comes in handy only if your devices have been checked for **[compromising malware](https://hackernoon.com/the-use-of-vpns-is-spreading-in-new-zealands-universities-z8u3ua6)**.
-
-Also, VPNs can slow down internet speeds. So if you are planning a video conference, you need a speedy and reliable solution like **NordVPN**, for example. It comes with **security adds-on** as well.
+![alt_text](images/image1.png "image_tooltip")
+Source: https://www.preprints.org/manuscript/202009.0630/v1/download
 
 
+## Not By Phishing Only
 
+As time goes by, the coronavirus outbreak threatens to overload the security of organizations across the world. Cybercriminals become more sophisticated and treacherous at the same time using brute-force attacks and online shopping frauds.
 
+According to the data provided by global agencies, the key cybersecurity threats in the context of COVID-19 have been:
 
 
 
-## Patch your software regularly
+*   **Phishing and Malspam** – Phishing and malspam are surely the ‘pace-setters’ in the cybercriminal world. Coronavirus-related phishing emails attaching malicious Microsoft documents with health information have been all the rage lately. Seems only fair companies remind employees to be on guard when opening emails about the pandemic.
+*   **Credential Stuffing Attacks** –   Due to the global chaos criminals have had a lot of time on their hands to recheck their credential stuffing lists and target them against services that are going up in the world. Thus, in April, Zoom greeted the week with the growing concern for its privacy. It has been [reported](https://www.bleepingcomputer.com/news/security/over-500-000-zoom-accounts-sold-on-hacker-forums-the-dark-web/) that over 500,000 Zoom accounts were sold on the dark web and hacker forums.  So it’s better to prevent wildfire by following preventive measures like consistent use of NordVPN. It encrypts your readable data and makes it completely unreadable in case it’s intercepted.
+*   **Ransomware** – COVID-19 has also created a ripe environment for ransomware infection. In most cases, it featured information about vaccines, government assistance, free downloads for conferencing platforms, and critical updates. Sometimes, cyber thieves were more creative using double extortion and encrypting all your data. While sabotaging ransomware attacks is the best solution, being all set with backups is the next best.
+*   **Remote Desktop Protocol (RDP) Targeting** – McAfee report has demonstrated a surge in the number of attacks targeting RDP. This spurt led to a growing number of dark web markets selling RDP credentials. While your personnel have to log into systems remotely, limited and secure access by VPN can reduce the scale of the disaster.
 
-Updates to device software and other apps **[are truly annoying](https://hackernoon.com/all-you-should-know-about-cybersecurity-hygiene-when-using-public-wifi-9kz3wg0)**. Especially, when you get bombarded with software products asking you to patch them. However, they **[cover critical vulnerabilities](https://hackernoon.com/owasp-top-10-net-protection-a-guide-part-1-w92r3wis)** and **[shield your systems](https://hackernoon.com/what-is-white-box-cryptography-ph143u5v)** from the updated **[threats](https://hackernoon.com/a-guide-to-enhancing-security-at-the-iot-edge-part-2-zc3o3tw7)**. Some bugs if not fixed, can leave your software **[sensitive to cyber-attacks](https://hackernoon.com/how-to-handle-every-ransomware-challenge-with-ease-using-these-tips-d1143wqo)**. At best, it may be nothing more than a minor inconvenience. At worst, it may mean your personal and business **[data being compromised](https://hackernoon.com/fintech-security-needs-to-be-taken-more-seriously-than-it-is-1q2o3zir)** or attackers taking control of your PC.
-
-Therefore, patching your software as needed is crucial for your peace of mind. Besides, most products now come with an automatic update feature so you can leave it for the night and go to sleep.
-
-
-
+_Join us to welcome today’s newsletter sponsor, the OG NordVPN. It offers top-notch security features, a strict no-log policy, fast speeds, and a LOT of servers. It protects your devices so you don't have to. Buy NordVPN today at [68% off with 3 months FREE](https://bit.ly/3pGj1Zq) to maintain your privacy._
 
 
+## The Final Word
 
-
-## The Bottom Line
-
-In Coronavirus grim reality, **[businesses rely on remote working](https://hackernoon.com/cyber-security-for-businesses-tips-to-reduce-risks-92ap3uf0)**. As cybercriminals are **[exploiting the opportunities](https://hackernoon.com/how-the-quarantine-affected-cybersecurity-new-challenges-and-solutions-fz1t3zxg)**, there is a clear spike in [phishing](https://hackernoon.com/phishing-my-company-an-infosec-lesson-for-businesses-ca69ab4ea906) and other **[criminal activity](https://hackernoon.com/analyzing-the-notpetya-malware-cloud-computing-and-cybersecurity-risks-rt3d3xco)**. Without carefully crafted IT systems, it is hard for companies to spot potential cybersecurity weaknesses in remote workspaces. Therefore, protecting the business from hacking should become a **[top priority](https://hackernoon.com/the-importance-of-cybersecurity-in-early-stage-startups-cs3z3u5v)** for newly-minted remote workers. We hope that our tips will help keep your personal and **[business data cyber-safe](https://hackernoon.com/basic-ways-ai-disrupts-our-cybersecurity-practices-6a3i3tjm)** while working outside of the office during these trying times. **[Be vigilant. Stay safe.](https://hackernoon.com/the-5-best-cybersecurity-strategies-and-tools-for-your-remote-team-kw8k3yey)**
+With lockdowns and social distancing measures rolling into a new round, companies have to amplify distributed workforce cybersecurity as remote work continues into the future. Therefore, along with reassessing productivity tools, business leaders must re-examine the elements of their cybersecurity stacks to ramp up remote business continuity. As for the remote workers, cyber hygiene and increased vigilance are the best policies against thwarting most cyber attacks. That’s when NordVPN comes on stage. It doubles the protection while ensuring fast and stable speeds all around. 
