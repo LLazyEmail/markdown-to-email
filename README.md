@@ -12,7 +12,8 @@ So he just decide to google a working version that can solve his problems.
 2. and then I added javascript into my google Search https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
 3. then we tried different approaches, failed few times and find out how to fix some bugs.
 4. then I tried to google our repository and find out the latest version of this module - https://github.com/showdownjs/showdown
-
+5. then I find out that all template engines still sucks and decide to migrate "frontend" part to react
+6. i'm exploring the best known to me tools for markdown: remark and rehype. plus, as docusaurus using them and mdx format - we'll try it too
 
 `yarn parse`
 
