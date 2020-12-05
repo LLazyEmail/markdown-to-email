@@ -53,8 +53,9 @@
 // const REGEXP_CUSTOM_LINK = /\[(.*?)\]\((.*?)\)/g;
 // const REGEXP_CUSTOM_MEME_IMAGE = /\((.*?)\)/g; // @TODO or use gim as for other cases that we have?
 // // const REGEXP_CUSTOM_
+const {newLine} = require('./utils');
 
-const REGEXP_HEADER = /(#+)(.*)/g;
+const REGEXP_HEADER = /(\s)(#+)(.*)/g;
 const REGEXP_IMAGE = /!\[([^\[]+)\]\(([^\)]+)\)/g;
 const REGEXP_LINK = /\[([^\[]+)\]\(([^\)]+)\)/g;
 const REGEXP_STRONG = /(\*\*|__)(.*?)(\*?)\1/g;
@@ -72,7 +73,7 @@ const REGEXP_PARAGRAPH = /\n([^\n]+)\n/g;
 
 const REGEXP_EMPTY_UL = /<\/ul>\s?<ul>/g;
 const REGEXP_EMPTY_OL = /<\/ol>\s?<ol>/g;
-const REGEXP_BR = /(\n{2,})/g;
+const REGEXP_BR = new RegExp(`((${newLine}){2,})`, "g");
 const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
 const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
 

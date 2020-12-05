@@ -11,7 +11,7 @@
 // } = require("./constants");
 
 const fs = require("fs");
-
+const os = require('os');
 // @todo add lodash here. will be pretty useful
 
 // @todo make it work
@@ -75,18 +75,16 @@ const fs = require("fs");
 // this utls file should serve a source for a very small and common methods.
 // module.export = Converter;
 
-function write(fileName, content, dir = "generated") {
+function write(fileName, content, dir = "generated", message) {
   // isFolderExists(dir); // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
 
   var _path = dir + "/" + fileName; //@todo it's not an ideal thing
 
   fs.writeFileSync(_path, content, function (err) {
     if (err) throw new Error("file not written");
-    // console.log(newFile);
-    console.log("file has been written successfully" + fileName);
   });
 
-  console.log("file has been written successfully" + fileName);
+  message && console.log("file has been written successfully" + fileName);
 }
 
 function readSourceFile(fileName) {
@@ -103,9 +101,14 @@ function isFolderExists(dir) {
   }
 }
 
+const platform = os.platform();
+const newLine = platform === "win32" ? "\r\n" : "\n";
+
+console.log("platform", platform);
 module.exports = {
   write,
   readFile,
   readSourceFile,
   isFolderExists,
+  newLine
 };

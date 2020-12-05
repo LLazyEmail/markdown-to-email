@@ -1,4 +1,5 @@
 const { replaceHTMLWrapper } = require("./helpers");
+const {newLine} =require('./utils');
 
 const italic = "$1<em>$3</em>$4";
 const del = "<del>$1</del>";
@@ -6,7 +7,7 @@ const q = "<q>$1</q>";
 const code = "<code>$1</code>";
 const hr = "\n<hr />";
 const empty = "";
-const newLine = "\n"; 
+// const newLine = "\n"; 
 // const strong = "<strong>$2$3</strong>";
 
 function strong(text, doubleAsterix, content, asterix) {
@@ -29,13 +30,13 @@ function paragraphWrapper(text, line) {
   var trimmed = line.trim();
   if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
     //@TODO move out this regex into constants file.
-    return "\n" + line + "\n";
+    return newLine + line + newLine;
   }
 
   const config = {
     content: trimmed,
   };
-  const result = "\n" + replaceHTMLWrapper("paragraph", config) + "\n";
+  const result = newLine + replaceHTMLWrapper("paragraph", config) + newLine;
 
   return result;
 }
@@ -112,23 +113,16 @@ function mem(text, src, href, altText) {
   return result;
 }
 
-function header(text, chars, content) {
-  var level = chars.length;
-
+function header(text, space, chars, content) {
   const config = {
     content: content.trim(),
   };
 
-  switch (level) {
-    case 1:
-      return replaceHTMLWrapper("mainTitle", config);
-    case 2: // TODO ???
-      return replaceHTMLWrapper("subtitle", config);
-    case 3:
-      return replaceHTMLWrapper("heading", config);
-    default:
-      break;
-  }
+  const titleType = ["mainTitle", "subtitle", "heading"];
+
+  const result = space + replaceHTMLWrapper(titleType[chars.length - 1], config);
+ 
+  return result;
 }
 
 function sponsorship(text) {
@@ -147,11 +141,20 @@ function sponsorship(text) {
 }
 
 function br(text, newLines) {
-  return Array.from(newLines).reduce((acc, current, index) => {
-    return index > 0 ? acc + "<br>" + current : current;
+  // console.log("newLines" newLines.split());
+  // newLines.replace(//)
+
+  // newLines.match(new RegExp(newLine, 'g'));
+  // console.log(newLines.match(new RegExp(newLine, 'g')));
+  const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
+  // const result = newLines.replace(new RegExp(newLine, 'g'), `${newLine}<br/>`);
+  
+  // return result;
+  // console.log("newLines.length", newLines.length);
+  return arrNewLines.reduce((acc, current, index) => {
+    return index > 0 ? acc + "<br/>" + current : current;
   }, "");
 }
-
 // function tag_loop(){
 //     var arr = {
 //         header,
