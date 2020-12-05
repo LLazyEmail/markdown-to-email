@@ -1,5 +1,7 @@
 const { parse } = require("./parse");
-const { write, readFile } = require("./utils");
+const { write, readFile, isFolderExists } = require("./utils");
+
+isFolderExists('generated');
 
 if (process.env.PARSE) {
   let html = readFile("main");
