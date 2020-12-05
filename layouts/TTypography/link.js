@@ -1,1 +1,1 @@
-module.exports = "<Link href="https://vk.com/feed" />";
+module.exports = "<Link href="{href}" />";
