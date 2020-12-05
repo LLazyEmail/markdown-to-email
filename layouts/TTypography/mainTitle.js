@@ -1,1 +1,1 @@
-module.exports= "<MainTitle>Salesforce Bought Slack - WTF?!</MainTitle>";
+module.exports= "<MainTitle>{content}</MainTitle>";
