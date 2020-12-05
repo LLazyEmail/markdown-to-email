@@ -24,23 +24,12 @@ function generate_content_only(){
 
 switch(process.env.PARSE){
   case "full":
-      let html = readFile("main");
-  const { previewText, content } = parse(FULL_SOURCE);
-
-  html = html.replace("{previewText}", previewText);
-   html = html.replace("{content}", content);
-   const fileName = "full-template" + Date.now() + ".html";
-   write(fileName, html);
-    
+      generate_full_template();
     break;
   case "react":
     //same as default, but with react components instead.
-    const parsedContent = parse(CONTENT_SOURCE);
-    const fileName = "content" + Date.now() + ".html";
-    write(fileName, parsedContent.content);
+    generate_content_only();
     break;  
   default:
-    const parsedContent = parse(CONTENT_SOURCE);
-    const fileName = "content" + Date.now() + ".html";
-    write(fileName, parsedContent.content);
+    generate_content_only();
 }
