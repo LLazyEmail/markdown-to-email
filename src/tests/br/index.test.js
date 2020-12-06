@@ -11,7 +11,6 @@ describe("testing br", () => {
     let parsedContent = {
       content: markdown,
     };
-
     replaceMarkdown(REGEXP_BR, br, parsedContent);
     const fileName = "br.html";
     write(fileName, parsedContent.content, outFolder);
