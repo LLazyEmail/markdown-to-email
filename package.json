@@ -4,12 +4,13 @@
   "description": "Translate 'Markdown' Syntax into HTML For Email Newsletters",
   "main": "index.js",
   "scripts": {
-    "test": "jest ./src/tests",
-    "test:watch": "jest --watch ./src/tests",
-    "parse": "node ./src/parser",
-    "parse:full": "PARSE=full node ./src/parser",
+    "test": "npm run checkFolders && jest ./src/tests",
+    "test:watch": "npm run checkFolders && jest --watch ./src/tests",
+    "parse": "npm run checkFolders && node ./src/parser",
+    "parse:full": "npm run checkFolders && cross-env PARSE=full node ./src/parser",
     "lint": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
-    "build:small": "node ./src/index.js"
+    "build:small": "npm run checkFolders && node ./src/index.js",
+    "checkFolders": "node ./checkFolders"
   },
   "author": "hirdbluebird",
   "license": "ISC",
@@ -20,6 +21,8 @@
     "jest": "26.6.3"
   },
   "dependencies": {
+    "chalk": "^4.1.0",
+    "cross-env": "^7.0.3",
     "lodash": "^4.17.20",
     "remark": "^13.0.0"
   }

@@ -104,7 +104,6 @@ function isFolderExists(dir) {
 const platform = os.platform();
 const newLine = platform === "win32" ? "\r\n" : "\n";
 
-console.log("platform", platform);
 module.exports = {
   write,
   readFile,

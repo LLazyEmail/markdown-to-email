@@ -63,13 +63,13 @@ const REGEXP_DEL = /\~\~(.*?)\~\~/g;
 const REGEXP_Q = /\:\"(.*?)\"\:/g;
 const REGEXP_CODE = /`(.*?)`/g;
 
-const REGEXP_UL_LIST = /\n(((\s{4})?\*(.*?)\n){1,})/g;
-const REGEXP_OL_LIST = /\n[0-9]+\.(.*)/g;
+const REGEXP_UL_LIST = new RegExp(`${newLine}(((\\s{4})?\\*(.*?)${newLine}){1,})`, 'g');
+const REGEXP_OL_LIST = new RegExp(`${newLine}[0-9]+\\.(.*)`, 'g'); 
 
-const REGEXP_BLOCKQUOTE = /\n(&gt;|\>)(.*)/g;
-const REGEXP_HR = /\n-{5,}/g;
+const REGEXP_BLOCKQUOTE = new RegExp(`${newLine}(&gt;|\\>)(.*)`, 'g');
+const REGEXP_HR = new RegExp(`${newLine}-{5,}`,'g');
 
-const REGEXP_PARAGRAPH = /\n([^\n]+)\n/g;
+const REGEXP_PARAGRAPH = new RegExp(`${newLine}(.+?)${newLine}`, "g");
 
 const REGEXP_EMPTY_UL = /<\/ul>\s?<ul>/g;
 const REGEXP_EMPTY_OL = /<\/ol>\s?<ol>/g;
@@ -80,7 +80,7 @@ const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
 const REGEXP_SPONSORSHIP = /~(\[(.*?)\]){3}/g;
 const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
 const REGEXP_MEM = /\!\[(.*?)\]\[(.*?)\]\[(.*?)\]/g;
-const REGEXP_PREVIEW_TEXT = /#~(.*?)\n/;
+const REGEXP_PREVIEW_TEXT = new RegExp(`#~(.*?)${newLine}`);
 // const REGEXP_H3 = /^### (.*$)/gim;
 // const REGEXP_H2 = /^## (.*$)/gim;
 

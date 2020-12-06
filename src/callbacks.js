@@ -5,7 +5,7 @@ const italic = "$1<em>$3</em>$4";
 const del = "<del>$1</del>";
 const q = "<q>$1</q>";
 const code = "<code>$1</code>";
-const hr = "\n<hr />";
+const hr = `${newLine}<hr />`;
 const empty = "";
 // const newLine = "\n"; 
 // const strong = "<strong>$2$3</strong>";
@@ -44,50 +44,48 @@ function paragraphWrapper(text, line) {
 function ulList(text, list) {
   //@todo improve this crazy structure.
   const parsedSubListsParts = list.replace(
-    /((\s{4}\*(.*?)\n){1,})/g,
+    new RegExp(`((\\s{4}\\*(.*?)${newLine}){1,})`, 'g'),
     (text, subList) => {
       const parsedSubItem = subList.replace(
-        /\s{4}\*(.*?)\n/g,
+        new RegExp(`\\s{4}\\*(.*?)${newLine}`, 'g'),
         (text, subItem) => {
           const config = {
             content: subItem.trim(),
           };
 
-          return `\n${replaceHTMLWrapper("listItem", config)}`;
+          return `${newLine + replaceHTMLWrapper("listItem", config)}`;
         }
       );
       const config = {
-        content: parsedSubItem + "\n",
+        content: parsedSubItem + newLine,
       };
 
-      return `\n${replaceHTMLWrapper("list", config)}`;
+      return `${newLine + replaceHTMLWrapper("list", config)}`;
     }
   );
-
   const parsedList = parsedSubListsParts.replace(
-    /\*(.*?)\n/g,
+    new RegExp(`\\*(.*?)${newLine}`, 'g'),
     (text, listItem) => {
       const config = {
         content: listItem.trim(),
       };
 
-      return `\n${replaceHTMLWrapper("listItem", config)}`;
+      return `${newLine + replaceHTMLWrapper("listItem", config)}`;
     }
   );
 
   const config = {
-    content: parsedList + "\n",
+    content: parsedList + newLine,
   };
-
-  return `\n${replaceHTMLWrapper("list", config)}\n`;
+  return `${newLine + replaceHTMLWrapper("list", config) + newLine}`;
 }
 
 function olList(text, item) {
-  return "\n<ol>\n\t<li>" + item.trim() + "</li>\n</ol>";
+  return `${newLine}<ol>${newLine}\t<li>` + item.trim() + `</li>${newLine}</ol>`;
 }
 
 function blockquote(text, tmp, item) {
-  return "\n<blockquote>" + item.trim() + "</blockquote>";
+  return `${newLine}<blockquote>` + item.trim() + "</blockquote>";
 }
 
 function image(text, alt, srcWithTooltip) {
@@ -141,16 +139,7 @@ function sponsorship(text) {
 }
 
 function br(text, newLines) {
-  // console.log("newLines" newLines.split());
-  // newLines.replace(//)
-
-  // newLines.match(new RegExp(newLine, 'g'));
-  // console.log(newLines.match(new RegExp(newLine, 'g')));
   const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
-  // const result = newLines.replace(new RegExp(newLine, 'g'), `${newLine}<br/>`);
-  
-  // return result;
-  // console.log("newLines.length", newLines.length);
   return arrNewLines.reduce((acc, current, index) => {
     return index > 0 ? acc + "<br/>" + current : current;
   }, "");
