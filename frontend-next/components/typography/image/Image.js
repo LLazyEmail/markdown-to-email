@@ -7,7 +7,7 @@ const Image = ({href, src, alt}) => {
       <span style={styles.spanFont}>
         <span style={styles.spanSize}>
           <a href={href} target="_blank" style={styles.link}>
-            <img data-file-id={1041068} src={src} style={styles.img} alt={alt} data-testid="imagePropsTest" />
+            <img src={src} style={styles.img} alt={alt} data-testid="imagePropsTest" />
           </a>
         </span>
       </span>

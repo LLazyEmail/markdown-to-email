@@ -1,9 +1,15 @@
 import React from 'react';
 import { styles } from './styles';
 
+// @TODO moveout path to hackernoon logo into config array
+
 const LogoBottom = () => {
   return (
-    <table border={0} cellPadding={0} cellSpacing={0} className="mcnImageBlock" style={styles.imageBlock}>
+    <table
+      border={0}
+      cellPadding={0}
+      cellSpacing={0}
+      className="mcnImageBlock" style={styles.imageBlock}>
       <tbody className="mcnImageBlockOuter">
         <tr>
           <td valign="top" style={styles.imageBlockInner} className="mcnImageBlockInner">

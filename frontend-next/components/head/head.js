@@ -1,6 +1,10 @@
 import React from 'react';
 import Fonts from './fonts';
 
+// @TODO title should be passed from the outside
+
+// @TODO should we handle <style> tag issue?
+
 const Head = () => {
   return (
     <head>
