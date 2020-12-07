@@ -1,1 +1,1 @@
-module.exports = "<Link href="{href}" />";
+module.exports = `<Link href="{href}" />`;
