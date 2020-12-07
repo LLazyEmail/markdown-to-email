@@ -1,1 +1,1 @@
-module.exports= "<MainTitle>{content}</MainTitle>";
+module.exports= `<MainTitle>{content}</MainTitle>`;
