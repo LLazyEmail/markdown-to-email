@@ -1,1 +1,1 @@
-module.exports= "<Heading>{content}</Heading>";
+module.exports= `<Heading>{content}</Heading>`;
