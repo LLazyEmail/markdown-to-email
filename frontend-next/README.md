@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 `components/` - Folder with components   
 `pages/_app.js` - component for initialize pages    
 `pages/_document.js` - surrounding document's markup  
-`pages/index.js` - layout render  
+`pages/index.js` - Template routing!  
 
 ## Npm commands
 `npm run dev` - starts development server  
