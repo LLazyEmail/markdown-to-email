@@ -6,30 +6,29 @@ import NewsletterSponsorshipLink from '../../misc/newsletter-sponsorship-link';
 import TableLeft from './tableLeft';
 import styles from './styles';
 
-const Footer = () => {
-  return (
-    <div>
-      <table
-        border={0}
-        cellPadding={0}
-        cellSpacing={0}
-        className="mcnFollowBlock"
-        style={styles.followBlock}
-      >
-        <tbody className="mcnFollowBlockOuter">
-          <tr>
-            <td align="center" valign="top" style={styles.followBlockInner} className="mcnFollowBlockInner">
+const Footer = () => (
+  <div>
+    <table
+      border={0}
+      cellPadding={0}
+      cellSpacing={0}
+      className="mcnFollowBlock"
+      style={styles.followBlock}
+    >
+      <tbody className="mcnFollowBlockOuter">
+        <tr>
+          <td align="center" valign="top" style={styles.followBlockInner} className="mcnFollowBlockInner">
 
-              <table
-                border={0}
-                cellPadding={0}
-                cellSpacing={0}
-                className="mcnFollowContentContainer"
-                style={styles.followContentContainer}
-              >
-                <tbody>
-                  <tr>
-                    <td align="center" style={styles.tdCenter}>
+            <table
+              border={0}
+              cellPadding={0}
+              cellSpacing={0}
+              className="mcnFollowContentContainer"
+              style={styles.followContentContainer}
+            >
+              <tbody>
+                <tr>
+                  <td align="center" style={styles.tdCenter}>
                       <table
                         border={0}
                         cellPadding={0}
@@ -89,34 +88,34 @@ const Footer = () => {
                         </tbody>
                       </table>
                     </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <table
-        border={0}
-        cellPadding={0}
-        cellSpacing={0}
-        className="mcnTextBlock"
-        style={styles.textBlock}
-      >
-        <tbody className="mcnTextBlockOuter">
-          <tr>
-            <td valign="top" className="mcnTextBlockInner" style={styles.textBlockInner}>
-              <table
-                align="left"
-                border={0}
-                cellPadding={0}
-                cellSpacing={0}
-                style={styles.textContentContainer}
-                className="mcnTextContentContainer"
-              >
-                <tbody>
-                  <tr>
-                    <td valign="top" className="mcnTextContent" style={styles.textContent}>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table
+      border={0}
+      cellPadding={0}
+      cellSpacing={0}
+      className="mcnTextBlock"
+      style={styles.textBlock}
+    >
+      <tbody className="mcnTextBlockOuter">
+        <tr>
+          <td valign="top" className="mcnTextBlockInner" style={styles.textBlockInner}>
+            <table
+              align="left"
+              border={0}
+              cellPadding={0}
+              cellSpacing={0}
+              style={styles.textContentContainer}
+              className="mcnTextContentContainer"
+            >
+              <tbody>
+                <tr>
+                  <td valign="top" className="mcnTextContent" style={styles.textContent}>
                       <Copyrights />
                       <br />
                       <Address />
@@ -124,15 +123,14 @@ const Footer = () => {
                       <Unsubscribe />
                       <NewsletterSponsorshipLink />
                     </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  );
-}
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+);
 
 export default Footer;

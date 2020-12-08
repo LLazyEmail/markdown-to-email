@@ -11,12 +11,12 @@ export const styles = {
     fontFamily: '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
     fontSize: '18px',
   },
-  spanFont: { 
-      fontFamily: 'georgia,times,times new roman,serif' 
-    },
-  spanSize: { 
-      fontSize: '17px' 
-    },
+  spanFont: {
+    fontFamily: 'georgia,times,times new roman,serif',
+  },
+  spanSize: {
+    fontSize: '17px',
+  },
   link: {
     msoLineHeightRule: 'exactly',
     msTextSizeAdjust: '100%',

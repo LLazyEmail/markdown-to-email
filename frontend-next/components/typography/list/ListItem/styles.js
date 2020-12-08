@@ -1,9 +1,9 @@
 export const styles = {
-  li: { 
-      msoLineHeightRule: 'exactly',
-      msTextSizeAdjust: '100%',
-      WebkitTextSizeAdjust: '100%'
-    },
+  li: {
+    msoLineHeightRule: 'exactly',
+    msTextSizeAdjust: '100%',
+    WebkitTextSizeAdjust: '100%',
+  },
   presentation: {
     lineHeight: '125%',
     margin: '10px 0',

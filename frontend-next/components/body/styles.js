@@ -16,5 +16,5 @@ export const styles = {
   },
   templateBody: {
     background: '#ffffff none no-repeat center/cover', msoLineHeightRule: 'exactly', msTextSizeAdjust: '100%', WebkitTextSizeAdjust: '100%', backgroundColor: '#ffffff', backgroundImage: 'none', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', borderTop: 0, borderBottom: '4px solid #00ff00', paddingTop: 0, paddingBottom: '9px',
-  }
+  },
 };

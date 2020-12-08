@@ -24,9 +24,9 @@ export const styles = {
     msTextSizeAdjust: '100%',
     WebkitTextSizeAdjust: '100%',
   },
-  td: { 
-      msoLineHeightRule: 'exactly',
-      msTextSizeAdjust: '100%',
-      WebkitTextSizeAdjust: '100%' 
-    },
+  td: {
+    msoLineHeightRule: 'exactly',
+    msTextSizeAdjust: '100%',
+    WebkitTextSizeAdjust: '100%',
+  },
 };

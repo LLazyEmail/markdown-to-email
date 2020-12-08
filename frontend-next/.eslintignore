@@ -1,4 +1,4 @@
 node_modules
-dist
+out
 *components/__snapshots__
 *.test.js
