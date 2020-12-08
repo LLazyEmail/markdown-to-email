@@ -12,10 +12,10 @@ export const styles = {
     lineHeight: '125%',
     letterSpacing: 'normal',
   },
-  spanFont: { 
-      fontFamily: 'trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif' 
-    },
-  spanSize: { 
-      fontSize: '30px' 
-    },
+  spanFont: {
+    fontFamily: 'trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif',
+  },
+  spanSize: {
+    fontSize: '30px',
+  },
 };

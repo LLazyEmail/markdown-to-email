@@ -1,11 +1,9 @@
 import React from 'react';
 
-const Italic = ({children}) => {
-    return (
-        <i>
-            {children}
-        </i>
-    )
-}
+const Italic = ({ children }) => (
+  <i>
+    {children}
+  </i>
+);
 
 export default Italic;

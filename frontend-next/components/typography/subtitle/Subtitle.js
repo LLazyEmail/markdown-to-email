@@ -3,18 +3,16 @@ import { styles } from './styles';
 
 // @TODO replace strong with component?
 
-const SubTitle = ({children}) => {
-  return (
-    <p dir="ltr" style={styles.ltr}>
-      <span style={styles.spanFont}>
-        <span style={styles.spanSize}>
-          <strong data-testid="subtitleChildrenTest">
-            {children}
-          </strong>
-        </span>
+const SubTitle = ({ children }) => (
+  <p dir="ltr" style={styles.ltr}>
+    <span style={styles.spanFont}>
+      <span style={styles.spanSize}>
+        <strong data-testid="subtitleChildrenTest">
+          {children}
+        </strong>
       </span>
-    </p>
-  );
-}
+    </span>
+  </p>
+);
 
 export default SubTitle;

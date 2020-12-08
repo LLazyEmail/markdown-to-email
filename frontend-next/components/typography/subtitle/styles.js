@@ -11,10 +11,10 @@ export const styles = {
     fontFamily: '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
     fontSize: '18px',
   },
-  spanSize: { 
-      fontSize: '17px' 
-    },
-  spanFont: { 
-      fontFamily: 'trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif' 
-    },
+  spanSize: {
+    fontSize: '17px',
+  },
+  spanFont: {
+    fontFamily: 'trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif',
+  },
 };

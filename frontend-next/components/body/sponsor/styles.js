@@ -28,11 +28,11 @@ export const styles = {
     msTextSizeAdjust: '100%',
     WebkitTextSizeAdjust: '100%',
   },
-  title: { 
-      msoLineHeightRule: 'exactly',
-      msTextSizeAdjust: '100%',
-      WebkitTextSizeAdjust: '100%' 
-    },
+  title: {
+    msoLineHeightRule: 'exactly',
+    msTextSizeAdjust: '100%',
+    WebkitTextSizeAdjust: '100%',
+  },
   image: {
     maxWidth: '150px',
     borderRadius: '0%',

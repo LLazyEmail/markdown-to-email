@@ -6,16 +6,19 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "eslint . --ext js,jsx . --ignore-path ./.eslintgnore",
+    "lint": "eslint . --ext js,jsx . --ignore-path ./.eslintignore",
     "lint:fix": "eslint --fix . --ignore-path ./.eslintignore"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^10.0.3",
     "next": "10.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "sass": "^1.30.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-do-expressions": "^7.12.1",
     "babel-eslint": "^10.1.0",
     "eslint": "7.2.0",
     "eslint-config-airbnb": "18.2.1",

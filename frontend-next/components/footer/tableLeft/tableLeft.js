@@ -1,23 +1,22 @@
 import React from 'react';
 import styles from '../styles';
 
-const TableLeft = ({href, src, alt}) => {
-  return (
-    <table align="left" border={0} cellPadding={0} cellSpacing={0} style={styles.tableLeft}>
-      <tbody>
-        <tr>
-          <td valign="top" style={styles.followContentItemContainer} className="mcnFollowContentItemContainer">
-            <table
-              border={0}
-              cellPadding={0}
-              cellSpacing={0}
-              className="mcnFollowContentItem"
-              style={styles.followContentItem}
-            >
-              <tbody>
-                <tr>
-                  <td align="left" valign="middle" style={styles.tdLeftMiddle}>
-                    <table
+const TableLeft = ({ href, src, alt }) => (
+  <table align="left" border={0} cellPadding={0} cellSpacing={0} style={styles.tableLeft}>
+    <tbody>
+      <tr>
+        <td valign="top" style={styles.followContentItemContainer} className="mcnFollowContentItemContainer">
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnFollowContentItem"
+            style={styles.followContentItem}
+          >
+            <tbody>
+              <tr>
+                <td align="left" valign="middle" style={styles.tdLeftMiddle}>
+                  <table
                       align="left"
                       border={0}
                       cellPadding={0}
@@ -49,15 +48,14 @@ const TableLeft = ({href, src, alt}) => {
                         </tr>
                       </tbody>
                     </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  );
-}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+);
 
 export default TableLeft;

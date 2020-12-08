@@ -52,10 +52,10 @@ exports.default = {
     WebkitTextSizeAdjust: '100%',
   },
   tdCenterTop2: {
-      msoLineHeightRule: 'exactly',
-      msTextSizeAdjust: '100%',
-      WebkitTextSizeAdjust: '100%' 
-    },
+    msoLineHeightRule: 'exactly',
+    msTextSizeAdjust: '100%',
+    WebkitTextSizeAdjust: '100%',
+  },
   tableLeft: {
     display: 'inline',
     borderCollapse: 'collapse',
@@ -94,16 +94,16 @@ exports.default = {
     msTextSizeAdjust: '100%',
     WebkitTextSizeAdjust: '100%',
   },
-  followIconContent: { 
-      msoLineHeightRule: 'exactly',
-      msTextSizeAdjust: '100%',
-      WebkitTextSizeAdjust: '100%' 
-    },
-  followSocial: { 
-      msoLineHeightRule: 'exactly',
+  followIconContent: {
+    msoLineHeightRule: 'exactly',
     msTextSizeAdjust: '100%',
-    WebkitTextSizeAdjust: '100%'
-},
+    WebkitTextSizeAdjust: '100%',
+  },
+  followSocial: {
+    msoLineHeightRule: 'exactly',
+    msTextSizeAdjust: '100%',
+    WebkitTextSizeAdjust: '100%',
+  },
   followSocialImg: {
     display: 'block', border: 0, height: 'auto', outline: 'none', textDecoration: 'none', msInterpolationMode: 'bicubic',
   },
