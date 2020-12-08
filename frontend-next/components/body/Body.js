@@ -3,7 +3,7 @@ import { styles } from './styles';
 import LogoTop from './logoTop';
 import LogoBottom from './logoBottom';
 import Divider from './divider';
-import Footer from './footer';
+import Footer from '../footer';
 
 const Body = ({ header, children }) => (
   <div>

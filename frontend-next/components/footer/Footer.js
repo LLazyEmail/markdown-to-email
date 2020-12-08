@@ -1,8 +1,8 @@
 import React from 'react';
-import Copyrights from '../../misc/copyrights';
-import Address from '../../misc/address';
-import Unsubscribe from '../../misc/unsubscribe';
-import NewsletterSponsorshipLink from '../../misc/newsletter-sponsorship-link';
+import Copyrights from '../misc/copyrights';
+import Address from '../misc/address';
+import Unsubscribe from '../misc/unsubscribe';
+import NewsletterSponsorshipLink from '../misc/newsletter-sponsorship-link';
 import TableLeft from './tableLeft';
 import styles from './styles';
 
