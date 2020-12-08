@@ -3,7 +3,7 @@ import { styles } from './body/styles';
 import LogoTop from './body/logoTop';
 import LogoBottom from './body/logoBottom';
 import Footer from './footer';
-import BodyPrototipe from './body/BodyPrototipe';
+import BodyPrototype from './body/BodyPrototype';
 import Divider from './body/divider';
 
 const App = ({header}) => (
@@ -42,7 +42,7 @@ const App = ({header}) => (
                         <tr>
                             <td valign="top" id="templateBody" style={styles.templateBody}>
                                 <Divider>
-                                    <BodyPrototipe />
+                                    <BodyPrototype />
                                 </Divider>
                                 <LogoBottom />
                             </td>

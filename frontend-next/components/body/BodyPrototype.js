@@ -7,7 +7,7 @@ import Heading from '../typography/heading';
 import Strong from '../typography/strong';
 import Paragraph from '../typography/paragraph';
 
-const BodyPrototipe = () => {
+const BodyPrototype = () => {
     return (
         <>
             <Sponsor
@@ -90,4 +90,4 @@ const BodyPrototipe = () => {
     )
 }
 
-export default BodyPrototipe;
+export default BodyPrototype;
