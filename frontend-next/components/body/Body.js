@@ -29,23 +29,23 @@ const Body = ({ header, children }) => (
               >
                 <tbody>
                   <tr>
-                      <td valign="top" id="templatePreheader" style={styles.templatePreheader}>
-                        <LogoTop />
-                      </td>
-                    </tr>
+                    <td valign="top" id="templatePreheader" style={styles.templatePreheader}>
+                      <LogoTop />
+                    </td>
+                  </tr>
                   <tr>
-                      <td valign="top" id="templateHeader" style={styles.templateHeader} data-testid="bodyPropsTest">
-                        {header}
-                      </td>
-                    </tr>
+                    <td valign="top" id="templateHeader" style={styles.templateHeader} data-testid="bodyPropsTest">
+                      {header}
+                    </td>
+                  </tr>
                   <tr>
-                      <td valign="top" id="templateBody" style={styles.templateBody}>
-                        <Divider>
-                          {children}
-                        </Divider>
-                        <LogoBottom />
-                      </td>
-                    </tr>
+                    <td valign="top" id="templateBody" style={styles.templateBody}>
+                      <Divider>
+                        {children}
+                      </Divider>
+                      <LogoBottom />
+                    </td>
+                  </tr>
                 </tbody>
               </table>
               <Footer />

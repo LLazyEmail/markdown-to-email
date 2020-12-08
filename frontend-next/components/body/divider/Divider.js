@@ -1,22 +1,17 @@
 import React from 'react';
+import Table from '../../html/table';
 import { styles } from './styles';
 
 const Divider = ({ children }) => (
-  <table
-    border={0}
-    cellPadding={0}
-    cellSpacing={0}
+  <Table
     className="mcnDividerBlock"
     style={styles.dividerBlock}
   >
     <tbody className="mcnDividerBlockOuter">
       <tr>
         <td className="mcnDividerBlockInner" style={styles.dividerBlockInner}>
-          <table
+          <Table
             className="mcnDividerContent"
-            border={0}
-            cellPadding={0}
-            cellSpacing={0}
             width="100%"
             style={styles.dividerContent}
           >
@@ -27,11 +22,11 @@ const Divider = ({ children }) => (
                 </td>
               </tr>
             </tbody>
-          </table>
+          </Table>
         </td>
       </tr>
     </tbody>
-  </table>
+  </Table>
 );
 
 export default Divider;

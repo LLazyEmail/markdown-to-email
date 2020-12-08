@@ -1,22 +1,17 @@
 import React from 'react';
+import Table from '../../html/table';
 import { styles } from './styles';
 
 const Section = ({ children }) => (
-  <table
-    border={0}
-    cellPadding={0}
-    cellSpacing={0}
+  <Table
     className="mcnTextBlock"
     style={styles.textBlock}
   >
     <tbody className="mcnTextBlockOuter">
       <tr>
         <td valign="top" className="mcnTextBlockInner" style={styles.textBlockInner}>
-          <table
+          <Table
             align="left"
-            border={0}
-            cellPadding={0}
-            cellSpacing={0}
             style={styles.textContentContainer}
             className="mcnTextContentContainer"
           >
@@ -33,11 +28,11 @@ const Section = ({ children }) => (
                 </td>
               </tr>
             </tbody>
-          </table>
+          </Table>
         </td>
       </tr>
     </tbody>
-  </table>
+  </Table>
 );
 
 export default Section;
