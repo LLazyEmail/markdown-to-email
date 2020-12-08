@@ -23,8 +23,8 @@ const Sponsor = ({
               <tr>
                 <td className="mcnImageCardRightImageContent" align="center" valign="top" style={styles.imageCardRightContent}>
                   <a href={leftHref} data-testid="sponsorHrefTest" title className target="_blank" style={styles.title}>
-                      <img alt="" src={leftSrc} width={150} data-testid="sponsorSrcTest" style={styles.image} className="mcnImage" />
-                    </a>
+                    <img alt="" src={leftSrc} width={150} data-testid="sponsorSrcTest" style={styles.image} className="mcnImage" />
+                  </a>
                 </td>
               </tr>
             </tbody>
@@ -39,13 +39,13 @@ const Sponsor = ({
               <tr>
                 <td valign="top" className="mcnTextContent" style={styles.textContent}>
                   <h1 className="mc-toc-title" style={styles.docTitle}>
-                      <br />
-                      <a href={rightHref} style={styles.link}>
-                        <strong data-testid="sponsorChildrenTest">
-                          {children}
-                        </strong>
-                      </a>
-                    </h1>
+                    <br />
+                    <a href={rightHref} style={styles.link}>
+                      <strong data-testid="sponsorChildrenTest">
+                        {children}
+                      </strong>
+                    </a>
+                  </h1>
                 </td>
               </tr>
             </tbody>

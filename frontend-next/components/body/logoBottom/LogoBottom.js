@@ -21,15 +21,15 @@ const LogoBottom = () => (
               <tr>
                 <td className="mcnImageContent" valign="top" style={styles.imageContent}>
                   <a href="https://hackernoon.com/" title className target="_blank" style={styles.title}>
-                      <img
-                        align="center"
-                        alt=""
-                        src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/brand/hackernoon.png"
-                        width={564}
-                        style={styles.img}
-                        className="mcnImage"
-                      />
-                    </a>
+                    <img
+                      align="center"
+                      alt=""
+                      src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/brand/hackernoon.png"
+                      width={564}
+                      style={styles.img}
+                      className="mcnImage"
+                    />
+                  </a>
                 </td>
               </tr>
             </tbody>

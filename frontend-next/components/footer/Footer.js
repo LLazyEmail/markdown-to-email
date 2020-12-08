@@ -24,59 +24,59 @@ const Footer = () => (
               <tbody>
                 <tr>
                   <td align="center" style={styles.tdCenter}>
-                      <Table
-                        style={styles.followContent}
-                        className="mcnFollowContent"
-                      >
-                        <tbody>
-                          <tr>
-                            <td align="center" valign="top" style={styles.tdCenterTop}>
-                              <Table
-                                align="center"
-                                style={styles.tableCenter}
-                              >
-                                <tbody>
-                                  <tr>
-                                    <td align="center" valign="top" style={styles.tdCenterTop2}>
-                                      <TableLeft
-                                        href="https://twitter.com/hackernoon"
-                                        src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-twitter-48.png"
-                                        alt="Twitter"
-                                      />
-                                      <TableLeft
-                                        href="https://www.facebook.com/hackernoon"
-                                        src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-facebook-48.png"
-                                        alt="Facebook"
-                                      />
-                                      <TableLeft
-                                        href="https://instagram.com/hackernoon/"
-                                        src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-instagram-48.png"
-                                        alt="Instagram"
-                                      />
-                                      <TableLeft
-                                        href="http://hackernoon.com"
-                                        src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-link-48.png"
-                                        alt="Website"
-                                      />
-                                      <TableLeft
-                                        href="https://www.youtube.com/channel/UChu5YILgrOYOfkfRlTB-D-g"
-                                        src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-youtube-48.png"
-                                        alt="YouTube"
-                                      />
-                                      <TableLeft
-                                        href="mailto:stories@hackernoon.com"
-                                        src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-forwardtofriend-48.png"
-                                        alt="Email"
-                                      />
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </Table>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </Table>
-                    </td>
+                    <Table
+                      style={styles.followContent}
+                      className="mcnFollowContent"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center" valign="top" style={styles.tdCenterTop}>
+                            <Table
+                              align="center"
+                              style={styles.tableCenter}
+                            >
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top" style={styles.tdCenterTop2}>
+                                    <TableLeft
+                                      href="https://twitter.com/hackernoon"
+                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-twitter-48.png"
+                                      alt="Twitter"
+                                    />
+                                    <TableLeft
+                                      href="https://www.facebook.com/hackernoon"
+                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-facebook-48.png"
+                                      alt="Facebook"
+                                    />
+                                    <TableLeft
+                                      href="https://instagram.com/hackernoon/"
+                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-instagram-48.png"
+                                      alt="Instagram"
+                                    />
+                                    <TableLeft
+                                      href="http://hackernoon.com"
+                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-link-48.png"
+                                      alt="Website"
+                                    />
+                                    <TableLeft
+                                      href="https://www.youtube.com/channel/UChu5YILgrOYOfkfRlTB-D-g"
+                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-youtube-48.png"
+                                      alt="YouTube"
+                                    />
+                                    <TableLeft
+                                      href="mailto:stories@hackernoon.com"
+                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-forwardtofriend-48.png"
+                                      alt="Email"
+                                    />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </Table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </Table>
+                  </td>
                 </tr>
               </tbody>
             </Table>
@@ -99,13 +99,13 @@ const Footer = () => (
               <tbody>
                 <tr>
                   <td valign="top" className="mcnTextContent" style={styles.textContent}>
-                      <Copyrights />
-                      <br />
-                      <Address />
-                      <br />
-                      <Unsubscribe />
-                      <NewsletterSponsorshipLink />
-                    </td>
+                    <Copyrights />
+                    <br />
+                    <Address />
+                    <br />
+                    <Unsubscribe />
+                    <NewsletterSponsorshipLink />
+                  </td>
                 </tr>
               </tbody>
             </Table>
