@@ -1,24 +1,19 @@
 import React from 'react';
+import Table from '../../html/table';
 import { styles } from './styles';
 
 // @TODO moveout path to hackernoon logo into config array
 
 const LogoTop = () => (
-  <table
-    border={0}
-    cellPadding={0}
-    cellSpacing={0}
+  <Table
     className="mcnImageBlock"
     style={styles.imageBlock}
   >
     <tbody className="mcnImageBlockOuter">
       <tr>
         <td valign="top" style={styles.imageContentContainer} className="mcnImageBlockInner">
-          <table
+          <Table
             align="left"
-            border={0}
-            cellPadding={0}
-            cellSpacing={0}
             className="mcnImageContentContainer"
             style={styles.imageContentContainer}
           >
@@ -38,11 +33,11 @@ const LogoTop = () => (
                 </td>
               </tr>
             </tbody>
-          </table>
+          </Table>
         </td>
       </tr>
     </tbody>
-  </table>
+  </Table>
 );
 
 export default LogoTop;

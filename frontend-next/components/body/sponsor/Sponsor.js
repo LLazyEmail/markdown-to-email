@@ -1,13 +1,11 @@
 import React from 'react';
+import Table from '../../html/table';
 import { styles } from './styles';
 
 const Sponsor = ({
   leftHref, leftSrc, rightHref, children,
 }) => (
-  <table
-    border={0}
-    cellPadding={0}
-    cellSpacing={0}
+  <Table
     className="mcnImageCardRightContentOuter"
     width="100%"
     style={styles.imageCardRightContentOuter}
@@ -15,11 +13,8 @@ const Sponsor = ({
     <tbody>
       <tr>
         <td align="center" valign="top" className="mcnImageCardRightContentInner" style={styles.imageCardRightContentInner}>
-          <table
+          <Table
             align="left"
-            border={0}
-            cellPadding={0}
-            cellSpacing={0}
             className="mcnImageCardRightImageContentContainer"
             width={200}
             style={styles.imageCardRightContentContainer}
@@ -33,13 +28,10 @@ const Sponsor = ({
                 </td>
               </tr>
             </tbody>
-          </table>
-          <table
+          </Table>
+          <Table
             className="mcnImageCardRightTextContentContainer"
             align="right"
-            border={0}
-            cellPadding={0}
-            cellSpacing={0}
             width={346}
             style={styles.imageCardRightContentContainer}
           >
@@ -57,11 +49,11 @@ const Sponsor = ({
                 </td>
               </tr>
             </tbody>
-          </table>
+          </Table>
         </td>
       </tr>
     </tbody>
-  </table>
+  </Table>
 );
 
 export default Sponsor;

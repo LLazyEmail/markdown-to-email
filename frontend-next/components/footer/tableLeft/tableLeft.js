@@ -1,27 +1,24 @@
 import React from 'react';
+import Table from '../../html/table';
 import styles from '../styles';
 
 const TableLeft = ({ href, src, alt }) => (
-  <table align="left" border={0} cellPadding={0} cellSpacing={0} style={styles.tableLeft}>
+  <Table 
+    align="left"  
+    style={styles.tableLeft}
+  >
     <tbody>
       <tr>
         <td valign="top" style={styles.followContentItemContainer} className="mcnFollowContentItemContainer">
-          <table
-            border={0}
-            cellPadding={0}
-            cellSpacing={0}
+          <Table
             className="mcnFollowContentItem"
             style={styles.followContentItem}
           >
             <tbody>
               <tr>
                 <td align="left" valign="middle" style={styles.tdLeftMiddle}>
-                  <table
+                  <Table
                       align="left"
-                      border={0}
-                      cellPadding={0}
-                      cellSpacing={0}
-                      width
                       style={styles.tableLeft2}
                     >
                       <tbody>
@@ -47,15 +44,15 @@ const TableLeft = ({ href, src, alt }) => (
                           </td>
                         </tr>
                       </tbody>
-                    </table>
+                    </Table>
                 </td>
               </tr>
             </tbody>
-          </table>
+          </Table>
         </td>
       </tr>
     </tbody>
-  </table>
+  </Table>
 );
 
 export default TableLeft;

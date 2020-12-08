@@ -1,5 +1,5 @@
 // import Head from 'next/head';
-import App from '../components/main';
+// import App from '../components/main';
 import Link from 'next/link';
 
 export default function Home() {

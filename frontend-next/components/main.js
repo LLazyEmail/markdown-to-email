@@ -5,15 +5,12 @@ import LogoBottom from './body/logoBottom';
 import Footer from './footer';
 import BodyPrototype from './body/BodyPrototype';
 import Divider from './body/divider';
+import Table from './html/table';
 
 const App = ({header}) => (
     <div>
         <div style={{ textAlign: 'center' }}>
-            <table
-                align="center"
-                border={0}
-                cellPadding={0}
-                cellSpacing={0}
+            <Table
                 id="bodyTable"
                 style={styles.bodyTable}
             >
@@ -21,10 +18,7 @@ const App = ({header}) => (
                 <tr>
                     <td align="center" valign="top" id="bodyCell" style={styles.bodyCell}>
 
-                    <table
-                        border={0}
-                        cellPadding={0}
-                        cellSpacing={0}
+                    <Table
                         className="templateContainer"
                         style={styles.templateContainer}
                     >
@@ -48,12 +42,12 @@ const App = ({header}) => (
                             </td>
                             </tr>
                         </tbody>
-                    </table>
+                    </Table>
                     <Footer />
                     </td>
                 </tr>
                 </tbody>
-            </table>
+            </Table>
         </div>
     </div>
 );

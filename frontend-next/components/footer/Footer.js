@@ -5,13 +5,11 @@ import Unsubscribe from '../misc/unsubscribe';
 import NewsletterSponsorshipLink from '../misc/newsletter-sponsorship-link';
 import TableLeft from './tableLeft';
 import styles from './styles';
+import Table from '../html/table';
 
 const Footer = () => (
   <div>
-    <table
-      border={0}
-      cellPadding={0}
-      cellSpacing={0}
+    <Table
       className="mcnFollowBlock"
       style={styles.followBlock}
     >
@@ -19,31 +17,22 @@ const Footer = () => (
         <tr>
           <td align="center" valign="top" style={styles.followBlockInner} className="mcnFollowBlockInner">
 
-            <table
-              border={0}
-              cellPadding={0}
-              cellSpacing={0}
+            <Table
               className="mcnFollowContentContainer"
               style={styles.followContentContainer}
             >
               <tbody>
                 <tr>
                   <td align="center" style={styles.tdCenter}>
-                      <table
-                        border={0}
-                        cellPadding={0}
-                        cellSpacing={0}
+                      <Table
                         style={styles.followContent}
                         className="mcnFollowContent"
                       >
                         <tbody>
                           <tr>
                             <td align="center" valign="top" style={styles.tdCenterTop}>
-                              <table
+                              <Table
                                 align="center"
-                                border={0}
-                                cellPadding={0}
-                                cellSpacing={0}
                                 style={styles.tableCenter}
                               >
                                 <tbody>
@@ -82,34 +71,28 @@ const Footer = () => (
                                     </td>
                                   </tr>
                                 </tbody>
-                              </table>
+                              </Table>
                             </td>
                           </tr>
                         </tbody>
-                      </table>
+                      </Table>
                     </td>
                 </tr>
               </tbody>
-            </table>
+            </Table>
           </td>
         </tr>
       </tbody>
-    </table>
-    <table
-      border={0}
-      cellPadding={0}
-      cellSpacing={0}
+    </Table>
+    <Table
       className="mcnTextBlock"
       style={styles.textBlock}
     >
       <tbody className="mcnTextBlockOuter">
         <tr>
           <td valign="top" className="mcnTextBlockInner" style={styles.textBlockInner}>
-            <table
+            <Table
               align="left"
-              border={0}
-              cellPadding={0}
-              cellSpacing={0}
               style={styles.textContentContainer}
               className="mcnTextContentContainer"
             >
@@ -125,11 +108,11 @@ const Footer = () => (
                     </td>
                 </tr>
               </tbody>
-            </table>
+            </Table>
           </td>
         </tr>
       </tbody>
-    </table>
+    </Table>
   </div>
 );
 
