@@ -1,11 +1,11 @@
 import React from 'react';
-import Copyrights from '../misc/copyrights';
-import Address from '../misc/address';
-import Unsubscribe from '../misc/unsubscribe';
-import NewsletterSponsorshipLink from '../misc/newsletter-sponsorship-link';
-import TableLeft from './tableLeft';
-import styles from './styles';
-import Table from '../html/table';
+import Copyrights from '../../components/misc/copyrights';
+import Address from '../../components/misc/address';
+import Unsubscribe from '../../components/misc/unsubscribe';
+import NewsletterSponsorshipLink from '../../components/misc/newsletter-sponsorship-link';
+import TableLeft from '../../components/footer/tableLeft';
+import { styles } from './styles';
+import Table from '../../components/html/table';
 
 const Footer = () => (
   <div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Table from '../../html/table';
-import styles from '../styles';
+import { styles } from './styles';
 
 const TableLeft = ({ href, src, alt }) => (
   <Table
