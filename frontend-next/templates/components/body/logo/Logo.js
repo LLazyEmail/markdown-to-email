@@ -4,14 +4,14 @@ import { styles } from './styles';
 
 // @TODO moveout path to hackernoon logo into config array
 
-const LogoBottom = () => (
+const Logo = () => (
   <Table
     className="mcnImageBlock"
     style={styles.imageBlock}
   >
     <tbody className="mcnImageBlockOuter">
       <tr>
-        <td valign="top" style={styles.imageBlockInner} className="mcnImageBlockInner">
+        <td valign="top" style={styles.imageContentContainer} className="mcnImageBlockInner">
           <Table
             align="left"
             className="mcnImageContentContainer"
@@ -20,12 +20,12 @@ const LogoBottom = () => (
             <tbody>
               <tr>
                 <td className="mcnImageContent" valign="top" style={styles.imageContent}>
-                  <a href="https://hackernoon.com/" title className target="_blank" style={styles.title}>
+                  <a href="http://www.hackernoon.com" title className target="_blank" style={styles.title}>
                     <img
                       align="center"
                       alt=""
                       src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/brand/hackernoon.png"
-                      width={564}
+                      width={600}
                       style={styles.img}
                       className="mcnImage"
                     />
@@ -40,4 +40,4 @@ const LogoBottom = () => (
   </Table>
 );
 
-export default LogoBottom;
+export default Logo;

@@ -1,4 +1,4 @@
-import App from '../../components/main';
+import App from '../../templates/first';
 
 export default function Home() {
   return (

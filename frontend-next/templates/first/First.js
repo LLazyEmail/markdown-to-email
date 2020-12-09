@@ -1,18 +1,16 @@
 import React from 'react';
 import { styles } from './styles';
-import LogoTop from './logoTop';
-import LogoBottom from './logoBottom';
-import Divider from './divider';
-import Footer from '../footer';
+import Logo from '../components/body/logo';
+import Footer from './Footer';
+import BodyPrototype from './Body/BodyPrototype';
+import Divider from '../components/body/divider';
+import Table from '../components/html/table';
+import config from './config';
 
-const Body = ({ header, children }) => (
+const App = ({ header }) => (
   <div>
     <div style={{ textAlign: 'center' }}>
-      <table
-        align="center"
-        border={0}
-        cellPadding={0}
-        cellSpacing={0}
+      <Table
         id="bodyTable"
         style={styles.bodyTable}
       >
@@ -20,17 +18,14 @@ const Body = ({ header, children }) => (
           <tr>
             <td align="center" valign="top" id="bodyCell" style={styles.bodyCell}>
 
-              <table
-                border={0}
-                cellPadding={0}
-                cellSpacing={0}
+              <Table
                 className="templateContainer"
                 style={styles.templateContainer}
               >
                 <tbody>
                   <tr>
                     <td valign="top" id="templatePreheader" style={styles.templatePreheader}>
-                      <LogoTop />
+                      <Logo />
                     </td>
                   </tr>
                   <tr>
@@ -41,20 +36,22 @@ const Body = ({ header, children }) => (
                   <tr>
                     <td valign="top" id="templateBody" style={styles.templateBody}>
                       <Divider>
-                        {children}
+                        <BodyPrototype 
+                            config={config}
+                        />
                       </Divider>
-                      <LogoBottom />
+                      <Logo />
                     </td>
                   </tr>
                 </tbody>
-              </table>
+              </Table>
               <Footer />
             </td>
           </tr>
         </tbody>
-      </table>
+      </Table>
     </div>
   </div>
 );
 
-export default Body;
+export default App;
