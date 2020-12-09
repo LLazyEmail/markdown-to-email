@@ -5,6 +5,7 @@ import Footer from './Footer';
 import BodyPrototype from './Body/BodyPrototype';
 import Divider from '../components/body/divider';
 import Table from '../components/html/table';
+import config from './config';
 
 const App = ({ header }) => (
   <div>
@@ -35,7 +36,9 @@ const App = ({ header }) => (
                   <tr>
                     <td valign="top" id="templateBody" style={styles.templateBody}>
                       <Divider>
-                        <BodyPrototype />
+                        <BodyPrototype 
+                            config={config}
+                        />
                       </Divider>
                       <Logo />
                     </td>
