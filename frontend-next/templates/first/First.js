@@ -1,7 +1,6 @@
 import React from 'react';
 import { styles } from './styles';
-import LogoTop from '../components/body/logoTop';
-import LogoBottom from '../components/body/logoBottom';
+import Logo from '../components/body/logo';
 import Footer from './Footer';
 import BodyPrototype from './Body/BodyPrototype';
 import Divider from '../components/body/divider';
@@ -25,7 +24,7 @@ const App = ({ header }) => (
                 <tbody>
                   <tr>
                     <td valign="top" id="templatePreheader" style={styles.templatePreheader}>
-                      <LogoTop />
+                      <Logo />
                     </td>
                   </tr>
                   <tr>
@@ -38,7 +37,7 @@ const App = ({ header }) => (
                       <Divider>
                         <BodyPrototype />
                       </Divider>
-                      <LogoBottom />
+                      <Logo />
                     </td>
                   </tr>
                 </tbody>
