@@ -1,0 +1,11 @@
+{
+  "name": "atherdon-newsletter-js-layouts",
+  "version": "1.0.0",
+  "description": "im trying to separate part of our code",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "",
+  "license": "MIT"
+}
