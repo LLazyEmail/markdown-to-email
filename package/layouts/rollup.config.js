@@ -1,9 +1,9 @@
-import commonjs from "rollup-plugin-commonjs";
-import resolve from "rollup-plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
 // import json from "rollup-plugin-json";
 import builtins from "rollup-plugin-node-builtins";
-import babel from "rollup-plugin-babel";
-import notify from "rollup-plugin-notify";
+import babel from "@rollup/plugin-babel";
+// import notify from "rollup-plugin-notify";
 import pkg from "./package.json";
 import globals from "rollup-plugin-node-globals";
 import includePaths from "rollup-plugin-includepaths";
@@ -75,7 +75,7 @@ const plugins = () => [
     // plugins: ['babel-plugin-transform-object-rest-spread'],
     // removes comments from output
     comments: false,
-    runtimeHelpers: true
+    // babelHelpers: 'runtime'
   }),
 
   // Allow Rollup to import data from JSON file

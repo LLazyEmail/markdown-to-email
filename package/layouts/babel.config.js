@@ -19,18 +19,18 @@ const presets = [
 // }
 
 const plugins = [
-  [
-    require.resolve("babel-plugin-module-resolver"),
-    {
-      root: ["./src/"],
-      alias: {
-      //   "~": "./src/data",
-      //   "@files": "./src/files.js",
-      //   "@utils": "./src/utils.js",
-      //   "@generator": "./generator"
-      // }
-    }
-  ],
+  // [
+  //   require.resolve("babel-plugin-module-resolver"),
+  //   {
+  //     root: ["./src/"],
+  //     alias: {
+  //     //   "~": "./src/data",
+  //     //   "@files": "./src/files.js",
+  //     //   "@utils": "./src/utils.js",
+  //     //   "@generator": "./generator"
+  //     // }
+  //   }
+  // ],
   ["@babel/plugin-syntax-dynamic-import"]
   // ["@babel/proposal-object-rest-spread"]
 ];
