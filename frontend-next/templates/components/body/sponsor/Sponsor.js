@@ -42,8 +42,8 @@ const Sponsor = ({
                     <br />
                     <a href={rightHref} style={styles.link}>
                       <strong data-testid="sponsorChildrenTest">
-                        {children}
-                      </strong>
+                      {children}
+                    </strong>
                     </a>
                   </h1>
                 </td>
