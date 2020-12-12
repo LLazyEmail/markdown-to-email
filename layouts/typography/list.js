@@ -1,1 +1,1 @@
-module.exports = `<ul dir="ltr">{content}</ul>`;
+module.exports = `<List>{content}</List>`;
