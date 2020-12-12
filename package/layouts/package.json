@@ -2,12 +2,22 @@
   "name": "atherdon-newsletter-js-layouts",
   "version": "1.0.0",
   "description": "im trying to separate part of our code",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "browser": "dist/index.iife.js",
   "scripts": {
+    "bundle": "rollup -c",
+    "dev": "rollup -c -w",
+    "build": "npm run clean && npm run bundle",
+    "build:babel": "babel src -d dist",
     "test": "npm run test"
   },
-  "author": "",
+  "author": "Arthur Tkachenko",
   "license": "MIT",
+  "private": false,
+  "release": {
+    "publishDir": "dist"
+  },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
@@ -17,6 +27,7 @@
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
     "rollup": "^2.34.2",
+    "rollup-plugin-includepaths": "^0.2.4",
     "rollup-plugin-node-globals": "^1.4.0"
   }
 }
