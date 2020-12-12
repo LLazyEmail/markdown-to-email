@@ -36,10 +36,10 @@ const App = ({ header }) => (
                   <tr>
                     <td valign="top" id="templateBody" style={styles.templateBody}>
                       <Divider>
-                        <BodyPrototype 
-                            config={config}
-                        />
-                      </Divider>
+                      <BodyPrototype
+                      config={config}
+                    />
+                    </Divider>
                       <Logo />
                     </td>
                   </tr>
