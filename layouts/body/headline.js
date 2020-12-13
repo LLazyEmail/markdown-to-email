@@ -1,2 +1,2 @@
 module.exports = 
-`content`;
+`<HeadLine />`;
