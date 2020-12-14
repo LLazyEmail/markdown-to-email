@@ -1,10 +1,10 @@
 import React from 'react';
 import { styles } from './styles';
-import Logo from '../components/body/logo';
+import Logo from '../../components/body/logo';
 import Footer from './Footer';
 import BodyPrototype from './Body/BodyPrototype';
-import Divider from '../components/body/divider';
-import Table from '../components/html/table';
+import Divider from '../../components/body/divider';
+import Table from '../../components/html/table';
 import config from './config';
 
 const App = ({ header }) => (

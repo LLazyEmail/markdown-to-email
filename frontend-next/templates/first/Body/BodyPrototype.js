@@ -1,11 +1,11 @@
 import React from 'react';
-import Sponsor from '../../components/body/sponsor';
-import MainTitle from '../../components/typography/mainTitle';
-import Divider from '../../components/body/divider';
-import Image from '../../components/typography/image';
-import Heading from '../../components/typography/heading';
-import Strong from '../../components/typography/strong';
-import Paragraph from '../../components/typography/paragraph';
+import Sponsor from '../../../components/body/sponsor';
+import MainTitle from '../../../components/typography/mainTitle';
+import Divider from '../../../components/body/divider';
+import Image from '../../../components/typography/image';
+import Heading from '../../../components/typography/heading';
+import Strong from '../../../components/typography/strong';
+import Paragraph from '../../../components/typography/paragraph';
 
 const BodyPrototype = ({ config }) => {
   const {
