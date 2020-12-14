@@ -8,7 +8,7 @@ import { styles } from './styles';
 import Table from '../../../components/html/table';
 
 const Footer = () => (
-  <div>
+  <>
     <Table
       className="mcnFollowBlock"
       style={styles.followBlock}
@@ -113,7 +113,7 @@ const Footer = () => (
         </tr>
       </tbody>
     </Table>
-  </div>
+  </>
 );
 
 export default Footer;

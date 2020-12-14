@@ -4,10 +4,7 @@ const withMDX = require('@next/mdx')({
 
 module.exports = withMDX({
   pageExtensions: ['js', 'jsx', 'mdx'],
-});
-
-module.exports = {
   images: {
     domains: ['raw.githubusercontent.com'],
   },
-};
+});

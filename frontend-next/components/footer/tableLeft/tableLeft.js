@@ -23,26 +23,26 @@ const TableLeft = ({ href, src, alt }) => (
                   >
                     <tbody>
                       <tr>
-                      <td
-                      align="center"
-                      valign="middle"
-                      width={24}
-                      className="mcnFollowIconContent"
-                      style={styles.followIconContent}
-                    >
-                      <a href={href} target="_blank" style={styles.followSocial} data-testid="tableLeftHrefTest">
-                      <img
-                      src={src}
-                      alt={alt}
-                      style={styles.followSocialImg}
-                      height={24}
-                      width={24}
-                      className
-                      data-testid="tableLeftImgTest"
-                    />
-                    </a>
-                    </td>
-                    </tr>
+                        <td
+                          align="center"
+                          valign="middle"
+                          width={24}
+                          className="mcnFollowIconContent"
+                          style={styles.followIconContent}
+                        >
+                          <a href={href} target="_blank" style={styles.followSocial} data-testid="tableLeftHrefTest">
+                            <img
+                              src={src}
+                              alt={alt}
+                              style={styles.followSocialImg}
+                              height={24}
+                              width={24}
+                              className
+                              data-testid="tableLeftImgTest"
+                            />
+                          </a>
+                        </td>
+                      </tr>
                     </tbody>
                   </Table>
                 </td>

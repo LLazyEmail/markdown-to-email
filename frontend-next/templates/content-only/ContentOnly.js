@@ -10,14 +10,9 @@ import BodyPrototype from './Body/BodyPrototype';
 import config from './config';
 import { styles } from './styles';
 
-const First = ({ header }) => (
+const ContentOnly = ({ header }) => (
   <HOC styles={{ ...styles }}>
     <tbody>
-      <tr>
-        <td valign="top" id="templatePreheader" style={styles.templatePreheader}>
-          <Logo />
-        </td>
-      </tr>
       <tr>
         <td valign="top" id="templateHeader" style={styles.templateHeader} data-testid="bodyPropsTest">
           {header}
@@ -30,7 +25,6 @@ const First = ({ header }) => (
               config={config}
             />
           </Divider>
-          <Logo />
         </td>
       </tr>
     </tbody>
@@ -38,4 +32,4 @@ const First = ({ header }) => (
   </HOC>
 );
 
-export default First;
+export default ContentOnly;

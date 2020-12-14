@@ -14,13 +14,6 @@ const BodyPrototype = ({ config }) => {
 
   return (
     <>
-      <Sponsor
-        leftHref="https://bit.ly/30AWyC4"
-        rightHref={sponsor.link}
-        leftSrc={sponsor.imageUrl}
-      >
-        {sponsor.text}
-      </Sponsor>
       <MainTitle>
         {mainTitle}
       </MainTitle>
@@ -64,13 +57,6 @@ const BodyPrototype = ({ config }) => {
         {paragraphFive}
       </Paragraph>
       <Divider />
-      <Sponsor
-        leftHref="https://bit.ly/30AWyC4"
-        rightHref={sponsor.link}
-        leftSrc={sponsor.imageUrl}
-      >
-        {sponsor.text}
-      </Sponsor>
     </>
   );
 };
