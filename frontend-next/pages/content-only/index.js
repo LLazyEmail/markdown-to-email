@@ -1,10 +1,9 @@
 import React from 'react';
-import ContentOnly from 'templates/content-only';
 
-const Content = () => (
-  <>
-    <ContentOnly />
-  </>
+const ContentOnly = () => (
+  <div>
+    <h1>content-only</h1>
+  </div>
 );
 
-export default Content;
+export default ContentOnly;

@@ -1,9 +1,9 @@
-import First from 'templates/first';
+import App from '../../templates/first';
 
 export default function Home() {
   return (
     <>
-      <First />
+      <App />
     </>
   );
 }

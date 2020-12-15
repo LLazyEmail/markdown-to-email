@@ -1,5 +1,5 @@
 import React from 'react';
-import Body from '../components/body';
+import Body from '../components/body/BodyPrototype';
 import Divider from '../components/body/divider';
 import Image from '../components/typography/image';
 import Heading from '../components/typography/heading';

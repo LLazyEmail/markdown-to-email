@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`logoTop/index component renders correctly 1`] = `
+<table
+  border={0}
+  cellPadding={0}
+  cellSpacing={0}
+  className="mcnImageBlock"
+  width="100%"
+>
+  <tbody
+    className="mcnImageBlockOuter"
+  >
+    <tr>
+      <td
+        className="mcnImageBlockInner"
+        valign="top"
+      >
+        <table
+          align="left"
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnImageContentContainer"
+          width="100%"
+        >
+          <tbody>
+            <tr>
+              <td
+                className="mcnImageContent"
+                valign="top"
+              >
+                <a
+                  href="http://www.hackernoon.com"
+                  target="_blank"
+                >
+                  <img
+                    align="center"
+                    alt=""
+                    className="mcnImage"
+                    src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/brand/hackernoon.png"
+                    width={600}
+                  />
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`logoTop/index component renders correctly 2`] = `
+<table
+  border={0}
+  cellPadding={0}
+  cellSpacing={0}
+  className="mcnImageBlock"
+  width="100%"
+>
+  <tbody
+    className="mcnImageBlockOuter"
+  >
+    <tr>
+      <td
+        className="mcnImageBlockInner"
+        valign="top"
+      >
+        <table
+          align="left"
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnImageContentContainer"
+          width="100%"
+        >
+          <tbody>
+            <tr>
+              <td
+                className="mcnImageContent"
+                valign="top"
+              >
+                <a
+                  href="http://www.hackernoon.com"
+                  target="_blank"
+                >
+                  <img
+                    align="center"
+                    alt=""
+                    className="mcnImage"
+                    src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/brand/hackernoon.png"
+                    width={600}
+                  />
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
