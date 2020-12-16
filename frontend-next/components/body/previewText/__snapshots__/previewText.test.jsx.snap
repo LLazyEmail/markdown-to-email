@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`previewText/index component renders correctly 1`] = `
+<span
+  className="mcnPreviewText"
+  style={
+    Object {
+      "display": "none",
+      "fontSize": "0px",
+      "lineHeight": "0px",
+      "maxHeight": "0px",
+      "maxWidth": "0px",
+      "msoHide": "all",
+      "opacity": 0,
+      "overflow": "hidden",
+      "visibility": "hidden",
+    }
+  }
+>
+  <h1>
+    Some text
+  </h1>
+</span>
+`;
