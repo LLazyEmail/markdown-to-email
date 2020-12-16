@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component renders correctly 1`] = `
+<ul
+  data-testid="listProsChildrenTest"
+  dir="ltr"
+>
+  <h1>
+    Some text
+  </h1>
+</ul>
+`;

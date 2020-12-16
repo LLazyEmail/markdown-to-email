@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`link/index component renders correctly 1`] = `
+<a
+  data-testid="linkPropsTest"
+  style={
+    Object {
+      "WebkitTextSizeAdjust": "100%",
+      "color": "#111111",
+      "fontWeight": "bold",
+      "msTextSizeAdjust": "100%",
+      "msoLineHeightRule": "exactly",
+      "textDecoration": "underline",
+    }
+  }
+  target="_blank"
+>
+  <h1>
+    Some text
+  </h1>
+</a>
+`;
