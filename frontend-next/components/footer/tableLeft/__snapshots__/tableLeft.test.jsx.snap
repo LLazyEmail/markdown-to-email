@@ -46,23 +46,11 @@ exports[`tableLeft/index component renders correctly 1`] = `
               "msoTableRspace": "0pt",
             }
           }
-          width="100%"
         >
           <tbody>
             <tr>
               <td
                 align="left"
-                style={
-                  Object {
-                    "WebkitTextSizeAdjust": "100%",
-                    "msTextSizeAdjust": "100%",
-                    "msoLineHeightRule": "exactly",
-                    "paddingBottom": "5px",
-                    "paddingLeft": "9px",
-                    "paddingRight": "10px",
-                    "paddingTop": "5px",
-                  }
-                }
                 valign="middle"
               >
                 <table
@@ -79,7 +67,6 @@ exports[`tableLeft/index component renders correctly 1`] = `
                       "msoTableRspace": "0pt",
                     }
                   }
-                  width={true}
                 >
                   <tbody>
                     <tr>
@@ -98,13 +85,6 @@ exports[`tableLeft/index component renders correctly 1`] = `
                       >
                         <a
                           data-testid="tableLeftHrefTest"
-                          style={
-                            Object {
-                              "WebkitTextSizeAdjust": "100%",
-                              "msTextSizeAdjust": "100%",
-                              "msoLineHeightRule": "exactly",
-                            }
-                          }
                           target="_blank"
                         >
                           <img

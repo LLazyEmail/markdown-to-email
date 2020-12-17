@@ -17,7 +17,6 @@ exports[`footer/index component renders correctly 1`] = `
         "msoTableRspace": "0pt",
       }
     }
-    width="100%"
   >
     <tbody
       className="mcnFollowBlockOuter"
@@ -51,7 +50,6 @@ exports[`footer/index component renders correctly 1`] = `
                 "msoTableRspace": "0pt",
               }
             }
-            width="100%"
           >
             <tbody>
               <tr>
@@ -82,7 +80,6 @@ exports[`footer/index component renders correctly 1`] = `
                         "msoTableRspace": "0pt",
                       }
                     }
-                    width="100%"
                   >
                     <tbody>
                       <tr>
@@ -173,23 +170,11 @@ exports[`footer/index component renders correctly 1`] = `
                                                 "msoTableRspace": "0pt",
                                               }
                                             }
-                                            width="100%"
                                           >
                                             <tbody>
                                               <tr>
                                                 <td
                                                   align="left"
-                                                  style={
-                                                    Object {
-                                                      "WebkitTextSizeAdjust": "100%",
-                                                      "msTextSizeAdjust": "100%",
-                                                      "msoLineHeightRule": "exactly",
-                                                      "paddingBottom": "5px",
-                                                      "paddingLeft": "9px",
-                                                      "paddingRight": "10px",
-                                                      "paddingTop": "5px",
-                                                    }
-                                                  }
                                                   valign="middle"
                                                 >
                                                   <table
@@ -206,7 +191,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                         "msoTableRspace": "0pt",
                                                       }
                                                     }
-                                                    width={true}
                                                   >
                                                     <tbody>
                                                       <tr>
@@ -226,13 +210,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                           <a
                                                             data-testid="tableLeftHrefTest"
                                                             href="https://twitter.com/hackernoon"
-                                                            style={
-                                                              Object {
-                                                                "WebkitTextSizeAdjust": "100%",
-                                                                "msTextSizeAdjust": "100%",
-                                                                "msoLineHeightRule": "exactly",
-                                                              }
-                                                            }
                                                             target="_blank"
                                                           >
                                                             <img
@@ -311,23 +288,11 @@ exports[`footer/index component renders correctly 1`] = `
                                                 "msoTableRspace": "0pt",
                                               }
                                             }
-                                            width="100%"
                                           >
                                             <tbody>
                                               <tr>
                                                 <td
                                                   align="left"
-                                                  style={
-                                                    Object {
-                                                      "WebkitTextSizeAdjust": "100%",
-                                                      "msTextSizeAdjust": "100%",
-                                                      "msoLineHeightRule": "exactly",
-                                                      "paddingBottom": "5px",
-                                                      "paddingLeft": "9px",
-                                                      "paddingRight": "10px",
-                                                      "paddingTop": "5px",
-                                                    }
-                                                  }
                                                   valign="middle"
                                                 >
                                                   <table
@@ -344,7 +309,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                         "msoTableRspace": "0pt",
                                                       }
                                                     }
-                                                    width={true}
                                                   >
                                                     <tbody>
                                                       <tr>
@@ -364,13 +328,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                           <a
                                                             data-testid="tableLeftHrefTest"
                                                             href="https://www.facebook.com/hackernoon"
-                                                            style={
-                                                              Object {
-                                                                "WebkitTextSizeAdjust": "100%",
-                                                                "msTextSizeAdjust": "100%",
-                                                                "msoLineHeightRule": "exactly",
-                                                              }
-                                                            }
                                                             target="_blank"
                                                           >
                                                             <img
@@ -449,23 +406,11 @@ exports[`footer/index component renders correctly 1`] = `
                                                 "msoTableRspace": "0pt",
                                               }
                                             }
-                                            width="100%"
                                           >
                                             <tbody>
                                               <tr>
                                                 <td
                                                   align="left"
-                                                  style={
-                                                    Object {
-                                                      "WebkitTextSizeAdjust": "100%",
-                                                      "msTextSizeAdjust": "100%",
-                                                      "msoLineHeightRule": "exactly",
-                                                      "paddingBottom": "5px",
-                                                      "paddingLeft": "9px",
-                                                      "paddingRight": "10px",
-                                                      "paddingTop": "5px",
-                                                    }
-                                                  }
                                                   valign="middle"
                                                 >
                                                   <table
@@ -482,7 +427,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                         "msoTableRspace": "0pt",
                                                       }
                                                     }
-                                                    width={true}
                                                   >
                                                     <tbody>
                                                       <tr>
@@ -502,13 +446,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                           <a
                                                             data-testid="tableLeftHrefTest"
                                                             href="https://instagram.com/hackernoon/"
-                                                            style={
-                                                              Object {
-                                                                "WebkitTextSizeAdjust": "100%",
-                                                                "msTextSizeAdjust": "100%",
-                                                                "msoLineHeightRule": "exactly",
-                                                              }
-                                                            }
                                                             target="_blank"
                                                           >
                                                             <img
@@ -587,23 +524,11 @@ exports[`footer/index component renders correctly 1`] = `
                                                 "msoTableRspace": "0pt",
                                               }
                                             }
-                                            width="100%"
                                           >
                                             <tbody>
                                               <tr>
                                                 <td
                                                   align="left"
-                                                  style={
-                                                    Object {
-                                                      "WebkitTextSizeAdjust": "100%",
-                                                      "msTextSizeAdjust": "100%",
-                                                      "msoLineHeightRule": "exactly",
-                                                      "paddingBottom": "5px",
-                                                      "paddingLeft": "9px",
-                                                      "paddingRight": "10px",
-                                                      "paddingTop": "5px",
-                                                    }
-                                                  }
                                                   valign="middle"
                                                 >
                                                   <table
@@ -620,7 +545,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                         "msoTableRspace": "0pt",
                                                       }
                                                     }
-                                                    width={true}
                                                   >
                                                     <tbody>
                                                       <tr>
@@ -640,13 +564,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                           <a
                                                             data-testid="tableLeftHrefTest"
                                                             href="http://hackernoon.com"
-                                                            style={
-                                                              Object {
-                                                                "WebkitTextSizeAdjust": "100%",
-                                                                "msTextSizeAdjust": "100%",
-                                                                "msoLineHeightRule": "exactly",
-                                                              }
-                                                            }
                                                             target="_blank"
                                                           >
                                                             <img
@@ -725,23 +642,11 @@ exports[`footer/index component renders correctly 1`] = `
                                                 "msoTableRspace": "0pt",
                                               }
                                             }
-                                            width="100%"
                                           >
                                             <tbody>
                                               <tr>
                                                 <td
                                                   align="left"
-                                                  style={
-                                                    Object {
-                                                      "WebkitTextSizeAdjust": "100%",
-                                                      "msTextSizeAdjust": "100%",
-                                                      "msoLineHeightRule": "exactly",
-                                                      "paddingBottom": "5px",
-                                                      "paddingLeft": "9px",
-                                                      "paddingRight": "10px",
-                                                      "paddingTop": "5px",
-                                                    }
-                                                  }
                                                   valign="middle"
                                                 >
                                                   <table
@@ -758,7 +663,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                         "msoTableRspace": "0pt",
                                                       }
                                                     }
-                                                    width={true}
                                                   >
                                                     <tbody>
                                                       <tr>
@@ -778,13 +682,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                           <a
                                                             data-testid="tableLeftHrefTest"
                                                             href="https://www.youtube.com/channel/UChu5YILgrOYOfkfRlTB-D-g"
-                                                            style={
-                                                              Object {
-                                                                "WebkitTextSizeAdjust": "100%",
-                                                                "msTextSizeAdjust": "100%",
-                                                                "msoLineHeightRule": "exactly",
-                                                              }
-                                                            }
                                                             target="_blank"
                                                           >
                                                             <img
@@ -863,23 +760,11 @@ exports[`footer/index component renders correctly 1`] = `
                                                 "msoTableRspace": "0pt",
                                               }
                                             }
-                                            width="100%"
                                           >
                                             <tbody>
                                               <tr>
                                                 <td
                                                   align="left"
-                                                  style={
-                                                    Object {
-                                                      "WebkitTextSizeAdjust": "100%",
-                                                      "msTextSizeAdjust": "100%",
-                                                      "msoLineHeightRule": "exactly",
-                                                      "paddingBottom": "5px",
-                                                      "paddingLeft": "9px",
-                                                      "paddingRight": "10px",
-                                                      "paddingTop": "5px",
-                                                    }
-                                                  }
                                                   valign="middle"
                                                 >
                                                   <table
@@ -896,7 +781,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                         "msoTableRspace": "0pt",
                                                       }
                                                     }
-                                                    width={true}
                                                   >
                                                     <tbody>
                                                       <tr>
@@ -916,13 +800,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                           <a
                                                             data-testid="tableLeftHrefTest"
                                                             href="mailto:stories@hackernoon.com"
-                                                            style={
-                                                              Object {
-                                                                "WebkitTextSizeAdjust": "100%",
-                                                                "msTextSizeAdjust": "100%",
-                                                                "msoLineHeightRule": "exactly",
-                                                              }
-                                                            }
                                                             target="_blank"
                                                           >
                                                             <img
@@ -987,7 +864,6 @@ exports[`footer/index component renders correctly 1`] = `
         "msoTableRspace": "0pt",
       }
     }
-    width="100%"
   >
     <tbody
       className="mcnTextBlockOuter"
@@ -1022,7 +898,6 @@ exports[`footer/index component renders correctly 1`] = `
                 "msoTableRspace": "0pt",
               }
             }
-            width="100%"
           >
             <tbody>
               <tr>
@@ -1050,16 +925,19 @@ exports[`footer/index component renders correctly 1`] = `
                   <em
                     data-testid="copyTest"
                   >
-                    Copyright © 
+                    Copyright ©
                     2020
-                     Hacker Noon. All rights reserved.
+                     
+                    Hacker Noon. All rights reserved.
                   </em>
                   <br />
-                  <strong>
-                    Our mailing address is:
-                  </strong>
-                  <br />
-                  PO Box 2206, Edwards CO, 81632, U.S.A.
+                  <div>
+                    <strong>
+                      Our mailing address is:
+                    </strong>
+                    <br />
+                    PO Box 2206, Edwards CO, 81632, U.S.A.
+                  </div>
                   <br />
                   <a
                     data-testid="unsubscribeTest"

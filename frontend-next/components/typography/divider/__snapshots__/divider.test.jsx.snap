@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`divider/index component renders correctly 1`] = `
+<table
+  border={0}
+  cellPadding={0}
+  cellSpacing={0}
+  className="mcnDividerBlock"
+  style={
+    Object {
+      "WebkitTextSizeAdjust": "100%",
+      "borderCollapse": "collapse",
+      "minWidth": "100%",
+      "msTextSizeAdjust": "100%",
+      "msoTableLspace": "0pt",
+      "msoTableRspace": "0pt",
+      "tableLayout": "fixed !important",
+    }
+  }
+>
+  <tbody
+    className="mcnDividerBlockOuter"
+  >
+    <tr>
+      <td
+        className="mcnDividerBlockInner"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "minWidth": "100%",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+            "padding": "12px 18px",
+          }
+        }
+      >
+        <table
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnDividerContent"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderCollapse": "collapse",
+              "borderTop": "2px none #EAEAEA",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoTableLspace": "0pt",
+              "msoTableRspace": "0pt",
+            }
+          }
+        >
+          <tbody>
+            <tr>
+              <td
+                style={
+                  Object {
+                    "WebkitTextSizeAdjust": "100%",
+                    "msTextSizeAdjust": "100%",
+                    "msoLineHeightRule": "exactly",
+                  }
+                }
+              >
+                <span />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

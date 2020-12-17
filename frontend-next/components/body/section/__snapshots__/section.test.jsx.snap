@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`section/index component renders correctly 1`] = `
+<table
+  border={0}
+  cellPadding={0}
+  cellSpacing={0}
+  className="mcnTextBlock"
+  style={
+    Object {
+      "WebkitTextSizeAdjust": "100%",
+      "borderCollapse": "collapse",
+      "minWidth": "100%",
+      "msTextSizeAdjust": "100%",
+      "msoTableLspace": "0pt",
+      "msoTableRspace": "0pt",
+    }
+  }
+>
+  <tbody
+    className="mcnTextBlockOuter"
+  >
+    <tr>
+      <td
+        className="mcnTextBlockInner"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+            "paddingTop": "9px",
+          }
+        }
+        valign="top"
+      >
+        <table
+          align="left"
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnTextContentContainer"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderCollapse": "collapse",
+              "maxWidth": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoTableLspace": "0pt",
+              "msoTableRspace": "0pt",
+            }
+          }
+        >
+          <tbody>
+            <tr>
+              <td
+                className="mcnTextContent"
+                data-testid="sectionPropsChildren"
+                label="sectionPropsChildren"
+                style={
+                  Object {
+                    "WebkitTextSizeAdjust": "100%",
+                    "color": "#111111",
+                    "fontFamily": "\\"Source Sans Pro\\",\\"Helvetica Neue\\", Helvetica, Arial,sans-serif",
+                    "fontSize": "18px",
+                    "lineHeight": "150%",
+                    "msTextSizeAdjust": "100%",
+                    "msoLineHeightRule": "exactly",
+                    "padding": "0px 18px 9px",
+                    "textAlign": "left",
+                    "wordBreak": "break-word",
+                  }
+                }
+                valign="top"
+              >
+                <h1>
+                  Some text
+                </h1>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
