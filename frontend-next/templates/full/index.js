@@ -1,12 +1,12 @@
 import React from 'react';
-import Body from '../components/body';
-import Divider from '../components/body/divider';
-import Image from '../components/typography/image';
-import Heading from '../components/typography/heading';
-import Strong from '../components/typography/strong';
-import Sponsor from '../components/body/sponsor';
-import MainTitle from '../components/typography/mainTitle';
-import Paragraph from '../components/typography/paragraph';
+import Body from 'components/body';
+import Divider from 'components/body/divider';
+import Image from 'components/typography/image';
+import Heading from 'components/typography/heading';
+import Strong from 'components/typography/strong';
+import Sponsor from 'components/body/sponsor';
+import MainTitle from 'components/typography/mainTitle';
+import Paragraph from 'components/typography/paragraph';
 
 const App = () => (
   <Body>
