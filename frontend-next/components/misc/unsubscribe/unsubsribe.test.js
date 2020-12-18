@@ -1,43 +1,31 @@
-const _reactDom = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
+import { shallow, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import Unsubscribe from './Unsubscribe';
 
-const _reactDom2 = _interopRequireDefault(_reactDom);
+configure({ adapter: new Adapter() });
 
-const _index = require('./index');
-
-const _index2 = _interopRequireDefault(_index);
-
-const _react = require('react');
-
-const _react2 = _interopRequireDefault(_react);
-
-const _react3 = require('@testing-library/react');
-
-const _reactTestRenderer = require('react-test-renderer');
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-afterEach(() => {
-  (0, _react3.cleanup)();
-});
 
 describe('unsubscribe/index component', () => {
-  test('renders without crashing', () => {
-    const div = document.createElement('div');
-    _reactDom2.default.render(_react2.default.createElement(_index2.default, null), div);
-    _reactDom2.default.unmountComponentAtNode(div);
-  });
 
-  test('renders correctly', () => {
-    const tree = (0, _reactTestRenderer.create)(_react2.default.createElement(_index2.default, null));
-    expect(tree.toJSON()).toMatchSnapshot();
-  });
+    it('Unsubscribe component has an <a> element with no empty value and correct data attribute', () => {
+        const wrapper = shallow(<Unsubscribe hrefUnsub='https://www.youtube.com/' />)
+        const trendline = wrapper.find('a');
+        expect(trendline.props()).toHaveProperty('data-testid', 'unsubscribeTest');
+        expect(trendline.props()).toHaveProperty('href', 'https://www.youtube.com/');
+        expect(trendline.text()).toEqual('unsubscribe');
+    })
 
-  test('<a> has correct href', () => {
-    const _render = (0, _react3.render)(_react2.default.createElement(_index2.default, { hrefUnsub: 'https://www.youtube.com/' }));
-    const { getByTestId } = _render;
+    it('renders without crashing', () => {
+        const div = document.createElement('div');
+        ReactDOM.render(<Unsubscribe />, div);
+        ReactDOM.unmountComponentAtNode(div);
+    });
 
-    const a = getByTestId('unsubscribeTest');
-
-    expect(a.href).toBe('https://www.youtube.com/');
-  });
+    it('renders correctly (Snapshot)', () => {
+        const wrapper = renderer.create(<Unsubscribe />).toJSON();
+        expect(wrapper).toMatchSnapshot();
+    });
 });

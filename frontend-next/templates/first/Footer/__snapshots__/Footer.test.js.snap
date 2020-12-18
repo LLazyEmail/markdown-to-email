@@ -963,7 +963,7 @@ exports[`footer/index component renders correctly 1`] = `
                   >
                     <br />
                     <a
-                      data-testid="newslatterHrefTest"
+                      data-testid="newsletterHrefTest"
                       href="https://sponsor.hackernoon.com/contact"
                       style={
                         Object {

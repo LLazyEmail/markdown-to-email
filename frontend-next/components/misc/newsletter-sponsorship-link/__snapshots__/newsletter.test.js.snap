@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`newslatter/index component renders correctly 1`] = `
+exports[`newsletter/index component renders correctly (Snapshot) 1`] = `
 <div
   style={
     Object {
@@ -10,7 +10,7 @@ exports[`newslatter/index component renders correctly 1`] = `
 >
   <br />
   <a
-    data-testid="newslatterHrefTest"
+    data-testid="newsletterHrefTest"
     href="https://sponsor.hackernoon.com/contact"
     style={
       Object {
