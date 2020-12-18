@@ -111,14 +111,14 @@ function mem(text, src, href, altText) {
   return result;
 }
 
-function header(text, space, chars, content) {
+function header(text, chars, content) {
   const config = {
     content: content.trim(),
   };
 
   const titleType = ["mainTitle", "subtitle", "heading"];
 
-  const result = space + replaceHTMLWrapper(titleType[chars.length - 1], config);
+  const result = newLine + replaceHTMLWrapper(titleType[chars.length - 1], config);
  
   return result;
 }
