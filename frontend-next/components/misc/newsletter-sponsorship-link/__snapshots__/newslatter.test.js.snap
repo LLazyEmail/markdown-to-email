@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`newslatter/index component renders correctly 1`] = `
+exports[`newslatter/index component renders correctly (Snapshot) 1`] = `
 <div
   style={
     Object {
