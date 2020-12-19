@@ -40,7 +40,7 @@ if (process.env.PARSE) {
   let html = readFile("main");
   const { previewText, content, errors, warnings } = parse(FULL_SOURCE);
 
-  if(checkErrors(errors));
+  if(checkErrors(errors)) return;
   checkWarnings(warnings);
 
   html = html.replace("{previewText}", previewText);
