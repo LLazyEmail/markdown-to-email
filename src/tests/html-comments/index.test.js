@@ -11,7 +11,7 @@ describe("testing html-comments", () => {
       content: markdown,
     };
 
-    replaceMarkdown(REGEXP_HTML_COMMENTS, "", parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_HTML_COMMENTS, "");
     const fileName = "html-comments.html";
     write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);

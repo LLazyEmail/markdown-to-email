@@ -1,11 +1,13 @@
 const { readFile } = require("./utils");
 
 //@TODO I dont like this method. it's hard to read it
-function replaceMarkdown(regexp, callback, sourceContent) {
-  return (sourceContent.content = sourceContent.content.replace(
+function replaceMarkdown(regexp, callback) {
+  const callB = typeof callback !== 'string' ? callback.bind(this) : callback;
+  
+  this.content = this.content.replace(
     regexp,
-    callback
-  ));
+    callB
+  );
 }
 
 function replaceHTMLWrapper(wrapperName, config, folder = "typography") {
@@ -18,22 +20,24 @@ function replaceHTMLWrapper(wrapperName, config, folder = "typography") {
   return wrapper;
 }
 
-function replaceMarkdownPreviewText(regexp, sourceContent) {
-  return (sourceContent.content = sourceContent.content.replace(
+function replaceMarkdownPreviewText(regexp) {
+this.content = this.content.replace(
     regexp,
     (text, content) => {
       const config = {
         content: content.trim(),
       };
 
-      sourceContent.previewText = replaceHTMLWrapper(
+      this.previewText = replaceHTMLWrapper(
         "previewText",
         config,
         "body"
       );
+
+      this.errors.previewText = true;
       return "";
     }
-  ));
+  );
 }
 
 

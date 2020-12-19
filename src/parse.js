@@ -48,41 +48,52 @@ const {
 // @todo update this method. I'm sure it can be improved.
 function parse(source) {
   let markdown = readSourceFile(source);
-  let parsedContent = {
+  let state = {
     content: markdown,
     previewText: "",
+    warnings: {
+      images: 0
+    },
+    errors: {
+      previewText: false,
+      sponsorshipTop: false,
+      sponsorshipBottom: false,
+    }
   };
 
-  replaceMarkdown(REGEXP_HTML_COMMENTS, empty, parsedContent);
-  replaceMarkdownPreviewText(REGEXP_PREVIEW_TEXT, parsedContent);
+  const replaceMDBinded = replaceMarkdown.bind(state);
+  const replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
-  replaceMarkdown(REGEXP_STRONG, strong, parsedContent);
-  replaceMarkdown(REGEXP_EM, italic, parsedContent);
+  replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
+  replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
 
-  replaceMarkdown(REGEXP_HEADER, header, parsedContent);
-  replaceMarkdown(REGEXP_IMAGE, image, parsedContent);
-  replaceMarkdown(REGEXP_LINK, link, parsedContent);
+  replaceMDBinded(REGEXP_STRONG, strong);
+  replaceMDBinded(REGEXP_EM, italic);
 
-  replaceMarkdown(REGEXP_DEL, del, parsedContent);
-  replaceMarkdown(REGEXP_Q, q, parsedContent);
-  replaceMarkdown(REGEXP_CODE, code, parsedContent);
+  replaceMDBinded(REGEXP_HEADER, header);
+  replaceMDBinded(REGEXP_IMAGE, image);
+  replaceMDBinded(REGEXP_LINK, link);
 
-  replaceMarkdown(REGEXP_UL_LIST, ulList, parsedContent);
-  replaceMarkdown(REGEXP_OL_LIST, olList, parsedContent);
+  replaceMDBinded(REGEXP_DEL, del);
+  replaceMDBinded(REGEXP_Q, q);
+  replaceMDBinded(REGEXP_CODE, code);
 
-  replaceMarkdown(REGEXP_BLOCKQUOTE, blockquote, parsedContent);
+  replaceMDBinded(REGEXP_UL_LIST, ulList);
+  replaceMDBinded(REGEXP_OL_LIST, olList);
 
-  replaceMarkdown(REGEXP_HR, hr, parsedContent);
-  replaceMarkdown(REGEXP_PARAGRAPH, paragraphWrapper, parsedContent);
-  replaceMarkdown(REGEXP_EMPTY_UL, empty, parsedContent);
-  replaceMarkdown(REGEXP_EMPTY_OL, empty, parsedContent);
-  replaceMarkdown(REGEXP_EMPTY_BLOCKQUOTE, newLine, parsedContent);
+  replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
 
-  replaceMarkdown(REGEXP_BR, br, parsedContent);
-  replaceMarkdown(REGEXP_SPONSORSHIP, sponsorship, parsedContent);
-  replaceMarkdown(REGEXP_MEM, mem, parsedContent);
+  replaceMDBinded(REGEXP_HR, hr);
+  replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
+  replaceMDBinded(REGEXP_EMPTY_UL, empty);
+  replaceMDBinded(REGEXP_EMPTY_OL, empty);
+  replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
 
-  return parsedContent;
+  replaceMDBinded(REGEXP_BR, br);
+  replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
+  replaceMDBinded(REGEXP_MEM, mem);
+
+  return state;
 }
 
 module.exports = { parse };
