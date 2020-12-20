@@ -1,1 +1,1 @@
-export default "Justify those who died" 
+export default "";
