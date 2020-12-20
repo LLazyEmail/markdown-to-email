@@ -1,5 +1,5 @@
 const { replaceHTMLWrapper } = require("./helpers");
-const {newLine} =require('./utils');
+const { newLine } =require('./utils');
 
 const italic = "$1<em>$3</em>$4";
 const del = "<del>$1</del>";
