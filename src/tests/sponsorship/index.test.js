@@ -10,8 +10,11 @@ describe("testing sponsorship", () => {
     let markdown = readSourceFile("src/tests/sponsorship/sponsorship.md");
     let parsedContent = {
       content: markdown,
+      errors: {
+        sponsorshipTop: false,
+      }
     };
-    replaceMarkdown(REGEXP_SPONSORSHIP, sponsorship, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_SPONSORSHIP, sponsorship);
     const fileName = "sponsorship.html";
     write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);

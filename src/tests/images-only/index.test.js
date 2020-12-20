@@ -10,9 +10,12 @@ describe("testing images-only", () => {
     let markdown = readSourceFile("src/tests/images-only/content.md");
     let parsedContent = {
       content: markdown,
+      warnings: {
+        images: 0
+      }
     };
 
-    replaceMarkdown(REGEXP_IMAGE, image, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_IMAGE, image);
 
     const fileName = "images-only.html";
     write(fileName, parsedContent.content, outFolder);

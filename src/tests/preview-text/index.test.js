@@ -10,9 +10,12 @@ describe("testing preview-text", () => {
     let parsedContent = {
       content: markdown,
       previewText: "",
+      errors: {
+        previewText: false,
+      }
     };
 
-    replaceMarkdownPreviewText(REGEXP_PREVIEW_TEXT, parsedContent);
+    replaceMarkdownPreviewText.call(parsedContent, REGEXP_PREVIEW_TEXT);
     const fileName = "preview.html";
     write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);

@@ -11,7 +11,7 @@ describe("testing paragraph", () => {
     let parsedContent = {
       content: markdown,
     };
-    replaceMarkdown(REGEXP_PARAGRAPH, paragraphWrapper, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_PARAGRAPH, paragraphWrapper);
     const fileName = "paragraph.html";
     write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);

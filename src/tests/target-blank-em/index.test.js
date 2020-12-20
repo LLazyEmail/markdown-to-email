@@ -11,7 +11,7 @@ describe("testing target-blank-em", () => {
     let parsedContent = {
       content: markdown,
     };
-    replaceMarkdown(REGEXP_EM, italic, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_EM, italic);
     const fileName = "target-blank-em.html";
     write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);
@@ -21,7 +21,7 @@ describe("testing target-blank-em", () => {
     let parsedContent = {
       content: markdown,
     };
-    replaceMarkdown(REGEXP_LINK, link, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_LINK, link);
     const fileName = "links.html";
     write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);

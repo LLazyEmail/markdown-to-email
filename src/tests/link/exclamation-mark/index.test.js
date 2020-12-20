@@ -12,7 +12,7 @@ describe("testing link/exclamation-mark", () => {
       content: markdown,
     };
 
-    replaceMarkdown(REGEXP_LINK, link, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_LINK, link);
 
     const fileName = "exclamation-mark.html";
     write(fileName, parsedContent.content, outFolder);

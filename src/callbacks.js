@@ -96,6 +96,8 @@ function image(text, alt, srcWithTooltip) {
     altText: alt,
   };
 
+  this.warnings.images++;
+
   const result = replaceHTMLWrapper("image", config);
   return result;
 }
@@ -135,6 +137,8 @@ function sponsorship(text) {
     content: content.trim(),
   };
 
+  this.errors.sponsorshipTop ? this.errors.sponsorshipBottom = true : this.errors.sponsorshipTop = true;
+  
   return replaceHTMLWrapper("sponsor", config, "body");
 }
 

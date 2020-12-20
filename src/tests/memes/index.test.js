@@ -12,7 +12,7 @@ describe("testing mem", () => {
       content: markdown,
     };
 
-    replaceMarkdown(REGEXP_MEM, mem, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_MEM, mem);
 
     const fileName = "memes.html";
     write(fileName, parsedContent.content, outFolder);
