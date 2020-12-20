@@ -11,8 +11,9 @@ describe("testing br", () => {
     let parsedContent = {
       content: markdown,
     };
+    
 
-    replaceMarkdown(REGEXP_BR, br, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_BR, br);
     const fileName = "br.html";
     write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);

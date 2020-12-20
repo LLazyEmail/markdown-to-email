@@ -12,7 +12,7 @@ describe("testing strong", () => {
       content: markdown,
     };
 
-    replaceMarkdown(REGEXP_STRONG, strong, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_STRONG, strong);
 
     const fileName = "strong.html";
     write(fileName, parsedContent.content, outFolder);

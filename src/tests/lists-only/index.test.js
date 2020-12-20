@@ -12,7 +12,7 @@ describe("testing lists-only", () => {
       content: markdown,
     };
 
-    replaceMarkdown(REGEXP_UL_LIST, ulList, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_UL_LIST, ulList);
 
     const fileName = "lists-only.html";
     write(fileName, parsedContent.content, outFolder);

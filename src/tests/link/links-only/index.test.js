@@ -12,7 +12,7 @@ describe("testing links-only", () => {
       content: markdown,
     };
 
-    replaceMarkdown(REGEXP_LINK, link, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_LINK, link);
 
     const fileName = "links-only.html";
     write(fileName, parsedContent.content, outFolder);
