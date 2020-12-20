@@ -1,14 +1,3 @@
-// @todo yeah yeah yeah
-// I know that everything is bad about this file.
-// please change that, I'll be very happy about it.
-
-// @todo expand this thing
-// .replace(/\*\*(.*)\*\*/gim, '<b>$1</b>')
-// .replace(/\*(.*)\*/gim, '<i>$1</i>')
-// .replace(/!\[(.*?)\]\((.*?)\)/gim, "<img alt='$1' src='$2' />")
-// .replace(/\[(.*?)\]\((.*?)\)/gim, "<a href='$2'>$1</a>")
-// .replace(/\n$/gim, '<br />')
-
 // @todo or expand this thing
 // this.rules =  [
 //   {regex: /(#+)(.*)/g, replacement: header},                                         // headers
