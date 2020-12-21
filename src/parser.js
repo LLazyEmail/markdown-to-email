@@ -6,6 +6,10 @@ const { forEach } = require("lodash");
 const FULL_SOURCE = "source/source-full.md";
 const CONTENT_SOURCE = "source/source.md";
 
+const layouts = require("atherdon-newsletter-js-layouts");
+
+console.log(layouts.body.default)
+
 switch(process.env.PARSE){
     case "full":
         generate_full_template();
@@ -13,7 +17,7 @@ switch(process.env.PARSE){
     case "react":
       //same as default, but with react components instead.
       generate_content_only();
-      break;  
+      break;
     default:
       generate_content_only();
 }

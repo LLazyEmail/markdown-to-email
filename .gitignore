@@ -4,3 +4,4 @@ node_modules
 
 src/tests/_generated
 frontend-next/
+package/layouts/dist/*
