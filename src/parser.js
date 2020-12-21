@@ -8,7 +8,7 @@ const CONTENT_SOURCE = "source/source.md";
 
 const layouts = require("atherdon-newsletter-js-layouts");
 
-console.log(layouts.body.default)
+console.log(layouts)
 
 switch(process.env.PARSE){
     case "full":
