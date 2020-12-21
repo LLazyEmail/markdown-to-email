@@ -3,3 +3,5 @@ package-lock.json
 node_modules
 
 src/tests/_generated
+package/layouts/node_modules
+frontend-next
