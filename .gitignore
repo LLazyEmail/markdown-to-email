@@ -1,2 +1,5 @@
-/node_modules
-/frontend-next
+generated/
+package-lock.json
+node_modules
+
+src/tests/_generated
