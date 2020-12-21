@@ -1,9 +1,11 @@
-import * as body from './body/';
-import * as misc from './misc/';
-import * as typography from './typography/';
+import Body from './body/';
+import Misc from './misc/';
+import Typo from './typography/';
 
-export default {
-    body,
-    misc,
-    typography,
+const Layout = {
+    Body,
+    Misc,
+    Typo,
 };
+
+export default Layout;

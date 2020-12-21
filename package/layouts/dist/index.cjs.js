@@ -2011,9 +2011,11 @@ var image$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*
   'default': image
 }));
 
-var italic = /*#__PURE__*/Object.freeze({
-  __proto__: null
-});
+var italic = `<i>{content}</i>`;
+
+var italic$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), italic, {
+  'default': italic
+}));
 
 var link = `<a href="{href}" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #111111;font-weight: bold;text-decoration: underline;">{content}</a>`;
 
@@ -2061,7 +2063,7 @@ var subtitle$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE
 var index$2 = {
     heading: heading$1,
     image: image$1,
-    italic,
+    italic: italic$1,
     link: link$1,
     list: list$1,
     listItem: listItem$1,

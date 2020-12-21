@@ -6,7 +6,7 @@ import * as previewText from './previewText';
 import * as section from './section';
 import * as sponsor from './sponsor';
 
-export default {
+const Body = {
     footer,
     headline,
     logoBottom,
@@ -15,3 +15,5 @@ export default {
     section,
     sponsor
 }
+
+export default Body;
