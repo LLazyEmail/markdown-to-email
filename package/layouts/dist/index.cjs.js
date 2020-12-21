@@ -1582,7 +1582,7 @@ var sponsor$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE_
   'default': sponsor
 }));
 
-module.exports = {
+var index = {
     footer: footer$1,
     headline: headline$1,
     logoBottom: logoBottom$1,
@@ -1593,7 +1593,8 @@ module.exports = {
 };
 
 var body = /*#__PURE__*/Object.freeze({
-  __proto__: null
+  __proto__: null,
+  'default': index
 });
 
 var fonts = `<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Merriweather+Sans:400,400i,700,700i|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">`;
@@ -1984,7 +1985,7 @@ var headStyles$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PU
   'default': headStyles
 }));
 
-module.exports = {
+var index$1 = {
     address: address$1,
     copyrights: copyrights$1,
     fonts: fonts$1,
@@ -1994,7 +1995,8 @@ module.exports = {
 };
 
 var misc = /*#__PURE__*/Object.freeze({
-  __proto__: null
+  __proto__: null,
+  'default': index$1
 });
 
 var heading= `<h3 class="mc-toc-title" dir="ltr" style="text-align: center;display: block;margin: 0;padding: 0;color: #111111;font-family: 'Merriweather Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 18px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span style="font-size:18px">{content}</span></span></h3>`;
@@ -2009,9 +2011,11 @@ var image$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*
   'default': image
 }));
 
-var italic = /*#__PURE__*/Object.freeze({
-  __proto__: null
-});
+var italic = `<i>{content}</i>`;
+
+var italic$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), italic, {
+  'default': italic
+}));
 
 var link = `<a href="{href}" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #111111;font-weight: bold;text-decoration: underline;">{content}</a>`;
 
@@ -2056,10 +2060,10 @@ var subtitle$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE
   'default': subtitle
 }));
 
-module.exports = {
+var index$2 = {
     heading: heading$1,
     image: image$1,
-    italic,
+    italic: italic$1,
     link: link$1,
     list: list$1,
     listItem: listItem$1,
@@ -2070,13 +2074,14 @@ module.exports = {
 };
 
 var typography = /*#__PURE__*/Object.freeze({
-  __proto__: null
+  __proto__: null,
+  'default': index$2
 });
 
-var index = {
+var index$3 = {
   body: body,
   misc: misc,
   typography: typography
 };
 
-module.exports = index;
+module.exports = index$3;
