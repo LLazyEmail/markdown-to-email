@@ -1583,7 +1583,7 @@ style="
     'default': sponsor
   }));
 
-  var index = {
+  module.exports = {
       footer: footer$1,
       headline: headline$1,
       logoBottom: logoBottom$1,
@@ -1594,8 +1594,7 @@ style="
   };
 
   var body = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    'default': index
+    __proto__: null
   });
 
   var fonts = `<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Merriweather+Sans:400,400i,700,700i|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">`;
@@ -1986,7 +1985,7 @@ h4{
     'default': headStyles
   }));
 
-  var index$1 = {
+  module.exports = {
       address: address$1,
       copyrights: copyrights$1,
       fonts: fonts$1,
@@ -1996,8 +1995,7 @@ h4{
   };
 
   var misc = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    'default': index$1
+    __proto__: null
   });
 
   var heading= `<h3 class="mc-toc-title" dir="ltr" style="text-align: center;display: block;margin: 0;padding: 0;color: #111111;font-family: 'Merriweather Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 18px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span style="font-size:18px">{content}</span></span></h3>`;
@@ -2059,7 +2057,7 @@ h4{
     'default': subtitle
   }));
 
-  var index$2 = {
+  module.exports = {
       heading: heading$1,
       image: image$1,
       italic,
@@ -2073,16 +2071,15 @@ h4{
   };
 
   var typography = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    'default': index$2
+    __proto__: null
   });
 
-  var index$3 = {
+  var index = {
     body: body,
     misc: misc,
     typography: typography
   };
 
-  return index$3;
+  return index;
 
 }());

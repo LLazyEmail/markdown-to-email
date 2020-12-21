@@ -9,7 +9,7 @@ import * as paragraph from './paragraph';
 import * as strong from './strong';
 import * as subtitle from './subtitle';
 
-export default {
+module.exports = {
     heading,
     image,
     italic,

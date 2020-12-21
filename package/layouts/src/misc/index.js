@@ -5,7 +5,7 @@ import * as headStyles from './head-styles';
 import * as newsletterSponsorshipLink from './newsletter-sponsorship-link';
 import * as unsubscribe from './unsubscribe';
 
-export default {
+module.exports = {
     address,
     copyrights,
     fonts,

@@ -6,7 +6,7 @@ import * as previewText from './previewText';
 import * as section from './section';
 import * as sponsor from './sponsor';
 
-export default {
+module.exports = {
     footer,
     headline,
     logoBottom,
