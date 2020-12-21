@@ -6,12 +6,16 @@ const { forEach } = require("lodash");
 const FULL_SOURCE = "source/source-full.md";
 const CONTENT_SOURCE = "source/source.md";
 
-switch (process.env.PARSE) {
-  case true:
-    break;
-  //case third:
-  //break;
-  default:
+switch(process.env.PARSE){
+    case "full":
+        generate_full_template();
+      break;
+    case "react":
+      //same as default, but with react components instead.
+      generate_content_only();
+      break;  
+    default:
+      generate_content_only();
 }
 
 function checkErrors(errors){
@@ -36,23 +40,46 @@ function checkWarnings(warnings){
   }
 }
 
-if (process.env.PARSE) {
-  let html = readFile("main");
-  const { previewText, content, errors, warnings } = parse(FULL_SOURCE);
+function generate_full_template(){
+    let html = readFile("main");
+    const { previewText, content, errors, warnings } = parse(FULL_SOURCE);
 
-  if(checkErrors(errors)) return;
-  checkWarnings(warnings);
+    if(checkErrors(errors)) return;
+    checkWarnings(warnings);
 
-  html = html.replace("{previewText}", previewText);
-  html = html.replace("{content}", content);
-  const fileName = "full-template" + Date.now() + ".html";
-  write(fileName, html);
+    html = html.replace("{previewText}", previewText);
+    html = html.replace("{content}", content);
+    const fileName = "full-template" + Date.now() + ".html";
+    write(fileName, html);
 
-  console.log(chalk.green("The full template has been parsed successfully!"));
-} else {
-  const parsedContent = parse(CONTENT_SOURCE);
-  checkWarnings(parsedContent.warnings);
-  const fileName = "content" + Date.now() + ".html";
-  write(fileName, parsedContent.content);
-  console.log(chalk.green.bold("The content has been parsed successfully"));
+    console.log(chalk.green("The full template has been parsed successfully!"));
 }
+
+function generate_content_only(){
+    const parsedContent = parse(CONTENT_SOURCE);
+    checkWarnings(parsedContent.warnings);
+    const fileName = "content" + Date.now() + ".html";
+    write(fileName, parsedContent.content);
+    console.log(chalk.green.bold("The content has been parsed successfully"));
+}
+
+// if (process.env.PARSE) {
+//   let html = readFile("main");
+//   const { previewText, content, errors, warnings } = parse(FULL_SOURCE);
+
+//   if(checkErrors(errors)) return;
+//   checkWarnings(warnings);
+
+//   html = html.replace("{previewText}", previewText);
+//   html = html.replace("{content}", content);
+//   const fileName = "full-template" + Date.now() + ".html";
+//   write(fileName, html);
+
+//   console.log(chalk.green("The full template has been parsed successfully!"));
+// } else {
+//   const parsedContent = parse(CONTENT_SOURCE);
+//   checkWarnings(parsedContent.warnings);
+//   const fileName = "content" + Date.now() + ".html";
+//   write(fileName, parsedContent.content);
+//   console.log(chalk.green.bold("The content has been parsed successfully"));
+// }
