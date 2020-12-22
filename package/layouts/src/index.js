@@ -1,11 +1,11 @@
-import Body from './body/';
-import Misc from './misc/';
-import Typo from './typography/';
+// import Body from './body/';
+// import Misc from './misc/';
+import Typography from './typography/';
 
 const Layout = {
-    Body,
-    Misc,
-    Typo,
+    // Body,
+    // Misc,
+    Typography,
 };
 
 export default Layout;
