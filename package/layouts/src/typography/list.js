@@ -1,1 +1,1 @@
-module.exports = `<ul dir="ltr">{content}</ul>`;
+export const list = `<ul dir="ltr">{content}</ul>`;
