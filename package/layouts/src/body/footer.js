@@ -3,9 +3,9 @@
 // const unsubscribe = require("../misc/unsubscribe");
 // const newsletterSponsorshipLink = require("../misc/newsletter-sponsorship-link");
 
-import {copyrights, address, unsubscribe, newsletterSponsorshipLink } from '../misc/';
+import { copyrights, address, unsubscribe, newsletterSponsorshipLink } from '../misc/';
 
-module.exports = `<tr>
+export const FFFFooter = `<tr>
 <td
   valign="top"
   id="templateFooter"
