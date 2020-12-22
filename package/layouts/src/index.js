@@ -1,9 +1,9 @@
-// import Body from './body/';
-// import Misc from './misc/';
+import Body from './body/';
+import Misc from './misc/';
 import Typography from './typography/';
 
 const Layout = {
-    // Body,
+    Body,
     // Misc,
     Typography,
 };

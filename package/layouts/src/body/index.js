@@ -1,10 +1,10 @@
-import * as footer from './footer';
-import * as headline from './headline';
-import * as logoBottom from './logoBottom';
-import * as logoTop from './logoTop';
-import * as previewText from './previewText';
-import * as section from './section';
-import * as sponsor from './sponsor';
+import { footer } from './footer';
+import { headline } from './headline';
+import { logoBottom } from './logoBottom';
+import { logoTop } from './logoTop';
+import { previewText } from './previewText';
+import { section } from './section';
+import { sponsor } from './sponsor';
 
 const Body = {
     footer,

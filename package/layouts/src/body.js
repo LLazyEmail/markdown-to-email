@@ -3,7 +3,7 @@ const logoBottom = require('./body/logoBottom');
 
 const footer = require('./body/footer');
 
-module.exports = `<body
+export const BBBody = `<body
 style="
   height: 100%;
   margin: 0;
