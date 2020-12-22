@@ -1,7 +1,4 @@
 import { heading } from './heading';
-// import * as heading from './heading';
-
-
 import { image } from './image';
 import { italic } from './italic';
 import { link } from './link';
@@ -11,10 +8,6 @@ import { title } from './mainTitle';
 import { paragraph } from './paragraph';
 import { strong } from './strong';
 import { subtitle } from './subtitle';
-
-console.log(heading);
-
-
 
 const Typography = {
     heading,
