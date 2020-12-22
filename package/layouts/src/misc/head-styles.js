@@ -1,4 +1,4 @@
-module.exports = `<style type="text/css">
+export const headStyles = `<style type="text/css">
 p{
   margin:10px 0;
   padding:0;

@@ -1,4 +1,4 @@
-module.exports = `
+export const section = `
 <table
                     border="0"
                     cellpadding="0"

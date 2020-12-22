@@ -1,4 +1,4 @@
-module.exports = `<table
+export const logoTop = `<table
 border="0"
 cellpadding="0"
 cellspacing="0"
