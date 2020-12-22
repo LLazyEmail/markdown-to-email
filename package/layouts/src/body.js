@@ -1,7 +1,7 @@
-const logoTop = require('./body/logoTop');
-const logoBottom = require('./body/logoBottom');
+// const logoTop = require('./body/logoTop');
+// const logoBottom = require('./body/logoBottom');
 
-const footer = require('./body/footer');
+const { logoTop, logoBottom, footer } from './body/';
 
 export const BBBody = `<body
 style="

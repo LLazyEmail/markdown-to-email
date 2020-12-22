@@ -1,7 +1,9 @@
-const copyrights = require("../misc/copyrights");
-const address = require("../misc/address");
-const unsubscribe = require("../misc/unsubscribe");
-const newsletterSponsorshipLink = require("../misc/newsletter-sponsorship-link");
+// const copyrights = require("../misc/copyrights");
+// const address = require("../misc/address");
+// const unsubscribe = require("../misc/unsubscribe");
+// const newsletterSponsorshipLink = require("../misc/newsletter-sponsorship-link");
+
+import {copyrights, address, unsubscribe, newsletterSponsorshipLink } from '../misc/';
 
 module.exports = `<tr>
 <td
