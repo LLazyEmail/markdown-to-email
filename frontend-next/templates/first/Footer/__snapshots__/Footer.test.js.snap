@@ -214,7 +214,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                           >
                                                             <img
                                                               alt="Twitter"
-                                                              className={true}
                                                               data-testid="tableLeftImgTest"
                                                               height={24}
                                                               src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-twitter-48.png"
@@ -332,7 +331,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                           >
                                                             <img
                                                               alt="Facebook"
-                                                              className={true}
                                                               data-testid="tableLeftImgTest"
                                                               height={24}
                                                               src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-facebook-48.png"
@@ -450,7 +448,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                           >
                                                             <img
                                                               alt="Instagram"
-                                                              className={true}
                                                               data-testid="tableLeftImgTest"
                                                               height={24}
                                                               src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-instagram-48.png"
@@ -568,7 +565,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                           >
                                                             <img
                                                               alt="Website"
-                                                              className={true}
                                                               data-testid="tableLeftImgTest"
                                                               height={24}
                                                               src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-link-48.png"
@@ -686,7 +682,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                           >
                                                             <img
                                                               alt="YouTube"
-                                                              className={true}
                                                               data-testid="tableLeftImgTest"
                                                               height={24}
                                                               src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-youtube-48.png"
@@ -804,7 +799,6 @@ exports[`footer/index component renders correctly 1`] = `
                                                           >
                                                             <img
                                                               alt="Email"
-                                                              className={true}
                                                               data-testid="tableLeftImgTest"
                                                               height={24}
                                                               src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-forwardtofriend-48.png"

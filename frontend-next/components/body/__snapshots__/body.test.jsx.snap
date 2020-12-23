@@ -69,7 +69,6 @@ Array [
                   valign="top"
                 >
                   <a
-                    className={true}
                     data-testid="sponsorHrefTest"
                     href="https://bit.ly/30AWyC4"
                     style={
@@ -80,7 +79,6 @@ Array [
                       }
                     }
                     target="_blank"
-                    title={true}
                   >
                     <img
                       alt=""
@@ -1049,7 +1047,6 @@ Array [
                   valign="top"
                 >
                   <a
-                    className={true}
                     data-testid="sponsorHrefTest"
                     href="https://bit.ly/30AWyC4"
                     style={
@@ -1060,7 +1057,6 @@ Array [
                       }
                     }
                     target="_blank"
-                    title={true}
                   >
                     <img
                       alt=""
