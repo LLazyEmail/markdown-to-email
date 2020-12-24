@@ -1,4 +1,4 @@
-export const styles = {
+const styles = {
   li: {
     msoLineHeightRule: 'exactly',
     msTextSizeAdjust: '100%',
@@ -17,3 +17,5 @@ export const styles = {
     textAlign: 'left',
   },
 };
+
+export default styles;
