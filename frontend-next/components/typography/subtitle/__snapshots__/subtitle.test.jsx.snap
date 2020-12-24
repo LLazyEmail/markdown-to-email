@@ -35,9 +35,9 @@ exports[`subtitle/index component renders correctly 1`] = `
       <strong
         data-testid="subtitleChildrenTest"
       >
-        <h1>
+        <span>
           Some text
-        </h1>
+        </span>
       </strong>
     </span>
   </span>

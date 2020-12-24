@@ -5,7 +5,7 @@ import Head from './head';
 
 describe('head component', () => {
   test('renders without crashing', () => {
-    const div = document.createElement('div');
+    const div = document.createElement('html');
     ReactDOM.render(<Head />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
