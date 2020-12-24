@@ -4,7 +4,7 @@ import { styles } from './styles';
 // @TODO replace strong with component?
 
 const SubTitle = ({ children }) => (
-  <span dir="ltr" style={styles.ltr}>
+  <p dir="ltr" style={styles.ltr}>
     <span style={styles.spanFont}>
       <span style={styles.spanSize}>
         <strong data-testid="subtitleChildrenTest">
@@ -12,7 +12,7 @@ const SubTitle = ({ children }) => (
         </strong>
       </span>
     </span>
-  </span>
+  </p>
 );
 
 export default SubTitle;
