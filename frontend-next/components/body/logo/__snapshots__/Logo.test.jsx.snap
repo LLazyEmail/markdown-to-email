@@ -71,6 +71,7 @@ exports[`logoTop/index component renders correctly 1`] = `
                 valign="top"
               >
                 <a
+                  className=""
                   href="http://www.hackernoon.com"
                   style={
                     Object {
@@ -80,6 +81,7 @@ exports[`logoTop/index component renders correctly 1`] = `
                     }
                   }
                   target="_blank"
+                  title=""
                 >
                   <img
                     align="center"
@@ -183,6 +185,7 @@ exports[`logoTop/index component renders correctly 2`] = `
                 valign="top"
               >
                 <a
+                  className=""
                   href="http://www.hackernoon.com"
                   style={
                     Object {
@@ -192,6 +195,7 @@ exports[`logoTop/index component renders correctly 2`] = `
                     }
                   }
                   target="_blank"
+                  title=""
                 >
                   <img
                     align="center"

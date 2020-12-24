@@ -20,7 +20,7 @@ const Logo = () => (
             <tbody>
               <tr>
                 <td className="mcnImageContent" valign="top" style={styles.imageContent}>
-                  <a href="http://www.hackernoon.com" target="_blank" style={styles.title}>
+                  <a href="http://www.hackernoon.com" title='' className='' target="_blank" style={styles.title}>
                     <img
                       align="center"
                       alt=""

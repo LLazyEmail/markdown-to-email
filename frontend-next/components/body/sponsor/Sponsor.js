@@ -22,7 +22,7 @@ const Sponsor = ({
             <tbody>
               <tr>
                 <td className="mcnImageCardRightImageContent" align="center" valign="top" style={styles.imageCardRightContent}>
-                  <a href={leftHref} data-testid="sponsorHrefTest" target="_blank" style={styles.title}>
+                  <a href={leftHref} data-testid="sponsorHrefTest" title='' className='' target="_blank" style={styles.title}>
                     <img alt="" src={leftSrc} width={150} data-testid="sponsorSrcTest" style={styles.image} className="mcnImage" />
                   </a>
                 </td>
