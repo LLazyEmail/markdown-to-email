@@ -12,18 +12,18 @@ describe('ListItem component', () => {
   });
 
   test('renders correctly', () => {
-    const tree = create(<ListItem><h1>Some text</h1></ListItem>);
+    const tree = create(<ListItem><span>Some text</span></ListItem>);
     expect(tree.toJSON()).toMatchSnapshot();
   });
 
   test('compoents props should contain children(h1) elements', () => {
-    const component = create(<ListItem><h1>Some text</h1></ListItem>);
+    const component = create(<ListItem><span>Some text</span></ListItem>);
     const { root } = component;
-    expect(root.props.children.type).toBe('h1');
+    expect(root.props.children.type).toBe('span');
   });
 
   test('<p> has correct children elements', () => {
-    const { getByTestId } = render(<ListItem><h1>Hello</h1></ListItem>);
+    const { getByTestId } = render(<ListItem><span>Hello</span></ListItem>);
     const p = getByTestId('listItemTest');
 
     expect(p.children[0].textContent).toBe('Hello');
