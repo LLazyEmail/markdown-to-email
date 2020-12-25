@@ -12,6 +12,11 @@ describe('body component', () => {
         const wrapper = shallow(<BodyPrototype />);
         const td = wrapper.find('Paragraph');
         expect(td).toHaveLength(5);
+    })
+
+    it('BodyPrototype <Paragraph>`s aren`t empty', () => {
+        const wrapper = shallow(<BodyPrototype />);
+        const td = wrapper.find('Paragraph');
         for(let i = 0; i < 5; i++) {
             expect(td.at(i).isEmptyRender()).toBe(false);
         }
@@ -78,5 +83,12 @@ describe('BodyPrototype should contain components: <MainTitle> & <Heading> and t
         expect(elem.at(0).render().text()).toEqual('What is tidy data?');
         expect(elem.at(1).render().text()).toEqual('Tidy Data Principles');
         expect(elem.at(2).render().text()).toEqual('1. Each row is an observational unit.');
+    })
+})
+
+describe('testing Divider', () => {
+    it('Checking BodyPrototype to contain dividers', () => {
+        const wrapper = shallow(<BodyPrototype />);
+        expect(wrapper.html()).toContain('Divider');
     })
 })
