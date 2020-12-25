@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`logoTop/index component renders correctly 1`] = `
+exports[`Logo/index component renders correctly 1`] = `
 <table
   border={0}
   cellPadding={0}
@@ -114,7 +114,7 @@ exports[`logoTop/index component renders correctly 1`] = `
 </table>
 `;
 
-exports[`logoTop/index component renders correctly 2`] = `
+exports[`Logo/index component renders correctly 2`] = `
 <table
   border={0}
   cellPadding={0}
