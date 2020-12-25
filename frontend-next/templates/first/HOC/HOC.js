@@ -1,5 +1,5 @@
 import React from 'react';
-import Table from '../../../components/html/table';
+import Table from 'components/html/table';
 
 const HOC = ({ children, styles }) => (
   <>
