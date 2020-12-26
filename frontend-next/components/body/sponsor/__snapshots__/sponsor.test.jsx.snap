@@ -68,7 +68,7 @@ exports[`sponsor/index component renders correctly 1`] = `
                 valign="top"
               >
                 <a
-                  className={true}
+                  className=""
                   data-testid="sponsorHrefTest"
                   style={
                     Object {
@@ -78,7 +78,7 @@ exports[`sponsor/index component renders correctly 1`] = `
                     }
                   }
                   target="_blank"
-                  title={true}
+                  title=""
                 >
                   <img
                     alt=""

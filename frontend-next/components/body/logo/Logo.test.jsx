@@ -1,27 +1,45 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
+import { shallow, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import ReactDOM from 'react-dom';
 import { cleanup } from '@testing-library/react';
-import LogoTop from './index';
+import Logo from './index';
+
+configure({ adapter: new Adapter() });
 
 afterEach(() => {
   cleanup();
 });
 
-describe('logoTop/index component', () => {
-  test('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<LogoTop />, div);
-    ReactDOM.unmountComponentAtNode(div);
-  });
+describe('Logo/index component', () => {
 
-  test('renders correctly', () => {
-    const tree = create(<LogoTop><h1>Some text</h1></LogoTop>);
-    expect(tree.toJSON()).toMatchSnapshot();
-  });
+    it('Checking <a> href attributes', () => {
+        const wrapper = shallow(<Logo />);
+        const a = wrapper.find('a');
+        expect(a.props()).toHaveProperty('href', 'http://www.hackernoon.com');
+        expect(a.props()).toHaveProperty('target', '_blank');
+    });
 
-  test('renders correctly', () => {
-    const tree = create(<LogoTop />);
-    expect(tree.toJSON()).toMatchSnapshot();
-  });
+    it('Checking <img> element', () => {
+        const wrapper = shallow(<Logo />);
+        const img = wrapper.find('img');
+        expect(img.props()).toHaveProperty('src', 'https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/brand/hackernoon.png');
+    });
+
+    test('renders without crashing', () => {
+        const div = document.createElement('div');
+        ReactDOM.render(<Logo />, div);
+        ReactDOM.unmountComponentAtNode(div);
+    });
+
+    test('renders correctly', () => {
+        const tree = create(<Logo><h1>Some text</h1></Logo>);
+        expect(tree.toJSON()).toMatchSnapshot();
+    });
+
+    test('renders correctly', () => {
+        const tree = create(<Logo />);
+        expect(tree.toJSON()).toMatchSnapshot();
+    });
 });

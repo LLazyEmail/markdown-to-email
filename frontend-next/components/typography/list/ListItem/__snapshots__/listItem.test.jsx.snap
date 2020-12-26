@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem component renders correctly 1`] = `
+<li
+  style={
+    Object {
+      "WebkitTextSizeAdjust": "100%",
+      "msTextSizeAdjust": "100%",
+      "msoLineHeightRule": "exactly",
+    }
+  }
+>
+  <p
+    data-testid="listItemTest"
+    dir="ltr"
+    role="presentation"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "color": "#111111",
+        "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "lineHeight": "125%",
+        "margin": "10px 0",
+        "msTextSizeAdjust": "100%",
+        "msoLineHeightRule": "exactly",
+        "padding": 0,
+        "textAlign": "left",
+      }
+    }
+  >
+    <span>
+      Some text
+    </span>
+  </p>
+</li>
+`;

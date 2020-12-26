@@ -12,18 +12,18 @@ describe('subtitle/index component', () => {
   });
 
   test('renders correctly', () => {
-    const tree = create(<SubTitle><h1>Some text</h1></SubTitle>);
+    const tree = create(<SubTitle><span>Some text</span></SubTitle>);
     expect(tree.toJSON()).toMatchSnapshot();
   });
 
-  test('compoents props should contain children(h1) elements', () => {
-    const component = create(<SubTitle><h1>Some text</h1></SubTitle>);
+  test('compoents props should contain children(span) elements', () => {
+    const component = create(<SubTitle><span>Some text</span></SubTitle>);
     const { root } = component;
-    expect(root.props.children.type).toBe('h1');
+    expect(root.props.children.type).toBe('span');
   });
 
   test('<strong> has correct children elements', () => {
-    const { getByTestId } = render(<SubTitle><h1>Hello</h1></SubTitle>);
+    const { getByTestId } = render(<SubTitle><span>Hello</span></SubTitle>);
     const strong = getByTestId('subtitleChildrenTest');
 
     expect(strong.children[0].textContent).toBe('Hello');

@@ -37,7 +37,7 @@ const TableLeft = ({ href, src, alt }) => (
                               style={styles.followSocialImg}
                               height={24}
                               width={24}
-                              className
+                              className=''
                               data-testid="tableLeftImgTest"
                             />
                           </a>

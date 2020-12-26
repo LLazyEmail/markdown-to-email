@@ -26,6 +26,6 @@ describe('empty-section/index component', () => {
     const component = create(<EmptySection><h1>Hello</h1></EmptySection>);
     const { root } = component;
 
-    expect(root.children[0].type).toBe('h1');
+    expect(root.children[0].type).toBe('div');
   });
 });

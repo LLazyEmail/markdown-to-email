@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`unsubscribe/index component renders correctly 1`] = `
+exports[`unsubscribe/index component renders correctly (Snapshot) 1`] = `
 <a
   data-testid="unsubscribeTest"
   style={
