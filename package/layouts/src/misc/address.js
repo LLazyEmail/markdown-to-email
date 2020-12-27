@@ -1,5 +1,7 @@
 import config from '../config';
 
-module.exports = `<strong>Our mailing address is:</strong>
+const address = `<strong>Our mailing address is:</strong>
 <br>
 ${config.mailingAddress}`;
+
+export default address
