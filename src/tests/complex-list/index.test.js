@@ -12,7 +12,7 @@ describe("testing complex-list", () => {
       content: markdown,
     };
 
-    replaceMarkdown(REGEXP_UL_LIST, ulList, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_UL_LIST, ulList);
 
     const fileName = "complex-list.html";
     write(fileName, parsedContent.content, outFolder);

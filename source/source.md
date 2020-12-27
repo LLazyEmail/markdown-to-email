@@ -1,5 +1,4 @@
 
-
 # Top Sectors Prone To Cyber Threats During The Pandemic
 
 When the coronavirus pandemic burst out, corporate functions shifted priorities to embrace new practices and get through the pandemic. At that time we all thought that [social](https://hackernoon.com/the-social-dilemma-advertising-privacy-and-distraction-kz1y3th4) distancing and [work from home](https://hackernoon.com/3-cybersecurity-priorities-for-2021-threat-fatigue-remote-work-budget-m02m3wao) routines would be just stopgap measures taken to keep [businesses aboard](https://hackernoon.com/tagged/business).

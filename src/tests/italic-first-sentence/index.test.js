@@ -12,7 +12,7 @@ describe("testing italic-first-sentence", () => {
       content: markdown,
     };
 
-    replaceMarkdown(REGEXP_EM, italic, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_EM, italic);
 
     const fileName = "italic-first-sentence.html";
     write(fileName, parsedContent.content, outFolder);

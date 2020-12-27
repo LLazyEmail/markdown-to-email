@@ -1,1 +1,1 @@
-module.exports = `<strong style="font-weight: bolder;">{content}</strong>`;
+export const strong = `<strong style="font-weight: bolder;">{content}</strong>`;

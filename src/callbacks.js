@@ -1,5 +1,5 @@
 const { replaceHTMLWrapper } = require("./helpers");
-const {newLine} =require('./utils');
+const { newLine } = require('./utils');
 
 const italic = "$1<em>$3</em>$4";
 const del = "<del>$1</del>";
@@ -96,6 +96,8 @@ function image(text, alt, srcWithTooltip) {
     altText: alt,
   };
 
+  this.warnings.images++;
+
   const result = replaceHTMLWrapper("image", config);
   return result;
 }
@@ -111,14 +113,14 @@ function mem(text, src, href, altText) {
   return result;
 }
 
-function header(text, space, chars, content) {
+function header(text, chars, content) {
   const config = {
     content: content.trim(),
   };
 
   const titleType = ["mainTitle", "subtitle", "heading"];
 
-  const result = space + replaceHTMLWrapper(titleType[chars.length - 1], config);
+  const result = newLine + replaceHTMLWrapper(titleType[chars.length - 1], config);
  
   return result;
 }
@@ -135,6 +137,8 @@ function sponsorship(text) {
     content: content.trim(),
   };
 
+  this.errors.sponsorshipTop ? this.errors.sponsorshipBottom = true : this.errors.sponsorshipTop = true;
+  
   return replaceHTMLWrapper("sponsor", config, "body");
 }
 
@@ -144,6 +148,7 @@ function br(text, newLines) {
     return index > 0 ? acc + "<br/>" + current : current;
   }, "");
 }
+
 // function tag_loop(){
 //     var arr = {
 //         header,

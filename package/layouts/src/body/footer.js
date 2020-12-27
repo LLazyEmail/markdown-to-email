@@ -1,9 +1,24 @@
-const copyrights = require("../misc/copyrights");
-const address = require("../misc/address");
-const unsubscribe = require("../misc/unsubscribe");
-const newsletterSponsorshipLink = require("../misc/newsletter-sponsorship-link");
+// const copyrights = require("../misc/copyrights");
+// const address = require("../misc/address");
+// const unsubscribe = require("../misc/unsubscribe");
+// const newsletterSponsorshipLink = require("../misc/newsletter-sponsorship-link");
 
-module.exports = `<tr>
+// import { copyrights, address, unsubscribe, newsletterSponsorshipLink } from '../misc/';
+
+import Misc from '../misc/';
+
+// console.log(Misc)
+
+const {
+    address,
+    copyrights,
+    fonts,
+    headStyles,
+    newsletterSponsorshipLink,
+    unsubscribe,
+} = Misc;
+
+export const footer = `<tr>
 <td
   valign="top"
   id="templateFooter"

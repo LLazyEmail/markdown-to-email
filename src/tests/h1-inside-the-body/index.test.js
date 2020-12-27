@@ -12,7 +12,7 @@ describe("testing h1-inside-the-body", () => {
       content: markdown,
     };
 
-    replaceMarkdown(REGEXP_HEADER, header, parsedContent);
+    replaceMarkdown.call(parsedContent, REGEXP_HEADER, header);
 
     const fileName = "h1-inside-the-body.html";
     write(fileName, parsedContent.content, outFolder);

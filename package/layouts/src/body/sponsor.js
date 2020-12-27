@@ -1,4 +1,4 @@
-module.exports = `<table
+export const sponsor = `<table
 border="0"
 cellpadding="0"
 cellspacing="0"

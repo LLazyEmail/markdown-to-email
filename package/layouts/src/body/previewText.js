@@ -1,4 +1,4 @@
-module.exports = `<span
+export const previewText = `<span
 class="mcnPreviewText"
 style="
   display: none;
