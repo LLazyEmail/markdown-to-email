@@ -1,4 +1,4 @@
-const config = require('../config');
+import config from '../config';
 
 module.exports = `<div style="text-align: center;">
 <br>

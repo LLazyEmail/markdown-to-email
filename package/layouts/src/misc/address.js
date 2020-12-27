@@ -1,4 +1,4 @@
-const config = require('../config');
+import config from '../config';
 
 module.exports = `<strong>Our mailing address is:</strong>
 <br>
