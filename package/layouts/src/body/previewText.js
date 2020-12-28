@@ -1,4 +1,4 @@
-module.exports = `<span
+const previewText = `<span
 class="mcnPreviewText"
 style="
   display: none;
@@ -12,3 +12,5 @@ style="
   mso-hide: all;
 "
 >{content}</span>`;
+
+export default previewText;

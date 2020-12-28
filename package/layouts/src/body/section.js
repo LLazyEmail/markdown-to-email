@@ -1,4 +1,4 @@
-module.exports = `
+const section = `
 <table
                     border="0"
                     cellpadding="0"
@@ -88,3 +88,5 @@ module.exports = `
                       </tr>
                     </tbody>
                   </table>`;
+
+export default section; 

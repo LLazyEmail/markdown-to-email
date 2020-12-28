@@ -1,2 +1,4 @@
-module.exports = 
+const headline = 
 `content`;
+
+export default headline;

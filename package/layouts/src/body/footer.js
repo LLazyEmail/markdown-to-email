@@ -1,9 +1,9 @@
-const copyrights = require("../misc/copyrights");
-const address = require("../misc/address");
-const unsubscribe = require("../misc/unsubscribe");
-const newsletterSponsorshipLink = require("../misc/newsletter-sponsorship-link");
+import copyrights from "../misc/copyrights";
+import address from "../misc/address";
+import unsubscribe from "../misc/unsubscribe";
+import newsletterSponsorshipLink from "../misc/newsletter-sponsorship-link";
 
-module.exports = `<tr>
+const footer = `<tr>
 <td
   valign="top"
   id="templateFooter"
@@ -1020,3 +1020,5 @@ module.exports = `<tr>
   </table>
 </td>
 </tr>`;
+
+export default footer;

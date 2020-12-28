@@ -1,4 +1,4 @@
-module.exports = `<table
+const logoTop = `<table
 border="0"
 cellpadding="0"
 cellspacing="0"
@@ -95,3 +95,5 @@ style="
   </tr>
 </tbody>
 </table>`;
+
+export default logoTop;
