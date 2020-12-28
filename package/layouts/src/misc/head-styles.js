@@ -1,4 +1,4 @@
-module.exports = `<style type="text/css">
+const headStyles = `<style type="text/css">
 p{
   margin:10px 0;
   padding:0;
@@ -375,3 +375,5 @@ h4{
 }
 
 }</style>`;
+
+export default headStyles;
