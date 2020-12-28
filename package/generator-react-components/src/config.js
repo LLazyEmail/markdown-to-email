@@ -4,4 +4,4 @@ const config = {
   unsubscribe: '#'
 }
 
-module.exports = config;
+export default config;

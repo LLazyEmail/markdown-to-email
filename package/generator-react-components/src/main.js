@@ -1,7 +1,7 @@
-const head = require('./head');
-const body = require('./body');
+import * as head from './head';
+import * as body from './body';
 
-module.exports = `
+export default `
 <!DOCTYPE html>
 <html
   xmlns="http://www.w3.org/1999/xhtml"
