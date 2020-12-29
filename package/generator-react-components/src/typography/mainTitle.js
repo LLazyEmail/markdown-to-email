@@ -1,1 +1,1 @@
-module.exports= `<MainTitle>{content}</MainTitle>`;
+export const mainTitle = `<MainTitle>{content}</MainTitle>`;

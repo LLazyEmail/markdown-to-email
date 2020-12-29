@@ -1,15 +1,15 @@
-import * as heading from './heading';
-import * as image from './image';
-import * as italic from './italic';
-import * as link from './link';
-import * as list from './list';
-import * as listItem from './listItem';
-import * as mainTitle from './mainTitle';
-import * as paragraph from './paragraph';
-import * as strong from './strong';
-import * as subtitle from './subtitle';
+import { heading } from './heading';
+import { image } from './image';
+import { italic } from './italic';
+import { link } from './link';
+import { list } from './list';
+import { listItem } from './listItem';
+import { mainTitle } from './mainTitle';
+import { paragraph } from './paragraph';
+import { strong } from './strong';
+import { subtitle } from './subtitle';
 
-export default {
+const Typography = {
     heading,
     image,
     italic,
@@ -21,3 +21,5 @@ export default {
     strong,
     subtitle
 }
+
+export default Typography;
