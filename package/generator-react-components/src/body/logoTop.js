@@ -1,1 +1,1 @@
-module.exports = `<Logo />`;
+export const logoTop = `<Logo />`;

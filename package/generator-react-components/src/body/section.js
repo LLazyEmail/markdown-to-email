@@ -1,1 +1,1 @@
-module.exports = `<Section>{content}</Section>`;
+export const section = `<Section>{content}</Section>`;

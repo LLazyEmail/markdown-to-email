@@ -1,6 +1,12 @@
-const copyrights = require("../misc/copyrights");
-const address = require("../misc/address");
-const unsubscribe = require("../misc/unsubscribe");
-const newsletterSponsorshipLink = require("../misc/newsletter-sponsorship-link");
+import Misc from '../misc/';
 
-module.exports = `<Footer>{children}</Footer>`;
+const {
+    address,
+    copyrights,
+    fonts,
+    headStyles,
+    newsletterSponsorshipLink,
+    unsubscribe,
+} = Misc;
+
+export const footer = `<Footer>{children}</Footer>`;

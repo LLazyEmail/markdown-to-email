@@ -1,9 +1,6 @@
-const logoTop = require('./body/logoTop');
-const logoBottom = require('./body/logoBottom');
+import { logoTop, logoBottom, footer } from './body/';
 
-const footer = require('./body/footer');
-
-module.exports = `<body
+export const BBBody = `<body
 style="
   height: 100%;
   margin: 0;
