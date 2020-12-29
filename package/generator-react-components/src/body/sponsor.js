@@ -1,1 +1,1 @@
-module.exports = `<Sponsor param="{content}" />`;
+export const sponsor = `<Sponsor param="{content}" />`;

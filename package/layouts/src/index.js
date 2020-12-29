@@ -4,7 +4,7 @@ import Typography from './typography/';
 
 const Layout = {
     Body,
-    // Misc,
+    Misc,
     Typography,
 };
 

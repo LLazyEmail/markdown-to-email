@@ -1,1 +1,1 @@
-module.exports = `<PreviewText>{content}</PreviewText>`;
+export const previewText = `<PreviewText>{content}</PreviewText>`;
