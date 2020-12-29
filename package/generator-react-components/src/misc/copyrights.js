@@ -1,1 +1,1 @@
-module.exports = `<Copyright />`;
+export const copyrights = `<Copyright />`;
