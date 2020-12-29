@@ -1,1 +1,1 @@
-module.exports = `<Strong>{content}</Strong>`;
+export const strong = `<Strong>{content}</Strong>`;

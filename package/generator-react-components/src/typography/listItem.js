@@ -1,1 +1,1 @@
-module.exports = `<ListItem>{content}</ListItem>`;
+export const listItem = `<ListItem>{content}</ListItem>`;

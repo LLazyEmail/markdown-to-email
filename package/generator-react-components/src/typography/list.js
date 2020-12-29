@@ -1,1 +1,1 @@
-module.exports = `<List>{content}</List>`;
+export const list = `<List>{content}</List>`;

@@ -1,1 +1,1 @@
-module.exports = `<Italic>{content}</Italic>`;
+export const italic = `<Italic>{content}</Italic>`;

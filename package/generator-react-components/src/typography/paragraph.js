@@ -1,1 +1,1 @@
-module.exports = `<Paragraph>{content}</Paragraph>`;
+export const paragraph = `<Paragraph>{content}</Paragraph>`;
