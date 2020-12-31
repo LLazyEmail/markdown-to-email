@@ -52,6 +52,7 @@ function generate_full_template(){
     checkWarnings(warnings);
 
     html = html.replace("{previewText}", previewText);
+    console.log(html)
     html = html.replace("{content}", content);
     const fileName = "full-template" + Date.now() + ".html";
     write(fileName, html);
@@ -60,10 +61,13 @@ function generate_full_template(){
 }
 
 function generate_content_only(){
+
     const parsedContent = parse(CONTENT_SOURCE);
     checkWarnings(parsedContent.warnings);
+
     const fileName = "content" + Date.now() + ".html";
     write(fileName, parsedContent.content);
+
     console.log(chalk.green.bold("The content has been parsed successfully"));
 }
 
