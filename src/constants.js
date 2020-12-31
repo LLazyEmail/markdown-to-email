@@ -18,12 +18,6 @@
 //   {regex: /<\/blockquote><blockquote>/g, replacement: '\n'}                          // fix extra blockquote
 // ];
 
-// this.rules = [
-//   {
-//     regex: REGEX_HEADLINE, replacement: header
-//   },
-// ]
-
 /// @TODO add const for newsletter_sponsor_link
 // for hackernoon_logo_path
 // for HN socials, with images and shit
@@ -36,12 +30,7 @@
 // const REGEXP_I = /\*(.*)\*/gim;
 // const REGEXP_IMG = /!\[(.*?)\]\((.*?)\)/gim;
 // const REGEXP_A = /\[(.*?)\]\((.*?)\)/gim;
-// const REGEXP_BR = /\n$/gim;
 
-// //2nd batch, related to custom markdown tags
-// const REGEXP_CUSTOM_LINK = /\[(.*?)\]\((.*?)\)/g;
-// const REGEXP_CUSTOM_MEME_IMAGE = /\((.*?)\)/g; // @TODO or use gim as for other cases that we have?
-// // const REGEXP_CUSTOM_
 const {newLine} = require('./utils');
 
 const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, 'g');
