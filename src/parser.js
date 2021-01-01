@@ -8,8 +8,8 @@ const CONTENT_SOURCE = "source/source.md";
 
 const layouts = require("atherdon-newsletter-js-layouts");
 
-const konstants = require("atherdon-newsletter-constants");
-// console.log(konstants)
+//const { html_tags } = require("atherdon-newsletter-constants");
+//console.log(html_tags)
 
 switch(process.env.PARSE){
     case "full":
