@@ -759,10 +759,10 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
-atherdon-newsletter-constants@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/atherdon-newsletter-constants/-/atherdon-newsletter-constants-1.0.1.tgz#13de5c84b7d74e88a2b5737471dc90af03879b41"
-  integrity sha512-2spDwUTM/790SaJ3mbEc2pyAxp9CQP4JahDBTRHxlO44/K8RzZvbm94DH8GFOrfduDNyJjfkx3gtXX6juTg1YA==
+atherdon-newsletter-constants@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/atherdon-newsletter-constants/-/atherdon-newsletter-constants-1.0.2.tgz#4c5e79d92f88a9ed3a05a9b644a2267d227b17c6"
+  integrity sha512-uboqw1TIygmcCHID4VMHGKyaLB6t7JrfrcYbFI/CwcF15iYXg/vlWqWljahtH7oBPQfvZHqb4nkrD30spwt7Ow==
 
 atherdon-newsletter-js-layouts@1.0.11:
   version "1.0.11"
