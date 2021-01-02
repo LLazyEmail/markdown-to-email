@@ -9,7 +9,7 @@ const {HASH_TAG, LINK_HTTPS, LINK, STR_BEGIN, STR_END} = require("./constants.js
 
 const layouts = require("atherdon-newsletter-js-layouts");
 
-console.log(layouts)
+//console.log(layouts)
 
 switch(process.env.PARSE){
     case "full":
