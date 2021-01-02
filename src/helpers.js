@@ -31,7 +31,10 @@ this.previewText = replaceHTMLWrapper(
         "body"
       );
 
+console.log(config.content)
+
 this.errors.previewText = true;
+
 this.content = this.content.replace(
     regexp,
     () => {
