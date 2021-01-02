@@ -9,7 +9,6 @@ const {HASH_TAG, LINK_HTTPS, LINK, STR_BEGIN, STR_END} = require("./constants.js
 
 const layouts = require("atherdon-newsletter-js-layouts");
 
-//console.log(layouts)
 
 switch(process.env.PARSE){
     case "full":
@@ -23,6 +22,7 @@ switch(process.env.PARSE){
       generate_content_only();
 }
 
+//@TODO improve with lodash
 function checkErrors(errors){
   if (Object.values(errors).includes(false)) {
     for (let errorType in errors) {
@@ -37,6 +37,7 @@ function checkErrors(errors){
   return false;
 }
 
+//@TODO improve with lodash
 function checkWarnings(warnings){
   for (let warningType in warnings) {
     if (warnings[warningType]) {

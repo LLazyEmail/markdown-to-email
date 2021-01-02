@@ -1,20 +1,7 @@
-// const {
-//   REGEXP_H3,
-//   REGEXP_H2,
-//   REGEXP_H1,
-//   REGEXP_BLOCKQUOTE,
-//   REGEXP_B,
-//   REGEXP_I,
-//   REGEXP_IMG,
-//   REGEXP_A,
-//   REGEXP_BR,
-// } = require("./constants");
-
 const fs = require("fs");
 const os = require('os');
 // @todo add lodash here. will be pretty useful
 
-// @todo make it work
 
 // const Converter = {
 //   REGEXP_H3: {
