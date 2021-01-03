@@ -1,61 +1,28 @@
-footer
+//footer
 
-headline
-
-
-logoBottom
-
-logoTop
-
-previewText
-
-section
-
-sponsor
+//headline
 
 
----
-  
-  
-  const {
+//logoBottom
+
+//logoTop
+
+//previewText
+
+//section
+
+//sponsor
+
+
+const {
   header,
-  image,
-  link,
-  ulList,
-  olList,
-  blockquote,
-  paragraphWrapper,
   sponsorship,
-  br,
-  strong,
-  mem,
-  italic, 
-  del,
-  q,
-  code,
-  hr,
-  empty,
-  newLine
+  mem
 } = require("../callbacks");
 
 const {
   REGEXP_HEADER,
-  REGEXP_IMAGE,
-  REGEXP_LINK,
-  REGEXP_STRONG,
-  REGEXP_DEL,
-  REGEXP_Q,
-  REGEXP_CODE,
-  REGEXP_UL_LIST,
-  REGEXP_OL_LIST,
-  REGEXP_BLOCKQUOTE,
-  REGEXP_HR,
-  REGEXP_PARAGRAPH,
-  REGEXP_EMPTY_UL,
-  REGEXP_EMPTY_OL,
-  REGEXP_BR,
-  REGEXP_EMPTY_BLOCKQUOTE,
-  REGEXP_EM,
+
   REGEXP_SPONSORSHIP,
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
@@ -65,7 +32,7 @@ const {
 //const layouts = require("atherdon-newsletter-constants");
 
 
-const ConverterTypography = {
+const ConverterBody = {
      heading: {
 //     key: "REGEXP_H3",
 //     value: 1,
