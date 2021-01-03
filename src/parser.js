@@ -5,7 +5,10 @@ const { forEach } = require("lodash");
 
 const FULL_SOURCE = "source/source-full.md";
 const CONTENT_SOURCE = "source/source.md";
-const {HASH_TAG, LINK_HTTPS, LINK, STR_BEGIN, STR_END} = require("./constants.js");
+const { 
+    HASH_TAG, LINK_HTTPS, 
+    LINK, STR_BEGIN, STR_END 
+} = require("./constants.js");
 
 const layouts = require("atherdon-newsletter-js-layouts");
 
@@ -70,7 +73,7 @@ function link_searcher(arg){
   const iteration = checker(str, end)
 
   const length = iteration.end-iteration.start;
-
+//@TODO improve with lodash
   for(let i = iteration.start; i < iteration.end; i++){
     arrText.push(arg[i])
 
@@ -105,7 +108,7 @@ function link_cleaner(fulltext, expr){
   let link = new RegExp(link_searcher(fulltext),"g");
 
   let length = (fulltext.match(expr)).length
-
+//@TODO improve with lodash
   for(let i =0; i < length; i++){
       link =  new RegExp(link_searcher(fulltext),"g");
       fulltext = fulltext.replace(link, " ");
@@ -151,24 +154,3 @@ function generate_content_only(){
 
     console.log(chalk.green.bold("The content has been parsed successfully"));
 }
-
-// if (process.env.PARSE) {
-//   let html = readFile("main");
-//   const { previewText, content, errors, warnings } = parse(FULL_SOURCE);
-
-//   if(checkErrors(errors)) return;
-//   checkWarnings(warnings);
-
-//   html = html.replace("{previewText}", previewText);
-//   html = html.replace("{content}", content);
-//   const fileName = "full-template" + Date.now() + ".html";
-//   write(fileName, html);
-
-//   console.log(chalk.green("The full template has been parsed successfully!"));
-// } else {
-//   const parsedContent = parse(CONTENT_SOURCE);
-//   checkWarnings(parsedContent.warnings);
-//   const fileName = "content" + Date.now() + ".html";
-//   write(fileName, parsedContent.content);
-//   console.log(chalk.green.bold("The content has been parsed successfully"));
-// }
