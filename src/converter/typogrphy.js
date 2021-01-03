@@ -26,17 +26,11 @@ const {
   REGEXP_DEL,
   REGEXP_Q,
   
-  REGEXP_BLOCKQUOTE,
-  REGEXP_HR,
   REGEXP_PARAGRAPH,
   
   REGEXP_UL_LIST,
   REGEXP_OL_LIST,
-  REGEXP_EMPTY_UL,
-  REGEXP_EMPTY_OL,
-  
-  REGEXP_BR,
-  REGEXP_EMPTY_BLOCKQUOTE,
+
   REGEXP_EM,
   
   REGEXP_HTML_COMMENTS,
@@ -63,12 +57,12 @@ const ConverterTypography = {
 //     title: "xxx",
    },
        link: {
-//     key: "REGEXP_H3",
+//     key: "REGEXP_LINK",
 //     value: 1,
 //     title: "xxx",
    },
        list: {
-//     key: "REGEXP_H3",
+//     key: "REGEXP_UL_LIST",
 //     value: 1,
 //     title: "xxx",
    },
@@ -78,7 +72,7 @@ const ConverterTypography = {
 //     title: "xxx",
    },
        mainTitle: {
-//     key: "REGEXP_H3",
+//     key: "REGEXP_HEADER",
 //     value: 1,
 //     title: "xxx",
    },
@@ -93,7 +87,7 @@ const ConverterTypography = {
 //     title: "xxx",
    },
        subtitle: {
-//     key: "REGEXP_H3",
+//     key: "REGEXP_H2",
 //     value: 1,
 //     title: "xxx",
    }
