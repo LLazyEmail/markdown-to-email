@@ -1,3 +1,25 @@
+const {
+  header,
+  image,
+  link,
+  ulList,
+  olList,
+  blockquote,
+  paragraphWrapper,
+  sponsorship,
+  br,
+  strong,
+  mem,
+  italic, 
+  del,
+  q,
+  code,
+  hr,
+  empty,
+  newLine
+} = require("./callbacks");
+
+
 
 // const Converter = {
 //   REGEXP_H3: {
