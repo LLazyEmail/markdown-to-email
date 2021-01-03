@@ -45,6 +45,33 @@ const {
 
 //const layouts = require("atherdon-newsletter-constants");
 
+heading
+
+image
+
+index
+
+italic
+
+link
+
+list
+
+listItem
+
+mainTitle
+
+paragraph
+
+strong
+
+subtitle
+
+
+const ConverterContent = {
+  
+};
+
 // const Converter = {
 //   REGEXP_H3: {
 //     key: "REGEXP_H3",
