@@ -4,7 +4,7 @@ const {
   link,
   ulList,
   olList,
-  blockquote,
+
   paragraphWrapper,
   br,
   strong,
@@ -12,10 +12,8 @@ const {
   italic, 
   del,
   q,
-  code,
-  hr,
-  empty,
-  newLine
+  code
+ 
 } = require("../callbacks");
 
 const {
@@ -41,53 +39,53 @@ const {
 
 
 const ConverterTypography = {
-     heading: {
-//     key: "REGEXP_H3",
+   heading: {
+     key: "REGEXP_H3",
 //     value: 1,
 //     title: "xxx",
    },
-       image: {
-//     key: "REGEXP_IMAGE",
+   image: {
+     key: "REGEXP_IMAGE",
 //     value: 1,
 //     title: "xxx",
    },
-       italic: {
-//     key: "REGEXP_EM",
+   italic: {
+     key: "REGEXP_EM",
 //     value: 1,
 //     title: "xxx",
    },
-       link: {
-//     key: "REGEXP_LINK",
+   link: {
+     key: "REGEXP_LINK",
 //     value: 1,
 //     title: "xxx",
    },
-       list: {
-//     key: "REGEXP_UL_LIST",
+   list: {
+     key: "REGEXP_UL_LIST",
 //     value: 1,
 //     title: "xxx",
    },
-       listItem: {
-//     key: "REGEXP_H3",
+   listItem: {
+     key: "REGEXP_H3",
 //     value: 1,
 //     title: "xxx",
    },
-       mainTitle: {
-//     key: "REGEXP_HEADER",
+   mainTitle: {
+     key: "REGEXP_HEADER",
 //     value: 1,
 //     title: "xxx",
    },
-       paragraph: {
-//     key: "REGEXP_PARAGRAPH",
+    paragraph: {
+     key: "REGEXP_PARAGRAPH",
 //     value: 1,
 //     title: "xxx",
    },
-       strong: {
-//     key: "REGEXP_STRONG",
+   strong: {
+     key: "REGEXP_STRONG",
 //     value: 1,
 //     title: "xxx",
    },
-       subtitle: {
-//     key: "REGEXP_H2",
+    subtitle: {
+     key: "REGEXP_H2",
 //     value: 1,
 //     title: "xxx",
    }
