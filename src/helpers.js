@@ -1,5 +1,18 @@
 const { readFile } = require("./utils");
 
+function replaceHTMLWrapper(wrapperName, config, folder = "typography") {
+  //this part will be updated very soon
+  let layouts_location = `${folder}/${wrapperName}`;
+  let wrapper = readFile(layouts_location);
+
+  Object.keys(config).forEach((name) => {
+    wrapper = wrapper.replace(new RegExp(`{${name}}`, "g"), config[name]);
+  });
+
+  return wrapper;
+}
+
+
 //@TODO I dont like this method. it's hard to read it
 function replaceMarkdown(regexp, callback) {
   const callB = typeof callback !== 'string' ? callback.bind(this) : callback;
@@ -10,15 +23,7 @@ function replaceMarkdown(regexp, callback) {
   );
 }
 
-function replaceHTMLWrapper(wrapperName, config, folder = "typography") {
-  let wrapper = readFile(`${folder}/${wrapperName}`);
 
-  Object.keys(config).forEach((name) => {
-    wrapper = wrapper.replace(new RegExp(`{${name}}`, "g"), config[name]);
-  });
-
-  return wrapper;
-}
 
 function replaceMarkdownPreviewText(regexp) {
   const config = {
