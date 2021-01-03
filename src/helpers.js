@@ -21,26 +21,26 @@ function replaceHTMLWrapper(wrapperName, config, folder = "typography") {
 }
 
 function replaceMarkdownPreviewText(regexp) {
-const config = {
-        content: this.content.trim(),
-      };
+  const config = {
+          content: this.content.trim(),
+        };
 
-this.previewText = replaceHTMLWrapper(
+  this.previewText = replaceHTMLWrapper(
         "previewText",
         config,
         "body"
       );
 
-console.log(config.content)
+  console.log(config.content)
 
-this.errors.previewText = true;
+  this.errors.previewText = true;
 
-this.content = this.content.replace(
-    regexp,
-    () => {
-      return this.previewText;
-    }
-  );
+  this.content = this.content.replace(
+      regexp,
+      () => {
+        return this.previewText;
+      }
+    );
 }
 
 
