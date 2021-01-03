@@ -1,4 +1,3 @@
-//footer
 
 //headline
 
@@ -59,26 +58,6 @@ const ConverterBody = {
 //     title: "xxx",
    },
        listItem: {
-//     key: "REGEXP_H3",
-//     value: 1,
-//     title: "xxx",
-   },
-       mainTitle: {
-//     key: "REGEXP_H3",
-//     value: 1,
-//     title: "xxx",
-   },
-       paragraph: {
-//     key: "REGEXP_H3",
-//     value: 1,
-//     title: "xxx",
-   },
-       strong: {
-//     key: "REGEXP_H3",
-//     value: 1,
-//     title: "xxx",
-   },
-       subtitle: {
 //     key: "REGEXP_H3",
 //     value: 1,
 //     title: "xxx",
