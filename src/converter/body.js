@@ -26,7 +26,7 @@ const {
   REGEXP_SPONSORSHIP,
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT,
+  REGEXP_PREVIEW_TEXT
 } = require("../constants");
 
 //const layouts = require("atherdon-newsletter-constants");
