@@ -1,37 +1,19 @@
-address
+//address
+//copyrights
+//fonts
+//head-styles
+//newsletter-sponsorship-link
+//unsubscribe
 
-copyrights
-
-fonts
-
-head-styles
-
-newsletter-sponsorship-link
-
-unsubscribe
-
----
   
-  
-  const {
-  header,
-  image,
-  link,
-  ulList,
-  olList,
-  blockquote,
-  paragraphWrapper,
+const {  
   sponsorship,
   br,
   strong,
   mem,
   italic, 
   del,
-  q,
-  code,
-  hr,
-  empty,
-  newLine
+  q  
 } = require("../callbacks");
 
 const {
