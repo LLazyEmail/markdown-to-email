@@ -33,6 +33,14 @@
 
 const {newLine} = require('./utils');
 
+const HASH_TAG = new RegExp("#[~##\t\n\v\f\r \u00a0\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u200b\u2028\u2029\u3000]", 'g');
+const LINK = new RegExp("Link:", "g");
+
+const LINK_HTTPS = new RegExp(">https", "g");
+
+const STR_BEGIN = ">https";
+const STR_END = "f<";
+    
 const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, 'g');
 
 const REGEXP_IMAGE = /!\[([^\[]+)\]\(([^\)]+)\)/g;
@@ -85,5 +93,10 @@ module.exports = {
   REGEXP_SPONSORSHIP,
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT
+  REGEXP_PREVIEW_TEXT,
+  HASH_TAG,
+  LINK_HTTPS,
+  LINK,
+  STR_BEGIN,
+  STR_END
 };
