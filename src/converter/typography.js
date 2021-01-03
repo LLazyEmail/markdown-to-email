@@ -17,7 +17,7 @@ const {
   hr,
   empty,
   newLine
-} = require("./callbacks");
+} = require("../callbacks");
 
 const {
   REGEXP_HEADER,
@@ -41,7 +41,7 @@ const {
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
-} = require("./constants");
+} = require("../constants");
 
 //const layouts = require("atherdon-newsletter-constants");
 
@@ -98,3 +98,5 @@ const ConverterTypography = {
 //     title: "xxx",
    }
 };
+
+// export data
