@@ -1,21 +1,6 @@
 const { replaceHTMLWrapper } = require("./helpers");
 const { newLine } = require('./utils');
 
-const {
-  strong,
-  link,
-  blockquote,
-  mem,
-  header,
-  italic,
-  del,
-  q,
-  code,
-  hr,
-  empty
-} = require('./callbacks-simple')
-
-
 function strong(text, doubleAsterix, content, asterix) {
   const config = { 
     content: `${content + asterix}` 
@@ -139,23 +124,6 @@ function mem(text, src, href, altText) {
   return result;
 }
 
-
-
-function header(text, chars, content) {
-  const config = {
-    content: content.trim(),
-  };
-
-  const titleType = [
-    "mainTitle", 
-    "subtitle", 
-    "heading"
-  ];
-
-  const result = newLine + replaceHTMLWrapper(titleType[chars.length - 1], config);
- 
-  return result;
-}
 
 function br(text, newLines) {
   const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
