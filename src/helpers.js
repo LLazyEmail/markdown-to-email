@@ -16,7 +16,7 @@ function replaceHTMLWrapper(wrapperName, config, folder = "typography") {
 //@TODO I dont like this method. it's hard to read it
 function replaceMarkdown(regexp, callback) {
   const callB = typeof callback !== 'string' ? callback.bind(this) : callback;
-  
+
   this.content = this.content.replace(
     regexp,
     callB
@@ -36,7 +36,7 @@ function replaceMarkdownPreviewText(regexp) {
         "body"
       );
 
-  console.log(config.content)
+  //console.log(config.content)
 
   this.errors.previewText = true;
 
