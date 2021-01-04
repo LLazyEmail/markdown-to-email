@@ -209,23 +209,11 @@ function sponsorship(text) {
 
 
 module.exports = {
-  link,
   paragraphWrapper,
   ulList,
   olList,
-  blockquote,
   image,
-  header,
   sponsorship,
   br,
-  strong,
-  mem,
-  //constants
-  italic,
-  del,
-  q,
-  code,
-  hr,
-  empty,
   newLine
 };
