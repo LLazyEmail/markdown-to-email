@@ -7,7 +7,6 @@ const q = "<q>$1</q>";
 const code = "<code>$1</code>";
 const hr = `${newLine}<hr />`;
 const empty = "";
-// const newLine = "\n"; 
 // const strong = "<strong>$2$3</strong>";
 
 function strong(text, doubleAsterix, content, asterix) {
