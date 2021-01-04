@@ -1,18 +1,3 @@
-
-//headline
-
-
-//logoBottom
-
-//logoTop
-
-//previewText
-
-//section
-
-//sponsor
-
-
 const {
   header,
   sponsorship,
@@ -32,33 +17,33 @@ const {
 
 
 const ConverterBody = {
-     heading: {
-//     key: "REGEXP_H3",
+     headline: {
+//     key: "REGEXP_xxx",
 //     value: 1,
 //     title: "xxx",
    },
-       image: {
-//     key: "REGEXP_H3",
+       logoBottom: {
+//     key: "REGEXP_xxx",
 //     value: 1,
 //     title: "xxx",
    },
-       italic: {
-//     key: "REGEXP_H3",
+       logoTop: {
+//     key: "REGEXP_xxx",
 //     value: 1,
 //     title: "xxx",
    },
-       link: {
-//     key: "REGEXP_H3",
+       previewText: {
+//     key: "REGEXP_xxx",
 //     value: 1,
 //     title: "xxx",
    },
-       list: {
-//     key: "REGEXP_H3",
+       section: {
+//     key: "REGEXP_xxx",
 //     value: 1,
 //     title: "xxx",
    },
-       listItem: {
-//     key: "REGEXP_H3",
+       sponsor: {
+//     key: "REGEXP_xxx",
 //     value: 1,
 //     title: "xxx",
    }
