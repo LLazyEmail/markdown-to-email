@@ -1,24 +1,31 @@
 const { readSourceFile } = require("./utils");
+
 const {
-  header,
-  image,
-  link,
-  ulList,
-  olList,
-  blockquote,
-  paragraphWrapper,
-  sponsorship,
-  br,
   strong,
+  link,
+  blockquote,
   mem,
-  italic, 
+  header,
+  
+  
+  italic,
   del,
   q,
   code,
   hr,
-  empty,
+  empty
+} = require("./callbacks-simple");
+
+const {
+  image,
+  ulList,
+  olList,
+  paragraphWrapper,
+  sponsorship,
+  br,
   newLine
 } = require("./callbacks");
+
 const { replaceMarkdown, replaceMarkdownPreviewText } = require("./helpers");
 
 const {
