@@ -4,6 +4,8 @@ const {
   mem
 } = require("../callbacks");
 
+//const layouts = require("atherdon-newsletter-constants");
+
 const {
   REGEXP_HEADER,
 
@@ -13,7 +15,7 @@ const {
   REGEXP_PREVIEW_TEXT
 } = require("../constants");
 
-//const layouts = require("atherdon-newsletter-constants");
+
 
 
 const ConverterBody = {
@@ -32,8 +34,8 @@ const ConverterBody = {
 //     value: 1,
 //     title: "xxx",
    },
-       previewText: {
-//     key: "REGEXP_xxx",
+   previewText: {
+     key: "REGEXP_PREVIEW_TEXT",
 //     value: 1,
 //     title: "xxx",
    },
@@ -42,8 +44,8 @@ const ConverterBody = {
 //     value: 1,
 //     title: "xxx",
    },
-       sponsor: {
-//     key: "REGEXP_xxx",
+   sponsor: {
+     key: "REGEXP_SPONSORSHIP",
 //     value: 1,
 //     title: "xxx",
    }
