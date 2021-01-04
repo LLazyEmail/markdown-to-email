@@ -1,29 +1,6 @@
 const { replaceHTMLWrapper } = require("./helpers");
 const { newLine } = require('./utils');
 
-function strong(text, doubleAsterix, content, asterix) {
-  const config = { 
-    content: `${content + asterix}` 
-  };
-  
-  const result = replaceHTMLWrapper("strong", config);
-  return result;
-}
-
-
-
-function link(text, title, href) {
-  const config = {
-    content: title.trim(),
-    href: href.trim(),
-  };
-
-  const result = replaceHTMLWrapper("link", config);
-  return result;
-}
-
-
-
 function paragraphWrapper(text, line) {
   var trimmed = line.trim();
   if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
@@ -95,9 +72,6 @@ function olList(text, item) {
 
 
 
-function blockquote(text, tmp, item) {
-  return `${newLine}<blockquote>` + item.trim() + "</blockquote>";
-}
 
 function image(text, alt, srcWithTooltip) {
   const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, "");
@@ -113,16 +87,7 @@ function image(text, alt, srcWithTooltip) {
   return result;
 }
 
-function mem(text, src, href, altText) {
-  const config = {
-    src: src.trim(),
-    altText: altText.trim(),
-    href: href.trim(),
-  };
 
-  const result = replaceHTMLWrapper("image", config);
-  return result;
-}
 
 
 function br(text, newLines) {
@@ -155,9 +120,6 @@ function sponsorship(text) {
 }
 
 
-
-
-
 // function tag_loop(){
 //     var arr = {
 //         header,
@@ -173,8 +135,6 @@ function sponsorship(text) {
 
 //     });
 // }
-
-
 
 module.exports = {
   paragraphWrapper,
