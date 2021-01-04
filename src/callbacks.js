@@ -11,10 +11,15 @@ const empty = "";
 // const strong = "<strong>$2$3</strong>";
 
 function strong(text, doubleAsterix, content, asterix) {
-  const config = { content: `${content + asterix}` };
+  const config = { 
+    content: `${content + asterix}` 
+  };
+  
   const result = replaceHTMLWrapper("strong", config);
   return result;
 }
+
+
 
 function link(text, title, href) {
   const config = {
@@ -25,6 +30,8 @@ function link(text, title, href) {
   const result = replaceHTMLWrapper("link", config);
   return result;
 }
+
+
 
 function paragraphWrapper(text, line) {
   var trimmed = line.trim();
@@ -41,6 +48,9 @@ function paragraphWrapper(text, line) {
   return result;
 }
 
+
+//@TODO it looks even more crazier than it was 2 months ago
+// i'm not suprised that it might get errors(but works fine now)
 function ulList(text, list) {
   //@todo improve this crazy structure.
   const parsedSubListsParts = list.replace(
@@ -56,6 +66,7 @@ function ulList(text, list) {
           return `${newLine + replaceHTMLWrapper("listItem", config)}`;
         }
       );
+      
       const config = {
         content: parsedSubItem + newLine,
       };
@@ -63,6 +74,8 @@ function ulList(text, list) {
       return `${newLine + replaceHTMLWrapper("list", config)}`;
     }
   );
+  
+  
   const parsedList = parsedSubListsParts.replace(
     new RegExp(`\\*(.*?)${newLine}`, 'g'),
     (text, listItem) => {
@@ -77,12 +90,19 @@ function ulList(text, list) {
   const config = {
     content: parsedList + newLine,
   };
+  
+  
   return `${newLine + replaceHTMLWrapper("list", config) + newLine}`;
 }
 
+
 function olList(text, item) {
-  return `${newLine}<ol>${newLine}\t<li>` + item.trim() + `</li>${newLine}</ol>`;
+  return `${newLine}<ol>${newLine}\t<li>` + 
+    item.trim() + 
+    `</li>${newLine}</ol>`;
 }
+
+
 
 function blockquote(text, tmp, item) {
   return `${newLine}<blockquote>` + item.trim() + "</blockquote>";
@@ -113,16 +133,29 @@ function mem(text, src, href, altText) {
   return result;
 }
 
+
+
 function header(text, chars, content) {
   const config = {
     content: content.trim(),
   };
 
-  const titleType = ["mainTitle", "subtitle", "heading"];
+  const titleType = [
+    "mainTitle", 
+    "subtitle", 
+    "heading"
+  ];
 
   const result = newLine + replaceHTMLWrapper(titleType[chars.length - 1], config);
  
   return result;
+}
+
+function br(text, newLines) {
+  const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
+  return arrNewLines.reduce((acc, current, index) => {
+    return index > 0 ? acc + "<br/>" + current : current;
+  }, "");
 }
 
 function sponsorship(text) {
@@ -137,17 +170,15 @@ function sponsorship(text) {
     content: content.trim(),
   };
 
+  //@TODO nope, not good
   this.errors.sponsorshipTop ? this.errors.sponsorshipBottom = true : this.errors.sponsorshipTop = true;
   
   return replaceHTMLWrapper("sponsor", config, "body");
 }
 
-function br(text, newLines) {
-  const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
-  return arrNewLines.reduce((acc, current, index) => {
-    return index > 0 ? acc + "<br/>" + current : current;
-  }, "");
-}
+
+
+
 
 // function tag_loop(){
 //     var arr = {
@@ -164,6 +195,8 @@ function br(text, newLines) {
 
 //     });
 // }
+
+
 
 module.exports = {
   link,
