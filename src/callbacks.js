@@ -153,9 +153,13 @@ function header(text, chars, content) {
 
 function br(text, newLines) {
   const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
-  return arrNewLines.reduce((acc, current, index) => {
+  
+  //@TODO well, it's not good. can be improved with lodash
+  const result = arrNewLines.reduce((acc, current, index) => {
     return index > 0 ? acc + "<br/>" + current : current;
   }, "");
+  
+  return result; 
 }
 
 function sponsorship(text) {
