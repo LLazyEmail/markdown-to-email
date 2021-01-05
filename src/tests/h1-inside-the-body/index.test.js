@@ -1,5 +1,5 @@
 const { write, readSourceFile } = require("../../utils");
-const { header } = require("../../callbacks");
+const { header } = require("../../callbacks-simple");
 const { replaceMarkdown } = require("../../helpers");
 const { REGEXP_HEADER } = require("../../constants");
 
@@ -12,7 +12,11 @@ describe("testing h1-inside-the-body", () => {
       content: markdown,
     };
 
-    replaceMarkdown.call(parsedContent, REGEXP_HEADER, header);
+    replaceMarkdown.call(
+      parsedContent,
+      REGEXP_HEADER,
+      header
+    );
 
     const fileName = "h1-inside-the-body.html";
     write(fileName, parsedContent.content, outFolder);

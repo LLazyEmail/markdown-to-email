@@ -1,6 +1,7 @@
 const { replaceHTMLWrapper } = require("./helpers");
 const { newLine } = require('./utils');
 
+
 const italic = "$1<em>$3</em>$4";
 const del = "<del>$1</del>";
 const q = "<q>$1</q>";
@@ -28,6 +29,7 @@ function link(text, title, href) {
 
 
 /// function is not working as planned 
+
 function paragraphWrapper(text, line) {
   var trimmed = line.trim();
   if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
@@ -46,6 +48,9 @@ function paragraphWrapper(text, line) {
 }
 /// !end function is not working as planned 
 
+
+//@TODO it looks even more crazier than it was 2 months ago
+// i'm not suprised that it might get errors(but works fine now)
 function ulList(text, list) {
   //@todo improve this crazy structure.
   const parsedSubListsParts = list.replace(
@@ -61,6 +66,7 @@ function ulList(text, list) {
           return `${newLine + replaceHTMLWrapper("listItem", config)}`;
         }
       );
+      
       const config = {
         content: parsedSubItem + newLine,
       };
@@ -68,6 +74,8 @@ function ulList(text, list) {
       return `${newLine + replaceHTMLWrapper("list", config)}`;
     }
   );
+  
+  
   const parsedList = parsedSubListsParts.replace(
     new RegExp(`\\*(.*?)${newLine}`, 'g'),
     (text, listItem) => {
@@ -82,16 +90,20 @@ function ulList(text, list) {
   const config = {
     content: parsedList + newLine,
   };
+  
+  
   return `${newLine + replaceHTMLWrapper("list", config) + newLine}`;
 }
 
+
 function olList(text, item) {
-  return `${newLine}<ol>${newLine}\t<li>` + item.trim() + `</li>${newLine}</ol>`;
+  return `${newLine}<ol>${newLine}\t<li>` + 
+    item.trim() + 
+    `</li>${newLine}</ol>`;
 }
 
-function blockquote(text, tmp, item) {
-  return `${newLine}<blockquote>` + item.trim() + "</blockquote>";
-}
+
+
 
 function image(text, alt, srcWithTooltip) {
   const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, "");
@@ -107,28 +119,24 @@ function image(text, alt, srcWithTooltip) {
   return result;
 }
 
-function mem(text, src, href, altText) {
-  const config = {
-    src: src.trim(),
-    altText: altText.trim(),
-    href: href.trim(),
-  };
 
-  const result = replaceHTMLWrapper("image", config);
-  return result;
-}
 
-function header(text, chars, content) {
-  const config = {
-    content: content.trim(),
-  };
 
-  const titleType = ["mainTitle", "subtitle", "heading"];
 
   const result = newLine + replaceHTMLWrapper(titleType[chars.length - 1], config);
   console.log("result")
   console.log(result)
   return result;
+=======
+function br(text, newLines) {
+  const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
+  
+  //@TODO well, it's not good. can be improved with lodash
+  const result = arrNewLines.reduce((acc, current, index) => {
+    return index > 0 ? acc + "<br/>" + current : current;
+  }, "");
+  
+  return result; 
 }
 
 function sponsorship(text) {
@@ -143,17 +151,12 @@ function sponsorship(text) {
     content: content.trim(),
   };
 
+  //@TODO nope, not good
   this.errors.sponsorshipTop ? this.errors.sponsorshipBottom = true : this.errors.sponsorshipTop = true;
   
   return replaceHTMLWrapper("sponsor", config, "body");
 }
 
-function br(text, newLines) {
-  const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
-  return arrNewLines.reduce((acc, current, index) => {
-    return index > 0 ? acc + "<br/>" + current : current;
-  }, "");
-}
 
 // function tag_loop(){
 //     var arr = {
@@ -172,23 +175,11 @@ function br(text, newLines) {
 // }
 
 module.exports = {
-  link,
   paragraphWrapper,
   ulList,
   olList,
-  blockquote,
   image,
-  header,
   sponsorship,
   br,
-  strong,
-  mem,
-  //constants
-  italic,
-  del,
-  q,
-  code,
-  hr,
-  empty,
   newLine
 };

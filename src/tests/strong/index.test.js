@@ -1,5 +1,5 @@
 const { write, readSourceFile } = require("../../utils");
-const { strong } = require("../../callbacks");
+const { strong } = require("../../callbacks-simple");
 const { replaceMarkdown } = require("../../helpers");
 const { REGEXP_STRONG } = require("../../constants");
 

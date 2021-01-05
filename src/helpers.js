@@ -1,17 +1,9 @@
 const { readFile } = require("./utils");
 
-//@TODO I dont like this method. it's hard to read it
-function replaceMarkdown(regexp, callback) {
-  const callB = typeof callback !== 'string' ? callback.bind(this) : callback;
-  
-  this.content = this.content.replace(
-    regexp,
-    callB
-  );
-}
-
 function replaceHTMLWrapper(wrapperName, config, folder = "typography") {
-  let wrapper = readFile(`${folder}/${wrapperName}`);
+  //this part will be updated very soon
+  let layouts_location = `${folder}/${wrapperName}`;
+  let wrapper = readFile(layouts_location);
 
   Object.keys(config).forEach((name) => {
     wrapper = wrapper.replace(new RegExp(`{${name}}`, "g"), config[name]);
@@ -20,27 +12,39 @@ function replaceHTMLWrapper(wrapperName, config, folder = "typography") {
   return wrapper;
 }
 
-function replaceMarkdownPreviewText(regexp) {
-const config = {
-        content: this.content.trim(),
-      };
 
-this.previewText = replaceHTMLWrapper(
+//@TODO I dont like this method. it's hard to read it
+function replaceMarkdown(regexp, callback) {
+  const callB = typeof callback !== 'string' ? callback.bind(this) : callback;
+
+  this.content = this.content.replace(
+    regexp,
+    callB
+  );
+}
+
+
+
+function replaceMarkdownPreviewText(regexp) {
+  const config = {
+          content: this.content.trim(),
+        };
+
+  this.previewText = replaceHTMLWrapper(
         "previewText",
         config,
         "body"
       );
 
-//console.log(config.content)
 
-this.errors.previewText = true;
+  this.errors.previewText = true;
 
-this.content = this.content.replace(
-    regexp,
-    () => {
-      return this.previewText;
-    }
-  );
+  this.content = this.content.replace(
+      regexp,
+      () => {
+        return this.previewText;
+      }
+    );
 }
 
 
