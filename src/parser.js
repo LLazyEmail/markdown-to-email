@@ -6,7 +6,6 @@ const { forEach } = require("lodash");
 const FULL_SOURCE = "source/source-full.md";
 const CONTENT_SOURCE = "source/source.md";
 
-const {REGEXP_HASH_TAG, REGEXP_LINK_HTTPS, REGEXP_LINK_G, REGEXP_STR_BEGIN, REGEXP_STR_END} = require("./constants.js");
 
 const { 
     REGEXP_HASH_TAG, REGEXP_LINK_HTTPS, 

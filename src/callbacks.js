@@ -121,13 +121,6 @@ function image(text, alt, srcWithTooltip) {
 
 
 
-
-
-  const result = newLine + replaceHTMLWrapper(titleType[chars.length - 1], config);
-  console.log("result")
-  console.log(result)
-  return result;
-=======
 function br(text, newLines) {
   const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
   
