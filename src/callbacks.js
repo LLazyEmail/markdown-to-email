@@ -1,6 +1,35 @@
 const { replaceHTMLWrapper } = require("./helpers");
 const { newLine } = require('./utils');
 
+
+const italic = "$1<em>$3</em>$4";
+const del = "<del>$1</del>";
+const q = "<q>$1</q>";
+const code = "<code>$1</code>";
+const hr = `${newLine}<hr />`;
+const empty = "";
+// const newLine = "\n"; 
+// const strong = "<strong>$2$3</strong>";
+
+function strong(text, doubleAsterix, content, asterix) {
+  const config = { content: `${content + asterix}` };
+  const result = replaceHTMLWrapper("strong", config);
+  return result;
+}
+
+function link(text, title, href) {
+  const config = {
+    content: title.trim(),
+    href: href.trim(),
+  };
+
+  const result = replaceHTMLWrapper("link", config);
+  return result;
+}
+
+
+/// function is not working as planned 
+
 function paragraphWrapper(text, line) {
   var trimmed = line.trim();
   if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
@@ -12,9 +41,12 @@ function paragraphWrapper(text, line) {
     content: trimmed,
   };
   const result = newLine + replaceHTMLWrapper("paragraph", config) + newLine;
+  console.log("result is not incomming ")
+  console.log(result);
 
   return result;
 }
+/// !end function is not working as planned 
 
 
 //@TODO it looks even more crazier than it was 2 months ago
@@ -90,6 +122,12 @@ function image(text, alt, srcWithTooltip) {
 
 
 
+
+  const result = newLine + replaceHTMLWrapper(titleType[chars.length - 1], config);
+  console.log("result")
+  console.log(result)
+  return result;
+=======
 function br(text, newLines) {
   const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
   

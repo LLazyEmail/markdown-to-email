@@ -36,7 +36,6 @@ function replaceMarkdownPreviewText(regexp) {
         "body"
       );
 
-  //console.log(config.content)
 
   this.errors.previewText = true;
 

@@ -71,15 +71,18 @@ function parse(source) {
   };
 
   const replaceMDBinded = replaceMarkdown.bind(state);
+  
   const replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
   replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
   replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
+  console.log(replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT))
 
   replaceMDBinded(REGEXP_STRONG, strong);
   replaceMDBinded(REGEXP_EM, italic);
 
   replaceMDBinded(REGEXP_HEADER, header);
+  
   replaceMDBinded(REGEXP_IMAGE, image);
   replaceMDBinded(REGEXP_LINK, link);
 

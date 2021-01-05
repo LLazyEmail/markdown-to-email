@@ -5,10 +5,14 @@ const { forEach } = require("lodash");
 
 const FULL_SOURCE = "source/source-full.md";
 const CONTENT_SOURCE = "source/source.md";
+
+const {REGEXP_HASH_TAG, REGEXP_LINK_HTTPS, REGEXP_LINK_G, REGEXP_STR_BEGIN, REGEXP_STR_END} = require("./constants.js");
+
 const { 
     REGEXP_HASH_TAG, REGEXP_LINK_HTTPS, 
     REGEXP_LINK_G, REGEXP_STR_BEGIN, REGEXP_STR_END 
 } = require("./constants.js");
+
 
 const layouts = require("atherdon-newsletter-js-layouts");
 
@@ -86,6 +90,7 @@ function link_searcher(arg){
 }
 
 
+
 // make content 
 
 function contnet_rewriter(arg){
@@ -129,14 +134,18 @@ function generate_full_template(){
 
     //let cont = contnet_rewriter(content);
 
+
     //let cont = link_cleaner(content, REGEXP_LINK_HTTPS);
+
+  //  cont = link_cleaner(cont, REGEXP_LINK_HTTPS);
+
 
     if(checkErrors(errors)) return;
     checkWarnings(warnings);
 
     html = html.replace("{previewText}", previewText);
     
-    html = html.replace("{content}", "<table>"+content+ "</table>");
+    html = html.replace("{content}", "<table>" +content+ "</table>");
     const fileName = "full-template" + Date.now() + ".html";
     write(fileName, html);
 
