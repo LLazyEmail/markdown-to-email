@@ -5,10 +5,14 @@ const { forEach } = require("lodash");
 
 const FULL_SOURCE = "source/source-full.md";
 const CONTENT_SOURCE = "source/source.md";
+
+const {REGEXP_HASH_TAG, REGEXP_LINK_HTTPS, REGEXP_LINK_G, REGEXP_STR_BEGIN, REGEXP_STR_END} = require("./constants.js");
+
 const { 
     HASH_TAG, LINK_HTTPS, 
     LINK, STR_BEGIN, STR_END 
 } = require("./constants.js");
+
 
 const layouts = require("atherdon-newsletter-js-layouts");
 
@@ -67,8 +71,8 @@ function checker(begining, ending){
 // end of this function 
 
 function link_searcher(arg){
-  const str = arg.indexOf(STR_BEGIN);
-  const end = arg.indexOf(STR_END);
+  const str = arg.indexOf(REGEXP_STR_BEGIN);
+  const end = arg.indexOf(REGEXP_STR_END);
   let arrText = [];
   const iteration = checker(str, end)
 
@@ -86,11 +90,12 @@ function link_searcher(arg){
 }
 
 
+
 // make content 
 
 function contnet_rewriter(arg){
-  let cont = arg.replace(HASH_TAG, " ");
-  cont = cont.replace(LINK, " ");
+  let cont = arg.replace(REGEXP_HASH_TAG, " ");
+  cont = cont.replace(REGEXP_LINK_G, " ");
   return cont 
 }
 
@@ -128,7 +133,7 @@ function generate_full_template(){
 
     let cont = contnet_rewriter(content);
 
-    cont = link_cleaner(cont, LINK_HTTPS);
+    cont = link_cleaner(cont, REGEXP_LINK_HTTPS);
 
     if(checkErrors(errors)) return;
     checkWarnings(warnings);
