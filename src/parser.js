@@ -9,8 +9,8 @@ const CONTENT_SOURCE = "source/source.md";
 const {REGEXP_HASH_TAG, REGEXP_LINK_HTTPS, REGEXP_LINK_G, REGEXP_STR_BEGIN, REGEXP_STR_END} = require("./constants.js");
 
 const { 
-    HASH_TAG, LINK_HTTPS, 
-    LINK, STR_BEGIN, STR_END 
+    REGEXP_HASH_TAG, REGEXP_LINK_HTTPS, 
+    REGEXP_LINK_G, REGEXP_STR_BEGIN, REGEXP_STR_END 
 } = require("./constants.js");
 
 
@@ -130,17 +130,22 @@ function generate_full_template(){
     let html = readFile("main");
 
     let { previewText, content, errors, warnings } = parse(FULL_SOURCE);
+    //console.log(previewText)
 
-    let cont = contnet_rewriter(content);
+    //let cont = contnet_rewriter(content);
 
-    cont = link_cleaner(cont, REGEXP_LINK_HTTPS);
+
+    //let cont = link_cleaner(content, REGEXP_LINK_HTTPS);
+
+  //  cont = link_cleaner(cont, REGEXP_LINK_HTTPS);
+
 
     if(checkErrors(errors)) return;
     checkWarnings(warnings);
 
     html = html.replace("{previewText}", previewText);
     
-    html = html.replace("{content}", cont);
+    html = html.replace("{content}", "<table>" +content+ "</table>");
     const fileName = "full-template" + Date.now() + ".html";
     write(fileName, html);
 
