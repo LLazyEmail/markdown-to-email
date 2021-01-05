@@ -31,7 +31,7 @@ this.previewText = replaceHTMLWrapper(
         "body"
       );
 
-console.log(config.content)
+//console.log(config.content)
 
 this.errors.previewText = true;
 

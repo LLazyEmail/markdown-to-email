@@ -26,6 +26,8 @@ function link(text, title, href) {
   return result;
 }
 
+
+/// function is not working as planned 
 function paragraphWrapper(text, line) {
   var trimmed = line.trim();
   if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
@@ -37,9 +39,12 @@ function paragraphWrapper(text, line) {
     content: trimmed,
   };
   const result = newLine + replaceHTMLWrapper("paragraph", config) + newLine;
+  console.log("result is not incomming ")
+  console.log(result);
 
   return result;
 }
+/// !end function is not working as planned 
 
 function ulList(text, list) {
   //@todo improve this crazy structure.
@@ -121,7 +126,8 @@ function header(text, chars, content) {
   const titleType = ["mainTitle", "subtitle", "heading"];
 
   const result = newLine + replaceHTMLWrapper(titleType[chars.length - 1], config);
- 
+  console.log("result")
+  console.log(result)
   return result;
 }
 
