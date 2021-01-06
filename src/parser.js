@@ -129,7 +129,7 @@ function generate_full_template(){
     let html = readFile("main");
 
     let { previewText, content, errors, warnings } = parse(FULL_SOURCE);
-    //console.log(previewText)
+    
 
     //let cont = contnet_rewriter(content);
 

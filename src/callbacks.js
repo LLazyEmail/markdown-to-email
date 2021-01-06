@@ -41,8 +41,7 @@ function paragraphWrapper(text, line) {
     content: trimmed,
   };
   const result = newLine + replaceHTMLWrapper("paragraph", config) + newLine;
-  console.log("result is not incomming ")
-  console.log(result);
+  //console.log(config);
 
   return result;
 }
