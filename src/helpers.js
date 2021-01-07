@@ -8,7 +8,7 @@ function replaceHTMLWrapper(wrapperName, config, folder = "typography") {
   Object.keys(config).forEach((name) => {
     wrapper = wrapper.replace(new RegExp(`{${name}}`, "g"), config[name]);
   });
-
+  
   return wrapper;
 }
 
@@ -16,7 +16,7 @@ function replaceHTMLWrapper(wrapperName, config, folder = "typography") {
 //@TODO I dont like this method. it's hard to read it
 function replaceMarkdown(regexp, callback) {
   const callB = typeof callback !== 'string' ? callback.bind(this) : callback;
-
+  
   this.content = this.content.replace(
     regexp,
     callB
@@ -29,14 +29,14 @@ function replaceMarkdownPreviewText(regexp) {
   const config = {
           content: this.content.trim(),
         };
-
+  /*
   this.previewText = replaceHTMLWrapper(
         "previewText",
         config,
         "body"
       );
-
-
+      console.log(this.previewText)
+ */
   this.errors.previewText = true;
 
   this.content = this.content.replace(

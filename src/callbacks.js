@@ -41,8 +41,7 @@ function paragraphWrapper(text, line) {
     content: trimmed,
   };
   const result = newLine + replaceHTMLWrapper("paragraph", config) + newLine;
-  console.log("result is not incomming ")
-  console.log(result);
+  //console.log(config);
 
   return result;
 }
@@ -121,13 +120,6 @@ function image(text, alt, srcWithTooltip) {
 
 
 
-
-
-  const result = newLine + replaceHTMLWrapper(titleType[chars.length - 1], config);
-  console.log("result")
-  console.log(result)
-  return result;
-=======
 function br(text, newLines) {
   const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
   

@@ -54,9 +54,9 @@ function header(text, chars, content) {
     "subtitle", 
     "heading"
   ];
-
+  
   const result = newLine + replaceHTMLWrapper(titleType[chars.length - 1], config);
- 
+  
   return result;
 }
 

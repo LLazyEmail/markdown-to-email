@@ -6,7 +6,6 @@ const { forEach } = require("lodash");
 const FULL_SOURCE = "source/source-full.md";
 const CONTENT_SOURCE = "source/source.md";
 
-const {REGEXP_HASH_TAG, REGEXP_LINK_HTTPS, REGEXP_LINK_G, REGEXP_STR_BEGIN, REGEXP_STR_END} = require("./constants.js");
 
 const { 
     REGEXP_HASH_TAG, REGEXP_LINK_HTTPS, 
@@ -130,7 +129,7 @@ function generate_full_template(){
     let html = readFile("main");
 
     let { previewText, content, errors, warnings } = parse(FULL_SOURCE);
-    //console.log(previewText)
+    
 
     //let cont = contnet_rewriter(content);
 
