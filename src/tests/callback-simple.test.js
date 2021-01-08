@@ -19,7 +19,7 @@ describe('testing callback-simple', () => {
         const m = mem('', './ss', './sss', 'image');
         expect(m).toBe(memExample);
     })
-    test('head renders all 3 titleTypes correctly', () => {
+    test('header renders all 3 titleTypes correctly', () => {
         const mainTitle = header('', [ 0 ], 'hello');
         const subtitle = header('', [ 0, 0 ], 'hello');
         const heading = header('', [ 0, 0, 0 ], 'hello');
