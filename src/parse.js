@@ -74,11 +74,10 @@ function parse(source) {
   const replaceMDBinded = replaceMarkdown.bind(state);
   
   const replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
+  
   replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
-  //console.log(state)
+  
   replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
-  
-  
   
   replaceMDBinded(REGEXP_STRONG, strong);
   
@@ -108,7 +107,7 @@ function parse(source) {
   replaceMDBinded(REGEXP_BR, br);
   replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
   replaceMDBinded(REGEXP_MEM, mem);
-  
+  //console.log( state )
   return state;
 }
 

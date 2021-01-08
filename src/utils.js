@@ -7,17 +7,6 @@ function readFile(fileName) {
   return require(`../layouts/${fileName}`);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 //@todo it's very bad to use converter here, i think it;s deserve a separated file.
 // this utls file should serve a source for a very small and common methods.
 // module.export = Converter;
