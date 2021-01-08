@@ -45,6 +45,8 @@ function checkWarnings(warnings){
   }
 }
 
+
+
 function generate_full_template(){
     let html = readFile("main");
 
@@ -73,3 +75,8 @@ function generate_content_only(){
 
     console.log(chalk.green.bold("The content has been parsed successfully"));
 }
+
+module.exports = {
+    checkWarnings, generate_content_only, 
+    generate_full_template, checker
+};
