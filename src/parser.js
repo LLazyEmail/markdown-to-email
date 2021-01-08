@@ -60,11 +60,11 @@ function checkWarnings(warnings){
 
 
 function checker(begining, ending){
-  let arguments = {
+  let argumentsVar = {
     start: begining+1,
     end: begining+ (ending-(begining+1)+2)
   }
-  return arguments;
+  return argumentsVar;
 }
 
 // end of this function 
