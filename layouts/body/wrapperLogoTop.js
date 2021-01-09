@@ -1,4 +1,4 @@
-const logoTop = require('./body/logoTop');
+const logoTop = require('./logoTop');
 
 module.exports = `  <tr>
     <td
