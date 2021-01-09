@@ -1,7 +1,9 @@
-const { parse } = require("./parse");
-const { write, readFile } = require("./utils");
 const chalk = require("chalk");
 const { forEach } = require("lodash");
+
+const { parse } = require("./parse");
+const { write, readFile } = require("./utils");
+
 
 const FULL_SOURCE = "source/source-full.md";
 const CONTENT_SOURCE = "source/source.md";
@@ -50,13 +52,18 @@ function checkWarnings(warnings){
 function generate_full_template(){
     let html = readFile("main");
 
-    let { previewText, content, errors, warnings } = parse(FULL_SOURCE);
-    
+    let {
+      previewText,
+      content,
+      errors,
+      warnings
+    } = parse(FULL_SOURCE);
+
     if(checkErrors(errors)) return;
     checkWarnings(warnings);
 
     html = html.replace("{previewText}", previewText);
-    
+
     html = html.replace("{content}", content);
     const fileName = "full-template" + Date.now() + ".html";
     write(fileName, html);
@@ -77,6 +84,6 @@ function generate_content_only(){
 }
 
 module.exports = {
-    checkWarnings, generate_content_only, 
+    checkWarnings, generate_content_only,
     generate_full_template
 };
