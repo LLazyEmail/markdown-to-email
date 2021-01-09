@@ -48,7 +48,7 @@ function checkWarnings(warnings){
   }
 }
 
-function displayCLIErrors(){
+function displayCLIErrors(errors, warnings){
   if(checkErrors(errors)) {
     return;
   } else {
@@ -70,7 +70,7 @@ function generate_full_template(){
     // if(checkErrors(errors)) return;
     // checkWarnings(warnings);
 
-    displayCLIErrors()
+    displayCLIErrors(errors, warnings)
 
 
     html = html.replace("{previewText}", previewText);
