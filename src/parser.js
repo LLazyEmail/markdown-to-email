@@ -1,14 +1,15 @@
 const chalk = require("chalk");
 const { forEach } = require("lodash");
+const layouts = require("atherdon-newsletter-js-layouts");
 
 const { parse } = require("./parse");
 const { write, readFile } = require("./utils");
 
 
-const FULL_SOURCE = "source/source-full.md";
+const FULL_SOURCE    = "source/source-full.md";
 const CONTENT_SOURCE = "source/source.md";
 
-const layouts = require("atherdon-newsletter-js-layouts");
+
 
 
 switch(process.env.PARSE){
@@ -47,7 +48,14 @@ function checkWarnings(warnings){
   }
 }
 
+function displayCLIErrors(){
+  if(checkErrors(errors)) {
+    return;
+  } else {
+    checkWarnings(warnings);
+  }
 
+}
 
 function generate_full_template(){
     let html = readFile("main");
@@ -59,12 +67,18 @@ function generate_full_template(){
       warnings
     } = parse(FULL_SOURCE);
 
-    if(checkErrors(errors)) return;
-    checkWarnings(warnings);
+    // if(checkErrors(errors)) return;
+    // checkWarnings(warnings);
+
+    displayCLIErrors()
+
 
     html = html.replace("{previewText}", previewText);
-
+// THIS PART IS PROBABLY BROKEN, ie working not correctly.
     html = html.replace("{content}", content);
+// END
+
+
     const fileName = "full-template" + Date.now() + ".html";
     write(fileName, html);
 
