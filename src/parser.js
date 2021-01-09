@@ -43,7 +43,8 @@ function checkErrors(errors){
 function checkWarnings(warnings){
   for (let warningType in warnings) {
     if (warnings[warningType]) {
-      console.log(chalk.yellow(`WARNING source-full.md has ${warnings[warningType]} ${warningType}. Replace it to memes`));
+      var message = `WARNING source-full.md has ${warnings[warningType]} ${warningType}. Replace it to memes`;
+      console.log(chalk.yellow(message));
     }
   }
 }
