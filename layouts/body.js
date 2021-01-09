@@ -102,7 +102,9 @@ style="
                 padding-bottom: 0;
               "
             >
+            XXXXXXXXXXXXXXX
               {content}
+              XXXXXXXXXXXXXXXXXXXXX
             </td>
           </tr>
           <tr>
@@ -128,7 +130,7 @@ style="
 
             ${tableBottomWithDivider}
 
-      
+
 
               ${logoBottom}
             </td>
