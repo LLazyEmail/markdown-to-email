@@ -6,13 +6,6 @@ const { forEach } = require("lodash");
 const FULL_SOURCE = "source/source-full.md";
 const CONTENT_SOURCE = "source/source.md";
 
-
-const { 
-    REGEXP_HASH_TAG, REGEXP_LINK_HTTPS, 
-    REGEXP_LINK_G, REGEXP_STR_BEGIN, REGEXP_STR_END 
-} = require("./constants.js");
-
-
 const layouts = require("atherdon-newsletter-js-layouts");
 
 
@@ -52,77 +45,6 @@ function checkWarnings(warnings){
   }
 }
 
-// function to clean up links 
-
-
-// creating function to trak length of removing items 
-
-
-
-function checker(begining, ending){
-  let argumentsVar = {
-    start: begining+1,
-    end: begining+ (ending-(begining+1)+2)
-  }
-  return argumentsVar;
-}
-
-// end of this function 
-
-function link_searcher(arg){
-  const str = arg.indexOf(REGEXP_STR_BEGIN);
-  const end = arg.indexOf(REGEXP_STR_END);
-  let arrText = [];
-  const iteration = checker(str, end)
-
-  const length = iteration.end-iteration.start;
-//@TODO improve with lodash
-  for(let i = iteration.start; i < iteration.end; i++){
-    arrText.push(arg[i])
-
-    if( i === iteration.end){
-      break;
-    }
-  } 
- 
-  return arrText.join("");
-}
-
-
-
-// make content 
-
-function contnet_rewriter(arg){
-  let cont = arg.replace(REGEXP_HASH_TAG, " ");
-  cont = cont.replace(REGEXP_LINK_G, " ");
-  return cont 
-}
-
-
-// end making content 
-
-
-// checking info how many links left in code 
-//and removeing them 
-
-
-function link_cleaner(fulltext, expr){
-  contnet_rewriter(fulltext)
-
-  let link = new RegExp(link_searcher(fulltext),"g");
-
-  let length = (fulltext.match(expr)).length
-//@TODO improve with lodash
-  for(let i =0; i < length; i++){
-      link =  new RegExp(link_searcher(fulltext),"g");
-      fulltext = fulltext.replace(link, " ");
-  }
-
-  return fulltext;
-}
-
-
-// end of code 
 
 
 function generate_full_template(){
@@ -130,21 +52,12 @@ function generate_full_template(){
 
     let { previewText, content, errors, warnings } = parse(FULL_SOURCE);
     
-
-    //let cont = contnet_rewriter(content);
-
-
-    //let cont = link_cleaner(content, REGEXP_LINK_HTTPS);
-
-  //  cont = link_cleaner(cont, REGEXP_LINK_HTTPS);
-
-
     if(checkErrors(errors)) return;
     checkWarnings(warnings);
 
     html = html.replace("{previewText}", previewText);
     
-    html = html.replace("{content}", "<table>" +content+ "</table>");
+    html = html.replace("{content}", content);
     const fileName = "full-template" + Date.now() + ".html";
     write(fileName, html);
 
@@ -153,7 +66,6 @@ function generate_full_template(){
 
 function generate_content_only(){
     let html = readFile("main");
-   // console.log(html)
 
     const parsedContent = parse(CONTENT_SOURCE);
     checkWarnings(parsedContent.warnings);
@@ -166,5 +78,5 @@ function generate_content_only(){
 
 module.exports = {
     checkWarnings, generate_content_only, 
-    generate_full_template, checker
+    generate_full_template
 };
