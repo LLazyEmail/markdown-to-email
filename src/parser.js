@@ -78,5 +78,5 @@ function generate_content_only(){
 
 module.exports = {
     checkWarnings, generate_content_only, 
-    generate_full_template, checker
+    generate_full_template
 };
