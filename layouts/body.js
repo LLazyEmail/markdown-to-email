@@ -1,6 +1,6 @@
 // const logoTop = require('./body/logoTop');
 
-const wrapperLogoTop = require('./body/wrapperlogoTop');
+const wrapperLogoTop = require('./body/wrapperLogoTop');
 const tableBottomWithDivider =  require('./body/table-bottom-with-divider');
 const logoBottom = require('./body/logoBottom');
 
