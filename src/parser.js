@@ -35,23 +35,25 @@ function generate_full_template(){
     } = parse(FULL_SOURCE);
 
     const testData = parseFullTHing(FULL_SOURCE);
-    console.log(testData);
+    // console.log(testData);
+
+
     // console.log(content)
 
-    displayCLIErrors(errors, warnings)
+    // displayCLIErrors(errors, warnings)
 
 
-    html = html.replace("{previewText}", previewText);
+    // html = html.replace("{previewText}", previewText);
 // THIS PART IS PROBABLY BROKEN, ie working not correctly.
-    html = html.replace("{content}", content);
+    // html = html.replace("{content}", content);
 // END
 
 
-    const fileName = "full-template" + Date.now() + ".html";
-    write(fileName, html);
+    // const fileName = "full-template" + Date.now() + ".html";
+    // write(fileName, html);
 
-    var message = "The full template has been parsed successfully!";
-    console.log(chalk.green(message));
+    // var message = "The full template has been parsed successfully!";
+    // console.log(chalk.green(message));
 }
 
 function generate_content_only(){
