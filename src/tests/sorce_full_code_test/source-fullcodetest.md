@@ -1,7 +1,7 @@
 #~ this is bridgeCrue. asdasdasdasdasdasdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd, asddddddddddddddddddddddd
 ~[The security-as-code solution for developers][https://bit.ly/3n9CgbE][https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/logos/thematic/2020/October/Bridgecrew_stacked.jpg]
 
-
+<!-- this coment and it will be removed  -->
 
 # Secrets Of High-Performing Teams: Part II
 
@@ -29,10 +29,10 @@ Without further ado, let’s dive into our top picks for [DevOps team success](h
 
 
 
-1. [High-performing](https://hackernoon.com/3-easy-ways-to-improve-performance-of-your-python-code-dw183uzo) teams put business first
+1. [High-performing](https://hackernoon.com/3-easy-ways-to-improve-performance-of-your-python-code-dw183uzo) teams put business first <!-- this coment and it will be removed  -->
 
 You’d say, a [revenue-first mindset](https://hackernoon.com/five-undervalued-data-points-for-emerging-businesses-5c2w3eun) won’t get you the probity medal. However, it’s not our point. In fact, profitability should be your top of mind not for the sake of money only. 
-
+<!-- this coment and it will be removed  -->
 
 Successful DevOps teams are more likely to tie their tech projects to revenue, mainly because it’s the 1 [metric for their performance](https://hackernoon.com/the-secret-of-growth-how-to-achieve-dollar1m-arr-in-6-months-vi1832mp). As a result, teams that are business aligned tend to prioritize projects with business management and use business and tech scorecards to measure success. Therefore, just a simple shift from an [activity-driven mindset](https://hackernoon.com/data-that-you-need-is-worth-gold-not-data-that-you-already-have-5c60f9345c6b) to a [revenue-first approach](https://hackernoon.com/4-business-lessons-from-the-failure-of-wework-the-47-billion-dollar-tech-company-3ahi3201) can guarantee a positive change in your team productivity and overall result.
 
@@ -80,7 +80,8 @@ To deliver top-notch results, employees must be well-settled, teams well-structu
 
 _Join us to welcome today newsletter’s sponsor - [BridgeCrew](https://bit.ly/3n9CgbE). BridgeCrew helps find, fix, and prevent cloud misconfigurations straight from your CI/CD pipeline. Their platform leverages automation and delivers security-as-code to streamline your DevSecOps processes._
 
-***********************HAJKAKKSKKSKAKSK*
+***
+<!-- this coment and it will be removed  -->
 
 [Got a tech story to share with our readers?](http://auth.hackernoon.com/) Everything you've ever wanted to know about how to get published on Hacker Noon - [get it here](https://hackernoon.com/how-to-get-published-on-hacker-noon-a-step-by-step-guide-zcp36rz).
 

@@ -80,7 +80,7 @@ To deliver top-notch results, employees must be well-settled, teams well-structu
 
 _Join us to welcome today newsletter’s sponsor - [BridgeCrew](https://bit.ly/3n9CgbE). BridgeCrew helps find, fix, and prevent cloud misconfigurations straight from your CI/CD pipeline. Their platform leverages automation and delivers security-as-code to streamline your DevSecOps processes._
 
-***********************HAJKAKKSKKSKAKSK*
+***
 
 [Got a tech story to share with our readers?](http://auth.hackernoon.com/) Everything you've ever wanted to know about how to get published on Hacker Noon - [get it here](https://hackernoon.com/how-to-get-published-on-hacker-noon-a-step-by-step-guide-zcp36rz).
 

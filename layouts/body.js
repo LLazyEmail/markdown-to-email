@@ -1,6 +1,9 @@
-const logoTop = require('./body/logoTop');
-const logoBottom = require('./body/logoBottom');
+// const logoTop = require('./body/logoTop');
 
+const wrapperLogoTop = require('./body/wrapperLogoTop');
+const tableBottomWithDivider =  require('./body/table-bottom-with-divider');
+const logoBottom = require('./body/logoBottom');
+const tableBegin = require('./body/table-begin');
 const footer = require('./body/footer');
 
 module.exports = `<body
@@ -19,27 +22,13 @@ style="
 <!--<![endif]-->
 
 <center>
-  <table
-    align="center"
-    border="0"
-    cellpadding="0"
-    cellspacing="0"
-    height="100%"
-    width="100%"
-    id="bodyTable"
-    style="
-      border-collapse: collapse;
-      mso-table-lspace: 0pt;
-      mso-table-rspace: 0pt;
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      background-color: #ffffff;
-    "
-  >
+
+  ${tableBegin}
+
+
+
+
+
     <tr>
       <td
         align="center"
@@ -78,29 +67,7 @@ style="
             max-width: 600px !important;
           "
         >
-          <tr>
-            <td
-              valign="top"
-              id="templatePreheader"
-              style="
-                background: #ffffff none no-repeat center/cover;
-                mso-line-height-rule: exactly;
-                -ms-text-size-adjust: 100%;
-                -webkit-text-size-adjust: 100%;
-                background-color: #ffffff;
-                background-image: none;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                border-top: 0;
-                border-bottom: 0;
-                padding-top: 9px;
-                padding-bottom: 9px;
-              "
-            >
-              ${logoTop}
-            </td>
-          </tr>
+          ${wrapperLogoTop}
           <tr>
             <td
               valign="top"
@@ -121,7 +88,9 @@ style="
                 padding-bottom: 0;
               "
             >
+            XXXXXXXXXXXXXXX
               {content}
+              XXXXXXXXXXXXXXXXXXXXX
             </td>
           </tr>
           <tr>
@@ -144,72 +113,11 @@ style="
                 padding-bottom: 9px;
               "
             >
-              <table
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-                width="100%"
-                class="mcnDividerBlock"
-                style="
-                  min-width: 100%;
-                  border-collapse: collapse;
-                  mso-table-lspace: 0pt;
-                  mso-table-rspace: 0pt;
-                  -ms-text-size-adjust: 100%;
-                  -webkit-text-size-adjust: 100%;
-                  table-layout: fixed !important;
-                "
-              >
-                <tbody class="mcnDividerBlockOuter">
-                  <tr>
-                    <td
-                      class="mcnDividerBlockInner"
-                      style="
-                        min-width: 100%;
-                        padding: 12px 18px;
-                        mso-line-height-rule: exactly;
-                        -ms-text-size-adjust: 100%;
-                        -webkit-text-size-adjust: 100%;
-                      "
-                    >
-                      <table
-                        class="mcnDividerContent"
-                        border="0"
-                        cellpadding="0"
-                        cellspacing="0"
-                        width="100%"
-                        style="
-                          min-width: 100%;
-                          border-top: 2px none #eaeaea;
-                          border-collapse: collapse;
-                          mso-table-lspace: 0pt;
-                          mso-table-rspace: 0pt;
-                          -ms-text-size-adjust: 100%;
-                          -webkit-text-size-adjust: 100%;
-                        "
-                      >
-                        <tbody>
-                          <tr>
-                            <td
-                              style="
-                                mso-line-height-rule: exactly;
-                                -ms-text-size-adjust: 100%;
-                                -webkit-text-size-adjust: 100%;
-                              "
-                            >
-                              <span></span>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <!--
-            <td class="mcnDividerBlockInner" style="padding: 18px;">
-            <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
--->
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+
+            ${tableBottomWithDivider}
+
+
+
               ${logoBottom}
             </td>
           </tr>
