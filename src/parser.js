@@ -50,8 +50,8 @@ function generate_full_template(){
     const fileName = "full-template" + Date.now() + ".html";
     write(fileName, html);
 
-    // create a var for this message. i don't like this structure
-    console.log(chalk.green("The full template has been parsed successfully!"));
+    var message = "The full template has been parsed successfully!";
+    console.log(chalk.green(message));
 }
 
 function generate_content_only(){
@@ -63,8 +63,8 @@ function generate_content_only(){
     const fileName = "content" + Date.now() + ".html";
     write(fileName, parsedContent.content);
 
-        // create a var for this message. i don't like this structure
-    console.log(chalk.green.bold("The content has been parsed successfully"));
+    var message = "The content has been parsed successfully";
+    console.log(chalk.green.bold(message));
 }
 
 module.exports = {

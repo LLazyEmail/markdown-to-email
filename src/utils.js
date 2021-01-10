@@ -1,7 +1,7 @@
 const fs = require("fs");
 const os = require('os');
 const chalk = require("chalk");
-// @todo add lodash here. will be pretty useful
+const { forEach } = require("lodash");
 
 function readFile(fileName) {
   return require(`../layouts/${fileName}`);
@@ -11,29 +11,28 @@ function readFile(fileName) {
 // this utls file should serve a source for a very small and common methods.
 // module.export = Converter;
 
-//@TODO improve with lodash
+
 function checkWarnings(warnings){
-    for (let warningType in warnings) {
-      if (warnings[warningType]) {
-        var message = `WARNING source-full.md has ${warnings[warningType]} ${warningType}. Replace it to memes`;
-        console.log(chalk.yellow(message));
-      }
-    }
+    forEach(warnings, (index, element) => {
+        if(index) {
+            var message = `WARNING source-full.md has ${index} ${element}. Replace it to memes`;
+            console.log(chalk.yellow(message));
+        }
+    })
 }
 
-
-//@TODO improve with lodash
 function checkErrors(errors){
     if (Object.values(errors).includes(false)) {
-      for (let errorType in errors) {
-        if (!errors[errorType]) {
-          console.log(chalk.red(`ERROR source-full.md doesn't has ${errorType}`));
-        }
-      }
-      console.log(chalk.red.bold('The full template has not been parsed!'));
-      return true;
+        forEach(errors, (_, error) => {
+            if (!errors[error]) {
+                var message = `ERROR source-full.md doesn't have ${error}`;
+                console.log(chalk.red(message));
+            }
+        })
+        var message = 'The full template has not been parsed!';
+        console.log(chalk.red.bold(message));
+        return true;
     }
-  
     return false;
 }
 
