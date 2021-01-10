@@ -24,8 +24,6 @@ module.exports = `         <tr>
 
           ${tableBottomWithDivider}
 
-
-
             ${logoBottom}
           </td>
         </tr> `;
