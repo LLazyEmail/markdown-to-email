@@ -3,7 +3,7 @@ const { forEach } = require("lodash");
 const layouts = require("atherdon-newsletter-js-layouts");
 
 const { parse } = require("./parse");
-const { write, readFile } = require("./utils");
+const { write, readFile, displayCLIErrors, checkWarnings } = require("./utils");
 
 
 const FULL_SOURCE    = "source/source-full.md";
@@ -22,40 +22,6 @@ switch(process.env.PARSE){
       break;
     default:
       generate_content_only();
-}
-
-//@TODO improve with lodash
-function checkErrors(errors){
-  if (Object.values(errors).includes(false)) {
-    for (let errorType in errors) {
-      if (!errors[errorType]) {
-        console.log(chalk.red(`ERROR source-full.md doesn't has ${errorType}`));
-      }
-    }
-    console.log(chalk.red.bold('The full template has not been parsed!'));
-    return true;
-  }
-
-  return false;
-}
-
-//@TODO improve with lodash
-function checkWarnings(warnings){
-  for (let warningType in warnings) {
-    if (warnings[warningType]) {
-      var message = `WARNING source-full.md has ${warnings[warningType]} ${warningType}. Replace it to memes`;
-      console.log(chalk.yellow(message));
-    }
-  }
-}
-
-function displayCLIErrors(errors, warnings){
-  if(checkErrors(errors)) {
-    return;
-  } else {
-    checkWarnings(warnings);
-  }
-
 }
 
 function generate_full_template(){
@@ -99,6 +65,6 @@ function generate_content_only(){
 }
 
 module.exports = {
-    checkWarnings, generate_content_only,
+    generate_content_only,
     generate_full_template
 };
