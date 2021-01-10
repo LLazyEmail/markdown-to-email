@@ -2,7 +2,7 @@ const chalk = require("chalk");
 const { forEach } = require("lodash");
 const layouts = require("atherdon-newsletter-js-layouts");
 
-const { parse } = require("./parse");
+const { parse, parseFullTHing } = require("./parse");
 const { write, readFile, displayCLIErrors, checkWarnings } = require("./utils");
 
 

@@ -117,4 +117,4 @@ function parseFullTHing(params){
   parse(source);
 }
 
-module.exports = { parse };
+module.exports = { parse, parseFullTHing };
