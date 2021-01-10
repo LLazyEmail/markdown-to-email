@@ -25,10 +25,6 @@ style="
 
   ${tableBegin}
 
-
-
-
-
     <tr>
       <td
         align="center"
@@ -68,6 +64,9 @@ style="
           "
         >
           ${wrapperLogoTop}
+
+          ${tableRowContent}
+
           <tr>
             <td
               valign="top"
@@ -93,6 +92,9 @@ style="
               XXXXXXXXXXXXXXXXXXXXX
             </td>
           </tr>
+
+          ${tableRowBottom}
+
           <tr>
             <td
               valign="top"
@@ -121,6 +123,8 @@ style="
               ${logoBottom}
             </td>
           </tr>
+
+
           ${footer}
         </table>
         <!--[if (gte mso 9)|(IE)]>
