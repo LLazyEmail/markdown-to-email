@@ -34,8 +34,9 @@ function generate_full_template(){
       warnings
     } = parse(FULL_SOURCE);
 
-    // if(checkErrors(errors)) return;
-    // checkWarnings(warnings);
+    const testData = parseFullTHing(FULL_SOURCE);
+    console.log(testData);
+    // console.log(content)
 
     displayCLIErrors(errors, warnings)
 
@@ -49,6 +50,7 @@ function generate_full_template(){
     const fileName = "full-template" + Date.now() + ".html";
     write(fileName, html);
 
+    // create a var for this message. i don't like this structure
     console.log(chalk.green("The full template has been parsed successfully!"));
 }
 
@@ -61,6 +63,7 @@ function generate_content_only(){
     const fileName = "content" + Date.now() + ".html";
     write(fileName, parsedContent.content);
 
+        // create a var for this message. i don't like this structure
     console.log(chalk.green.bold("The content has been parsed successfully"));
 }
 

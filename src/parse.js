@@ -6,8 +6,8 @@ const {
   blockquote,
   mem,
   header,
-  
-  
+
+
   italic,
   del,
   q,
@@ -57,7 +57,7 @@ const {
 // @todo update this method. I'm sure it can be improved.
 function parse(source) {
   let markdown = readSourceFile(source);
-  
+
   let state = {
     content: markdown,
     previewText: "",
@@ -72,23 +72,23 @@ function parse(source) {
   };
 
   const replaceMDBinded = replaceMarkdown.bind(state);
-  
+
   const replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
-  
+
   replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
-  
+
   replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
-  
+
   replaceMDBinded(REGEXP_STRONG, strong);
-  
+
   replaceMDBinded(REGEXP_EM, italic);
-  
+
   replaceMDBinded(REGEXP_HEADER, header);
-  
-  
+
+
   replaceMDBinded(REGEXP_IMAGE, image);
   replaceMDBinded(REGEXP_LINK, link);
-  
+
   replaceMDBinded(REGEXP_DEL, del);
   replaceMDBinded(REGEXP_Q, q);
   replaceMDBinded(REGEXP_CODE, code);
@@ -103,12 +103,18 @@ function parse(source) {
   replaceMDBinded(REGEXP_EMPTY_UL, empty);
   replaceMDBinded(REGEXP_EMPTY_OL, empty);
   replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
-  
+
   replaceMDBinded(REGEXP_BR, br);
   replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
   replaceMDBinded(REGEXP_MEM, mem);
   //console.log( state )
   return state;
+}
+
+function parseFullTHing(params){
+  const { source } = params;
+
+  parse(source);
 }
 
 module.exports = { parse };
