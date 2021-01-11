@@ -2,7 +2,7 @@ const { paragraphWrapper, ulList, olList, br } = require('../callbacks');
 const { newLine } = require('../utils');
 
 describe('testing callback.js', () => {
-    test('testing what returns `strong`', () => {
+    test('testing what returns `paragraphWrapper`', () => {
         const str = paragraphWrapper('', `<h1>some text</h1>`);
         expect(str).toBe(`${newLine}<h1>some text</h1>${newLine}`);
     })
