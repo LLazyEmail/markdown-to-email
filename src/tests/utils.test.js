@@ -1,5 +1,6 @@
-const { readFile, readSourceFile, isFolderExists } = require('../utils');
+const { readFile, readSourceFile, displayCLIErrors } = require('../utils');
 const fs = require('fs');
+const chalk = require('chalk');
 
 
 describe('testing utils.js', () => {
@@ -22,5 +23,24 @@ describe('testing utils.js', () => {
         }
         check = true;
         expect(check).toBe(true);
+    })
+
+    test('displayCLIErrors receives --> errors <-- and outputs them', () => {
+        let outputData = "";	 
+        storeLog = inputs => (outputData += inputs);  
+        console["log"] = jest.fn(storeLog);
+        displayCLIErrors({ previewText: false }, {});
+        var msg1 = chalk.red(`ERROR source-full.md doesn't have previewText`);
+        var msg2 = chalk.red.bold(`The full template has not been parsed!`);
+        expect(outputData).toBe(msg1 + msg2);
+    })
+
+    test('displayCLIErrors receives --> warnings <-- and outputs them', () => {
+        let outputData = "";	 
+        storeLog = inputs => (outputData += inputs);  
+        console["log"] = jest.fn(storeLog);
+        displayCLIErrors( {}, { images: 5 });
+        var msg1 = chalk.yellow(`WARNING source-full.md has 5 images. Replace it to memes`);
+        expect(outputData).toBe(msg1);
     })
 })
