@@ -22,7 +22,7 @@
     "@rollup/plugin-babel": "5.3.0",
     "@rollup/plugin-commonjs": "17.1.0",
     "@rollup/plugin-node-resolve": "11.2.0",
-    "rollup": "2.38.5",
+    "rollup": "2.39.0",
     "rollup-plugin-includepaths": "0.2.4",
     "rollup-plugin-node-builtins": "2.1.2",
     "rollup-plugin-node-globals": "1.4.0",
