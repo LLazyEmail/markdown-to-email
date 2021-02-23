@@ -114,7 +114,7 @@ function parse(source) {
 function parseFullTHing(params){
   const { source } = params;
 
-  parse(source);
+  return parse(source);
 }
 
 module.exports = { parse, parseFullTHing };
