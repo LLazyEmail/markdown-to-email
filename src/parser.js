@@ -4,6 +4,7 @@ const layouts = require("atherdon-newsletter-js-layouts");
 
 const { parse, parseFullTHing } = require("./parse");
 const { write, readFile, displayCLIErrors, checkWarnings } = require("./utils");
+const { fullTemplate } = require('../layouts/full-template');
 
 
 const FULL_SOURCE    = "source/source-full.md";
@@ -24,36 +25,16 @@ switch(process.env.PARSE){
       generate_content_only();
 }
 
-function generate_full_template(){
-    let html = readFile("main");
+function generate_full_template() {
+  const parsedContent = parseFullTHing({source: FULL_SOURCE});
+  checkWarnings(parsedContent.warnings);
 
-    let {
-      previewText,
-      content,
-      errors,
-      warnings
-    } = parse(FULL_SOURCE);
-
-    const testData = parseFullTHing(FULL_SOURCE);
-    // console.log(testData);
-
-
-    // console.log(content)
-
-    // displayCLIErrors(errors, warnings)
-
-
-    // html = html.replace("{previewText}", previewText);
-// THIS PART IS PROBABLY BROKEN, ie working not correctly.
-    // html = html.replace("{content}", content);
-// END
-
-
-    // const fileName = "full-template" + Date.now() + ".html";
-    // write(fileName, html);
-
-    // var message = "The full template has been parsed successfully!";
-    // console.log(chalk.green(message));
+  const fileName = "full-template" + Date.now() + ".html";
+  const fullContent = fullTemplate(parsedContent.content);
+  write(fileName, fullContent);
+  
+  var message = "The full-template has been parsed successfully";
+  console.log(chalk.green.bold(message));
 }
 
 function generate_content_only(){
