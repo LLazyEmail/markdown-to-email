@@ -1,6 +1,6 @@
 {
   "name": "markdown-to-email",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "Translate 'Markdown' Syntax into HTML For Email Newsletters",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "build:small": "npm run checkFolders && node ./src/index.js",
     "checkFolders": "node ./checkFolders"
   },
-  "author": "hirdbluebird",
+  "author": "hirdbluebird, atherdon, vadim9999",
   "license": "ISC",
   "devDependencies": {
     "atherdon-newsletter-constants": "1.0.3",
