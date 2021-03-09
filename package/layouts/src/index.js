@@ -1,11 +1,15 @@
-import Body from './body/';
-import Misc from './misc/';
-import Typography from './typography/';
+import body from './body/';
+import misc from './misc';
+import main from './main';
+import head from './head';
+import typography from './typography';
+import fullTemplate from './full-template';
 
-const Layout = {
-    Body,
-    // Misc,
-    Typography,
+export {
+  body,
+  misc,
+  typography,
+  main,
+  head,
+  fullTemplate,
 };
-
-export default Layout;

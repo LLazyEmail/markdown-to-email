@@ -3,14 +3,9 @@ const os = require('os');
 const chalk = require("chalk");
 const { forEach } = require("lodash");
 
-function readFile(fileName) {
-  return require(`../layouts/${fileName}`);
-}
-
-//@todo it's very bad to use converter here, i think it;s deserve a separated file.
+// @todo it's very bad to use converter here, i think it;s deserve a separated file.
 // this utls file should serve a source for a very small and common methods.
 // module.export = Converter;
-
 
 function checkWarnings(warnings){
     forEach(warnings, (index, element) => {
@@ -73,7 +68,6 @@ const newLine = platform === "win32" ? "\r\n" : "\n";
 
 module.exports = {
   write,
-  readFile,
   readSourceFile,
   isFolderExists,
   newLine,

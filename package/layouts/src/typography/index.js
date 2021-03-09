@@ -9,7 +9,7 @@ import { paragraph } from './paragraph';
 import { strong } from './strong';
 import { subtitle } from './subtitle';
 
-const Typography = {
+const typography = {
     heading,
     image,
     italic,
@@ -22,4 +22,4 @@ const Typography = {
     subtitle
 }
 
-export default Typography;
+export default typography;

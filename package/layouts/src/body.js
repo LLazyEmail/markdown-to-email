@@ -1,7 +1,9 @@
 // const logoTop = require('./body/logoTop');
 // const logoBottom = require('./body/logoBottom');
 
-const { logoTop, logoBottom, footer } from './body/';
+import Body from './body/index';
+
+const { logoTop, logoBottom, footer } = Body;
 
 export const BBBody = `<body
 style="
