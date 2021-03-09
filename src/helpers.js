@@ -1,10 +1,8 @@
-const { readFile } = require("./utils");
+const layouts = require('atherdon-newsletter-js-layouts');
 
-function replaceHTMLWrapper(wrapperName, config, folder = "typography") {
-  //this part will be updated very soon
-  let layouts_location = `${folder}/${wrapperName}`;
-  let wrapper = readFile(layouts_location);
-
+function replaceHTMLWrapper(wrapperName, config, folder = 'typography') {
+  // this part will be updated very soon
+  let wrapper = layouts[folder][wrapperName];
   Object.keys(config).forEach((name) => {
     wrapper = wrapper.replace(new RegExp(`{${name}}`, "g"), config[name]);
   });
@@ -16,7 +14,6 @@ function replaceHTMLWrapper(wrapperName, config, folder = "typography") {
 //@TODO I dont like this method. it's hard to read it
 function replaceMarkdown(regexp, callback) {
   const callB = typeof callback !== 'string' ? callback.bind(this) : callback;
-  
   this.content = this.content.replace(
     regexp,
     callB

@@ -1,13 +1,8 @@
-const { readFile, readSourceFile, displayCLIErrors } = require('../utils');
 const fs = require('fs');
 const chalk = require('chalk');
-
+const { readSourceFile, displayCLIErrors } = require('../utils');
 
 describe('testing utils.js', () => {
-    test('readFile imports correct file without any error', () => {
-        const wrapper = readFile('body');
-        expect(wrapper).toBe(require('../../layouts/body'));
-    })
 
     test('readSourceFile reads file', () => {
         const wrapper = readSourceFile('source/source-full.md');
