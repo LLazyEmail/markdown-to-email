@@ -50,7 +50,7 @@ function header(text, chars, content) {
   };
 
   const titleType = [
-    "mainTitle", 
+    "title", 
     "subtitle", 
     "heading"
   ];
