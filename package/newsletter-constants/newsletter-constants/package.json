@@ -23,7 +23,7 @@
     "@rollup/plugin-commonjs": "17.1.0",
     "@rollup/plugin-node-resolve": "11.2.0",
     "os": "0.1.1",
-    "rollup": "2.41.4",
+    "rollup": "2.41.5",
     "rollup-plugin-includepaths": "0.2.4",
     "rollup-plugin-node-builtins": "2.1.2",
     "rollup-plugin-node-globals": "1.4.0",
