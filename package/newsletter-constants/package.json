@@ -10,7 +10,7 @@
     "dev": "rollup -c -w",
     "build": "npm run clean && npm run bundle",
     "build:babel": "babel src -d dist",
-    "prepublish": "yarn clean && yarn build",
+    "prepublish": "npm run clean && npm run build",
     "test": "npm run test",
     "clean": "shx rm -rf ./coverage && shx rm -rf ./dist"
   },

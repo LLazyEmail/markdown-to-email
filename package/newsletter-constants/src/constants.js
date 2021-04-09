@@ -18,12 +18,6 @@
 //   {regex: /<\/blockquote><blockquote>/g, replacement: '\n'}                          // fix extra blockquote
 // ];
 
-// this.rules = [
-//   {
-//     regex: REGEX_HEADLINE, replacement: header
-//   },
-// ]
-
 /// @TODO add const for newsletter_sponsor_link
 // for hackernoon_logo_path
 // for HN socials, with images and shit
@@ -36,17 +30,21 @@
 // const REGEXP_I = /\*(.*)\*/gim;
 // const REGEXP_IMG = /!\[(.*?)\]\((.*?)\)/gim;
 // const REGEXP_A = /\[(.*?)\]\((.*?)\)/gim;
-// const REGEXP_BR = /\n$/gim;
 
-// //2nd batch, related to custom markdown tags
-// const REGEXP_CUSTOM_LINK = /\[(.*?)\]\((.*?)\)/g;
-// const REGEXP_CUSTOM_MEME_IMAGE = /\((.*?)\)/g; // @TODO or use gim as for other cases that we have?
-// // const REGEXP_CUSTOM_
+const { newLine } = require("./utils");
 
-import newLine from ('./utils');
-// const {newLine} = require('./utils');
+const REGEXP_HASH_TAG = new RegExp(
+  "#[~##\t\n\v\f\r \u00a0\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u200b\u2028\u2029\u3000]",
+  "g"
+);
+const REGEXP_LINK_G = new RegExp("Link:", "g");
 
-const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, 'g');
+const REGEXP_LINK_HTTPS = new RegExp(">https", "g");
+
+const REGEXP_STR_BEGIN = ">https";
+const REGEXP_STR_END = "f<";
+
+const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, "g");
 
 const REGEXP_IMAGE = /!\[([^\[]+)\]\(([^\)]+)\)/g;
 const REGEXP_LINK = /\[([^\[]+)\]\(([^\)]+)\)/g;
@@ -55,11 +53,14 @@ const REGEXP_DEL = /\~\~(.*?)\~\~/g;
 const REGEXP_Q = /\:\"(.*?)\"\:/g;
 const REGEXP_CODE = /`(.*?)`/g;
 
-const REGEXP_UL_LIST = new RegExp(`${newLine}(((\\s{4})?\\*(.*?)${newLine}){1,})`, 'g');
-const REGEXP_OL_LIST = new RegExp(`${newLine}[0-9]+\\.(.*)`, 'g');
+const REGEXP_UL_LIST = new RegExp(
+  `${newLine}(((\\s{4})?\\*(.*?)${newLine}){1,})`,
+  "g"
+);
+const REGEXP_OL_LIST = new RegExp(`${newLine}[0-9]+\\.(.*)`, "g");
 
-const REGEXP_BLOCKQUOTE = new RegExp(`${newLine}(&gt;|\\>)(.*)`, 'g');
-const REGEXP_HR = new RegExp(`${newLine}-{5,}`,'g');
+const REGEXP_BLOCKQUOTE = new RegExp(`${newLine}(&gt;|\\>)(.*)`, "g");
+const REGEXP_HR = new RegExp(`${newLine}-{5,}`, "g");
 
 const REGEXP_PARAGRAPH = new RegExp(`${newLine}(.+?)${newLine}`, "g");
 
@@ -76,8 +77,7 @@ const REGEXP_PREVIEW_TEXT = new RegExp(`#~(.*?)${newLine}`);
 // const REGEXP_H3 = /^### (.*$)/gim;
 // const REGEXP_H2 = /^## (.*$)/gim;
 
-
-export const html_tags = {
+module.exports = {
   REGEXP_HEADER,
   REGEXP_IMAGE,
   REGEXP_LINK,
@@ -98,5 +98,10 @@ export const html_tags = {
   REGEXP_SPONSORSHIP,
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT
+  REGEXP_PREVIEW_TEXT,
+  REGEXP_HASH_TAG,
+  REGEXP_LINK_HTTPS,
+  REGEXP_LINK_G,
+  REGEXP_STR_BEGIN,
+  REGEXP_STR_END,
 };
