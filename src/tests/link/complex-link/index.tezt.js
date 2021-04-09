@@ -1,6 +1,6 @@
 const { write, readSourceFile } = require("../../utils");
 // const { sponsorship } = require("../../just-a-guess-functions");
-// const { REGEXP_SPONSORSHIP } = require("../../constants");
+// const { REGEXP_SPONSORSHIP } = require("atherdon-newsletter-constants");
 
 const { replaceMarkdown } = require("../../parserUtils");
 

@@ -7,7 +7,7 @@ const { replaceMarkdown, replaceMarkdownPreviewText } = require("../helpers");
 const {
   REGEXP_HTML_COMMENTS,
   REGEXP_PREVIEW_TEXT
-} = require("../constants");
+} = require("atherdon-newsletter-constants");
 
 let markdown = readSourceFile("source/source-full.md");
 

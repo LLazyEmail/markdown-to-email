@@ -35,7 +35,7 @@ const {
   
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM
-} = require("../constants");
+} = require("atherdon-newsletter-constants");
 
 
 

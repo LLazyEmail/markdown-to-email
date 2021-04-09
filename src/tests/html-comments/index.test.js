@@ -1,5 +1,5 @@
 const { write, readSourceFile } = require("../../utils");
-const { REGEXP_HTML_COMMENTS } = require("../../constants");
+const { REGEXP_HTML_COMMENTS } = require("atherdon-newsletter-constants");
 const { replaceMarkdown } = require("../../helpers");
 
 const outFolder = "src/tests/_generated";

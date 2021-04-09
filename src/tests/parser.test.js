@@ -52,7 +52,7 @@ const {
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
-} = require("../constants");
+} = require("atherdon-newsletter-constants");
 
 const FULL_SOURCE = "source/source-full.md";
 

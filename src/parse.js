@@ -6,14 +6,12 @@ const {
   blockquote,
   mem,
   header,
-
-
   italic,
   del,
   q,
   code,
   hr,
-  empty
+  empty,
 } = require("./callbacks-simple");
 
 const {
@@ -23,13 +21,13 @@ const {
   paragraphWrapper,
   sponsorship,
   br,
-  newLine
+  newLine,
 } = require("./callbacks");
 
 const { replaceMarkdown, replaceMarkdownPreviewText } = require("./helpers");
 
-// const cococonst = require("atherdon-newsletter-constants");
-// console.log(cococonst);
+const cococonst = require("atherdon-newsletter-constants");
+console.log(cococonst);
 
 const {
   REGEXP_HEADER,
@@ -53,7 +51,7 @@ const {
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
-} = require("./constants");
+} = require("atherdon-newsletter-constants");
 
 // @todo update this method. I'm sure it can be improved.
 function parse(source) {
@@ -63,13 +61,13 @@ function parse(source) {
     content: markdown,
     previewText: "",
     warnings: {
-      images: 0
+      images: 0,
     },
     errors: {
       previewText: false,
       sponsorshipTop: false,
       sponsorshipBottom: false,
-    }
+    },
   };
 
   const replaceMDBinded = replaceMarkdown.bind(state);
@@ -85,7 +83,6 @@ function parse(source) {
   replaceMDBinded(REGEXP_EM, italic);
 
   replaceMDBinded(REGEXP_HEADER, header);
-
 
   replaceMDBinded(REGEXP_IMAGE, image);
   replaceMDBinded(REGEXP_LINK, link);
@@ -112,7 +109,7 @@ function parse(source) {
   return state;
 }
 
-function parseFullTHing(params){
+function parseFullTHing(params) {
   const { source } = params;
 
   return parse(source);
