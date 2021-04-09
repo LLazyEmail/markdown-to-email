@@ -48,7 +48,7 @@ const REGEXP_PREVIEW_TEXT = new RegExp(`#~(.*?)${newLine}`);
 // const REGEXP_H3 = /^### (.*$)/gim;
 // const REGEXP_H2 = /^## (.*$)/gim;
 
-export const html_tags = {
+export {
   REGEXP_HEADER,
   REGEXP_IMAGE,
   REGEXP_LINK,
