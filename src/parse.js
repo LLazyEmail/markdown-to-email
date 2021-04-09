@@ -26,9 +26,6 @@ const {
 
 const { replaceMarkdown, replaceMarkdownPreviewText } = require("./helpers");
 
-const cococonst = require("atherdon-newsletter-constants");
-console.log(cococonst);
-
 const {
   REGEXP_HEADER,
   REGEXP_IMAGE,
