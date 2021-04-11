@@ -70,6 +70,8 @@ const REGEXP_BR = new RegExp(`((${newLine}){2,})`, "g");
 const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
 const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
 
+// Custom tags that we invented for our inner needs
+
 const REGEXP_SPONSORSHIP = /~(\[(.*?)\]){3}/g;
 const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
 const REGEXP_MEM = /\!\[(.*?)\]\[(.*?)\]\[(.*?)\]/g;
