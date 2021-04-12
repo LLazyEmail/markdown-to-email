@@ -6,7 +6,9 @@ src/tests/_generated
 frontend-next/
 package/layouts/dist/*
 package/layouts/node_modules/*
+
 package/generator-react-components/dist/*
+
 package/generator-react-components/node_modules/*
 package/newsletter-constants/dist/*
 package/newsletter-constants/node_modules/*

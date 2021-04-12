@@ -13,10 +13,12 @@ switch(process.env.PARSE){
     case "full":
         generate_full_template();
       break;
-    case "react":
+    case "reactContentOnly":
       //same as default, but with react components instead.
-      generate_content_only();
+      generate_react_content();
       break;
+    case "reactFull":
+      generate_react_full_template();
     default:
       generate_content_only();
 }
@@ -31,6 +33,21 @@ function generate_full_template() {
 
   var message = "The full-template has been parsed successfully";
   console.log(chalk.green.bold(message));
+}
+
+function generate_content_react(){
+  // const parsedContent = parse(CONTENT_SOURCE);
+  // checkWarnings(parsedContent.warnings);
+
+  // const fileName = "content" + Date.now() + ".html";
+  // write(fileName, parsedContent.content);
+
+  // var message = "The content has been parsed successfully";
+  // console.log(chalk.green.bold(message));
+}
+
+function generate_react_full_template(){
+
 }
 
 function generate_content_only(){

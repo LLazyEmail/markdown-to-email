@@ -1,12 +1,12 @@
-const { write, readSourceFile } = require("../../utils");
-const { replaceMarkdownPreviewText } = require("../../helpers");
+const { write, readSourceFile } = require("../../../utils");
+const { replaceMarkdownPreviewText } = require("../../../helpers");
 const { REGEXP_PREVIEW_TEXT } = require("atherdon-newsletter-constants");
 
 const outFolder = "src/tests/_generated";
 
 describe("testing preview-text", () => {
   it("renders preview-text", () => {
-    let markdown = readSourceFile("src/tests/preview-text/content.md");
+    let markdown = readSourceFile("src/tests/preview/preview-text/content.md");
     let parsedContent = {
       content: markdown,
       previewText: "",

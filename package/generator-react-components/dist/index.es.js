@@ -1,100 +1,17 @@
-var copyrights = `<Copyright />`;
-
-var copyrights$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), copyrights, {
-  'default': copyrights
-}));
-
 var config = {
   contact: "https://sponsor.hackernoon.com/contact",
   mailingAddress: "PO Box 2206, Edwards CO, 81632, U.S.A.",
   unsubscribe: '#'
 };
-var config_1 = config;
 
-var address = `<Address />
-${config_1.mailingAddress}`;
+const address = `<Address />
+${config.mailingAddress}`;
 
-var address$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), address, {
-  'default': address
-}));
+const copyrights = `<Copyright />`;
 
-var unsubscribe = `<Unsubscribe />`;
+const fonts = `<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Merriweather+Sans:400,400i,700,700i|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">`;
 
-var unsubscribe$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), unsubscribe, {
-  'default': unsubscribe
-}));
-
-var newsletterSponsorshipLink = `<NewsletterSponsorshipLink />`;
-
-var newsletterSponsorshipLink$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), newsletterSponsorshipLink, {
-  'default': newsletterSponsorshipLink
-}));
-
-var footer = `<Footer>{children}</Footer>`;
-
-var footer$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), footer, {
-  'default': footer
-}));
-
-var headline = 
-`<HeadLine />`;
-
-var headline$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), headline, {
-  'default': headline
-}));
-
-var logoBottom = `<Logo />`;
-
-var logoBottom$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), logoBottom, {
-  'default': logoBottom
-}));
-
-var logoTop = `<Logo />`;
-
-var logoTop$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), logoTop, {
-  'default': logoTop
-}));
-
-var previewText = `<PreviewText>{content}</PreviewText>`;
-
-var previewText$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), previewText, {
-  'default': previewText
-}));
-
-var section = `<Section>{content}</Section>`;
-
-var section$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), section, {
-  'default': section
-}));
-
-var sponsor = `<Sponsor param="{content}" />`;
-
-var sponsor$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), sponsor, {
-  'default': sponsor
-}));
-
-var index = {
-    footer: footer$1,
-    headline: headline$1,
-    logoBottom: logoBottom$1,
-    logoTop: logoTop$1,
-    previewText: previewText$1,
-    section: section$1,
-    sponsor: sponsor$1
-};
-
-var body = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': index
-});
-
-var fonts = `<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Merriweather+Sans:400,400i,700,700i|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">`;
-
-var fonts$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), fonts, {
-  'default': fonts
-}));
-
-var headStyles = `<style type="text/css">
+const headStyles = `<style type="text/css">
 p{
   margin:10px 0;
   padding:0;
@@ -472,111 +389,86 @@ h4{
 
 }</style>`;
 
-var headStyles$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), headStyles, {
-  'default': headStyles
-}));
+const newsletterSponsorshipLink = `<NewsletterSponsorshipLink />`;
 
-var index$1 = {
-    address: address$1,
-    copyrights: copyrights$1,
-    fonts: fonts$1,
-    headStyles: headStyles$1,
-    newsletterSponsorshipLink: newsletterSponsorshipLink$1,
-    unsubscribe: unsubscribe$1,
+const unsubscribe = `<Unsubscribe />`;
+
+const Misc =  {
+    address,
+    copyrights,
+    fonts,
+    headStyles,
+    newsletterSponsorshipLink,
+    unsubscribe,
 };
 
-var misc = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': index$1
-});
+const footer = `<Footer>{children}</Footer>`;
 
-var heading= `<Heading>{content}</Heading>`;
+const headline = 
+`<HeadLine />`;
 
-var heading$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), heading, {
-  'default': heading
-}));
+const logoBottom = `<Logo />`;
 
-var image = `      <Image
+const logoTop = `<Logo />`;
+
+const previewText = `<PreviewText>{content}</PreviewText>`;
+
+const section = `<Section>{content}</Section>`;
+
+const sponsor = `<Sponsor param="{content}" />`;
+
+const Body = {
+    footer,
+    headline,
+    logoBottom,
+    logoTop,
+    previewText,
+    section,
+    sponsor
+};
+
+const heading = `<Heading>{content}</Heading>`;
+
+const image = `      <Image
         href="{}"
         src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/6.jpg"
         alt="{}"
       />`;
 
-var image$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), image, {
-  'default': image
-}));
+const italic = `<Italic>{content}</Italic>`;
 
-var italic = `<Italic>{content}</Italic>`;
+const link = `<Link href="{href}" />`;
 
-var italic$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), italic, {
-  'default': italic
-}));
+const list = `<List>{content}</List>`;
 
-var link = `<Link href="{href}" />`;
+const listItem = `<ListItem>{content}</ListItem>`;
 
-var link$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), link, {
-  'default': link
-}));
+const mainTitle = `<MainTitle>{content}</MainTitle>`;
 
-var list = `<List>{content}</List>`;
+const paragraph = `<Paragraph>{content}</Paragraph>`;
 
-var list$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), list, {
-  'default': list
-}));
+const strong = `<Strong>{content}</Strong>`;
 
-var listItem = `<ListItem>{content}</ListItem>`;
+const subtitle = `<SubTitle>{content}</SubTitle>`;
 
-var listItem$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), listItem, {
-  'default': listItem
-}));
-
-var mainTitle= `<MainTitle>{content}</MainTitle>`;
-
-var mainTitle$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), mainTitle, {
-  'default': mainTitle
-}));
-
-var paragraph = `<Paragraph>{content}</Paragraph>`;
-
-var paragraph$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), paragraph, {
-  'default': paragraph
-}));
-
-var strong = `<Strong>{content}</Strong>`;
-
-var strong$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), strong, {
-  'default': strong
-}));
-
-var subtitle = `<SubTitle>{content}</SubTitle>`;
-
-var subtitle$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.assign(/*#__PURE__*/Object.create(null), subtitle, {
-  'default': subtitle
-}));
-
-var index$2 = {
-    heading: heading$1,
-    image: image$1,
-    italic: italic$1,
-    link: link$1,
-    list: list$1,
-    listItem: listItem$1,
-    mainTitle: mainTitle$1,
-    paragraph: paragraph$1,
-    strong: strong$1,
-    subtitle: subtitle$1
+const Typography = {
+    heading,
+    image,
+    italic,
+    link,
+    list,
+    listItem,
+    mainTitle,
+    paragraph,
+    strong,
+    subtitle
 };
 
-var typography = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': index$2
-});
-
-var index$3 = {
-  body: body,
-  misc: misc,
-  typography: typography
+var Layout = {
+  Body: Body,
+  Misc: Misc,
+  Typography: Typography
 };
 
-export default index$3;
+export default Layout;
 //# sourceMappingURL=index.es.js.map
