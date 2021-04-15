@@ -1,6 +1,8 @@
 
 # Top Sectors Prone To Cyber Threats During The Pandemic
 
+**djdj**
+
 When the coronavirus pandemic burst out, corporate functions shifted priorities to embrace new practices and get through the pandemic. At that time we all thought that [social](https://hackernoon.com/the-social-dilemma-advertising-privacy-and-distraction-kz1y3th4) distancing and [work from home](https://hackernoon.com/3-cybersecurity-priorities-for-2021-threat-fatigue-remote-work-budget-m02m3wao) routines would be just stopgap measures taken to keep [businesses aboard](https://hackernoon.com/tagged/business).
 
 However, as a [remote job](https://hackernoon.com/tagged/remote) situation becomes the new normal for businesses across the world, it is time to face the truth. Rapid responses to the coronavirus pandemic [have left organizations vulnerable](https://hackernoon.com/how-to-prevent-data-theft-with-cybersecurity-bjn3w8g) to [security](https://hackernoon.com/6-cybersecurity-tools-youll-need-to-know-about-in-2019-6232eeb1c9ca) breaches. As of May 2nd, the FBI [reported an 800% increase](https://securityboulevard.com/2020/08/the-massive-shift-to-cyber-crime/) in cyber crimes with COVID-themed [malware](https://hackernoon.com/zooms-security-issues-now-endanger-the-online-privacy-of-minors-and-teachers-7ti2320f) being the absolute winners among all.

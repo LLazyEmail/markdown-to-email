@@ -3,6 +3,7 @@ package-lock.json
 node_modules
 
 src/tests/_generated
+src/parserMDReact/tests/_generated
 frontend-next/
 package/layouts/dist/*
 package/layouts/node_modules/*

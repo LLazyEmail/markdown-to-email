@@ -74,10 +74,8 @@ function parseMDReact(source) {
   //   replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
 
   //   replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
-
   replaceMDBinded(REGEXP_STRONG, strong);
-
-  //   replaceMDBinded(REGEXP_EM, italic);
+  replaceMDBinded(REGEXP_EM, italic);
 
   //   replaceMDBinded(REGEXP_HEADER, header);
 
@@ -109,7 +107,7 @@ function parseMDReact(source) {
 function parseMDReactFull(params) {
   const { source } = params;
 
-  return parse(source);
+  return parseMDReact(source);
 }
 
 module.exports = { parseMDReact, parseMDReactFull };
