@@ -12,6 +12,7 @@
     "build:babel": "babel src -d dist",
     "prepublish": "npm run clean && npm run build",
     "test": "npm run test",
+    "testImport": "node ./test.js",
     "clean": "shx rm -rf ./coverage && shx rm -rf ./dist"
   },
   "devDependencies": {

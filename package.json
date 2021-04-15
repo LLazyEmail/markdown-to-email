@@ -8,6 +8,7 @@
     "test:watch": "npm run checkFolders && jest --watch ./src/tests",
     "parse": "npm run checkFolders && node ./src/parser",
     "parse:full": "npm run checkFolders && cross-env PARSE=full node ./src/parser",
+    "parseReact": "npm run checkFolders && cross-env PARSE=reactContentOnly node ./src/parser",
     "lint": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
     "build:small": "npm run checkFolders && node ./src/index.js",
     "checkFolders": "node ./checkFolders"
