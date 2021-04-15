@@ -106,6 +106,7 @@ Links
 - https://stackoverflow.com/questions/47016770/replace-markdown-characters-with-regex
 
 
+- https://www.htmlemailcheck.com/check/
 
 more about regex
 
