@@ -1,2 +1,2 @@
 const layouts = require("./dist/index.cjs");
-console.log(layouts);
+console.log(layouts.reactFullTemplate("Hello"));

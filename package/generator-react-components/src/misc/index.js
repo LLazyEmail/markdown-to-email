@@ -5,7 +5,7 @@ import { headStyles } from './head-styles';
 import { newsletterSponsorshipLink } from './newsletter-sponsorship-link';
 import { unsubscribe } from './unsubscribe';
 
-const Misc =  {
+const misc =  {
     address,
     copyrights,
     fonts,
@@ -14,4 +14,4 @@ const Misc =  {
     unsubscribe,
 }
 
-export default Misc;
+export default misc;

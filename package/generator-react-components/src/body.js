@@ -1,3 +1,9 @@
-import { logoTop, logoBottom, footer } from './body/';
+import { logoTop, logoBottom, footer } from "./body/";
 
-export const BBBody = `<Body>{children}</Body>`;
+function getBody(parsedContent) {
+  return `
+<Body>${parsedContent}</Body>
+    `;
+}
+
+export default getBody;

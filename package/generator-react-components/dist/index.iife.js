@@ -396,7 +396,7 @@ h4{
 
   const unsubscribe = `<Unsubscribe />`;
 
-  const Misc =  {
+  const misc =  {
       address,
       copyrights,
       fonts,
@@ -420,7 +420,7 @@ h4{
 
   const sponsor = `<Sponsor param="{content}" />`;
 
-  const Body = {
+  const body = {
       footer,
       headline,
       logoBottom,
@@ -467,12 +467,23 @@ h4{
       subtitle
   };
 
-  var Layout = {
-    Body: Body,
-    Misc: Misc,
-    Typography: Typography
+  var head = "<Head/>";
+
+  function getBody(parsedContent) {
+    return "\n<Body>".concat(parsedContent, "</Body>\n    ");
+  }
+
+  function reactFullTemplate(parsedContent) {
+    return "\n  import React from \"react\";\n\n  const Content = () => {\n    return (\n      <Template>\n        ".concat(head, "\n        ").concat(getBody(parsedContent), "\n      </Template>\n    );\n  };\n  \n  export default Content;\n  \n  ");
+  }
+
+  var layout = {
+    body: body,
+    misc: misc,
+    typography: Typography,
+    reactFullTemplate: reactFullTemplate
   };
 
-  return Layout;
+  return layout;
 
 }());

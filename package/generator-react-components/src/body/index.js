@@ -6,7 +6,7 @@ import { previewText } from './previewText';
 import { section } from './section';
 import { sponsor } from './sponsor';
 
-const Body = {
+const body = {
     footer,
     headline,
     logoBottom,
@@ -16,4 +16,4 @@ const Body = {
     sponsor
 }
 
-export default Body;
+export default body;
