@@ -1,1 +1,1 @@
-export const link = `<Link href="{href}" />`;
+export const link = `<Link href="{href}">{content}</Link>`;
