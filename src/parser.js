@@ -11,19 +11,19 @@ const CONTENT_SOURCE = "source/source.md";
 
 switch (process.env.PARSE) {
   case "full":
-    generate_full_template();
+    generateFullTemplate();
     break;
   case "reactContentOnly":
     //same as default, but with react components instead.
-    generate_react_content();
+    generateReactContent();
     break;
   case "reactFull":
-    generate_react_full_template();
+    generateReactRullTemplate();
   default:
-    generate_content_only();
+    generateContentOnly();
 }
 
-function generate_full_template() {
+function generateFullTemplate() {
   const parsedContent = parseFullTHing({ source: FULL_SOURCE });
   checkWarnings(parsedContent.warnings);
 
@@ -35,7 +35,7 @@ function generate_full_template() {
   console.log(chalk.green.bold(message));
 }
 
-function generate_react_content() {
+function generateReactContent() {
   const parsedContent = parseMDReact(CONTENT_SOURCE);
   // console.log("parsedContent", parsedContent);
   checkWarnings(parsedContent.warnings);
@@ -45,9 +45,9 @@ function generate_react_content() {
   console.log(chalk.green.bold(message));
 }
 
-function generate_react_full_template() {}
+function generateReactRullTemplate() {}
 
-function generate_content_only() {
+function generateContentOnly() {
   const parsedContent = parse(CONTENT_SOURCE);
   checkWarnings(parsedContent.warnings);
 
@@ -59,6 +59,6 @@ function generate_content_only() {
 }
 
 module.exports = {
-  generate_content_only,
-  generate_full_template,
+  generateContentOnly,
+  generateFullTemplate,
 };
