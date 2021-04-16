@@ -54,10 +54,10 @@ function header(text, chars, content) {
     content: content.trim(),
   };
 
-  const titleType = ["title", "subtitle", "heading"];
+  const titleType = ["mainTitle", "subtitle", "heading"];
 
   const result =
-    newLine + replaceHTMLWrapper(titleType[chars.length - 1], config);
+    newLine + replaceReactWrapper(titleType[chars.length - 1], config);
 
   return result;
 }
