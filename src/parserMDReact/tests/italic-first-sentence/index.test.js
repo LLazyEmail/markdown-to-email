@@ -1,4 +1,4 @@
-const { write, readSourceFile } = require("../../../utils");
+const { writeReactComponent, readSourceFile } = require("../../../utils");
 const { italic } = require("../../callbacks-simpleMDReact");
 const { replaceMarkdown } = require("../../../helpers");
 const { REGEXP_EM } = require("../../constantsMDReact");
@@ -15,7 +15,7 @@ describe("testing italic-first-sentence", () => {
     replaceMarkdown.call(parsedContent, REGEXP_EM, italic);
 
     const fileName = "ItalicFirstSentence.js";
-    write(fileName, parsedContent.content, outFolder);
+    writeReactComponent(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);
   });
 });

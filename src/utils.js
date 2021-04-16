@@ -39,6 +39,34 @@ function displayCLIErrors(errors, warnings){
     }
 }
 
+const reactComponent = `
+import React from "react";
+
+const Content = () => {
+  return (
+    <>
+      {content}
+    </>
+  );
+};
+
+export default Content;
+
+`;
+
+function writeReactComponent(fileName, content, dir = "generated", message) {
+  // isFolderExists(dir); // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
+
+  var _path = dir + "/" + fileName; //@todo it's not an ideal thing
+  const result = reactComponent.replace(/{content}/g, content);
+
+  fs.writeFileSync(_path, result, function (err) {
+    if (err) throw new Error("file not written");
+  });
+
+  message && console.log("file has been written successfully" + fileName);
+}
+
 function write(fileName, content, dir = "generated", message) {
   // isFolderExists(dir); // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
 
@@ -68,6 +96,7 @@ const newLine = platform === "win32" ? "\r\n" : "\n";
 
 module.exports = {
   write,
+  writeReactComponent,
   readSourceFile,
   isFolderExists,
   newLine,

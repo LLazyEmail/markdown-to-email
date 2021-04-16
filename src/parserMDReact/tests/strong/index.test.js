@@ -1,4 +1,4 @@
-const { write, readSourceFile } = require("../../../utils");
+const { writeReactComponent, readSourceFile } = require("../../../utils");
 const { strong } = require("../../callbacks-simpleMDReact");
 const { replaceMarkdown } = require("../../../helpers");
 const { REGEXP_STRONG } = require("../../constantsMDReact");
@@ -15,7 +15,7 @@ describe("testing strong", () => {
     replaceMarkdown.call(parsedContent, REGEXP_STRONG, strong);
 
     const fileName = "Strong.js";
-    write(fileName, parsedContent.content, outFolder);
+    writeReactComponent(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);
   });
 });
