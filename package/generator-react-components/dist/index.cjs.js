@@ -439,7 +439,7 @@ const image = `      <Image
 
 const italic = `<Italic>{content}</Italic>`;
 
-const link = `<Link href="{href}" />`;
+const link = `<Link href="{href}">{content}</Link>`;
 
 const list = `<List>{content}</List>`;
 
