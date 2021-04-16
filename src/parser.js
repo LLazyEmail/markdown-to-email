@@ -4,7 +4,7 @@ const layouts = require("atherdon-newsletter-js-layouts");
 const reactLayouts = require("atherdon-newsletter-react");
 
 const { parse, parseFullTHing } = require("./parse");
-const { write, readFile, displayCLIErrors, checkWarnings } = require("./utils");
+const { write, readFile, displayCLIErrors, checkWarnings,writeReactComponent } = require("./utils");
 const {
   parseMDReact,
   parseMDReactFullThing,
@@ -46,7 +46,7 @@ function generateReactContent() {
   // console.log("parsedContent", parsedContent);
   checkWarnings(parsedContent.warnings);
   const fileName = "Content" + Date.now() + ".js";
-  write(fileName, parsedContent.content);
+  writeReactComponent(fileName, parsedContent.content);
   var message = "The Content has been parsed successfully";
   console.log(chalk.green.bold(message));
 }

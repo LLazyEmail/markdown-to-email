@@ -51,7 +51,6 @@ const Content = () => {
 };
 
 export default Content;
-
 `;
 
 function writeReactComponent(fileName, content, dir = "generated", message) {

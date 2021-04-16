@@ -80,7 +80,7 @@ function parseMDReact(source) {
   //   replaceMDBinded(REGEXP_HEADER, header);
 
   //   replaceMDBinded(REGEXP_IMAGE, image);
-  //   replaceMDBinded(REGEXP_LINK, link);
+    replaceMDBinded(REGEXP_LINK, link);
 
   //   replaceMDBinded(REGEXP_DEL, del);
   //   replaceMDBinded(REGEXP_Q, q);
