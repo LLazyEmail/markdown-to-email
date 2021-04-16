@@ -30,7 +30,7 @@ function link(text, title, href) {
     href: href.trim(),
   };
 
-  const result = replaceHTMLWrapper("link", config);
+  const result = replaceReactWrapper("link", config);
   return result;
 }
 

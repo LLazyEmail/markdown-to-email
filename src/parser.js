@@ -1,10 +1,14 @@
 const chalk = require("chalk");
 const { forEach } = require("lodash");
 const layouts = require("atherdon-newsletter-js-layouts");
+const reactLayouts = require("atherdon-newsletter-react");
 
 const { parse, parseFullTHing } = require("./parse");
 const { write, readFile, displayCLIErrors, checkWarnings } = require("./utils");
-const { parseMDReact } = require("./parserMDReact/parseMDReact");
+const {
+  parseMDReact,
+  parseMDReactFullThing,
+} = require("./parserMDReact/parseMDReact");
 
 const FULL_SOURCE = "source/source-full.md";
 const CONTENT_SOURCE = "source/source.md";
@@ -18,9 +22,11 @@ switch (process.env.PARSE) {
     generateReactContent();
     break;
   case "reactFull":
-    generateReactRullTemplate();
+    generateReactFullTemplate();
+    break;
   default:
     generateContentOnly();
+    break;
 }
 
 function generateFullTemplate() {
@@ -41,11 +47,21 @@ function generateReactContent() {
   checkWarnings(parsedContent.warnings);
   const fileName = "Content" + Date.now() + ".js";
   write(fileName, parsedContent.content);
-  var message = "The content has been parsed successfully";
+  var message = "The Content has been parsed successfully";
   console.log(chalk.green.bold(message));
 }
 
-function generateReactRullTemplate() {}
+function generateReactFullTemplate() {
+  const parsedContent = parseMDReactFullThing({ source: FULL_SOURCE });
+  checkWarnings(parsedContent.warnings);
+
+  const fileName = "FullTemplate" + Date.now() + ".js";
+  const fullContent = reactLayouts.reactFullTemplate(parsedContent.content);
+  write(fileName, fullContent);
+
+  var message = "The FullTemplate has been parsed successfully";
+  console.log(chalk.green.bold(message));
+}
 
 function generateContentOnly() {
   const parsedContent = parse(CONTENT_SOURCE);

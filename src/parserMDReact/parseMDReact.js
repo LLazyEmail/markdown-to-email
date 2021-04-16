@@ -104,10 +104,10 @@ function parseMDReact(source) {
   return state;
 }
 
-function parseMDReactFull(params) {
+function parseMDReactFullThing(params) {
   const { source } = params;
 
   return parseMDReact(source);
 }
 
-module.exports = { parseMDReact, parseMDReactFull };
+module.exports = { parseMDReact, parseMDReactFullThing };
