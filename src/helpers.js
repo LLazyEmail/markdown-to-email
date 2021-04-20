@@ -15,7 +15,7 @@ function replaceReactWrapper(wrapperName, config, folder = "typography") {
   // console.log(reactLayouts.Typography.strong);
   // console.log("name", config);
   // this part will be updated very soon
-  let wrapper = reactLayouts.typography[wrapperName];
+  let wrapper = reactLayouts[folder][wrapperName];
   Object.keys(config).forEach((name) => {
     wrapper = wrapper.replace(new RegExp(`{${name}}`, "g"), config[name]);
   });
