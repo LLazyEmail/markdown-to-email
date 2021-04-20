@@ -13,7 +13,7 @@ function paragraphWrapper(text, line) {
   const config = {
     content: trimmed,
   };
-  const result = newLine + replaceHTMLWrapper("paragraph", config) + newLine;
+  const result = newLine + replaceReactWrapper("paragraph", config) + newLine;
   //console.log(config);
 
   return result;
