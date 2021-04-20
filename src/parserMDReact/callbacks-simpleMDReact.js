@@ -7,6 +7,14 @@ const code = "<code>$1</code>";
 const hr = `${newLine}<hr />`;
 const empty = "";
 
+function previewText(text, content) {
+  const config = {
+    content,
+  };
+  this.previewText = true;
+  return replaceReactWrapper("previewText", config, "body");
+}
+
 function italic(text, left, _, content, right) {
   const config = {
     content,
@@ -75,4 +83,5 @@ module.exports = {
   code,
   hr,
   empty,
+  previewText,
 };
