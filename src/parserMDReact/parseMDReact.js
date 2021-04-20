@@ -85,7 +85,8 @@ function parseMDReact(source) {
   //   replaceMDBinded(REGEXP_Q, q);
   //   replaceMDBinded(REGEXP_CODE, code);
 
-  //   replaceMDBinded(REGEXP_UL_LIST, ulList);
+  replaceMDBinded(REGEXP_UL_LIST, ulList);
+
   //   replaceMDBinded(REGEXP_OL_LIST, olList);
 
   //   replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
