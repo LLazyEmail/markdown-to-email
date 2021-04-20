@@ -51,12 +51,11 @@ const {
 } = require("./constantsMDReact");
 
 // @todo update this method. I'm sure it can be improved.
-function parseMDReact(source) {
+function parseMDReact(source, isFull) {
   let markdown = readSourceFile(source);
 
   let state = {
     content: markdown,
-    previewText: "",
     warnings: {
       images: 0,
     },
@@ -69,9 +68,9 @@ function parseMDReact(source) {
 
   const replaceMDBinded = replaceMarkdown.bind(state);
 
-  //   const replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
-
-  //   replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
+  if (isFull) {
+    replaceMDBinded(REGEXP_PREVIEW_TEXT);
+  }
 
   //   replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
   replaceMDBinded(REGEXP_STRONG, strong);
@@ -80,17 +79,15 @@ function parseMDReact(source) {
 
   replaceMDBinded(REGEXP_IMAGE, image);
   replaceMDBinded(REGEXP_LINK, link);
-
+  // TODO check this
   //   replaceMDBinded(REGEXP_DEL, del);
   //   replaceMDBinded(REGEXP_Q, q);
   //   replaceMDBinded(REGEXP_CODE, code);
 
   replaceMDBinded(REGEXP_UL_LIST, ulList);
-
+  // TODO check this
   //   replaceMDBinded(REGEXP_OL_LIST, olList);
-
   //   replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
-
   //   replaceMDBinded(REGEXP_HR, hr);
   replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
   //   replaceMDBinded(REGEXP_EMPTY_UL, empty);
@@ -107,7 +104,7 @@ function parseMDReact(source) {
 function parseMDReactFullThing(params) {
   const { source } = params;
 
-  return parseMDReact(source);
+  return parseMDReact(source, true);
 }
 
 module.exports = { parseMDReact, parseMDReactFullThing };
