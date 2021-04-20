@@ -78,7 +78,7 @@ function parseMDReact(source) {
   replaceMDBinded(REGEXP_EM, italic);
   replaceMDBinded(REGEXP_HEADER, header);
 
-  //   replaceMDBinded(REGEXP_IMAGE, image);
+  replaceMDBinded(REGEXP_IMAGE, image);
   replaceMDBinded(REGEXP_LINK, link);
 
   //   replaceMDBinded(REGEXP_DEL, del);
@@ -96,7 +96,7 @@ function parseMDReact(source) {
   //   replaceMDBinded(REGEXP_EMPTY_OL, empty);
   //   replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
 
-    replaceMDBinded(REGEXP_BR, br);
+  replaceMDBinded(REGEXP_BR, br);
   //   replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
   //   replaceMDBinded(REGEXP_MEM, mem);
   //console.log( state )

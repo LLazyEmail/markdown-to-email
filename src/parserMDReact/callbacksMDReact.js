@@ -1,4 +1,4 @@
-const { replaceHTMLWrapper } = require("../helpers");
+const { replaceHTMLWrapper, replaceReactWrapper } = require("../helpers");
 const { newLine } = require("../utils");
 
 /// function is not working as planned
@@ -80,7 +80,7 @@ function image(text, alt, srcWithTooltip) {
 
   this.warnings.images++;
 
-  const result = replaceHTMLWrapper("image", config);
+  const result = replaceReactWrapper("image", config);
   return result;
 }
 
