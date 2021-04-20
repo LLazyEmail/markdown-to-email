@@ -12,6 +12,7 @@ const {
   code,
   hr,
   empty,
+  previewText
 } = require("./callbacks-simpleMDReact");
 
 const {
@@ -24,7 +25,7 @@ const {
   newLine,
 } = require("./callbacksMDReact");
 
-const { replaceMarkdown, replaceMarkdownPreviewText } = require("../helpers");
+const { replaceMarkdown } = require("../helpers");
 
 const {
   REGEXP_HEADER,
@@ -69,7 +70,7 @@ function parseMDReact(source, isFull) {
   const replaceMDBinded = replaceMarkdown.bind(state);
 
   if (isFull) {
-    replaceMDBinded(REGEXP_PREVIEW_TEXT);
+    replaceMDBinded(REGEXP_PREVIEW_TEXT, previewText);;
   }
 
   //   replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
