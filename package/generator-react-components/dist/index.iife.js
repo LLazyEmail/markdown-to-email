@@ -432,10 +432,10 @@ h4{
 
   const heading = `<Heading>{content}</Heading>`;
 
-  const image = `      <Image
-        href="{}"
-        src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/6.jpg"
-        alt="{}"
+  const image = `<Image
+        href="{href}"
+        src="{src}"
+        alt="{altText}"
       />`;
 
   const italic = `<Italic>{content}</Italic>`;
@@ -454,7 +454,7 @@ h4{
 
   const subtitle = `<SubTitle>{content}</SubTitle>`;
 
-  const Typography = {
+  const typography = {
       heading,
       image,
       italic,
@@ -480,7 +480,7 @@ h4{
   var layout = {
     body: body,
     misc: misc,
-    typography: Typography,
+    typography: typography,
     reactFullTemplate: reactFullTemplate
   };
 
