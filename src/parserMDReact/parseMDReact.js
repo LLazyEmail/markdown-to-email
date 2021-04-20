@@ -92,7 +92,7 @@ function parseMDReact(source) {
   //   replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
 
   //   replaceMDBinded(REGEXP_HR, hr);
-  //   replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
+  replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
   //   replaceMDBinded(REGEXP_EMPTY_UL, empty);
   //   replaceMDBinded(REGEXP_EMPTY_OL, empty);
   //   replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
