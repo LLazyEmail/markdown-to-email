@@ -11,6 +11,7 @@ function previewText(text, content) {
   const config = {
     content,
   };
+
   this.previewText = true;
   return replaceReactWrapper("previewText", config, "body");
 }
