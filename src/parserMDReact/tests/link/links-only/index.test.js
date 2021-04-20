@@ -7,7 +7,7 @@ const outFolder = "src/parserMDReact/tests/_generated";
 
 describe("testing links-only", () => {
   it("renders links-only", () => {
-    let markdown = readSourceFile("src/tests/link/links-only/content.md");
+    let markdown = readSourceFile("src/parserMDReact/tests/link/links-only/content.md");
     let parsedContent = {
       content: markdown,
     };

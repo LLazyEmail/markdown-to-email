@@ -7,7 +7,7 @@ const outFolder = "src/parserMDReact/tests/_generated";
 
  describe("testing links when space before link", () => {
    it("renders testing links when space before link", () => {
-     let markdown = readSourceFile("src/tests/link/removed-space-before-link/content.md");
+     let markdown = readSourceFile("src/parserMDReact/tests/link/removed-space-before-link/content.md");
      let parsedContent = {
        content: markdown,
      };

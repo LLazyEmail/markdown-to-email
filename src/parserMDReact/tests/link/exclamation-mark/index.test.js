@@ -7,7 +7,7 @@ const outFolder = "src/parserMDReact/tests/_generated";
 
 describe("testing link/exclamation-mark", () => {
   it("renders link/exclamation-mark", () => {
-    let markdown = readSourceFile("src/tests/link/exclamation-mark/content.md");
+    let markdown = readSourceFile("src/parserMDReact/tests/link/exclamation-mark/content.md");
     let parsedContent = {
       content: markdown,
     };

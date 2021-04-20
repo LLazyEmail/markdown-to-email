@@ -7,7 +7,7 @@ const outFolder = "src/parserMDReact/tests/_generated";
 
 describe("testing italic-first-sentence", () => {
   it("renders italic-first-sentence", () => {
-    let markdown = readSourceFile("src/tests/italic-first-sentence/italic.md");
+    let markdown = readSourceFile("src/parserMDReact/tests/italic-first-sentence/italic.md");
     let parsedContent = {
       content: markdown,
     };
