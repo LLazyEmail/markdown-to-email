@@ -442,7 +442,8 @@ h4{
 
   const link = `<Link href="{href}">{content}</Link>`;
 
-  const list = `<List>{content}</List>`;
+  /* values of type UL, OL  */
+  const list = `<List type="{type}">{content}</List>`;
 
   const listItem = `<ListItem>{content}</ListItem>`;
 
@@ -454,17 +455,29 @@ h4{
 
   const subtitle = `<SubTitle>{content}</SubTitle>`;
 
+  const q = "<Q>{content}</Q>";
+
+  const del = '<Del>{content}</Del>';
+
+  const code = '<Code>{content}</Code>';
+
+  const blockquote = '<Blockquote>{content}</Blockquote>';
+
   const typography = {
-      heading,
-      image,
-      italic,
-      link,
-      list,
-      listItem,
-      mainTitle,
-      paragraph,
-      strong,
-      subtitle
+    heading,
+    image,
+    italic,
+    link,
+    list,
+    listItem,
+    mainTitle,
+    paragraph,
+    strong,
+    subtitle,
+    q,
+    del,
+    code,
+    blockquote,
   };
 
   var head = "<Head/>";
