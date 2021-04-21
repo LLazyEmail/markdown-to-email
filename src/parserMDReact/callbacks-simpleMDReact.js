@@ -68,7 +68,11 @@ function link(text, title, href) {
 }
 
 function blockquote(text, tmp, item) {
-  return `${newLine}<blockquote>` + item.trim() + "</blockquote>";
+  const config = {
+    content: `${newLine}${item.trim()}`,
+  };
+  const result = replaceReactWrapper("blockquote", config);
+  return result;
 }
 
 function mem(text, src, href, altText) {
