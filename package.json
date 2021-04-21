@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "atherdon-newsletter-js-layouts": "1.0.15",
-    "atherdon-newsletter-react": "^1.0.7",
+    "atherdon-newsletter-react": "^1.0.8",
     "chalk": "^4.1.1",
     "cross-env": "^7.0.3",
     "lodash": "^4.17.21",
