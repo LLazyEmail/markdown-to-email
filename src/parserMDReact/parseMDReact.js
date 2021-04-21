@@ -82,7 +82,7 @@ function parseMDReact(source, isFull) {
   replaceMDBinded(REGEXP_LINK, link);
   // TODO check this
   //   replaceMDBinded(REGEXP_DEL, del);
-  //   replaceMDBinded(REGEXP_Q, q);
+    replaceMDBinded(REGEXP_Q, q);
   //   replaceMDBinded(REGEXP_CODE, code);
 
   replaceMDBinded(REGEXP_UL_LIST, ulList);

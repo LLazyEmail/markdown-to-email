@@ -21,7 +21,7 @@ function paragraphWrapper(text, line) {
 /// !end function is not working as planned
 
 function getParsedSubList(subList) {
-   return subList.replace(
+  return subList.replace(
     new RegExp(`\\s{4}\\*(.*?)${newLine}`, "g"),
     (text, subItem) => {
       const config = {
@@ -44,6 +44,7 @@ function ulList(text, list) {
 
       const config = {
         content: parsedSubItem + newLine,
+        type: "UL",
       };
 
       return `${newLine + replaceReactWrapper("list", config)}`;
@@ -63,6 +64,7 @@ function ulList(text, list) {
 
   const config = {
     content: parsedList + newLine,
+    type: "UL",
   };
 
   return `${newLine + replaceReactWrapper("list", config) + newLine}`;
