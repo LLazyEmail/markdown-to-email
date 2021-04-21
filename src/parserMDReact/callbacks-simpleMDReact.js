@@ -1,7 +1,6 @@
 const { replaceHTMLWrapper, replaceReactWrapper } = require("../helpers");
 const { newLine } = require("../utils");
 
-const code = "<code>$1</code>";
 const hr = `${newLine}<hr />`;
 const empty = "";
 
@@ -14,7 +13,16 @@ function previewText(text, content) {
   return replaceReactWrapper("previewText", config, "body");
 }
 
-function del(text, content){
+function code(text, content) {
+  const config = {
+    content,
+  };
+
+  const result = replaceReactWrapper("code", config);
+  return result;
+}
+
+function del(text, content) {
   const config = {
     content,
   };
@@ -23,7 +31,7 @@ function del(text, content){
   return result;
 }
 
-function q(text, content){
+function q(text, content) {
   const config = {
     content,
   };
