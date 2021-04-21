@@ -8,18 +8,26 @@ import { mainTitle } from './mainTitle';
 import { paragraph } from './paragraph';
 import { strong } from './strong';
 import { subtitle } from './subtitle';
+import { q } from './q';
+import { del } from './del';
+import { code } from './code';
+import { blockquote } from './blockquote';
 
 const typography = {
-    heading,
-    image,
-    italic,
-    link,
-    list,
-    listItem,
-    mainTitle,
-    paragraph,
-    strong,
-    subtitle
-}
+  heading,
+  image,
+  italic,
+  link,
+  list,
+  listItem,
+  mainTitle,
+  paragraph,
+  strong,
+  subtitle,
+  q,
+  del,
+  code,
+  blockquote,
+};
 
 export default typography;
