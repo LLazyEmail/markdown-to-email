@@ -12,7 +12,7 @@ const {
   code,
   hr,
   empty,
-  previewText
+  previewText,
 } = require("./callbacks-simpleMDReact");
 
 const {
@@ -70,7 +70,7 @@ function parseMDReact(source, isFull) {
   const replaceMDBinded = replaceMarkdown.bind(state);
 
   if (isFull) {
-    replaceMDBinded(REGEXP_PREVIEW_TEXT, previewText);;
+    replaceMDBinded(REGEXP_PREVIEW_TEXT, previewText);
   }
 
   //   replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
@@ -81,8 +81,8 @@ function parseMDReact(source, isFull) {
   replaceMDBinded(REGEXP_IMAGE, image);
   replaceMDBinded(REGEXP_LINK, link);
   // TODO check this
-  //   replaceMDBinded(REGEXP_DEL, del);
-    replaceMDBinded(REGEXP_Q, q);
+  replaceMDBinded(REGEXP_DEL, del);
+  replaceMDBinded(REGEXP_Q, q);
   //   replaceMDBinded(REGEXP_CODE, code);
 
   replaceMDBinded(REGEXP_UL_LIST, ulList);
