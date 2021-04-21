@@ -23,7 +23,6 @@
 // for hackernoon_logo_path
 // for HN socials, with images and shit
 
-
 // const REGEXP_H3 = /^### (.*$)/gim;
 // const REGEXP_H2 = /^## (.*$)/gim;
 // const REGEXP_H1 = /^# (.*$)/gim;
@@ -39,10 +38,8 @@
 
 const { newLine } = require("./utils");
 
-
 // @TODO reorganize this file.
 // some lines are literals, some lines using new RegExp object...
-
 
 const REGEXP_HASH_TAG = new RegExp(
   "#[~##\t\n\v\f\r \u00a0\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u200b\u2028\u2029\u3000]",
@@ -60,19 +57,19 @@ const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, "g");
 const REGEXP_IMAGE = /!\[([^\[]+)\]\(([^\)]+)\)/g;
 const REGEXP_LINK = /\[([^\[]+)\]\(([^\)]+)\)/g;
 
-const REGEXP_STRONG = /(\*\*|__)(.*?)(\*?)\1/g;      // bold
-const REGEXP_DEL = /\~\~(.*?)\~\~/g;                 // del
-const REGEXP_Q = /\:\"(.*?)\"\:/g;                   // quote
-const REGEXP_CODE = /`(.*?)`/g;                      // inline code
+const REGEXP_STRONG = /(\*\*|__)(.*?)(\*?)\1/g; // bold
+const REGEXP_DEL = /\~\~(.*?)\~\~/g; // del
+const REGEXP_Q = /\:\"(.*?)\"\:/g; // quote
+const REGEXP_CODE = /`(.*?)`/g; // inline code
 
 const REGEXP_UL_LIST = new RegExp(
   `${newLine}(((\\s{4})?\\*(.*?)${newLine}){1,})`,
   "g"
-);    // ul lists
-const REGEXP_OL_LIST = new RegExp(`${newLine}[0-9]+\\.(.*)`, "g");  // ol lists
+); // ul lists
+const REGEXP_OL_LIST = new RegExp(`${newLine}[0-9]+\\.(.*)`, "g"); // ol lists
 
-const REGEXP_BLOCKQUOTE = new RegExp(`${newLine}(&gt;|\\>)(.*)`, "g");  // blockquotes
-const REGEXP_HR = new RegExp(`${newLine}-{5,}`, "g");   // horizontal rule
+const REGEXP_BLOCKQUOTE = new RegExp(`${newLine}(&gt;|\\>)(.*)`, "g"); // blockquotes
+const REGEXP_HR = new RegExp(`${newLine}-{5,}`, "g"); // horizontal rule
 
 const REGEXP_PARAGRAPH = new RegExp(`${newLine}(.+?)${newLine}`, "g"); // add paragraphs
 
@@ -81,7 +78,6 @@ const REGEXP_EMPTY_OL = /<\/ol>\s?<ol>/g;
 const REGEXP_BR = new RegExp(`((${newLine}){2,})`, "g");
 const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
 const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
-
 
 // Custom tags that we invented for our inner needs
 
