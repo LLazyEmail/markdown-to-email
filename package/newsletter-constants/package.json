@@ -13,7 +13,9 @@
     "prepublish": "npm run clean && npm run build",
     "test": "npm run test",
     "clean": "shx rm -rf ./coverage && shx rm -rf ./dist",
-    "lint:prettier": "prettier --write src/"
+    "lint:prettier": "prettier --write src/",
+    "lint": "eslint --ext .js . --ignore-path ./.eslintignore --resolve-plugins-relative-to .",
+    "lint:fix": "eslint --fix . --ignore-path ./.eslintignore --resolve-plugins-relative-to ."
   },
   "devDependencies": {
     "@babel/cli": "7.13.16",
@@ -23,7 +25,9 @@
     "@rollup/plugin-babel": "5.3.0",
     "@rollup/plugin-commonjs": "18.0.0",
     "@rollup/plugin-node-resolve": "11.2.1",
+    "babel-eslint": "^10.1.0",
     "eslint": "7.24.0",
+    "eslint-plugin-json": "^2.1.2",
     "os": "0.1.1",
     "prettier": "2.2.1",
     "rollup": "2.45.2",
