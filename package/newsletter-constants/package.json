@@ -12,7 +12,8 @@
     "build:babel": "babel src -d dist",
     "prepublish": "npm run clean && npm run build",
     "test": "npm run test",
-    "clean": "shx rm -rf ./coverage && shx rm -rf ./dist"
+    "clean": "shx rm -rf ./coverage && shx rm -rf ./dist",
+    "lint:prettier": "prettier --write src/"
   },
   "devDependencies": {
     "@babel/cli": "7.13.16",
