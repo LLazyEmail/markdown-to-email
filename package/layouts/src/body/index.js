@@ -7,13 +7,13 @@ import { section } from './section';
 import { sponsor } from './sponsor';
 
 const body = {
-    footer,
-    headline,
-    logoBottom,
-    logoTop,
-    previewText,
-    section,
-    sponsor
-}
+  footer,
+  headline,
+  logoBottom,
+  logoTop,
+  previewText,
+  section,
+  sponsor
+};
 
 export default body;

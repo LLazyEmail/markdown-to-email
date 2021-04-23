@@ -10,16 +10,16 @@ import { strong } from './strong';
 import { subtitle } from './subtitle';
 
 const typography = {
-    heading,
-    image,
-    italic,
-    link,
-    list,
-    listItem,
-    title,
-    paragraph,
-    strong,
-    subtitle
-}
+  heading,
+  image,
+  italic,
+  link,
+  list,
+  listItem,
+  title,
+  paragraph,
+  strong,
+  subtitle
+};
 
 export default typography;
