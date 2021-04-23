@@ -10,12 +10,12 @@ import Misc from '../misc/';
 // console.log(Misc)
 
 const {
-    address,
-    copyrights,
-    fonts,
-    headStyles,
-    newsletterSponsorshipLink,
-    unsubscribe,
+  address,
+  copyrights,
+  fonts,
+  headStyles,
+  newsletterSponsorshipLink,
+  unsubscribe,
 } = Misc;
 
 export const footer = `<tr>

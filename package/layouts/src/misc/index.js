@@ -6,12 +6,12 @@ import { newsletterSponsorshipLink } from './newsletter-sponsorship-link';
 import { unsubscribe } from './unsubscribe';
 
 const misc = {
-    address,
-    copyrights,
-    fonts,
-    headStyles,
-    newsletterSponsorshipLink,
-    unsubscribe,
-}
+  address,
+  copyrights,
+  fonts,
+  headStyles,
+  newsletterSponsorshipLink,
+  unsubscribe,
+};
 
 export default misc;

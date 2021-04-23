@@ -1,2 +1,2 @@
-export const headline = 
+export const headline =
 `content`;
