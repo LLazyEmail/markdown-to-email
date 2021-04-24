@@ -543,7 +543,7 @@ function fullTemplate(body) {
                                                                             <tr>
                                                                               <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                                 <a href="https://twitter.com/hackernoon" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                  <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-twitter-48.png" alt="Twitter" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class="">
+                                                                                  <img src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/twitter.png" alt="Twitter" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class="">
                                                                                 </a>
                                                                               </td>
                                                                             </tr>
@@ -577,7 +577,7 @@ function fullTemplate(body) {
                                                                             <tr>
                                                                               <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                                 <a href="https://www.facebook.com/hackernoon" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                  <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-facebook-48.png" alt="Facebook" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class="">
+                                                                                  <img src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/facebook.png" alt="Facebook" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class="">
                                                                                 </a>
                                                                               </td>
                                                                             </tr>
@@ -610,7 +610,7 @@ function fullTemplate(body) {
                                                                             <tbody>
                                                                               <tr>
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                  <a href="https://instagram.com/hackernoon/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-instagram-48.png" alt="Instagram" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                                  <a href="https://instagram.com/hackernoon/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/instagram.png" alt="Instagram" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
                                                                                 </td>
                                                                               </tr>
                                                                             </tbody>
@@ -643,7 +643,7 @@ function fullTemplate(body) {
                                                                             <tr>
                                                                               <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                                 <a href="http://hackernoon.com" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                  <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-link-48.png" alt="Website" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class="">
+                                                                                  <img src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/link.png" alt="Website" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class="">
                                                                                 </a>
                                                                               </td>
                                                                             </tr>
@@ -677,7 +677,7 @@ function fullTemplate(body) {
                                                                             <tr>
                                                                               <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                                 <a href="https://www.youtube.com/channel/UChu5YILgrOYOfkfRlTB-D-g" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                  <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-youtube-48.png" alt="YouTube" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class="">
+                                                                                  <img src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/youtube.png" alt="YouTube" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class="">
                                                                                 </a>
                                                                               </td>
                                                                             </tr>
@@ -710,7 +710,7 @@ function fullTemplate(body) {
                                                                           <tbody>
                                                                             <tr>
                                                                               <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                <a href="mailto:stories@hackernoon.com" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-forwardtofriend-48.png" alt="Email" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                                <a href="mailto:stories@hackernoon.com" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/forwardtofriend.png" alt="Email" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
                                                                               </td>
                                                                             </tr>
                                                                           </tbody>
