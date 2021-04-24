@@ -248,7 +248,7 @@ export const footer = `<tr>
                                                             "
                                                           >
                                                             <img
-                                                              src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-twitter-48.png"
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/twitter.png"
                                                               alt="Twitter"
                                                               style="
                                                                 display: block;
@@ -376,7 +376,7 @@ export const footer = `<tr>
                                                             "
                                                           >
                                                             <img
-                                                              src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-facebook-48.png"
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/facebook.png"
                                                               alt="Facebook"
                                                               style="
                                                                 display: block;
@@ -503,7 +503,7 @@ export const footer = `<tr>
                                                               -webkit-text-size-adjust: 100%;
                                                             "
                                                             ><img
-                                                              src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-instagram-48.png"
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/instagram.png"
                                                               alt="Instagram"
                                                               style="
                                                                 display: block;
@@ -630,7 +630,7 @@ export const footer = `<tr>
                                                               -webkit-text-size-adjust: 100%;
                                                             "
                                                             ><img
-                                                              src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-link-48.png"
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/link.png"
                                                               alt="Website"
                                                               style="
                                                                 display: block;
@@ -757,7 +757,7 @@ export const footer = `<tr>
                                                               -webkit-text-size-adjust: 100%;
                                                             "
                                                             ><img
-                                                              src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-youtube-48.png"
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/youtube.png"
                                                               alt="YouTube"
                                                               style="
                                                                 display: block;
@@ -884,7 +884,7 @@ export const footer = `<tr>
                                                               -webkit-text-size-adjust: 100%;
                                                             "
                                                             ><img
-                                                              src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-forwardtofriend-48.png"
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/forwardtofriend.png"
                                                               alt="Email"
                                                               style="
                                                                 display: block;
