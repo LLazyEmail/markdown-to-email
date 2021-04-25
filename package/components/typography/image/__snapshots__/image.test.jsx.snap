@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`image/index component renders correctly 1`] = `
+<p
+  dir="ltr"
+  style={
+    Object {
+      "WebkitTextSizeAdjust": "100%",
+      "color": "#111111",
+      "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+      "fontSize": "18px",
+      "lineHeight": "150%",
+      "margin": "10px 0",
+      "msTextSizeAdjust": "100%",
+      "msoLineHeightRule": "exactly",
+      "padding": 0,
+      "textAlign": "center",
+    }
+  }
+>
+  <span
+    style={
+      Object {
+        "fontFamily": "georgia,times,times new roman,serif",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontSize": "17px",
+        }
+      }
+    >
+      <a
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "color": "#111111",
+            "fontWeight": "bold",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+            "textDecoration": "underline",
+          }
+        }
+        target="_blank"
+      >
+        <img
+          data-testid="imagePropsTest"
+          style={
+            Object {
+              "border": "0px initial",
+              "height": "134px",
+              "margin": "0px",
+              "msInterpolationMode": "bicubic",
+              "outline": "none",
+              "textDecoration": "none",
+              "width": "220px",
+            }
+          }
+        />
+      </a>
+    </span>
+  </span>
+</p>
+`;
