@@ -40,32 +40,32 @@ const Footer = () => (
                                   <td align="center" valign="top" style={styles.tdCenterTop2}>
                                     <TableLeft
                                       href="https://twitter.com/hackernoon"
-                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-twitter-48.png"
+                                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/twitter.png"
                                       alt="Twitter"
                                     />
                                     <TableLeft
                                       href="https://www.facebook.com/hackernoon"
-                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-facebook-48.png"
+                                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/facebook.png"
                                       alt="Facebook"
                                     />
                                     <TableLeft
                                       href="https://instagram.com/hackernoon/"
-                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-instagram-48.png"
+                                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/instagram.png"
                                       alt="Instagram"
                                     />
                                     <TableLeft
                                       href="http://hackernoon.com"
-                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-link-48.png"
+                                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/link.png"
                                       alt="Website"
                                     />
                                     <TableLeft
                                       href="https://www.youtube.com/channel/UChu5YILgrOYOfkfRlTB-D-g"
-                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-youtube-48.png"
+                                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/youtube.png"
                                       alt="YouTube"
                                     />
                                     <TableLeft
                                       href="mailto:stories@hackernoon.com"
-                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-forwardtofriend-48.png"
+                                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/forwardtofriend.png"
                                       alt="Email"
                                     />
                                   </td>
