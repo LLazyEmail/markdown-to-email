@@ -27,7 +27,18 @@ https://github.com/hashicorp/next-mdx-remote
 
 https://github.com/hashicorp/next-mdx-remote#frontmatter--custom-processing
 
-
+#### Remark plugins to try later later later
+- https://github.com/remarkjs/remark-html
+- https://github.com/remarkjs/remark-breaks
+- https://github.com/vercel/remark-capitalize
+- https://github.com/remarkjs/remark-html
+- https://github.com/laat/remark-first-heading
+- https://github.com/remarkjs/remark-images
+- https://github.com/remarkjs/remark-lint
+- https://github.com/remarkjs/remark-inline-links
+- https://github.com/dimerapp/remark-macro
+- https://github.com/remarkjs/remark-normalize-headings
+- https://github.com/remarkjs/remark-rehype
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
