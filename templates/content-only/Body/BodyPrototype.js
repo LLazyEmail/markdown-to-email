@@ -9,7 +9,13 @@ import Paragraph from '../../../components/typography/paragraph';
 
 const BodyPrototype = ({ config }) => {
   const {
-    sponsor, mainTitle, paragraphFirst, memImageLink, paragraphSecond, heading, paragraphThird, memImageLink2, paragraphFourth, heading2, heading3, imageLink, paragraphFive,
+    sponsor, mainTitle, 
+    paragraphFirst, 
+    memImageLink, paragraphSecond, 
+    heading, 
+    paragraphThird, memImageLink2, 
+    paragraphFourth, 
+    heading2, heading3, imageLink, paragraphFive,
   } = config;
 
   return (
