@@ -13,7 +13,7 @@ const App = () => (
     <Sponsor
       leftHref="https://bit.ly/30AWyC4"
       rightHref="https://bit.ly/30AWyC4"
-      leftSrc="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png"
+      leftSrc="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/thematic/2021/03-March/15.03/bugherd_logo.png"
     >
       Ship the data importer you always dreamed of
     </Sponsor>
@@ -27,7 +27,7 @@ const App = () => (
     </Paragraph>
     <Image
       href="#"
-      src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/6.jpg"
+      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/memes/2021/03-March/15.03/image1.gif"
       alt="GIF"
     />
     {' '}
@@ -54,7 +54,7 @@ const App = () => (
     </Paragraph>
     <Image
       href="#"
-      src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/1.png"
+      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/memes/2021/03-March/15.03/image2.gif"
     />
     <Divider />
     <Paragraph>
@@ -66,7 +66,7 @@ const App = () => (
     <Heading>
       <Strong>1. Each row is an observational unit.</Strong>
     </Heading>
-    <Image href="#" src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/image1.png" />
+    <Image href="#" src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/memes/2021/03-March/15.03/image3.gif" />
     <Divider />
     <Paragraph>
       We’ll start with one of the basic principles. When you are giving your data the once-over, you should
@@ -82,7 +82,7 @@ const App = () => (
     <Sponsor
       leftHref="https://bit.ly/30AWyC4"
       rightHref="https://bit.ly/30AWyC4"
-      leftSrc="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png"
+      leftSrc="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/thematic/2021/03-March/15.03/bugherd_logo.png"
     >
       Ship the data importer you always dreamed of
     </Sponsor>
