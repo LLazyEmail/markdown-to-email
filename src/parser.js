@@ -4,7 +4,14 @@ const layouts = require("atherdon-newsletter-js-layouts");
 const reactLayouts = require("atherdon-newsletter-react");
 
 const { parse, parseFullTHing } = require("./parse");
-const { write, readFile, displayCLIErrors, checkWarnings,writeReactComponent } = require("./utils");
+const { 
+  write, 
+  readFile, 
+  displayCLIErrors, 
+  checkWarnings, 
+  writeReactComponent 
+} = require("./utils");
+
 const {
   parseMDReact,
   parseMDReactFullThing,
