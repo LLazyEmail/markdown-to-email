@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`newsletter/index component renders correctly (Snapshot) 1`] = `
+<div
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }
+>
+  <br />
+  <a
+    data-testid="newsletterHrefTest"
+    href="https://sponsor.hackernoon.com/contact"
+    style={
+      Object {
+        "MsTextSizeAdjust": "100%",
+        "WebkitTextSizeAdjust": "100%",
+        "color": "#656565",
+        "fontWeight": "normal",
+        "msoLineHeightRule": "exactly",
+        "textDecoration": "underline",
+      }
+    }
+    target="_blank"
+  >
+    Click Here To Sponsor A Newsletter by Hacker Noon
+  </a>
+</div>
+`;
