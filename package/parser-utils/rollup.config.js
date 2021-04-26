@@ -18,11 +18,11 @@ const extensions = [
   //".json"
 ];
 
-const name = "newsletterConst";
+const name = "newslettersUtils";
 
 // packages that should be treated as external dependencies, not bundled
 // e.g. ['axios']
-const external = ["os"];
+const external = ["os", "fs", "chalk", "lodash"];
 
 const includePathOptions = {
   include: {},
@@ -79,18 +79,6 @@ const plugins = () => [
     // babelHelpers: 'runtime'
   }),
 
-  // Allow Rollup to import data from JSON file
-  // json()
-  // json({
-  //   include: "src/data/**",
-  //
-  //   // for tree-shaking, properties will be declared as
-  //   // variables, using either `var` or `const`
-  //   preferConst: true,
-  //
-  //   // generate a named export for every property of the JSON object
-  //   namedExports: true // Default: true
-  // }),
   // Displays rollup errors as system notifications
   includePaths(includePathOptions),
   // notify(),

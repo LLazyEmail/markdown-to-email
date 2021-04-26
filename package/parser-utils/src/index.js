@@ -1,78 +1,105 @@
-import os from "os";
+const fs = require('fs');
+const os = require('os');
+const chalk = require('chalk');
+const { forEach } = require('lodash');
+
+// @todo it's very bad to use converter here, i think it;s deserve a separated file.
+// this utls file should serve a source for a very small and common methods.
+// module.export = Converter;
+
+function checkWarnings(warnings) {
+  forEach(warnings, (index, element) => {
+    if (index) {
+      const message = `WARNING source-full.md has ${index} ${element}. Replace it to memes`;
+      console.log(chalk.yellow(message));
+    }
+  });
+}
+
+function checkErrors(errors) {
+  if (Object.values(errors).includes(false)) {
+    forEach(errors, (_, error) => {
+      if (!errors[error]) {
+        const message = `ERROR source-full.md doesn't have ${error}`;
+        console.log(chalk.red(message));
+      }
+    });
+    const message = 'The full template has not been parsed!';
+    console.log(chalk.red.bold(message));
+    return true;
+  }
+  return false;
+}
+
+function displayCLIErrors(errors, warnings) {
+  if (checkErrors(errors)) {
+
+  } else {
+    checkWarnings(warnings);
+  }
+}
+
+const reactComponent = `
+import React from "react";
+
+const Content = () => {
+  return (
+    <>
+      {content}
+    </>
+  );
+};
+
+export default Content;
+`;
+
+function writeReactComponent(fileName, content, dir = 'generated', message) {
+  // isFolderExists(dir); 
+  // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
+
+  const _path = `${dir}/${fileName}`; // @todo it's not an ideal thing
+  const result = reactComponent.replace(/{content}/g, content);
+
+  fs.writeFileSync(_path, result, (err) => {
+    if (err) throw new Error('file not written');
+  });
+
+  message && console.log(`file has been written successfully${fileName}`);
+}
+
+function write(fileName, content, dir = 'generated', message) {
+  // isFolderExists(dir); 
+  // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
+
+  const _path = `${dir}/${fileName}`; // @todo it's not an ideal thing
+
+  fs.writeFileSync(_path, content, (err) => {
+    if (err) throw new Error('file not written');
+  });
+
+  message && console.log(`file has been written successfully${fileName}`);
+}
+
+function readSourceFile(fileName) {
+  return fs.readFileSync(fileName, { encoding: 'utf-8' });
+}
+
+function isFolderExists(dir) {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
+  }
+}
 
 const platform = os.platform();
+const newLine = platform === 'win32' ? '\r\n' : '\n';
 
-const newLine = platform === "win32" ? "\r\n" : "\n";
-
-const REGEXP_HASH_TAG = new RegExp(
-  "#[~##\t\n\v\f\r \u00a0\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u200b\u2028\u2029\u3000]",
-  "g"
-);
-const REGEXP_LINK_G = new RegExp("Link:", "g");
-
-const REGEXP_LINK_HTTPS = new RegExp(">https", "g");
-
-const REGEXP_STR_BEGIN = ">https";
-const REGEXP_STR_END = "f<";
-
-const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, "g");
-
-const REGEXP_IMAGE = /!\[([^\[]+)\]\(([^\)]+)\)/g;
-const REGEXP_LINK = /\[([^\[]+)\]\(([^\)]+)\)/g;
-const REGEXP_STRONG = /(\*\*|__)(.*?)(\*?)\1/g;
-const REGEXP_DEL = /\~\~(.*?)\~\~/g;
-const REGEXP_Q = /\:\"(.*?)\"\:/g;
-const REGEXP_CODE = /`(.*?)`/g;
-
-const REGEXP_UL_LIST = new RegExp(
-  `${newLine}(((\\s{4})?\\*(.*?)${newLine}){1,})`,
-  "g"
-);
-const REGEXP_OL_LIST = new RegExp(`${newLine}[0-9]+\\.(.*)`, "g");
-
-const REGEXP_BLOCKQUOTE = new RegExp(`${newLine}(&gt;|\\>)(.*)`, "g");
-const REGEXP_HR = new RegExp(`${newLine}-{5,}`, "g");
-
-const REGEXP_PARAGRAPH = new RegExp(`${newLine}(.+?)${newLine}`, "g");
-
-const REGEXP_EMPTY_UL = /<\/ul>\s?<ul>/g;
-const REGEXP_EMPTY_OL = /<\/ol>\s?<ol>/g;
-const REGEXP_BR = new RegExp(`((${newLine}){2,})`, "g");
-const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
-const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
-
-const REGEXP_SPONSORSHIP = /~(\[(.*?)\]){3}/g;
-const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
-const REGEXP_MEM = /\!\[(.*?)\]\[(.*?)\]\[(.*?)\]/g;
-const REGEXP_PREVIEW_TEXT = new RegExp(`#~(.*?)${newLine}`);
-// const REGEXP_H3 = /^### (.*$)/gim;
-// const REGEXP_H2 = /^## (.*$)/gim;
-
-export {
-  REGEXP_HEADER,
-  REGEXP_IMAGE,
-  REGEXP_LINK,
-  REGEXP_STRONG,
-  REGEXP_DEL,
-  REGEXP_Q,
-  REGEXP_CODE,
-  REGEXP_UL_LIST,
-  REGEXP_OL_LIST,
-  REGEXP_BLOCKQUOTE,
-  REGEXP_HR,
-  REGEXP_PARAGRAPH,
-  REGEXP_EMPTY_UL,
-  REGEXP_EMPTY_OL,
-  REGEXP_BR,
-  REGEXP_EMPTY_BLOCKQUOTE,
-  REGEXP_EM,
-  REGEXP_SPONSORSHIP,
-  REGEXP_HTML_COMMENTS,
-  REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT,
-  REGEXP_HASH_TAG,
-  REGEXP_LINK_HTTPS,
-  REGEXP_LINK_G,
-  REGEXP_STR_BEGIN,
-  REGEXP_STR_END,
+module.exports = {
+  write,
+  writeReactComponent,
+  readSourceFile,
+  isFolderExists,
+  newLine,
+  displayCLIErrors,
+  checkErrors,
+  checkWarnings,
 };

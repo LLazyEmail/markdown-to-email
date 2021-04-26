@@ -45,5 +45,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21"
   }
 }
