@@ -1,4 +1,4 @@
-const { write, readSourceFile } = require("../utils");
+const { write, readSourceFile } = require("../../utils");
 
 const {
   strong,

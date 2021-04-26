@@ -1,4 +1,4 @@
-const { readSourceFile } = require("../utils");
+const { readSourceFile } = require("../../utils");
 
 const {
   strong,
@@ -14,7 +14,7 @@ const {
   code,
   hr,
   empty
-} = require("../callbacks-simple");
+} = require("../../callbacks-simple");
 
 const {
   image,
@@ -24,11 +24,9 @@ const {
   sponsorship,
   br,
   newLine
-} = require("../callbacks");
+} = require("../../callbacks");
 
-const { replaceMarkdown, replaceMarkdownPreviewText } = require("../helpers");
-
-//const cococonst = require("atherdon-newsletter-constants");
+const { replaceMarkdown, replaceMarkdownPreviewText } = require("../../helpers");
 
 const {
   REGEXP_HEADER,
