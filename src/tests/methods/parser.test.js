@@ -1,35 +1,3 @@
-const { readSourceFile } = require("../../utils");
-
-const {
-  strong,
-  link,
-  blockquote,
-  mem,
-  header,
-  
-  
-  italic,
-  del,
-  q,
-  code,
-  hr,
-  empty
-} = require("../../callbacks-simple");
-
-const {
-  image,
-  ulList,
-  olList,
-  paragraphWrapper,
-  sponsorship,
-  br,
-  newLine
-} = require("../../callbacks");
-
-const { replaceMarkdown, replaceMarkdownPreviewText } = require("../../helpers");
-
-const {parse} = require("../../parse")
-
 const {
   REGEXP_HEADER,
   REGEXP_IMAGE,
@@ -52,28 +20,59 @@ const {
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
-} = require("atherdon-newsletter-constants");
+} = require('atherdon-newsletter-constants');
+const { readSourceFile } = require('../../utils');
 
-const FULL_SOURCE = "source/source-full.md";
+const {
+  strong,
+  link,
+  blockquote,
+  mem,
+  header,
 
+  italic,
+  del,
+  q,
+  code,
+  hr,
+  empty,
+} = require('../../callbacks-simple');
 
-describe('tests for all functionality', ()=>{
-    test('function parse', ()=>{
-        let { previewText, content, errors, warnings } = parse(FULL_SOURCE);
+const {
+  image,
+  ulList,
+  olList,
+  paragraphWrapper,
+  sponsorship,
+  br,
+  newLine,
+} = require('../../callbacks');
 
-        let check = false;
-        
-        if( previewText !== " " || content !== " "){
-            check = true;
-        } else {
-            check = false;
-        }
+const { replaceMarkdown, replaceMarkdownPreviewText } = require('../../helpers');
 
-        if( errors.previewText && errors.sponsorshipBottom && errors.sponsorshipTop === true){
-            check = true;
-        } else {
-            check = false;
-        }
-        expect(check).toBe(true);
-    });
-})
+const { parse } = require('../../parse');
+
+const FULL_SOURCE = 'source/source-full.md';
+
+describe('tests for all functionality', () => {
+  test('function parse', () => {
+    const {
+      previewText, content, errors, warnings,
+    } = parse(FULL_SOURCE);
+
+    let check = false;
+
+    if (previewText !== ' ' || content !== ' ') {
+      check = true;
+    } else {
+      check = false;
+    }
+
+    if (errors.previewText && errors.sponsorshipBottom && errors.sponsorshipTop === true) {
+      check = true;
+    } else {
+      check = false;
+    }
+    expect(check).toBe(true);
+  });
+});

@@ -1,31 +1,3 @@
-const { readSourceFile } = require("./utils");
-
-const {
-  strong,
-  link,
-  blockquote,
-  mem,
-  header,
-  italic,
-  del,
-  q,
-  code,
-  hr,
-  empty,
-} = require("./callbacks-simple");
-
-const {
-  image,
-  ulList,
-  olList,
-  paragraphWrapper,
-  sponsorship,
-  br,
-  newLine,
-} = require("./callbacks");
-
-const { replaceMarkdown, replaceMarkdownPreviewText } = require("./helpers");
-
 const {
   REGEXP_HEADER,
   REGEXP_IMAGE,
@@ -48,15 +20,42 @@ const {
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
-} = require("atherdon-newsletter-constants");
+} = require('atherdon-newsletter-constants');
+const { readSourceFile } = require('./utils');
+
+const {
+  strong,
+  link,
+  blockquote,
+  mem,
+  header,
+  italic,
+  del,
+  q,
+  code,
+  hr,
+  empty,
+} = require('./callbacks-simple');
+
+const {
+  image,
+  ulList,
+  olList,
+  paragraphWrapper,
+  sponsorship,
+  br,
+  newLine,
+} = require('./callbacks');
+
+const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
 
 // @todo update this method. I'm sure it can be improved.
 function parse(source) {
-  let markdown = readSourceFile(source);
+  const markdown = readSourceFile(source);
 
-  let state = {
+  const state = {
     content: markdown,
-    previewText: "",
+    previewText: '',
     warnings: {
       images: 0,
     },
@@ -102,7 +101,7 @@ function parse(source) {
   replaceMDBinded(REGEXP_BR, br);
   replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
   replaceMDBinded(REGEXP_MEM, mem);
-  //console.log( state )
+  // console.log( state )
   return state;
 }
 

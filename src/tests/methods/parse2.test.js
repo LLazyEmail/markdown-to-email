@@ -1,33 +1,3 @@
-const { write, readSourceFile } = require("../../utils");
-
-const {
-  strong,
-  link,
-  blockquote,
-  mem,
-  header,
-  
-  
-  italic,
-  del,
-  q,
-  code,
-  hr,
-  empty
-} = require("../../callbacks-simple");
-
-const {
-  image,
-  ulList,
-  olList,
-  paragraphWrapper,
-  sponsorship,
-  br,
-  newLine
-} = require("../../callbacks");
-
-const { replaceMarkdown, replaceMarkdownPreviewText } = require("../../helpers");
-
 const {
   REGEXP_HEADER,
   REGEXP_IMAGE,
@@ -50,88 +20,113 @@ const {
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
-} = require("atherdon-newsletter-constants");
+} = require('atherdon-newsletter-constants');
+const { write, readSourceFile } = require('../../utils');
 
-const FULL_SOURCE = "source/source-full.md";
+const {
+  strong,
+  link,
+  blockquote,
+  mem,
+  header,
 
-const htmlTeamplate  = "src/tests/sorce_full_code_test/test.html"
+  italic,
+  del,
+  q,
+  code,
+  hr,
+  empty,
+} = require('../../callbacks-simple');
 
-const correct = readSourceFile(htmlTeamplate)
+const {
+  image,
+  ulList,
+  olList,
+  paragraphWrapper,
+  sponsorship,
+  br,
+  newLine,
+} = require('../../callbacks');
 
-let markdown = readSourceFile("source/source-full.md");
+const { replaceMarkdown, replaceMarkdownPreviewText } = require('../../helpers');
+
+const FULL_SOURCE = 'source/source-full.md';
+
+const htmlTeamplate = 'src/tests/sorce_full_code_test/test.html';
+
+const correct = readSourceFile(htmlTeamplate);
+
+const markdown = readSourceFile('source/source-full.md');
 
 function parse(source) {
-    let markdown = readSourceFile(source);
-    
-    let state = {
-      content: markdown,
-      previewText: "",
-      warnings: {
-        images: 0
-      },
-      errors: {
-        previewText: false,
-        sponsorshipTop: false,
-        sponsorshipBottom: false,
-      }
-    };
-  
-    const replaceMDBinded = replaceMarkdown.bind(state);
-    
-    const replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
-    
-    replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
-    
-    replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
-    
-    replaceMDBinded(REGEXP_STRONG, strong);
-    
-    replaceMDBinded(REGEXP_EM, italic);
-    
-    replaceMDBinded(REGEXP_HEADER, header);
-    
-    
-    replaceMDBinded(REGEXP_IMAGE, image);
-    replaceMDBinded(REGEXP_LINK, link);
-    
-    replaceMDBinded(REGEXP_DEL, del);
-    replaceMDBinded(REGEXP_Q, q);
-    replaceMDBinded(REGEXP_CODE, code);
-  
-    replaceMDBinded(REGEXP_UL_LIST, ulList);
-    replaceMDBinded(REGEXP_OL_LIST, olList);
-  
-    replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
-  
-    replaceMDBinded(REGEXP_HR, hr);
-    replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
-    replaceMDBinded(REGEXP_EMPTY_UL, empty);
-    replaceMDBinded(REGEXP_EMPTY_OL, empty);
-    replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
-    
-    replaceMDBinded(REGEXP_BR, br);
-    replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
-    replaceMDBinded(REGEXP_MEM, mem);
+  const markdown = readSourceFile(source);
 
-    const outFolder = "src/tests/_generated";
+  const state = {
+    content: markdown,
+    previewText: '',
+    warnings: {
+      images: 0,
+    },
+    errors: {
+      previewText: false,
+      sponsorshipTop: false,
+      sponsorshipBottom: false,
+    },
+  };
 
-    const fileName = "correct.html";
+  const replaceMDBinded = replaceMarkdown.bind(state);
 
-    write(fileName, state.content, outFolder);
+  const replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
-    return outFolder +"/" + fileName ;
-  }
+  replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
 
+  replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
 
-  describe('tests for all functionality', ()=>{
-        test('running parse function', ()=>{
-            let block = parse(FULL_SOURCE)
+  replaceMDBinded(REGEXP_STRONG, strong);
 
-            let checker = readSourceFile(block)
+  replaceMDBinded(REGEXP_EM, italic);
 
-            let correct = readSourceFile(htmlTeamplate)
-            
-            expect(correct).toBe(checker);
-    
-        });
-    })
+  replaceMDBinded(REGEXP_HEADER, header);
+
+  replaceMDBinded(REGEXP_IMAGE, image);
+  replaceMDBinded(REGEXP_LINK, link);
+
+  replaceMDBinded(REGEXP_DEL, del);
+  replaceMDBinded(REGEXP_Q, q);
+  replaceMDBinded(REGEXP_CODE, code);
+
+  replaceMDBinded(REGEXP_UL_LIST, ulList);
+  replaceMDBinded(REGEXP_OL_LIST, olList);
+
+  replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
+
+  replaceMDBinded(REGEXP_HR, hr);
+  replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
+  replaceMDBinded(REGEXP_EMPTY_UL, empty);
+  replaceMDBinded(REGEXP_EMPTY_OL, empty);
+  replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
+
+  replaceMDBinded(REGEXP_BR, br);
+  replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
+  replaceMDBinded(REGEXP_MEM, mem);
+
+  const outFolder = 'src/tests/_generated';
+
+  const fileName = 'correct.html';
+
+  write(fileName, state.content, outFolder);
+
+  return `${outFolder}/${fileName}`;
+}
+
+describe('tests for all functionality', () => {
+  test('running parse function', () => {
+    const block = parse(FULL_SOURCE);
+
+    const checker = readSourceFile(block);
+
+    const correct = readSourceFile(htmlTeamplate);
+
+    expect(correct).toBe(checker);
+  });
+});

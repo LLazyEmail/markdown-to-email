@@ -9,8 +9,7 @@ const outFolder = "src/tests/_generated";
 describe("testing h1-inside-the-body", () => {
   it("renders h1-inside-the-body", () => {
     let markdown = readSourceFile("src/tests/h1-inside-the-body/content.md");
-    
- 
+
  let state = {
    content: markdown,
    previewText: "",
@@ -35,8 +34,8 @@ describe("testing h1-inside-the-body", () => {
 
 // fix warning 'Your test suite must contain at least one test.'
 describe('test', () => {
-    test('hello world', () => {
-        const str = "hello";
-        expect(str).toBe("hello");
-    })
-})
+  test('hello world', () => {
+    const str = 'hello';
+    expect(str).toBe('hello');
+  });
+});

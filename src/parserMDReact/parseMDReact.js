@@ -1,4 +1,4 @@
-const { readSourceFile } = require("../utils");
+const { readSourceFile } = require('../utils');
 
 const {
   strong,
@@ -13,7 +13,7 @@ const {
   hr,
   empty,
   previewText,
-} = require("./callbacks-simpleMDReact");
+} = require('./callbacks-simpleMDReact');
 
 const {
   image,
@@ -23,9 +23,9 @@ const {
   sponsorship,
   br,
   newLine,
-} = require("./callbacksMDReact");
+} = require('./callbacksMDReact');
 
-const { replaceMarkdown } = require("../helpers");
+const { replaceMarkdown } = require('../helpers');
 
 const {
   REGEXP_HEADER,
@@ -49,13 +49,13 @@ const {
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
-} = require("./constantsMDReact");
+} = require('./constantsMDReact');
 
 // @todo update this method. I'm sure it can be improved.
 function parseMDReact(source, isFull) {
-  let markdown = readSourceFile(source);
+  const markdown = readSourceFile(source);
 
-  let state = {
+  const state = {
     content: markdown,
     warnings: {
       images: 0,
@@ -99,7 +99,7 @@ function parseMDReact(source, isFull) {
   replaceMDBinded(REGEXP_BR, br);
   //   replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
   //   replaceMDBinded(REGEXP_MEM, mem);
-  //console.log( state )
+  // console.log( state )
   return state;
 }
 
