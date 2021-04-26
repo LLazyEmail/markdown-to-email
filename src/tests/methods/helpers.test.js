@@ -1,4 +1,4 @@
-const { replaceHTMLWrapper } = require('..helpers');
+const { replaceHTMLWrapper } = require('../../helpers');
 
 describe('test helpers', () => {
     test('replaceHTMLWrapper works correctly', () => {

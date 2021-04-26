@@ -14,7 +14,7 @@ const {
   code,
   hr,
   empty
-} = require("../callbacks-simple");
+} = require("../../callbacks-simple");
 
 const {
   image,
@@ -24,9 +24,9 @@ const {
   sponsorship,
   br,
   newLine
-} = require("../callbacks");
+} = require("../../callbacks");
 
-const { replaceMarkdown, replaceMarkdownPreviewText } = require("../helpers");
+const { replaceMarkdown, replaceMarkdownPreviewText } = require("../../helpers");
 
 const {
   REGEXP_HEADER,

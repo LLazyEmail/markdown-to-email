@@ -28,6 +28,8 @@ const {
 
 const { replaceMarkdown, replaceMarkdownPreviewText } = require("../../helpers");
 
+const {parse} = require("../../parse")
+
 const {
   REGEXP_HEADER,
   REGEXP_IMAGE,
@@ -54,7 +56,6 @@ const {
 
 const FULL_SOURCE = "source/source-full.md";
 
-const {parse} = require("../parse")
 
 describe('tests for all functionality', ()=>{
     test('function parse', ()=>{

@@ -1,5 +1,5 @@
-const { paragraphWrapper, ulList, olList, br } = require('../callbacks');
-const { newLine } = require('../utils');
+const { paragraphWrapper, ulList, olList, br } = require('../../callbacks');
+const { newLine } = require('../../utils');
 
 describe('testing callback.js', () => {
     test('testing what returns `paragraphWrapper`', () => {

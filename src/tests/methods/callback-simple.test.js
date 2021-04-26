@@ -1,5 +1,5 @@
-const { strong, link, blockquote, mem, header } = require('../callbacks-simple');
-const { newLine } = require('../utils');
+const { strong, link, blockquote, mem, header } = require('../../callbacks-simple');
+const { newLine } = require('../../utils');
 
 describe('testing callback-simple', () => {
     test('strong returns a <strong> with text', () => {

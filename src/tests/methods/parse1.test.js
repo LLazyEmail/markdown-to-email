@@ -1,8 +1,8 @@
 const { readSourceFile } = require("../../utils");
 
-const{empty} = require("../callbacks-simple");
+const{empty} = require("../../callbacks-simple");
 
-const { replaceMarkdown, replaceMarkdownPreviewText } = require("../helpers");
+const { replaceMarkdown, replaceMarkdownPreviewText } = require("../../helpers");
 
 const {
   REGEXP_HTML_COMMENTS,
