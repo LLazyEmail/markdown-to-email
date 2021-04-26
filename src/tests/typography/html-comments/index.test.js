@@ -1,6 +1,6 @@
 const { REGEXP_HTML_COMMENTS } = require('atherdon-newsletter-constants');
-const { write, readSourceFile } = require('../../utils');
-const { replaceMarkdown } = require('../../helpers');
+const { write, readSourceFile } = require('../../../utils');
+const { replaceMarkdown } = require('../../../helpers');
 
 const outFolder = 'src/tests/_generated';
 
