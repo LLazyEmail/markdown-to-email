@@ -432,11 +432,7 @@ h4{
 
   const heading = `<Heading>{content}</Heading>`;
 
-  const image = `<Image
-        href="{href}"
-        src="{src}"
-        alt="{altText}"
-      />`;
+  const image = `<Image href="{href}" src="{src}" alt="{altText}" />`;
 
   const italic = `<Italic>{content}</Italic>`;
 
