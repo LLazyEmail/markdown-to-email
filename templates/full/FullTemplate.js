@@ -1,16 +1,13 @@
 import React from 'react';
 
-// import Body from 'components/body';
-
+import Logo from 'components/body/logo';
 import BodyPrototype from './Body/BodyPrototype';
-
 import Divider from 'components/body/divider';
-import Image from 'components/typography/image';
-import Heading from 'components/typography/heading';
-import Strong from 'components/typography/strong';
-import Sponsor from 'components/body/sponsor';
-import MainTitle from 'components/typography/mainTitle';
-import Paragraph from 'components/typography/paragraph';
+
+import HOC from './HOC';
+
+import config from './config';
+import { styles } from './styles';
 
 const FullTemplate = ({ header }) => (
 
