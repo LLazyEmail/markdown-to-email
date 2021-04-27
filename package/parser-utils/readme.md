@@ -1,1 +1,0 @@
-i'm thinking about moving out helpers, utils and other stuff outside, because i'm tired of battling with paths
