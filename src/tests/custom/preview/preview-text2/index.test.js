@@ -1,6 +1,6 @@
 const { REGEXP_PREVIEW_TEXT } = require('atherdon-newsletter-constants');
 const { write, readSourceFile } = require('../../../../utils');
-const { replaceMarkdownPreviewText } = require('../../../helpers');
+const { replaceMarkdownPreviewText } = require('../../../../helpers');
 
 const { resolve } = require('path')
 const root = resolve(__dirname, '')

@@ -53,11 +53,18 @@ const { replaceMarkdown, replaceMarkdownPreviewText } = require('../../helpers')
 
 const FULL_SOURCE = 'source/source-full.md';
 
-const htmlTeamplate = 'src/tests/sorce_full_code_test/test.html';
+const markdown = readSourceFile(FULL_SOURCE);
+
+const { resolve } = require('path')
+// const root = resolve(__dirname, '')
+// const template = resolve(__dirname + '/source_full_code_test/test.html', '');
+// console.log(template);
+
+// const htmlTeamplate = 'src/tests/source_full_code_test/test.html';
+const htmlTeamplate = resolve(__dirname + '/source_full_code_test/test.html', '');
 
 const correct = readSourceFile(htmlTeamplate);
 
-const markdown = readSourceFile('source/source-full.md');
 
 function parse(source) {
   const markdown = readSourceFile(source);
