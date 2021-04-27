@@ -3,7 +3,11 @@ const { write, readSourceFile } = require('../../../utils');
 const { mem } = require('../../../callbacks-simple');
 const { replaceMarkdown } = require('../../../helpers');
 
-const outFolder = 'src/tests/_generated';
+const { resolve } = require('path')
+const root = resolve(__dirname, '')
+const outFolder = resolve('src/tests', 'directory', '../_generated');
+
+// const outFolder = 'src/tests/_generated';
 
 describe('testing mem', () => {
   it('renders mem', () => {

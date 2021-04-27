@@ -4,7 +4,11 @@ const { write, readSourceFile } = require('../../../utils');
 const { sponsorship } = require('../../../callbacks');
 const { replaceMarkdown } = require('../../../helpers');
 
-const outFolder = 'src/tests/_generated';
+const { resolve } = require('path')
+const root = resolve(__dirname, '')
+const outFolder = resolve('src/tests', 'directory', '../_generated');
+
+// const outFolder = 'src/tests/_generated';
 
 describe('testing sponsorship', () => {
   it('renders sponsorship', () => {
