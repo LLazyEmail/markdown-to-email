@@ -4,11 +4,15 @@ const { write, readSourceFile } = require('../../../utils');
 const { br } = require('../../../callbacks');
 const { replaceMarkdown } = require('../../../helpers');
 
-const outFolder = 'src/tests/_generated';
+const { resolve } = require('path')
+const root = resolve(__dirname, '')
+const outFolder = resolve('tests', 'directory', '../_generated');
+
+// const outFolder = 'src/tests/_generated';
 
 describe('testing br', () => {
   it('renders br', () => {
-    const markdown = readSourceFile('src/tests/br/br.md');
+    const markdown = readSourceFile(root + '/content.md');
     const parsedContent = {
       content: markdown,
     };

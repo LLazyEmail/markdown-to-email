@@ -4,11 +4,15 @@ const { write, readSourceFile } = require('../../../utils');
 const { header } = require('../../../callbacks-simple');
 const { replaceMarkdown } = require('../../../helpers');
 
-const outFolder = 'src/tests/_generated';
+const { resolve } = require('path')
+const root = resolve(__dirname, '')
+const outFolder = resolve('tests', 'directory', '../_generated');
+
+// const outFolder = 'src/tests/_generated';
 
 describe('testing h1-inside-the-body', () => {
   it('renders h1-inside-the-body', () => {
-    const markdown = readSourceFile('src/tests/h1-inside-the-body/content.md');
+    const markdown = readSourceFile(root + '/content.md');
     const parsedContent = {
       content: markdown,
     };

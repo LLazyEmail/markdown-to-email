@@ -4,11 +4,16 @@ const { write, readSourceFile } = require('../../../utils');
 const { ulList } = require('../../../callbacks');
 const { replaceMarkdown } = require('../../../helpers');
 
-const outFolder = 'src/tests/_generated';
+
+const { resolve } = require('path')
+const root = resolve(__dirname, '')
+const outFolder = resolve('tests', 'directory', '../_generated');
+
+
 
 describe('testing complex-list', () => {
   it('renders complex-list', () => {
-    const markdown = readSourceFile('src/tests/complex-list/content.md');
+    const markdown = readSourceFile(root + '/content.md');
     const parsedContent = {
       content: markdown,
     };
