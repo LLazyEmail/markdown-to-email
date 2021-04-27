@@ -22,7 +22,7 @@ const {
   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
 
-const { write, readSourceFile } = require('../../utils');
+const { write, readSourceFile, FULL_SOURCE } = require('../../utils');
 
 const {
   strong,
@@ -51,7 +51,7 @@ const {
 
 const { replaceMarkdown, replaceMarkdownPreviewText } = require('../../helpers');
 
-const FULL_SOURCE = 'source/source-full.md';
+// const FULL_SOURCE = 'source/source-full.md';
 
 const markdown = readSourceFile(FULL_SOURCE);
 

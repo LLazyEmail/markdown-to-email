@@ -10,15 +10,14 @@ const {
   displayCLIErrors,
   checkWarnings,
   writeReactComponent,
+  FULL_SOURCE,
+  CONTENT_SOURCE
 } = require('./utils');
 
 const {
   parseMDReact,
   parseMDReactFullThing,
 } = require('./parserMDReact/parseMDReact');
-
-const FULL_SOURCE = 'source/source-full.md';
-const CONTENT_SOURCE = 'source/source.md';
 
 switch (process.env.PARSE) {
   case 'full':

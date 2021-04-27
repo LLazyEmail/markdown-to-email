@@ -1,6 +1,6 @@
 const fs = require('fs');
 const chalk = require('chalk');
-const { readSourceFile, displayCLIErrors } = require('../../utils');
+const { readSourceFile, displayCLIErrors, FULL_SOURCE } = require('../../utils');
 
 // @TODO we can add tests, related to new layouts structure.
 // just dont want to remove it without replacing
@@ -11,8 +11,8 @@ const { readSourceFile, displayCLIErrors } = require('../../utils');
 
 describe('testing utils.js', () => {
   test('readSourceFile reads file', () => {
-    const wrapper = readSourceFile('source/source-full.md');
-    expect(wrapper).toBe(fs.readFileSync('source/source-full.md', { encoding: 'utf-8' }));
+    const wrapper = readSourceFile(FULL_SOURCE);
+    expect(wrapper).toBe(fs.readFileSync(FULL_SOURCE, { encoding: 'utf-8' }));
   });
 
   test('isFolderExists really checks folders', () => {

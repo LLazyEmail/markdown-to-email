@@ -3,16 +3,18 @@ const {
   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
 
-const { readSourceFile } = require('../../utils');
+const { 
+    readSourceFile,   
+    FULL_SOURCE
+} = require('../../utils');
 
 const { empty } = require('../../callbacks-simple');
 
 const { replaceMarkdown, replaceMarkdownPreviewText } = require('../../helpers');
 
-// @TODO add it into ults as constants
-const markdown = readSourceFile('source/source-full.md');
+const markdown = readSourceFile(FULL_SOURCE);
 
-const staticMarkdown = readSourceFile('source/source-full.md');
+const staticMarkdown = readSourceFile(FULL_SOURCE);
 
 const htmlTeamplate = resolve(`${__dirname}/source_full_code_test/test.html`, '');
 
