@@ -8,7 +8,7 @@ const config = {
   paragraphFirst: `Imagine: You are going to sit down with a newly-fetched data set,
     excited about the insights it will bring you and then you find out it is no use.
     If you’ve been there, then you know for sure what an untidy dataset is.`,
-  memImageLink: 'https://placekitten.com/g/220/300',
+  memImageLink: 'https://placekitten.com/g/220/220',
   paragraphSecond: `A statistician from New Zealand once said: Tidy datasets are all alike, but every messy dataset
     is messy in its own way. Indeed, as data may come in various forms and shapes, sometimes we are
     inundated with it. As a result, our data science team becomes shortsighted and oops..
@@ -22,11 +22,11 @@ const config = {
         diagrams, and summary statistics. As it often happens, not all data comes out of the database clean,
         therefore cleansing it is essential
         to efficiently analyze it.`,
-  memImageLink2: 'https://placekitten.com/g/220/300',
+  memImageLink2: 'https://placekitten.com/g/220/220',
   paragraphFourth: 'Without further ado, let us break down the principles that allow you keep your data nice and clean.',
   heading2: 'Tidy Data Principles',
   heading3: '1. Each row is an observational unit.',
-  imageLink: 'https://placekitten.com/g/220/300',
+  imageLink: 'https://placekitten.com/g/220/220',
   paragraphFive: ` We’ll start with one of the basic principles. When you are giving your data the once-over, you should
     make sure each row contains an observation.
     By definition, observation is the individual unit under question. If we look at the table above, an

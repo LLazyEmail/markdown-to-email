@@ -1,6 +1,6 @@
 const config = {
   sponsor: {
-    imageUrl: 'https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png',
+    imageUrl: 'https://placekitten.com/g/220/300',
     link: 'https://bit.ly/30AWyC4',
     text: 'Ship the data importer you always dreamed of',
   },
@@ -8,7 +8,7 @@ const config = {
   paragraphFirst: `Imagine: You are going to sit down with a newly-fetched data set,
     excited about the insights it will bring you and then you find out it is no use.
     If you’ve been there, then you know for sure what an untidy dataset is.`,
-  memImageLink: 'https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/6.jpg',
+  memImageLink: 'https://placekitten.com/g/220/220',
   paragraphSecond: `A statistician from New Zealand once said: Tidy datasets are all alike, but every messy dataset
     is messy in its own way. Indeed, as data may come in various forms and shapes, sometimes we are
     inundated with it. As a result, our data science team becomes shortsighted and oops..
@@ -22,11 +22,11 @@ const config = {
         diagrams, and summary statistics. As it often happens, not all data comes out of the database clean,
         therefore cleansing it is essential
         to efficiently analyze it.`,
-  memImageLink2: 'https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/1.png',
+  memImageLink2: 'https://placekitten.com/g/220/220',
   paragraphFourth: 'Without further ado, let us break down the principles that allow you keep your data nice and clean.',
   heading2: 'Tidy Data Principles',
   heading3: '1. Each row is an observational unit.',
-  imageLink: 'https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/image1.png',
+  imageLink: 'https://placekitten.com/g/220/220',
   paragraphFive: ` We’ll start with one of the basic principles. When you are giving your data the once-over, you should
     make sure each row contains an observation.
     By definition, observation is the individual unit under question. If we look at the table above, an
