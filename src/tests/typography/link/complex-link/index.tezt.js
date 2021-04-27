@@ -1,8 +1,8 @@
-const { write, readSourceFile } = require('../../utils');
+const { write, readSourceFile } = require('../../../../utils');
 // const { sponsorship } = require("../../just-a-guess-functions");
 // const { REGEXP_SPONSORSHIP } = require("atherdon-newsletter-constants");
 
-const { replaceMarkdown } = require('../../parserUtils');
+const { replaceMarkdown } = require('../../../../helpers');
 
 describe('testing complex links', () => {
 //   it("renders xxx", async () => {

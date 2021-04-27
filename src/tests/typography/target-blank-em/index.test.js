@@ -1,7 +1,7 @@
 const { REGEXP_EM, REGEXP_LINK } = require('atherdon-newsletter-constants');
-const { write, readSourceFile } = require('../../utils');
-const { italic, link } = require('../../callbacks-simple');
-const { replaceMarkdown } = require('../../helpers');
+const { write, readSourceFile } = require('../../../utils');
+const { italic, link } = require('../../../callbacks-simple');
+const { replaceMarkdown } = require('../../../helpers');
 
 const outFolder = 'src/tests/_generated';
 

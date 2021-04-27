@@ -54,7 +54,7 @@ export default Content;
 `;
 
 function writeReactComponent(fileName, content, dir = 'generated', message) {
-  // isFolderExists(dir); 
+  // isFolderExists(dir);
   // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
 
   const _path = `${dir}/${fileName}`; // @todo it's not an ideal thing
@@ -68,7 +68,7 @@ function writeReactComponent(fileName, content, dir = 'generated', message) {
 }
 
 function write(fileName, content, dir = 'generated', message) {
-  // isFolderExists(dir); 
+  // isFolderExists(dir);
   // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
 
   const _path = `${dir}/${fileName}`; // @todo it's not an ideal thing
