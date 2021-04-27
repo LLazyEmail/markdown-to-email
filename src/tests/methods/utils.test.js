@@ -10,6 +10,7 @@ const { readSourceFile, displayCLIErrors } = require('../../utils');
 //    })
 
 describe('testing utils.js', () => {
+    
   test('readSourceFile reads file', () => {
     const wrapper = readSourceFile('source/source-full.md');
     expect(wrapper).toBe(fs.readFileSync('source/source-full.md', { encoding: 'utf-8' }));

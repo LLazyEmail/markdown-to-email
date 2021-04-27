@@ -2,11 +2,13 @@ const {
   REGEXP_HTML_COMMENTS,
   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
+
 const { readSourceFile } = require('../../utils');
 
 const { empty } = require('../../callbacks-simple');
 
 const { replaceMarkdown, replaceMarkdownPreviewText } = require('../../helpers');
+
 
 const markdown = readSourceFile('source/source-full.md');
 

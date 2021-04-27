@@ -1,26 +1,32 @@
 const {
-  strong, link, blockquote, mem, header,
+  strong, link, blockquote, 
+  mem, header,
 } = require('../../callbacks-simple');
 const { newLine } = require('../../utils');
 
 describe('testing callback-simple', () => {
+
   test('strong returns a <strong> with text', () => {
     const str = strong('', '', 'hello ', 'world');
     expect(str).toBe('<strong style="font-weight: bolder;">hello world</strong>');
   });
+
   test('link return a link element ', () => {
     const lnk = link('', 'google', 'google.com');
     expect(lnk).toBe('<a href=\"google.com\" target=\"_blank\" style=\"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #111111;font-weight: bold;text-decoration: underline;\">google</a>');
   });
+
   test('blockquote returns a blockquote element', () => {
     const block = blockquote('', '', 'hello world');
     expect(block).toBe(`${newLine}<blockquote>hello world</blockquote>`);
   });
+
   test('mem returns a mem element', () => {
     const memExample = '<p dir=\"ltr\" style=\"text-align: center;line-height: 150%;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #111111;font-family: \'Source Sans Pro\', \'Helvetica Neue\', Helvetica, Arial, sans-serif;font-size: 18px;\"><span style=\"font-family:georgia,times,times new roman,serif\"><span style=\"font-size:17px\"><a href=\"./sss\" target=\"_blank\" style=\"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #111111;font-weight: bold;text-decoration: underline;\"><img data-file-id=\"1041068\" src=\"./ss\" style=\"border: 0px initial;width: 220px;height: 134px;margin: 0px;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;\" alt=\"image\"></a></span></span></p>';
     const m = mem('', './ss', './sss', 'image');
     expect(m).toBe(memExample);
   });
+
   test('header renders all 3 titleTypes correctly', () => {
     const mainTitle = header('', [0], 'hello');
     const subtitle = header('', [0, 0], 'hello');

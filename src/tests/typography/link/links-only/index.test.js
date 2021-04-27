@@ -5,7 +5,7 @@ const { replaceMarkdown } = require('../../../../helpers');
 
 const { resolve } = require('path')
 const root = resolve(__dirname, '')
-const outFolder = resolve('tests', 'directory', '../_generated');
+const outFolder = resolve('src/tests', 'directory', '../_generated');
 
 // const outFolder = 'src/tests/_generated';
 
