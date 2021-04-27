@@ -1,7 +1,7 @@
 /*
-const { write, readSourceFile } = require("../../utils");
-const { header } = require("../../callbacks");
-const { replaceMarkdown } = require("../../helpers");
+const { write, readSourceFile } = require("@root/utils");
+const { header } = require("@root/callbacks");
+const { replaceMarkdown } = require("@root/helpers");
 const { REGEXP_HEADER } = require("atherdon-newsletter-constants");
 
 const { resolve } = require('path')

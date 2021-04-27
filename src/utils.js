@@ -93,7 +93,7 @@ function isFolderExists(dir) {
 const platform = os.platform();
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
-//@TODO add path, in order to make it work PERFECTLY
+// @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source-full.md';
 const CONTENT_SOURCE = 'source/source.md';
 
@@ -107,5 +107,5 @@ module.exports = {
   checkErrors,
   checkWarnings,
   FULL_SOURCE,
-  CONTENT_SOURCE
+  CONTENT_SOURCE,
 };

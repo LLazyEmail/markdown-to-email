@@ -11,7 +11,7 @@ const {
   checkWarnings,
   writeReactComponent,
   FULL_SOURCE,
-  CONTENT_SOURCE
+  CONTENT_SOURCE,
 } = require('./utils');
 
 const {

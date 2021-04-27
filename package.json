@@ -37,5 +37,10 @@
     "cross-env": "^7.0.3",
     "lodash": "^4.17.21",
     "remark": "^13.0.0"
-  }
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "@root(.*)$": "<rootDir>/src/$1"
+    }
+}
 }

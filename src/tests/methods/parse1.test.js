@@ -3,9 +3,9 @@ const {
   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
 
-const { 
-    readSourceFile,   
-    FULL_SOURCE
+const {
+  readSourceFile,
+  FULL_SOURCE,
 } = require('../../utils');
 
 const { empty } = require('../../callbacks-simple');
