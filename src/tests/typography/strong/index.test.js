@@ -1,17 +1,17 @@
 const { REGEXP_STRONG } = require('atherdon-newsletter-constants');
+const { resolve } = require('path');
 const { write, readSourceFile } = require('../../../utils');
 const { strong } = require('../../../callbacks-simple');
 const { replaceMarkdown } = require('../../../helpers');
 
-const { resolve } = require('path')
-const root = resolve(__dirname, '')
+const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
 
 // const outFolder = 'src/tests/_generated';
 
 describe('testing strong', () => {
   it('renders strong', () => {
-    const markdown = readSourceFile(root+'/content.md');
+    const markdown = readSourceFile(`${root}/content.md`);
     const parsedContent = {
       content: markdown,
     };

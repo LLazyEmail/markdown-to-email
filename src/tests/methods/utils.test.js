@@ -10,7 +10,6 @@ const { readSourceFile, displayCLIErrors } = require('../../utils');
 //    })
 
 describe('testing utils.js', () => {
-    
   test('readSourceFile reads file', () => {
     const wrapper = readSourceFile('source/source-full.md');
     expect(wrapper).toBe(fs.readFileSync('source/source-full.md', { encoding: 'utf-8' }));
@@ -20,7 +19,7 @@ describe('testing utils.js', () => {
     // not calling isFolderExists but his body is testing
     const path = 'source/source-full.md';
     let check = null;
-    
+
     if (!fs.existsSync(path)) {
       check = false;
     }

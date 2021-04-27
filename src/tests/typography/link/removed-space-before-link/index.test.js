@@ -1,17 +1,17 @@
 const { REGEXP_LINK } = require('atherdon-newsletter-constants');
+const { resolve } = require('path');
 const { write, readSourceFile } = require('../../../../utils');
 const { link } = require('../../../../callbacks-simple');
 const { replaceMarkdown } = require('../../../../helpers');
 
-const { resolve } = require('path')
-const root = resolve(__dirname, '')
+const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
 
 // const outFolder = 'src/tests/_generated';
 
 describe('testing links when space before link', () => {
   it('renders testing links when space before link', () => {
-    const markdown = readSourceFile(root+'/content.md');
+    const markdown = readSourceFile(`${root}/content.md`);
     const parsedContent = {
       content: markdown,
     };

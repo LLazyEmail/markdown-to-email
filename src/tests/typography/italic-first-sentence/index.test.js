@@ -1,17 +1,17 @@
 const { REGEXP_EM } = require('atherdon-newsletter-constants');
+const { resolve } = require('path');
 const { write, readSourceFile } = require('../../../utils');
 const { italic } = require('../../../callbacks-simple');
 const { replaceMarkdown } = require('../../../helpers');
 
-const { resolve } = require('path')
-const root = resolve(__dirname, '')
+const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
 
 // const outFolder = 'src/tests/_generated';
 
 describe('testing italic-first-sentence', () => {
   it('renders italic-first-sentence', () => {
-    const markdown = readSourceFile(root+'/content.md');
+    const markdown = readSourceFile(`${root}/content.md`);
     const parsedContent = {
       content: markdown,
     };

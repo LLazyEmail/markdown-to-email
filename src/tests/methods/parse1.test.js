@@ -9,13 +9,12 @@ const { empty } = require('../../callbacks-simple');
 
 const { replaceMarkdown, replaceMarkdownPreviewText } = require('../../helpers');
 
-//@TODO add it into ults as constants
+// @TODO add it into ults as constants
 const markdown = readSourceFile('source/source-full.md');
 
 const staticMarkdown = readSourceFile('source/source-full.md');
 
-const htmlTeamplate = resolve(__dirname + '/source_full_code_test/test.html', '');
-
+const htmlTeamplate = resolve(`${__dirname}/source_full_code_test/test.html`, '');
 
 const staticState = {
   content: staticMarkdown,

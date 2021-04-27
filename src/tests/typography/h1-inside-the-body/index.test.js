@@ -1,18 +1,18 @@
 const { REGEXP_HEADER } = require('atherdon-newsletter-constants');
 
+const { resolve } = require('path');
 const { write, readSourceFile } = require('../../../utils');
 const { header } = require('../../../callbacks-simple');
 const { replaceMarkdown } = require('../../../helpers');
 
-const { resolve } = require('path')
-const root = resolve(__dirname, '')
+const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
 
 // const outFolder = 'src/tests/_generated';
 
 describe('testing h1-inside-the-body', () => {
   it('renders h1-inside-the-body', () => {
-    const markdown = readSourceFile(root + '/content.md');
+    const markdown = readSourceFile(`${root}/content.md`);
     const parsedContent = {
       content: markdown,
     };

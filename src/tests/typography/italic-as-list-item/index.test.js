@@ -1,17 +1,17 @@
 const { REGEXP_UL_LIST } = require('atherdon-newsletter-constants');
+const { resolve } = require('path');
 const { write, readSourceFile } = require('../../../utils');
 const { ulList } = require('../../../callbacks');
 const { replaceMarkdown } = require('../../../helpers');
 
-const { resolve } = require('path')
-const root = resolve(__dirname, '')
+const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
 
 // const outFolder = 'src/tests/_generated';
 
 describe('testing italic as list item', () => {
   it('testing italic as list item', () => {
-    const markdown = readSourceFile(root+'/content.md');
+    const markdown = readSourceFile(`${root}/content.md`);
     const parsedContent = {
       content: markdown,
     };

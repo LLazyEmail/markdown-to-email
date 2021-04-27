@@ -1,11 +1,10 @@
 const {
-  strong, link, blockquote, 
+  strong, link, blockquote,
   mem, header,
 } = require('../../callbacks-simple');
 const { newLine } = require('../../utils');
 
 describe('testing callback-simple', () => {
-
   test('strong returns a <strong> with text', () => {
     const str = strong('', '', 'hello ', 'world');
     expect(str).toBe('<strong style="font-weight: bolder;">hello world</strong>');
