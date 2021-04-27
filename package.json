@@ -3,9 +3,7 @@
   "version": "1.2.0",
   "description": "Translate 'Markdown' Syntax into HTML For Email Newsletters",
   "main": "index.js",
-  "scripts": {
-    "test": "npm run checkFolders && jest ./src/tests",
-    "test:watch": "npm run checkFolders && jest --watch ./src/tests",
+  "scripts": {   
     "parse": "npm run checkFolders && node ./src/parser",
     "parse:full": "npm run checkFolders && cross-env PARSE=full node ./src/parser",
     "parseReact": "npm run checkFolders && cross-env PARSE=reactContentOnly node ./src/parser",
@@ -13,7 +11,12 @@
     "test:react": "npm run checkFolders && jest ./src/parserMDReact/tests",
     "lint": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
     "build:small": "npm run checkFolders && node ./src/index.js",
-    "checkFolders": "node ./checkFolders"
+    "checkFolders": "node ./checkFolders",
+    "test": "npm run checkFolders && jest ./src/tests",
+    "test:typography": "npm run ./src/tests/typography",
+    "test:methods": "npm run ./src/tests/methods",
+    "test:custom": "npm run ./src/tests/custom",
+    "test:watch": "npm run checkFolders && jest --watch ./src/tests"
   },
   "author": "hirdbluebird, atherdon, vadim9999",
   "license": "ISC",
