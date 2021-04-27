@@ -5,8 +5,8 @@ import BodyPrototype from './Body/BodyPrototype';
 import Divider from 'components/body/divider';
 
 import HOC from './HOC';
-
-import config from './config';
+import Footer from './Footer';
+/import config from './config';
 import { styles } from './styles';
 
 const FullTemplate = ({ header }) => (
@@ -30,11 +30,11 @@ const FullTemplate = ({ header }) => (
               config={config}
             />
           </Divider>
-          <Logo />
+          {/* <Logo /> */}
         </td>
       </tr>
     </tbody>
-    <Footer />
+    {/* <Footer /> */}
   </HOC>  
    
 );
