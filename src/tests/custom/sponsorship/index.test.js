@@ -12,7 +12,7 @@ const outFolder = resolve('src/tests', 'directory', '../_generated');
 
 describe('testing sponsorship', () => {
   it('renders sponsorship', () => {
-    const markdown = readSourceFile('src/tests/sponsorship/sponsorship.md');
+    const markdown = readSourceFile(root+'/sponsorship.md');
     const parsedContent = {
       content: markdown,
       errors: {

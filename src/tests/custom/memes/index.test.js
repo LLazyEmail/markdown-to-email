@@ -11,7 +11,7 @@ const outFolder = resolve('src/tests', 'directory', '../_generated');
 
 describe('testing mem', () => {
   it('renders mem', () => {
-    const markdown = readSourceFile('src/tests/memes/content.md');
+    const markdown = readSourceFile(root+'/content.md');
     const parsedContent = {
       content: markdown,
     };

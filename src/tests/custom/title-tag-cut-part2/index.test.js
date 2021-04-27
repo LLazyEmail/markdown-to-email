@@ -12,7 +12,7 @@ const outFolder = resolve('src/tests', 'directory', '../_generated');
 
 describe("testing h1-inside-the-body", () => {
   it("renders h1-inside-the-body", () => {
-    let markdown = readSourceFile("src/tests/h1-inside-the-body/content.md");
+    let markdown = readSourceFile(root+'/content.md");
 
  let state = {
    content: markdown,

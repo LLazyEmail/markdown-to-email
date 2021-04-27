@@ -10,7 +10,7 @@ const outFolder = resolve('src/tests', 'directory', '../_generated');
 
 describe('testing preview-text', () => {
   it('renders preview-text', () => {
-    const markdown = readSourceFile('src/tests/preview-text/content.md');
+    const markdown = readSourceFile(root+'/content.md');
     const parsedContent = {
       content: markdown,
       previewText: '',
