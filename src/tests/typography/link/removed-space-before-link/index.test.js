@@ -3,11 +3,15 @@ const { write, readSourceFile } = require('../../../../utils');
 const { link } = require('../../../../callbacks-simple');
 const { replaceMarkdown } = require('../../../../helpers');
 
-const outFolder = 'src/tests/_generated';
+const { resolve } = require('path')
+const root = resolve(__dirname, '')
+const outFolder = resolve('tests', 'directory', '../_generated');
+
+// const outFolder = 'src/tests/_generated';
 
 describe('testing links when space before link', () => {
   it('renders testing links when space before link', () => {
-    const markdown = readSourceFile('src/tests/link/removed-space-before-link/content.md');
+    const markdown = readSourceFile(root+'/content.md');
     const parsedContent = {
       content: markdown,
     };

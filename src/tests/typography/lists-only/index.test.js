@@ -3,11 +3,15 @@ const { write, readSourceFile } = require('../../../utils');
 const { ulList } = require('../../../callbacks');
 const { replaceMarkdown } = require('../../../helpers');
 
-const outFolder = 'src/tests/_generated';
+const { resolve } = require('path')
+const root = resolve(__dirname, '')
+const outFolder = resolve('tests', 'directory', '../_generated');
+
+// const outFolder = 'src/tests/_generated';
 
 describe('testing lists-only', () => {
   it('renders lists-only', () => {
-    const markdown = readSourceFile('src/tests/lists-only/content.md');
+    const markdown = readSourceFile(root+'/content.md');
     const parsedContent = {
       content: markdown,
     };

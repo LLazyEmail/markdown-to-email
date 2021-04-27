@@ -3,11 +3,15 @@ const { write, readSourceFile } = require('../../../utils');
 const { image } = require('../../../callbacks');
 const { replaceMarkdown } = require('../../../helpers');
 
-const outFolder = 'src/tests/_generated';
+const { resolve } = require('path')
+const root = resolve(__dirname, '')
+const outFolder = resolve('tests', 'directory', '../_generated');
+
+// const outFolder = 'src/tests/_generated';
 
 describe('testing images-only', () => {
   it('renders images-only', () => {
-    const markdown = readSourceFile('src/tests/images-only/content.md');
+    const markdown = readSourceFile(root + '/content.md');
     const parsedContent = {
       content: markdown,
       warnings: {

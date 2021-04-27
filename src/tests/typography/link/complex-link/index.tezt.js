@@ -4,9 +4,13 @@ const { write, readSourceFile } = require('../../../../utils');
 
 const { replaceMarkdown } = require('../../../../helpers');
 
+// const { resolve } = require('path')
+// const root = resolve(__dirname, '')
+// const outFolder = resolve('tests', 'directory', '../_generated');
+
 describe('testing complex links', () => {
 //   it("renders xxx", async () => {
-//     let markdown = await readSourceFile("src/tests/sponsorship/sponsorship.md");
+//     let markdown = await readSourceFile(root+"/sponsorship.md");
 //     let parsedContent = {
 //       content: markdown,
 //     };

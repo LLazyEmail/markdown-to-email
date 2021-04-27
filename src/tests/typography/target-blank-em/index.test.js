@@ -3,11 +3,15 @@ const { write, readSourceFile } = require('../../../utils');
 const { italic, link } = require('../../../callbacks-simple');
 const { replaceMarkdown } = require('../../../helpers');
 
-const outFolder = 'src/tests/_generated';
+const { resolve } = require('path')
+const root = resolve(__dirname, '')
+const outFolder = resolve('tests', 'directory', '../_generated');
+
+// const outFolder = 'src/tests/_generated';
 
 describe('testing target-blank-em', () => {
   it('renders target-blank-em', () => {
-    const markdown = readSourceFile('src/tests/target-blank-em/content.md');
+    const markdown = readSourceFile(root+'/content.md');
     const parsedContent = {
       content: markdown,
     };
