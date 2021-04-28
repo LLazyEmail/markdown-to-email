@@ -89,7 +89,7 @@ function parseMDReact(source, isFull) {
   // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
   //   replaceMDBinded(REGEXP_OL_LIST, olList);
   replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
-  //   replaceMDBinded(REGEXP_HR, hr);
+  replaceMDBinded(REGEXP_HR, hr);
   replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
   // TODO CHECK CASES WHEN CONTENT CAN HAVE EMPTY LISTS OR BLOCKQUOTE
   //   replaceMDBinded(REGEXP_EMPTY_UL, empty);

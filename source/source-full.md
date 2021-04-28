@@ -71,6 +71,7 @@ Investing in the [DevOps tools](https://hackernoon.com/7-best-devops-security-pr
 
 ![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image1.gif][https://media.giphy.com/media/3oFzmjFxbBiPQW4qVa/giphy.gif][alt text]
 
+-------
 
 ## Pull it all together
 
