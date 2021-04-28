@@ -94,7 +94,11 @@ function br(text, newLines) {
   const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
 
   // @TODO well, it's not good. can be improved with lodash
-  const result = arrNewLines.reduce((acc, current, index) => (index > 0 ? `${acc}<br/>${current}` : current), '');
+  // @TODO I REALLY HATE THIS LINE
+  const result = 
+  arrNewLines.reduce(
+      (acc, current, index) => (index > 0 ? `${acc}<br/>${current}` : current), ''
+      );
 
   return result;
 }
