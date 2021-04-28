@@ -36,10 +36,16 @@ yarn-error.log*
 
 package/components/misc/dist/*
 package/components/misc/node_modules/*
+package/components/misc/yarn-error.log
+package/components/misc/yarn.lock
 
 
 package/components/typography/dist/*
 package/components/typography/node_modules/*
+package/components/typography/yarn-error.log
+package/components/typography/yarn.lock
 
 package/content/dist/*
 package/content/node_modules/*
+package/content/yarn-error.log
+package/content/yarn.lock
