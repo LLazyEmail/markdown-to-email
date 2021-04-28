@@ -73,7 +73,7 @@ function parseMDReact(source, isFull) {
     replaceMDBinded(REGEXP_PREVIEW_TEXT, previewText);
   }
 
-  //   replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
+  replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
   replaceMDBinded(REGEXP_STRONG, strong);
   replaceMDBinded(REGEXP_EM, italic);
   replaceMDBinded(REGEXP_HEADER, header);
