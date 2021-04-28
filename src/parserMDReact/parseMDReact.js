@@ -97,7 +97,7 @@ function parseMDReact(source, isFull) {
   //   replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
 
   replaceMDBinded(REGEXP_BR, br);
-  //   replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
+  replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
   //   replaceMDBinded(REGEXP_MEM, mem);
   // console.log( state )
   return state;

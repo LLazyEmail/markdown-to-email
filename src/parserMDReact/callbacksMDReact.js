@@ -120,7 +120,7 @@ function sponsorship(text) {
     ? (this.errors.sponsorshipBottom = true)
     : (this.errors.sponsorshipTop = true);
 
-  return replaceHTMLWrapper('sponsor', config, 'body');
+  return replaceReactWrapper('sponsor', config, 'body');
 }
 
 // function tag_loop(){
