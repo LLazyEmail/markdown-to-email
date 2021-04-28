@@ -1,9 +1,8 @@
 {
   "name": "newsletter-hn-misc-components",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "separating small number of components into outside",
-  "main": "bundle.js",
-  "module": "dist/index.es.js",
+  "main": "dist/bundle.js",
   "scripts": {
     "bundle": "rollup -c",
     "dev": "rollup -c -w",

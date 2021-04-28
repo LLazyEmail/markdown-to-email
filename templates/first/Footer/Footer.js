@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Copyrights from '../../../components/misc/copyrights';
+// import Copyrights from '../../../components/misc/copyrights';
 import Address from '../../../components/misc/address';
 import Unsubscribe from '../../../components/misc/unsubscribe';
 import NewsletterSponsorshipLink from '../../../components/misc/newsletter-sponsorship-link';
