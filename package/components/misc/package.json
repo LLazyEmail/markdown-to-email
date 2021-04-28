@@ -1,6 +1,6 @@
 {
   "name": "newsletter-hn-misc-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "separating small number of components into outside",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -51,5 +51,12 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "private": false,
+  "release": {
+    "publishDir": "dist"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
