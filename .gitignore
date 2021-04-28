@@ -32,3 +32,14 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+
+package/components/misc/dist/*
+package/components/misc/node_modules/*
+
+
+package/components/typography/dist/*
+package/components/typography/node_modules/*
+
+package/content/dist/*
+package/content/node_modules/*
