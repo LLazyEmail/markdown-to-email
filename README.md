@@ -142,3 +142,6 @@ good example is December/top1 newsletter
 https://maizzle.com/
 
 https://www.npmjs.com/package/verymail
+
+
+https://www.npmjs.com/package/markdown-to-mailchimp
