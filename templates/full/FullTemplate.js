@@ -6,7 +6,7 @@ import Divider from 'components/body/divider';
 
 import HOC from './HOC';
 import Footer from './Footer';
-/import config from './config';
+import config from './config';
 import { styles } from './styles';
 
 const FullTemplate = ({ header }) => (
