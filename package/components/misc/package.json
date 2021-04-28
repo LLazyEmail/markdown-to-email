@@ -1,11 +1,16 @@
 {
   "name": "newsletter-hn-misc-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "separating small number of components into outside",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "browser": "dist/index.iife.js",
   "scripts": {
+    "bundle": "rollup -c",
+    "dev": "rollup -c -w",
+    "build": "npm run clean && npm run bundle",
+    "build:babel": "babel src -d dist",
+    "prepublish": "npm run clean && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "shx rm -rf ./coverage && shx rm -rf ./dist",
     "lint:prettier": "prettier --write src/",
