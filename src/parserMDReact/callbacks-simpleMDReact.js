@@ -82,7 +82,7 @@ function mem(text, src, href, altText) {
     href: href.trim(),
   };
 
-  const result = replaceHTMLWrapper('image', config);
+  const result = replaceReactWrapper('image', config);
   return result;
 }
 
