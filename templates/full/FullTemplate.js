@@ -5,7 +5,7 @@ import BodyPrototype from './Body/BodyPrototype';
 import Divider from 'components/body/divider';
 
 import HOC from './HOC';
-import Footer from './Footer';
+// import Footer from './Footer';
 import config from './config';
 import { styles } from './styles';
 
