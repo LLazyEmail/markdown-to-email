@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# package-lock.json file
+package-lock.json
+
 # next.js
 /.next/
 /out/
