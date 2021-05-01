@@ -4,8 +4,6 @@
 // it will help us to move forward.
 const { newLine } = require('./utils');
 
-// const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
-
 const {
   REGEXP_HEADER,
   REGEXP_IMAGE,
@@ -54,54 +52,8 @@ const {
 } = require('./callbacks');
 
 
-// const createState = function(markdown){
-//     const state = {
-//         content: markdown,
-//         previewText: '',
-//         warnings: {
-//             images: 0,
-//         },
-//         errors: {
-//             previewText: false,
-//             sponsorshipTop: false,
-//             sponsorshipBottom: false,
-//         },
-//     };
-
-//     return state;
-// }
-  
-
 var Replacer = function() {};
 
-
-// var Replacer = {
-//     comments:false,
-//     strong:false,
-//     em:false,
-//     header:false,
-//     image:false,
-//     link:false,
-//     del:false,
-//     q:false,
-//     code:false,
-//     ul:false,
-//     ol:false,
-//     blockquote:false,
-//     hr:false,
-//     paragraph:false,
-//     emptyUl:false,
-//     emptyOl:false,
-//     emptyBlockquote:false,
-//     br:false,
-//     sponsorship:false,
-//     memes:false
-// };
-
-// Replacer.prototype.replaceMarkdown = function() {}
-
-// Replacer.prototype.replaceMDBindedPreviewText = function() {}
-    
 Replacer.prototype.replaceMDBinded = function() {}
 Replacer.prototype.replaceMDBindedPreviewText = function() {}
 
