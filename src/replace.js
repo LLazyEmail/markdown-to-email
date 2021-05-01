@@ -6,6 +6,29 @@ const { newLine } = require('./utils');
 
 const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
 
+const {
+  REGEXP_HEADER,
+  REGEXP_IMAGE,
+  REGEXP_LINK,
+  REGEXP_STRONG,
+  REGEXP_DEL,
+  REGEXP_Q,
+  REGEXP_CODE,
+  REGEXP_UL_LIST,
+  REGEXP_OL_LIST,
+  REGEXP_BLOCKQUOTE,
+  REGEXP_HR,
+  REGEXP_PARAGRAPH,
+  REGEXP_EMPTY_UL,
+  REGEXP_EMPTY_OL,
+  REGEXP_BR,
+  REGEXP_EMPTY_BLOCKQUOTE,
+  REGEXP_EM,
+  REGEXP_SPONSORSHIP,
+  REGEXP_HTML_COMMENTS,
+  REGEXP_MEM,
+  REGEXP_PREVIEW_TEXT,
+} = require('atherdon-newsletter-constants');
 
 const {
   strong,
@@ -30,90 +53,113 @@ const {
   br
 } = require('./callbacks');
 
+var Replacer = function(){};
 
-let replacer = {};
 
-replacer.prototype.comments = function(){
+// var Replacer = {
+//     comments:false,
+//     strong:false,
+//     em:false,
+//     header:false,
+//     image:false,
+//     link:false,
+//     del:false,
+//     q:false,
+//     code:false,
+//     ul:false,
+//     ol:false,
+//     blockquote:false,
+//     hr:false,
+//     paragraph:false,
+//     emptyUl:false,
+//     emptyOl:false,
+//     emptyBlockquote:false,
+//     br:false,
+//     sponsorship:false,
+//     memes:false
+// };
+
+Replacer.prototype.comments = function(){
    replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
 }
 
-replacer.prototype.strong = function(){
+Replacer.prototype.strong = function(){
    replaceMDBinded(REGEXP_STRONG, strong);
 }
 
-replacer.prototype.em = function(){
+Replacer.prototype.em = function(){
    replaceMDBinded(REGEXP_EM, italic);
 }
 
-replacer.prototype.header = function(){
+Replacer.prototype.header = function(){
    replaceMDBinded(REGEXP_HEADER, header);
 }
 
-replacer.prototype.image = function(){
+Replacer.prototype.image = function(){
    replaceMDBinded(REGEXP_IMAGE, image);
 }
 
-replacer.prototype.link = function(){
+Replacer.prototype.link = function(){
    replaceMDBinded(REGEXP_LINK, link);
 }
 
-replacer.prototype.del = function(){
+Replacer.prototype.del = function(){
    replaceMDBinded(REGEXP_DEL, del);
 }
 
-replacer.prototype.q = function(){
+Replacer.prototype.q = function(){
    replaceMDBinded(REGEXP_Q, q);
 }
 
-replacer.prototype.code = function(){
+Replacer.prototype.code = function(){
    replaceMDBinded(REGEXP_CODE, code);
 }
 
-replacer.prototype.ul = function(){
+Replacer.prototype.ul = function(){
    replaceMDBinded(REGEXP_UL_LIST, ulList);
 }
 
-replacer.prototype.ol = function(){
+Replacer.prototype.ol = function(){
    replaceMDBinded(REGEXP_OL_LIST, olList);
 }
 
-replacer.prototype.blockquote = function(){
+Replacer.prototype.blockquote = function(){
    replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
 }
 
-replacer.prototype.hr = function(){
+Replacer.prototype.hr = function(){
    replaceMDBinded(REGEXP_HR, hr);
 }
 
-replacer.prototype.paragraph = function(){
+Replacer.prototype.paragraph = function(){
    replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
 }
 
-replacer.prototype.emptyUl = function(){
+Replacer.prototype.emptyUl = function(){
    replaceMDBinded(REGEXP_EMPTY_UL, empty);
 }
 
-replacer.prototype.emptyOl = function(){
+Replacer.prototype.emptyOl = function(){
     replaceMDBinded(REGEXP_EMPTY_OL, empty);
 }
 
   
-replacer.prototype.emptyBlockquote = function(){
+Replacer.prototype.emptyBlockquote = function(){
     // this line is generating an error
   replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
 }
 
-replacer.prototype.br = function(){
+Replacer.prototype.br = function(){
    replaceMDBinded(REGEXP_BR, br);
 }
-replacer.prototype.sponsorship = function(){
+Replacer.prototype.sponsorship = function(){
    replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
 }
 
 
-replacer.prototype.memes = function(){
+Replacer.prototype.memes = function(){
    replaceMDBinded(REGEXP_MEM, mem);
 }
 
 
-module.exports = replacer;
+module.exports = new Replacer();

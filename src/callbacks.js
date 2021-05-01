@@ -88,6 +88,7 @@ function ulList(text, list) {
   return `${newLine + replaceHTMLWrapper('list', config) + newLine}`;
 }
 
+// @TODO update this. it's a real shitty method
 function olList(text, item) {
   return `${newLine}<ol>${newLine}\t<li>${
     item.trim()
