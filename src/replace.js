@@ -2,6 +2,11 @@
 // a process of reading and debugging our code
 // i'm creating a set of methods, that have a simple name.
 // it will help us to move forward.
+const { newLine } = require('./utils');
+
+const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
+
+
 const {
   strong,
   link,
@@ -22,80 +27,93 @@ const {
   olList,
   paragraphWrapper,
   sponsorship,
-  br,
-//   newLine,
+  br
 } = require('./callbacks');
 
-const { newLine } = require('./utils');
 
-function comments(){
+let replacer = {};
+
+replacer.prototype.comments = function(){
    replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
 }
-function strong(){
+
+replacer.prototype.strong = function(){
    replaceMDBinded(REGEXP_STRONG, strong);
 }
-function em(){
+
+replacer.prototype.em = function(){
    replaceMDBinded(REGEXP_EM, italic);
 }
-function header(){
+
+replacer.prototype.header = function(){
    replaceMDBinded(REGEXP_HEADER, header);
 }
-function image(){
+
+replacer.prototype.image = function(){
    replaceMDBinded(REGEXP_IMAGE, image);
 }
-function link(){
+
+replacer.prototype.link = function(){
    replaceMDBinded(REGEXP_LINK, link);
 }
 
-function del(){
+replacer.prototype.del = function(){
    replaceMDBinded(REGEXP_DEL, del);
 }
-function q(){
+
+replacer.prototype.q = function(){
    replaceMDBinded(REGEXP_Q, q);
 }
-function code(){
+
+replacer.prototype.code = function(){
    replaceMDBinded(REGEXP_CODE, code);
 }
-function ul(){
+
+replacer.prototype.ul = function(){
    replaceMDBinded(REGEXP_UL_LIST, ulList);
 }
-function ol(){
+
+replacer.prototype.ol = function(){
    replaceMDBinded(REGEXP_OL_LIST, olList);
 }
-function blockquote(){
+
+replacer.prototype.blockquote = function(){
    replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
 }
-function hr(){
+
+replacer.prototype.hr = function(){
    replaceMDBinded(REGEXP_HR, hr);
 }
-function paragraph(){
+
+replacer.prototype.paragraph = function(){
    replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
 }
-function emptyUl(){
+
+replacer.prototype.emptyUl = function(){
    replaceMDBinded(REGEXP_EMPTY_UL, empty);
 }
-function emptyOl(){
+
+replacer.prototype.emptyOl = function(){
     replaceMDBinded(REGEXP_EMPTY_OL, empty);
 }
 
   
-function emptyBlockquote(){
+replacer.prototype.emptyBlockquote = function(){
     // this line is generating an error
   replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
 }
 
-function br(){
+replacer.prototype.br = function(){
    replaceMDBinded(REGEXP_BR, br);
 }
-function sponsorship(){
+replacer.prototype.sponsorship = function(){
    replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
 }
-function memes(){
+
+
+replacer.prototype.memes = function(){
    replaceMDBinded(REGEXP_MEM, mem);
 }
 
 
-module.exports = {
-
-}
- 
+module.exports = replacer;
