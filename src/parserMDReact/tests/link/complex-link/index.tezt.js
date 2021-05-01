@@ -1,4 +1,4 @@
-const { write, readSourceFile } = require('../../utils');
+const { write, readSourceFile } = require('@root/utils');
 // const { sponsorship } = require("../../just-a-guess-functions");
 // const { REGEXP_SPONSORSHIP } = require("atherdon-newsletter-constants");
 
