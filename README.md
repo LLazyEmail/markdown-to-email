@@ -132,9 +132,8 @@ good example is December/top1 newsletter
 - https://www.npmjs.com/package/link-check
 
 
-https://maizzle.com/
 
-https://www.npmjs.com/package/verymail
-
-
-https://www.npmjs.com/package/markdown-to-mailchimp
+Check later:
+- https://maizzle.com/
+- https://www.npmjs.com/package/verymail
+- https://www.npmjs.com/package/markdown-to-mailchimp
