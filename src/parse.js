@@ -45,10 +45,14 @@ const {
   paragraphWrapper,
   sponsorship,
   br,
-  newLine,
+//   newLine,
 } = require('./callbacks');
 
+const { newLine } = require('./utils');
+
 const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
+
+
 
 // @todo update this method. I'm sure it can be improved.
 function parse(source) {
@@ -72,6 +76,8 @@ function parse(source) {
   const replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
   replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
+
+
 
   replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
 

@@ -2,99 +2,100 @@
 // a process of reading and debugging our code
 // i'm creating a set of methods, that have a simple name.
 // it will help us to move forward.
+const {
+  strong,
+  link,
+  blockquote,
+  mem,
+  header,
+  italic,
+  del,
+  q,
+  code,
+  hr,
+  empty,
+} = require('./callbacks-simple');
+
+const {
+  image,
+  ulList,
+  olList,
+  paragraphWrapper,
+  sponsorship,
+  br,
+//   newLine,
+} = require('./callbacks');
+
+const { newLine } = require('./utils');
 
 function comments(){
-   
+   replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
+}
+function strong(){
+   replaceMDBinded(REGEXP_STRONG, strong);
+}
+function em(){
+   replaceMDBinded(REGEXP_EM, italic);
+}
+function header(){
+   replaceMDBinded(REGEXP_HEADER, header);
+}
+function image(){
+   replaceMDBinded(REGEXP_IMAGE, image);
+}
+function link(){
+   replaceMDBinded(REGEXP_LINK, link);
 }
 
-function (){
-   
+function del(){
+   replaceMDBinded(REGEXP_DEL, del);
 }
-function (){
-   
+function q(){
+   replaceMDBinded(REGEXP_Q, q);
 }
-function (){
-   
+function code(){
+   replaceMDBinded(REGEXP_CODE, code);
 }
-function (){
-   
+function ul(){
+   replaceMDBinded(REGEXP_UL_LIST, ulList);
 }
-function (){
-   
+function ol(){
+   replaceMDBinded(REGEXP_OL_LIST, olList);
 }
-function (){
-   
+function blockquote(){
+   replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
 }
-function (){
-   
+function hr(){
+   replaceMDBinded(REGEXP_HR, hr);
 }
-function (){
-   
+function paragraph(){
+   replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
 }
-function (){
-   
+function emptyUl(){
+   replaceMDBinded(REGEXP_EMPTY_UL, empty);
 }
-function (){
-   
+function emptyOl(){
+    replaceMDBinded(REGEXP_EMPTY_OL, empty);
 }
-function (){
-   
-}
-function (){
-   
-}
-function (){
-   
-}
-function (){
-   
-}
-function (){
-   
-}
-function (){
-   
-}
-function (){
-   
-}
-function (){
-   
-}
-v
-function (){
-   
-}
-function (){
-   
-}
-  replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
 
-  replaceMDBinded(REGEXP_STRONG, strong);
-
-  replaceMDBinded(REGEXP_EM, italic);
-
-  replaceMDBinded(REGEXP_HEADER, header);
-
-  replaceMDBinded(REGEXP_IMAGE, image);
-  replaceMDBinded(REGEXP_LINK, link);
-
-  replaceMDBinded(REGEXP_DEL, del);
-  replaceMDBinded(REGEXP_Q, q);
-  replaceMDBinded(REGEXP_CODE, code);
-
-  replaceMDBinded(REGEXP_UL_LIST, ulList);
-  replaceMDBinded(REGEXP_OL_LIST, olList);
-
-  replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
-
-  replaceMDBinded(REGEXP_HR, hr);
-  replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
-  replaceMDBinded(REGEXP_EMPTY_UL, empty);
-  replaceMDBinded(REGEXP_EMPTY_OL, empty);
-  // this line is generating an error
+  
+function emptyBlockquote(){
+    // this line is generating an error
   replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
+}
 
-  replaceMDBinded(REGEXP_BR, br);
-  replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
-  replaceMDBinded(REGEXP_MEM, mem);
+function br(){
+   replaceMDBinded(REGEXP_BR, br);
+}
+function sponsorship(){
+   replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
+}
+function memes(){
+   replaceMDBinded(REGEXP_MEM, mem);
+}
+
+
+module.exports = {
+
+}
+ 
