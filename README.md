@@ -108,13 +108,6 @@ Links
 
 - https://www.htmlemailcheck.com/check/
 
-more about regex
-
-- https://stackoverflow.com/questions/51850672/how-to-test-this-regex-in-jest
-- https://www.bitdegree.org/learn/regex-javascript
-- https://habr.com/ru/post/190304/
-- https://www.regexpal.com/96555
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 ## Stretch Goals (enchancements)
 
@@ -139,9 +132,8 @@ good example is December/top1 newsletter
 - https://www.npmjs.com/package/link-check
 
 
-https://maizzle.com/
 
-https://www.npmjs.com/package/verymail
-
-
-https://www.npmjs.com/package/markdown-to-mailchimp
+Check later:
+- https://maizzle.com/
+- https://www.npmjs.com/package/verymail
+- https://www.npmjs.com/package/markdown-to-mailchimp
