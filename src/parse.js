@@ -21,6 +21,7 @@ const {
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
+
 const { readSourceFile } = require('./utils');
 
 const {
