@@ -67,7 +67,12 @@ function parseMDReact(source, isFull) {
     },
   };
 
+
+
+
   const replaceMDBinded = replaceMarkdown.bind(state);
+
+  
   // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
   if (isFull) {
     replaceMDBinded(REGEXP_PREVIEW_TEXT, previewText);
@@ -85,12 +90,15 @@ function parseMDReact(source, isFull) {
   replaceMDBinded(REGEXP_Q, q);
   replaceMDBinded(REGEXP_CODE, code);
 
+
   replaceMDBinded(REGEXP_UL_LIST, ulList);
   // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
   //   replaceMDBinded(REGEXP_OL_LIST, olList);
+
   replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
   replaceMDBinded(REGEXP_HR, hr);
   replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
+
   // TODO CHECK CASES WHEN CONTENT CAN HAVE EMPTY LISTS OR BLOCKQUOTE
   //   replaceMDBinded(REGEXP_EMPTY_UL, empty);
   //   replaceMDBinded(REGEXP_EMPTY_OL, empty);
