@@ -46,7 +46,7 @@ describe('testing utils.js', () => {
     console.log = jest.fn(storeLog);
     displayCLIErrors({}, { images: 5 });
 
-    const msg1 = chalk.yellow('WARNING source-full.md has 5 images. Replace it to memes');
+    const msg1 = chalk.yellow('WARNING source.md has 5 images. Replace it with memes');
     expect(outputData).toBe(msg1);
   });
 });

@@ -48,7 +48,7 @@ const { readSourceFile } = require('./utils');
 // //   newLine,
 // } = require('./callbacks');
 
-const { newLine } = require('./utils');
+const { newLine, checkErrors } = require('./utils');
 
 const { 
     replaceMarkdown, replaceMarkdownPreviewText 
@@ -147,26 +147,29 @@ function parse(source) {
 
 
     ReplacerObj.comments();
-    // strong();
-    // em();
-    // header();
-    // image();
-    // link();
-    // del();
-    // q();
-    // code();
-    // ul();
-    // ol();
-    // blockquote();
-    // hr();
-    // paragraph();
-    // emptyUl();
-    // emptyOl();
-    // // this line is generating an error
-    // emptyBlockquote();
-    // br();
-    // sponsorship();
-    // memes();
+    ReplacerObj.strong();
+    ReplacerObj.em();
+    ReplacerObj.header();
+    ReplacerObj.image();
+    ReplacerObj.link();
+    ReplacerObj.del();
+    ReplacerObj.q();
+    ReplacerObj.code();
+    ReplacerObj.ul();
+    ReplacerObj.ol();
+    ReplacerObj.blockquote();
+    ReplacerObj.hr();
+    ReplacerObj.paragraph();
+    ReplacerObj.emptyUl();
+    ReplacerObj.emptyOl();
+    // this line is generating an error
+    ReplacerObj.emptyBlockquote();
+    ReplacerObj.br();
+    ReplacerObj.sponsorship();
+    ReplacerObj.memes();
+
+    //i'm adding it only because error warning didnt return red stuff    
+    checkErrors(state.errors);
     // console.log( state )
 
   return state;

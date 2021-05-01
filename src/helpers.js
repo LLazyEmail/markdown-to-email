@@ -32,7 +32,8 @@ function replaceReactWrapper(wrapperName, config, folder = 'typography') {
 // } catch (e) {
 // }    
 function replaceMarkdown(regexp, callback) {
-
+    
+    console.log('helpsers- replace markdown method')
   console.log(typeof callback)  
   var fixedCallbackMethod = false;
   switch (typeof callback) {

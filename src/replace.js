@@ -110,81 +110,81 @@ Replacer.prototype.comments = function(){
 }
 
 Replacer.prototype.strong = function(){
-   replaceMDBinded(REGEXP_STRONG, strong);
+   this.replaceMDBinded(REGEXP_STRONG, strong);
 }
 
 Replacer.prototype.em = function(){
-   replaceMDBinded(REGEXP_EM, italic);
+   this.replaceMDBinded(REGEXP_EM, italic);
 }
 
 Replacer.prototype.header = function(){
-   replaceMDBinded(REGEXP_HEADER, header);
+   this.replaceMDBinded(REGEXP_HEADER, header);
 }
 
 Replacer.prototype.image = function(){
-   replaceMDBinded(REGEXP_IMAGE, image);
+   this.replaceMDBinded(REGEXP_IMAGE, image);
 }
 
 Replacer.prototype.link = function(){
-   replaceMDBinded(REGEXP_LINK, link);
+   this.replaceMDBinded(REGEXP_LINK, link);
 }
 
 Replacer.prototype.del = function(){
-   replaceMDBinded(REGEXP_DEL, del);
+   this.replaceMDBinded(REGEXP_DEL, del);
 }
 
 Replacer.prototype.q = function(){
-   replaceMDBinded(REGEXP_Q, q);
+   this.replaceMDBinded(REGEXP_Q, q);
 }
 
 Replacer.prototype.code = function(){
-   replaceMDBinded(REGEXP_CODE, code);
+   this.replaceMDBinded(REGEXP_CODE, code);
 }
 
 Replacer.prototype.ul = function(){
-   replaceMDBinded(REGEXP_UL_LIST, ulList);
+   this.replaceMDBinded(REGEXP_UL_LIST, ulList);
 }
 
 Replacer.prototype.ol = function(){
-   replaceMDBinded(REGEXP_OL_LIST, olList);
+   this.replaceMDBinded(REGEXP_OL_LIST, olList);
 }
 
 Replacer.prototype.blockquote = function(){
-   replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
+   this.replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
 }
 
 Replacer.prototype.hr = function(){
-   replaceMDBinded(REGEXP_HR, hr);
+   this.replaceMDBinded(REGEXP_HR, hr);
 }
 
 Replacer.prototype.paragraph = function(){
-   replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
+   this.replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
 }
 
 Replacer.prototype.emptyUl = function(){
-   replaceMDBinded(REGEXP_EMPTY_UL, empty);
+   this.replaceMDBinded(REGEXP_EMPTY_UL, empty);
 }
 
 Replacer.prototype.emptyOl = function(){
-    replaceMDBinded(REGEXP_EMPTY_OL, empty);
+    this.replaceMDBinded(REGEXP_EMPTY_OL, empty);
 }
 
   
 Replacer.prototype.emptyBlockquote = function(){
     // this line is generating an error
-  replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
+  this.replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
 }
 
 Replacer.prototype.br = function(){
-   replaceMDBinded(REGEXP_BR, br);
+   this.replaceMDBinded(REGEXP_BR, br);
 }
 Replacer.prototype.sponsorship = function(){
-   replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
+   this.replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
 }
 
 
 Replacer.prototype.memes = function(){
-   replaceMDBinded(REGEXP_MEM, mem);
+   this.replaceMDBinded(REGEXP_MEM, mem);
 }
 
 

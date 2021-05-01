@@ -10,7 +10,7 @@ const { forEach } = require('lodash');
 function checkWarnings(warnings) {
   forEach(warnings, (index, element) => {
     if (index) {
-      const message = `WARNING source.md has ${index} ${element}. Replace it to memes`;
+      const message = `WARNING source.md has ${index} ${element}. Replace it with memes`;
       console.log(chalk.yellow(message));
     }
   });
