@@ -1,9 +1,11 @@
+// const { forEach } = require('lodash');
 const layouts = require('atherdon-newsletter-js-layouts');
 const reactLayouts = require('atherdon-newsletter-react');
 
 function replaceHTMLWrapper(wrapperName, config, folder = 'typography') {
   // this part will be updated very soon
   let wrapper = layouts[folder][wrapperName];
+  //@TODO replace with lodash
   Object.keys(config).forEach((name) => {
     wrapper = wrapper.replace(new RegExp(`{${name}}`, 'g'), config[name]);
   });
@@ -16,6 +18,7 @@ function replaceReactWrapper(wrapperName, config, folder = 'typography') {
   // console.log("name", config);
   // this part will be updated very soon
   let wrapper = reactLayouts[folder][wrapperName];
+  //@TODO replace with lodash
   Object.keys(config).forEach((name) => {
     wrapper = wrapper.replace(new RegExp(`{${name}}`, 'g'), config[name]);
   });
@@ -45,10 +48,11 @@ function replaceMarkdown(regexp, callback) {
           break;
   }
 
-  const callB = typeof callback !== 'string' ? callback.bind(this) : callback;
-  this.content = this.content.replace(regexp, callB);
+  this.content = this.content.replace(regexp, fixedCallbackMethod);
 }
 
+
+// @TODO find out if we really using this method or not?
 function replaceMarkdownPreviewText(regexp) {
   const config = {
     content: this.content.trim(),

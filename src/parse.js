@@ -97,6 +97,7 @@ function parse(source) {
   replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
   replaceMDBinded(REGEXP_EMPTY_UL, empty);
   replaceMDBinded(REGEXP_EMPTY_OL, empty);
+  // this line is generating an error
   replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
 
   replaceMDBinded(REGEXP_BR, br);
