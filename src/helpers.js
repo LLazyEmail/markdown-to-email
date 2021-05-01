@@ -23,8 +23,28 @@ function replaceReactWrapper(wrapperName, config, folder = 'typography') {
   return wrapper;
 }
 
-// @TODO I dont like this method. it's hard to read it
+
+// try {
+//   myroutine(); // may throw three types of exceptions
+// } catch (e) {
+// }    
 function replaceMarkdown(regexp, callback) {
+
+  console.log(typeof callback)  
+  var fixedCallbackMethod = false;
+  switch (typeof callback) {
+      case 'string':
+          fixedCallbackMethod = callback;
+          break;
+      case 'undefined':
+            console.log("ERRROROROR HERE!!!!")
+
+          break;  
+      default:
+          fixedCallbackMethod = callback.bind(this)
+          break;
+  }
+
   const callB = typeof callback !== 'string' ? callback.bind(this) : callback;
   this.content = this.content.replace(regexp, callB);
 }
