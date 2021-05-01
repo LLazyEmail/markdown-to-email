@@ -30,7 +30,18 @@ function replaceReactWrapper(wrapperName, config, folder = 'typography') {
 // try {
 //   myroutine(); // may throw three types of exceptions
 // } catch (e) {
-// }    
+// }   
+ 
+  /* work before the function is called */
+//   try {
+//     var returnValue = originalFunction.call(this, a, b, c);
+//     /* work after the function is called */
+//     return returnValue;
+//   }
+//   catch (e) {
+//     /* work in case there is an error */
+//     throw e;
+//   }
 function replaceMarkdown(regexp, callback) {
     
     console.log('helpsers- replace markdown method')
