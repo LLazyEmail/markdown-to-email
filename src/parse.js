@@ -50,30 +50,35 @@ const { readSourceFile } = require('./utils');
 
 const { newLine } = require('./utils');
 
-const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
+const { 
+    replaceMarkdown, replaceMarkdownPreviewText 
+} = require('./helpers');
 
-const {
-    comments,
-    strong,
-    em,
-    header,
-    image,
-    link,
-    del,
-    q,
-    code,
-    ul,
-    ol,
-    blockquote,
-    hr,
-    paragraph,
-    emptyUl,
-    emptyOl,
-    emptyBlockquote,
-    br,
-    sponsorship,
-    memes
-} = require('./replace');
+// const {
+//     comments,
+//     strong,
+//     em,
+//     header,
+//     image,
+//     link,
+//     del,
+//     q,
+//     code,
+//     ul,
+//     ol,
+//     blockquote,
+//     hr,
+//     paragraph,
+//     emptyUl,
+//     emptyOl,
+//     emptyBlockquote,
+//     br,
+//     sponsorship,
+//     memes
+// } = require('./replace');
+
+const ReplacerObj = require('./replace');
+
 
 // @todo update this method. I'm sure it can be improved.
 function parse(source) {
@@ -92,6 +97,9 @@ function parse(source) {
     },
   };
 
+
+  ReplacerObj.replaceMDBinded = replaceMarkdown.bind(state);
+  ReplacerObj.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
     // I WILL JUST DISABLE IT FOR NOW
     // I PROMISE TO GET IT BACK
@@ -138,27 +146,27 @@ function parse(source) {
 //   // console.log( state )
 
 
-    comments();
-    strong();
-    em();
-    header();
-    image();
-    link();
-    del();
-    q();
-    code();
-    ul();
-    ol();
-    blockquote();
-    hr();
-    paragraph();
-    emptyUl();
-    emptyOl();
-    // this line is generating an error
-    emptyBlockquote();
-    br();
-    sponsorship();
-    memes();
+    ReplacerObj.comments();
+    // strong();
+    // em();
+    // header();
+    // image();
+    // link();
+    // del();
+    // q();
+    // code();
+    // ul();
+    // ol();
+    // blockquote();
+    // hr();
+    // paragraph();
+    // emptyUl();
+    // emptyOl();
+    // // this line is generating an error
+    // emptyBlockquote();
+    // br();
+    // sponsorship();
+    // memes();
     // console.log( state )
 
   return state;

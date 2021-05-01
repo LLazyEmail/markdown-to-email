@@ -4,7 +4,7 @@
 // it will help us to move forward.
 const { newLine } = require('./utils');
 
-const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
+// const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
 
 const {
   REGEXP_HEADER,
@@ -53,7 +53,26 @@ const {
   br
 } = require('./callbacks');
 
-var Replacer = function(){};
+
+// const createState = function(markdown){
+//     const state = {
+//         content: markdown,
+//         previewText: '',
+//         warnings: {
+//             images: 0,
+//         },
+//         errors: {
+//             previewText: false,
+//             sponsorshipTop: false,
+//             sponsorshipBottom: false,
+//         },
+//     };
+
+//     return state;
+// }
+  
+
+var Replacer = function() {};
 
 
 // var Replacer = {
@@ -79,8 +98,15 @@ var Replacer = function(){};
 //     memes:false
 // };
 
+// Replacer.prototype.replaceMarkdown = function() {}
+
+// Replacer.prototype.replaceMDBindedPreviewText = function() {}
+    
+Replacer.prototype.replaceMDBinded = function() {}
+Replacer.prototype.replaceMDBindedPreviewText = function() {}
+
 Replacer.prototype.comments = function(){
-   replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
+   this.replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
 }
 
 Replacer.prototype.strong = function(){
