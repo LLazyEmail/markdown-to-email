@@ -63,7 +63,9 @@ module.exports = {
   strong,
   link,
   blockquote,
+
   mem,
+  
   header,
 
   italic,
