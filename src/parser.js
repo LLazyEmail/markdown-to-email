@@ -4,6 +4,7 @@ const layouts = require('atherdon-newsletter-js-layouts');
 const reactLayouts = require('atherdon-newsletter-react');
 
 const { parse, parseFullTHing } = require('./parse');
+
 const {
   write,
   readFile,
@@ -31,7 +32,7 @@ switch (process.env.PARSE) {
     generateReactFullTemplate();
     break;
   default:
-    generateContentOnly();
+    generateFullTemplate();
     break;
 }
 
@@ -69,6 +70,7 @@ function generateReactFullTemplate() {
   console.log(chalk.green.bold(message));
 }
 
+// this method is depricated.
 function generateContentOnly() {
   const parsedContent = parse(CONTENT_SOURCE);
   checkWarnings(parsedContent.warnings);

@@ -10,7 +10,7 @@ const { forEach } = require('lodash');
 function checkWarnings(warnings) {
   forEach(warnings, (index, element) => {
     if (index) {
-      const message = `WARNING source-full.md has ${index} ${element}. Replace it to memes`;
+      const message = `WARNING source.md has ${index} ${element}. Replace it to memes`;
       console.log(chalk.yellow(message));
     }
   });
@@ -20,7 +20,7 @@ function checkErrors(errors) {
   if (Object.values(errors).includes(false)) {
     forEach(errors, (_, error) => {
       if (!errors[error]) {
-        const message = `ERROR source-full.md doesn't have ${error}`;
+        const message = `ERROR source.md doesn't have ${error}`;
         console.log(chalk.red(message));
       }
     });
@@ -94,7 +94,9 @@ const platform = os.platform();
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
 // @TODO add path, in order to make it work PERFECTLY
-const FULL_SOURCE = 'source/source-full.md';
+const FULL_SOURCE = 'source/source.md';
+
+// I left this variable here just for depricated methods. it's time to use full-template at all places
 const CONTENT_SOURCE = 'source/source.md';
 
 module.exports = {

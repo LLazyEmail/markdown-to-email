@@ -4,7 +4,7 @@
   "description": "Translate 'Markdown' Syntax into HTML For Email Newsletters",
   "main": "index.js",
   "scripts": {
-    "parse": "npm run checkFolders && node ./src/parser",
+    "parse": "npm run checkFolders && cross-env PARSE=full node ./src/parser",
     "parse:full": "npm run checkFolders && cross-env PARSE=full node ./src/parser",
     "parseReact": "npm run checkFolders && cross-env PARSE=reactContentOnly node ./src/parser",
     "parseReact:full": "npm run checkFolders && cross-env PARSE=reactFull node ./src/parser",
