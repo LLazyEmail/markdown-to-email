@@ -95,10 +95,9 @@ function br(text, newLines) {
 
   // @TODO well, it's not good. can be improved with lodash
   // @TODO I REALLY HATE THIS LINE
-  const result = 
-  arrNewLines.reduce(
-      (acc, current, index) => (index > 0 ? `${acc}<br/>${current}` : current), ''
-      );
+  const result = arrNewLines.reduce(
+    (acc, current, index) => (index > 0 ? `${acc}<br/>${current}` : current), '',
+  );
 
   return result;
 }

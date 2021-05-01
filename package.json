@@ -21,7 +21,6 @@
   "author": "hirdbluebird, atherdon, vadim9999",
   "license": "ISC",
   "devDependencies": {
-    "atherdon-newsletter-constants": "1.0.5",
     "babel-eslint": "10.1.0",
     "eslint": "7.25.0",
     "eslint-config-airbnb-base": "14.2.1",
@@ -33,6 +32,7 @@
   "dependencies": {
     "atherdon-newsletter-js-layouts": "1.0.15",
     "atherdon-newsletter-react": "^1.0.9",
+    "atherdon-newsletter-constants": "1.0.5",
     "chalk": "^4.1.1",
     "cross-env": "^7.0.3",
     "lodash": "^4.17.21",

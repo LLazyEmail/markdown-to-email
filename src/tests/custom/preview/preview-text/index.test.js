@@ -1,5 +1,5 @@
-const { REGEXP_PREVIEW_TEXT } = require('atherdon-newsletter-constants');
 const { resolve } = require('path');
+const { REGEXP_PREVIEW_TEXT } = require('atherdon-newsletter-constants');
 const { write, readSourceFile } = require('@root/utils');
 const { replaceMarkdownPreviewText } = require('@root/helpers');
 

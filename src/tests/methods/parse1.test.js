@@ -1,3 +1,5 @@
+const { resolve } = require('path');
+
 const {
   REGEXP_HTML_COMMENTS,
   REGEXP_PREVIEW_TEXT,
@@ -6,16 +8,19 @@ const {
 const {
   readSourceFile,
   FULL_SOURCE,
-} = require('../../utils');
+} = require('@root/utils');
 
-const { empty } = require('../../callbacks-simple');
+const { empty } = require('@root/callbacks-simple');
 
-const { replaceMarkdown, replaceMarkdownPreviewText } = require('../../helpers');
+const { replaceMarkdown, replaceMarkdownPreviewText } = require('@root/helpers');
 
+// @TODO looks like the same thing for me
 const markdown = readSourceFile(FULL_SOURCE);
 
 const staticMarkdown = readSourceFile(FULL_SOURCE);
 
+// @TODO finish this line later
+const root = resolve(__dirname, '');
 const htmlTeamplate = resolve(`${__dirname}/source_full_code_test/test.html`, '');
 
 const staticState = {
