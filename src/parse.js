@@ -1,6 +1,8 @@
 const { readSourceFile } = require('./utils');
 
-const { newLine, checkErrors } = require('./utils');
+const { 
+    newLine, checkErrors 
+} = require('./utils');
 
 const { 
     replaceMarkdown, replaceMarkdownPreviewText 

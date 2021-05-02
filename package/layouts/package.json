@@ -1,6 +1,6 @@
 {
   "name": "atherdon-newsletter-js-layouts",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
