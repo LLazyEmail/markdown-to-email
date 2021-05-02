@@ -31,7 +31,6 @@ const plugins = [
   //   }
   // ],
   ["@babel/plugin-syntax-dynamic-import"]
-  // ["@babel/proposal-object-rest-spread"]
 ];
 
 module.exports = { presets, plugins };
