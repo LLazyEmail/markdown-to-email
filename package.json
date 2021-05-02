@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-do-expressions": "7.14.0",
+    "@groceristar/pdf-export": "^1.2.2",
     "babel-eslint": "10.1.0",
     "eslint": "7.25.0",
     "eslint-config-airbnb": "18.2.1",
