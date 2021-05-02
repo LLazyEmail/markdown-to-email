@@ -746,7 +746,7 @@ function fullTemplate(body) {
                                     <br>
                                     <unsubscribe style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">unsubscribe</unsubscribe>
                                     <div style="text-align: center;"><br>
-                                    <a href="https://sponsor.hackernoon.com/contact" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">Click Here To Sponsor A Newsletter by Hacker Noon</a></div>
+                                    <a href="https://sponsor.hackernoon.com/newsletter?ref=noonifications.tech" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">Click Here To Sponsor A Newsletter by Hacker Noon</a></div>
                                   </td>
                                 </tr>
                               </tbody>
