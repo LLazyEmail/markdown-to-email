@@ -29,11 +29,6 @@ const plugins = () => [
 
     nodeResolve({
         extensions: extensions(),
-
-        // the fields to scan in a package.json to determine the entry point
-        // if this list contains "browser", overrides specified in "pkg.browser"
-        // will be used
-        // mainFields: ["module", "main", "browser"] // Default: ['module', 'main']
     }),
 
     // replace({
@@ -104,12 +99,7 @@ const output = () => [
       // format of generated JS file, also: esm, and others are available
       format: "iife",
       // name visible for other scripts
-      name,
-
-      // https://rollupjs.org/guide/en#output-globals-g-globals
-      globals: {
-        path: "path"
-      }
+      name
     }
 ]
 

@@ -179,3 +179,5 @@ https://github.com/KaiHotz/react-rollup-boilerplate/blob/master/rollup.config.js
 https://github.com/ezolenko/rollup-plugin-typescript2/issues/256
 
 https://github.com/rollup/rollup/issues/2646#issuecomment-455352098
+
+https://github.com/jaebradley/example-rollup-react-component-npm-package
