@@ -26,7 +26,7 @@ const external = [
 // list of plugins used during building process
 const plugins = () => [
 
-      nodeResolve({
+    nodeResolve({
         extensions,
 
         // the fields to scan in a package.json to determine the entry point
@@ -39,16 +39,17 @@ const plugins = () => [
     //   'process.env.NODE_ENV': JSON.stringify( env )
     // }),
 
+    
+     babel({
+      presets: ["@babel/preset-react"],
+    }),
+
     //When using @rollup/plugin-babel with 
     //@rollup/plugin-commonjs in the same 
     //Rollup configuration, it's important to note that @rollup/plugin-commonjs must be placed before this plugin in the plugins array for the two to work together properly.
     // Allow bundling cjs modules. Rollup doesn't understand cjs
-    commonjs({
-        // ignore: ["conditional-runtime-dependency"]
-    }),
-     babel({
-      presets: ["@babel/preset-react"],
-    }),
+    commonjs(),
+
     // serve({
     //   open: true,
     //   verbose: true,
@@ -57,6 +58,7 @@ const plugins = () => [
     //   port: 3000,
     // }),
     // livereload({ watch: "dist" }),
+    
     // notify(),
     // globals(),
     // builtins()

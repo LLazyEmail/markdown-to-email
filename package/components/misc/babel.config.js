@@ -9,6 +9,7 @@ const presets = [
   ],
   [ "@babel/preset-react" ]
 ];
+
 // Add this to working tests
 // const env = {
 //   test: {
