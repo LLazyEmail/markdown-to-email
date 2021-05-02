@@ -30,6 +30,6 @@ describe('newsletter/index component', () => {
         const wrapper = shallow(<NewsletterSponsorshipLink />);
         const a = wrapper.find('a');
         expect(a.text()).toEqual(`Click Here To Sponsor A Newsletter by Hacker Noon`);
-        expect(a.props()).toHaveProperty('href' ,`https://sponsor.hackernoon.com/contact`);
+        expect(a.props()).toHaveProperty('href' ,`https://sponsor.hackernoon.com/newsletter?ref=noonifications.tech`);
     })
 });

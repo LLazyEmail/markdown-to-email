@@ -11,7 +11,7 @@ exports[`newsletter/index component renders correctly (Snapshot) 1`] = `
   <br />
   <a
     data-testid="newsletterHrefTest"
-    href="https://sponsor.hackernoon.com/contact"
+    href="https://sponsor.hackernoon.com/newsletter?ref=noonifications.tech"
     style={
       Object {
         "MsTextSizeAdjust": "100%",

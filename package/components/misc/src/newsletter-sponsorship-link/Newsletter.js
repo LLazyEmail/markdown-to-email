@@ -2,7 +2,7 @@ import React from 'react';
 import { styles } from './styles';
 
 const config = {
-  contact: 'https://sponsor.hackernoon.com/contact',
+  contact: 'https://sponsor.hackernoon.com/newsletter?ref=noonifications.tech',
 };
 
 const NewsletterSponsorshipLink = () => (
