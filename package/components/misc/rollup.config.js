@@ -1,10 +1,11 @@
-// import serve from "rollup-plugin-serve";
-// import livereload from "rollup-plugin-livereload";
+import serve from "rollup-plugin-serve";
+import livereload from "rollup-plugin-livereload";
 import babel from '@rollup/plugin-babel';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import replace from '@rollup/plugin-replace';
 // import notify from "rollup-plugin-notify";
+// import external from 'rollup-plugin-peer-deps-external';
 
 import pkg from "./package.json";
 
@@ -31,9 +32,9 @@ const plugins = () => [
         extensions: extensions(),
     }),
 
-    // replace({
-    //   'process.env.NODE_ENV': JSON.stringify( env )
-    // }),
+    replace({
+      'process.env.NODE_ENV': JSON.stringify( env )
+    }),
 
     //When using @rollup/plugin-babel with 
     //@rollup/plugin-commonjs in the same 
@@ -49,14 +50,14 @@ const plugins = () => [
 
 
 
-    // serve({
-    //   open: true,
-    //   verbose: true,
-    //   contentBase: ["", "public"],
-    //   host: "localhost",
-    //   port: 3000,
-    // }),
-    // livereload({ watch: "dist" }),
+    serve({
+      open: true,
+      verbose: true,
+      contentBase: ["", "public"],
+      host: "localhost",
+      port: 3000,
+    }),
+    livereload({ watch: "dist" }),
     
     // notify(),
     // globals(),

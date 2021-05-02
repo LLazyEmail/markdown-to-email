@@ -4527,10 +4527,10 @@ nearley@^2.7.10:
     railroad-diagrams "^1.0.0"
     randexp "0.4.6"
 
-newsletter-hn-misc-components@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/newsletter-hn-misc-components/-/newsletter-hn-misc-components-1.1.0.tgz#b2ee90780ded3fc3e4ed1b2701b3bfdacb67b76d"
-  integrity sha512-xyA2yHgqDaMDU8nPBpmRXKpvyoyqAx7yScKUJneXjBGGny5Ig7ot1Y15BYc8bQ7O3Nff8jTuOwXBSq1abrMgNg==
+newsletter-hn-misc-components@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/newsletter-hn-misc-components/-/newsletter-hn-misc-components-1.2.0.tgz#c74bf669d45080beee5938d90c5264a356de5b89"
+  integrity sha512-8WlmgeDj5z4uOncDkL6elrpEBI19WSuXYDI5XOoeRd8ycb59Vtoy0EIji6IVQmajvpE2lqOZC1LtSaCrd8NScw==
   dependencies:
     react "^17.0.2"
     react-dom "^17.0.2"
