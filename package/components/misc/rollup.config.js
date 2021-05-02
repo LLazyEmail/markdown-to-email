@@ -1,6 +1,5 @@
 // import serve from "rollup-plugin-serve";
 // import livereload from "rollup-plugin-livereload";
-
 import babel from '@rollup/plugin-babel';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
@@ -16,6 +15,8 @@ const extensions = [
 ];
 
 const name = "newsletterMiscComponents";
+
+const env = process.env.NODE_ENV;
 
 // or  [...Object.keys(pkg.dependencies), 'fs', 'path', 'os', 'util', 'url']
 const external = [
@@ -35,7 +36,7 @@ const plugins = () => [
     }),
 
     // replace({
-    //   'process.env.NODE_ENV': JSON.stringify( 'development' )
+    //   'process.env.NODE_ENV': JSON.stringify( env )
     // }),
 
     //When using @rollup/plugin-babel with 
