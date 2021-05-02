@@ -1,3 +1,10 @@
+1. install rollup and stuff
+2. export components into main index.js
+3. use babel with build and see how it goes
+4. test publish 
+
+
+
 import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 // import json from "rollup-plugin-json";
@@ -162,3 +169,13 @@ export default {
 
 ---
 
+
+
+https://stackoverflow.com/questions/62205938/getting-uncaught-syntaxerror-unexpected-token-export-when-running-rollup-js?noredirect=1&lq=1
+
+
+https://github.com/KaiHotz/react-rollup-boilerplate/blob/master/rollup.config.js
+
+https://github.com/ezolenko/rollup-plugin-typescript2/issues/256
+
+https://github.com/rollup/rollup/issues/2646#issuecomment-455352098

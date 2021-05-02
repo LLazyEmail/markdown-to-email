@@ -1,8 +1,9 @@
 {
   "name": "newsletter-hn-misc-components",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "separating small number of components into outside",
-  "main": "dist/bundle.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "browser": "dist/bundle.js",
   "scripts": {
     "bundle": "rollup -c",
@@ -40,6 +41,7 @@
     "eslint-plugin-react": "7.23.2",
     "prettier": "2.2.1",
     "rollup": "2.46.0",
+    "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-includepaths": "0.2.4",
     "rollup-plugin-livereload": "2.0.0",
     "rollup-plugin-node-builtins": "2.1.2",
