@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "separating small number of components into outside",
   "main": "dist/bundle.js",
+  "browser": "dist/bundle.js",
   "scripts": {
     "bundle": "rollup -c",
     "dev": "rollup -c -w",

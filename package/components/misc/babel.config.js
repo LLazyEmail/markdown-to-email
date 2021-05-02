@@ -7,12 +7,7 @@ const presets = [
       modules: false
     }
   ],
-  [
-      "@babel/preset-react"
-  ]
-  // {
-  //
-  // }
+  [ "@babel/preset-react" ]
 ];
 // Add this to working tests
 // const env = {
