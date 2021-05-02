@@ -1,8 +1,8 @@
-const { replaceHTMLWrapper, replaceReactWrapper } = require("../helpers");
-const { newLine } = require("../utils");
+const { replaceHTMLWrapper, replaceReactWrapper } = require('../helpers');
+const { newLine } = require('../utils');
 
 const hr = `${newLine}<hr />`;
-const empty = "";
+const empty = '';
 
 function previewText(text, content) {
   const config = {
@@ -10,7 +10,7 @@ function previewText(text, content) {
   };
 
   this.previewText = true;
-  return replaceReactWrapper("previewText", config, "body");
+  return replaceReactWrapper('previewText', config, 'body');
 }
 
 function code(text, content) {
@@ -18,7 +18,7 @@ function code(text, content) {
     content,
   };
 
-  const result = replaceReactWrapper("code", config);
+  const result = replaceReactWrapper('code', config);
   return result;
 }
 
@@ -27,7 +27,7 @@ function del(text, content) {
     content,
   };
 
-  const result = replaceReactWrapper("del", config);
+  const result = replaceReactWrapper('del', config);
   return result;
 }
 
@@ -36,7 +36,7 @@ function q(text, content) {
     content,
   };
 
-  const result = replaceReactWrapper("q", config);
+  const result = replaceReactWrapper('q', config);
   return result;
 }
 
@@ -44,7 +44,7 @@ function italic(text, left, _, content, right) {
   const config = {
     content,
   };
-  const result = replaceReactWrapper("italic", config);
+  const result = replaceReactWrapper('italic', config);
   return result;
 }
 
@@ -53,7 +53,7 @@ function strong(text, doubleAsterix, content, asterix) {
     content: `${content + asterix}`,
   };
 
-  const result = replaceReactWrapper("strong", config);
+  const result = replaceReactWrapper('strong', config);
   return result;
 }
 
@@ -63,7 +63,7 @@ function link(text, title, href) {
     href: href.trim(),
   };
 
-  const result = replaceReactWrapper("link", config);
+  const result = replaceReactWrapper('link', config);
   return result;
 }
 
@@ -71,7 +71,7 @@ function blockquote(text, tmp, item) {
   const config = {
     content: `${newLine}${item.trim()}`,
   };
-  const result = replaceReactWrapper("blockquote", config);
+  const result = replaceReactWrapper('blockquote', config);
   return result;
 }
 
@@ -82,7 +82,7 @@ function mem(text, src, href, altText) {
     href: href.trim(),
   };
 
-  const result = replaceHTMLWrapper("image", config);
+  const result = replaceReactWrapper('image', config);
   return result;
 }
 
@@ -91,10 +91,9 @@ function header(text, chars, content) {
     content: content.trim(),
   };
 
-  const titleType = ["mainTitle", "subtitle", "heading"];
+  const titleType = ['mainTitle', 'subtitle', 'heading'];
 
-  const result =
-    newLine + replaceReactWrapper(titleType[chars.length - 1], config);
+  const result = newLine + replaceReactWrapper(titleType[chars.length - 1], config);
 
   return result;
 }

@@ -3,13 +3,17 @@
         "browser": true,
         "commonjs": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "jest": true
     },
     "plugins": [
-        "json"
+        "json",
+        "require-path-exists"
     ],
     "extends": [
-        "airbnb-base"
+        "airbnb-base",
+        "plugin:require-path-exists/recommended",
+        "plugin:json/recommended"
     ],
     "globals": {
         "Atomics": "readonly",

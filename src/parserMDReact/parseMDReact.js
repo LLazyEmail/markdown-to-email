@@ -1,4 +1,4 @@
-const { readSourceFile } = require("../utils");
+const { readSourceFile } = require('../utils');
 
 const {
   strong,
@@ -13,7 +13,7 @@ const {
   hr,
   empty,
   previewText,
-} = require("./callbacks-simpleMDReact");
+} = require('./callbacks-simpleMDReact');
 
 const {
   image,
@@ -23,9 +23,9 @@ const {
   sponsorship,
   br,
   newLine,
-} = require("./callbacksMDReact");
+} = require('./callbacksMDReact');
 
-const { replaceMarkdown } = require("../helpers");
+const { replaceMarkdown } = require('../helpers');
 
 const {
   REGEXP_HEADER,
@@ -49,13 +49,13 @@ const {
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
-} = require("./constantsMDReact");
+} = require('./constantsMDReact');
 
 // @todo update this method. I'm sure it can be improved.
 function parseMDReact(source, isFull) {
-  let markdown = readSourceFile(source);
+  const markdown = readSourceFile(source);
 
-  let state = {
+  const state = {
     content: markdown,
     warnings: {
       images: 0,
@@ -67,13 +67,18 @@ function parseMDReact(source, isFull) {
     },
   };
 
+
+
+
   const replaceMDBinded = replaceMarkdown.bind(state);
+
+  
   // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
   if (isFull) {
     replaceMDBinded(REGEXP_PREVIEW_TEXT, previewText);
   }
 
-  //   replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
+  replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
   replaceMDBinded(REGEXP_STRONG, strong);
   replaceMDBinded(REGEXP_EM, italic);
   replaceMDBinded(REGEXP_HEADER, header);
@@ -85,21 +90,24 @@ function parseMDReact(source, isFull) {
   replaceMDBinded(REGEXP_Q, q);
   replaceMDBinded(REGEXP_CODE, code);
 
+
   replaceMDBinded(REGEXP_UL_LIST, ulList);
   // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
   //   replaceMDBinded(REGEXP_OL_LIST, olList);
+
   replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
-  //   replaceMDBinded(REGEXP_HR, hr);
+  replaceMDBinded(REGEXP_HR, hr);
   replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
+
   // TODO CHECK CASES WHEN CONTENT CAN HAVE EMPTY LISTS OR BLOCKQUOTE
   //   replaceMDBinded(REGEXP_EMPTY_UL, empty);
   //   replaceMDBinded(REGEXP_EMPTY_OL, empty);
   //   replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
 
   replaceMDBinded(REGEXP_BR, br);
-  //   replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
-  //   replaceMDBinded(REGEXP_MEM, mem);
-  //console.log( state )
+  replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
+  replaceMDBinded(REGEXP_MEM, mem);
+  // console.log( state )
   return state;
 }
 

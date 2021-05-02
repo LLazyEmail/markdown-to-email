@@ -13,4 +13,8 @@ package/generator-react-components/dist/*
 package/generator-react-components/node_modules/*
 package/newsletter-constants/dist/*
 package/newsletter-constants/node_modules/*
+
+package/parser-utils/dist/*
+package/parser-utils/node_modules/*
+
 yarn.lock

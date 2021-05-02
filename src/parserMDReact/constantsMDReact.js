@@ -1,21 +1,21 @@
-const os = require("os");
+const os = require('os');
 
 const platform = os.platform();
 
-const newLine = platform === "win32" ? "\r\n" : "\n";
+const newLine = platform === 'win32' ? '\r\n' : '\n';
 
 const REGEXP_HASH_TAG = new RegExp(
-  "#[~##\t\n\v\f\r \u00a0\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u200b\u2028\u2029\u3000]",
-  "g"
+  '#[~##\t\n\v\f\r \u00a0\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u200b\u2028\u2029\u3000]',
+  'g',
 );
-const REGEXP_LINK_G = new RegExp("Link:", "g");
+const REGEXP_LINK_G = new RegExp('Link:', 'g');
 
-const REGEXP_LINK_HTTPS = new RegExp(">https", "g");
+const REGEXP_LINK_HTTPS = new RegExp('>https', 'g');
 
-const REGEXP_STR_BEGIN = ">https";
-const REGEXP_STR_END = "f<";
+const REGEXP_STR_BEGIN = '>https';
+const REGEXP_STR_END = 'f<';
 
-const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, "g");
+const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, 'g');
 
 const REGEXP_IMAGE = /!\[([^\[]+)\]\(([^\)]+)\)/g;
 const REGEXP_LINK = /\[([^\[]+)\]\(([^\)]+)\)/g;
@@ -26,18 +26,18 @@ const REGEXP_CODE = /`(.*?)`/g;
 
 const REGEXP_UL_LIST = new RegExp(
   `${newLine}(((\\s{4})?\\*(.*?)${newLine}){1,})`,
-  "g"
+  'g',
 );
-const REGEXP_OL_LIST = new RegExp(`${newLine}[0-9]+\\.(.*)`, "g");
+const REGEXP_OL_LIST = new RegExp(`${newLine}[0-9]+\\.(.*)`, 'g');
 
-const REGEXP_BLOCKQUOTE = new RegExp(`${newLine}(&gt;|\\>)(.*)`, "g");
-const REGEXP_HR = new RegExp(`${newLine}-{5,}`, "g");
+const REGEXP_BLOCKQUOTE = new RegExp(`${newLine}(&gt;|\\>)(.*)`, 'g');
+const REGEXP_HR = new RegExp(`${newLine}-{5,}`, 'g');
 
-const REGEXP_PARAGRAPH = new RegExp(`${newLine}(.+?)${newLine}`, "g");
+const REGEXP_PARAGRAPH = new RegExp(`${newLine}(.+?)${newLine}`, 'g');
 
 const REGEXP_EMPTY_UL = /<\/ul>\s?<ul>/g;
 const REGEXP_EMPTY_OL = /<\/ol>\s?<ol>/g;
-const REGEXP_BR = new RegExp(`((${newLine}){2,})`, "g");
+const REGEXP_BR = new RegExp(`((${newLine}){2,})`, 'g');
 const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
 const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
 

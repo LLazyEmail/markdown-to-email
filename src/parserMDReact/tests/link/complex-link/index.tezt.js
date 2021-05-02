@@ -1,10 +1,10 @@
-const { write, readSourceFile } = require("../../utils");
+const { write, readSourceFile } = require('@root/utils');
 // const { sponsorship } = require("../../just-a-guess-functions");
 // const { REGEXP_SPONSORSHIP } = require("atherdon-newsletter-constants");
 
-const { replaceMarkdown } = require("../../parserUtils");
+const { replaceMarkdown } = require('../../parserUtils');
 
-describe("testing complex links", () => {
+describe('testing complex links', () => {
 //   it("renders xxx", async () => {
 //     let markdown = await readSourceFile("src/tests/sponsorship/sponsorship.md");
 //     let parsedContent = {

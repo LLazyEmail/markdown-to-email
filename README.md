@@ -108,10 +108,32 @@ Links
 
 - https://www.htmlemailcheck.com/check/
 
-more about regex
 
-- https://stackoverflow.com/questions/51850672/how-to-test-this-regex-in-jest
-- https://www.bitdegree.org/learn/regex-javascript
-- https://habr.com/ru/post/190304/
-- https://www.regexpal.com/96555
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+## Stretch Goals (enchancements)
+
+- add html linter
+because it's hard to understand if everything is good or not
+
+https://www.npmjs.com/package/eslint-plugin-html
+
+we can use https://www.freeformatter.com/html-validator.html and see errors. not sure if they actually valid, but will be cool to pay attention to some of them
+
+![image](https://user-images.githubusercontent.com/1469198/96992186-2fd57b00-1532-11eb-8709-f18dde099c7c.png)
+
+- add links checker
+
+![image](https://user-images.githubusercontent.com/1469198/101926544-f937ea80-3bdb-11eb-8df8-0ca4250c54b0.png)
+
+
+good example is December/top1 newsletter
+
+- https://www.npmjs.com/package/broken-link-checker
+- https://www.npmjs.com/package/link-checker
+- https://www.npmjs.com/package/link-check
+
+
+
+Check later:
+- https://maizzle.com/
+- https://www.npmjs.com/package/verymail
+- https://www.npmjs.com/package/markdown-to-mailchimp

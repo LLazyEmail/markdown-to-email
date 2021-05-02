@@ -1,74 +1,92 @@
-
-# Top Sectors Prone To Cyber Threats During The Pandemic
-
-**djdj**
-
-When the coronavirus pandemic burst out, corporate functions shifted priorities to embrace new practices and get through the pandemic. At that time we all thought that [social](https://hackernoon.com/the-social-dilemma-advertising-privacy-and-distraction-kz1y3th4) distancing and [work from home](https://hackernoon.com/3-cybersecurity-priorities-for-2021-threat-fatigue-remote-work-budget-m02m3wao) routines would be just stopgap measures taken to keep [businesses aboard](https://hackernoon.com/tagged/business).
-
-However, as a [remote job](https://hackernoon.com/tagged/remote) situation becomes the new normal for businesses across the world, it is time to face the truth. Rapid responses to the coronavirus pandemic [have left organizations vulnerable](https://hackernoon.com/how-to-prevent-data-theft-with-cybersecurity-bjn3w8g) to [security](https://hackernoon.com/6-cybersecurity-tools-youll-need-to-know-about-in-2019-6232eeb1c9ca) breaches. As of May 2nd, the FBI [reported an 800% increase](https://securityboulevard.com/2020/08/the-massive-shift-to-cyber-crime/) in cyber crimes with COVID-themed [malware](https://hackernoon.com/zooms-security-issues-now-endanger-the-online-privacy-of-minors-and-teachers-7ti2320f) being the absolute winners among all.
+#~ As a developer, you might have dreamed of a Google created specifically for techies. Just imagine, a digital platform brimming with content for coders, including Q&A and job listings. Every question about programming answered. Each inextricable bug is solved. A larger audience of qualified experts come-at-able. Sounds dreamlike, right?
+~[The security-as-code solution for developers][https://bit.ly/3n9CgbE][https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/logos/thematic/2020/October/Bridgecrew_stacked.jpg]
 
 
-![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/30.11/image1.gif][https://giphy.com/gifs/love-sexy-girl-10pYFd2glOy6XK][alt text]
+
+# Secrets Of High-Performing Teams: Part II
 
 
-As time went by, CISOs pivoted from handling routine tasks and made all efforts to establish [secure connections](https://hackernoon.com/lessons-from-3-big-data-breaches-of-2017-6d2dd33305d5) for newly-minted remote [workforces](https://hackernoon.com/talent-in-the-age-of-commodity-bl143vk9). However, despite bolstering business operations, there are some business areas that have had it a lot harder than other industries in terms of [cybersecurity](https://hackernoon.com/cybersecurity-at-every-level-how-it-consultants-can-benefit-your-business-84283trw).
-
-With that being said, let us give you a [rundown on the industries](https://hackernoon.com/3-big-companies-that-majorly-compromised-their-customers-security-in-2018-7022068ac04a) that have been kicked in the teeth by [cybercriminals](https://hackernoon.com/10-cybersecurity-tips-everyone-should-follow-ha3f3wcd) amid the COVID-19 lockdown.
+## This is our second newsletter in the series of Secrets of Top-Performing DevOps Teams. In the first part, we’ve got to grips with the [DevOps approach](https://hackernoon.com/devops-fundamentals-you-ever-wanted-to-know-zt2m3uh6) and the way it has [amplified the IT workflow](https://hackernoon.com/tagged/workflow).
 
 
-![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/30.11/image2.gif][https://giphy.com/gifs/gifburns-illustration-adventure-time-jake-22qp9q7nIh4EE][alt text]
+![alt_text](https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image3.gif "image_tooltip")
 
 
-## [Cyberattacks](https://hackernoon.com/most-popular-types-of-cyber-attacks-against-individual-users-part-ii-e75067161aaf) During The Pandemic
+Link: [https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy.gif](https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy.gif) 
 
-### 1. Healthcare
+Here’s a quick reminder and a short introduction for the unaware:
 
-The pandemic has undermined the healthcare industry in too many ways, testing its limits. Besides complex issues like insufficient healthcare capacity and resourcing, the healthcare sector has become a target or collateral [victim of cybersecurity attacks](https://hackernoon.com/why-is-transparency-critical-to-cybersecurity-fp2h32r0).
+Tech role has germinated from ["help fix my laptop"](https://hackernoon.com/search?query=horror) to "help me become the best." While [many dev teams are trapped firefighting](https://hackernoon.com/tagged/team-productivity), leading teams [align with the business](https://hackernoon.com/tagged/business), [adopt agile principles](https://hackernoon.com/tagged/agile) and automation, and lead the [digital transformation](https://hackernoon.com/tagged/transformation).
 
-According to the [INTERPOL report](https://www.interpol.int/News-and-Events/News/2020/INTERPOL-report-shows-alarming-rate-of-cyberattacks-during-COVID-19) published in April 2020, there has been a [worrying surge in cyber attacks](https://hackernoon.com/how-to-improve-cybersecurity-using-artificial-intelligence-otg83wda) targeting both public and private companies, including the healthcare sector. A cyber attack in a Czech hospital in March, a [ransomware attack](https://hackernoon.com/three-new-dimensions-to-ransomware-attacks-emerge-during-pandemic-j6113uhn) on a vaccine trial group in the UNK, and an attack on the US Health Agency are just a few examples that have revealed [basic vulnerabilities](https://hackernoon.com/mapping-cybersecurity-for-the-distributed-web-h64y339x) which stakeholders have ignored to the surface.
+What’s in it for [DevOps](https://hackernoon.com/tagged/devops), you’d ask? It’s simple: a robust DevOps team facilitates [faster development](https://hackernoon.com/founders-guide-how-to-outsource-software-development-in-2020-y1473yr7) of new products and [easier maintenance](https://hackernoon.com/3-reasons-why-teams-fail-avx3ta7) of existing deployments. 
 
+Read between the lines - agile-based DevOps approach yields an increase in [development productivity](https://hackernoon.com/4-ways-startups-can-use-tech-and-automation-to-be-more-efficient-j3423w51). And with no silver bullet methods for improving IT [efficiency](https://hackernoon.com/if-formula-1-defined-efficiency-675z3yqd), perfecting DevOps might be your best shot. 
 
-![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/30.11/image3.gif][https://giphy.com/gifs/cat-walk-box-2zlSwREmLmiQw][alt text]
-
-
-### 2. Private sector
-
-The pandemic has caused a spike in [phishing](https://hackernoon.com/tagged/internet-privacy) and malware attacks riding on the [COVID-19 pitch](https://hackernoon.com/covid-19-tracing-protect-your-privacy-u02u3tm2) to aim for unwary users. The attackers have been quick to prey on the pandemic chaos and have been embedding [all kinds of malware](https://hackernoon.com/creativity-is-the-heart-of-cybersecurity-tg3e37j9) to decent-looking emails.
-
-They masquerade malicious files as [government](https://hackernoon.com/an-introduction-to-code-signing-architectures-and-techniques-jy5p340z) announcements or associate the emails with the Centers for Disease Control (CDC) and the World Health Organization (WHO). So next time you’ll get an email with a subject line that sounds like ‘updated cases of the coronavirus near you’, [think twice](https://hackernoon.com/the-social-linked-data-solid-project-of-tim-berners-lee-an-organizational-take-m94u3z74) before opening this [phishing postcard](https://hackernoon.com/3-cybersecurity-priorities-for-2021-threat-fatigue-remote-work-budget-m02m3wao).
+Without further ado, let’s dive into our top picks for [DevOps team success](https://hackernoon.com/devops-as-a-service-or-do-you-really-need-a-devops-team-cc4q32wj).
 
 
-![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/30.11/image4.gif][https://giphy.com/gifs/comics-swipe-dating-MeD5aQGCC2Asg94lWF][alt text]
+## Hacking Your Way Through to a High-Performing DevOps Team
 
 
-### 3. Banking
 
-Banking is another [target of choice for cyberattacks](https://hackernoon.com/10-cybersecurity-books-every-business-owner-should-read-zwez362j) during the pandemic. Most financial institutions have [gone digital](https://hackernoon.com/top-5-technology-innovations-in-2020-you-have-to-be-ready-for-u386337y) several years ago to boost efficiency and embrace cutting-edge technology to improve their financial [services](https://hackernoon.com/ethics-ai-and-responsible-ml-design-principles-and-potential-dangers-j95m3tkv). Little did they know that COVID-19 would make them re-engineer and trigger exposure to risks.
+1. [High-performing](https://hackernoon.com/3-easy-ways-to-improve-performance-of-your-python-code-dw183uzo) teams put business first
 
-We are leaning on online banking so much that this dependence has created a breeding ground for [numerous fraud cases](https://hackernoon.com/how-i-learned-to-stop-judging-people-for-falling-into-cybersecurity-traps-tb123wu7). From hacking individual [banking accounts](https://hackernoon.com/when-messenger-apps-adopt-fintech-privacy-issues-and-implications-ta6q3uz7) to those of companies and even governments, there has been a ninefold increase in [ransomware attacks](https://hackernoon.com/password-managers-should-be-a-mandatory-part-of-everyones-digital-life-9r4m3yqk). According to [Carbon Black Inc](https://www.carbonblack.com/blog/modern-bank-heists-threat-report-finds-dramatic-increase-in-cyberattacks-against-financial-institutions-amid-covid-19/), the financial sector alone experienced a 238% surge in attacks from February to the end of April. This has surely highlighted an Achilles heel in security of financial institutions, due to a lack of controls and the use of legacy systems.
-
-
-![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/30.11/image5.gif][https://giphy.com/gifs/mask-superhero-chloe-grace-moretz-SwTZOgvEEis3C][alt text]
+You’d say, a [revenue-first mindset](https://hackernoon.com/five-undervalued-data-points-for-emerging-businesses-5c2w3eun) won’t get you the probity medal. However, it’s not our point. In fact, profitability should be your top of mind not for the sake of money only. 
 
 
-### 4. E-commerce
-
-Although [most businesses](https://hackernoon.com/effects-a-data-breach-can-have-on-your-business-in-the-long-term-au6n3ytt) have seen a reduced footfall this year, e-commerce and online shopping are rare success stories. COVID-19 has shaped the way people shop with an unprecedented amount of shoppers making purchases online. However, this has also put online retail at risk, [creating a secondary issue](https://hackernoon.com/3-impressive-cyberattacks-of-2020-what-we-can-learn-from-them-ag2z3z61). A report by Sophos Labs suggests that over [42,000 websites](https://news.sophos.com/en-us/2020/03/24/covidmalware/) have been created with domains that are named after ‘COVID.’ As you can see, opportunistic [cybercriminals](https://hackernoon.com/a-guide-to-becoming-a-cyber-security-analyst-5b311be52f29) ‘shop’ online as well.
+Successful DevOps teams are more likely to tie their tech projects to revenue, mainly because it’s the 1 [metric for their performance](https://hackernoon.com/the-secret-of-growth-how-to-achieve-dollar1m-arr-in-6-months-vi1832mp). As a result, teams that are business aligned tend to prioritize projects with business management and use business and tech scorecards to measure success. Therefore, just a simple shift from an [activity-driven mindset](https://hackernoon.com/data-that-you-need-is-worth-gold-not-data-that-you-already-have-5c60f9345c6b) to a [revenue-first approach](https://hackernoon.com/4-business-lessons-from-the-failure-of-wework-the-47-billion-dollar-tech-company-3ahi3201) can guarantee a positive change in your team productivity and overall result.
 
 
-![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/30.11/image6.gif][https://giphy.com/gifs/cat-crazy-out-l3nSFXpI4HhK4zJtu][alt text]
+    (We’re not implying that you should ditch the [customer-centric action](https://hackernoon.com/24-customer-retention-strategies-eq1y3ym0), don’t compare apples and oranges)
 
 
-### Shield Yourself From Cyberattacks in Times of Pandemic
-
-Most of the aforementioned incidents could have been avoided if we had left our security to chance. Despite significant cybersecurity [exposures](https://hackernoon.com/is-whatsapp-safe-4b1f3tjm), we still believe that [we’re in the clear](https://hackernoon.com/4-simple-steps-to-avoid-falling-victim-to-all-too-frequent-data-breaches-o01g328u). But even if you don’t have the resources to bring in an outside expert to test your computer systems, do your best to [implement cybersecurity practices](https://hackernoon.com/how-to-prepare-for-a-cybersecurity-manager-job-interview-nt153w8t). You don’t need to go far - [NordVPN is an iron-clad](https://hackernoon.com/vpn-and-cybersecurity-threats-how-to-be-safe-online-70av36mp) defense mechanism that won’t let your [data get compromised](https://hackernoon.com/compliance-is-not-a-guarantee-against-data-breach-embp32af). It’s an encryption powerhouse that will guard your cybersecurity well-being in these dire times. Most importantly, NordVPN ensures secure [remote access](https://hackernoon.com/working-from-home-and-cybersecurity-in-the-time-of-the-coronavirus-4vc1322c) to keep businesses, organizations and individuals productive at all times.
-
-![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/30.11/image7.gif][https://giphy.com/gifs/eating-panda-r7Nbr97FsXxXG][alt text]
+![alt_text](https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image4.gif "image_tooltip")
 
 
-## The Bottom Line
 
-The COVID pandemic presents a [record-breaking challenge](https://hackernoon.com/how-the-legal-system-interacts-with-big-tech-and-data-breach-3c32f554ffc4) to the world in a bad way. While some people have shown courage and fortitude in the dark times, crime groups are exploiting the fear and uncertainty to [target individuals and businesses](https://hackernoon.com/data-breaches-how-they-affect-people-and-what-can-we-do-to-fight-them-859b902ed330). As [threat campaigns](https://hackernoon.com/iot-cyber-threats-are-we-safe-from-attack-79324b032f31) become more sophisticated, businesses will [need to practice robust cybersecurity hygiene](https://hackernoon.com/how-executives-can-better-prevent-data-breaches-in-our-digital-day-and-age-833f7a53bee0) to keep hackers at bay. A strong security posture and endurance are the needs of the hour. Stay safe and cyber secure. And don’t forget a mask.
+    Link: [https://media.giphy.com/media/l2JeierkQlHpJsGWY/giphy.gif](https://media.giphy.com/media/l2JeierkQlHpJsGWY/giphy.gif) 
+
+2. They assign end-to-end responsibility
+
+Separating [development](https://hackernoon.com/ownership-and-responsibility-in-software-development-teams-6wr3n17) and [operations](https://hackernoon.com/0-to-90-bn-in-a-decade-uber-takeaways-for-startups-and-roadblocks-ahead-for-uber-b17c3bee2a3f) can present potential issues and pitfalls like [performance problems](https://hackernoon.com/the-surprise-outcome-of-measuring-our-pull-requests-process-4v683tbw) and inconsistent environments. In DevOps, both groups cooperate as a team that's [completely responsible](https://hackernoon.com/take-responsibility-dont-blame-it-on-the-users-hoz3n2u) for a product from beginning to end. 
 
 
-![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/30.11/image8.gif][https://giphy.com/gifs/face-mask-masks-facemask-p4myX5dTQsyxDN1DIS][alt text]
+Unlike the traditional approach or a [low-performing team](https://hackernoon.com/good-ux-manager-bad-ux-manager-33df51f7367c), where each team member is accountable for their own role, the perfect DevOps team [obliterates those silos](https://hackernoon.com/how-to-prioritize-product-requirements-77d139b4a343) and makes an excellent result the focus of the entire crew.
+
+
+A [developer is no longer just a developer](https://hackernoon.com/highest-paid-software-developer-c66b9f4cc53e) in charge of X lines of code. A tester is no longer accountable for the expected functionality.  A high-performing team wears multiple hats and has got it [ALL covered](https://hackernoon.com/dont-optimize-things-that-dont-work-yet-957j30qv).
+
+
+    
+![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image6.gif][https://media.giphy.com/media/PvvSfSDFoAL5e/giphy.gif][alt text]
+
+
+** 3. Automation technology is not an option for a [dazzling performance](https://hackernoon.com/my-top-three-priorities-as-a-software-development-manager-cq2x32c1)**
+
+Let’s be honest: the bright minds like working with new and shiny technology. And you need those [bright minds](https://hackernoon.com/software-specifications-define-plan-and-execute-more-effective-projects-p0803tzz) in your team to make it high-performing and guarantee superb results. It's a bit hard to employ and keep these big stars in a company that trusts in a [creaky, legacy toolchain](https://hackernoon.com/devops-principles-culture-vs-tooling-vvac367z) to build a product, right?
+
+
+Investing in the [DevOps tools](https://hackernoon.com/7-best-devops-security-practices-devsecops-and-its-merits-mr2p3unk) will not only make the team more effective, but it will also make them want to stay. From a practical standpoint, [automation tools](https://hackernoon.com/automating-security-in-devops-top-15-tools-69253w9e) can increase [tech efficiency](https://hackernoon.com/why-devops-is-important-during-the-covid-19-pandemic-6u1i3tul), eliminate errors, and help [deploy apps faster](https://hackernoon.com/the-difference-between-ci-and-cd-in-devops-bc2z3uae). That refers to simplifying the [process of configuring](https://hackernoon.com/how-to-make-a-devops-strategy-pk153uyb), monitoring, and maintaining the [network infrastructure](https://hackernoon.com/ever-wondered-why-we-use-containers-in-devops-l5113wif).
+
+
+![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image1.gif][https://media.giphy.com/media/3oFzmjFxbBiPQW4qVa/giphy.gif][alt text]
+
+-------
+
+## Pull it all together
+
+There's no panacea for [successful DevOps team building](https://hackernoon.com/measuring-devops-metrics-a-how-to-guide-ot113ztl), but the process itself is definitely easier than [quantum physics](https://www.hackernoon.com/how-quantum-dots-technology-driving-advancements-in-lcd-and-oled-display-quality-2e163uxg). The majority of our tips and tricks dispensed above are of common-sense variety. In practice, our [secrets](https://hackernoon.com/are-you-telling-the-story-of-your-software-mc133w92) call for good old-fashioned [hard work](https://hackernoon.com/how-to-approach-strategic-planning-when-the-sky-is-falling-oq5k3yer) and a sprinkle of knowledge.
+
+To deliver top-notch results, employees must be well-settled, teams well-structured, and objectives outlined based on [business priorities](https://hackernoon.com/ceos-survey-on-digital-transformation-in-2017-by-gartner-c2d6e842f86c). And it’s not enough to recruit the right people, retention and training are equally important. Overall, it takes a solid mix of all these components to build a team that truly thrives.
+
+_Join us to welcome today newsletter’s sponsor - [BridgeCrew](https://bit.ly/3n9CgbE). BridgeCrew helps find, fix, and prevent cloud misconfigurations straight from your CI/CD pipeline. Their platform leverages automation and delivers security-as-code to streamline your DevSecOps processes._
+
+*HAJKAKKSKKSKAKSK*
+
+[Got a tech story to share with our readers?](http://auth.hackernoon.com/) Everything you've ever wanted to know about how to get published on Hacker Noon - [get it here](https://hackernoon.com/how-to-get-published-on-hacker-noon-a-step-by-step-guide-zcp36rz).
+
+
+![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image5.gif][https://media.giphy.com/media/3orieTeAMaKc4yhwmk/giphy.gif][alt text]
+
+
+~[The security-as-code solution for developers][https://bit.ly/3n9CgbE][https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/logos/thematic/2020/October/Bridgecrew_stacked.jpg]
