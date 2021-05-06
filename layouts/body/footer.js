@@ -607,7 +607,7 @@ module.exports = `<tr>
                                                           "
                                                         >
                                                           <a
-                                                            href="http://hackernoon.com"
+                                                            href="https://hackernoon.com"
                                                             target="_blank"
                                                             style="
                                                               mso-line-height-rule: exactly;
