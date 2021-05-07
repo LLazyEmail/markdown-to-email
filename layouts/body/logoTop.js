@@ -58,7 +58,7 @@ style="
               "
             >
               <a
-                href="http://www.hackernoon.com"
+                href="https://www.hackernoon.com"
                 title=""
                 class=""
                 target="_blank"
