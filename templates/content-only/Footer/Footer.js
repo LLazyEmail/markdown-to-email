@@ -54,7 +54,7 @@ const Footer = () => (
                                       alt="Instagram"
                                     />
                                     <TableLeft
-                                      href="http://hackernoon.com"
+                                      href="https://hackernoon.com"
                                       src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/link.png"
                                       alt="Website"
                                     />
