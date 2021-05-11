@@ -1,7 +1,7 @@
 const { REGEXP_BR } = require('atherdon-newsletter-constants');
 
 const { resolve } = require('path');
-const { write, readSourceFile } = require('../../../utils');
+const { write, readSourceFile } = require('@root/utils');
 const { br } = require('../../../callbacks');
 const { replaceMarkdown } = require('../../../helpers');
 

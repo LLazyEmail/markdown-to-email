@@ -1,6 +1,6 @@
 const { REGEXP_HTML_COMMENTS } = require('atherdon-newsletter-constants');
 const { resolve } = require('path');
-const { write, readSourceFile } = require('../../../utils');
+const { write, readSourceFile } = require('@root/utils');
 const { replaceMarkdown } = require('../../../helpers');
 
 const root = resolve(__dirname, '');
