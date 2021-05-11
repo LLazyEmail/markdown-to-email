@@ -8,3 +8,14 @@
 - Africa: the continent of milk and honey for startups and cryptos? (21:10)
 - Necessity is the mother of all invention... (29:32)
 - No gods no masters — down with regulation! (32:56)
+
+
+---
+
+- Artwork.
+- Virtual items within video games such as skins, weapons, or avatars.
+- Music.
+- Collectibles
+- **Tokenized real-world assets**, from vehicles and gold to designer sneakers.
+
+
