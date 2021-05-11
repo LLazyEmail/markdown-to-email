@@ -1,7 +1,7 @@
 const { REGEXP_PARAGRAPH } = require('atherdon-newsletter-constants');
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-const { paragraphWrapper } = require('../../../callbacks');
+const { paragraphWrapper } = require('@root/callbacks');
 const { replaceMarkdown } = require('../../../helpers');
 
 const root = resolve(__dirname, '');
