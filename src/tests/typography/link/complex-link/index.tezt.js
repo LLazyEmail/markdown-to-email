@@ -2,7 +2,7 @@ const { write, readSourceFile } = require('@root/utils');
 // const { sponsorship } = require("../../just-a-guess-functions");
 // const { REGEXP_SPONSORSHIP } = require("atherdon-newsletter-constants");
 
-const { replaceMarkdown } = require('../../../../helpers');
+const { replaceMarkdown } = require('@root/helpers');
 
 // const { resolve } = require('path')
 // const root = resolve(__dirname, '')
