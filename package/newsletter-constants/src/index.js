@@ -8,6 +8,7 @@ import {
   REGEXP_LINK_G,
   REGEXP_STR_BEGIN,
   REGEXP_STR_END,
+  REGEXP_SEPARATOR,
 } from "./customTags";
 import {
   REGEXP_HEADER,
@@ -56,4 +57,5 @@ export {
   REGEXP_LINK_G,
   REGEXP_STR_BEGIN,
   REGEXP_STR_END,
+  REGEXP_SEPARATOR,
 };
