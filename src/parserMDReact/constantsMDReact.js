@@ -45,6 +45,7 @@ const REGEXP_SPONSORSHIP = /~(\[(.*?)\]){3}/g;
 const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
 const REGEXP_MEM = /\!\[(.*?)\]\[(.*?)\]\[(.*?)\]/g;
 const REGEXP_PREVIEW_TEXT = new RegExp(`#~(.*?)${newLine}`);
+const REGEXP_SEPARATOR = new RegExp(`${newLine}\\[separator\\]${newLine}`, 'g');
 // const REGEXP_H3 = /^### (.*$)/gim;
 // const REGEXP_H2 = /^## (.*$)/gim;
 
@@ -75,4 +76,5 @@ module.exports = {
   REGEXP_LINK_G,
   REGEXP_STR_BEGIN,
   REGEXP_STR_END,
+  REGEXP_SEPARATOR,
 };
