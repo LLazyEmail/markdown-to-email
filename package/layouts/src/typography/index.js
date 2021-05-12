@@ -8,6 +8,7 @@ import { title } from './mainTitle';
 import { paragraph } from './paragraph';
 import { strong } from './strong';
 import { subtitle } from './subtitle';
+import { separator } from './separator';
 
 const typography = {
   heading,
@@ -19,7 +20,8 @@ const typography = {
   title,
   paragraph,
   strong,
-  subtitle
+  subtitle,
+  separator
 };
 
 export default typography;
