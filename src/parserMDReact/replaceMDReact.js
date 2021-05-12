@@ -11,6 +11,7 @@ const {
   hr,
   empty,
   previewText,
+  separator,
 } = require('./callbacks-simpleMDReact');
 
 const {
@@ -45,6 +46,7 @@ const {
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
+  REGEXP_SEPARATOR,
 } = require('./constantsMDReact');
 
 var ReplacerMDReact = function () {};
@@ -133,6 +135,10 @@ ReplacerMDReact.prototype.sponsorship = function () {
 
 ReplacerMDReact.prototype.mem = function () {
   this.replaceMDBinded(REGEXP_MEM, mem);
+};
+
+ReplacerMDReact.prototype.separator = function () {
+  this.replaceMDBinded(REGEXP_SEPARATOR, separator);
 };
 
 module.exports = new ReplacerMDReact();

@@ -59,6 +59,7 @@ function parseMDReact(source, isFull) {
   ReplacerMDReact.br();
   ReplacerMDReact.sponsorship();
   ReplacerMDReact.mem();
+  ReplacerMDReact.separator();
   // console.log( state )
   return state;
 }
