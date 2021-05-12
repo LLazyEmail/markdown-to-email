@@ -1,4 +1,4 @@
-const { replaceHTMLWrapper, replaceReactWrapper } = require('../helpers');
+const { replaceReactWrapper } = require('../helpers');
 const { newLine } = require('../utils');
 
 const hr = `${newLine}<hr />`;
@@ -98,6 +98,16 @@ function header(text, chars, content) {
   return result;
 }
 
+function separator() {
+  const config = {};
+
+  const result = `${newLine}${replaceReactWrapper(
+    'separator',
+    config,
+  )}${newLine}`;
+  return result;
+}
+
 module.exports = {
   strong,
   link,
@@ -112,4 +122,5 @@ module.exports = {
   hr,
   empty,
   previewText,
+  separator,
 };
