@@ -30,7 +30,7 @@
     "jest": "26.6.3"
   },
   "dependencies": {
-    "atherdon-newsletter-constants": "^1.0.8",
+    "atherdon-newsletter-constants": "^1.0.9",
     "atherdon-newsletter-js-layouts": "^1.0.17",
     "atherdon-newsletter-react": "^1.0.10",
     "chalk": "^4.1.1",
