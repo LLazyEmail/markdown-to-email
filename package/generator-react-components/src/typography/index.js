@@ -12,6 +12,7 @@ import { q } from './q';
 import { del } from './del';
 import { code } from './code';
 import { blockquote } from './blockquote';
+import { separator } from './separator';
 
 const typography = {
   heading,
@@ -28,6 +29,7 @@ const typography = {
   del,
   code,
   blockquote,
+  separator,
 };
 
 export default typography;
