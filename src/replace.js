@@ -26,6 +26,7 @@ const {
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
+  REGEXP_SEPARATOR,
 } = require('atherdon-newsletter-constants');
 
 const {
@@ -51,6 +52,7 @@ const {
   br,
 } = require('./callbacks');
 
+const { separator } = require('./callbacks-custom');
 var Replacer = function () {};
 
 Replacer.prototype.replaceMDBinded = function () {};
@@ -134,6 +136,10 @@ Replacer.prototype.sponsorship = function () {
 
 Replacer.prototype.memes = function () {
   this.replaceMDBinded(REGEXP_MEM, mem);
+};
+
+Replacer.prototype.separator = function () {
+  this.replaceMDBinded(REGEXP_SEPARATOR, separator);
 };
 
 module.exports = new Replacer();

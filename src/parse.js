@@ -49,6 +49,7 @@ function parse(source) {
   ReplacerObj.br();
   ReplacerObj.sponsorship();
   ReplacerObj.memes();
+  ReplacerObj.separator();
 
   //i'm adding it only because error warning didnt return red stuff
   checkErrors(state.errors);
