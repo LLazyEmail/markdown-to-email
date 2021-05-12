@@ -72,6 +72,9 @@ Consist of two parameters - `content`, the text of the link and `href` - the url
 ### Divider
 You may use empty line in email body, just in the markdown document leave line empty, it will be parsed as real line break.
 
+### Separator
+add `[separator]`
+
 ## Work principles
 The parser reads source file from `source/source.md` and based on opening tag renders goes in `layouts` folder and chooses relevant typography or section (sponsorship) element. Supported tags displayed in this document.
 
