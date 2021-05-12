@@ -1,4 +1,4 @@
-// This file is just my attempt to simplify 
+// This file is just my attempt to simplify
 // a process of reading and debugging our code
 // i'm creating a set of methods, that have a simple name.
 // it will help us to move forward.
@@ -48,96 +48,92 @@ const {
   olList,
   paragraphWrapper,
   sponsorship,
-  br
+  br,
 } = require('./callbacks');
 
+var Replacer = function () {};
 
-var Replacer = function() {};
+Replacer.prototype.replaceMDBinded = function () {};
+Replacer.prototype.replaceMDBindedPreviewText = function () {};
 
-Replacer.prototype.replaceMDBinded = function() {}
-Replacer.prototype.replaceMDBindedPreviewText = function() {}
+Replacer.prototype.comments = function () {
+  this.replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
+};
 
-Replacer.prototype.comments = function(){
-   this.replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
-}
+Replacer.prototype.strong = function () {
+  this.replaceMDBinded(REGEXP_STRONG, strong);
+};
 
-Replacer.prototype.strong = function(){
-   this.replaceMDBinded(REGEXP_STRONG, strong);
-}
+Replacer.prototype.em = function () {
+  this.replaceMDBinded(REGEXP_EM, italic);
+};
 
-Replacer.prototype.em = function(){
-   this.replaceMDBinded(REGEXP_EM, italic);
-}
+Replacer.prototype.header = function () {
+  this.replaceMDBinded(REGEXP_HEADER, header);
+};
 
-Replacer.prototype.header = function(){
-   this.replaceMDBinded(REGEXP_HEADER, header);
-}
+Replacer.prototype.image = function () {
+  this.replaceMDBinded(REGEXP_IMAGE, image);
+};
 
-Replacer.prototype.image = function(){
-   this.replaceMDBinded(REGEXP_IMAGE, image);
-}
+Replacer.prototype.link = function () {
+  this.replaceMDBinded(REGEXP_LINK, link);
+};
 
-Replacer.prototype.link = function(){
-   this.replaceMDBinded(REGEXP_LINK, link);
-}
+Replacer.prototype.del = function () {
+  this.replaceMDBinded(REGEXP_DEL, del);
+};
 
-Replacer.prototype.del = function(){
-   this.replaceMDBinded(REGEXP_DEL, del);
-}
+Replacer.prototype.q = function () {
+  this.replaceMDBinded(REGEXP_Q, q);
+};
 
-Replacer.prototype.q = function(){
-   this.replaceMDBinded(REGEXP_Q, q);
-}
+Replacer.prototype.code = function () {
+  this.replaceMDBinded(REGEXP_CODE, code);
+};
 
-Replacer.prototype.code = function(){
-   this.replaceMDBinded(REGEXP_CODE, code);
-}
+Replacer.prototype.ul = function () {
+  this.replaceMDBinded(REGEXP_UL_LIST, ulList);
+};
 
-Replacer.prototype.ul = function(){
-   this.replaceMDBinded(REGEXP_UL_LIST, ulList);
-}
+Replacer.prototype.ol = function () {
+  this.replaceMDBinded(REGEXP_OL_LIST, olList);
+};
 
-Replacer.prototype.ol = function(){
-   this.replaceMDBinded(REGEXP_OL_LIST, olList);
-}
+Replacer.prototype.blockquote = function () {
+  this.replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
+};
 
-Replacer.prototype.blockquote = function(){
-   this.replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
-}
+Replacer.prototype.hr = function () {
+  this.replaceMDBinded(REGEXP_HR, hr);
+};
 
-Replacer.prototype.hr = function(){
-   this.replaceMDBinded(REGEXP_HR, hr);
-}
+Replacer.prototype.paragraph = function () {
+  this.replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
+};
 
-Replacer.prototype.paragraph = function(){
-   this.replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
-}
+Replacer.prototype.emptyUl = function () {
+  this.replaceMDBinded(REGEXP_EMPTY_UL, empty);
+};
 
-Replacer.prototype.emptyUl = function(){
-   this.replaceMDBinded(REGEXP_EMPTY_UL, empty);
-}
+Replacer.prototype.emptyOl = function () {
+  this.replaceMDBinded(REGEXP_EMPTY_OL, empty);
+};
 
-Replacer.prototype.emptyOl = function(){
-    this.replaceMDBinded(REGEXP_EMPTY_OL, empty);
-}
-
-  
-Replacer.prototype.emptyBlockquote = function(){
-    // this line is generating an error
+Replacer.prototype.emptyBlockquote = function () {
+  // this line is generating an error
   this.replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
-}
+};
 
-Replacer.prototype.br = function(){
-   this.replaceMDBinded(REGEXP_BR, br);
-}
-Replacer.prototype.sponsorship = function(){
-   this.replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
-}
+Replacer.prototype.br = function () {
+  this.replaceMDBinded(REGEXP_BR, br);
+};
+Replacer.prototype.sponsorship = function () {
+  this.replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
+};
 
-
-Replacer.prototype.memes = function(){
-   this.replaceMDBinded(REGEXP_MEM, mem);
-}
-
+Replacer.prototype.memes = function () {
+  this.replaceMDBinded(REGEXP_MEM, mem);
+};
 
 module.exports = new Replacer();
