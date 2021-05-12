@@ -50,7 +50,7 @@ const {
 var ReplacerMDReact = function () { };
 
 ReplacerMDReact.prototype.replaceMDBinded = function () { }
-Replacer.prototype.replaceMDBindedPreviewText = function () { }
+ReplacerMDReact.prototype.replaceMDBindedPreviewText = function () { }
 
 ReplacerMDReact.prototype.previewText = function () {
     this.replaceMDBinded(REGEXP_PREVIEW_TEXT, previewText);

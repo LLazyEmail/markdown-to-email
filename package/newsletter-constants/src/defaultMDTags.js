@@ -7,6 +7,7 @@ const newLine = platform === "win32" ? "\r\n" : "\n";
 const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, "g");
 
 const REGEXP_IMAGE = /!\[([^\[]+)\]\(([^\)]+)\)/g;
+// TODO ADD REF PARAMETER TO URL
 const REGEXP_LINK = /\[([^\[]+)\]\(([^\)]+)\)/g;
 const REGEXP_STRONG = /(\*\*|__)(.*?)(\*?)\1/g;
 const REGEXP_DEL = /\~\~(.*?)\~\~/g;
