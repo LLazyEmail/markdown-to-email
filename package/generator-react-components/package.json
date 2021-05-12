@@ -1,6 +1,6 @@
 {
   "name": "atherdon-newsletter-react",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
