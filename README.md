@@ -97,7 +97,6 @@ The parser reads source file from `source/source.md` and based on opening tag re
 
 - https://github.com/markedjs/marked
 - https://github.com/mdx-js/mdx
-- https://github.com/markedjs/marked
 
 Links
 - https://codepen.io/rh/pen/BoyNdy
