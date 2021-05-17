@@ -63,15 +63,12 @@ module.exports = {
   strong,
   link,
   blockquote,
-
   mem,
-  
   header,
-
   italic,
   del,
   q,
   code,
   hr,
-  empty,
+  empty
 };

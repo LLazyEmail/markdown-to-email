@@ -25,6 +25,11 @@ const {
 } = require('./callbacksMDReact');
 
 const {
+  ulList,
+  olList
+} = require('./callbacks-lists');
+
+const {
   REGEXP_HEADER,
   REGEXP_IMAGE,
   REGEXP_LINK,
