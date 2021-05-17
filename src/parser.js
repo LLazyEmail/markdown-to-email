@@ -49,6 +49,7 @@ function generateFullTemplate() {
 }
 
 function generateReactContent() {
+
   const parsedContent = parseMDReact(CONTENT_SOURCE);
   // console.log("parsedContent", parsedContent);
   checkWarnings(parsedContent.warnings);
@@ -59,6 +60,7 @@ function generateReactContent() {
 }
 
 function generateReactFullTemplate() {
+
   const parsedContent = parseMDReactFullThing({ source: FULL_SOURCE });
   checkWarnings(parsedContent.warnings);
 
@@ -72,6 +74,7 @@ function generateReactFullTemplate() {
 
 // this method is depricated.
 function generateContentOnly() {
+    
   const parsedContent = parse(CONTENT_SOURCE);
   checkWarnings(parsedContent.warnings);
 

@@ -44,9 +44,13 @@ const {
 } = require('./callbacks-simple');
 
 const {
-  image,
   ulList,
-  olList,
+  olList
+} = require('./callbacks');
+
+
+const {
+  image,
   paragraphWrapper,
   sponsorship,
   br,
