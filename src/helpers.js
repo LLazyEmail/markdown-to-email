@@ -3,6 +3,7 @@ const layouts = require('atherdon-newsletter-js-layouts');
 const reactLayouts = require('atherdon-newsletter-react');
 
 function replaceHTMLWrapper(wrapperName, config, folder = 'typography') {
+
   // this part will be updated very soon
   let wrapper = layouts[folder][wrapperName];
   //@TODO replace with lodash
@@ -14,6 +15,7 @@ function replaceHTMLWrapper(wrapperName, config, folder = 'typography') {
 }
 
 function replaceReactWrapper(wrapperName, config, folder = 'typography') {
+    
   // console.log(reactLayouts.Typography.strong);
   // console.log("name", config);
   // this part will be updated very soon
@@ -87,6 +89,7 @@ function replaceMarkdownPreviewText(regexp) {
 module.exports = {
   replaceMarkdown,
   replaceMarkdownPreviewText,
+
   replaceReactWrapper,
   replaceHTMLWrapper,
 };
