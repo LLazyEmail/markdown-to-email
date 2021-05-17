@@ -16,8 +16,6 @@ const {
 
 const {
   image,
-  ulList,
-  olList,
   paragraphWrapper,
   sponsorship,
   br,

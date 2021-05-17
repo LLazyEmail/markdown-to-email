@@ -9,6 +9,7 @@ function mem(text, src, href, altText) {
   };
 
   const result = replaceHTMLWrapper('image', config);
+  
   return result;
 }
 
@@ -19,6 +20,7 @@ function separator() {
     'separator',
     config,
   )}${newLine}`;
+
   return result;
 }
 
