@@ -17,6 +17,7 @@ const REGEXP_EMPTY_UL = /<\/ul>\s?<ul>/g;
 const REGEXP_EMPTY_OL = /<\/ol>\s?<ol>/g;
 
 
+
 module.exports = {
   REGEXP_UL_LIST,
   REGEXP_OL_LIST,
