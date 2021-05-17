@@ -1,3 +1,6 @@
+const { replaceHTMLWrapper } = require('./helpers');
+const { newLine } = require('./utils');
+
 // @TODO it looks even more crazier than it was 2 months ago
 // i'm not suprised that it might get errors(but works fine now)
 function ulList(text, list) {

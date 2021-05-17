@@ -53,7 +53,7 @@ const {
   image,
   paragraphWrapper,
   sponsorship,
-  br,
+  br
 } = require('./callbacks');
 
 const { separator } = require('./callbacks-custom');

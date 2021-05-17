@@ -9,22 +9,6 @@ const { newLine } = require('./utils');
 // const empty = '';
 
 
-// function strong(text, doubleAsterix, content, asterix) {
-//   const config = { content: `${content + asterix}` };
-//   const result = replaceHTMLWrapper('strong', config);
-//   return result;
-// }
-
-// function link(text, title, href) {
-//   const config = {
-//     content: title.trim(),
-//     href: href.trim(),
-//   };
-
-//   const result = replaceHTMLWrapper('link', config);
-//   return result;
-// }
-
 /// function is not working as planned
 
 function paragraphWrapper(text, line) {
@@ -88,10 +72,6 @@ function sponsorship(text) {
 
 module.exports = {
   paragraphWrapper,
-
-//   ulList,
-//   olList,
-  
   image,
   sponsorship,
   br
