@@ -11,7 +11,7 @@ const {
   hr,
   empty,
   previewText,
-  separator,
+  separator
 } = require('./callbacks-simpleMDReact');
 
 const {
@@ -35,13 +35,11 @@ const {
   REGEXP_DEL,
   REGEXP_Q,
   REGEXP_CODE,
-  REGEXP_UL_LIST,
-  REGEXP_OL_LIST,
+ 
   REGEXP_BLOCKQUOTE,
   REGEXP_HR,
   REGEXP_PARAGRAPH,
-  REGEXP_EMPTY_UL,
-  REGEXP_EMPTY_OL,
+
   REGEXP_BR,
   REGEXP_EMPTY_BLOCKQUOTE,
   REGEXP_EM,
@@ -51,6 +49,13 @@ const {
   REGEXP_PREVIEW_TEXT,
   REGEXP_SEPARATOR,
 } = require('./constantsMDReact');
+
+const {
+    REGEXP_UL_LIST,
+    REGEXP_OL_LIST,
+    REGEXP_EMPTY_UL,
+    REGEXP_EMPTY_OL,
+} = require('./constants-react-2');
 
 var ReplacerMDReact = function () {};
 

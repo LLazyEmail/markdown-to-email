@@ -17,6 +17,8 @@ const REGEXP_STR_END = 'f<';
 
 const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, 'g');
 
+
+
 const REGEXP_IMAGE = /!\[([^\[]+)\]\(([^\)]+)\)/g;
 const REGEXP_LINK = /\[([^\[]+)\]\(([^\)]+)\)/g;
 const REGEXP_STRONG = /(\*\*|__)(.*?)(\*?)\1/g;
@@ -33,6 +35,11 @@ const REGEXP_UL_LIST = new RegExp(
 const REGEXP_OL_LIST = new RegExp(`${newLine}[0-9]+\\.(.*)`, 'g');
 
 
+const REGEXP_EMPTY_UL = /<\/ul>\s?<ul>/g;
+const REGEXP_EMPTY_OL = /<\/ol>\s?<ol>/g;
+
+
+
 
 const REGEXP_BLOCKQUOTE = new RegExp(`${newLine}(&gt;|\\>)(.*)`, 'g');
 const REGEXP_HR = new RegExp(`${newLine}-{5,}`, 'g');
@@ -40,9 +47,6 @@ const REGEXP_HR = new RegExp(`${newLine}-{5,}`, 'g');
 const REGEXP_PARAGRAPH = new RegExp(`${newLine}(.+?)${newLine}`, 'g');
 
 
-
-const REGEXP_EMPTY_UL = /<\/ul>\s?<ul>/g;
-const REGEXP_EMPTY_OL = /<\/ol>\s?<ol>/g;
 
 
 
@@ -78,7 +82,7 @@ module.exports = {
 
   REGEXP_EMPTY_UL,
   REGEXP_EMPTY_OL,
-  
+
   REGEXP_BR,
   REGEXP_EMPTY_BLOCKQUOTE,
   REGEXP_EM,
