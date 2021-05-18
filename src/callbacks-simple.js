@@ -2,18 +2,18 @@ const { replaceHTMLWrapper } = require("./helpers");
 const { newLine } = require('./utils');
 
 const italic = "$1<em>$3</em>$4";
-const del    = "<del>$1</del>";
-const q      = "<q>$1</q>";
-const code   = "<code>$1</code>";
-const hr     = `${newLine}<hr />`;
-const empty  = "";
+const del = "<del>$1</del>";
+const q = "<q>$1</q>";
+const code = "<code>$1</code>";
+const hr = `${newLine}<hr />`;
+const empty = "";
 // const strong = "<strong>$2$3</strong>";
 
 function strong(text, doubleAsterix, content, asterix) {
-  const config = { 
-    content: `${content + asterix}` 
+  const config = {
+    content: `${content + asterix}`
   };
-  
+
   const result = replaceHTMLWrapper("strong", config);
   return result;
 }
@@ -50,16 +50,26 @@ function header(text, chars, content) {
   };
 
   const titleType = [
-    "mainTitle", 
-    "subtitle", 
+    "mainTitle",
+    "subtitle",
     "heading"
   ];
-  
+
   const result = newLine + replaceHTMLWrapper(titleType[chars.length - 1], config);
-  
+
   return result;
 }
 
+function separator() {
+  const config = {};
+
+  const result = `${newLine}${replaceHTMLWrapper(
+    'separator',
+    config,
+  )}${newLine}`;
+
+  return result;
+}
 
 module.exports = {
   strong,
@@ -67,8 +77,9 @@ module.exports = {
   blockquote,
   mem,
   header,
-  
-  
+  separator,
+
+
   italic,
   del,
   q,
