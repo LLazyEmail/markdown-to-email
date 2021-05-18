@@ -18,17 +18,17 @@ const REGEXP_LINK_HTTPS = new RegExp(">https", "g");
 
 const REGEXP_STR_BEGIN = ">https";
 const REGEXP_STR_END = "f<";
-    
+
 const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, 'g');
 
 
 
 const REGEXP_UL_LIST = new RegExp(`${newLine}(((\\s{4})?\\*(.*?)${newLine}){1,})`, 'g');
-const REGEXP_OL_LIST = new RegExp(`${newLine}[0-9]+\\.(.*)`, 'g'); 
+const REGEXP_OL_LIST = new RegExp(`${newLine}[0-9]+\\.(.*)`, 'g');
 
 
 const REGEXP_BLOCKQUOTE = new RegExp(`${newLine}(&gt;|\\>)(.*)`, 'g');
-const REGEXP_HR = new RegExp(`${newLine}-{5,}`,'g');
+const REGEXP_HR = new RegExp(`${newLine}-{5,}`, 'g');
 
 const REGEXP_PARAGRAPH = new RegExp(`${newLine}(.+?)${newLine}`, "g");
 
@@ -45,6 +45,7 @@ const REGEXP_SPONSORSHIP = /~(\[(.*?)\]){3}/g;
 const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
 const REGEXP_MEM = /\!\[(.*?)\]\[(.*?)\]\[(.*?)\]/g;
 const REGEXP_PREVIEW_TEXT = new RegExp(`#~(.*?)${newLine}`);
+const REGEXP_SEPARATOR = new RegExp(`${newLine}\\[separator\\]${newLine}`, 'g');
 
 // const REGEXP_H3 = /^### (.*$)/gim;
 // const REGEXP_H2 = /^## (.*$)/gim;
@@ -76,5 +77,6 @@ module.exports = {
   REGEXP_LINK_HTTPS,
   REGEXP_LINK_G,
   REGEXP_STR_BEGIN,
-  REGEXP_STR_END
+  REGEXP_STR_END,
+  REGEXP_SEPARATOR
 };
