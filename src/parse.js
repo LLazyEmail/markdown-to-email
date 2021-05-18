@@ -6,6 +6,7 @@ const {
   blockquote,
   mem,
   header,
+  separator,
 
 
   italic,
@@ -52,6 +53,7 @@ const {
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
+  REGEXP_SEPARATOR
 } = require("./constants");
 
 // @todo update this method. I'm sure it can be improved.
@@ -107,11 +109,12 @@ function parse(source) {
   replaceMDBinded(REGEXP_BR, br);
   replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
   replaceMDBinded(REGEXP_MEM, mem);
+  replaceMDBinded(REGEXP_SEPARATOR, separator);
   //console.log( state )
   return state;
 }
 
-function parseFullTHing(params){
+function parseFullTHing(params) {
   const { source } = params;
 
   return parse(source);
