@@ -1,5 +1,8 @@
-const { replaceHTMLWrapper } = require('./helpers');
-const { newLine } = require('./utils');
+const { 
+    replaceHTMLWrapper,
+    newLine 
+} = require('./helpers');
+// const { newLine } = require('./utils');
 
 function mem(text, src, href, altText) {
   const config = {
@@ -16,10 +19,17 @@ function mem(text, src, href, altText) {
 function separator() {
   const config = {};
 
-  const result = `${newLine}${replaceHTMLWrapper(
+  var replaced = replaceHTMLWrapper(
     'separator',
     config,
-  )}${newLine}`;
+  );
+    
+  const result = newLine + replaced + newLine;  
+
+//   const result = `${newLine}${replaceHTMLWrapper(
+//     'separator',
+//     config,
+//   )}${newLine}`;
 
   return result;
 }

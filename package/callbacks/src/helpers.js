@@ -4,3 +4,6 @@ const platform = os.platform();
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
 
+export {
+    newLine
+}
