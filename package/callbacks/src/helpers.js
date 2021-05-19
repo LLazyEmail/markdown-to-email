@@ -1,18 +1,12 @@
-const os = require('os');
+import os from 'os';
+// const { forEach } = require('lodash');
+
+import layouts from 'atherdon-newsletter-js-layouts';
+import reactLayouts from 'atherdon-newsletter-react';
+
 
 const platform = os.platform();
 const newLine = platform === 'win32' ? '\r\n' : '\n';
-
-// const { forEach } = require('lodash');
-
-const layouts = require('atherdon-newsletter-js-layouts');
-const reactLayouts = require('atherdon-newsletter-react');
-
-export {
-    
-}
-
-
 
 
 function replaceHTMLWrapper(wrapperName, config, folder = 'typography') {

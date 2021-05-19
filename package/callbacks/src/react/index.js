@@ -18,8 +18,7 @@ import {
   image,
   paragraphWrapper,
   sponsorship,
-  br,
-  newLine
+  br
 } from './callbacksMDReact';
 
 import {

@@ -1,31 +1,28 @@
-const {
-  strong,
-  link,
-  blockquote,
-  mem,
-  header,
-  italic,
-  del,
-  q,
-  code,
-  hr,
-  empty,
-  previewText,
-  separator
-} = require('./callbacks-simpleMDReact');
+import {
+    strong,
+    link,
+    blockquote,
+    mem,
+    header,
+    italic,
+    del,
+    q,
+    code,
+    hr,
+    empty,
+    previewText,
+    separator,
 
-const {
-  image,
-  paragraphWrapper,
-  sponsorship,
-  br,
-  newLine,
-} = require('./callbacksMDReact');
+    image,
+    paragraphWrapper,
+    sponsorship,
+    br,
 
-const {
-  ulList,
-  olList
-} = require('./callbacks-lists');
+    ulList,
+    olList
+} from './index'
+
+
 
 const {
   REGEXP_HEADER,
@@ -56,6 +53,8 @@ const {
     REGEXP_EMPTY_UL,
     REGEXP_EMPTY_OL,
 } = require('./constants-react-2');
+
+
 
 var ReplacerMDReact = function () {};
 
@@ -149,4 +148,4 @@ ReplacerMDReact.prototype.separator = function () {
   this.replaceMDBinded(REGEXP_SEPARATOR, separator);
 };
 
-module.exports = new ReplacerMDReact();
+export default new ReplacerMDReact();

@@ -4,7 +4,7 @@
 // it will help us to move forward.
 import { newLine } from './helper';
 
-const {
+import {
   REGEXP_HEADER,
   REGEXP_IMAGE,
   REGEXP_LINK,
@@ -27,10 +27,11 @@ const {
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
   REGEXP_SEPARATOR,
-} = require('atherdon-newsletter-constants');
+} from 'atherdon-newsletter-constants';
 
-const {
-  strong,
+
+import {
+strong,
   link,
   blockquote,
   mem,
@@ -41,22 +42,46 @@ const {
   code,
   hr,
   empty,
-} = require('./callbacks-simple');
 
-const {
   ulList,
-  olList
-} = require('./callbacks-lists');
+  olList,
 
-
-const {
-  image,
+ image,
   paragraphWrapper,
   sponsorship,
-  br
-} = require('./callbacks');
+  br,
 
-const { separator } = require('./callbacks-custom');
+  separator
+} from './index'
+
+// const {
+//   strong,
+//   link,
+//   blockquote,
+//   mem,
+//   header,
+//   italic,
+//   del,
+//   q,
+//   code,
+//   hr,
+//   empty,
+// } = require('./callbacks-simple');
+
+// const {
+//   ulList,
+//   olList
+// } = require('./callbacks-lists');
+
+
+// const {
+//   image,
+//   paragraphWrapper,
+//   sponsorship,
+//   br
+// } = require('./callbacks');
+
+// const { separator } = require('./callbacks-custom');
 
 
 // @TODO include things from a new module that we have.

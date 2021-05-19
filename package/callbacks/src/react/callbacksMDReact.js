@@ -1,5 +1,4 @@
-const { replaceHTMLWrapper, replaceReactWrapper } = require('../helpers');
-const { newLine } = require('../utils');
+const { replaceHTMLWrapper, replaceReactWrapper, newLine } from '../helpers';
 
 /// function is not working as planned
 
@@ -84,7 +83,7 @@ function sponsorship(text) {
 //     });
 // }
 
-module.exports = {
+export {
   paragraphWrapper,
   image,
   sponsorship,

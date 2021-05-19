@@ -61,7 +61,7 @@ function olList(text, item) {
 }
 
 
-module.exports = {
+exports {
   ulList,
   olList
 };

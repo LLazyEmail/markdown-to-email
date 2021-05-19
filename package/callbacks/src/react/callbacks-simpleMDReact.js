@@ -1,5 +1,5 @@
-const { replaceReactWrapper } = require('../helpers');
-const { newLine } = require('../utils');
+import { replaceReactWrapper, newLine } from '../helpers';
+
 
 const hr = `${newLine}<hr />`;
 const empty = '';
@@ -105,10 +105,11 @@ function separator() {
     'separator',
     config,
   )}${newLine}`;
+  
   return result;
 }
 
-module.exports = {
+export {
   strong,
   link,
   blockquote,

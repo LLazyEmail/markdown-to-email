@@ -1,7 +1,4 @@
-const { replaceHTMLWrapper } = require('./helpers');
-const { newLine } = require('./utils');
-
-
+import { replaceHTMLWrapper, newLine } from './helpers';
 
 /// function is not working as planned
 
