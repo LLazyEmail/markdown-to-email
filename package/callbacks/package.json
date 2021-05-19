@@ -43,5 +43,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "atherdon-newsletter-js-layouts": "^1.0.17",
+    "atherdon-newsletter-react": "^1.0.11"
   }
 }

@@ -14,6 +14,8 @@ function replaceHTMLWrapper(wrapperName, config, folder = 'typography') {
   return wrapper;
 }
 
+
+
 function replaceReactWrapper(wrapperName, config, folder = 'typography') {
     
   // console.log(reactLayouts.Typography.strong);
@@ -85,6 +87,7 @@ function replaceMarkdownPreviewText(regexp) {
 
   this.content = this.content.replace(regexp, () => this.previewText);
 }
+
 
 module.exports = {
   replaceMarkdown,
