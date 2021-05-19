@@ -24,7 +24,7 @@ import {
 
 
 
-const {
+import {
   REGEXP_HEADER,
   REGEXP_IMAGE,
   REGEXP_LINK,
@@ -45,14 +45,14 @@ const {
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
   REGEXP_SEPARATOR,
-} = require('./constantsMDReact');
+} from './constantsMDReact';
 
-const {
+import {
     REGEXP_UL_LIST,
     REGEXP_OL_LIST,
     REGEXP_EMPTY_UL,
     REGEXP_EMPTY_OL,
-} = require('./constants-react-2');
+} from './constants-react-2';
 
 
 
