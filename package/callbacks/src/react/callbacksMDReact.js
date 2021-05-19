@@ -1,4 +1,4 @@
-const { replaceHTMLWrapper, replaceReactWrapper, newLine } from '../helpers';
+import { replaceHTMLWrapper, replaceReactWrapper, newLine } from '../helpers';
 
 /// function is not working as planned
 
