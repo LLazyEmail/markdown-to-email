@@ -68,7 +68,7 @@ function sponsorship(text) {
   return replaceHTMLWrapper('sponsor', config, 'body');
 }
 
-module.exports = {
+export {
   paragraphWrapper,
   image,
   sponsorship,

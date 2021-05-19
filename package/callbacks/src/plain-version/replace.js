@@ -2,7 +2,7 @@
 // a process of reading and debugging our code
 // i'm creating a set of methods, that have a simple name.
 // it will help us to move forward.
-const { newLine } = require('./helper');
+import { newLine } from './helper';
 
 const {
   REGEXP_HEADER,
@@ -150,4 +150,4 @@ Replacer.prototype.separator = function () {
   this.replaceMDBinded(REGEXP_SEPARATOR, separator);
 };
 
-module.exports = new Replacer();
+export default new Replacer();

@@ -59,7 +59,7 @@ function header(text, chars, content) {
   return result;
 }
 
-module.exports = {
+export {
   strong,
   link,
   blockquote,

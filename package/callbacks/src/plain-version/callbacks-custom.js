@@ -1,8 +1,7 @@
-const { 
+import { 
     replaceHTMLWrapper,
     newLine 
-} = require('./helpers');
-// const { newLine } = require('./utils');
+} from './helpers';
 
 function mem(text, src, href, altText) {
   const config = {
@@ -34,7 +33,7 @@ function separator() {
   return result;
 }
 
-module.exports = {
+export {
   mem,
   separator,
 };
