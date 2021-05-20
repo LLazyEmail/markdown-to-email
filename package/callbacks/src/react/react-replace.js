@@ -1,28 +1,26 @@
 import {
-    strong,
-    link,
-    blockquote,
-    mem,
-    header,
-    italic,
-    del,
-    q,
-    code,
-    hr,
-    empty,
-    previewText,
-    separator,
+  strong,
+  link,
+  blockquote,
+  mem,
+  header,
+  italic,
+  del,
+  q,
+  code,
+  hr,
+  empty,
+  previewText,
+  separator,
 
-    image,
-    paragraphWrapper,
-    sponsorship,
-    br,
+  image,
+  paragraphWrapper,
+  sponsorship,
+  br,
 
-    ulList,
-    olList
-} from './index'
-
-
+  ulList,
+  olList
+} from './index';
 
 import {
   REGEXP_HEADER,
@@ -32,7 +30,7 @@ import {
   REGEXP_DEL,
   REGEXP_Q,
   REGEXP_CODE,
- 
+
   REGEXP_BLOCKQUOTE,
   REGEXP_HR,
   REGEXP_PARAGRAPH,
@@ -48,15 +46,13 @@ import {
 } from './constantsMDReact';
 
 import {
-    REGEXP_UL_LIST,
-    REGEXP_OL_LIST,
-    REGEXP_EMPTY_UL,
-    REGEXP_EMPTY_OL,
+  REGEXP_UL_LIST,
+  REGEXP_OL_LIST,
+  REGEXP_EMPTY_UL,
+  REGEXP_EMPTY_OL,
 } from './constants-react-2';
 
-
-
-var ReplacerMDReact = function () {};
+const ReplacerMDReact = function () {};
 
 ReplacerMDReact.prototype.replaceMDBinded = function () {};
 ReplacerMDReact.prototype.replaceMDBindedPreviewText = function () {};

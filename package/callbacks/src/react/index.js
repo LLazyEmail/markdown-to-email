@@ -26,28 +26,26 @@ import {
   olList
 } from './callbacks-lists-react';
 
-
-
 export default {
-    strong,
-    link,
-    blockquote,
-    mem,
-    header,
-    italic,
-    del,
-    q,
-    code,
-    hr,
-    empty,
+  strong,
+  link,
+  blockquote,
+  mem,
+  header,
+  italic,
+  del,
+  q,
+  code,
+  hr,
+  empty,
 
-    ulList,
-    olList,
+  ulList,
+  olList,
 
-    image,
-    paragraphWrapper,
-    sponsorship,
-    br,
+  image,
+  paragraphWrapper,
+  sponsorship,
+  br,
 
-    separator
+  separator
 };

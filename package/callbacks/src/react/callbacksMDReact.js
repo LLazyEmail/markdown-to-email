@@ -19,8 +19,6 @@ function paragraphWrapper(text, line) {
 }
 /// !end function is not working as planned
 
-
-
 function image(text, alt, srcWithTooltip) {
   const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
 

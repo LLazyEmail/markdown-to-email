@@ -2,8 +2,6 @@
 // a process of reading and debugging our code
 // i'm creating a set of methods, that have a simple name.
 // it will help us to move forward.
-import { newLine } from './helper';
-
 import {
   REGEXP_HEADER,
   REGEXP_IMAGE,
@@ -28,10 +26,10 @@ import {
   REGEXP_PREVIEW_TEXT,
   REGEXP_SEPARATOR,
 } from 'atherdon-newsletter-constants';
-
+import { newLine } from './helper';
 
 import {
-strong,
+  strong,
   link,
   blockquote,
   mem,
@@ -46,13 +44,13 @@ strong,
   ulList,
   olList,
 
- image,
+  image,
   paragraphWrapper,
   sponsorship,
   br,
 
   separator
-} from './index'
+} from './index';
 
 // const {
 //   strong,
@@ -73,7 +71,6 @@ strong,
 //   olList
 // } = require('./callbacks-lists');
 
-
 // const {
 //   image,
 //   paragraphWrapper,
@@ -83,10 +80,9 @@ strong,
 
 // const { separator } = require('./callbacks-custom');
 
-
 // @TODO include things from a new module that we have.
 
-var Replacer = function () {};
+const Replacer = function () {};
 
 Replacer.prototype.replaceMDBinded = function () {};
 Replacer.prototype.replaceMDBindedPreviewText = function () {};

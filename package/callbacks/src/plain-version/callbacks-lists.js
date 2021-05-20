@@ -1,4 +1,4 @@
-import { replaceHTMLWrapper, newLine } from './helpers';
+import { replaceHTMLWrapper, newLine } from '../helpers';
 // import { newLine } = require('./utils');
 
 // @TODO it looks even more crazier than it was 2 months ago
@@ -52,8 +52,7 @@ function olList(text, item) {
   }</li>${newLine}</ol>`;
 }
 
-
 export {
   ulList,
   olList
-}
+};

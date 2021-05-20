@@ -1,7 +1,7 @@
-import { 
-    replaceHTMLWrapper,
-    newLine 
-} from './helpers';
+import {
+  replaceHTMLWrapper,
+  newLine
+} from '../helpers';
 
 function mem(text, src, href, altText) {
   const config = {
@@ -11,24 +11,24 @@ function mem(text, src, href, altText) {
   };
 
   const result = replaceHTMLWrapper('image', config);
-  
+
   return result;
 }
 
 function separator() {
   const config = {};
 
-  var replaced = replaceHTMLWrapper(
+  const replaced = replaceHTMLWrapper(
     'separator',
     config,
   );
-    
-  const result = newLine + replaced + newLine;  
 
-//   const result = `${newLine}${replaceHTMLWrapper(
-//     'separator',
-//     config,
-//   )}${newLine}`;
+  const result = newLine + replaced + newLine;
+
+  //   const result = `${newLine}${replaceHTMLWrapper(
+  //     'separator',
+  //     config,
+  //   )}${newLine}`;
 
   return result;
 }

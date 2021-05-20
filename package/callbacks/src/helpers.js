@@ -4,16 +4,13 @@ import os from 'os';
 import layouts from 'atherdon-newsletter-js-layouts';
 import reactLayouts from 'atherdon-newsletter-react';
 
-
 const platform = os.platform();
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
-
 function replaceHTMLWrapper(wrapperName, config, folder = 'typography') {
-
   // this part will be updated very soon
   let wrapper = layouts[folder][wrapperName];
-  //@TODO replace with lodash
+  // @TODO replace with lodash
   Object.keys(config).forEach((name) => {
     wrapper = wrapper.replace(new RegExp(`{${name}}`, 'g'), config[name]);
   });
@@ -21,15 +18,12 @@ function replaceHTMLWrapper(wrapperName, config, folder = 'typography') {
   return wrapper;
 }
 
-
-
 function replaceReactWrapper(wrapperName, config, folder = 'typography') {
-    
   // console.log(reactLayouts.Typography.strong);
   // console.log("name", config);
   // this part will be updated very soon
   let wrapper = reactLayouts[folder][wrapperName];
-  //@TODO replace with lodash
+  // @TODO replace with lodash
   Object.keys(config).forEach((name) => {
     wrapper = wrapper.replace(new RegExp(`{${name}}`, 'g'), config[name]);
   });
@@ -37,13 +31,12 @@ function replaceReactWrapper(wrapperName, config, folder = 'typography') {
   return wrapper;
 }
 
-
 // try {
 //   myroutine(); // may throw three types of exceptions
 // } catch (e) {
-// }   
- 
-  /* work before the function is called */
+// }
+
+/* work before the function is called */
 //   try {
 //     var returnValue = originalFunction.call(this, a, b, c);
 //     /* work after the function is called */
@@ -56,26 +49,24 @@ function replaceReactWrapper(wrapperName, config, folder = 'typography') {
 // https://gist.github.com/harrylove/1230566/d064e5c216384d3846f73ed555e9899be02e8f98#gistcomment-2884621
 // https://stackoverflow.com/a/326693
 function replaceMarkdown(regexp, callback) {
-    
-    console.log('helpsers- replace markdown method')
-  console.log(typeof callback)  
-  var fixedCallbackMethod = false;
+  console.log('helpsers- replace markdown method');
+  console.log(typeof callback);
+  let fixedCallbackMethod = false;
   switch (typeof callback) {
-      case 'string':
-          fixedCallbackMethod = callback;
-          break;
-      case 'undefined':
-            console.log("ERRROROROR HERE!!!!")
+    case 'string':
+      fixedCallbackMethod = callback;
+      break;
+    case 'undefined':
+      console.log("ERRROROROR HERE!!!!");
 
-          break;  
-      default:
-          fixedCallbackMethod = callback.bind(this)
-          break;
+      break;
+    default:
+      fixedCallbackMethod = callback.bind(this);
+      break;
   }
 
   this.content = this.content.replace(regexp, fixedCallbackMethod);
 }
-
 
 // @TODO find out if we really using this method or not?
 function replaceMarkdownPreviewText(regexp) {
@@ -95,13 +86,12 @@ function replaceMarkdownPreviewText(regexp) {
   this.content = this.content.replace(regexp, () => this.previewText);
 }
 
-
 export {
-    newLine,
+  newLine,
 
-    replaceMarkdown,
-    replaceMarkdownPreviewText,
+  replaceMarkdown,
+  replaceMarkdownPreviewText,
 
-    replaceReactWrapper,
-    replaceHTMLWrapper,
+  replaceReactWrapper,
+  replaceHTMLWrapper,
 };

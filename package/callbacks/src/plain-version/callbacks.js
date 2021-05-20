@@ -1,4 +1,4 @@
-import { replaceHTMLWrapper, newLine } from './helpers';
+import { replaceHTMLWrapper, newLine } from '../helpers';
 
 /// function is not working as planned
 
@@ -20,9 +20,7 @@ function paragraphWrapper(text, line) {
 }
 /// !end function is not working as planned
 
-
 function image(text, alt, srcWithTooltip) {
-
   const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
 
   const config = {
@@ -37,7 +35,6 @@ function image(text, alt, srcWithTooltip) {
 }
 
 function br(text, newLines) {
-
   const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
 
   // @TODO well, it's not good. can be improved with lodash
@@ -47,7 +44,6 @@ function br(text, newLines) {
 }
 
 function sponsorship(text) {
-    
   const regex = /\[(.*?)\]/g;
   const [content, href, src] = text
     .match(regex)
