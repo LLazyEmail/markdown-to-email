@@ -25,7 +25,7 @@ const {
 const {
   ulList,
   olList
-} = require('./callbacks-lists');
+} = require('./callbacks-lists-react');
 
 const {
   REGEXP_HEADER,
