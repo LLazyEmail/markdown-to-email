@@ -27,7 +27,7 @@ import {
 
 import { separator } from './callbacks-custom';
 
-export {
+export default {
     strong,
     link,
     blockquote,

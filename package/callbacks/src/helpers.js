@@ -96,7 +96,7 @@ function replaceMarkdownPreviewText(regexp) {
 }
 
 
-module.exports = {
+export {
     newLine,
 
     replaceMarkdown,

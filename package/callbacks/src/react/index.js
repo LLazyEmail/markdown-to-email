@@ -28,7 +28,7 @@ import {
 
 
 
-export {
+export default {
     strong,
     link,
     blockquote,

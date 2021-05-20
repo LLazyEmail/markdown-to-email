@@ -1,5 +1,5 @@
-import PlainCallbacks from './plain-version/';
-import ReactCallbacks from './react';
+import PlainCallbacks from './plain-version/index';
+import ReactCallbacks from './react/index';
 
 export {
   PlainCallbacks,
