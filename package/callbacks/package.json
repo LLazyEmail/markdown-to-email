@@ -1,6 +1,6 @@
 {
   "name": "atherdon-callbacks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Me trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
