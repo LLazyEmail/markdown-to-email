@@ -33,7 +33,7 @@ function parse(source) {
   PlainCallbacks.replaceMDBindedPreviewText =
     replaceMarkdownPreviewText.bind(state);
 
-  PlainCallbacks.comments();
+//   PlainCallbacks.comments1();
   PlainCallbacks.strong();
   PlainCallbacks.em();
   PlainCallbacks.header();

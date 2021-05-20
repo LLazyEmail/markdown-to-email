@@ -52,33 +52,6 @@ import {
   separator
 } from './index';
 
-// const {
-//   strong,
-//   link,
-//   blockquote,
-//   mem,
-//   header,
-//   italic,
-//   del,
-//   q,
-//   code,
-//   hr,
-//   empty,
-// } = require('./callbacks-simple');
-
-// const {
-//   ulList,
-//   olList
-// } = require('./callbacks-lists');
-
-// const {
-//   image,
-//   paragraphWrapper,
-//   sponsorship,
-//   br
-// } = require('./callbacks');
-
-// const { separator } = require('./callbacks-custom');
 
 // @TODO include things from a new module that we have.
 
@@ -87,7 +60,7 @@ const Replacer = function () {};
 Replacer.prototype.replaceMDBinded = function () {};
 Replacer.prototype.replaceMDBindedPreviewText = function () {};
 
-Replacer.prototype.comments = function () {
+Replacer.prototype.comments1 = function () {
   this.replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
 };
 
