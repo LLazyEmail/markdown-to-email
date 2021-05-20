@@ -27,30 +27,7 @@
 //   REGEXP_SEPARATOR,
 // } from 'atherdon-newsletter-constants';
 
-import {
-  REGEXP_HEADER,
-  REGEXP_IMAGE,
-  REGEXP_LINK,
-  REGEXP_STRONG,
-  REGEXP_DEL,
-  REGEXP_Q,
-  REGEXP_CODE,
-  REGEXP_UL_LIST,
-  REGEXP_OL_LIST,
-  REGEXP_BLOCKQUOTE,
-  REGEXP_HR,
-  REGEXP_PARAGRAPH,
-  REGEXP_EMPTY_UL,
-  REGEXP_EMPTY_OL,
-  REGEXP_BR,
-  REGEXP_EMPTY_BLOCKQUOTE,
-  REGEXP_EM,
-  REGEXP_SPONSORSHIP,
-  REGEXP_HTML_COMMENTS,
-  REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT,
-  REGEXP_SEPARATOR,
-}  from 'atherdon-newsletter-constants'
+import * as constants from 'atherdon-newsletter-constants'
 
 import { newLine } from '../helpers';
 
@@ -113,33 +90,27 @@ class Replace {
     constructor(constants){
         // this.replaceMDBinded = 
         this._constants = constants;
+
         this.replaceMDBinded = () => {};
         this.replaceMDBindedPreviewText = () => {};
         this.comments = () => {
             this.replaceMDBinded(this._constants.REGEXP_HTML_COMMENTS, empty);
         }
+
+        this.strong = () => {
+            this.replaceMDBinded(this._constants.REGEXP_STRONG, strong);
+        };
+
+        this.em = () => {
+            this.replaceMDBinded(this._constants.REGEXP_EM, italic);
+        }
+
     }
-
-    // comments(){
-    //     this.replaceMDBinded(constants.REGEXP_HTML_COMMENTS, empty);
-    // }
-
 
 } 
 
 
-// const Replacer = function () {};
 
-// Replacer.prototype.replaceMDBinded = function () {};
-// Replacer.prototype.replaceMDBindedPreviewText = function () {};
-
-// Replacer.prototype.comments1 = function () {
-//   this.replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
-// };
-
-// Replacer.prototype.strong = function () {
-//   this.replaceMDBinded(REGEXP_STRONG, strong);
-// };
 
 // Replacer.prototype.em = function () {
 //   this.replaceMDBinded(REGEXP_EM, italic);
@@ -217,25 +188,4 @@ class Replace {
 //   this.replaceMDBinded(REGEXP_SEPARATOR, separator);
 // };
 
-export default new Replace({REGEXP_HEADER,
-  REGEXP_IMAGE,
-  REGEXP_LINK,
-  REGEXP_STRONG,
-  REGEXP_DEL,
-  REGEXP_Q,
-  REGEXP_CODE,
-  REGEXP_UL_LIST,
-  REGEXP_OL_LIST,
-  REGEXP_BLOCKQUOTE,
-  REGEXP_HR,
-  REGEXP_PARAGRAPH,
-  REGEXP_EMPTY_UL,
-  REGEXP_EMPTY_OL,
-  REGEXP_BR,
-  REGEXP_EMPTY_BLOCKQUOTE,
-  REGEXP_EM,
-  REGEXP_SPONSORSHIP,
-  REGEXP_HTML_COMMENTS,
-  REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT,
-  REGEXP_SEPARATOR,});
+export default new Replace(constants);
