@@ -27,9 +27,56 @@
 //   REGEXP_SEPARATOR,
 // } from 'atherdon-newsletter-constants';
 
-import constants from 'atherdon-newsletter-constants'
+import {
+  REGEXP_HEADER,
+  REGEXP_IMAGE,
+  REGEXP_LINK,
+  REGEXP_STRONG,
+  REGEXP_DEL,
+  REGEXP_Q,
+  REGEXP_CODE,
+  REGEXP_UL_LIST,
+  REGEXP_OL_LIST,
+  REGEXP_BLOCKQUOTE,
+  REGEXP_HR,
+  REGEXP_PARAGRAPH,
+  REGEXP_EMPTY_UL,
+  REGEXP_EMPTY_OL,
+  REGEXP_BR,
+  REGEXP_EMPTY_BLOCKQUOTE,
+  REGEXP_EM,
+  REGEXP_SPONSORSHIP,
+  REGEXP_HTML_COMMENTS,
+  REGEXP_MEM,
+  REGEXP_PREVIEW_TEXT,
+  REGEXP_SEPARATOR,
+}  from 'atherdon-newsletter-constants'
 
-import { newLine } from './helper';
+import { newLine } from '../helpers';
+
+// import {
+//   strong,
+//   link,
+//   blockquote,
+//   mem,
+//   header,
+//   italic,
+//   del,
+//   q,
+//   code,
+//   hr,
+//   empty,
+
+//   ulList,
+//   olList,
+
+//   image,
+//   paragraphWrapper,
+//   sponsorship,
+//   br,
+
+//   separator
+// } from './index';
 
 import {
   strong,
@@ -42,23 +89,27 @@ import {
   q,
   code,
   hr,
-  empty,
+  empty
+} from './callbacks-simple';
 
+import {
   ulList,
-  olList,
+  olList
+} from './callbacks-lists';
 
+import {
   image,
   paragraphWrapper,
   sponsorship,
-  br,
+  br
+} from './callbacks';
 
-  separator
-} from './index';
+import { separator } from './callbacks-custom';
 
 
 // @TODO include things from a new module that we have.
 
-class Replacer {
+class Replace {
     constructor(constants){
         // this.replaceMDBinded = 
         this._constants = constants;
@@ -163,4 +214,25 @@ class Replacer {
 //   this.replaceMDBinded(REGEXP_SEPARATOR, separator);
 // };
 
-export default new Replacer();
+export default new Replace({REGEXP_HEADER,
+  REGEXP_IMAGE,
+  REGEXP_LINK,
+  REGEXP_STRONG,
+  REGEXP_DEL,
+  REGEXP_Q,
+  REGEXP_CODE,
+  REGEXP_UL_LIST,
+  REGEXP_OL_LIST,
+  REGEXP_BLOCKQUOTE,
+  REGEXP_HR,
+  REGEXP_PARAGRAPH,
+  REGEXP_EMPTY_UL,
+  REGEXP_EMPTY_OL,
+  REGEXP_BR,
+  REGEXP_EMPTY_BLOCKQUOTE,
+  REGEXP_EM,
+  REGEXP_SPONSORSHIP,
+  REGEXP_HTML_COMMENTS,
+  REGEXP_MEM,
+  REGEXP_PREVIEW_TEXT,
+  REGEXP_SEPARATOR,});

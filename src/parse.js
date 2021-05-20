@@ -6,9 +6,9 @@ const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
 
 const ReplacerObj = require('./replace');
 
-const { PlainCallbacks } = require("atherdon-callbacks")
+const CallB = require("atherdon-callbacks")
 
-console.log(PlainCallbacks);
+console.log(CallB);
 
 // aaa = PlainCallbacks
 
@@ -29,33 +29,34 @@ function parse(source) {
     },
   };
 
-  PlainCallbacks.replaceMDBinded = replaceMarkdown.bind(state);
-  PlainCallbacks.replaceMDBindedPreviewText =
-    replaceMarkdownPreviewText.bind(state);
+//   PlainCallbacks.replaceMDBinded = replaceMarkdown.bind(state);
+//   PlainCallbacks.replaceMDBindedPreviewText =
+//     replaceMarkdownPreviewText.bind(state);
 
-//   PlainCallbacks.comments1();
-  PlainCallbacks.strong();
-  PlainCallbacks.em();
-  PlainCallbacks.header();
-  PlainCallbacks.image();
-  PlainCallbacks.link();
-  PlainCallbacks.del();
-  PlainCallbacks.q();
-  PlainCallbacks.code();
-  PlainCallbacks.ul();
-  PlainCallbacks.ol();
-  PlainCallbacks.blockquote();
-  PlainCallbacks.hr();
-  PlainCallbacks.paragraph();
-  PlainCallbacks.emptyUl();
-  PlainCallbacks.emptyOl();
+//   PlainCallbacks.comments();
 
-  // this line is generating an error
-  PlainCallbacks.emptyBlockquote();
-  PlainCallbacks.br();
-  PlainCallbacks.sponsorship();
-  PlainCallbacks.memes();
-  PlainCallbacks.separator();
+//   PlainCallbacks.strong();
+//   PlainCallbacks.em();
+//   PlainCallbacks.header();
+//   PlainCallbacks.image();
+//   PlainCallbacks.link();
+//   PlainCallbacks.del();
+//   PlainCallbacks.q();
+//   PlainCallbacks.code();
+//   PlainCallbacks.ul();
+//   PlainCallbacks.ol();
+//   PlainCallbacks.blockquote();
+//   PlainCallbacks.hr();
+//   PlainCallbacks.paragraph();
+//   PlainCallbacks.emptyUl();
+//   PlainCallbacks.emptyOl();
+
+//   // this line is generating an error
+//   PlainCallbacks.emptyBlockquote();
+//   PlainCallbacks.br();
+//   PlainCallbacks.sponsorship();
+//   PlainCallbacks.memes();
+//   PlainCallbacks.separator();
 
 
 //   ReplacerObj.replaceMDBinded = replaceMarkdown.bind(state);
