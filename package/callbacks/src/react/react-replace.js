@@ -1,26 +1,6 @@
-// import {
-//   strong,
-//   link,
-//   blockquote,
-//   mem,
-//   header,
-//   italic,
-//   del,
-//   q,
-//   code,
-//   hr,
-//   empty,
-//   previewText,
-//   separator,
-
-//   image,
-//   paragraphWrapper,
-//   sponsorship,
-//   br,
-
-//   ulList,
-//   olList
-// } from './index';
+import {
+newLine
+} from '../helpers';
 
 import {
   strong,
@@ -49,29 +29,6 @@ import {
   ulList,
   olList
 } from './callbacks-lists-react';
-
-// import {
-//   REGEXP_HEADER,
-//   REGEXP_IMAGE,
-//   REGEXP_LINK,
-//   REGEXP_STRONG,
-//   REGEXP_DEL,
-//   REGEXP_Q,
-//   REGEXP_CODE,
-
-//   REGEXP_BLOCKQUOTE,
-//   REGEXP_HR,
-//   REGEXP_PARAGRAPH,
-
-//   REGEXP_BR,
-//   REGEXP_EMPTY_BLOCKQUOTE,
-//   REGEXP_EM,
-//   REGEXP_SPONSORSHIP,
-//   REGEXP_HTML_COMMENTS,
-//   REGEXP_MEM,
-//   REGEXP_PREVIEW_TEXT,
-//   REGEXP_SEPARATOR,
-// } from './constantsMDReact';
 
 import {
   REGEXP_HEADER,
@@ -107,12 +64,6 @@ import {
   REGEXP_SEPARATOR
 } from 'atherdon-newsletter-constants';
 
-// import {
-//   REGEXP_UL_LIST,
-//   REGEXP_OL_LIST,
-//   REGEXP_EMPTY_UL,
-//   REGEXP_EMPTY_OL,
-// } from './constants-react-2';
 
 const ReplacerMDReact = function () {};
 

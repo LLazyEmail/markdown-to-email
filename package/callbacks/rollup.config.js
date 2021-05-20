@@ -7,6 +7,7 @@ import babel from "@rollup/plugin-babel";
 import pkg from "./package.json";
 import globals from "rollup-plugin-node-globals";
 import includePaths from "rollup-plugin-includepaths";
+import nodePolyfills from 'rollup-plugin-node-polyfills';
 
 // import eslint from "rollup-plugin-eslint";
 
@@ -93,8 +94,12 @@ const plugins = () => [
   // Displays rollup errors as system notifications
   includePaths(includePathOptions),
   // notify(),
-  globals(),
-  builtins()
+  globals({
+      os: 'os'
+  }),
+  builtins(),
+  
+  nodePolyfills()
 
   // remove flow annotations from output
   // flow(),
