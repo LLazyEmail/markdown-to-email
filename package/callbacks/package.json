@@ -33,7 +33,7 @@
     "rollup-plugin-includepaths": "0.2.4",
     "rollup-plugin-node-builtins": "2.1.2",
     "rollup-plugin-node-globals": "1.4.0",
-    "rollup-plugin-node-polyfills": "^0.2.1",
+    "rollup-plugin-node-polyfills": "0.2.1",
     "shx": "0.3.3"
   },
   "author": "Arthur Tkachenko",
