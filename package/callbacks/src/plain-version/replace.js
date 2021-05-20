@@ -115,11 +115,14 @@ class Replace {
         this._constants = constants;
         this.replaceMDBinded = () => {};
         this.replaceMDBindedPreviewText = () => {};
+        this.comments = () => {
+            this.replaceMDBinded(this._constants.REGEXP_HTML_COMMENTS, empty);
+        }
     }
 
-    comments(){
-        this.replaceMDBinded(constants.REGEXP_HTML_COMMENTS, empty);
-    }
+    // comments(){
+    //     this.replaceMDBinded(constants.REGEXP_HTML_COMMENTS, empty);
+    // }
 
 
 } 

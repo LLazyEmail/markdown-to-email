@@ -6,9 +6,9 @@ const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
 
 const ReplacerObj = require('./replace');
 
-const CallB = require("atherdon-callbacks")
+const {Replacer } = require("atherdon-callbacks")
 
-console.log(CallB);
+console.log(Replacer);
 
 // aaa = PlainCallbacks
 
@@ -29,11 +29,11 @@ function parse(source) {
     },
   };
 
-//   PlainCallbacks.replaceMDBinded = replaceMarkdown.bind(state);
-//   PlainCallbacks.replaceMDBindedPreviewText =
-//     replaceMarkdownPreviewText.bind(state);
+  Replacer.replaceMDBinded = replaceMarkdown.bind(state);
+  Replacer.replaceMDBindedPreviewText =
+    replaceMarkdownPreviewText.bind(state);
 
-//   PlainCallbacks.comments();
+  Replacer.comments();
 
 //   PlainCallbacks.strong();
 //   PlainCallbacks.em();
