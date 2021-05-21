@@ -1,14 +1,14 @@
 const { readSourceFile } = require('./utils');
 
-const { newLine, checkErrors } = require('./utils');
+const { checkErrors } = require('./utils');
 
 const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
 
-const ReplacerObj = require('./replace');
+// const ReplacerObj = require('./replace');
 
 const {Replacer } = require("atherdon-callbacks")
 
-console.log(Replacer);
+// console.log(Replacer);
 
 // aaa = PlainCallbacks
 
@@ -57,35 +57,6 @@ function parse(source) {
   Replacer.sponsorship();
   Replacer.memes();
   Replacer.separator();
-
-
-//   ReplacerObj.replaceMDBinded = replaceMarkdown.bind(state);
-//   ReplacerObj.replaceMDBindedPreviewText =
-//     replaceMarkdownPreviewText.bind(state);
-
-//   ReplacerObj.comments();
-//   ReplacerObj.strong();
-//   ReplacerObj.em();
-//   ReplacerObj.header();
-//   ReplacerObj.image();
-//   ReplacerObj.link();
-//   ReplacerObj.del();
-//   ReplacerObj.q();
-//   ReplacerObj.code();
-//   ReplacerObj.ul();
-//   ReplacerObj.ol();
-//   ReplacerObj.blockquote();
-//   ReplacerObj.hr();
-//   ReplacerObj.paragraph();
-//   ReplacerObj.emptyUl();
-//   ReplacerObj.emptyOl();
-
-//   // this line is generating an error
-//   ReplacerObj.emptyBlockquote();
-//   ReplacerObj.br();
-//   ReplacerObj.sponsorship();
-//   ReplacerObj.memes();
-//   ReplacerObj.separator();
 
   //i'm adding it only because error warning didnt return red stuff
   checkErrors(state.errors);
