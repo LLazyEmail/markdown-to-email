@@ -41,6 +41,7 @@ class Replace {
 
         this.replaceMDBinded = () => {};
         this.replaceMDBindedPreviewText = () => {};
+
         this.comments = () => {
             this.replaceMDBinded(this._constants.REGEXP_HTML_COMMENTS, empty);
         }
@@ -53,88 +54,81 @@ class Replace {
             this.replaceMDBinded(this._constants.this._constants.REGEXP_EM, italic);
         }
 
-        // this.header = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_HEADER, header);
-// };
+        this.header = () => {
+            this.replaceMDBinded(this._constants.REGEXP_HEADER, header);
+        };
 
-// this.image = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_IMAGE, image);
-// };
+        this.image = () => {
+            this.replaceMDBinded(this._constants.REGEXP_IMAGE, image);
+        };
 
-// this.link = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_LINK, link);
-// };
+        this.link = () => {
+            this.replaceMDBinded(this._constants.REGEXP_LINK, link);
+        };
 
-// this.del = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_DEL, del);
-// };
+        this.del = () => {
+            this.replaceMDBinded(this._constants.REGEXP_DEL, del);
+        };
 
-// this.q = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_Q, q);
-// };
+        this.q = () => {
+            this.replaceMDBinded(this._constants.REGEXP_Q, q);
+        };
 
-// this.code = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_CODE, code);
-// };
+        this.code = () => {
+            this.replaceMDBinded(this._constants.REGEXP_CODE, code);
+        };
 
-// this.ul = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_UL_LIST, ulList);
-// };
+        this.ul = () => {
+            this.replaceMDBinded(this._constants.REGEXP_UL_LIST, ulList);
+        };
 
-// this.ol = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_OL_LIST, olList);
-// };
+        this.ol = () => {
+            this.replaceMDBinded(this._constants.REGEXP_OL_LIST, olList);
+        };
 
-// this.blockquote = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_BLOCKQUOTE, blockquote);
-// };
+        this.blockquote = () => {
+            this.replaceMDBinded(this._constants.REGEXP_BLOCKQUOTE, blockquote);
+        };
 
-// this.hr = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_HR, hr);
-// };
+        this.hr = () => {
+            this.replaceMDBinded(this._constants.REGEXP_HR, hr);
+        };
 
-// this.paragraph = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_PARAGRAPH, paragraphWrapper);
-// };
+        this.paragraph = () => {
+            this.replaceMDBinded(this._constants.REGEXP_PARAGRAPH, paragraphWrapper);
+        };
 
-// this.emptyUl = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_EMPTY_UL, empty);
-// };
+        this.emptyUl = () => {
+            this.replaceMDBinded(this._constants.REGEXP_EMPTY_UL, empty);
+        };
 
-// this.emptyOl = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_EMPTY_OL, empty);
-// };
+        this.emptyOl = () => {
+            this.replaceMDBinded(this._constants.REGEXP_EMPTY_OL, empty);
+        };
 
-// this.emptyBlockquote = function () {
-//   // this line is generating an error
-//   this.replaceMDBinded(this._constants.REGEXP_EMPTY_BLOCKQUOTE, newLine);
-// };
+        this.emptyBlockquote = () => {
+            // this line is generating an error
+            this.replaceMDBinded(this._constants.REGEXP_EMPTY_BLOCKQUOTE, newLine);
+        };
 
-// this.br = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_BR, br);
-// };
-// this.sponsorship = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_SPONSORSHIP, sponsorship);
-// };
+        this.br = function () {
+            this.replaceMDBinded(this._constants.REGEXP_BR, br);
+        };
+        this.sponsorship = function () {
+        this.replaceMDBinded(this._constants.REGEXP_SPONSORSHIP, sponsorship);
+        };
 
-// this.memes = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_MEM, mem);
-// };
+        this.memes = function () {
+        this.replaceMDBinded(this._constants.REGEXP_MEM, mem);
+        };
 
-// this.separator = function () {
-//   this.replaceMDBinded(this._constants.REGEXP_SEPARATOR, separator);
-// };
+        this.separator = function () {
+        this.replaceMDBinded(this._constants.REGEXP_SEPARATOR, separator);
+        };
 
     }
 
 } 
-
-
-
-
-// this.em = function () {
-//   this.replaceMDBinded(REGEXP_EM, italic);
-// };
 
 
 
