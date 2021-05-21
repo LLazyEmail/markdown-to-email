@@ -1,4 +1,3 @@
-
 import * as constants from 'atherdon-newsletter-constants'
 
 import { newLine } from '../helpers';
@@ -51,7 +50,7 @@ class Replace {
         };
 
         this.em = () => {
-            this.replaceMDBinded(this._constants.this._constants.REGEXP_EM, italic);
+            this.replaceMDBinded(this._constants.REGEXP_EM, italic);
         }
 
         this.header = () => {

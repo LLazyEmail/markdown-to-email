@@ -35,28 +35,28 @@ function parse(source) {
 
   Replacer.comments();
 
-//   PlainCallbacks.strong();
-//   PlainCallbacks.em();
-//   PlainCallbacks.header();
-//   PlainCallbacks.image();
-//   PlainCallbacks.link();
-//   PlainCallbacks.del();
-//   PlainCallbacks.q();
-//   PlainCallbacks.code();
-//   PlainCallbacks.ul();
-//   PlainCallbacks.ol();
-//   PlainCallbacks.blockquote();
-//   PlainCallbacks.hr();
-//   PlainCallbacks.paragraph();
-//   PlainCallbacks.emptyUl();
-//   PlainCallbacks.emptyOl();
+  Replacer.strong();
+  Replacer.em();
+  Replacer.header();
+  Replacer.image();
+  Replacer.link();
+  Replacer.del();
+  Replacer.q();
+  Replacer.code();
+  Replacer.ul();
+  Replacer.ol();
+  Replacer.blockquote();
+  Replacer.hr();
+  Replacer.paragraph();
+  Replacer.emptyUl();
+  Replacer.emptyOl();
 
-//   // this line is generating an error
-//   PlainCallbacks.emptyBlockquote();
-//   PlainCallbacks.br();
-//   PlainCallbacks.sponsorship();
-//   PlainCallbacks.memes();
-//   PlainCallbacks.separator();
+  // this line is generating an error
+  Replacer.emptyBlockquote();
+  Replacer.br();
+  Replacer.sponsorship();
+  Replacer.memes();
+  Replacer.separator();
 
 
 //   ReplacerObj.replaceMDBinded = replaceMarkdown.bind(state);
