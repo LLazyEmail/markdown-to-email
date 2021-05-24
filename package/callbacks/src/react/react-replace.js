@@ -65,34 +65,74 @@ import {
 } from 'atherdon-newsletter-constants';
 
 
-const ReplacerMDReact = function () {};
+import * as constants from 'atherdon-newsletter-constants';
 
-ReplacerMDReact.prototype.replaceMDBinded = function () {};
-ReplacerMDReact.prototype.replaceMDBindedPreviewText = function () {};
 
-ReplacerMDReact.prototype.previewText = function () {
-  this.replaceMDBinded(REGEXP_PREVIEW_TEXT, previewText);
-};
+class ReactReplacer {
+    constructor(constants){
+        this._constants = constants;
 
-ReplacerMDReact.prototype.comments = function () {
-  this.replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
-};
+        ReplacerMDReact.prototype.replaceMDBinded = function () {};
+        ReplacerMDReact.prototype.replaceMDBindedPreviewText = function () {};
 
-ReplacerMDReact.prototype.strong = function () {
-  this.replaceMDBinded(REGEXP_STRONG, strong);
-};
+        ReplacerMDReact.prototype.previewText = function () {
+        this.replaceMDBinded(REGEXP_PREVIEW_TEXT, previewText);
+        };
 
-ReplacerMDReact.prototype.italic = function () {
-  this.replaceMDBinded(REGEXP_EM, italic);
-};
+        ReplacerMDReact.prototype.comments = function () {
+        this.replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
+        };
 
-ReplacerMDReact.prototype.header = function () {
-  this.replaceMDBinded(REGEXP_HEADER, header);
-};
+        ReplacerMDReact.prototype.strong = function () {
+        this.replaceMDBinded(REGEXP_STRONG, strong);
+        };
 
-ReplacerMDReact.prototype.image = function () {
-  this.replaceMDBinded(REGEXP_IMAGE, image);
-};
+        ReplacerMDReact.prototype.italic = function () {
+        this.replaceMDBinded(REGEXP_EM, italic);
+        };
+
+        ReplacerMDReact.prototype.header = function () {
+        this.replaceMDBinded(REGEXP_HEADER, header);
+        };
+
+        ReplacerMDReact.prototype.image = function () {
+        this.replaceMDBinded(REGEXP_IMAGE, image);
+        };
+
+    }
+}
+
+// const ReplacerMDReact = function () {};
+
+// ReplacerMDReact.prototype.replaceMDBinded = function () {};
+// ReplacerMDReact.prototype.replaceMDBindedPreviewText = function () {};
+
+// ReplacerMDReact.prototype.previewText = function () {
+//   this.replaceMDBinded(REGEXP_PREVIEW_TEXT, previewText);
+// };
+
+// ReplacerMDReact.prototype.comments = function () {
+//   this.replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
+// };
+
+// ReplacerMDReact.prototype.strong = function () {
+//   this.replaceMDBinded(REGEXP_STRONG, strong);
+// };
+
+// ReplacerMDReact.prototype.italic = function () {
+//   this.replaceMDBinded(REGEXP_EM, italic);
+// };
+
+// ReplacerMDReact.prototype.header = function () {
+//   this.replaceMDBinded(REGEXP_HEADER, header);
+// };
+
+// ReplacerMDReact.prototype.image = function () {
+//   this.replaceMDBinded(REGEXP_IMAGE, image);
+// };
+
+// --------------------------
+// --------------------------
 
 ReplacerMDReact.prototype.link = function () {
   this.replaceMDBinded(REGEXP_LINK, link);

@@ -35,7 +35,7 @@ import { separator } from './callbacks-custom';
 
 class Replace {
     constructor(constants){
-        // this.replaceMDBinded = 
+        
         this._constants = constants;
 
         this.replaceMDBinded = () => {};
@@ -114,15 +114,15 @@ class Replace {
             this.replaceMDBinded(this._constants.REGEXP_BR, br);
         };
         this.sponsorship = function () {
-        this.replaceMDBinded(this._constants.REGEXP_SPONSORSHIP, sponsorship);
+            this.replaceMDBinded(this._constants.REGEXP_SPONSORSHIP, sponsorship);
         };
 
         this.memes = function () {
-        this.replaceMDBinded(this._constants.REGEXP_MEM, mem);
+            this.replaceMDBinded(this._constants.REGEXP_MEM, mem);
         };
 
         this.separator = function () {
-        this.replaceMDBinded(this._constants.REGEXP_SEPARATOR, separator);
+            this.replaceMDBinded(this._constants.REGEXP_SEPARATOR, separator);
         };
 
     }
