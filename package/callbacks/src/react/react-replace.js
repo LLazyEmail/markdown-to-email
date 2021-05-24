@@ -72,31 +72,95 @@ class ReactReplacer {
     constructor(constants){
         this._constants = constants;
 
-        ReplacerMDReact.prototype.replaceMDBinded = function () {};
-        ReplacerMDReact.prototype.replaceMDBindedPreviewText = function () {};
+        this.replaceMDBinded = () => {};
+        this.replaceMDBindedPreviewText = () => {};
 
-        ReplacerMDReact.prototype.previewText = function () {
-        this.replaceMDBinded(REGEXP_PREVIEW_TEXT, previewText);
+        this.previewText = function () {
+            this.replaceMDBinded(this._constants.REGEXP_PREVIEW_TEXT, previewText);
         };
 
-        ReplacerMDReact.prototype.comments = function () {
-        this.replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
+        this.comments = function () {
+            this.replaceMDBinded(this._constants.REGEXP_HTML_COMMENTS, empty);
         };
 
-        ReplacerMDReact.prototype.strong = function () {
-        this.replaceMDBinded(REGEXP_STRONG, strong);
+        this.strong = function () {
+            this.replaceMDBinded(this._constants.REGEXP_STRONG, strong);
         };
 
-        ReplacerMDReact.prototype.italic = function () {
-        this.replaceMDBinded(REGEXP_EM, italic);
+        this.italic = function () {
+            this.replaceMDBinded(this._constants.REGEXP_EM, italic);
         };
 
-        ReplacerMDReact.prototype.header = function () {
-        this.replaceMDBinded(REGEXP_HEADER, header);
+        this.header = function () {
+            this.replaceMDBinded(this._constants.REGEXP_HEADER, header);
         };
 
-        ReplacerMDReact.prototype.image = function () {
-        this.replaceMDBinded(REGEXP_IMAGE, image);
+        this.image = function () {
+            this.replaceMDBinded(this._constants.REGEXP_IMAGE, image);
+        };
+
+        this.link = function () {
+            this.replaceMDBinded(this._constants.REGEXP_LINK, link);
+        };
+
+        this.del = function () {
+            this.replaceMDBinded(this._constants.REGEXP_DEL, del);
+        };
+
+        this.q = function () {
+            this.replaceMDBinded(this._constants.REGEXP_Q, q);
+        };
+
+        this.code = function () {
+            this.replaceMDBinded(this._constants.REGEXP_CODE, code);
+        };
+
+        this.ulList = function () {
+            this.replaceMDBinded(this._constants.REGEXP_UL_LIST, ulList);
+        };
+
+        this.olList = function () {
+            this.replaceMDBinded(this._constants.REGEXP_OL_LIST, olList);
+        };
+
+        this.blockQuote = function () {
+            this.replaceMDBinded(this._constants.REGEXP_BLOCKQUOTE, blockquote);
+        };
+
+        this.hr = function () {
+            this.replaceMDBinded(this._constants.REGEXP_HR, hr);
+        };
+
+        this.paragraph = function () {
+            this.replaceMDBinded(this._constants.REGEXP_PARAGRAPH, paragraphWrapper);
+        };
+
+        this.emptyUl = function () {
+            this.replaceMDBinded(this._constants.REGEXP_EMPTY_UL, empty);
+        };
+
+        this.emptyOl = function () {
+            this.replaceMDBinded(this._constants.REGEXP_EMPTY_OL, empty);
+        };
+
+        this.emptyBlockQuote = function () {
+            this.replaceMDBinded(this._constants.REGEXP_EMPTY_BLOCKQUOTE, newLine);
+        };
+
+        this.br = function () {
+            this.replaceMDBinded(this._constants.REGEXP_BR, br);
+        };
+
+        this.sponsorship = function () {
+            this.replaceMDBinded(this._constants.REGEXP_SPONSORSHIP, sponsorship);
+        };
+
+        this.mem = function () {
+            this.replaceMDBinded(this._constants.REGEXP_MEM, mem);
+        };
+
+        this.separator = function () {
+            this.replaceMDBinded(this._constants.REGEXP_SEPARATOR, separator);
         };
 
     }
@@ -104,97 +168,97 @@ class ReactReplacer {
 
 // const ReplacerMDReact = function () {};
 
-// ReplacerMDReact.prototype.replaceMDBinded = function () {};
-// ReplacerMDReact.prototype.replaceMDBindedPreviewText = function () {};
+// this.replaceMDBinded = function () {};
+// this.replaceMDBindedPreviewText = function () {};
 
-// ReplacerMDReact.prototype.previewText = function () {
-//   this.replaceMDBinded(REGEXP_PREVIEW_TEXT, previewText);
+// this.previewText = function () {
+//   this.replaceMDBinded(this._constants.REGEXP_PREVIEW_TEXT, previewText);
 // };
 
-// ReplacerMDReact.prototype.comments = function () {
-//   this.replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
+// this.comments = function () {
+//   this.replaceMDBinded(this._constants.REGEXP_HTML_COMMENTS, empty);
 // };
 
-// ReplacerMDReact.prototype.strong = function () {
-//   this.replaceMDBinded(REGEXP_STRONG, strong);
+// this.strong = function () {
+//   this.replaceMDBinded(this._constants.REGEXP_STRONG, strong);
 // };
 
-// ReplacerMDReact.prototype.italic = function () {
-//   this.replaceMDBinded(REGEXP_EM, italic);
+// this.italic = function () {
+//   this.replaceMDBinded(this._constants.REGEXP_EM, italic);
 // };
 
-// ReplacerMDReact.prototype.header = function () {
-//   this.replaceMDBinded(REGEXP_HEADER, header);
+// this.header = function () {
+//   this.replaceMDBinded(this._constants.REGEXP_HEADER, header);
 // };
 
-// ReplacerMDReact.prototype.image = function () {
-//   this.replaceMDBinded(REGEXP_IMAGE, image);
+// this.image = function () {
+//   this.replaceMDBinded(this._constants.REGEXP_IMAGE, image);
 // };
 
 // --------------------------
 // --------------------------
 
-ReplacerMDReact.prototype.link = function () {
-  this.replaceMDBinded(REGEXP_LINK, link);
+this.link = function () {
+  this.replaceMDBinded(this._constants.REGEXP_LINK, link);
 };
 
-ReplacerMDReact.prototype.del = function () {
-  this.replaceMDBinded(REGEXP_DEL, del);
+this.del = function () {
+  this.replaceMDBinded(this._constants.REGEXP_DEL, del);
 };
 
-ReplacerMDReact.prototype.q = function () {
-  this.replaceMDBinded(REGEXP_Q, q);
+this.q = function () {
+  this.replaceMDBinded(this._constants.REGEXP_Q, q);
 };
 
-ReplacerMDReact.prototype.code = function () {
-  this.replaceMDBinded(REGEXP_CODE, code);
+this.code = function () {
+  this.replaceMDBinded(this._constants.REGEXP_CODE, code);
 };
 
-ReplacerMDReact.prototype.ulList = function () {
-  this.replaceMDBinded(REGEXP_UL_LIST, ulList);
+this.ulList = function () {
+  this.replaceMDBinded(this._constants.REGEXP_UL_LIST, ulList);
 };
 
-ReplacerMDReact.prototype.olList = function () {
-  this.replaceMDBinded(REGEXP_OL_LIST, olList);
+this.olList = function () {
+  this.replaceMDBinded(this._constants.REGEXP_OL_LIST, olList);
 };
 
-ReplacerMDReact.prototype.blockQuote = function () {
-  this.replaceMDBinded(REGEXP_BLOCKQUOTE, blockquote);
+this.blockQuote = function () {
+  this.replaceMDBinded(this._constants.REGEXP_BLOCKQUOTE, blockquote);
 };
 
-ReplacerMDReact.prototype.hr = function () {
-  this.replaceMDBinded(REGEXP_HR, hr);
+this.hr = function () {
+  this.replaceMDBinded(this._constants.REGEXP_HR, hr);
 };
-ReplacerMDReact.prototype.paragraph = function () {
-  this.replaceMDBinded(REGEXP_PARAGRAPH, paragraphWrapper);
-};
-
-ReplacerMDReact.prototype.emptyUl = function () {
-  this.replaceMDBinded(REGEXP_EMPTY_UL, empty);
+this.paragraph = function () {
+  this.replaceMDBinded(this._constants.REGEXP_PARAGRAPH, paragraphWrapper);
 };
 
-ReplacerMDReact.prototype.emptyOl = function () {
-  this.replaceMDBinded(REGEXP_EMPTY_OL, empty);
+this.emptyUl = function () {
+  this.replaceMDBinded(this._constants.REGEXP_EMPTY_UL, empty);
 };
 
-ReplacerMDReact.prototype.emptyBlockQuote = function () {
-  this.replaceMDBinded(REGEXP_EMPTY_BLOCKQUOTE, newLine);
+this.emptyOl = function () {
+  this.replaceMDBinded(this._constants.REGEXP_EMPTY_OL, empty);
 };
 
-ReplacerMDReact.prototype.br = function () {
-  this.replaceMDBinded(REGEXP_BR, br);
+this.emptyBlockQuote = function () {
+  this.replaceMDBinded(this._constants.REGEXP_EMPTY_BLOCKQUOTE, newLine);
 };
 
-ReplacerMDReact.prototype.sponsorship = function () {
-  this.replaceMDBinded(REGEXP_SPONSORSHIP, sponsorship);
+this.br = function () {
+  this.replaceMDBinded(this._constants.REGEXP_BR, br);
 };
 
-ReplacerMDReact.prototype.mem = function () {
-  this.replaceMDBinded(REGEXP_MEM, mem);
+this.sponsorship = function () {
+  this.replaceMDBinded(this._constants.REGEXP_SPONSORSHIP, sponsorship);
 };
 
-ReplacerMDReact.prototype.separator = function () {
-  this.replaceMDBinded(REGEXP_SEPARATOR, separator);
+this.mem = function () {
+  this.replaceMDBinded(this._constants.REGEXP_MEM, mem);
+};
+
+this.separator = function () {
+  this.replaceMDBinded(this._constants.REGEXP_SEPARATOR, separator);
 };
 
 export default new ReplacerMDReact();
