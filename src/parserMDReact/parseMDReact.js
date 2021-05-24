@@ -4,7 +4,7 @@ const { replaceMarkdown, replaceMarkdownPreviewText } = require('../helpers');
 
 
 
-const ReplacerMDReact = require('./replaceMDReact');
+// const ReplacerMDReact = require('./replaceMDReact');
 
 
 
@@ -31,47 +31,87 @@ function parseMDReact(source, isFull) {
 
 
 
-
-  // const replaceMDBinded = replaceMarkdown.bind(state);
-
-  ReplacerMDReact.replaceMDBinded = replaceMarkdown.bind(state);
-  ReplacerMDReact.replaceMDBindedPreviewText =
+  ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);
+  ReactReplacer.replaceMDBindedPreviewText =
     replaceMarkdownPreviewText.bind(state);
 
   // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
   if (isFull) {
-    ReplacerMDReact.previewText();
+    ReactReplacer.previewText();
   }
 
-  ReplacerMDReact.comments();
-  ReplacerMDReact.strong();
-  ReplacerMDReact.italic();
-  ReplacerMDReact.header();
+  ReactReplacer.comments();
+  ReactReplacer.strong();
+  ReactReplacer.italic();
+  ReactReplacer.header();
 
-  ReplacerMDReact.image();
-  ReplacerMDReact.link();
+  ReactReplacer.image();
+  ReactReplacer.link();
 
-  ReplacerMDReact.del();
-  ReplacerMDReact.q();
-  ReplacerMDReact.code();
+  ReactReplacer.del();
+  ReactReplacer.q();
+  ReactReplacer.code();
 
-  ReplacerMDReact.ulList();
+  ReactReplacer.ulList();
   // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
-  //   ReplacerMDReact.olList()
+  //   ReactReplacer.olList()
 
-  ReplacerMDReact.blockQuote();
-  ReplacerMDReact.hr();
-  ReplacerMDReact.paragraph();
+  ReactReplacer.blockQuote();
+  ReactReplacer.hr();
+  ReactReplacer.paragraph();
 
   // TODO CHECK CASES WHEN CONTENT CAN HAVE EMPTY LISTS OR BLOCKQUOTE
-  //   ReplacerMDReact.emptyUl();
-  //   ReplacerMDReact.emptyOl();
-  //   ReplacerMDReact.emptyBlockQuote();
+  //   ReactReplacer.emptyUl();
+  //   ReactReplacer.emptyOl();
+  //   ReactReplacer.emptyBlockQuote();
 
-  ReplacerMDReact.br();
-  ReplacerMDReact.sponsorship();
-  ReplacerMDReact.mem();
-  ReplacerMDReact.separator();
+  ReactReplacer.br();
+  ReactReplacer.sponsorship();
+  ReactReplacer.mem();
+  ReactReplacer.separator();
+
+
+
+//   // const replaceMDBinded = replaceMarkdown.bind(state);
+
+//   ReplacerMDReact.replaceMDBinded = replaceMarkdown.bind(state);
+//   ReplacerMDReact.replaceMDBindedPreviewText =
+//     replaceMarkdownPreviewText.bind(state);
+
+//   // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
+//   if (isFull) {
+//     ReplacerMDReact.previewText();
+//   }
+
+//   ReplacerMDReact.comments();
+//   ReplacerMDReact.strong();
+//   ReplacerMDReact.italic();
+//   ReplacerMDReact.header();
+
+//   ReplacerMDReact.image();
+//   ReplacerMDReact.link();
+
+//   ReplacerMDReact.del();
+//   ReplacerMDReact.q();
+//   ReplacerMDReact.code();
+
+//   ReplacerMDReact.ulList();
+//   // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
+//   //   ReplacerMDReact.olList()
+
+//   ReplacerMDReact.blockQuote();
+//   ReplacerMDReact.hr();
+//   ReplacerMDReact.paragraph();
+
+//   // TODO CHECK CASES WHEN CONTENT CAN HAVE EMPTY LISTS OR BLOCKQUOTE
+//   //   ReplacerMDReact.emptyUl();
+//   //   ReplacerMDReact.emptyOl();
+//   //   ReplacerMDReact.emptyBlockQuote();
+
+//   ReplacerMDReact.br();
+//   ReplacerMDReact.sponsorship();
+//   ReplacerMDReact.mem();
+//   ReplacerMDReact.separator();
   
   
   
