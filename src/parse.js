@@ -6,7 +6,7 @@ const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
 
 // const ReplacerObj = require('./replace');
 
-const {Replacer } = require("atherdon-callbacks")
+const { Replacer } = require("atherdon-callbacks")
 
 // console.log(Replacer);
 

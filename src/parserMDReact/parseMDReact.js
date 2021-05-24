@@ -2,7 +2,16 @@ const { readSourceFile } = require('../utils');
 
 const { replaceMarkdown, replaceMarkdownPreviewText } = require('../helpers');
 
+
+
 const ReplacerMDReact = require('./replaceMDReact');
+
+
+
+// ReactReplacer
+
+const { ReactReplacer } = require("atherdon-callbacks")
+
 
 // @todo update this method. I'm sure it can be improved.
 function parseMDReact(source, isFull) {
@@ -19,6 +28,9 @@ function parseMDReact(source, isFull) {
       sponsorshipBottom: false,
     },
   };
+
+
+
 
   // const replaceMDBinded = replaceMarkdown.bind(state);
 
@@ -60,6 +72,10 @@ function parseMDReact(source, isFull) {
   ReplacerMDReact.sponsorship();
   ReplacerMDReact.mem();
   ReplacerMDReact.separator();
+  
+  
+  
+  
   // console.log( state )
   
   return state;
