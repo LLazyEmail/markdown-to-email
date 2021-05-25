@@ -1,16 +1,6 @@
-const { readSourceFile } = require('./utils');
-
-const { checkErrors } = require('./utils');
-
+const { readSourceFile, checkErrors } = require('./utils');
 const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
-
-// const ReplacerObj = require('./replace');
-
 const { Replacer } = require("atherdon-callbacks")
-
-// console.log(Replacer);
-
-// aaa = PlainCallbacks
 
 // @todo update this method. I'm sure it can be improved.
 function parse(source) {
