@@ -1,5 +1,4 @@
 const fs = require('fs');
-const os = require('os');
 const chalk = require('chalk');
 const { forEach } = require('lodash');
 
@@ -90,8 +89,6 @@ function isFolderExists(dir) {
   }
 }
 
-const platform = os.platform();
-const newLine = platform === 'win32' ? '\r\n' : '\n';
 
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
@@ -104,7 +101,6 @@ module.exports = {
   writeReactComponent,
   readSourceFile,
   isFolderExists,
-  newLine,
   displayCLIErrors,
   checkErrors,
   checkWarnings,
