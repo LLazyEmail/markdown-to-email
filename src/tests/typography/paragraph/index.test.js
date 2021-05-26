@@ -2,9 +2,10 @@ const { REGEXP_PARAGRAPH } = require('atherdon-newsletter-constants');
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
 // const { paragraphWrapper } = require('@root/callbacks');
-const { replaceMarkdown } = require('@root/helpers');
+// const { replaceMarkdown } = require('@root/helpers');
 
 const { PlainCallbacks } = require("atherdon-callbacks");
+const { replaceMarkdown } = require("atherdon-callbacks");
 
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
