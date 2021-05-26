@@ -3,12 +3,10 @@ const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
 
 // const { strong } = require('@root/callbacks-simple');
-
 // const { replaceMarkdown } = require('@root/helpers');
 
-const { replaceMarkdown } = require("atherdon-callbacks")
-
-const { PlainCallbacks } = require("atherdon-callbacks")
+const { PlainCallbacks } = require("atherdon-callbacks");
+const { replaceMarkdown } = require("atherdon-callbacks");
 
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
