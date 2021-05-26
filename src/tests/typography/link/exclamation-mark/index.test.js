@@ -1,8 +1,10 @@
 const { REGEXP_LINK } = require('atherdon-newsletter-constants');
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-const { link } = require('@root/callbacks-simple');
+// const { link } = require('@root/callbacks-simple');
 const { replaceMarkdown } = require('@root/helpers');
+
+const { PlainCallbacks } = require("atherdon-callbacks");
 
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
@@ -19,7 +21,7 @@ describe('testing link/exclamation-mark', () => {
     replaceMarkdown.call(
       parsedContent,
       REGEXP_LINK,
-      link,
+      PlainCallbacks.link,
     );
 
     const fileName = 'exclamation-mark.html';
