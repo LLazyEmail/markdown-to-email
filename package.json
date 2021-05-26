@@ -30,7 +30,7 @@
     "jest": "27.0.1"
   },
   "dependencies": {
-    "atherdon-callbacks": "^1.0.1",
+    "atherdon-callbacks": "^1.2.1",
     "atherdon-newsletter-constants": "^1.0.9",
     "atherdon-newsletter-js-layouts": "^1.0.17",
     "atherdon-newsletter-react": "^1.0.11",
