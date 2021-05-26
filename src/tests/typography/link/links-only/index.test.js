@@ -1,8 +1,11 @@
 const { REGEXP_LINK } = require('atherdon-newsletter-constants');
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-const { link } = require('@root/callbacks-simple');
-const { replaceMarkdown } = require('@root/helpers');
+// const { link } = require('@root/callbacks-simple');
+// const { replaceMarkdown } = require('@root/helpers');
+
+const { PlainCallbacks } = require("atherdon-callbacks");
+const { replaceMarkdown } = require("atherdon-callbacks");
 
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
@@ -16,7 +19,7 @@ describe('testing links-only', () => {
       content: markdown,
     };
 
-    replaceMarkdown.call(parsedContent, REGEXP_LINK, link);
+    replaceMarkdown.call(parsedContent, REGEXP_LINK, PlainCallbacks.link);
 
     const fileName = 'links-only.html';
     write(fileName, parsedContent.content, outFolder);

@@ -1,8 +1,11 @@
 const { REGEXP_EM } = require('atherdon-newsletter-constants');
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-const { italic } = require('@root/callbacks-simple');
-const { replaceMarkdown } = require('@root/helpers');
+// const { italic } = require('@root/callbacks-simple');
+// const { replaceMarkdown } = require('@root/helpers');
+
+const { PlainCallbacks } = require("atherdon-callbacks");
+const { replaceMarkdown } = require("atherdon-callbacks");
 
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
@@ -16,7 +19,7 @@ describe('testing italic-first-sentence', () => {
       content: markdown,
     };
 
-    replaceMarkdown.call(parsedContent, REGEXP_EM, italic);
+    replaceMarkdown.call(parsedContent, REGEXP_EM, PlainCallbacks.italic);
 
     const fileName = 'italic-first-sentence.html';
     write(fileName, parsedContent.content, outFolder);

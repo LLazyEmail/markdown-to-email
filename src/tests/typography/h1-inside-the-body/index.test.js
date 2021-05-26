@@ -2,8 +2,11 @@ const { REGEXP_HEADER } = require('atherdon-newsletter-constants');
 
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-const { header } = require('@root/callbacks-simple');
-const { replaceMarkdown } = require('@root/helpers');
+// const { header } = require('@root/callbacks-simple');
+// const { replaceMarkdown } = require('@root/helpers');
+
+const { PlainCallbacks } = require("atherdon-callbacks");
+const { replaceMarkdown } = require("atherdon-callbacks");
 
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
@@ -20,7 +23,7 @@ describe('testing h1-inside-the-body', () => {
     replaceMarkdown.call(
       parsedContent,
       REGEXP_HEADER,
-      header,
+      PlainCallbacks.header,
     );
 
     const fileName = 'h1-inside-the-body.html';
