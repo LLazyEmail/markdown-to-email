@@ -1,8 +1,10 @@
 const { REGEXP_IMAGE } = require('atherdon-newsletter-constants');
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-const { image } = require('@root/callbacks');
+// const { image } = require('@root/callbacks');
 const { replaceMarkdown } = require('@root/helpers');
+
+const { PlainCallbacks } = require("atherdon-callbacks");
 
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
@@ -19,7 +21,7 @@ describe('testing images-only', () => {
       },
     };
 
-    replaceMarkdown.call(parsedContent, REGEXP_IMAGE, image);
+    replaceMarkdown.call(parsedContent, REGEXP_IMAGE, PlainCallbacks.image);
 
     const fileName = 'images-only.html';
     write(fileName, parsedContent.content, outFolder);
