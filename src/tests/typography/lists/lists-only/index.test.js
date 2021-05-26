@@ -1,10 +1,11 @@
 const { REGEXP_UL_LIST } = require('atherdon-newsletter-constants');
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-const { ulList } = require('@root/callbacks');
-const { replaceMarkdown } = require('@root/helpers');
+// const { ulList } = require('@root/callbacks');
+// const { replaceMarkdown } = require('@root/helpers');
 
 const { PlainCallbacks } = require("atherdon-callbacks");
+const { replaceMarkdown } = require("atherdon-callbacks");
 
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
