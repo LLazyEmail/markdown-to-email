@@ -1,4 +1,4 @@
-import { replaceHTMLWrapper, replaceReactWrapper, newLine } from '../helpers';
+import { replaceReactWrapper, newLine } from '../helpers';
 
 /// function is not working as planned
 

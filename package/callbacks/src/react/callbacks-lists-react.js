@@ -1,5 +1,4 @@
 import { replaceReactWrapper, newLine } from '../helpers';
-// import { newLine } from '../utils';
 
 const hr = `${newLine}<hr />`;
 const empty = '';
