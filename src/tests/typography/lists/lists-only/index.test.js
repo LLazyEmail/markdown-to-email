@@ -4,6 +4,8 @@ const { write, readSourceFile } = require('@root/utils');
 const { ulList } = require('@root/callbacks');
 const { replaceMarkdown } = require('@root/helpers');
 
+const { PlainCallbacks } = require("atherdon-callbacks");
+
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
 
@@ -16,7 +18,7 @@ describe('testing lists-only', () => {
       content: markdown,
     };
 
-    replaceMarkdown.call(parsedContent, REGEXP_UL_LIST, ulList);
+    replaceMarkdown.call(parsedContent, REGEXP_UL_LIST, PlainCallbacks.ulList);
 
     const fileName = 'lists-only.html';
     write(fileName, parsedContent.content, outFolder);
