@@ -1,8 +1,14 @@
 const { REGEXP_STRONG } = require('atherdon-newsletter-constants');
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-const { strong } = require('@root/callbacks-simple');
-const { replaceMarkdown } = require('@root/helpers');
+
+// const { strong } = require('@root/callbacks-simple');
+
+// const { replaceMarkdown } = require('@root/helpers');
+
+const { replaceMarkdown } = require("atherdon-callbacks")
+
+const { PlainCallbacks } = require("atherdon-callbacks")
 
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
@@ -16,7 +22,7 @@ describe('testing strong', () => {
       content: markdown,
     };
 
-    replaceMarkdown.call(parsedContent, REGEXP_STRONG, strong);
+    replaceMarkdown.call(parsedContent, REGEXP_STRONG, PlainCallbacks.strong);
 
     const fileName = 'strong.html';
     write(fileName, parsedContent.content, outFolder);
