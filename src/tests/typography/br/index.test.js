@@ -6,6 +6,7 @@ const { write, readSourceFile } = require('@root/utils');
 // const { replaceMarkdown } = require('@root/helpers');
 
 const { PlainCallbacks } = require("atherdon-callbacks");
+const { replaceMarkdown } = require("atherdon-callbacks");
 
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
