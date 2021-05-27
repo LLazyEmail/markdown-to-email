@@ -3,7 +3,7 @@ const { forEach } = require('lodash');
 const layouts = require('atherdon-newsletter-js-layouts');
 const reactLayouts = require('atherdon-newsletter-react');
 
-const { parse, parseFullTHing } = require('./parse');
+
 
 const {
   write,
@@ -15,10 +15,14 @@ const {
   CONTENT_SOURCE,
 } = require('./utils');
 
+
+const { parse, parseFullTHing } = require('./parse');
+
 const {
   parseMDReact,
   parseMDReactFullThing,
 } = require('./parserMDReact/parseMDReact');
+
 
 switch (process.env.PARSE) {
   case 'full':
