@@ -1,5 +1,8 @@
 const { readSourceFile } = require('../utils');
 
+
+
+
 const { replaceMarkdown, replaceMarkdownPreviewText } = require('../helpers');
 
 
@@ -28,6 +31,8 @@ function parseMDReact(source, isFull) {
       sponsorshipBottom: false,
     },
   };
+
+
 
 
 
@@ -115,16 +120,20 @@ function parseMDReact(source, isFull) {
   
   
   
+
   
   // console.log( state )
   
   return state;
 }
 
+
+
 function parseMDReactFullThing(params) {
   const { source } = params;
 
   return parseMDReact(source, true);
 }
+
 
 module.exports = { parseMDReact, parseMDReactFullThing };
