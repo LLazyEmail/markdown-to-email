@@ -2,8 +2,6 @@ const { REGEXP_HEADER } = require('atherdon-newsletter-constants');
 
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-// const { header } = require('@root/callbacks-simple');
-// const { replaceMarkdown } = require('@root/helpers');
 
 const { PlainCallbacks } = require("atherdon-callbacks");
 const { replaceMarkdown } = require("atherdon-callbacks");

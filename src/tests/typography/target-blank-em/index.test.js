@@ -1,8 +1,6 @@
 const { REGEXP_EM, REGEXP_LINK } = require('atherdon-newsletter-constants');
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-// const { italic, link } = require('@root/callbacks-simple');
-// const { replaceMarkdown } = require('@root/helpers');
 
 const { PlainCallbacks } = require("atherdon-callbacks");
 const { replaceMarkdown } = require("atherdon-callbacks");

@@ -2,8 +2,8 @@ const { REGEXP_UL_LIST } = require('atherdon-newsletter-constants');
 
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-const { ulList } = require('@root/callbacks');
-// const { replaceMarkdown } = require('@root/helpers');
+
+const { PlainCallbacks } = require("atherdon-callbacks");
 const { replaceMarkdown } = require("atherdon-callbacks");
 
 const root = resolve(__dirname, '');
@@ -16,7 +16,7 @@ describe('testing complex-list', () => {
       content: markdown,
     };
 
-    replaceMarkdown.call(parsedContent, REGEXP_UL_LIST, ulList);
+    replaceMarkdown.call(parsedContent, REGEXP_UL_LIST, PlainCallbacks.ulList);
 
     const fileName = 'complex-list.html';
     write(fileName, parsedContent.content, outFolder);
