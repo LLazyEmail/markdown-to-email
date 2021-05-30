@@ -217,7 +217,7 @@ exports[`footer/index component renders correctly 1`] = `
                                                               className=""
                                                               data-testid="tableLeftImgTest"
                                                               height={24}
-                                                              src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-twitter-48.png"
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/twitter.png"
                                                               style={
                                                                 Object {
                                                                   "border": 0,
@@ -335,7 +335,7 @@ exports[`footer/index component renders correctly 1`] = `
                                                               className=""
                                                               data-testid="tableLeftImgTest"
                                                               height={24}
-                                                              src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-facebook-48.png"
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/facebook.png"
                                                               style={
                                                                 Object {
                                                                   "border": 0,
@@ -453,7 +453,7 @@ exports[`footer/index component renders correctly 1`] = `
                                                               className=""
                                                               data-testid="tableLeftImgTest"
                                                               height={24}
-                                                              src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-instagram-48.png"
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/instagram.png"
                                                               style={
                                                                 Object {
                                                                   "border": 0,
@@ -563,7 +563,7 @@ exports[`footer/index component renders correctly 1`] = `
                                                         >
                                                           <a
                                                             data-testid="tableLeftHrefTest"
-                                                            href="http://hackernoon.com"
+                                                            href="https://hackernoon.com"
                                                             target="_blank"
                                                           >
                                                             <img
@@ -571,7 +571,7 @@ exports[`footer/index component renders correctly 1`] = `
                                                               className=""
                                                               data-testid="tableLeftImgTest"
                                                               height={24}
-                                                              src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-link-48.png"
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/link.png"
                                                               style={
                                                                 Object {
                                                                   "border": 0,
@@ -689,7 +689,7 @@ exports[`footer/index component renders correctly 1`] = `
                                                               className=""
                                                               data-testid="tableLeftImgTest"
                                                               height={24}
-                                                              src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-youtube-48.png"
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/youtube.png"
                                                               style={
                                                                 Object {
                                                                   "border": 0,
@@ -807,7 +807,7 @@ exports[`footer/index component renders correctly 1`] = `
                                                               className=""
                                                               data-testid="tableLeftImgTest"
                                                               height={24}
-                                                              src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-forwardtofriend-48.png"
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/forwardtofriend.png"
                                                               style={
                                                                 Object {
                                                                   "border": 0,
@@ -926,7 +926,7 @@ exports[`footer/index component renders correctly 1`] = `
                     data-testid="copyTest"
                   >
                     Copyright ©
-                    2020
+                    2021
                      
                     Hacker Noon. All rights reserved.
                   </em>
