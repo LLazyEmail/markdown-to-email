@@ -23,7 +23,7 @@ const {
 } = require('atherdon-newsletter-constants');
 
 const { write, readSourceFile, FULL_SOURCE } = require('../../utils');
-const { PlainCallbacks } = require("atherdon-callbacks");
+const { PlainCallbacks, replaceMarkdown, replaceMarkdownPreviewText } = require("atherdon-callbacks");
 
 const {
   strong,
@@ -46,8 +46,6 @@ const {
   br,
   newLine,
 } = PlainCallbacks;
-
-const { replaceMarkdown, replaceMarkdownPreviewText } = require('../../helpers');
 
 // const FULL_SOURCE = 'source/source-full.md';
 

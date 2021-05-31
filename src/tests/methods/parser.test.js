@@ -24,7 +24,7 @@ const {
 
 const { readSourceFile, FULL_SOURCE } = require('../../utils');
 
-const { PlainCallbacks, replaceMarkdown } = require("atherdon-callbacks");
+const { PlainCallbacks, replaceMarkdown, newLine } = require("atherdon-callbacks");
 
 const {
   strong,
@@ -46,7 +46,6 @@ const {
   paragraphWrapper,
   sponsorship,
   br,
-  // newLine,
 } = PlainCallbacks;
 
 const { parse } = require('../../parse');

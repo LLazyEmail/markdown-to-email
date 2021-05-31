@@ -1,4 +1,4 @@
-const { replaceHTMLWrapper } = require('../../helpers');
+const { replaceHTMLWrapper } = require('atherdon-callbacks');
 
 describe('test helpers', () => {
   test('replaceHTMLWrapper works correctly', () => {

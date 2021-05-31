@@ -1,9 +1,8 @@
-const { PlainCallbacks } = require("atherdon-callbacks");
+const { PlainCallbacks, newLine } = require("atherdon-callbacks");
 const {
   strong, link, blockquote,
   mem, header,
 } = PlainCallbacks;
-const { newLine } = require('../../utils');
 
 describe('testing callback-simple', () => {
   test('strong returns a <strong> with text', () => {
