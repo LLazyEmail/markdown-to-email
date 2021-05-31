@@ -1,7 +1,7 @@
 const { REGEXP_MEM } = require('atherdon-newsletter-constants');
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-const { mem } = require('@root/callbacks-simple');
+const { PlainCallbacks } = require('atherdon-callbacks');
 const { replaceMarkdown } = require('@root/helpers');
 
 const root = resolve(__dirname, '');
@@ -16,7 +16,7 @@ describe('testing mem', () => {
       content: markdown,
     };
 
-    replaceMarkdown.call(parsedContent, REGEXP_MEM, mem);
+    replaceMarkdown.call(parsedContent, REGEXP_MEM, PlainCallbacks.mem);
 
     const fileName = 'memes.html';
     write(fileName, parsedContent.content, outFolder);
