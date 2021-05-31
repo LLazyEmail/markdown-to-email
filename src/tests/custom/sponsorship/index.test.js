@@ -2,7 +2,7 @@ const { REGEXP_SPONSORSHIP } = require('atherdon-newsletter-constants');
 
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-const { sponsorship } = require('@root/callbacks');
+const { PlainCallbacks } = require('atherdon-callbacks');
 const { replaceMarkdown } = require('@root/helpers');
 
 const root = resolve(__dirname, '');
@@ -19,7 +19,7 @@ describe('testing sponsorship', () => {
         sponsorshipTop: false,
       },
     };
-    replaceMarkdown.call(parsedContent, REGEXP_SPONSORSHIP, sponsorship);
+    replaceMarkdown.call(parsedContent, REGEXP_SPONSORSHIP, PlainCallbacks.sponsorship);
     const fileName = 'sponsorship.html';
     write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);

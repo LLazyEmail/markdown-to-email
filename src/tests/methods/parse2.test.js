@@ -23,6 +23,7 @@ const {
 } = require('atherdon-newsletter-constants');
 
 const { write, readSourceFile, FULL_SOURCE } = require('../../utils');
+const { PlainCallbacks } = require("atherdon-callbacks");
 
 const {
   strong,
@@ -37,9 +38,6 @@ const {
   code,
   hr,
   empty,
-} = require('../../callbacks-simple');
-
-const {
   image,
   ulList,
   olList,
@@ -47,7 +45,7 @@ const {
   sponsorship,
   br,
   newLine,
-} = require('../../callbacks');
+} = PlainCallbacks;
 
 const { replaceMarkdown, replaceMarkdownPreviewText } = require('../../helpers');
 

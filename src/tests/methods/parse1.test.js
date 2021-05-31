@@ -10,7 +10,7 @@ const {
   FULL_SOURCE,
 } = require('@root/utils');
 
-const { empty } = require('@root/callbacks-simple');
+const { PlainCallbacks } = require('atherdon-callbacks');
 
 const { replaceMarkdown, replaceMarkdownPreviewText } = require('@root/helpers');
 
@@ -65,7 +65,7 @@ function iterator(obj) {
 // describe tests
 
 describe('tests for all functionality', () => {
-// replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT) tests
+  // replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT) tests
   test('checking preview text functionality ', () => {
     let check = false;
 
@@ -105,7 +105,7 @@ describe('tests for all functionality', () => {
       },
     };
 
-    replaceMDBinded(REGEXP_HTML_COMMENTS, empty);
+    replaceMDBinded(REGEXP_HTML_COMMENTS, PlainCallbacks.empty);
 
     if (state.content !== this.markdown) {
       check = true;

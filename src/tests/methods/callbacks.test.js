@@ -1,6 +1,7 @@
+const { PlainCallbacks } = require("atherdon-callbacks");
 const {
-  paragraphWrapper, ulList, olList, br,
-} = require('../../callbacks');
+  paragraphWrapper, ulList, olList
+} = PlainCallbacks;
 
 const { newLine } = require('../../utils');
 
