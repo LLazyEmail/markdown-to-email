@@ -1,9 +1,7 @@
-const { PlainCallbacks } = require("atherdon-callbacks");
+const { PlainCallbacks, newLine } = require("atherdon-callbacks");
 const {
   paragraphWrapper, ulList, olList
 } = PlainCallbacks;
-
-const { newLine } = require('../../utils');
 
 describe('testing callback.js', () => {
   test('testing what returns `paragraphWrapper`', () => {

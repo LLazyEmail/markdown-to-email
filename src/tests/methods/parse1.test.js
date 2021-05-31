@@ -10,9 +10,7 @@ const {
   FULL_SOURCE,
 } = require('@root/utils');
 
-const { PlainCallbacks } = require('atherdon-callbacks');
-
-const { replaceMarkdown, replaceMarkdownPreviewText } = require('@root/helpers');
+const { PlainCallbacks, replaceMarkdown, replaceMarkdownPreviewText } = require('atherdon-callbacks');
 
 // @TODO looks like the same thing for me
 const markdown = readSourceFile(FULL_SOURCE);
