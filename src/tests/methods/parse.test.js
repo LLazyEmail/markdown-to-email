@@ -1,14 +1,28 @@
-// const { parse } = require('@root/parse');
+const { isObject } = require('lodash');
+const { parse } = require('../../parse');
 
-// const { readSourceFile, CONTENT_SOURCE } = require('@root/utils');
+const { FULL_SOURCE } = require('../../utils');
 
-// const markdownContent = readSourceFile(CONTENT_SOURCE);
+describe('testing parse.js', () => {
+	const p = parse(FULL_SOURCE);
 
-// describe('testing parse.js', () => {
-//   test('parse should return an object(empty or with parameters)', () => {
-//     const p = parse(markdownContent);
-//     // this expect is generating an error @TODO to figure it out later
-//     expect(typeof p).toBe('object');
-//   });
-// });
-// this will be fixed soon
+	test('parse should return an object', () => {
+		expect(isObject(p)).toBe(true);
+	});
+
+	test('parse should return an object with content key', () => {
+		expect(p.hasOwnProperty('content')).toBe(true);
+	});
+
+	test('parse should return an object with errors key', () => {
+		expect(p.hasOwnProperty('errors')).toBe(true);
+	});
+
+	test('parse should return an object with previewText key', () => {
+		expect(p.hasOwnProperty('previewText')).toBe(true);
+	});
+
+	test('parse should return an object with warnings key', () => {
+		expect(p.hasOwnProperty('warnings')).toBe(true);
+	});
+});

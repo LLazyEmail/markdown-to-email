@@ -34,7 +34,7 @@ describe('testing utils.js', () => {
     console.log = jest.fn(storeLog);
     displayCLIErrors({ previewText: false }, {});
 
-    const msg1 = chalk.red('ERROR source-full.md doesn\'t have previewText');
+    const msg1 = chalk.red('ERROR source.md doesn\'t have previewText');
     const msg2 = chalk.red.bold('The full template has not been parsed!');
     expect(outputData).toBe(msg1 + msg2);
   });

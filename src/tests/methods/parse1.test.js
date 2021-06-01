@@ -8,7 +8,7 @@ const {
 const {
   readSourceFile,
   FULL_SOURCE,
-} = require('@root/utils');
+} = require('../../utils');
 
 const { PlainCallbacks, replaceMarkdown, replaceMarkdownPreviewText } = require('atherdon-callbacks');
 
