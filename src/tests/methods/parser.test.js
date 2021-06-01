@@ -71,6 +71,7 @@ describe('tests for all functionality', () => {
     } else {
       check = false;
     }
-    expect(check).toBe(true);
+    // this will be false, because source.md doesn't have previewText
+    expect(check).toBe(false);
   });
 });
