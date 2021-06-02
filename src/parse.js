@@ -57,6 +57,9 @@ function parse(source) {
 }
 
 function parseFullTHing(params) {
+
+console.log(params);
+
   const { source } = params;
 
   return parse(source);

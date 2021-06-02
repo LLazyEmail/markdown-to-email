@@ -42,9 +42,16 @@ switch (process.env.PARSE) {
 
 function generateFullTemplate() {
   const parsedContent = parseFullTHing({ source: FULL_SOURCE });
+  
   checkWarnings(parsedContent.warnings);
 
   const fileName = `full-template${Date.now()}.html`;
+
+    // console.log(parsedContent);
+
+    // throw new Error("my error message");
+
+
   const fullContent = layouts.fullTemplate(parsedContent.content);
 
   write(fileName, fullContent);
@@ -92,7 +99,7 @@ function generateContentOnly() {
   write(fileName, parsedContent.content);
 
   const message = 'The content has been parsed successfully';
-  
+
   console.log(chalk.green.bold(message));
 }
 
