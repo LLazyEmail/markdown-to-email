@@ -1,5 +1,5 @@
 const head = require('./head');
-const body = require('./body');
+const body = require('../body');
 
 module.exports = `<!DOCTYPE html>
 <html
