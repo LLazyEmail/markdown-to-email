@@ -3,13 +3,25 @@
 exports[`Separator/index component renders correctly 1`] = `
 <div
   dir="ltr"
-  style="text-align: center;"
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }
 >
   <span
-    style="font-size:16px"
+    style={
+      Object {
+        "fontSize": "16px",
+      }
+    }
   >
     <span
-      style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
     >
       <em>
         ***

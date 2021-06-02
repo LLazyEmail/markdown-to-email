@@ -10,6 +10,11 @@
     "lint": "eslint . --ext js,jsx . --ignore-path ./.eslintignore",
     "lint:fix": "eslint --fix . --ignore-path ./.eslintignore"
   },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "package"
+    ]
+  },
   "dependencies": {
     "@mdx-js/loader": "1.6.22",
     "@next/mdx": "10.2.3",
