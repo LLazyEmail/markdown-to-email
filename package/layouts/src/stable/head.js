@@ -1,5 +1,5 @@
-const headStyles = require('../misc/head-styles');
-const fonts = require('../misc/fonts');
+const headStyles = require('./misc/head-styles');
+const fonts = require('./misc/fonts');
 
 module.exports = `<head>
 <!-- NAME: 1 COLUMN -->
