@@ -47,12 +47,17 @@ function generateFullTemplate() {
 
   const fileName = `full-template${Date.now()}.html`;
 
+
+//   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
     // console.log(parsedContent);
 
     // throw new Error("my error message");
 
 
   const fullContent = layouts.fullTemplate(parsedContent.content);
+
+    throw new Error("my error message");
+
 
   write(fileName, fullContent);
 
