@@ -6,6 +6,10 @@ import Image from 'components/typography/image';
 import Heading from 'components/typography/heading';
 import Strong from 'components/typography/strong';
 import Paragraph from 'components/typography/paragraph';
+import CtaList from 'components/body/ctaList';
+import GetPublished from 'components/body/getpublished';
+import JoinUs from 'components/body/joinus';
+import Separator from 'components/typography/separator';
 
 const BodyPrototype = ({ config }) => {
   const {
@@ -63,6 +67,14 @@ const BodyPrototype = ({ config }) => {
       <Paragraph>
         {paragraphFive}
       </Paragraph>
+      <Divider />
+      <Divider />
+      <CtaList />
+      <Separator />
+      <JoinUs />
+      <Divider />
+      <Separator />
+      <GetPublished />
       <Divider />
       <Sponsor
         leftHref="https://bit.ly/30AWyC4"

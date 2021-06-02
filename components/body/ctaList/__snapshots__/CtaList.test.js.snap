@@ -12,6 +12,7 @@ exports[`CtaList/index component renders correctly 1`] = `
   <strong
     style={
       Object {
+        "fontSize": "18px",
         "fontWeight": "bolder",
       }
     }
@@ -39,7 +40,7 @@ exports[`CtaList/index component renders correctly 1`] = `
             "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
             "fontSize": "18px",
             "lineHeight": "125%",
-            "margin": "0",
+            "margin": "10px 0",
             "msTextSizeAdjust": "100%",
             "msoLineHeightRule": "exactly",
             "padding": "0",
@@ -52,15 +53,10 @@ exports[`CtaList/index component renders correctly 1`] = `
           style={
             Object {
               "WebkitTextSizeAdjust": "100%",
-              "color": "#111111",
-              "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
-              "fontSize": "18px",
-              "lineHeight": "125%",
-              "margin": "0",
+              "fontWeight": "bold",
               "msTextSizeAdjust": "100%",
               "msoLineHeightRule": "exactly",
-              "padding": "0",
-              "textAlign": "left",
+              "textDecoration": "underline",
             }
           }
           target="_blank"
@@ -90,7 +86,7 @@ exports[`CtaList/index component renders correctly 1`] = `
             "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
             "fontSize": "18px",
             "lineHeight": "125%",
-            "margin": "0",
+            "margin": "10px 0",
             "msTextSizeAdjust": "100%",
             "msoLineHeightRule": "exactly",
             "padding": "0",
@@ -103,15 +99,10 @@ exports[`CtaList/index component renders correctly 1`] = `
           style={
             Object {
               "WebkitTextSizeAdjust": "100%",
-              "color": "#111111",
-              "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
-              "fontSize": "18px",
-              "lineHeight": "125%",
-              "margin": "0",
+              "fontWeight": "bold",
               "msTextSizeAdjust": "100%",
               "msoLineHeightRule": "exactly",
-              "padding": "0",
-              "textAlign": "left",
+              "textDecoration": "underline",
             }
           }
           target="_blank"
@@ -141,7 +132,7 @@ exports[`CtaList/index component renders correctly 1`] = `
             "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
             "fontSize": "18px",
             "lineHeight": "125%",
-            "margin": "0",
+            "margin": "10px 0",
             "msTextSizeAdjust": "100%",
             "msoLineHeightRule": "exactly",
             "padding": "0",
@@ -154,15 +145,10 @@ exports[`CtaList/index component renders correctly 1`] = `
           style={
             Object {
               "WebkitTextSizeAdjust": "100%",
-              "color": "#111111",
-              "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
-              "fontSize": "18px",
-              "lineHeight": "125%",
-              "margin": "0",
+              "fontWeight": "bold",
               "msTextSizeAdjust": "100%",
               "msoLineHeightRule": "exactly",
-              "padding": "0",
-              "textAlign": "left",
+              "textDecoration": "underline",
             }
           }
           target="_blank"
@@ -192,7 +178,7 @@ exports[`CtaList/index component renders correctly 1`] = `
             "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
             "fontSize": "18px",
             "lineHeight": "125%",
-            "margin": "0",
+            "margin": "10px 0",
             "msTextSizeAdjust": "100%",
             "msoLineHeightRule": "exactly",
             "padding": "0",
@@ -205,15 +191,10 @@ exports[`CtaList/index component renders correctly 1`] = `
           style={
             Object {
               "WebkitTextSizeAdjust": "100%",
-              "color": "#111111",
-              "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
-              "fontSize": "18px",
-              "lineHeight": "125%",
-              "margin": "0",
+              "fontWeight": "bold",
               "msTextSizeAdjust": "100%",
               "msoLineHeightRule": "exactly",
-              "padding": "0",
-              "textAlign": "left",
+              "textDecoration": "underline",
             }
           }
           target="_blank"
@@ -243,7 +224,7 @@ exports[`CtaList/index component renders correctly 1`] = `
             "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
             "fontSize": "18px",
             "lineHeight": "125%",
-            "margin": "0",
+            "margin": "10px 0",
             "msTextSizeAdjust": "100%",
             "msoLineHeightRule": "exactly",
             "padding": "0",
@@ -257,15 +238,10 @@ exports[`CtaList/index component renders correctly 1`] = `
           style={
             Object {
               "WebkitTextSizeAdjust": "100%",
-              "color": "#111111",
-              "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
-              "fontSize": "18px",
-              "lineHeight": "125%",
-              "margin": "0",
+              "fontWeight": "bold",
               "msTextSizeAdjust": "100%",
               "msoLineHeightRule": "exactly",
-              "padding": "0",
-              "textAlign": "left",
+              "textDecoration": "underline",
             }
           }
           target="_blank"
