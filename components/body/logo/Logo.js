@@ -24,7 +24,7 @@ const Logo = () => (
                     <img
                       align="center"
                       alt=""
-                      src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/brand/hackernoon.png"
+                      src="https://gitlab.com/hackernoon/newsletters-archive/-/raw/master/content/logos/brand/hackernoon.png"
                       width={600}
                       style={styles.img}
                       className="mcnImage"
