@@ -1,15 +1,15 @@
 import React from 'react';
-import Sponsor from 'components/body/sponsor';
-import MainTitle from 'components/typography/mainTitle';
-import Divider from 'components/body/divider';
-import Image from 'components/typography/image';
-import Heading from 'components/typography/heading';
-import Strong from 'components/typography/strong';
-import Paragraph from 'components/typography/paragraph';
-import CtaList from 'components/body/ctaList';
-import GetPublished from 'components/body/getpublished';
-import JoinUs from 'components/body/joinus';
-import Separator from 'components/typography/separator';
+import Sponsor from '../../../components/body/sponsor';
+import MainTitle from '../../../components/typography/mainTitle';
+import Divider from '../../../components/body/divider';
+import Image from '../../../components/typography/image';
+import Heading from '../../../components/typography/heading';
+import Strong from '../../../components/typography/strong';
+import Paragraph from '../../../components/typography/paragraph';
+import CtaList from '../../../components/body/ctaList';
+import GetPublished from '../../../components/body/getpublished';
+import JoinUs from '../../../components/body/joinus';
+import Separator from '../../../components/typography/separator';
 
 const BodyPrototype = ({ config }) => {
   const {
