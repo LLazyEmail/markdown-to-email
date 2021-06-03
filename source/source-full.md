@@ -58,7 +58,7 @@ Unlike the traditional approach or a [low-performing team](https://hackernoon.co
 A [developer is no longer just a developer](https://hackernoon.com/highest-paid-software-developer-c66b9f4cc53e) in charge of X lines of code. A tester is no longer accountable for the expected functionality.  A high-performing team wears multiple hats and has got it [ALL covered](https://hackernoon.com/dont-optimize-things-that-dont-work-yet-957j30qv).
 
 
-    
+
 ![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image6.gif][https://media.giphy.com/media/PvvSfSDFoAL5e/giphy.gif][alt text]
 
 

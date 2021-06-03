@@ -71,7 +71,7 @@ style="
                 <img
                   align="center"
                   alt=""
-                  src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/brand/hackernoon.png"
+                  src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/brand/hackernoon.png"
                   width="600"
                   style="
                     max-width: 1200px;
