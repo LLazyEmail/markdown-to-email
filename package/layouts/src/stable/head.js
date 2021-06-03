@@ -1,7 +1,7 @@
-const headStyles = require('./misc/head-styles');
-const fonts = require('./misc/fonts');
+import { headStyles } from './misc/head-styles';
+import { fonts } from './misc/fonts';
 
-module.exports = `<head>
+export default head = `<head>
 <!-- NAME: 1 COLUMN -->
 <!--[if gte mso 15]>
   <xml>
