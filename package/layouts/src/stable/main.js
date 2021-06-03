@@ -1,7 +1,7 @@
 import head from './head'
 import body from '../body';
 
-export default main = `<!DOCTYPE html>
+const main = `<!DOCTYPE html>
 <html
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:v="urn:schemas-microsoft-com:vml"
@@ -10,3 +10,5 @@ export default main = `<!DOCTYPE html>
   ${head}
   ${body}
 </html>`;
+
+export default main;

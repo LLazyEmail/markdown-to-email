@@ -1,7 +1,7 @@
 import { headStyles } from './misc/head-styles';
 import { fonts } from './misc/fonts';
 
-export default head = `<head>
+const head = `<head>
 <!-- NAME: 1 COLUMN -->
 <!--[if gte mso 15]>
   <xml>
@@ -20,3 +20,5 @@ ${headStyles}
 ${fonts}
 <!--<![endif]-->
 </head>`;
+
+export default head;
