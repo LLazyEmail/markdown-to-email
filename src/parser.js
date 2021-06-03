@@ -42,13 +42,27 @@ switch (process.env.PARSE) {
 
 function generateFullTemplate() {
   const parsedContent = parseFullTHing({ source: FULL_SOURCE });
+  
   checkWarnings(parsedContent.warnings);
 
   const fileName = `full-template${Date.now()}.html`;
+
+
+//   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
+    // console.log(parsedContent);
+
+    // throw new Error("my error message");
+
+
   const fullContent = layouts.fullTemplate(parsedContent.content);
+
+    throw new Error("my error message");
+
+
   write(fileName, fullContent);
 
   const message = 'The full-template has been parsed successfully';
+
   console.log(chalk.green.bold(message));
 }
 
@@ -58,7 +72,9 @@ function generateReactContent() {
   // console.log("parsedContent", parsedContent);
   checkWarnings(parsedContent.warnings);
   const fileName = `Content${Date.now()}.js`;
+
   writeReactComponent(fileName, parsedContent.content);
+
   const message = 'The Content has been parsed successfully';
   console.log(chalk.green.bold(message));
 }
@@ -70,9 +86,11 @@ function generateReactFullTemplate() {
 
   const fileName = `FullTemplate${Date.now()}.js`;
   const fullContent = reactLayouts.reactFullTemplate(parsedContent.content);
+
   write(fileName, fullContent);
 
   const message = 'The FullTemplate has been parsed successfully';
+
   console.log(chalk.green.bold(message));
 }
 
@@ -86,6 +104,7 @@ function generateContentOnly() {
   write(fileName, parsedContent.content);
 
   const message = 'The content has been parsed successfully';
+
   console.log(chalk.green.bold(message));
 }
 

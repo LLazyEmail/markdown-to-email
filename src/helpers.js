@@ -50,8 +50,9 @@ function replaceReactWrapper(wrapperName, config, folder = 'typography') {
 // https://stackoverflow.com/a/326693
 function replaceMarkdown(regexp, callback) {
     
-    console.log('helpsers- replace markdown method')
-  console.log(typeof callback)  
+    // console.log('helpsers- replace markdown method')
+    // console.log(typeof callback)  
+
   var fixedCallbackMethod = false;
   switch (typeof callback) {
       case 'string':
@@ -85,7 +86,10 @@ function replaceMarkdownPreviewText(regexp) {
  */
   this.errors.previewText = true;
 
-  this.content = this.content.replace(regexp, () => this.previewText);
+  this.content = this.content.replace(
+        regexp, 
+        () => this.previewText
+    );
 }
 
 
