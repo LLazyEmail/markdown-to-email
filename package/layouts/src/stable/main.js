@@ -1,7 +1,7 @@
-const head = require('./head');
-const body = require('../body');
+import head from './head'
+import body from '../body';
 
-module.exports = `<!DOCTYPE html>
+const main = `<!DOCTYPE html>
 <html
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:v="urn:schemas-microsoft-com:vml"
@@ -10,3 +10,5 @@ module.exports = `<!DOCTYPE html>
   ${head}
   ${body}
 </html>`;
+
+export default main;
