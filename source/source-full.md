@@ -1,61 +1,92 @@
-#~ You’ll probably see it flashing like a neon sign in every corner of the Internet.
+#~ As a developer, you might have dreamed of a Google created specifically for techies. Just imagine, a digital platform brimming with content for coders, including Q&A and job listings. Every question about programming answered. Each inextricable bug is solved. A larger audience of qualified experts come-at-able. Sounds dreamlike, right?
 
-~[Virtual NoSQL event for Java Database Developers. REGISTER NOW!][https://bit.ly/3oP3IgZ][https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/thematic/2021/04-April/CB_Logo_Stacked_500x500.jpg]
+~[The security-as-code solution for developers][https://bit.ly/3n9CgbE][https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/logos/thematic/2020/October/Bridgecrew_stacked.jpg]
 
-# Live on the Edge
 
-'Edge' is a buzzword.
 
-You’ll probably see it flashing like a neon sign in every corner of the Internet.
+# Secrets Of High-Performing Teams: Part II
 
-But this time, its irritating omnipresence is justified, because we are discussing the value of [**edge computing**](https://hackernoon.com/how-iot-and-edge-computing-influence-various-industries-kp193442).
 
-This new kid on the block has already gained the perception of being the cause of faster, cheaper, and more reliable [**data processing.**](https://hackernoon.com/ingestion-and-processing-of-data-for-big-data-and-iot-solutions-659431e37b52)
+## This is our second newsletter in the series of Secrets of Top-Performing DevOps Teams. In the first part, we’ve got to grips with the [DevOps approach](https://hackernoon.com/devops-fundamentals-you-ever-wanted-to-know-zt2m3uh6) and the way it has [amplified the IT workflow](https://hackernoon.com/tagged/workflow).
 
-![https://media.giphy.com/media/Tfj2jvOFJEFHKj9p9o/giphy.gif](https://media.giphy.com/media/Tfj2jvOFJEFHKj9p9o/giphy.gif)
 
-## **So, who’s on the Edge?**
+![alt_text](https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image3.gif "image_tooltip")
 
-It seems like only yesterday cloud computing entered the mainstream. Even before we consumed YouTube videos, **[podcasts](https://hackernoon.com/tagged/hackernoon-podcast)**, and articles on that topic, a new player had stepped onto the court.
 
-![https://media.giphy.com/media/1uLQUtPLbJMQ0/giphy.gif](https://media.giphy.com/media/1uLQUtPLbJMQ0/giphy.gif)
+Link: [https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy.gif](https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy.gif) 
 
-Edge computing may appear avant-garde or revolutionary, but in fact, you must have seen it at least once in your life. Its principle is seen across modern devices and point-to-point computing technologies, including smartphones, tablets, sensors, [**robotics**](https://hackernoon.com/the-rise-of-robots-insights-into-the-global-robotics-market-374g3u2q), and automated lines.
+Here’s a quick reminder and a short introduction for the unaware:
 
-In simple words, edge computing increases the efficiency of a **[distributed computing](https://hackernoon.com/cloud-computing-explained-what-is-serverless-sql-and-why-should-you-care-5y3t33z5)** framework. Its primary goal is to bring data and computing closer to the applications that consume it - all that thanks to co-located servers.
+Tech role has germinated from ["help fix my laptop"](https://hackernoon.com/search?query=horror) to "help me become the best." While [many dev teams are trapped firefighting](https://hackernoon.com/tagged/team-productivity), leading teams [align with the business](https://hackernoon.com/tagged/business), [adopt agile principles](https://hackernoon.com/tagged/agile) and automation, and lead the [digital transformation](https://hackernoon.com/tagged/transformation).
 
-## Why Step Closer to the Edge?
+What’s in it for [DevOps](https://hackernoon.com/tagged/devops), you’d ask? It’s simple: a robust DevOps team facilitates [faster development](https://hackernoon.com/founders-guide-how-to-outsource-software-development-in-2020-y1473yr7) of new products and [easier maintenance](https://hackernoon.com/3-reasons-why-teams-fail-avx3ta7) of existing deployments. 
 
-Data is the lifeblood of any application and any business venture. Sometimes fast data processing is a luxury. Other times, fast data processing is a factor in decision-making for businesses and customers alike.
+Read between the lines - agile-based DevOps approach yields an increase in [development productivity](https://hackernoon.com/4-ways-startups-can-use-tech-and-automation-to-be-more-efficient-j3423w51). And with no silver bullet methods for improving IT [efficiency](https://hackernoon.com/if-formula-1-defined-efficiency-675z3yqd), perfecting DevOps might be your best shot. 
 
-By relocating data processing functions closer to the network edge, you’ll get your share of key-value points. In most cases, these refer to supreme reliability and resilience.
+Without further ado, let’s dive into our top picks for [DevOps team success](https://hackernoon.com/devops-as-a-service-or-do-you-really-need-a-devops-team-cc4q32wj).
 
-It also means that you can increase the guarantees of business uptime by providing uninterrupted access to data, regardless of the Internet.
 
-Furthermore, being able to withstand those inevitable connection issues can help you ensure better application performance and provide a better **[user experience](https://hackernoon.com/improving-user-experience-and-growing-leads-by-building-forms-properly-tmw3482).**
+## Hacking Your Way Through to a High-Performing DevOps Team
 
-## The Key is Connectivity
 
-Remember the famous 2-hour register outage at Target in 2019? The downtime of their system resulted in a $50 million hit and customer backlash - all because of the register glitch.
 
-If it were present, edge computing may have helped to avoid this situation, due to having embedded storage directly on applicable devices. It can also move data prep and processing storage closer to the applications thus, leveraging tiered edge data centers.
+1. [High-performing](https://hackernoon.com/3-easy-ways-to-improve-performance-of-your-python-code-dw183uzo) teams put business first
 
-Tiering is what insulates applications from central and regional data center outages. With each tier—leveraging successively— there becomes more local connectivity. It synchronizes data within and across the tiers, or as conductivity permits.
+You’d say, a [revenue-first mindset](https://hackernoon.com/five-undervalued-data-points-for-emerging-businesses-5c2w3eun) won’t get you the probity medal. However, it’s not our point. In fact, profitability should be your top of mind not for the sake of money only. 
 
-Imagine if all of the stores at Target had a **[micro data center](https://hackernoon.com/the-day-your-laptop-became-a-micro-datacenter-97ba62c9e862)** running in each store. They could have easily avoided the complete shutdown and continued to process certain transactions despite the main data center outage.
 
-## **The Next Big Thing?**
+Successful DevOps teams are more likely to tie their tech projects to revenue, mainly because it’s the 1 [metric for their performance](https://hackernoon.com/the-secret-of-growth-how-to-achieve-dollar1m-arr-in-6-months-vi1832mp). As a result, teams that are business aligned tend to prioritize projects with business management and use business and tech scorecards to measure success. Therefore, just a simple shift from an [activity-driven mindset](https://hackernoon.com/data-that-you-need-is-worth-gold-not-data-that-you-already-have-5c60f9345c6b) to a [revenue-first approach](https://hackernoon.com/4-business-lessons-from-the-failure-of-wework-the-47-billion-dollar-tech-company-3ahi3201) can guarantee a positive change in your team productivity and overall result.
 
-Often touted as the ‘third act of the Internet,’ edge computing is also being hailed as a “gold rush” break for fledgling and existing ecosystem enthusiasts. The speed and flexibility afforded by its architecture to [**managing data**](https://hackernoon.com/managing-complex-data-structures-in-nodejs-17b571c0ba04) creates an exciting range of possibilities for companies.
 
-Implementing it can put enterprises on the cutting edge. Moreover, implementing the right choice of the database can drive down the costs of being on the cutting edge.
+    (We’re not implying that you should ditch the [customer-centric action](https://hackernoon.com/24-customer-retention-strategies-eq1y3ym0), don’t compare apples and oranges)
 
-![https://media.giphy.com/media/4bDXKRN2arfPy/giphy.gif](https://media.giphy.com/media/4bDXKRN2arfPy/giphy.gif)
 
-*Join us today to thank our newsletter sponsor, Couchbase. In an increasingly virtual world, companies need to be able to scale fast while using the technologies best-suited for their needs. Couchbase empowers developers to build responsive and flexible cloud, mobile, and edge computing applications that scale effortlessly. Couchbase is an award-winning, distributed cloud database that offers reliable services critical for business applications.*
+![alt_text](https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image4.gif "image_tooltip")
 
-***
 
-**[Got a tech story to share with our readers?](https://hackernoon.com/signup)** Everything you've ever wanted to know about how to get published on Hacker Noon - G**[et it here](https://www.publish.hackernoon.com/).**
 
-~[Virtual NoSQL event for Java Database Developers. REGISTER NOW!][https://bit.ly/3oP3IgZ][https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/thematic/2021/04-April/CB_Logo_Stacked_500x500.jpg]
+    Link: [https://media.giphy.com/media/l2JeierkQlHpJsGWY/giphy.gif](https://media.giphy.com/media/l2JeierkQlHpJsGWY/giphy.gif) 
+
+2. They assign end-to-end responsibility
+
+Separating [development](https://hackernoon.com/ownership-and-responsibility-in-software-development-teams-6wr3n17) and [operations](https://hackernoon.com/0-to-90-bn-in-a-decade-uber-takeaways-for-startups-and-roadblocks-ahead-for-uber-b17c3bee2a3f) can present potential issues and pitfalls like [performance problems](https://hackernoon.com/the-surprise-outcome-of-measuring-our-pull-requests-process-4v683tbw) and inconsistent environments. In DevOps, both groups cooperate as a team that's [completely responsible](https://hackernoon.com/take-responsibility-dont-blame-it-on-the-users-hoz3n2u) for a product from beginning to end. 
+
+
+Unlike the traditional approach or a [low-performing team](https://hackernoon.com/good-ux-manager-bad-ux-manager-33df51f7367c), where each team member is accountable for their own role, the perfect DevOps team [obliterates those silos](https://hackernoon.com/how-to-prioritize-product-requirements-77d139b4a343) and makes an excellent result the focus of the entire crew.
+
+
+A [developer is no longer just a developer](https://hackernoon.com/highest-paid-software-developer-c66b9f4cc53e) in charge of X lines of code. A tester is no longer accountable for the expected functionality.  A high-performing team wears multiple hats and has got it [ALL covered](https://hackernoon.com/dont-optimize-things-that-dont-work-yet-957j30qv).
+
+
+
+![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image6.gif][https://media.giphy.com/media/PvvSfSDFoAL5e/giphy.gif][alt text]
+
+
+** 3. Automation technology is not an option for a [dazzling performance](https://hackernoon.com/my-top-three-priorities-as-a-software-development-manager-cq2x32c1)**
+
+Let’s be honest: the bright minds like working with new and shiny technology. And you need those [bright minds](https://hackernoon.com/software-specifications-define-plan-and-execute-more-effective-projects-p0803tzz) in your team to make it high-performing and guarantee superb results. It's a bit hard to employ and keep these big stars in a company that trusts in a [creaky, legacy toolchain](https://hackernoon.com/devops-principles-culture-vs-tooling-vvac367z) to build a product, right?
+
+
+Investing in the [DevOps tools](https://hackernoon.com/7-best-devops-security-practices-devsecops-and-its-merits-mr2p3unk) will not only make the team more effective, but it will also make them want to stay. From a practical standpoint, [automation tools](https://hackernoon.com/automating-security-in-devops-top-15-tools-69253w9e) can increase [tech efficiency](https://hackernoon.com/why-devops-is-important-during-the-covid-19-pandemic-6u1i3tul), eliminate errors, and help [deploy apps faster](https://hackernoon.com/the-difference-between-ci-and-cd-in-devops-bc2z3uae). That refers to simplifying the [process of configuring](https://hackernoon.com/how-to-make-a-devops-strategy-pk153uyb), monitoring, and maintaining the [network infrastructure](https://hackernoon.com/ever-wondered-why-we-use-containers-in-devops-l5113wif).
+
+
+![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image1.gif][https://media.giphy.com/media/3oFzmjFxbBiPQW4qVa/giphy.gif][alt text]
+
+
+## Pull it all together
+
+There's no panacea for [successful DevOps team building](https://hackernoon.com/measuring-devops-metrics-a-how-to-guide-ot113ztl), but the process itself is definitely easier than [quantum physics](https://www.hackernoon.com/how-quantum-dots-technology-driving-advancements-in-lcd-and-oled-display-quality-2e163uxg). The majority of our tips and tricks dispensed above are of common-sense variety. In practice, our [secrets](https://hackernoon.com/are-you-telling-the-story-of-your-software-mc133w92) call for good old-fashioned [hard work](https://hackernoon.com/how-to-approach-strategic-planning-when-the-sky-is-falling-oq5k3yer) and a sprinkle of knowledge.
+
+To deliver top-notch results, employees must be well-settled, teams well-structured, and objectives outlined based on [business priorities](https://hackernoon.com/ceos-survey-on-digital-transformation-in-2017-by-gartner-c2d6e842f86c). And it’s not enough to recruit the right people, retention and training are equally important. Overall, it takes a solid mix of all these components to build a team that truly thrives.
+
+_Join us to welcome today newsletter’s sponsor - [BridgeCrew](https://bit.ly/3n9CgbE). BridgeCrew helps find, fix, and prevent cloud misconfigurations straight from your CI/CD pipeline. Their platform leverages automation and delivers security-as-code to streamline your DevSecOps processes._
+
+***********************HAJKAKKSKKSKAKSK*
+
+[Got a tech story to share with our readers?](http://auth.hackernoon.com/) Everything you've ever wanted to know about how to get published on Hacker Noon - [get it here](https://hackernoon.com/how-to-get-published-on-hacker-noon-a-step-by-step-guide-zcp36rz).
+
+
+![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image5.gif][https://media.giphy.com/media/3orieTeAMaKc4yhwmk/giphy.gif][alt text]
+
+
+~[The security-as-code solution for developers][https://bit.ly/3n9CgbE][https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/logos/thematic/2020/October/Bridgecrew_stacked.jpg]
