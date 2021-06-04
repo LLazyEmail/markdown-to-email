@@ -1,5 +1,5 @@
-import { headStyles } from './misc/head-styles';
-import { fonts } from './misc/fonts';
+import { headStyles } from '../../../misc/src/misc/head-styles';
+import { fonts } from '../../../misc/src/misc/fonts';
 
 const head = `<head>
 <!-- NAME: 1 COLUMN -->
