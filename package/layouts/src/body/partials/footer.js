@@ -5,7 +5,7 @@
 
 // import { copyrights, address, unsubscribe, newsletterSponsorshipLink } from '../misc/';
 
-import Misc from '../stable/misc';
+import Misc from '../../stable/misc';
 
 // console.log(Misc)
 

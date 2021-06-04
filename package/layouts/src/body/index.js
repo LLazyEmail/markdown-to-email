@@ -1,10 +1,10 @@
-import { footer } from './footer';
-import { headline } from './headline';
-import { logoBottom } from './logoBottom';
-import { logoTop } from './logoTop';
-import { previewText } from './previewText';
-import { section } from './section';
-import { sponsor } from './sponsor';
+import { footer } from './partials/footer';
+import { headline } from './partials/headline';
+import { logoBottom } from './partials/logoBottom';
+import { logoTop } from './partials/logoTop';
+import { previewText } from './partials/previewText';
+import { section } from './partials/section';
+import { sponsor } from './partials/sponsor';
 
 const body = {
   footer,
