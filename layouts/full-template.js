@@ -421,7 +421,7 @@ function fullTemplate(body) {
                             <tr>
                               <td class="mcnImageContent" valign="top" style="padding-right: 0px;padding-left: 0px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                 <a href="https://www.hackernoon.com" title="" class="" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                  <img align="center" alt="Hacker Noon reflects the technology industry with unfettered stories and opinions written by real tech professionals" src="https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/logos/brand/hackernoon.png" width="564" style="max-width: 15426px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
+                                  <img align="center" alt="Hacker Noon reflects the technology industry with unfettered stories and opinions written by real tech professionals" src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/brand/hackernoon.png" width="564" style="max-width: 15426px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
                                 </a>
                               </td>
                             </tr>
@@ -470,7 +470,7 @@ function fullTemplate(body) {
                                 <tr>
                                   <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                     <a href="https://hackernoon.com/" title="" class="" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                        <img align="center" alt="Hacker Noon reflects the technology industry with unfettered stories and opinions written by real tech professionals" src="https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/logos/brand/hackernoon.png" width="564" style="max-width: 15426px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
+                                        <img align="center" alt="Hacker Noon reflects the technology industry with unfettered stories and opinions written by real tech professionals" src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/brand/hackernoon.png" width="564" style="max-width: 15426px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
                                     </a>
                                   </td>
                                 </tr>
