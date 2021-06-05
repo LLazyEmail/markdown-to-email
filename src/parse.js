@@ -14,6 +14,7 @@ function parse(source) {
     },
     errors: {
       previewText: false,
+      correct_html: false,
       sponsorshipTop: false,
       sponsorshipBottom: false,
     },
@@ -58,7 +59,7 @@ function parse(source) {
 
 function parseFullTHing(params) {
 
-console.log(params);
+  console.log(params);
 
   const { source } = params;
 
