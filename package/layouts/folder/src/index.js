@@ -1,5 +1,5 @@
 import body from './body/';
-import misc from './stable/misc';
+import misc from '../../misc/src/misc';
 
 import main from './stable/main';
 

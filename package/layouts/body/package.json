@@ -1,6 +1,6 @@
 {
-  "name": "atherdon-newsletter-react",
-  "version": "1.0.11",
+  "name": "atherdon-newsletter-js-layouts-body",
+  "version": "1.1.0",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -12,7 +12,6 @@
     "build:babel": "babel src -d dist",
     "prepublish": "npm run clean && npm run build",
     "test": "npm run test",
-    "testImport": "node ./test.js",
     "clean": "shx rm -rf ./coverage && shx rm -rf ./dist",
     "lint:prettier": "prettier --write src/",
     "lint": "eslint --ext .js . --ignore-path ./.eslintignore --resolve-plugins-relative-to .",
