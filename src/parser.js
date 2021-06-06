@@ -13,6 +13,7 @@ const {
   writeReactComponent,
   FULL_SOURCE,
   CONTENT_SOURCE,
+  checkHtml
 } = require('./utils');
 
 
@@ -47,7 +48,7 @@ function generateFullTemplate() {
 
   const fileName = `full-template${Date.now()}.html`;
 
-
+  checkHtml(parsedContent.content);
 //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
     // console.log(parsedContent);
 
