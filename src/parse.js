@@ -14,7 +14,6 @@ function parse(source) {
     },
     errors: {
       previewText: false,
-      correct_html: false,
       sponsorshipTop: false,
       sponsorshipBottom: false,
     },

@@ -89,6 +89,26 @@ function isFolderExists(dir) {
   }
 }
 
+function checkHtml(content) {
+  const searchPattern = new RegExp('(<table|<tr>|<td|<tbody>)', 'i');
+  let ind, tempStr = '';
+
+  if (process.env.noAdv) {
+    ind = content.indexOf('<h1 class="mc-toc-title"');
+  } else {
+    ind = content.indexOf('</table></span></span></div>');
+  }
+
+  for (let i = ind; i < ind + 5000; i++) {
+    tempStr += content[i];
+  }
+
+  if (searchPattern.test(tempStr)) {
+    console.log(chalk.green("Content has correct html!!!"));
+  } else {
+    console.log(chalk.red("Content has not correct html!!!"));
+  }
+}
 
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
@@ -106,4 +126,5 @@ module.exports = {
   checkWarnings,
   FULL_SOURCE,
   CONTENT_SOURCE,
+  checkHtml
 };
