@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "parse": "npm run checkFolders && cross-env PARSE=full node ./src/parser",
+    "parseNoAdv": "npm run checkFolders && cross-env PARSE=noAdv node ./src/parser",
     "parse:full": "npm run checkFolders && cross-env PARSE=full node ./src/parser",
     "parseReact": "npm run checkFolders && cross-env PARSE=reactContentOnly node ./src/parser",
     "parseReact:full": "npm run checkFolders && cross-env PARSE=reactFull node ./src/parser",
