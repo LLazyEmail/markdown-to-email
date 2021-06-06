@@ -106,7 +106,7 @@ function checkHtml(content) {
   if (searchPattern.test(tempStr)) {
     console.log(chalk.green("Content has correct html!!!"));
   } else {
-    console.log(chalk.red("Content has not correct html!!!"));
+    console.log(chalk.yellow("Content has not correct html!!!"));
   }
 }
 
