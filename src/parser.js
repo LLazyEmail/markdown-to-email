@@ -57,7 +57,7 @@ function generateFullTemplate() {
 
   const fullContent = layouts.fullTemplate(parsedContent.content);
 
-    // throw new Error("my error message");
+    throw new Error("my error message");
 
 
   write(fileName, fullContent);
