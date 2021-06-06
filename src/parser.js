@@ -43,21 +43,21 @@ switch (process.env.PARSE) {
 
 function generateFullTemplate() {
   const parsedContent = parseFullTHing({ source: FULL_SOURCE });
-
+  
   checkWarnings(parsedContent.warnings);
 
   const fileName = `full-template${Date.now()}.html`;
 
-
-  //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
-  // console.log(parsedContent);
-
-  // throw new Error("my error message");
-
   checkHtml(parsedContent.content);
+//   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
+    // console.log(parsedContent);
+
+    // throw new Error("my error message");
+
+
   const fullContent = layouts.fullTemplate(parsedContent.content);
 
-  // throw new Error("my error message");
+    // throw new Error("my error message");
 
 
   write(fileName, fullContent);
@@ -97,7 +97,7 @@ function generateReactFullTemplate() {
 
 // this method is depricated.
 function generateContentOnly() {
-
+    
   const parsedContent = parse(CONTENT_SOURCE);
   checkWarnings(parsedContent.warnings);
 
