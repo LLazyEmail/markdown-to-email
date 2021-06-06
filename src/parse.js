@@ -45,7 +45,7 @@ function parse(source) {
   // this line is generating an error
   Replacer.emptyBlockquote();
   Replacer.br();
-  if (!process.env.PARSE === 'noAdv') {
+  if (!process.env.PARSE === 'noAdv' || process.env.PARSE === 'full') {
     Replacer.sponsorship();
   }
   Replacer.memes();
