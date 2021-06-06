@@ -52,7 +52,7 @@ function generateFullTemplate() {
 //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
     // console.log(parsedContent);
 
-    throw new Error("my error message");
+    // throw new Error("my error message");
 
 
   const fullContent = layouts.fullTemplate(parsedContent.content);
