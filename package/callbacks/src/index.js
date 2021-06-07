@@ -9,6 +9,7 @@ import {
 export {
   PlainCallbacks,
   ReactCallbacks,
+  ReactReplacer,
   Replacer,
   newLine,
   replaceHTMLWrapper,
