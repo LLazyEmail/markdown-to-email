@@ -7,7 +7,7 @@ const { replaceMarkdown, replaceMarkdownPreviewText } = require('../helpers');
 
 
 
-// const ReplacerMDReact = require('./replaceMDReact');
+const ReplacerMDReact = require('./replaceMDReact');
 
 
 
@@ -36,94 +36,94 @@ function parseMDReact(source, isFull) {
 
 
 
-  ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);
-  ReactReplacer.replaceMDBindedPreviewText =
+  ReplacerMDReact.replaceMDBinded = replaceMarkdown.bind(state);
+  ReplacerMDReact.replaceMDBindedPreviewText =
     replaceMarkdownPreviewText.bind(state);
 
   // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
   if (isFull) {
-    ReactReplacer.previewText();
+    ReplacerMDReact.previewText();
   }
 
-  ReactReplacer.comments();
-  ReactReplacer.strong();
-  ReactReplacer.italic();
-  ReactReplacer.header();
+  ReplacerMDReact.comments();
+  ReplacerMDReact.strong();
+  ReplacerMDReact.italic();
+  ReplacerMDReact.header();
 
-  ReactReplacer.image();
-  ReactReplacer.link();
+  ReplacerMDReact.image();
+  ReplacerMDReact.link();
 
-  ReactReplacer.del();
-  ReactReplacer.q();
-  ReactReplacer.code();
+  ReplacerMDReact.del();
+  ReplacerMDReact.q();
+  ReplacerMDReact.code();
 
-  ReactReplacer.ulList();
+  ReplacerMDReact.ulList();
   // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
-  //   ReactReplacer.olList()
+  //   ReplacerMDReact.olList()
 
-  ReactReplacer.blockQuote();
-  ReactReplacer.hr();
-  ReactReplacer.paragraph();
+  ReplacerMDReact.blockQuote();
+  ReplacerMDReact.hr();
+  ReplacerMDReact.paragraph();
 
   // TODO CHECK CASES WHEN CONTENT CAN HAVE EMPTY LISTS OR BLOCKQUOTE
-  //   ReactReplacer.emptyUl();
-  //   ReactReplacer.emptyOl();
-  //   ReactReplacer.emptyBlockQuote();
+  //   ReplacerMDReact.emptyUl();
+  //   ReplacerMDReact.emptyOl();
+  //   ReplacerMDReact.emptyBlockQuote();
 
-  ReactReplacer.br();
-  ReactReplacer.sponsorship();
-  ReactReplacer.mem();
-  ReactReplacer.separator();
+  ReplacerMDReact.br();
+  ReplacerMDReact.sponsorship();
+  ReplacerMDReact.mem();
+  ReplacerMDReact.separator();
 
 
 
-//   // const replaceMDBinded = replaceMarkdown.bind(state);
+  //   // const replaceMDBinded = replaceMarkdown.bind(state);
 
-//   ReplacerMDReact.replaceMDBinded = replaceMarkdown.bind(state);
-//   ReplacerMDReact.replaceMDBindedPreviewText =
-//     replaceMarkdownPreviewText.bind(state);
+  //   ReplacerMDReact.replaceMDBinded = replaceMarkdown.bind(state);
+  //   ReplacerMDReact.replaceMDBindedPreviewText =
+  //     replaceMarkdownPreviewText.bind(state);
 
-//   // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
-//   if (isFull) {
-//     ReplacerMDReact.previewText();
-//   }
+  //   // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
+  //   if (isFull) {
+  //     ReplacerMDReact.previewText();
+  //   }
 
-//   ReplacerMDReact.comments();
-//   ReplacerMDReact.strong();
-//   ReplacerMDReact.italic();
-//   ReplacerMDReact.header();
+  //   ReplacerMDReact.comments();
+  //   ReplacerMDReact.strong();
+  //   ReplacerMDReact.italic();
+  //   ReplacerMDReact.header();
 
-//   ReplacerMDReact.image();
-//   ReplacerMDReact.link();
+  //   ReplacerMDReact.image();
+  //   ReplacerMDReact.link();
 
-//   ReplacerMDReact.del();
-//   ReplacerMDReact.q();
-//   ReplacerMDReact.code();
+  //   ReplacerMDReact.del();
+  //   ReplacerMDReact.q();
+  //   ReplacerMDReact.code();
 
-//   ReplacerMDReact.ulList();
-//   // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
-//   //   ReplacerMDReact.olList()
+  //   ReplacerMDReact.ulList();
+  //   // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
+  //   //   ReplacerMDReact.olList()
 
-//   ReplacerMDReact.blockQuote();
-//   ReplacerMDReact.hr();
-//   ReplacerMDReact.paragraph();
+  //   ReplacerMDReact.blockQuote();
+  //   ReplacerMDReact.hr();
+  //   ReplacerMDReact.paragraph();
 
-//   // TODO CHECK CASES WHEN CONTENT CAN HAVE EMPTY LISTS OR BLOCKQUOTE
-//   //   ReplacerMDReact.emptyUl();
-//   //   ReplacerMDReact.emptyOl();
-//   //   ReplacerMDReact.emptyBlockQuote();
+  //   // TODO CHECK CASES WHEN CONTENT CAN HAVE EMPTY LISTS OR BLOCKQUOTE
+  //   //   ReplacerMDReact.emptyUl();
+  //   //   ReplacerMDReact.emptyOl();
+  //   //   ReplacerMDReact.emptyBlockQuote();
 
-//   ReplacerMDReact.br();
-//   ReplacerMDReact.sponsorship();
-//   ReplacerMDReact.mem();
-//   ReplacerMDReact.separator();
-  
-  
-  
+  //   ReplacerMDReact.br();
+  //   ReplacerMDReact.sponsorship();
+  //   ReplacerMDReact.mem();
+  //   ReplacerMDReact.separator();
 
-  
+
+
+
+
   // console.log( state )
-  
+
   return state;
 }
 
