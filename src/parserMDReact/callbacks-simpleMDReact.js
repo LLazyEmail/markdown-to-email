@@ -1,5 +1,6 @@
-const { replaceReactWrapper } = require('../helpers');
-const { newLine } = require('../utils');
+const {
+  newLine, replaceReactWrapper
+} = require("atherdon-callbacks");
 
 const hr = `${newLine}<hr />`;
 const empty = '';

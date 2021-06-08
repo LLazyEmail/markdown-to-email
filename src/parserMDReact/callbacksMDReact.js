@@ -1,5 +1,6 @@
-const { replaceHTMLWrapper, replaceReactWrapper } = require('../helpers');
-const { newLine } = require('../utils');
+const {
+  newLine, replaceHTMLWrapper, replaceReactWrapper
+} = require("atherdon-callbacks");
 
 /// function is not working as planned
 

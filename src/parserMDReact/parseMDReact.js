@@ -1,19 +1,10 @@
 const { readSourceFile } = require('../utils');
 
 
-
-
-const { replaceMarkdown, replaceMarkdownPreviewText } = require('../helpers');
-
-
-
-// const ReplacerMDReact = require('./replaceMDReact');
-
-
-
 // ReactReplacer
-
-const { ReactReplacer } = require("atherdon-callbacks")
+const {
+  ReactReplacer, replaceMarkdown, replaceMarkdownPreviewText
+} = require("atherdon-callbacks");
 
 
 // @todo update this method. I'm sure it can be improved.
