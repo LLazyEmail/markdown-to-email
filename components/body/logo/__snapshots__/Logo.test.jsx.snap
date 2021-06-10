@@ -87,7 +87,7 @@ exports[`Logo/index component renders correctly 1`] = `
                     align="center"
                     alt=""
                     className="mcnImage"
-                    src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/brand/hackernoon.png"
+                    src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/brand/hackernoon.png"
                     style={
                       Object {
                         "border": 0,
@@ -201,7 +201,7 @@ exports[`Logo/index component renders correctly 2`] = `
                     align="center"
                     alt=""
                     className="mcnImage"
-                    src="https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/brand/hackernoon.png"
+                    src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/brand/hackernoon.png"
                     style={
                       Object {
                         "border": 0,
