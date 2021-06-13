@@ -1,17 +1,19 @@
-// import { address } from './partials/address';
-// import { copyrights } from './partials/copyrights';
-// import { fonts } from './partials/fonts';
-// import { headStyles } from './partials/head-styles';
-// import { newsletterSponsorshipLink } from './partials/newsletter-sponsorship-link';
-// import { unsubscribe } from './partials/unsubscribe';
+import { footer } from './partials/footer';
+import { headline } from './partials/headline';
+import { logoBottom } from './partials/logoBottom';
+import { logoTop } from './partials/logoTop';
+import { previewText } from './partials/previewText';
+import { section } from './partials/section';
+import { sponsor } from './partials/sponsor';
 
-// const misc = {
-//   address,
-//   copyrights,
-//   fonts,
-//   headStyles,
-//   newsletterSponsorshipLink,
-//   unsubscribe,
-// };
+const body = {
+  footer,
+  headline,
+  logoBottom,
+  logoTop,
+  previewText,
+  section,
+  sponsor
+};
 
-// export default misc;
+export default body;
