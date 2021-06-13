@@ -2,7 +2,7 @@ import body from 'atherdon-newsletter-js-layouts-body';
 
 import footer from 'atherdon-newsletter-js-layouts-footer';
 
-const { logoTop, logoBottom} = body;
+const { logoTop, logoBottom } = body;
 
 export const BBBody = `<body
 style="
