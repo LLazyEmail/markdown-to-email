@@ -1,5 +1,5 @@
 import head from 'atherdon-newsletter-js-layouts-misc'
-import body from './body';
+import { BBBody } from './body';
 
 const main = `<!DOCTYPE html>
 <html
@@ -8,7 +8,7 @@ const main = `<!DOCTYPE html>
   xmlns:o="urn:schemas-microsoft-com:office:office"
 >
   ${head}
-  ${body}
+  ${BBBody}
 </html>`;
 
 export default main;
