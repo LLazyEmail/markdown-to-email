@@ -16,11 +16,12 @@ const extensions = [
   //".json"
 ];
 
-const name = "newsletterLayoutsMiscPlainJS";
+const name = "newsletterLayoutsFooterPlainJS";
 
 // packages that should be treated as external dependencies, not bundled
 // e.g. ['axios']
 const external = [
+    "atherdon-newsletter-js-layouts-misc'"
     // "fs", "path", "uuid"
 ];
 

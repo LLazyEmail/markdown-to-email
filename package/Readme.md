@@ -11,3 +11,7 @@ atherdon-newsletter-js-layouts-misc
 
 
 atherdon-newsletter-js-layouts-typography
+
+atherdon-newsletter-js-layouts-body
+
+atherdon-newsletter-js-layouts-footer
