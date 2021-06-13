@@ -4,11 +4,11 @@
 // import Body from './body/index';
 
 
-import Body from 'atherdon-newsletter-js-layouts-body';
+import body from 'atherdon-newsletter-js-layouts-body';
 
 import footer from 'atherdon-newsletter-js-layouts-footer';
 
-const { logoTop, logoBottom} = Body;
+const { logoTop, logoBottom} = body;
 
 // const 
 
