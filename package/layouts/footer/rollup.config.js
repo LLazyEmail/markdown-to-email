@@ -1,6 +1,5 @@
 import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
-// import json from "rollup-plugin-json";
 import builtins from "rollup-plugin-node-builtins";
 import babel from "@rollup/plugin-babel";
 // import notify from "rollup-plugin-notify";
@@ -17,12 +16,11 @@ const extensions = [
   //".json"
 ];
 
-const name = "newsletterLayoutsBodyPlainJS";
+const name = "newsletterLayoutsMiscPlainJS";
 
 // packages that should be treated as external dependencies, not bundled
 // e.g. ['axios']
 const external = [
-    "atherdon-newsletter-js-layouts-misc"
     // "fs", "path", "uuid"
 ];
 
