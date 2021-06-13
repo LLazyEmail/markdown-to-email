@@ -1,9 +1,16 @@
 // const logoTop = require('./body/logoTop');
 // const logoBottom = require('./body/logoBottom');
 
-import Body from './body/index';
+// import Body from './body/index';
 
-const { logoTop, logoBottom, footer } = Body;
+
+import Body from 'atherdon-newsletter-js-layouts-body';
+
+import footer from 'atherdon-newsletter-js-layouts-footer';
+
+const { logoTop, logoBottom} = Body;
+
+// const 
 
 export const BBBody = `<body
 style="

@@ -1,5 +1,5 @@
-import head from '../misc/src/partials/head'
-import body from './src/body';
+import head from 'atherdon-newsletter-js-layouts-misc'
+import body from './body';
 
 const main = `<!DOCTYPE html>
 <html

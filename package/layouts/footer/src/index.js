@@ -9,7 +9,7 @@ const {
   unsubscribe,
 } = misc;
 
-export const footer = `<tr>
+export default footer = `<tr>
 <td
   valign="top"
   id="templateFooter"

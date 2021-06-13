@@ -1,4 +1,3 @@
-import { footer } from './partials/footer';
 import { headline } from './partials/headline';
 import { logoBottom } from './partials/logoBottom';
 import { logoTop } from './partials/logoTop';
@@ -7,7 +6,6 @@ import { section } from './partials/section';
 import { sponsor } from './partials/sponsor';
 
 const body = {
-  footer,
   headline,
   logoBottom,
   logoTop,
