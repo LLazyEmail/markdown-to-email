@@ -1,4 +1,4 @@
-import { config } from '../../../folder/src/config';
+import { config } from '../config';
 
 export const newsletterSponsorshipLink =
 `<div style="text-align: center;">

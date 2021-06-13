@@ -1,5 +1,5 @@
-import head from './head'
-import body from '../../../folder/src/body';
+import head from '../misc/src/partials/head'
+import body from './src/body';
 
 const main = `<!DOCTYPE html>
 <html

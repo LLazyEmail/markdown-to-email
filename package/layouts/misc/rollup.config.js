@@ -20,7 +20,9 @@ const name = "newsletterLayoutsMiscPlainJS";
 
 // packages that should be treated as external dependencies, not bundled
 // e.g. ['axios']
-const external = ["fs", "path", "uuid"];
+const external = [
+    // "fs", "path", "uuid"
+];
 
 const includePathOptions = {
   include: {},
