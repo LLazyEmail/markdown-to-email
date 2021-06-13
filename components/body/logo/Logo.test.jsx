@@ -14,32 +14,32 @@ afterEach(() => {
 
 describe('Logo/index component', () => {
 
-    it('Checking <a> href attributes', () => {
-        const wrapper = shallow(<Logo />);
-        const a = wrapper.find('a');
-        expect(a.props()).toHaveProperty('href', 'http://www.hackernoon.com');
-        expect(a.props()).toHaveProperty('target', '_blank');
-    });
+  it('Checking <a> href attributes', () => {
+    const wrapper = shallow(<Logo />);
+    const a = wrapper.find('a');
+    expect(a.props()).toHaveProperty('href', 'http://www.hackernoon.com');
+    expect(a.props()).toHaveProperty('target', '_blank');
+  });
 
-    it('Checking <img> element', () => {
-        const wrapper = shallow(<Logo />);
-        const img = wrapper.find('img');
-        expect(img.props()).toHaveProperty('src', 'https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/brand/hackernoon.png');
-    });
+  it('Checking <img> element', () => {
+    const wrapper = shallow(<Logo />);
+    const img = wrapper.find('img');
+    expect(img.props()).toHaveProperty('src', 'https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/brand/hackernoon.png');
+  });
 
-    test('renders without crashing', () => {
-        const div = document.createElement('div');
-        ReactDOM.render(<Logo />, div);
-        ReactDOM.unmountComponentAtNode(div);
-    });
+  test('renders without crashing', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Logo />, div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
 
-    test('renders correctly', () => {
-        const tree = create(<Logo><h1>Some text</h1></Logo>);
-        expect(tree.toJSON()).toMatchSnapshot();
-    });
+  test('renders correctly', () => {
+    const tree = create(<Logo><h1>Some text</h1></Logo>);
+    expect(tree.toJSON()).toMatchSnapshot();
+  });
 
-    test('renders correctly', () => {
-        const tree = create(<Logo />);
-        expect(tree.toJSON()).toMatchSnapshot();
-    });
+  test('renders correctly', () => {
+    const tree = create(<Logo />);
+    expect(tree.toJSON()).toMatchSnapshot();
+  });
 });

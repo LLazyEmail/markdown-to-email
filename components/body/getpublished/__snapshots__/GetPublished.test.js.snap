@@ -41,7 +41,7 @@ exports[`GetPublished/index component renders correctly 1`] = `
       </a>
        Everything you've ever wanted to know about how to get published on Hacker Noon - 
       <a
-        href="http://publish.hackernoon.com/"
+        href="https://publish.hackernoon.com/"
         style={
           Object {
             "WebkitTextSizeAdjust": "100%",
