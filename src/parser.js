@@ -3,7 +3,7 @@ const { forEach } = require('lodash');
 const layouts = require('atherdon-newsletter-js-layouts');
 const reactLayouts = require('atherdon-newsletter-react');
 
-
+const tempFullTemplate = require('./temp-full-template');
 
 const {
   write,
@@ -27,7 +27,8 @@ const {
 
 switch (process.env.PARSE) {
   case 'full':
-    generateFullTemplate();
+    // generateFullTemplate();
+    generateFullTemplate2();
     break;
   case 'reactContentOnly':
     // same as default, but with react components instead.
@@ -41,23 +42,40 @@ switch (process.env.PARSE) {
     break;
 }
 
+function generateFullTemplate2() {
+  const parsedContent = parseFullTHing({ source: FULL_SOURCE });
+
+  checkWarnings(parsedContent.warnings);
+
+  const fileName = `full-template2${Date.now()}.html`;
+
+  checkHtml(parsedContent.content);
+
+  const fullContent = tempFullTemplate(parsedContent.content);
+  write(fileName, fullContent);
+
+  const message = 'The full-template has been parsed successfully2';
+
+  console.log(chalk.green.bold(message));
+}
+
 function generateFullTemplate() {
   const parsedContent = parseFullTHing({ source: FULL_SOURCE });
-  
+
   checkWarnings(parsedContent.warnings);
 
   const fileName = `full-template${Date.now()}.html`;
 
   checkHtml(parsedContent.content);
-//   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
-    // console.log(parsedContent);
+  //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
+  // console.log(parsedContent);
 
-    // throw new Error("my error message");
+  // throw new Error("my error message");
 
 
   const fullContent = layouts.fullTemplate(parsedContent.content);
 
-    throw new Error("my error message");
+  // throw new Error("my error message");
 
 
   write(fileName, fullContent);
@@ -97,7 +115,7 @@ function generateReactFullTemplate() {
 
 // this method is depricated.
 function generateContentOnly() {
-    
+
   const parsedContent = parse(CONTENT_SOURCE);
   checkWarnings(parsedContent.warnings);
 
