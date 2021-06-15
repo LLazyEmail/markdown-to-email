@@ -1,5 +1,3 @@
-import { ctaList } from './ctaList';
-
 export const sponsor = `<table
 border="0"
 cellpadding="0"
@@ -15,11 +13,6 @@ style="
 "
 >
 <tbody>
-  <tr>
-    <td>
-      ${ctaList}
-    </td>
-  </tr>
   <tr>
     <td
       align="center"
