@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "atherdon-newsletter-js-layouts-body": "^1.1.2",
-    "atherdon-newsletter-js-layouts-footer": "^1.1.3",
+    "atherdon-newsletter-js-layouts-footer": "^1.1.5",
     "atherdon-newsletter-js-layouts-misc": "^1.1.3",
     "atherdon-newsletter-js-layouts-typography": "^1.1.1"
   }
