@@ -17,7 +17,7 @@ describe('Logo/index component', () => {
   it('Checking <a> href attributes', () => {
     const wrapper = shallow(<Logo />);
     const a = wrapper.find('a');
-    expect(a.props()).toHaveProperty('href', 'http://www.hackernoon.com');
+    expect(a.props()).toHaveProperty('href', 'https://www.hackernoon.com');
     expect(a.props()).toHaveProperty('target', '_blank');
   });
 
@@ -25,6 +25,8 @@ describe('Logo/index component', () => {
     const wrapper = shallow(<Logo />);
     const img = wrapper.find('img');
     expect(img.props()).toHaveProperty('src', 'https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/brand/hackernoon.png');
+    expect(img.props()).toHaveProperty('align', 'center');
+    expect(img.props()).toHaveProperty('width', 600);
   });
 
   test('renders without crashing', () => {

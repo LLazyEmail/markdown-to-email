@@ -72,7 +72,7 @@ exports[`Logo/index component renders correctly 1`] = `
               >
                 <a
                   className=""
-                  href="http://www.hackernoon.com"
+                  href="https://www.hackernoon.com"
                   style={
                     Object {
                       "WebkitTextSizeAdjust": "100%",
@@ -186,7 +186,7 @@ exports[`Logo/index component renders correctly 2`] = `
               >
                 <a
                   className=""
-                  href="http://www.hackernoon.com"
+                  href="https://www.hackernoon.com"
                   style={
                     Object {
                       "WebkitTextSizeAdjust": "100%",
