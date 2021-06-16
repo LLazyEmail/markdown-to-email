@@ -157,7 +157,7 @@ exports[`First/First component renders correctly 1`] = `
                                 >
                                   <a
                                     className=""
-                                    href="http://www.hackernoon.com"
+                                    href="https://www.hackernoon.com"
                                     style={
                                       Object {
                                         "WebkitTextSizeAdjust": "100%",
@@ -2195,7 +2195,7 @@ exports[`First/First component renders correctly 1`] = `
                                 >
                                   <a
                                     className=""
-                                    href="http://www.hackernoon.com"
+                                    href="https://www.hackernoon.com"
                                     style={
                                       Object {
                                         "WebkitTextSizeAdjust": "100%",
