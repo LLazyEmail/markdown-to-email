@@ -22,7 +22,7 @@ const config = {
         diagrams, and summary statistics. As it often happens, not all data comes out of the database clean,
         therefore cleansing it is essential
         to efficiently analyze it.`,
-  memImageLink2: 'https://creative-images-upld.s3.amazonaws.com/creative/newsletters/memes/2021/03-March/15.03/image2.gif',
+  memImageLink2: 'https://media.giphy.com/media/4bDXKRN2arfPy/giphy.gif',
   paragraphFourth: 'Without further ado, let us break down the principles that allow you keep your data nice and clean.',
   heading2: 'Tidy Data Principles',
   heading3: '1. Each row is an observational unit.',
