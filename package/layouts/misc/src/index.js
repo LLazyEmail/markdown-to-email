@@ -13,7 +13,8 @@ const misc = {
   headStyles,
   newsletterSponsorshipLink,
   unsubscribe,
+  head
 };
 
-export const head;
+// export const head;
 export default misc;
