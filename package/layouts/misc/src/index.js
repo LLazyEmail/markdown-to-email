@@ -4,6 +4,7 @@ import { fonts } from './partials/fonts';
 import { headStyles } from './partials/head-styles';
 import { newsletterSponsorshipLink } from './partials/newsletter-sponsorship-link';
 import { unsubscribe } from './partials/unsubscribe';
+import head from './partials/head';
 
 const misc = {
   address,
@@ -14,4 +15,5 @@ const misc = {
   unsubscribe,
 };
 
+export const head;
 export default misc;
