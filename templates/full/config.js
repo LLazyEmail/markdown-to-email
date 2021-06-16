@@ -1,20 +1,20 @@
 const config = {
   sponsor: {
-    imageUrl: 'https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/thematic/2021/03-March/15.03/bugherd_logo.png',
-    link: 'https://bit.ly/30AWyC4',
-    text: 'Ship the data importer you always dreamed of',
+    imageUrl: 'https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/thematic/2021/04-April/CB_Logo_Stacked_500x500.jpg',
+    link: 'https://bit.ly/3oP3IgZ',
+    text: 'Virtual NoSQL event for Java Database Developers. REGISTER NOW!',
   },
-  mainTitle: 'Can We Make Data Tidy?',
+  mainTitle: 'Live on the Edge',
   paragraphFirst: `Imagine: You are going to sit down with a newly-fetched data set,
     excited about the insights it will bring you and then you find out it is no use.
     If you’ve been there, then you know for sure what an untidy dataset is.`,
-  memImageLink: 'https://creative-images-upld.s3.amazonaws.com/creative/newsletters/memes/2021/03-March/15.03/image1.gif',
+  memImageLink: 'https://media.giphy.com/media/Tfj2jvOFJEFHKj9p9o/giphy.gif',
   paragraphSecond: `A statistician from New Zealand once said: Tidy datasets are all alike, but every messy dataset
     is messy in its own way. Indeed, as data may come in various forms and shapes, sometimes we are
     inundated with it. As a result, our data science team becomes shortsighted and oops..
     disillusioned by mountains of unworkable data. The only way data specialists can facilitate analysis is
     by keeping data clean and organized.`,
-  heading: 'What is tidy data?',
+  heading: 'So, who’s on the Edge?',
   paragraphThird: `Essentially, tidy data is a term coined by Hadley Wickham in his Tidy Data paper (remember that
         statistician from NZ?).
         He defined tidy data as data that is neatly organized and all set for analysis. This way of organizing
@@ -22,7 +22,7 @@ const config = {
         diagrams, and summary statistics. As it often happens, not all data comes out of the database clean,
         therefore cleansing it is essential
         to efficiently analyze it.`,
-  memImageLink2: 'https://creative-images-upld.s3.amazonaws.com/creative/newsletters/memes/2021/03-March/15.03/image2.gif',
+  memImageLink2: 'https://media.giphy.com/media/4bDXKRN2arfPy/giphy.gif',
   paragraphFourth: 'Without further ado, let us break down the principles that allow you keep your data nice and clean.',
   heading2: 'Tidy Data Principles',
   heading3: '1. Each row is an observational unit.',
