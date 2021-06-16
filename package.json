@@ -33,7 +33,7 @@
   "dependencies": {
     "atherdon-callbacks": "^1.2.3",
     "atherdon-newsletter-constants": "^1.0.9",
-    "atherdon-newsletter-js-layouts": "^1.3.0",
+    "atherdon-newsletter-js-layouts": "^1.3.2",
     "atherdon-newsletter-react": "^1.0.11",
     "chalk": "^4.1.1",
     "cross-env": "^7.0.3",
