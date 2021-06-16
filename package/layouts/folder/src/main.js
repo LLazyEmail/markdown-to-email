@@ -1,4 +1,4 @@
-import head from 'atherdon-newsletter-js-layouts-misc'
+import misc from 'atherdon-newsletter-js-layouts-misc'
 import { BBBody } from './body';
 
 const main = `<!DOCTYPE html>
@@ -7,7 +7,7 @@ const main = `<!DOCTYPE html>
   xmlns:v="urn:schemas-microsoft-com:vml"
   xmlns:o="urn:schemas-microsoft-com:office:office"
 >
-  ${head}
+  ${misc.head}
   ${BBBody}
 </html>`;
 
