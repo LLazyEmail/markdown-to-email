@@ -1,6 +1,6 @@
 {
   "name": "atherdon-newsletter-js-layouts",
-  "version": "1.3.0",
+  "version": "1.3.2",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -45,9 +45,9 @@
     "access": "public"
   },
   "dependencies": {
-    "atherdon-newsletter-js-layouts-body": "^1.1.2",
+    "atherdon-newsletter-js-layouts-body": "^1.1.3",
     "atherdon-newsletter-js-layouts-footer": "^1.1.5",
-    "atherdon-newsletter-js-layouts-misc": "^1.1.3",
+    "atherdon-newsletter-js-layouts-misc": "^1.1.4",
     "atherdon-newsletter-js-layouts-typography": "^1.1.1"
   }
 }
