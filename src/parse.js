@@ -1,6 +1,7 @@
 const { readSourceFile, checkErrors } = require('./utils');
 const { replaceMarkdown, replaceMarkdownPreviewText } = require('./helpers');
-const { Replacer } = require("atherdon-callbacks")
+const { Replacer } = require("atherdon-callbacks");
+const { REGEXP_PREVIEW_TEXT } = require('atherdon-newsletter-constants');
 
 // @todo update this method. I'm sure it can be improved.
 function parse(source) {
@@ -23,6 +24,7 @@ function parse(source) {
   Replacer.replaceMDBindedPreviewText =
     replaceMarkdownPreviewText.bind(state);
 
+  Replacer.replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
   Replacer.comments();
 
   Replacer.strong();
