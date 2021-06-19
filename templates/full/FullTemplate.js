@@ -5,13 +5,13 @@ import BodyPrototype from './Body/BodyPrototype';
 import Divider from 'components/body/divider';
 
 import HOC from './HOC';
-// import Footer from './Footer';
+import Footer from './Footer';
 import config from './config';
 import { styles } from './styles';
 
 const FullTemplate = ({ header }) => (
 
-     <HOC styles={{ ...styles }}>
+  <HOC styles={{ ...styles }}>
     <tbody>
       <tr>
         <td valign="top" id="templatePreheader" style={styles.templatePreheader}>
@@ -30,13 +30,13 @@ const FullTemplate = ({ header }) => (
               config={config}
             />
           </Divider>
-          {/* <Logo /> */}
+          <Logo />
         </td>
       </tr>
     </tbody>
-    {/* <Footer /> */}
-  </HOC>  
-   
+    <Footer />
+  </HOC>
+
 );
 
 export default FullTemplate;

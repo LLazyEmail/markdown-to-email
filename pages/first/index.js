@@ -1,9 +1,5 @@
 import First from 'templates/first';
 
-export default function Home() {
-  return (
-    <>
-      <First />
-    </>
-  );
-}
+const Home = () => <First />;
+
+export default Home;
