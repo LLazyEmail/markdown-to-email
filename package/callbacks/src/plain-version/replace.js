@@ -13,7 +13,8 @@ import {
   q,
   code,
   hr,
-  empty
+  empty,
+  previewText
 } from './callbacks-simple';
 
 import {
@@ -36,8 +37,12 @@ class Replace {
   constructor(constants) {
     this._constants = constants;
 
-    this.replaceMDBinded = () => {};
-    this.replaceMDBindedPreviewText = () => {};
+    this.replaceMDBinded = () => { };
+    this.replaceMDBindedPreviewText = () => { };
+
+    this.previewText = function () {
+      this.replaceMDBinded(this._constants.REGEXP_PREVIEW_TEXT, previewText);
+    };
 
     this.comments = () => {
       this.replaceMDBinded(this._constants.REGEXP_HTML_COMMENTS, empty);
