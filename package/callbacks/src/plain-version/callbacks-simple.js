@@ -8,6 +8,15 @@ const hr = `${newLine}<hr />`;
 const empty = '';
 // const strong = "<strong>$2$3</strong>";
 
+function previewText(text, content) {
+  const config = {
+    content,
+  };
+
+  this.errors.previewText = true;
+  return replaceHTMLWrapper('previewText', config, 'body');
+}
+
 function strong(text, doubleAsterix, content, asterix) {
   const config = {
     content: `${content + asterix}`,
@@ -69,5 +78,6 @@ export {
   q,
   code,
   hr,
-  empty
+  empty,
+  previewText
 };
