@@ -56,7 +56,7 @@ function parse(source) {
   //i'm adding it only because error warning didnt return red stuff
   checkErrors(state.errors);
 
-  console.log(state)
+  // console.log(state)
 
   return state;
 }
