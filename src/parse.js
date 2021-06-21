@@ -24,6 +24,7 @@ function parse(source) {
   Replacer.replaceMDBindedPreviewText =
     replaceMarkdownPreviewText.bind(state);
 
+  Replacer.previewText();
   Replacer.replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
   Replacer.comments();
 
@@ -55,7 +56,7 @@ function parse(source) {
   //i'm adding it only because error warning didnt return red stuff
   checkErrors(state.errors);
 
-  // console.log( state )
+  // console.log(state)
 
   return state;
 }

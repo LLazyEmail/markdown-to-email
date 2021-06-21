@@ -3,7 +3,7 @@ const { forEach } = require('lodash');
 const layouts = require('atherdon-newsletter-js-layouts');
 const reactLayouts = require('atherdon-newsletter-react');
 
-const tempFullTemplate = require('./temp-full-template');
+const { tempFullTemplate, fullTemplate } = require('./temp-full-template');
 
 const {
   write,
@@ -44,14 +44,15 @@ switch (process.env.PARSE) {
 
 function generateFullTemplate2() {
   const parsedContent = parseFullTHing({ source: FULL_SOURCE });
+  const { content, warnings, previewText } = parsedContent;
 
-  checkWarnings(parsedContent.warnings);
+  checkWarnings(warnings);
 
-  const fileName = `full-template2${Date.now()}.html`;
+  const fileName = `full-template-2-${Date.now()}.html`;
 
-  checkHtml(parsedContent.content);
+  checkHtml(content);
 
-  const fullContent = tempFullTemplate(parsedContent.content);
+  const fullContent = fullTemplate(content, previewText);
   write(fileName, fullContent);
 
   const message = 'The full-template has been parsed successfully2';
