@@ -1,0 +1,3166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BodyPrototype component renders correctly 1`] = `
+Array [
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnImageCardRightContentOuter"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+      }
+    }
+    width="100%"
+  >
+    <tbody>
+      <tr>
+        <td
+          align="center"
+          className="mcnImageCardRightContentInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": 0,
+            }
+          }
+          valign="top"
+        >
+          <table
+            align="left"
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnImageCardRightImageContentContainer"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width={200}
+          >
+            <tbody>
+              <tr>
+                <td
+                  align="center"
+                  className="mcnImageCardRightImageContent"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                      "paddingBottom": "18px",
+                      "paddingLeft": "18px",
+                      "paddingRight": 0,
+                      "paddingTop": "18px",
+                    }
+                  }
+                  valign="top"
+                >
+                  <a
+                    className=""
+                    data-testid="sponsorHrefTest"
+                    href="https://bit.ly/30AWyC4"
+                    style={
+                      Object {
+                        "WebkitTextSizeAdjust": "100%",
+                        "msTextSizeAdjust": "100%",
+                        "msoLineHeightRule": "exactly",
+                      }
+                    }
+                    target="_blank"
+                    title=""
+                  >
+                    <img
+                      alt=""
+                      className="mcnImage"
+                      data-testid="sponsorSrcTest"
+                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/thematic/2021/04-April/CB_Logo_Stacked_500x500.jpg"
+                      style={
+                        Object {
+                          "border": 0,
+                          "borderRadius": "0%",
+                          "height": "auto",
+                          "maxWidth": "150px",
+                          "msInterpolationMode": "bicubic",
+                          "outline": "none",
+                          "textDecoration": "none",
+                          "verticalAlign": "bottom",
+                        }
+                      }
+                      width={150}
+                    />
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            align="right"
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnImageCardRightTextContentContainer"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width={346}
+          >
+            <tbody>
+              <tr>
+                <td
+                  className="mcnTextContent"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "color": "#f2f2f2",
+                      "fontFamily": "Helvetica",
+                      "fontSize": "14px",
+                      "fontWeight": "normal",
+                      "lineHeight": "150%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                      "paddingBottom": "18px",
+                      "paddingRight": "18px",
+                      "paddingTop": "18px",
+                      "textAlign": "center",
+                      "wordBreak": "break-word",
+                    }
+                  }
+                  valign="top"
+                >
+                  <h1
+                    className="mc-toc-title"
+                    style={
+                      Object {
+                        "color": "#111111",
+                        "display": "block",
+                        "fontFamily": "\\"Merriweather Sans\\", \\"Helvetica Neue\\",Helvetica, Arial, sans-serif",
+                        "fontSize": "26px",
+                        "fontStyle": "normal",
+                        "fontWeight": "bold",
+                        "letterSpacing": "normal",
+                        "lineHeight": "125%",
+                        "margin": 0,
+                        "padding": 0,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    <br />
+                    <a
+                      href="https://bit.ly/3oP3IgZ"
+                      style={
+                        Object {
+                          "WebkitTextSizeAdjust": "100%",
+                          "color": "#111111",
+                          "fontWeight": "bold",
+                          "msTextSizeAdjust": "100%",
+                          "msoLineHeightRule": "exactly",
+                          "textDecoration": "underline",
+                        }
+                      }
+                    >
+                      <strong
+                        data-testid="sponsorChildrenTest"
+                      >
+                        Virtual NoSQL event for Java Database Developers. REGISTER NOW!
+                      </strong>
+                    </a>
+                  </h1>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <h1
+    className="mc-toc-title"
+    dir="ltr"
+    style={
+      Object {
+        "color": "#111111",
+        "display": "block",
+        "fontFamily": "\\"Merriweather Sans\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "26px",
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "letterSpacing": "normal",
+        "lineHeight": "125%",
+        "margin": 0,
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="mainTitleChildrenTest"
+        style={
+          Object {
+            "fontSize": "30px",
+          }
+        }
+      >
+        Live on the Edge
+      </span>
+    </span>
+  </h1>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="paragraphChildrenTest"
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        'Edge' is a buzzword.
+  You’ll probably see it flashing like a neon sign in every corner of the Internet.
+  But this time, its irritating omnipresence is justified, because we are discussing the value of 
+         
+        <a
+          data-testid="linkPropsTest"
+          href="https://hackernoon.com/how-iot-and-edge-computing-influence-various-industries-kp193442"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          <strong
+            data-testid="strongChildrenTest"
+            style={
+              Object {
+                "fontWeight": "bolder",
+              }
+            }
+          >
+            edge computing
+          </strong>
+        </a>
+        .
+        This new kid on the block has already gained the perception of being the cause of faster, cheaper, and more reliable
+         
+        <a
+          data-testid="linkPropsTest"
+          href="https://hackernoon.com/ingestion-and-processing-of-data-for-big-data-and-iot-solutions-659431e37b52"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          <strong
+            data-testid="strongChildrenTest"
+            style={
+              Object {
+                "fontWeight": "bolder",
+              }
+            }
+          >
+            data processing.
+          </strong>
+        </a>
+      </span>
+    </span>
+  </div>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <p
+    dir="ltr"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "color": "#111111",
+        "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "lineHeight": "150%",
+        "margin": "10px 0",
+        "msTextSizeAdjust": "100%",
+        "msoLineHeightRule": "exactly",
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "georgia,times,times new roman,serif",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "fontSize": "17px",
+          }
+        }
+      >
+        <a
+          href="#"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          <img
+            alt="GIF"
+            data-testid="imagePropsTest"
+            src="https://media.giphy.com/media/Tfj2jvOFJEFHKj9p9o/giphy.gif"
+            style={
+              Object {
+                "border": "0px initial",
+                "height": "134px",
+                "margin": "0px",
+                "msInterpolationMode": "bicubic",
+                "outline": "none",
+                "textDecoration": "none",
+                "width": "220px",
+              }
+            }
+          />
+        </a>
+      </span>
+    </span>
+  </p>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <h3
+    className="mc-toc-title"
+    dir="ltr"
+    style={
+      Object {
+        "color": "#111111",
+        "display": "block",
+        "fontFamily": "\\"Merriweather Sans\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "letterSpacing": "normal",
+        "lineHeight": "125%",
+        "margin": 0,
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="headingChildrenTest"
+        style={
+          Object {
+            "fontSize": "18px",
+          }
+        }
+      >
+        <strong
+          data-testid="strongChildrenTest"
+          style={
+            Object {
+              "fontWeight": "bolder",
+            }
+          }
+        >
+          So, who’s on the Edge?
+        </strong>
+      </span>
+    </span>
+  </h3>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="paragraphChildrenTest"
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        It seems like only yesterday cloud computing entered the mainstream. Even before we consumed YouTube videos, podcasts, and articles on that topic, a new player had stepped onto the court.
+      </span>
+    </span>
+  </div>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <p
+    dir="ltr"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "color": "#111111",
+        "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "lineHeight": "150%",
+        "margin": "10px 0",
+        "msTextSizeAdjust": "100%",
+        "msoLineHeightRule": "exactly",
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "georgia,times,times new roman,serif",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "fontSize": "17px",
+          }
+        }
+      >
+        <a
+          href="#"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          <img
+            data-testid="imagePropsTest"
+            src="https://media.giphy.com/media/4bDXKRN2arfPy/giphy.gif"
+            style={
+              Object {
+                "border": "0px initial",
+                "height": "134px",
+                "margin": "0px",
+                "msInterpolationMode": "bicubic",
+                "outline": "none",
+                "textDecoration": "none",
+                "width": "220px",
+              }
+            }
+          />
+        </a>
+      </span>
+    </span>
+  </p>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="paragraphChildrenTest"
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Edge computing may appear avant-garde or revolutionary, but in fact, you must have seen it at least once in your life. Its principle is seen across modern devices and point-to-point computing technologies, including smartphones, tablets, sensors, robotics, and automated lines.
+        <table
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnDividerBlock"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderCollapse": "collapse",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoTableLspace": "0pt",
+              "msoTableRspace": "0pt",
+              "tableLayout": "fixed !important",
+            }
+          }
+        >
+          <tbody
+            className="mcnDividerBlockOuter"
+          >
+            <tr>
+              <td
+                className="mcnDividerBlockInner"
+                style={
+                  Object {
+                    "WebkitTextSizeAdjust": "100%",
+                    "minWidth": "100%",
+                    "msTextSizeAdjust": "100%",
+                    "msoLineHeightRule": "exactly",
+                    "padding": "12px 18px",
+                  }
+                }
+              >
+                <table
+                  border={0}
+                  cellPadding={0}
+                  cellSpacing={0}
+                  className="mcnDividerContent"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "borderCollapse": "collapse",
+                      "borderTop": "2px none #eaeaea",
+                      "minWidth": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoTableLspace": "0pt",
+                      "msoTableRspace": "0pt",
+                    }
+                  }
+                  width="100%"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        data-testid="dividerChildrenTest"
+                        style={
+                          Object {
+                            "WebkitTextSizeAdjust": "100%",
+                            "msTextSizeAdjust": "100%",
+                            "msoLineHeightRule": "exactly",
+                          }
+                        }
+                      />
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        In simple words, edge computing increases the efficiency of a distributed computing framework. Its primary goal is to bring data and computing closer to the applications that consume it - all that thanks to co-located servers.
+      </span>
+    </span>
+  </div>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <h3
+    className="mc-toc-title"
+    dir="ltr"
+    style={
+      Object {
+        "color": "#111111",
+        "display": "block",
+        "fontFamily": "\\"Merriweather Sans\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "letterSpacing": "normal",
+        "lineHeight": "125%",
+        "margin": 0,
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="headingChildrenTest"
+        style={
+          Object {
+            "fontSize": "18px",
+          }
+        }
+      >
+        Why Step Closer to the Edge?
+      </span>
+    </span>
+  </h3>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="paragraphChildrenTest"
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+         Data is the lifeblood of any application and any business venture. Sometimes fast data processing is a luxury. Other times, fast data processing is a factor in decision-making for businesses and customers alike.
+        <table
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnDividerBlock"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderCollapse": "collapse",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoTableLspace": "0pt",
+              "msoTableRspace": "0pt",
+              "tableLayout": "fixed !important",
+            }
+          }
+        >
+          <tbody
+            className="mcnDividerBlockOuter"
+          >
+            <tr>
+              <td
+                className="mcnDividerBlockInner"
+                style={
+                  Object {
+                    "WebkitTextSizeAdjust": "100%",
+                    "minWidth": "100%",
+                    "msTextSizeAdjust": "100%",
+                    "msoLineHeightRule": "exactly",
+                    "padding": "12px 18px",
+                  }
+                }
+              >
+                <table
+                  border={0}
+                  cellPadding={0}
+                  cellSpacing={0}
+                  className="mcnDividerContent"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "borderCollapse": "collapse",
+                      "borderTop": "2px none #eaeaea",
+                      "minWidth": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoTableLspace": "0pt",
+                      "msoTableRspace": "0pt",
+                    }
+                  }
+                  width="100%"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        data-testid="dividerChildrenTest"
+                        style={
+                          Object {
+                            "WebkitTextSizeAdjust": "100%",
+                            "msTextSizeAdjust": "100%",
+                            "msoLineHeightRule": "exactly",
+                          }
+                        }
+                      />
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        By relocating data processing functions closer to the network edge, you’ll get your share of key-value points. In most cases, these refer to supreme reliability and resilience.
+        <table
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnDividerBlock"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderCollapse": "collapse",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoTableLspace": "0pt",
+              "msoTableRspace": "0pt",
+              "tableLayout": "fixed !important",
+            }
+          }
+        >
+          <tbody
+            className="mcnDividerBlockOuter"
+          >
+            <tr>
+              <td
+                className="mcnDividerBlockInner"
+                style={
+                  Object {
+                    "WebkitTextSizeAdjust": "100%",
+                    "minWidth": "100%",
+                    "msTextSizeAdjust": "100%",
+                    "msoLineHeightRule": "exactly",
+                    "padding": "12px 18px",
+                  }
+                }
+              >
+                <table
+                  border={0}
+                  cellPadding={0}
+                  cellSpacing={0}
+                  className="mcnDividerContent"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "borderCollapse": "collapse",
+                      "borderTop": "2px none #eaeaea",
+                      "minWidth": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoTableLspace": "0pt",
+                      "msoTableRspace": "0pt",
+                    }
+                  }
+                  width="100%"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        data-testid="dividerChildrenTest"
+                        style={
+                          Object {
+                            "WebkitTextSizeAdjust": "100%",
+                            "msTextSizeAdjust": "100%",
+                            "msoLineHeightRule": "exactly",
+                          }
+                        }
+                      />
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        It also means that you can increase the guarantees of business uptime by providing uninterrupted access to data, regardless of the Internet.
+  Furthermore, being able to withstand those inevitable connection issues can help you ensure better application performance and provide a better user experience.
+      </span>
+    </span>
+  </div>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <h3
+    className="mc-toc-title"
+    dir="ltr"
+    style={
+      Object {
+        "color": "#111111",
+        "display": "block",
+        "fontFamily": "\\"Merriweather Sans\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "letterSpacing": "normal",
+        "lineHeight": "125%",
+        "margin": 0,
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="headingChildrenTest"
+        style={
+          Object {
+            "fontSize": "18px",
+          }
+        }
+      >
+        The Key is Connectivity
+      </span>
+    </span>
+  </h3>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="paragraphChildrenTest"
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Remember the famous 2-hour register outage at Target in 2019? The downtime of their system resulted in a $50 million hit and customer backlash - all because of the register glitch.
+        <table
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnDividerBlock"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderCollapse": "collapse",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoTableLspace": "0pt",
+              "msoTableRspace": "0pt",
+              "tableLayout": "fixed !important",
+            }
+          }
+        >
+          <tbody
+            className="mcnDividerBlockOuter"
+          >
+            <tr>
+              <td
+                className="mcnDividerBlockInner"
+                style={
+                  Object {
+                    "WebkitTextSizeAdjust": "100%",
+                    "minWidth": "100%",
+                    "msTextSizeAdjust": "100%",
+                    "msoLineHeightRule": "exactly",
+                    "padding": "12px 18px",
+                  }
+                }
+              >
+                <table
+                  border={0}
+                  cellPadding={0}
+                  cellSpacing={0}
+                  className="mcnDividerContent"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "borderCollapse": "collapse",
+                      "borderTop": "2px none #eaeaea",
+                      "minWidth": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoTableLspace": "0pt",
+                      "msoTableRspace": "0pt",
+                    }
+                  }
+                  width="100%"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        data-testid="dividerChildrenTest"
+                        style={
+                          Object {
+                            "WebkitTextSizeAdjust": "100%",
+                            "msTextSizeAdjust": "100%",
+                            "msoLineHeightRule": "exactly",
+                          }
+                        }
+                      />
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        If it were present, edge computing may have helped to avoid this situation, due to having embedded storage directly on applicable devices. It can also move data prep and processing storage closer to the applications thus, leveraging tiered edge data centers.
+        <table
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnDividerBlock"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderCollapse": "collapse",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoTableLspace": "0pt",
+              "msoTableRspace": "0pt",
+              "tableLayout": "fixed !important",
+            }
+          }
+        >
+          <tbody
+            className="mcnDividerBlockOuter"
+          >
+            <tr>
+              <td
+                className="mcnDividerBlockInner"
+                style={
+                  Object {
+                    "WebkitTextSizeAdjust": "100%",
+                    "minWidth": "100%",
+                    "msTextSizeAdjust": "100%",
+                    "msoLineHeightRule": "exactly",
+                    "padding": "12px 18px",
+                  }
+                }
+              >
+                <table
+                  border={0}
+                  cellPadding={0}
+                  cellSpacing={0}
+                  className="mcnDividerContent"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "borderCollapse": "collapse",
+                      "borderTop": "2px none #eaeaea",
+                      "minWidth": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoTableLspace": "0pt",
+                      "msoTableRspace": "0pt",
+                    }
+                  }
+                  width="100%"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        data-testid="dividerChildrenTest"
+                        style={
+                          Object {
+                            "WebkitTextSizeAdjust": "100%",
+                            "msTextSizeAdjust": "100%",
+                            "msoLineHeightRule": "exactly",
+                          }
+                        }
+                      />
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        Tiering is what insulates applications from central and regional data center outages. With each tier—leveraging successively— there becomes more local connectivity. It synchronizes data within and across the tiers, or as conductivity permits.
+        <table
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnDividerBlock"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderCollapse": "collapse",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoTableLspace": "0pt",
+              "msoTableRspace": "0pt",
+              "tableLayout": "fixed !important",
+            }
+          }
+        >
+          <tbody
+            className="mcnDividerBlockOuter"
+          >
+            <tr>
+              <td
+                className="mcnDividerBlockInner"
+                style={
+                  Object {
+                    "WebkitTextSizeAdjust": "100%",
+                    "minWidth": "100%",
+                    "msTextSizeAdjust": "100%",
+                    "msoLineHeightRule": "exactly",
+                    "padding": "12px 18px",
+                  }
+                }
+              >
+                <table
+                  border={0}
+                  cellPadding={0}
+                  cellSpacing={0}
+                  className="mcnDividerContent"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "borderCollapse": "collapse",
+                      "borderTop": "2px none #eaeaea",
+                      "minWidth": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoTableLspace": "0pt",
+                      "msoTableRspace": "0pt",
+                    }
+                  }
+                  width="100%"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        data-testid="dividerChildrenTest"
+                        style={
+                          Object {
+                            "WebkitTextSizeAdjust": "100%",
+                            "msTextSizeAdjust": "100%",
+                            "msoLineHeightRule": "exactly",
+                          }
+                        }
+                      />
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        Imagine if all of the stores at Target had a micro data center running in each store. They could have easily avoided the complete shutdown and continued to process certain transactions despite the main data center outage.
+      </span>
+    </span>
+  </div>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <h3
+    className="mc-toc-title"
+    dir="ltr"
+    style={
+      Object {
+        "color": "#111111",
+        "display": "block",
+        "fontFamily": "\\"Merriweather Sans\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "letterSpacing": "normal",
+        "lineHeight": "125%",
+        "margin": 0,
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="headingChildrenTest"
+        style={
+          Object {
+            "fontSize": "18px",
+          }
+        }
+      >
+        The Next Big Thing?
+      </span>
+    </span>
+  </h3>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="paragraphChildrenTest"
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Often touted as the ‘third act of the Internet,’ edge computing is also being hailed as a “gold rush” break for fledgling and existing ecosystem enthusiasts. The speed and flexibility afforded by its architecture to managing data creates an exciting range of possibilities for companies.
+        <table
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnDividerBlock"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderCollapse": "collapse",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoTableLspace": "0pt",
+              "msoTableRspace": "0pt",
+              "tableLayout": "fixed !important",
+            }
+          }
+        >
+          <tbody
+            className="mcnDividerBlockOuter"
+          >
+            <tr>
+              <td
+                className="mcnDividerBlockInner"
+                style={
+                  Object {
+                    "WebkitTextSizeAdjust": "100%",
+                    "minWidth": "100%",
+                    "msTextSizeAdjust": "100%",
+                    "msoLineHeightRule": "exactly",
+                    "padding": "12px 18px",
+                  }
+                }
+              >
+                <table
+                  border={0}
+                  cellPadding={0}
+                  cellSpacing={0}
+                  className="mcnDividerContent"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "borderCollapse": "collapse",
+                      "borderTop": "2px none #eaeaea",
+                      "minWidth": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoTableLspace": "0pt",
+                      "msoTableRspace": "0pt",
+                    }
+                  }
+                  width="100%"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        data-testid="dividerChildrenTest"
+                        style={
+                          Object {
+                            "WebkitTextSizeAdjust": "100%",
+                            "msTextSizeAdjust": "100%",
+                            "msoLineHeightRule": "exactly",
+                          }
+                        }
+                      />
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        Implementing it can put enterprises on the cutting edge. Moreover, implementing the right choice of the database can drive down the costs of being on the cutting edge.
+      </span>
+    </span>
+  </div>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <p
+    dir="ltr"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "color": "#111111",
+        "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "lineHeight": "150%",
+        "margin": "10px 0",
+        "msTextSizeAdjust": "100%",
+        "msoLineHeightRule": "exactly",
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "georgia,times,times new roman,serif",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "fontSize": "17px",
+          }
+        }
+      >
+        <a
+          href="#"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          <img
+            data-testid="imagePropsTest"
+            src="https://media.giphy.com/media/4bDXKRN2arfPy/giphy.gif"
+            style={
+              Object {
+                "border": "0px initial",
+                "height": "134px",
+                "margin": "0px",
+                "msInterpolationMode": "bicubic",
+                "outline": "none",
+                "textDecoration": "none",
+                "width": "220px",
+              }
+            }
+          />
+        </a>
+      </span>
+    </span>
+  </p>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <strong
+      style={
+        Object {
+          "fontSize": "18px",
+          "fontWeight": "bolder",
+        }
+      }
+    >
+      Ready to Claim Your Internet Name on Hacker Noon?
+    </strong>
+    <ol>
+      <li
+        dir="ltr"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+          }
+        }
+      >
+        <p
+          dir="ltr"
+          role="presentation"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "lineHeight": "125%",
+              "margin": "10px 0",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "0",
+              "textAlign": "left",
+            }
+          }
+        >
+          <a
+            href="https://hackernoon.com/signup?ref=noonifications.tech"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "fontWeight": "bold",
+                "msTextSizeAdjust": "100%",
+                "msoLineHeightRule": "exactly",
+                "textDecoration": "underline",
+              }
+            }
+            target="_blank"
+          >
+            Create a free account
+          </a>
+          .
+        </p>
+      </li>
+      <li
+        dir="ltr"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+          }
+        }
+      >
+        <p
+          dir="ltr"
+          role="presentation"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "lineHeight": "125%",
+              "margin": "10px 0",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "0",
+              "textAlign": "left",
+            }
+          }
+        >
+          <a
+            href="https://app.hackernoon.com/subscriptions?ref=noonifications.tech"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "fontWeight": "bold",
+                "msTextSizeAdjust": "100%",
+                "msoLineHeightRule": "exactly",
+                "textDecoration": "underline",
+              }
+            }
+            target="_blank"
+          >
+            Tell us what you want to read about
+          </a>
+          .
+        </p>
+      </li>
+      <li
+        dir="ltr"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+          }
+        }
+      >
+        <p
+          dir="ltr"
+          role="presentation"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "lineHeight": "125%",
+              "margin": "10px 0",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "0",
+              "textAlign": "left",
+            }
+          }
+        >
+          <a
+            href="https://app.hackernoon.com/new?ref=noonifications.tech"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "fontWeight": "bold",
+                "msTextSizeAdjust": "100%",
+                "msoLineHeightRule": "exactly",
+                "textDecoration": "underline",
+              }
+            }
+            target="_blank"
+          >
+            Submit your own tech stories
+          </a>
+          . 
+        </p>
+      </li>
+      <li
+        dir="ltr"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+          }
+        }
+      >
+        <p
+          dir="ltr"
+          role="presentation"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "lineHeight": "125%",
+              "margin": "10px 0",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "0",
+              "textAlign": "left",
+            }
+          }
+        >
+          <a
+            href="https://sponsor.hackernoon.com/brand-as-author?ref=noonifications.tech"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "fontWeight": "bold",
+                "msTextSizeAdjust": "100%",
+                "msoLineHeightRule": "exactly",
+                "textDecoration": "underline",
+              }
+            }
+            target="_blank"
+          >
+            Gain Access to Brand-As-Author
+          </a>
+          ™ Program. 
+        </p>
+      </li>
+      <li
+        dir="ltr"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+          }
+        }
+      >
+        <p
+          dir="ltr"
+          role="presentation"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "lineHeight": "125%",
+              "margin": "10px 0",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "0",
+              "textAlign": "left",
+            }
+          }
+        >
+          Get Your Tech Stories Featured on the 
+          <a
+            href="https://hackernoon.com/?ref=noonifications.tech"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "fontWeight": "bold",
+                "msTextSizeAdjust": "100%",
+                "msoLineHeightRule": "exactly",
+                "textDecoration": "underline",
+              }
+            }
+            target="_blank"
+          >
+            Homepage of Hacker Noon
+          </a>
+          .
+        </p>
+      </li>
+    </ol>
+  </div>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontSize": "16px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+          }
+        }
+      >
+        <em>
+          ***
+        </em>
+      </span>
+    </span>
+  </div>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontSize": "16px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+          }
+        }
+      >
+        <a
+          href="https://hackernoon.com/the-decentralized-internet-writing-contest-fq1i35t4"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          "Join our writing contest and get a chance to win cool prizes".
+        </a>
+      </span>
+    </span>
+  </div>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontSize": "16px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+          }
+        }
+      >
+        <em>
+          ***
+        </em>
+      </span>
+    </span>
+  </div>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontSize": "16px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+          }
+        }
+      >
+        <a
+          href="https://hackernoon.com/signup"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          Got a tech story to share with our readers?
+        </a>
+         Everything you've ever wanted to know about how to get published on Hacker Noon - 
+        <a
+          href="https://publish.hackernoon.com/"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          get it here
+        </a>
+        .
+      </span>
+    </span>
+  </div>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnImageCardRightContentOuter"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+      }
+    }
+    width="100%"
+  >
+    <tbody>
+      <tr>
+        <td
+          align="center"
+          className="mcnImageCardRightContentInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": 0,
+            }
+          }
+          valign="top"
+        >
+          <table
+            align="left"
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnImageCardRightImageContentContainer"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width={200}
+          >
+            <tbody>
+              <tr>
+                <td
+                  align="center"
+                  className="mcnImageCardRightImageContent"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                      "paddingBottom": "18px",
+                      "paddingLeft": "18px",
+                      "paddingRight": 0,
+                      "paddingTop": "18px",
+                    }
+                  }
+                  valign="top"
+                >
+                  <a
+                    className=""
+                    data-testid="sponsorHrefTest"
+                    href="https://bit.ly/30AWyC4"
+                    style={
+                      Object {
+                        "WebkitTextSizeAdjust": "100%",
+                        "msTextSizeAdjust": "100%",
+                        "msoLineHeightRule": "exactly",
+                      }
+                    }
+                    target="_blank"
+                    title=""
+                  >
+                    <img
+                      alt=""
+                      className="mcnImage"
+                      data-testid="sponsorSrcTest"
+                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/thematic/2021/04-April/CB_Logo_Stacked_500x500.jpg"
+                      style={
+                        Object {
+                          "border": 0,
+                          "borderRadius": "0%",
+                          "height": "auto",
+                          "maxWidth": "150px",
+                          "msInterpolationMode": "bicubic",
+                          "outline": "none",
+                          "textDecoration": "none",
+                          "verticalAlign": "bottom",
+                        }
+                      }
+                      width={150}
+                    />
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            align="right"
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnImageCardRightTextContentContainer"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width={346}
+          >
+            <tbody>
+              <tr>
+                <td
+                  className="mcnTextContent"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "color": "#f2f2f2",
+                      "fontFamily": "Helvetica",
+                      "fontSize": "14px",
+                      "fontWeight": "normal",
+                      "lineHeight": "150%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                      "paddingBottom": "18px",
+                      "paddingRight": "18px",
+                      "paddingTop": "18px",
+                      "textAlign": "center",
+                      "wordBreak": "break-word",
+                    }
+                  }
+                  valign="top"
+                >
+                  <h1
+                    className="mc-toc-title"
+                    style={
+                      Object {
+                        "color": "#111111",
+                        "display": "block",
+                        "fontFamily": "\\"Merriweather Sans\\", \\"Helvetica Neue\\",Helvetica, Arial, sans-serif",
+                        "fontSize": "26px",
+                        "fontStyle": "normal",
+                        "fontWeight": "bold",
+                        "letterSpacing": "normal",
+                        "lineHeight": "125%",
+                        "margin": 0,
+                        "padding": 0,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    <br />
+                    <a
+                      href="https://bit.ly/3oP3IgZ"
+                      style={
+                        Object {
+                          "WebkitTextSizeAdjust": "100%",
+                          "color": "#111111",
+                          "fontWeight": "bold",
+                          "msTextSizeAdjust": "100%",
+                          "msoLineHeightRule": "exactly",
+                          "textDecoration": "underline",
+                        }
+                      }
+                    >
+                      <strong
+                        data-testid="sponsorChildrenTest"
+                      >
+                        Virtual NoSQL event for Java Database Developers. REGISTER NOW!
+                      </strong>
+                    </a>
+                  </h1>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+]
+`;

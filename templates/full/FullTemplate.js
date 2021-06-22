@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Logo from 'components/body/logo';
+import Logo from '../../components/body/logo';
 import BodyPrototype from './Body/BodyPrototype';
-import Divider from 'components/body/divider';
+import Divider from '../../components/body/divider';
 
 import HOC from './HOC';
 import Footer from './Footer';

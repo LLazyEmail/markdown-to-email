@@ -13,7 +13,8 @@
   "jest": {
     "testPathIgnorePatterns": [
       "package"
-    ]
+    ],
+    "testEnvironment": "jsdom"
   },
   "dependencies": {
     "@mdx-js/loader": "1.6.22",
