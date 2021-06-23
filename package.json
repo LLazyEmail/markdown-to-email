@@ -14,7 +14,11 @@
     "testPathIgnorePatterns": [
       "package"
     ],
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "moduleDirectories": [
+      "node_modules",
+      "../"
+    ]
   },
   "dependencies": {
     "@mdx-js/loader": "1.6.22",
