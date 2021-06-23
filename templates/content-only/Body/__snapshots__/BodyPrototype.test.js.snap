@@ -1,0 +1,814 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BodyPrototype component renders correctly 1`] = `
+Array [
+  <h1
+    className="mc-toc-title"
+    dir="ltr"
+    style={
+      Object {
+        "color": "#111111",
+        "display": "block",
+        "fontFamily": "\\"Merriweather Sans\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "26px",
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "letterSpacing": "normal",
+        "lineHeight": "125%",
+        "margin": 0,
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="mainTitleChildrenTest"
+        style={
+          Object {
+            "fontSize": "30px",
+          }
+        }
+      >
+        Can We Make Data Tidy?
+      </span>
+    </span>
+  </h1>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="paragraphChildrenTest"
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Imagine: You are going to sit down with a newly-fetched data set,
+    excited about the insights it will bring you and then you find out it is no use.
+    If you’ve been there, then you know for sure what an untidy dataset is.
+      </span>
+    </span>
+  </div>,
+  <p
+    dir="ltr"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "color": "#111111",
+        "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "lineHeight": "150%",
+        "margin": "10px 0",
+        "msTextSizeAdjust": "100%",
+        "msoLineHeightRule": "exactly",
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "georgia,times,times new roman,serif",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "fontSize": "17px",
+          }
+        }
+      >
+        <a
+          href="#"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          <img
+            alt="GIF"
+            data-testid="imagePropsTest"
+            src="https://placekitten.com/g/220/220"
+            style={
+              Object {
+                "border": "0px initial",
+                "height": "134px",
+                "margin": "0px",
+                "msInterpolationMode": "bicubic",
+                "outline": "none",
+                "textDecoration": "none",
+                "width": "220px",
+              }
+            }
+          />
+        </a>
+      </span>
+    </span>
+  </p>,
+  " ",
+  "I",
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="paragraphChildrenTest"
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        A statistician from New Zealand once said: Tidy datasets are all alike, but every messy dataset
+    is messy in its own way. Indeed, as data may come in various forms and shapes, sometimes we are
+    inundated with it. As a result, our data science team becomes shortsighted and oops..
+    disillusioned by mountains of unworkable data. The only way data specialists can facilitate analysis is
+    by keeping data clean and organized.
+      </span>
+    </span>
+  </div>,
+  <h3
+    className="mc-toc-title"
+    dir="ltr"
+    style={
+      Object {
+        "color": "#111111",
+        "display": "block",
+        "fontFamily": "\\"Merriweather Sans\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "letterSpacing": "normal",
+        "lineHeight": "125%",
+        "margin": 0,
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="headingChildrenTest"
+        style={
+          Object {
+            "fontSize": "18px",
+          }
+        }
+      >
+        <strong
+          data-testid="strongChildrenTest"
+          style={
+            Object {
+              "fontWeight": "bolder",
+            }
+          }
+        >
+          What is tidy data?
+        </strong>
+      </span>
+    </span>
+  </h3>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="paragraphChildrenTest"
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Essentially, tidy data is a term coined by Hadley Wickham in his Tidy Data paper (remember that
+        statistician from NZ?).
+        He defined tidy data as data that is neatly organized and all set for analysis. This way of organizing
+        allows you to easily produce charts,
+        diagrams, and summary statistics. As it often happens, not all data comes out of the database clean,
+        therefore cleansing it is essential
+        to efficiently analyze it.
+      </span>
+    </span>
+  </div>,
+  <p
+    dir="ltr"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "color": "#111111",
+        "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "lineHeight": "150%",
+        "margin": "10px 0",
+        "msTextSizeAdjust": "100%",
+        "msoLineHeightRule": "exactly",
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "georgia,times,times new roman,serif",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "fontSize": "17px",
+          }
+        }
+      >
+        <a
+          href="#"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          <img
+            data-testid="imagePropsTest"
+            src="https://placekitten.com/g/220/220"
+            style={
+              Object {
+                "border": "0px initial",
+                "height": "134px",
+                "margin": "0px",
+                "msInterpolationMode": "bicubic",
+                "outline": "none",
+                "textDecoration": "none",
+                "width": "220px",
+              }
+            }
+          />
+        </a>
+      </span>
+    </span>
+  </p>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="paragraphChildrenTest"
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Without further ado, let us break down the principles that allow you keep your data nice and clean.
+      </span>
+    </span>
+  </div>,
+  <h3
+    className="mc-toc-title"
+    dir="ltr"
+    style={
+      Object {
+        "color": "#111111",
+        "display": "block",
+        "fontFamily": "\\"Merriweather Sans\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "letterSpacing": "normal",
+        "lineHeight": "125%",
+        "margin": 0,
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="headingChildrenTest"
+        style={
+          Object {
+            "fontSize": "18px",
+          }
+        }
+      >
+        <strong
+          data-testid="strongChildrenTest"
+          style={
+            Object {
+              "fontWeight": "bolder",
+            }
+          }
+        >
+          Tidy Data Principles
+        </strong>
+      </span>
+    </span>
+  </h3>,
+  <h3
+    className="mc-toc-title"
+    dir="ltr"
+    style={
+      Object {
+        "color": "#111111",
+        "display": "block",
+        "fontFamily": "\\"Merriweather Sans\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "letterSpacing": "normal",
+        "lineHeight": "125%",
+        "margin": 0,
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="headingChildrenTest"
+        style={
+          Object {
+            "fontSize": "18px",
+          }
+        }
+      >
+        <strong
+          data-testid="strongChildrenTest"
+          style={
+            Object {
+              "fontWeight": "bolder",
+            }
+          }
+        >
+          1. Each row is an observational unit.
+        </strong>
+      </span>
+    </span>
+  </h3>,
+  <p
+    dir="ltr"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "color": "#111111",
+        "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+        "fontSize": "18px",
+        "lineHeight": "150%",
+        "margin": "10px 0",
+        "msTextSizeAdjust": "100%",
+        "msoLineHeightRule": "exactly",
+        "padding": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "georgia,times,times new roman,serif",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "fontSize": "17px",
+          }
+        }
+      >
+        <a
+          href="#"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "color": "#111111",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          <img
+            data-testid="imagePropsTest"
+            src="https://placekitten.com/g/220/220"
+            style={
+              Object {
+                "border": "0px initial",
+                "height": "134px",
+                "margin": "0px",
+                "msInterpolationMode": "bicubic",
+                "outline": "none",
+                "textDecoration": "none",
+                "width": "220px",
+              }
+            }
+          />
+        </a>
+      </span>
+    </span>
+  </p>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <div
+    dir="ltr"
+    style={
+      Object {
+        "textAlign": "justify",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <span
+        data-testid="paragraphChildrenTest"
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+         We’ll start with one of the basic principles. When you are giving your data the once-over, you should
+    make sure each row contains an observation.
+    By definition, observation is the individual unit under question. If we look at the table above, an
+    observational unit could be called ‘people’.
+    You can see that each person has an individual row on the table and all of the information for that
+    person is in the same row.
+    Observations are included in rows, variables are represented as columns and there is only one
+    observational unit per table. Now THIS is tidy data.
+      </span>
+    </span>
+  </div>,
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnDividerBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "tableLayout": "fixed !important",
+      }
+    }
+  >
+    <tbody
+      className="mcnDividerBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnDividerBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "12px 18px",
+            }
+          }
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnDividerContent"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "borderTop": "2px none #eaeaea",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+            width="100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  data-testid="dividerChildrenTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                />
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+]
+`;

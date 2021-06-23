@@ -1,3 +1,3 @@
-import Body from './Body';
+import BodyPrototype from './BodyPrototype';
 
-export default Body;
+export default BodyPrototype;

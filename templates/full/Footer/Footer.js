@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Copyrights from 'components/misc/copyrights';
+import Copyright from 'components/misc/copyrights';
 
 import Address from 'components/misc/address';
 import Unsubscribe from 'components/misc/unsubscribe';
@@ -102,7 +102,7 @@ const Footer = () => (
               <tbody>
                 <tr>
                   <td valign="top" className="mcnTextContent" style={styles.textContent}>
-                    <Copyrights />
+                    <Copyright />
                     <br />
                     <Address />
                     <br />

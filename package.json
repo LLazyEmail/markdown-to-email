@@ -13,6 +13,11 @@
   "jest": {
     "testPathIgnorePatterns": [
       "package"
+    ],
+    "testEnvironment": "jsdom",
+    "moduleDirectories": [
+      "node_modules",
+      "../"
     ]
   },
   "dependencies": {
