@@ -24,7 +24,7 @@ describe('subtitle/index component', () => {
 
   test('<strong> has correct children elements', () => {
     const { getByTestId } = render(<SubTitle><span>Hello</span></SubTitle>);
-    const strong = getByTestId('subtitleChildrenTest');
+    const strong = getByTestId('strongChildrenTest');
 
     expect(strong.children[0].textContent).toBe('Hello');
   });
