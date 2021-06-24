@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HOC/HOC component renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }
+>
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "backgroundColor": "#ffffff",
+        "borderCollapse": "collapse",
+        "height": "100%",
+        "margin": 0,
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+        "padding": 0,
+        "width": "100%",
+      }
+    }
+  >
+    <tbody>
+      <tr>
+        <td
+          align="center"
+          id="bodyCell"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderTop": 0,
+              "height": "100%",
+              "margin": 0,
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "10px",
+              "width": "100%",
+            }
+          }
+          valign="top"
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="templateContainer"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "border": 0,
+                "borderCollapse": "collapse",
+                "maxWidth": "600px !important",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+          >
+            <h1>
+              HOC content
+            </h1>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

@@ -2,6 +2,9 @@ import Document, {
   Html, Head, Main, NextScript,
 } from 'next/document';
 
+// @TODO: here we can use our custom Head component
+// import Head from 'components/head';
+
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);

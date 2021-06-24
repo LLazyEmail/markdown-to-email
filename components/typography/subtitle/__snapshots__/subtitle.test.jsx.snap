@@ -33,7 +33,12 @@ exports[`subtitle/index component renders correctly 1`] = `
       }
     >
       <strong
-        data-testid="subtitleChildrenTest"
+        data-testid="strongChildrenTest"
+        style={
+          Object {
+            "fontWeight": "bolder",
+          }
+        }
       >
         <span>
           Some text

@@ -1,15 +1,14 @@
 import React from 'react';
+import Strong from '../strong';
 import { styles } from './styles';
-
-// @TODO replace strong with component?
 
 const SubTitle = ({ children }) => (
   <p dir="ltr" style={styles.ltr}>
     <span style={styles.spanFont}>
       <span style={styles.spanSize}>
-        <strong data-testid="subtitleChildrenTest">
+        <Strong>
           {children}
-        </strong>
+        </Strong>
       </span>
     </span>
   </p>
