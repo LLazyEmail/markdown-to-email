@@ -1,9 +1,9 @@
 import React from 'react';
-import { a, li, p } from './styles';
+import { a, li, p, div, strong } from './styles';
 
 const CtaList = () => (
-  <div dir="ltr" style={{ textAlign: 'justify' }} >
-    <strong style={{ fontWeight: 'bolder', fontSize: '18px' }}>Ready to Claim Your Internet Name on Hacker Noon?</strong>
+  <div dir="ltr" style={div}>
+    <strong style={strong}>Ready to Claim Your Internet Name on Hacker Noon?</strong>
     <ol>
       <li dir="ltr" style={li}>
         <p dir="ltr" role="presentation" style={p}><a href="https://hackernoon.com/signup?ref=noonifications.tech" target="_blank" style={a}>Create a free account</a>.</p></li>
