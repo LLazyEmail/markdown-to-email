@@ -1,6 +1,6 @@
 export const styles = {
   div: {
-    textAlign: 'center'
+    textAlign: 'justify'
   },
   span1: {
     fontSize: '16px'

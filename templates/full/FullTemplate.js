@@ -10,7 +10,6 @@ import config from './config';
 import { styles } from './styles';
 
 const FullTemplate = ({ header }) => (
-
   <HOC styles={{ ...styles }}>
     <tbody>
       <tr>
@@ -36,7 +35,6 @@ const FullTemplate = ({ header }) => (
     </tbody>
     <Footer />
   </HOC>
-
 );
 
 export default FullTemplate;

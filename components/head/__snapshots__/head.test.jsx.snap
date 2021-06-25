@@ -13,9 +13,7 @@ exports[`head component renders correctly 1`] = `
     content="width=device-width, initial-scale=1"
     name="viewport"
   />
-  <title>
-    The Secrets of High-Performing DevOps teams
-  </title>
+  <title />
   <style />
   <link
     data-testid="fontsHrefTest"
