@@ -1,6 +1,4 @@
 import React from 'react';
-
-import Logo from 'components/body/logo';
 import Divider from 'components/body/divider';
 
 import HOC from './HOC';

@@ -1,5 +1,4 @@
 import React from 'react';
-import Sponsor from 'components/body/sponsor';
 import MainTitle from 'components/typography/mainTitle';
 import Divider from 'components/body/divider';
 import Image from 'components/typography/image';
@@ -9,12 +8,10 @@ import Paragraph from 'components/typography/paragraph';
 
 const BodyPrototype = ({ config }) => {
   const {
-    sponsor, mainTitle,
-    paragraphFirst,
+    mainTitle, paragraphFirst,
     memImageLink, paragraphSecond,
-    heading,
-    paragraphThird, memImageLink2,
-    paragraphFourth,
+    heading, paragraphThird,
+    memImageLink2, paragraphFourth,
     heading2, heading3, imageLink, paragraphFive,
   } = config;
 

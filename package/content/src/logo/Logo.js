@@ -1,8 +1,7 @@
 import React from 'react';
 import Table from '../../html/table';
 import { styles } from './styles';
-
-// @TODO moveout path to hackernoon logo into config array
+import config from './config';
 
 const Logo = () => (
   <Table
@@ -20,11 +19,11 @@ const Logo = () => (
             <tbody>
               <tr>
                 <td className="mcnImageContent" valign="top" style={styles.imageContent}>
-                  <a href="https://www.hackernoon.com" title='' className='' target="_blank" style={styles.title}>
+                  <a href={config.hnLink} title='' className='' target="_blank" style={styles.title}>
                     <img
                       align="center"
                       alt=""
-                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/brand/hackernoon.png"
+                      src={config.logo}
                       width={600}
                       style={styles.img}
                       className="mcnImage"
