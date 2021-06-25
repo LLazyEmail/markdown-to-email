@@ -1,0 +1,1 @@
+export const link = "https://hackernoon.com/the-decentralized-internet-writing-contest-fq1i35t4";
