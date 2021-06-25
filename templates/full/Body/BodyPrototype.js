@@ -11,6 +11,7 @@ import GetPublished from 'components/body/getpublished';
 import JoinUs from 'components/body/joinus';
 import Separator from 'components/typography/separator';
 import Link from 'components/typography/link';
+import { links } from './config';
 
 const BodyPrototype = ({ config }) => {
   const {
@@ -24,7 +25,7 @@ const BodyPrototype = ({ config }) => {
   return (
     <>
       <Sponsor
-        leftHref="https://bit.ly/30AWyC4"
+        leftHref={links.sponsor}
         rightHref={sponsor.link}
         leftSrc={sponsor.imageUrl}
       >
@@ -36,8 +37,8 @@ const BodyPrototype = ({ config }) => {
       </MainTitle>
       <Divider />
       <Paragraph>
-        {paragraphFirst} <Link href='https://hackernoon.com/how-iot-and-edge-computing-influence-various-industries-kp193442'><Strong>edge computing</Strong></Link>.
-        {paragraphFirst_1} <Link href="https://hackernoon.com/ingestion-and-processing-of-data-for-big-data-and-iot-solutions-659431e37b52"><Strong>data processing.</Strong></Link>
+        {paragraphFirst} <Link href={links.link1}><Strong>edge computing</Strong></Link>.
+        {paragraphFirst_1} <Link href={links.link2}><Strong>data processing.</Strong></Link>
       </Paragraph>
       <Divider />
       <Image
@@ -115,7 +116,7 @@ const BodyPrototype = ({ config }) => {
       <GetPublished />
       <Divider />
       <Sponsor
-        leftHref="https://bit.ly/30AWyC4"
+        leftHref={links.sponsor}
         rightHref={sponsor.link}
         leftSrc={sponsor.imageUrl}
       >
