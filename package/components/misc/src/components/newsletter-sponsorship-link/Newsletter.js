@@ -1,9 +1,6 @@
 import React from 'react';
 import { styles } from './styles';
-
-const config = {
-  contact: 'https://sponsor.hackernoon.com/newsletter?ref=noonifications.tech',
-};
+import { config } from './config';
 
 class NewsletterSponsorshipLink extends React.Component {
   render() {

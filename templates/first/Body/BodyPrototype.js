@@ -11,6 +11,8 @@ import GetPublished from 'components/body/getpublished';
 import JoinUs from 'components/body/joinus';
 import Separator from 'components/typography/separator';
 
+import { links } from './config';
+
 const BodyPrototype = ({ config }) => {
   const {
     sponsor, mainTitle, paragraphFirst, memImageLink, paragraphSecond, heading, paragraphThird, memImageLink2, paragraphFourth, heading2, heading3, imageLink, paragraphFive,
@@ -19,7 +21,7 @@ const BodyPrototype = ({ config }) => {
   return (
     <>
       <Sponsor
-        leftHref="https://bit.ly/30AWyC4"
+        leftHref={links.sponsor}
         rightHref={sponsor.link}
         leftSrc={sponsor.imageUrl}
       >
@@ -77,7 +79,7 @@ const BodyPrototype = ({ config }) => {
       <GetPublished />
       <Divider />
       <Sponsor
-        leftHref="https://bit.ly/30AWyC4"
+        leftHref={links.sponsor}
         rightHref={sponsor.link}
         leftSrc={sponsor.imageUrl}
       >
