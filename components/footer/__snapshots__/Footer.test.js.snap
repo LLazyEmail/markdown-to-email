@@ -1,0 +1,992 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`footer/index component renders correctly 1`] = `
+<div>
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnFollowBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+      }
+    }
+  >
+    <tbody
+      className="mcnFollowBlockOuter"
+    >
+      <tr>
+        <td
+          align="center"
+          className="mcnFollowBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "padding": "9px",
+            }
+          }
+          valign="top"
+        >
+          <table
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnFollowContentContainer"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+          >
+            <tbody>
+              <tr>
+                <td
+                  align="center"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                      "paddingLeft": "9px",
+                      "paddingRight": "9px",
+                    }
+                  }
+                >
+                  <table
+                    border={0}
+                    cellPadding={0}
+                    cellSpacing={0}
+                    className="mcnFollowContent"
+                    style={
+                      Object {
+                        "WebkitTextSizeAdjust": "100%",
+                        "borderCollapse": "collapse",
+                        "minWidth": "100%",
+                        "msTextSizeAdjust": "100%",
+                        "msoTableLspace": "0pt",
+                        "msoTableRspace": "0pt",
+                      }
+                    }
+                  >
+                    <tbody>
+                      <tr>
+                        <td
+                          align="center"
+                          style={
+                            Object {
+                              "WebkitTextSizeAdjust": "100%",
+                              "msTextSizeAdjust": "100%",
+                              "msoLineHeightRule": "exactly",
+                              "paddingLeft": "9px",
+                              "paddingRight": "9px",
+                              "paddingTop": "9px",
+                            }
+                          }
+                          valign="top"
+                        >
+                          <table
+                            align="center"
+                            border={0}
+                            cellPadding={0}
+                            cellSpacing={0}
+                            style={
+                              Object {
+                                "WebkitTextSizeAdjust": "100%",
+                                "borderCollapse": "collapse",
+                                "msTextSizeAdjust": "100%",
+                                "msoTableLspace": "0pt",
+                                "msoTableRspace": "0pt",
+                              }
+                            }
+                          >
+                            <tbody>
+                              <tr>
+                                <td
+                                  align="center"
+                                  style={
+                                    Object {
+                                      "WebkitTextSizeAdjust": "100%",
+                                      "msTextSizeAdjust": "100%",
+                                      "msoLineHeightRule": "exactly",
+                                    }
+                                  }
+                                  valign="top"
+                                >
+                                  <table
+                                    align="left"
+                                    border={0}
+                                    cellPadding={0}
+                                    cellSpacing={0}
+                                    style={
+                                      Object {
+                                        "WebkitTextSizeAdjust": "100%",
+                                        "borderCollapse": "collapse",
+                                        "display": "inline",
+                                        "msTextSizeAdjust": "100%",
+                                        "msoTableLspace": "0pt",
+                                        "msoTableRspace": "0pt",
+                                      }
+                                    }
+                                  >
+                                    <tbody>
+                                      <tr>
+                                        <td
+                                          className="mcnFollowContentItemContainer"
+                                          style={
+                                            Object {
+                                              "WebkitTextSizeAdjust": "100%",
+                                              "msTextSizeAdjust": "100%",
+                                              "msoLineHeightRule": "exactly",
+                                              "paddingBottom": "9px",
+                                              "paddingRight": "10px",
+                                            }
+                                          }
+                                          valign="top"
+                                        >
+                                          <table
+                                            border={0}
+                                            cellPadding={0}
+                                            cellSpacing={0}
+                                            className="mcnFollowContentItem"
+                                            style={
+                                              Object {
+                                                "WebkitTextSizeAdjust": "100%",
+                                                "borderCollapse": "collapse",
+                                                "msTextSizeAdjust": "100%",
+                                                "msoTableLspace": "0pt",
+                                                "msoTableRspace": "0pt",
+                                              }
+                                            }
+                                          >
+                                            <tbody>
+                                              <tr>
+                                                <td
+                                                  align="left"
+                                                  valign="middle"
+                                                >
+                                                  <table
+                                                    align="left"
+                                                    border={0}
+                                                    cellPadding={0}
+                                                    cellSpacing={0}
+                                                    style={
+                                                      Object {
+                                                        "WebkitTextSizeAdjust": "100%",
+                                                        "borderCollapse": "collapse",
+                                                        "msTextSizeAdjust": "100%",
+                                                        "msoTableLspace": "0pt",
+                                                        "msoTableRspace": "0pt",
+                                                      }
+                                                    }
+                                                  >
+                                                    <tbody>
+                                                      <tr>
+                                                        <td
+                                                          align="center"
+                                                          className="mcnFollowIconContent"
+                                                          style={
+                                                            Object {
+                                                              "WebkitTextSizeAdjust": "100%",
+                                                              "msTextSizeAdjust": "100%",
+                                                              "msoLineHeightRule": "exactly",
+                                                            }
+                                                          }
+                                                          valign="middle"
+                                                          width={24}
+                                                        >
+                                                          <a
+                                                            data-testid="tableLeftHrefTest"
+                                                            href="https://twitter.com/hackernoon"
+                                                            target="_blank"
+                                                          >
+                                                            <img
+                                                              alt="Twitter"
+                                                              className=""
+                                                              data-testid="tableLeftImgTest"
+                                                              height={24}
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/twitter.png"
+                                                              style={
+                                                                Object {
+                                                                  "border": 0,
+                                                                  "display": "block",
+                                                                  "height": "auto",
+                                                                  "msInterpolationMode": "bicubic",
+                                                                  "outline": "none",
+                                                                  "textDecoration": "none",
+                                                                }
+                                                              }
+                                                              width={24}
+                                                            />
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table
+                                    align="left"
+                                    border={0}
+                                    cellPadding={0}
+                                    cellSpacing={0}
+                                    style={
+                                      Object {
+                                        "WebkitTextSizeAdjust": "100%",
+                                        "borderCollapse": "collapse",
+                                        "display": "inline",
+                                        "msTextSizeAdjust": "100%",
+                                        "msoTableLspace": "0pt",
+                                        "msoTableRspace": "0pt",
+                                      }
+                                    }
+                                  >
+                                    <tbody>
+                                      <tr>
+                                        <td
+                                          className="mcnFollowContentItemContainer"
+                                          style={
+                                            Object {
+                                              "WebkitTextSizeAdjust": "100%",
+                                              "msTextSizeAdjust": "100%",
+                                              "msoLineHeightRule": "exactly",
+                                              "paddingBottom": "9px",
+                                              "paddingRight": "10px",
+                                            }
+                                          }
+                                          valign="top"
+                                        >
+                                          <table
+                                            border={0}
+                                            cellPadding={0}
+                                            cellSpacing={0}
+                                            className="mcnFollowContentItem"
+                                            style={
+                                              Object {
+                                                "WebkitTextSizeAdjust": "100%",
+                                                "borderCollapse": "collapse",
+                                                "msTextSizeAdjust": "100%",
+                                                "msoTableLspace": "0pt",
+                                                "msoTableRspace": "0pt",
+                                              }
+                                            }
+                                          >
+                                            <tbody>
+                                              <tr>
+                                                <td
+                                                  align="left"
+                                                  valign="middle"
+                                                >
+                                                  <table
+                                                    align="left"
+                                                    border={0}
+                                                    cellPadding={0}
+                                                    cellSpacing={0}
+                                                    style={
+                                                      Object {
+                                                        "WebkitTextSizeAdjust": "100%",
+                                                        "borderCollapse": "collapse",
+                                                        "msTextSizeAdjust": "100%",
+                                                        "msoTableLspace": "0pt",
+                                                        "msoTableRspace": "0pt",
+                                                      }
+                                                    }
+                                                  >
+                                                    <tbody>
+                                                      <tr>
+                                                        <td
+                                                          align="center"
+                                                          className="mcnFollowIconContent"
+                                                          style={
+                                                            Object {
+                                                              "WebkitTextSizeAdjust": "100%",
+                                                              "msTextSizeAdjust": "100%",
+                                                              "msoLineHeightRule": "exactly",
+                                                            }
+                                                          }
+                                                          valign="middle"
+                                                          width={24}
+                                                        >
+                                                          <a
+                                                            data-testid="tableLeftHrefTest"
+                                                            href="https://www.facebook.com/hackernoon"
+                                                            target="_blank"
+                                                          >
+                                                            <img
+                                                              alt="Facebook"
+                                                              className=""
+                                                              data-testid="tableLeftImgTest"
+                                                              height={24}
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/facebook.png"
+                                                              style={
+                                                                Object {
+                                                                  "border": 0,
+                                                                  "display": "block",
+                                                                  "height": "auto",
+                                                                  "msInterpolationMode": "bicubic",
+                                                                  "outline": "none",
+                                                                  "textDecoration": "none",
+                                                                }
+                                                              }
+                                                              width={24}
+                                                            />
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table
+                                    align="left"
+                                    border={0}
+                                    cellPadding={0}
+                                    cellSpacing={0}
+                                    style={
+                                      Object {
+                                        "WebkitTextSizeAdjust": "100%",
+                                        "borderCollapse": "collapse",
+                                        "display": "inline",
+                                        "msTextSizeAdjust": "100%",
+                                        "msoTableLspace": "0pt",
+                                        "msoTableRspace": "0pt",
+                                      }
+                                    }
+                                  >
+                                    <tbody>
+                                      <tr>
+                                        <td
+                                          className="mcnFollowContentItemContainer"
+                                          style={
+                                            Object {
+                                              "WebkitTextSizeAdjust": "100%",
+                                              "msTextSizeAdjust": "100%",
+                                              "msoLineHeightRule": "exactly",
+                                              "paddingBottom": "9px",
+                                              "paddingRight": "10px",
+                                            }
+                                          }
+                                          valign="top"
+                                        >
+                                          <table
+                                            border={0}
+                                            cellPadding={0}
+                                            cellSpacing={0}
+                                            className="mcnFollowContentItem"
+                                            style={
+                                              Object {
+                                                "WebkitTextSizeAdjust": "100%",
+                                                "borderCollapse": "collapse",
+                                                "msTextSizeAdjust": "100%",
+                                                "msoTableLspace": "0pt",
+                                                "msoTableRspace": "0pt",
+                                              }
+                                            }
+                                          >
+                                            <tbody>
+                                              <tr>
+                                                <td
+                                                  align="left"
+                                                  valign="middle"
+                                                >
+                                                  <table
+                                                    align="left"
+                                                    border={0}
+                                                    cellPadding={0}
+                                                    cellSpacing={0}
+                                                    style={
+                                                      Object {
+                                                        "WebkitTextSizeAdjust": "100%",
+                                                        "borderCollapse": "collapse",
+                                                        "msTextSizeAdjust": "100%",
+                                                        "msoTableLspace": "0pt",
+                                                        "msoTableRspace": "0pt",
+                                                      }
+                                                    }
+                                                  >
+                                                    <tbody>
+                                                      <tr>
+                                                        <td
+                                                          align="center"
+                                                          className="mcnFollowIconContent"
+                                                          style={
+                                                            Object {
+                                                              "WebkitTextSizeAdjust": "100%",
+                                                              "msTextSizeAdjust": "100%",
+                                                              "msoLineHeightRule": "exactly",
+                                                            }
+                                                          }
+                                                          valign="middle"
+                                                          width={24}
+                                                        >
+                                                          <a
+                                                            data-testid="tableLeftHrefTest"
+                                                            href="https://instagram.com/hackernoon/"
+                                                            target="_blank"
+                                                          >
+                                                            <img
+                                                              alt="Instagram"
+                                                              className=""
+                                                              data-testid="tableLeftImgTest"
+                                                              height={24}
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/instagram.png"
+                                                              style={
+                                                                Object {
+                                                                  "border": 0,
+                                                                  "display": "block",
+                                                                  "height": "auto",
+                                                                  "msInterpolationMode": "bicubic",
+                                                                  "outline": "none",
+                                                                  "textDecoration": "none",
+                                                                }
+                                                              }
+                                                              width={24}
+                                                            />
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table
+                                    align="left"
+                                    border={0}
+                                    cellPadding={0}
+                                    cellSpacing={0}
+                                    style={
+                                      Object {
+                                        "WebkitTextSizeAdjust": "100%",
+                                        "borderCollapse": "collapse",
+                                        "display": "inline",
+                                        "msTextSizeAdjust": "100%",
+                                        "msoTableLspace": "0pt",
+                                        "msoTableRspace": "0pt",
+                                      }
+                                    }
+                                  >
+                                    <tbody>
+                                      <tr>
+                                        <td
+                                          className="mcnFollowContentItemContainer"
+                                          style={
+                                            Object {
+                                              "WebkitTextSizeAdjust": "100%",
+                                              "msTextSizeAdjust": "100%",
+                                              "msoLineHeightRule": "exactly",
+                                              "paddingBottom": "9px",
+                                              "paddingRight": "10px",
+                                            }
+                                          }
+                                          valign="top"
+                                        >
+                                          <table
+                                            border={0}
+                                            cellPadding={0}
+                                            cellSpacing={0}
+                                            className="mcnFollowContentItem"
+                                            style={
+                                              Object {
+                                                "WebkitTextSizeAdjust": "100%",
+                                                "borderCollapse": "collapse",
+                                                "msTextSizeAdjust": "100%",
+                                                "msoTableLspace": "0pt",
+                                                "msoTableRspace": "0pt",
+                                              }
+                                            }
+                                          >
+                                            <tbody>
+                                              <tr>
+                                                <td
+                                                  align="left"
+                                                  valign="middle"
+                                                >
+                                                  <table
+                                                    align="left"
+                                                    border={0}
+                                                    cellPadding={0}
+                                                    cellSpacing={0}
+                                                    style={
+                                                      Object {
+                                                        "WebkitTextSizeAdjust": "100%",
+                                                        "borderCollapse": "collapse",
+                                                        "msTextSizeAdjust": "100%",
+                                                        "msoTableLspace": "0pt",
+                                                        "msoTableRspace": "0pt",
+                                                      }
+                                                    }
+                                                  >
+                                                    <tbody>
+                                                      <tr>
+                                                        <td
+                                                          align="center"
+                                                          className="mcnFollowIconContent"
+                                                          style={
+                                                            Object {
+                                                              "WebkitTextSizeAdjust": "100%",
+                                                              "msTextSizeAdjust": "100%",
+                                                              "msoLineHeightRule": "exactly",
+                                                            }
+                                                          }
+                                                          valign="middle"
+                                                          width={24}
+                                                        >
+                                                          <a
+                                                            data-testid="tableLeftHrefTest"
+                                                            href="https://hackernoon.com"
+                                                            target="_blank"
+                                                          >
+                                                            <img
+                                                              alt="Website"
+                                                              className=""
+                                                              data-testid="tableLeftImgTest"
+                                                              height={24}
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/link.png"
+                                                              style={
+                                                                Object {
+                                                                  "border": 0,
+                                                                  "display": "block",
+                                                                  "height": "auto",
+                                                                  "msInterpolationMode": "bicubic",
+                                                                  "outline": "none",
+                                                                  "textDecoration": "none",
+                                                                }
+                                                              }
+                                                              width={24}
+                                                            />
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table
+                                    align="left"
+                                    border={0}
+                                    cellPadding={0}
+                                    cellSpacing={0}
+                                    style={
+                                      Object {
+                                        "WebkitTextSizeAdjust": "100%",
+                                        "borderCollapse": "collapse",
+                                        "display": "inline",
+                                        "msTextSizeAdjust": "100%",
+                                        "msoTableLspace": "0pt",
+                                        "msoTableRspace": "0pt",
+                                      }
+                                    }
+                                  >
+                                    <tbody>
+                                      <tr>
+                                        <td
+                                          className="mcnFollowContentItemContainer"
+                                          style={
+                                            Object {
+                                              "WebkitTextSizeAdjust": "100%",
+                                              "msTextSizeAdjust": "100%",
+                                              "msoLineHeightRule": "exactly",
+                                              "paddingBottom": "9px",
+                                              "paddingRight": "10px",
+                                            }
+                                          }
+                                          valign="top"
+                                        >
+                                          <table
+                                            border={0}
+                                            cellPadding={0}
+                                            cellSpacing={0}
+                                            className="mcnFollowContentItem"
+                                            style={
+                                              Object {
+                                                "WebkitTextSizeAdjust": "100%",
+                                                "borderCollapse": "collapse",
+                                                "msTextSizeAdjust": "100%",
+                                                "msoTableLspace": "0pt",
+                                                "msoTableRspace": "0pt",
+                                              }
+                                            }
+                                          >
+                                            <tbody>
+                                              <tr>
+                                                <td
+                                                  align="left"
+                                                  valign="middle"
+                                                >
+                                                  <table
+                                                    align="left"
+                                                    border={0}
+                                                    cellPadding={0}
+                                                    cellSpacing={0}
+                                                    style={
+                                                      Object {
+                                                        "WebkitTextSizeAdjust": "100%",
+                                                        "borderCollapse": "collapse",
+                                                        "msTextSizeAdjust": "100%",
+                                                        "msoTableLspace": "0pt",
+                                                        "msoTableRspace": "0pt",
+                                                      }
+                                                    }
+                                                  >
+                                                    <tbody>
+                                                      <tr>
+                                                        <td
+                                                          align="center"
+                                                          className="mcnFollowIconContent"
+                                                          style={
+                                                            Object {
+                                                              "WebkitTextSizeAdjust": "100%",
+                                                              "msTextSizeAdjust": "100%",
+                                                              "msoLineHeightRule": "exactly",
+                                                            }
+                                                          }
+                                                          valign="middle"
+                                                          width={24}
+                                                        >
+                                                          <a
+                                                            data-testid="tableLeftHrefTest"
+                                                            href="https://www.youtube.com/channel/UChu5YILgrOYOfkfRlTB-D-g"
+                                                            target="_blank"
+                                                          >
+                                                            <img
+                                                              alt="YouTube"
+                                                              className=""
+                                                              data-testid="tableLeftImgTest"
+                                                              height={24}
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/youtube.png"
+                                                              style={
+                                                                Object {
+                                                                  "border": 0,
+                                                                  "display": "block",
+                                                                  "height": "auto",
+                                                                  "msInterpolationMode": "bicubic",
+                                                                  "outline": "none",
+                                                                  "textDecoration": "none",
+                                                                }
+                                                              }
+                                                              width={24}
+                                                            />
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table
+                                    align="left"
+                                    border={0}
+                                    cellPadding={0}
+                                    cellSpacing={0}
+                                    style={
+                                      Object {
+                                        "WebkitTextSizeAdjust": "100%",
+                                        "borderCollapse": "collapse",
+                                        "display": "inline",
+                                        "msTextSizeAdjust": "100%",
+                                        "msoTableLspace": "0pt",
+                                        "msoTableRspace": "0pt",
+                                      }
+                                    }
+                                  >
+                                    <tbody>
+                                      <tr>
+                                        <td
+                                          className="mcnFollowContentItemContainer"
+                                          style={
+                                            Object {
+                                              "WebkitTextSizeAdjust": "100%",
+                                              "msTextSizeAdjust": "100%",
+                                              "msoLineHeightRule": "exactly",
+                                              "paddingBottom": "9px",
+                                              "paddingRight": "10px",
+                                            }
+                                          }
+                                          valign="top"
+                                        >
+                                          <table
+                                            border={0}
+                                            cellPadding={0}
+                                            cellSpacing={0}
+                                            className="mcnFollowContentItem"
+                                            style={
+                                              Object {
+                                                "WebkitTextSizeAdjust": "100%",
+                                                "borderCollapse": "collapse",
+                                                "msTextSizeAdjust": "100%",
+                                                "msoTableLspace": "0pt",
+                                                "msoTableRspace": "0pt",
+                                              }
+                                            }
+                                          >
+                                            <tbody>
+                                              <tr>
+                                                <td
+                                                  align="left"
+                                                  valign="middle"
+                                                >
+                                                  <table
+                                                    align="left"
+                                                    border={0}
+                                                    cellPadding={0}
+                                                    cellSpacing={0}
+                                                    style={
+                                                      Object {
+                                                        "WebkitTextSizeAdjust": "100%",
+                                                        "borderCollapse": "collapse",
+                                                        "msTextSizeAdjust": "100%",
+                                                        "msoTableLspace": "0pt",
+                                                        "msoTableRspace": "0pt",
+                                                      }
+                                                    }
+                                                  >
+                                                    <tbody>
+                                                      <tr>
+                                                        <td
+                                                          align="center"
+                                                          className="mcnFollowIconContent"
+                                                          style={
+                                                            Object {
+                                                              "WebkitTextSizeAdjust": "100%",
+                                                              "msTextSizeAdjust": "100%",
+                                                              "msoLineHeightRule": "exactly",
+                                                            }
+                                                          }
+                                                          valign="middle"
+                                                          width={24}
+                                                        >
+                                                          <a
+                                                            data-testid="tableLeftHrefTest"
+                                                            href="mailto:stories@hackernoon.com"
+                                                            target="_blank"
+                                                          >
+                                                            <img
+                                                              alt="Email"
+                                                              className=""
+                                                              data-testid="tableLeftImgTest"
+                                                              height={24}
+                                                              src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/forwardtofriend.png"
+                                                              style={
+                                                                Object {
+                                                                  "border": 0,
+                                                                  "display": "block",
+                                                                  "height": "auto",
+                                                                  "msInterpolationMode": "bicubic",
+                                                                  "outline": "none",
+                                                                  "textDecoration": "none",
+                                                                }
+                                                              }
+                                                              width={24}
+                                                            />
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table
+    border={0}
+    cellPadding={0}
+    cellSpacing={0}
+    className="mcnTextBlock"
+    style={
+      Object {
+        "WebkitTextSizeAdjust": "100%",
+        "borderCollapse": "collapse",
+        "minWidth": "100%",
+        "msTextSizeAdjust": "100%",
+        "msoTableLspace": "0pt",
+        "msoTableRspace": "0pt",
+      }
+    }
+  >
+    <tbody
+      className="mcnTextBlockOuter"
+    >
+      <tr>
+        <td
+          className="mcnTextBlockInner"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "paddingTop": "9px",
+            }
+          }
+          valign="top"
+        >
+          <table
+            align="left"
+            border={0}
+            cellPadding={0}
+            cellSpacing={0}
+            className="mcnTextContentContainer"
+            style={
+              Object {
+                "WebkitTextSizeAdjust": "100%",
+                "borderCollapse": "collapse",
+                "maxWidth": "100%",
+                "minWidth": "100%",
+                "msTextSizeAdjust": "100%",
+                "msoTableLspace": "0pt",
+                "msoTableRspace": "0pt",
+              }
+            }
+          >
+            <tbody>
+              <tr>
+                <td
+                  className="mcnTextContent"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "color": "#656565",
+                      "fontFamily": "\\"Source Sans Pro\\",\\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+                      "fontSize": "12px",
+                      "lineHeight": "150%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                      "paddingBottom": "9px",
+                      "paddingLeft": "18px",
+                      "paddingRight": "18px",
+                      "paddingTop": 0,
+                      "textAlign": "center",
+                      "wordBreak": "break-word",
+                    }
+                  }
+                  valign="top"
+                >
+                  <em
+                    data-testid="copyTest"
+                  >
+                    Copyright ©
+                    2021
+                     
+                    Hacker Noon. All rights reserved.
+                  </em>
+                  <br />
+                  <div>
+                    <strong>
+                      Our mailing address is:
+                    </strong>
+                    <br />
+                    PO Box 2206, Edwards CO, 81632, U.S.A.
+                  </div>
+                  <br />
+                  <a
+                    data-testid="unsubscribeTest"
+                    style={
+                      Object {
+                        "MsTextSizeAdjust": "100%",
+                        "WebkitTextSizeAdjust": "100%",
+                        "color": "#656565",
+                        "fontWeight": "normal",
+                        "msoLineHeightRule": "exactly",
+                        "textDecoration": "underline",
+                      }
+                    }
+                  >
+                    unsubscribe
+                  </a>
+                  <div
+                    style={
+                      Object {
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    <br />
+                    <a
+                      data-testid="newsletterHrefTest"
+                      href="https://sponsor.hackernoon.com/contact"
+                      style={
+                        Object {
+                          "MsTextSizeAdjust": "100%",
+                          "WebkitTextSizeAdjust": "100%",
+                          "color": "#656565",
+                          "fontWeight": "normal",
+                          "msoLineHeightRule": "exactly",
+                          "textDecoration": "underline",
+                        }
+                      }
+                      target="_blank"
+                    >
+                      Click Here To Sponsor A Newsletter by Hacker Noon
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

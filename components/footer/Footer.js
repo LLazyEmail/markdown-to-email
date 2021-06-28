@@ -1,15 +1,20 @@
 import React from 'react';
+
 import Copyrights from 'components/misc/copyrights';
+
 import Address from 'components/misc/address';
 import Unsubscribe from 'components/misc/unsubscribe';
 import NewsletterSponsorshipLink from 'components/misc/newsletter-sponsorship-link';
-import TableLeft from 'components/footer/tableLeft';
+
+// import { Copyrights }  from 'newsletter-hn-misc-components'
+
+import TableLeft from './tableLeft';
 import { styles } from './styles';
 import Table from 'components/html/table';
 import { config } from './config';
 
 const Footer = () => (
-  <>
+  <div>
     <Table
       className="mcnFollowBlock"
       style={styles.followBlock}
@@ -114,7 +119,7 @@ const Footer = () => (
         </tr>
       </tbody>
     </Table>
-  </>
+  </div>
 );
 
 export default Footer;

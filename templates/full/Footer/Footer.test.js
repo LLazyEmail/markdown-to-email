@@ -4,10 +4,10 @@ import ReactDOM from 'react-dom';
 import { cleanup } from '@testing-library/react';
 import { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import Copyright from '../../../components/misc/copyrights';
-import Address from "../../../components/misc/address";
-import Unsubscribe from "../../../components/misc/unsubscribe";
-import NewsletterSponsorshipLink from "../../../components/misc/newsletter-sponsorship-link";
+import Copyright from 'components/misc/copyrights';
+import Address from "components/misc/address";
+import Unsubscribe from "components/misc/unsubscribe";
+import NewsletterSponsorshipLink from "components/misc/newsletter-sponsorship-link";
 
 configure({ adapter: new Adapter() });
 

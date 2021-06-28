@@ -11,6 +11,7 @@ import NewsletterSponsorshipLink from 'components/misc/newsletter-sponsorship-li
 import TableLeft from 'components/footer/tableLeft';
 import { styles } from './styles';
 import Table from 'components/html/table';
+import { config } from './config';
 
 const Footer = () => (
   <div>
@@ -44,33 +45,33 @@ const Footer = () => (
                                 <tr>
                                   <td align="center" valign="top" style={styles.tdCenterTop2}>
                                     <TableLeft
-                                      href="https://twitter.com/hackernoon"
-                                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/twitter.png"
+                                      href={config.twitter}
+                                      src={config.twitterLogo}
                                       alt="Twitter"
                                     />
                                     <TableLeft
-                                      href="https://www.facebook.com/hackernoon"
-                                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/facebook.png"
+                                      href={config.facebook}
+                                      src={config.facebookLogo}
                                       alt="Facebook"
                                     />
                                     <TableLeft
-                                      href="https://instagram.com/hackernoon/"
-                                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/instagram.png"
+                                      href={config.instagram}
+                                      src={config.instagramLogo}
                                       alt="Instagram"
                                     />
                                     <TableLeft
-                                      href="https://hackernoon.com"
-                                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/link.png"
+                                      href={config.hn}
+                                      src={config.hnLogo}
                                       alt="Website"
                                     />
                                     <TableLeft
-                                      href="https://www.youtube.com/channel/UChu5YILgrOYOfkfRlTB-D-g"
-                                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/youtube.png"
+                                      href={config.youtube}
+                                      src={config.youtubeLogo}
                                       alt="YouTube"
                                     />
                                     <TableLeft
-                                      href="mailto:stories@hackernoon.com"
-                                      src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/forwardtofriend.png"
+                                      href={config.email}
+                                      src={config.emailLogo}
                                       alt="Email"
                                     />
                                   </td>

@@ -36,4 +36,22 @@ describe('CtaList/index component', () => {
     const list = wrapper.find('strong');
     expect(list.render().text()).toEqual("Ready to Claim Your Internet Name on Hacker Noon?");
   })
+
+  it('CtaList links', () => {
+    const wrapper = shallow(<CtaList />);
+    const a = wrapper.find('a');
+    expect(a.at(0).props()).toHaveProperty('href', 'https://hackernoon.com/signup?ref=noonifications.tech');
+    expect(a.at(1).props()).toHaveProperty('href', 'https://app.hackernoon.com/subscriptions?ref=noonifications.tech');
+    expect(a.at(2).props()).toHaveProperty('href', 'https://app.hackernoon.com/new?ref=noonifications.tech');
+    expect(a.at(3).props()).toHaveProperty('href', 'https://sponsor.hackernoon.com/brand-as-author?ref=noonifications.tech');
+    expect(a.at(4).props()).toHaveProperty('href', 'https://hackernoon.com/?ref=noonifications.tech');
+  })
+
+  it('CtaList links should be opened in a new window', () => {
+    const wrapper = shallow(<CtaList />);
+    const a = wrapper.find('a');
+    a.forEach((_, index) => {
+      expect(a.at(index).props()).toHaveProperty('target', '_blank');
+    })
+  })
 });
