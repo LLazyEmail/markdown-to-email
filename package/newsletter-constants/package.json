@@ -26,7 +26,7 @@
     "@rollup/plugin-commonjs": "19.0.1",
     "@rollup/plugin-node-resolve": "13.0.2",
     "babel-eslint": "10.1.0",
-    "eslint": "7.30.0",
+    "eslint": "7.31.0",
     "eslint-plugin-json": "3.0.0",
     "os": "0.1.2",
     "prettier": "2.3.2",
