@@ -30,7 +30,7 @@
     "eslint": "7.32.0",
     "eslint-plugin-json": "3.1.0",
     "prettier": "2.3.2",
-    "rollup": "2.56.0",
+    "rollup": "2.56.1",
     "rollup-plugin-includepaths": "0.2.4",
     "rollup-plugin-node-builtins": "2.1.2",
     "rollup-plugin-node-globals": "1.4.0",
