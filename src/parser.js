@@ -1,5 +1,7 @@
 const chalk = require('chalk');
 const { forEach } = require('lodash');
+
+// @TODO both layouts things can be moved out from importing it here.
 const layouts = require('atherdon-newsletter-js-layouts');
 const reactLayouts = require('atherdon-newsletter-react');
 
@@ -66,6 +68,7 @@ function generateFullTemplate2() {
   console.log(chalk.green.bold(message));
 }
 
+
 function generateFullTemplate() {
   const parsedContent = parseFullTHing({ source: FULL_SOURCE });
 
@@ -80,6 +83,9 @@ function generateFullTemplate() {
   // console.log(parsedContent);
 
   // throw new Error("my error message");
+
+
+
 
 
   const fullContent = layouts.fullTemplate(parsedContent.content);
@@ -115,6 +121,9 @@ function generateReactFullTemplate() {
   checkWarnings(parsedContent.warnings);
 
   const fileName = `FullTemplate${Date.now()}.js`;
+
+
+
   const fullContent = reactLayouts.reactFullTemplate(parsedContent.content);
 
   write(fileName, fullContent);
