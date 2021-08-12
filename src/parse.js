@@ -1,4 +1,6 @@
-const { readSourceFile, checkErrors } = require('./utils');
+const { 
+  readSourceFile, checkErrors 
+} = require('./utils');
 
 const { 
   Replacer, 
