@@ -12,8 +12,8 @@ import {
 
 import {
   replaceMarkdown, 
-  replaceMarkdownPreviewText,
-} from './replaceMarkdown'
+  replaceMarkdownPreviewText
+} from './replace-md'
 
 export {
   PlainCallbacks,

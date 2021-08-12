@@ -69,7 +69,7 @@ function replaceMarkdownPreviewText(regexp) {
 }
 
 
-export default {
+export {
   replaceMarkdown,
   replaceMarkdownPreviewText
 };
