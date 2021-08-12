@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`italic/Italic component renders correctly 1`] = `
+<i>
+  <h1>
+    Some text
+  </h1>
+</i>
+`;

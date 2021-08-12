@@ -1,0 +1,31 @@
+.dividerBlock {
+    min-width: 100%;
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    table-layout: fixed !important;
+}
+
+.dividerBlockInner {
+    min-width: 100%;
+    padding: 12px 18px;
+    mso-line-height-rule: exactly;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.dividerContent {
+    min-width: 100%;
+    border-top: 2px none #eaeaea;
+    border-block-end-color: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+td { 
+    mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
+}

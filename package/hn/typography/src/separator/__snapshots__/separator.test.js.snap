@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Separator/index component renders correctly 1`] = `
+<div
+  dir="ltr"
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }
+>
+  <span
+    style={
+      Object {
+        "fontSize": "16px",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+        }
+      }
+    >
+      <em>
+        ***
+      </em>
+    </span>
+  </span>
+</div>
+`;

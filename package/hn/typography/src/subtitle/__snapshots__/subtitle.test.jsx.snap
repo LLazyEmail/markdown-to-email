@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`subtitle/index component renders correctly 1`] = `
+<p
+  dir="ltr"
+  style={
+    Object {
+      "WebkitTextSizeAdjust": "100%",
+      "color": "#111111",
+      "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+      "fontSize": "18px",
+      "lineHeight": "150%",
+      "margin": "10px 0",
+      "msTextSizeAdjust": "100%",
+      "msoLineHeightRule": "exactly",
+      "padding": 0,
+      "textAlign": "left",
+    }
+  }
+>
+  <span
+    style={
+      Object {
+        "fontFamily": "trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontSize": "17px",
+        }
+      }
+    >
+      <strong
+        data-testid="strongChildrenTest"
+        style={
+          Object {
+            "fontWeight": "bolder",
+          }
+        }
+      >
+        <span>
+          Some text
+        </span>
+      </strong>
+    </span>
+  </span>
+</p>
+`;

@@ -1,0 +1,35 @@
+    .ltr {
+        text-align: center;
+        line-height: 150%;
+        margin: 10px 0;
+        padding: 0;
+        mso-line-height-rule: exactly;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        color: #111111;
+        font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+  }
+  .spanFont { 
+      font-family: georgia,times,times new roman,serif;
+    }
+  .spanSize { 
+      font-size: 17px;
+    }
+  .link {
+    mso-line-height-rule: exactly;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #111111;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .img {
+    border: 0px initial;
+    width: 220px;
+    height: 134px;
+    margin: 0px;
+    outline: none;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+  }
