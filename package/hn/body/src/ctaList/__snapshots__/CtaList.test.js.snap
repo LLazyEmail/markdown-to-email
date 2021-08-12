@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CtaList/index component renders correctly 1`] = `
+<div
+  dir="ltr"
+  style={
+    Object {
+      "textAlign": "justify",
+    }
+  }
+>
+  <strong
+    style={
+      Object {
+        "fontSize": "18px",
+        "fontWeight": "bolder",
+      }
+    }
+  >
+    Ready to Claim Your Internet Name on Hacker Noon?
+  </strong>
+  <ol>
+    <li
+      dir="ltr"
+      style={
+        Object {
+          "WebkitTextSizeAdjust": "100%",
+          "msTextSizeAdjust": "100%",
+          "msoLineHeightRule": "exactly",
+        }
+      }
+    >
+      <p
+        dir="ltr"
+        role="presentation"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "color": "#111111",
+            "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "125%",
+            "margin": "10px 0",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+            "padding": "0",
+            "textAlign": "left",
+          }
+        }
+      >
+        <a
+          href="https://hackernoon.com/signup?ref=noonifications.tech"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          Create a free account
+        </a>
+        .
+      </p>
+    </li>
+    <li
+      dir="ltr"
+      style={
+        Object {
+          "WebkitTextSizeAdjust": "100%",
+          "msTextSizeAdjust": "100%",
+          "msoLineHeightRule": "exactly",
+        }
+      }
+    >
+      <p
+        dir="ltr"
+        role="presentation"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "color": "#111111",
+            "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "125%",
+            "margin": "10px 0",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+            "padding": "0",
+            "textAlign": "left",
+          }
+        }
+      >
+        <a
+          href="https://app.hackernoon.com/subscriptions?ref=noonifications.tech"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          Tell us what you want to read about
+        </a>
+        .
+      </p>
+    </li>
+    <li
+      dir="ltr"
+      style={
+        Object {
+          "WebkitTextSizeAdjust": "100%",
+          "msTextSizeAdjust": "100%",
+          "msoLineHeightRule": "exactly",
+        }
+      }
+    >
+      <p
+        dir="ltr"
+        role="presentation"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "color": "#111111",
+            "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "125%",
+            "margin": "10px 0",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+            "padding": "0",
+            "textAlign": "left",
+          }
+        }
+      >
+        <a
+          href="https://app.hackernoon.com/new?ref=noonifications.tech"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          Submit your own tech stories
+        </a>
+        . 
+      </p>
+    </li>
+    <li
+      dir="ltr"
+      style={
+        Object {
+          "WebkitTextSizeAdjust": "100%",
+          "msTextSizeAdjust": "100%",
+          "msoLineHeightRule": "exactly",
+        }
+      }
+    >
+      <p
+        dir="ltr"
+        role="presentation"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "color": "#111111",
+            "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "125%",
+            "margin": "10px 0",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+            "padding": "0",
+            "textAlign": "left",
+          }
+        }
+      >
+        <a
+          href="https://sponsor.hackernoon.com/brand-as-author?ref=noonifications.tech"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          Gain Access to Brand-As-Author
+        </a>
+        ™ Program. 
+      </p>
+    </li>
+    <li
+      dir="ltr"
+      style={
+        Object {
+          "WebkitTextSizeAdjust": "100%",
+          "msTextSizeAdjust": "100%",
+          "msoLineHeightRule": "exactly",
+        }
+      }
+    >
+      <p
+        dir="ltr"
+        role="presentation"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "color": "#111111",
+            "fontFamily": "\\"Source Sans Pro\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "125%",
+            "margin": "10px 0",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+            "padding": "0",
+            "textAlign": "left",
+          }
+        }
+      >
+        Get Your Tech Stories Featured on the 
+        <a
+          href="https://hackernoon.com/?ref=noonifications.tech"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "fontWeight": "bold",
+              "msTextSizeAdjust": "100%",
+              "msoLineHeightRule": "exactly",
+              "textDecoration": "underline",
+            }
+          }
+          target="_blank"
+        >
+          Homepage of Hacker Noon
+        </a>
+        .
+      </p>
+    </li>
+  </ol>
+</div>
+`;

@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo/index component renders correctly 1`] = `
+<table
+  border={0}
+  cellPadding={0}
+  cellSpacing={0}
+  className="mcnImageBlock"
+  style={
+    Object {
+      "WebkitTextSizeAdjust": "100%",
+      "borderCollapse": "collapse",
+      "minWidth": "100%",
+      "msTextSizeAdjust": "100%",
+      "msoTableLspace": "0pt",
+      "msoTableRspace": "0pt",
+    }
+  }
+>
+  <tbody
+    className="mcnImageBlockOuter"
+  >
+    <tr>
+      <td
+        className="mcnImageBlockInner"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "borderCollapse": "collapse",
+            "minWidth": "100%",
+            "msTextSizeAdjust": "100%",
+            "msoTableLspace": "0pt",
+            "msoTableRspace": "0pt",
+          }
+        }
+        valign="top"
+      >
+        <table
+          align="left"
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnImageContentContainer"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderCollapse": "collapse",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoTableLspace": "0pt",
+              "msoTableRspace": "0pt",
+            }
+          }
+        >
+          <tbody>
+            <tr>
+              <td
+                className="mcnImageContent"
+                style={
+                  Object {
+                    "WebkitTextSizeAdjust": "100%",
+                    "msTextSizeAdjust": "100%",
+                    "msoLineHeightRule": "exactly",
+                    "paddingBottom": 0,
+                    "paddingLeft": "9px",
+                    "paddingRight": "9px",
+                    "paddingTop": 0,
+                    "textAlign": "center",
+                  }
+                }
+                valign="top"
+              >
+                <a
+                  className=""
+                  href="https://www.hackernoon.com"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                  target="_blank"
+                  title=""
+                >
+                  <img
+                    align="center"
+                    alt=""
+                    className="mcnImage"
+                    src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/brand/hackernoon.png"
+                    style={
+                      Object {
+                        "border": 0,
+                        "display": "inline !important",
+                        "height": "auto",
+                        "maxWidth": "15426px",
+                        "msInterpolationMode": "bicubic",
+                        "outline": "none",
+                        "paddingBottom": 0,
+                        "textDecoration": "none",
+                        "verticalAlign": "bottom",
+                      }
+                    }
+                    width={600}
+                  />
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Logo/index component renders correctly 2`] = `
+<table
+  border={0}
+  cellPadding={0}
+  cellSpacing={0}
+  className="mcnImageBlock"
+  style={
+    Object {
+      "WebkitTextSizeAdjust": "100%",
+      "borderCollapse": "collapse",
+      "minWidth": "100%",
+      "msTextSizeAdjust": "100%",
+      "msoTableLspace": "0pt",
+      "msoTableRspace": "0pt",
+    }
+  }
+>
+  <tbody
+    className="mcnImageBlockOuter"
+  >
+    <tr>
+      <td
+        className="mcnImageBlockInner"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "borderCollapse": "collapse",
+            "minWidth": "100%",
+            "msTextSizeAdjust": "100%",
+            "msoTableLspace": "0pt",
+            "msoTableRspace": "0pt",
+          }
+        }
+        valign="top"
+      >
+        <table
+          align="left"
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnImageContentContainer"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderCollapse": "collapse",
+              "minWidth": "100%",
+              "msTextSizeAdjust": "100%",
+              "msoTableLspace": "0pt",
+              "msoTableRspace": "0pt",
+            }
+          }
+        >
+          <tbody>
+            <tr>
+              <td
+                className="mcnImageContent"
+                style={
+                  Object {
+                    "WebkitTextSizeAdjust": "100%",
+                    "msTextSizeAdjust": "100%",
+                    "msoLineHeightRule": "exactly",
+                    "paddingBottom": 0,
+                    "paddingLeft": "9px",
+                    "paddingRight": "9px",
+                    "paddingTop": 0,
+                    "textAlign": "center",
+                  }
+                }
+                valign="top"
+              >
+                <a
+                  className=""
+                  href="https://www.hackernoon.com"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                  target="_blank"
+                  title=""
+                >
+                  <img
+                    align="center"
+                    alt=""
+                    className="mcnImage"
+                    src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/brand/hackernoon.png"
+                    style={
+                      Object {
+                        "border": 0,
+                        "display": "inline !important",
+                        "height": "auto",
+                        "maxWidth": "15426px",
+                        "msInterpolationMode": "bicubic",
+                        "outline": "none",
+                        "paddingBottom": 0,
+                        "textDecoration": "none",
+                        "verticalAlign": "bottom",
+                      }
+                    }
+                    width={600}
+                  />
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
