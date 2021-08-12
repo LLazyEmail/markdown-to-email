@@ -60,9 +60,12 @@ function writeReactComponent(fileName, content, dir = 'generated', message) {
   const result = reactComponent.replace(/{content}/g, content);
 
   fs.writeFileSync(_path, result, (err) => {
-    if (err) throw new Error('file not written');
+    if (err){
+      throw new Error('file not written');
+    } 
   });
 
+  // i dont like this line @TODO change it
   message && console.log(`file has been written successfully${fileName}`);
 }
 
@@ -99,6 +102,7 @@ function checkHtml(content) {
     ind = content.indexOf('</table></span></span></div>');
   }
 
+  // hmm, it can be a problem
   for (let i = ind; i < ind + 5000; i++) {
     tempStr += content[i];
   }
@@ -109,6 +113,7 @@ function checkHtml(content) {
     console.log(chalk.yellow("Content has not correct html!!!"));
   }
 }
+
 
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';

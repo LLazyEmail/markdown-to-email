@@ -6,6 +6,11 @@ function replaceHTMLWrapper(wrapperName, config, folder = 'typography') {
 
   // this part will be updated very soon
   let wrapper = layouts[folder][wrapperName];
+
+  // config.map((i,v) => {
+  //  
+  // });
+
   //@TODO replace with lodash
   Object.keys(config).forEach((name) => {
     wrapper = wrapper.replace(new RegExp(`{${name}}`, 'g'), config[name]);
@@ -20,8 +25,14 @@ function replaceReactWrapper(wrapperName, config, folder = 'typography') {
     
   // console.log(reactLayouts.Typography.strong);
   // console.log("name", config);
+
   // this part will be updated very soon
   let wrapper = reactLayouts[folder][wrapperName];
+
+  // config.map((i,v) => {
+  //  
+  // });
+  
   //@TODO replace with lodash
   Object.keys(config).forEach((name) => {
     wrapper = wrapper.replace(new RegExp(`{${name}}`, 'g'), config[name]);
@@ -31,6 +42,7 @@ function replaceReactWrapper(wrapperName, config, folder = 'typography') {
 }
 
 
+// @TODO explore it later
 // try {
 //   myroutine(); // may throw three types of exceptions
 // } catch (e) {
@@ -50,7 +62,7 @@ function replaceReactWrapper(wrapperName, config, folder = 'typography') {
 // https://stackoverflow.com/a/326693
 function replaceMarkdown(regexp, callback) {
     
-    // console.log('helpsers- replace markdown method')
+    // console.log('helpers- replace markdown method')
     // console.log(typeof callback)  
 
   var fixedCallbackMethod = false;
@@ -58,10 +70,12 @@ function replaceMarkdown(regexp, callback) {
       case 'string':
           fixedCallbackMethod = callback;
           break;
+
       case 'undefined':
             console.log("ERRROROROR HERE!!!!")
 
           break;  
+
       default:
           fixedCallbackMethod = callback.bind(this)
           break;

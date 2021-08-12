@@ -47,9 +47,11 @@ function parse(source) {
   // this line is generating an error
   Replacer.emptyBlockquote();
   Replacer.br();
+
   if (!process.env.PARSE === 'noAdv' || process.env.PARSE === 'full') {
     Replacer.sponsorship();
   }
+  
   Replacer.memes();
   Replacer.separator();
 
@@ -63,7 +65,7 @@ function parse(source) {
 
 function parseFullTHing(params) {
 
-  console.log(params);
+  // console.log(params);
 
   const { source } = params;
 

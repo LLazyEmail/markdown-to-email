@@ -3,7 +3,9 @@ const { forEach } = require('lodash');
 const layouts = require('atherdon-newsletter-js-layouts');
 const reactLayouts = require('atherdon-newsletter-react');
 
-const { tempFullTemplate, fullTemplate } = require('./temp-full-template');
+const { 
+  tempFullTemplate, fullTemplate 
+} = require('./temp-full-template');
 
 const {
   write,
@@ -17,7 +19,9 @@ const {
 } = require('./utils');
 
 
-const { parse, parseFullTHing } = require('./parse');
+const { 
+  parse, parseFullTHing 
+} = require('./parse');
 
 const {
   parseMDReact,
@@ -46,10 +50,12 @@ function generateFullTemplate2() {
   const parsedContent = parseFullTHing({ source: FULL_SOURCE });
   const { content, warnings, previewText } = parsedContent;
 
+  // ***
   checkWarnings(warnings);
 
   const fileName = `full-template-2-${Date.now()}.html`;
 
+  // ***
   checkHtml(content);
 
   const fullContent = fullTemplate(content, previewText);
@@ -63,10 +69,12 @@ function generateFullTemplate2() {
 function generateFullTemplate() {
   const parsedContent = parseFullTHing({ source: FULL_SOURCE });
 
+  // ***
   checkWarnings(parsedContent.warnings);
 
   const fileName = `full-template${Date.now()}.html`;
 
+  // ***
   checkHtml(parsedContent.content);
   //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
   // console.log(parsedContent);
@@ -90,6 +98,7 @@ function generateReactContent() {
 
   const parsedContent = parseMDReact(CONTENT_SOURCE);
   // console.log("parsedContent", parsedContent);
+  // ***
   checkWarnings(parsedContent.warnings);
   const fileName = `Content${Date.now()}.js`;
 
@@ -102,6 +111,7 @@ function generateReactContent() {
 function generateReactFullTemplate() {
 
   const parsedContent = parseMDReactFullThing({ source: FULL_SOURCE });
+  // ***
   checkWarnings(parsedContent.warnings);
 
   const fileName = `FullTemplate${Date.now()}.js`;
@@ -118,6 +128,7 @@ function generateReactFullTemplate() {
 function generateContentOnly() {
 
   const parsedContent = parse(CONTENT_SOURCE);
+  // ***
   checkWarnings(parsedContent.warnings);
 
   const fileName = `content${Date.now()}.html`;

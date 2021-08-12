@@ -9,6 +9,7 @@ function tempFullTemplate(content) {
   `
 };
 
+
 // щас это работает лучше 
 function fullTemplate(body, previewText) {
   body = body.replace(previewText, '');
