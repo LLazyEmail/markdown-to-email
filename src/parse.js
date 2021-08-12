@@ -14,6 +14,8 @@ const {
 function parse(source) {
   const markdown = readSourceFile(source);
 
+
+  // @TODO should we move out state from this file?
   const state = {
     content: markdown,
     previewText: '',

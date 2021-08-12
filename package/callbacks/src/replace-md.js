@@ -1,8 +1,3 @@
-
-// include replaceHTMLWrapper from atherdon-callbacks if necessary
-
-
-
 // @TODO explore it later
 // try {
 //   myroutine(); // may throw three types of exceptions
