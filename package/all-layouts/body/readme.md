@@ -1,3 +1,5 @@
+atherdon-newsletter-js-layouts-body
+
 body
   - > headline
   - > logoBottom

@@ -1,11 +1,11 @@
+import main from './main';
+
 import body from 'atherdon-newsletter-js-layouts-body';
 // import body from './body/';
 
 import misc from 'atherdon-newsletter-js-layouts-misc';
 
 // import misc from '../../misc/src/misc';
-
-import main from './main';
 
 import head from 'atherdon-newsletter-js-layouts-misc';
 
