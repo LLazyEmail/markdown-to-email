@@ -1,45 +1,6 @@
-// const { forEach } = require('lodash');
-const layouts = require('atherdon-newsletter-js-layouts');
-const reactLayouts = require('atherdon-newsletter-react');
 
-function replaceHTMLWrapper(wrapperName, config, folder = 'typography') {
+// include replaceHTMLWrapper from atherdon-callbacks if necessary
 
-  // this part will be updated very soon
-  let wrapper = layouts[folder][wrapperName];
-
-  // config.map((i,v) => {
-  //  
-  // });
-
-  //@TODO replace with lodash
-  Object.keys(config).forEach((name) => {
-    wrapper = wrapper.replace(new RegExp(`{${name}}`, 'g'), config[name]);
-  });
-
-  return wrapper;
-}
-
-
-
-function replaceReactWrapper(wrapperName, config, folder = 'typography') {
-    
-  // console.log(reactLayouts.Typography.strong);
-  // console.log("name", config);
-
-  // this part will be updated very soon
-  let wrapper = reactLayouts[folder][wrapperName];
-
-  // config.map((i,v) => {
-  //  
-  // });
-  
-  //@TODO replace with lodash
-  Object.keys(config).forEach((name) => {
-    wrapper = wrapper.replace(new RegExp(`{${name}}`, 'g'), config[name]);
-  });
-
-  return wrapper;
-}
 
 
 // @TODO explore it later
@@ -84,12 +45,13 @@ function replaceMarkdown(regexp, callback) {
   this.content = this.content.replace(regexp, fixedCallbackMethod);
 }
 
-
+// i think this method would be broken now, because we cant play with "this."
 // @TODO find out if we really using this method or not?
 function replaceMarkdownPreviewText(regexp) {
   const config = {
     content: this.content.trim(),
   };
+
   /*
   this.previewText = replaceHTMLWrapper(
         "previewText",
@@ -107,10 +69,7 @@ function replaceMarkdownPreviewText(regexp) {
 }
 
 
-module.exports = {
+export default {
   replaceMarkdown,
-  replaceMarkdownPreviewText,
-
-  replaceReactWrapper,
-  replaceHTMLWrapper,
+  replaceMarkdownPreviewText
 };

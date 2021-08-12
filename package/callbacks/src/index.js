@@ -3,9 +3,15 @@ import ReactCallbacks from './react/index';
 import Replacer from './plain-version/replace';
 import ReactReplacer from './react/react-replace';
 import {
-  newLine, replaceHTMLWrapper, replaceMarkdown, replaceMarkdownPreviewText,
+  newLine, 
+  replaceHTMLWrapper, 
   replaceReactWrapper
 } from './helpers';
+
+import {
+  replaceMarkdown, 
+  replaceMarkdownPreviewText,
+} from './replaceMarkdown'
 
 export {
   PlainCallbacks,
