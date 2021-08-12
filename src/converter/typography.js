@@ -30,15 +30,14 @@ const {
   italic,
   del,
   q,
-  code,
-
+  code
 } = require('../callbacks');
 
 // const layouts = require("atherdon-newsletter-constants");
 
 const ConverterTypography = {
   heading: {
-    key: 'REGEXP_xxxx',
+    key: 'REGEXP_HEADER',
     //     value: 1,
     //     title: "xxx",
   },
@@ -90,3 +89,4 @@ const ConverterTypography = {
 };
 
 // export data
+// export default ConverterTypography

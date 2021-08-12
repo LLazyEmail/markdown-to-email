@@ -1,11 +1,11 @@
 const {
   REGEXP_HEADER,
-
   REGEXP_SPONSORSHIP,
   REGEXP_HTML_COMMENTS,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
+
 const {
   header,
   sponsorship,
@@ -15,19 +15,19 @@ const {
 // const layouts = require("atherdon-newsletter-constants");
 
 const ConverterBody = {
-  headline: {
-    //     key: "REGEXP_xxx",
+  header: {
+        key: "REGEXP_HEADER",
+        value: header,
+    //     title: "xxx",
+  },
+  comments: {
+        key: "REGEXP_HTML_COMMENTS",
     //     value: 1,
     //     title: "xxx",
   },
-  logoBottom: {
-    //     key: "REGEXP_xxx",
-    //     value: 1,
-    //     title: "xxx",
-  },
-  logoTop: {
-    //     key: "REGEXP_xxx",
-    //     value: 1,
+  memes: {
+        key: "REGEXP_MEM",
+        value: mem,
     //     title: "xxx",
   },
   previewText: {
@@ -35,14 +35,9 @@ const ConverterBody = {
     //     value: 1,
     //     title: "xxx",
   },
-  section: {
-    //     key: "REGEXP_xxx",
-    //     value: 1,
-    //     title: "xxx",
-  },
   sponsor: {
     key: 'REGEXP_SPONSORSHIP',
-    //     value: 1,
+        value: sponsorship,
     //     title: "xxx",
   },
 };

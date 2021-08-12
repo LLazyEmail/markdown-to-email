@@ -6,7 +6,8 @@ const { forEach } = require('lodash');
 // this utls file should serve a source for a very small and common methods.
 // module.export = Converter;
 
-function checkWarnings(warnings) {
+function checkWarnings(warnings) {  
+
   forEach(warnings, (index, element) => {
     if (index) {
       const message = `WARNING source.md has ${index} ${element}. Replace it with memes`;
@@ -17,12 +18,15 @@ function checkWarnings(warnings) {
 
 function checkErrors(errors) {
   if (Object.values(errors).includes(false)) {
+
+    // @TODO replace with lodash
     forEach(errors, (_, error) => {
       if (!errors[error]) {
         const message = `ERROR source.md doesn't have ${error}`;
         console.log(chalk.red(message));
       }
     });
+
     const message = 'The full template has not been parsed!';
     console.log(chalk.red.bold(message));
     return true;
@@ -32,7 +36,7 @@ function checkErrors(errors) {
 
 function displayCLIErrors(errors, warnings) {
   if (checkErrors(errors)) {
-
+    // there should be something in here
   } else {
     checkWarnings(warnings);
   }
