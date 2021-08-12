@@ -441,6 +441,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.14.6":
+  version "7.15.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.3.tgz#2e1c2880ca118e5b2f9988322bd8a7656a32502b"
+  integrity sha512-OvwMLqNXkCXSz1kSm58sEsNuhqOx/fKpnUnKnFB5v8uDda5bLNEHNgKPvhDN6IU0LDcnHQ90LlJ0Q6jnyBSIBA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.12.13", "@babel/template@^7.12.7", "@babel/template@^7.3.3":
   version "7.12.13"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.12.13.tgz#530265be8a2589dbb37523844c5bcb55947fb327"
@@ -1235,6 +1242,13 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
+
+atherdon-react-markdown-component-misc@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-misc/-/atherdon-react-markdown-component-misc-0.0.1.tgz#d340bc9d132182a1e11685b296be30ca2ae87e32"
+  integrity sha512-6jeq1CLidAl5Qn7AH0VXm0aSsT1xo9dcCD3gqTqxXkuseOcLsSEuT0xlxXOZ6agPGZBVcMi61cie5DoD0aWnOw==
+  dependencies:
+    "@babel/runtime" "^7.14.6"
 
 available-typed-arrays@^1.0.2:
   version "1.0.2"

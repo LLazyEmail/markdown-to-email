@@ -7,6 +7,11 @@ import HOC from './HOC';
 import Footer from './Footer';
 import BodyPrototype from './Body/BodyPrototype';
 
+
+//---
+import { Address, AnExample } from 'atherdon-react-markdown-component-misc';
+
+
 import config from './config';
 import { styles } from './styles';
 
@@ -16,6 +21,9 @@ const First = ({ header }) => (
       <tr>
         <td valign="top" id="templatePreheader" style={styles.templatePreheader}>
           <Logo />
+
+          <Address />
+          <AnExample name="Sharade" />
         </td>
       </tr>
       <tr>
