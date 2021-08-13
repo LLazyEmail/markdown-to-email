@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sponsor/index component renders correctly 1`] = `
+<table
+  border={0}
+  cellPadding={0}
+  cellSpacing={0}
+  className="mcnImageCardRightContentOuter"
+  style={
+    Object {
+      "WebkitTextSizeAdjust": "100%",
+      "borderCollapse": "collapse",
+      "msTextSizeAdjust": "100%",
+      "msoTableLspace": "0pt",
+      "msoTableRspace": "0pt",
+    }
+  }
+  width="100%"
+>
+  <tbody>
+    <tr>
+      <td
+        align="center"
+        className="mcnImageCardRightContentInner"
+        style={
+          Object {
+            "WebkitTextSizeAdjust": "100%",
+            "msTextSizeAdjust": "100%",
+            "msoLineHeightRule": "exactly",
+            "padding": 0,
+          }
+        }
+        valign="top"
+      >
+        <table
+          align="left"
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnImageCardRightImageContentContainer"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderCollapse": "collapse",
+              "msTextSizeAdjust": "100%",
+              "msoTableLspace": "0pt",
+              "msoTableRspace": "0pt",
+            }
+          }
+          width={200}
+        >
+          <tbody>
+            <tr>
+              <td
+                align="center"
+                className="mcnImageCardRightImageContent"
+                style={
+                  Object {
+                    "WebkitTextSizeAdjust": "100%",
+                    "msTextSizeAdjust": "100%",
+                    "msoLineHeightRule": "exactly",
+                    "paddingBottom": "18px",
+                    "paddingLeft": "18px",
+                    "paddingRight": 0,
+                    "paddingTop": "18px",
+                  }
+                }
+                valign="top"
+              >
+                <a
+                  className=""
+                  data-testid="sponsorHrefTest"
+                  style={
+                    Object {
+                      "WebkitTextSizeAdjust": "100%",
+                      "msTextSizeAdjust": "100%",
+                      "msoLineHeightRule": "exactly",
+                    }
+                  }
+                  target="_blank"
+                  title=""
+                >
+                  <img
+                    alt=""
+                    className="mcnImage"
+                    data-testid="sponsorSrcTest"
+                    style={
+                      Object {
+                        "border": 0,
+                        "borderRadius": "0%",
+                        "height": "auto",
+                        "maxWidth": "150px",
+                        "msInterpolationMode": "bicubic",
+                        "outline": "none",
+                        "textDecoration": "none",
+                        "verticalAlign": "bottom",
+                      }
+                    }
+                    width={150}
+                  />
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table
+          align="right"
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          className="mcnImageCardRightTextContentContainer"
+          style={
+            Object {
+              "WebkitTextSizeAdjust": "100%",
+              "borderCollapse": "collapse",
+              "msTextSizeAdjust": "100%",
+              "msoTableLspace": "0pt",
+              "msoTableRspace": "0pt",
+            }
+          }
+          width={346}
+        >
+          <tbody>
+            <tr>
+              <td
+                className="mcnTextContent"
+                style={
+                  Object {
+                    "WebkitTextSizeAdjust": "100%",
+                    "color": "#f2f2f2",
+                    "fontFamily": "Helvetica",
+                    "fontSize": "14px",
+                    "fontWeight": "normal",
+                    "lineHeight": "150%",
+                    "msTextSizeAdjust": "100%",
+                    "msoLineHeightRule": "exactly",
+                    "paddingBottom": "18px",
+                    "paddingRight": "18px",
+                    "paddingTop": "18px",
+                    "textAlign": "center",
+                    "wordBreak": "break-word",
+                  }
+                }
+                valign="top"
+              >
+                <h1
+                  className="mc-toc-title"
+                  style={
+                    Object {
+                      "color": "#111111",
+                      "display": "block",
+                      "fontFamily": "\\"Merriweather Sans\\", \\"Helvetica Neue\\",Helvetica, Arial, sans-serif",
+                      "fontSize": "26px",
+                      "fontStyle": "normal",
+                      "fontWeight": "bold",
+                      "letterSpacing": "normal",
+                      "lineHeight": "125%",
+                      "margin": 0,
+                      "padding": 0,
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  <br />
+                  <a
+                    style={
+                      Object {
+                        "WebkitTextSizeAdjust": "100%",
+                        "color": "#111111",
+                        "fontWeight": "bold",
+                        "msTextSizeAdjust": "100%",
+                        "msoLineHeightRule": "exactly",
+                        "textDecoration": "underline",
+                      }
+                    }
+                  >
+                    <strong
+                      data-testid="sponsorChildrenTest"
+                    />
+                  </a>
+                </h1>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
