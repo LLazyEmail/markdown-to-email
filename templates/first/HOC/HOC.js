@@ -2,6 +2,7 @@ import React from 'react';
 
 import Table from 'components/html/table';
 
+
 const HOC = ({ children, styles }) => (
   <>
     <div style={{ textAlign: 'center' }}>
