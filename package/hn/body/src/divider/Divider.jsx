@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Table from '../../html/table';
+import Table from '../table';
 
 import { styles } from './styles';
 
