@@ -1,9 +1,6 @@
 import React from 'react';
 
-import Sponsor from 'components/body/sponsor';
-
-
-
+// import Sponsor from 'components/body/sponsor';
 // import Divider from 'components/body/divider';
 
 // import MainTitle from 'components/typography/mainTitle';
@@ -22,6 +19,7 @@ import Sponsor from 'components/body/sponsor';
 import { 
   MainTitle, Image, Heading, Strong, Paragraph, Separator  
 } from "atherdon-react-markdown-component-typography"
+
 import { 
   Sponsor, Divider, CtaList, GetPublished, JoinUs
  }  from "atherdon-react-markdown-component-body"
