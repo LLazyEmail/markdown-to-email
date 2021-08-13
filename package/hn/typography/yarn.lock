@@ -1156,7 +1156,7 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@commitlint/cli@^9.0.1":
+"@commitlint/cli@9.1.2":
   version "9.1.2"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-9.1.2.tgz#3773699ea2ee6192f8dc14dd09b479baaaa13cd3"
   integrity sha512-ctRrrPqjZ8r4Vc4FXpPaScEpkPwfvB0Us3NK2SD2AnLwXGMxOLFTabDmNySU1Xc40ud2CmJsaV8lpavvzs8ZZA==
@@ -1179,7 +1179,7 @@
   resolved "https://registry.yarnpkg.com/@commitlint/config-angular-type-enum/-/config-angular-type-enum-9.1.2.tgz#0459575b98443f7e6e8c4965d2a70b00cc001abd"
   integrity sha512-vPdAnL1GbSKbbMhzAgCknQqCwafhjWI9GKnbNgY6MKcXJEvND/OyufUvxyyiews1blenGJupufZ8JrY5qbJwtQ==
 
-"@commitlint/config-angular@^9.0.1":
+"@commitlint/config-angular@9.1.2":
   version "9.1.2"
   resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-9.1.2.tgz#3bf6d4071b7bfc96ae92ba7c29ba942db76b5f94"
   integrity sha512-zIO26glOlUjFnOiqxBl4fX1p6NYqWzx4OVf56LvrVP4vtrE5z0r/De93iqHLhmx9mBCh8HCUhGjYHR7SkqdepQ==
@@ -1251,7 +1251,7 @@
     conventional-changelog-angular "^5.0.0"
     conventional-commits-parser "^3.0.0"
 
-"@commitlint/prompt-cli@^9.0.1":
+"@commitlint/prompt-cli@9.1.2":
   version "9.1.2"
   resolved "https://registry.yarnpkg.com/@commitlint/prompt-cli/-/prompt-cli-9.1.2.tgz#8d47ac9ddf41a4c16da59bd010819590b60265a2"
   integrity sha512-t0Ghuqkb8qjrPuKPgUUMB0vhAYWb6O8XeZRkH1JSzFlbGNVJUNcH6xrk40z9JFLVdgLaUQziEdvtqGvP/WfWfA==
@@ -1259,7 +1259,7 @@
     "@commitlint/prompt" "^9.1.2"
     execa "^3.4.0"
 
-"@commitlint/prompt@^9.0.1", "@commitlint/prompt@^9.1.2":
+"@commitlint/prompt@9.1.2", "@commitlint/prompt@^9.1.2":
   version "9.1.2"
   resolved "https://registry.yarnpkg.com/@commitlint/prompt/-/prompt-9.1.2.tgz#b0fa35525fa940943eb388292780acbcb9aa4f6c"
   integrity sha512-VxpF+e+rYZZ+8DjIEY3arSnWiKVbDISVxWGbrxUUbheIBnqr1fAFcpJHJWBOzJTW79J79Y6Y6KGcu2fXvPx0ug==
@@ -4261,7 +4261,7 @@ babel-helper-to-multiple-sequence-expressions@^0.5.0:
   resolved "https://registry.yarnpkg.com/babel-helper-to-multiple-sequence-expressions/-/babel-helper-to-multiple-sequence-expressions-0.5.0.tgz#a3f924e3561882d42fcf48907aa98f7979a4588d"
   integrity sha512-m2CvfDW4+1qfDdsrtf4dwOslQC3yhbgyBFptncp4wvtdrDHqueW7slsYv4gArie056phvQFhT2nRcGS4bnm6mA==
 
-babel-jest@^26.0.1, babel-jest@^26.6.3:
+babel-jest@26.6.3, babel-jest@^26.6.3:
   version "26.6.3"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-26.6.3.tgz#d87d25cb0037577a0c89f82e5755c5d293c01056"
   integrity sha512-pl4Q+GAVOHwvjrck6jKjvmGhnO3jHX/xuB9d27f+EJZ/6k+6nMuPjorrYp7s++bKKdANwzElBWnLWaObvTnaZA==
@@ -10605,7 +10605,7 @@ jest-worker@^26.5.0, jest-worker@^26.6.2:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jest@^26.0.1:
+jest@26.6.3:
   version "26.6.3"
   resolved "https://registry.yarnpkg.com/jest/-/jest-26.6.3.tgz#40e8fdbe48f00dfa1f0ce8121ca74b88ac9148ef"
   integrity sha512-lGS5PXGAzR4RF7V5+XObhqz2KZIDUA1yD0DG6pBVmy10eh0ZIXQImRuzocsI/N2XZ1GrLFwTS27In2i2jlpq1Q==
