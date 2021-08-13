@@ -3684,7 +3684,7 @@ acorn@^6.4.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.2.tgz#35866fd710528e92de10cf06016498e47e39e1e6"
   integrity sha512-XtGIhXwF8YM8bJhGxG5kXgjkEuNGLTkoYqVE+KMR+aspr4KGYmKYg7yUe3KghyQ9yheNwLnjmzh/7+gfDBmHCQ==
 
-acorn@^8.2.4:
+acorn@^8.2.4, acorn@^8.4.1:
   version "8.4.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.4.1.tgz#56c36251fc7cabc7096adc18f05afe814321a28c"
   integrity sha512-asabaBSkEKosYKMITunzX177CXxQ4Q8BSSzMTKD+FefUhipQC70gfW5SiUDhYQ3vk8G+81HqQk7Fv9OXwwn9KA==
@@ -5212,7 +5212,7 @@ canvas@2.8.0:
     nan "^2.14.0"
     simple-get "^3.0.3"
 
-caporal@1.4.0:
+caporal@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/caporal/-/caporal-1.4.0.tgz#d6087b815e3df97c3a0f55dbb82850fae29ed585"
   integrity sha512-3pWfIwKVdIbB/gWmpLloO6iGAXTRi9mcTinPOwvHfzH3BYjOhLgq2XRG3hKtp+F6vBcBXxMgCobUzBAx1d8T4A==
@@ -7144,14 +7144,14 @@ es-array-method-boxes-properly@^1.0.0:
   resolved "https://registry.yarnpkg.com/es-array-method-boxes-properly/-/es-array-method-boxes-properly-1.0.0.tgz#873f3e84418de4ee19c5be752990b2e44718d09e"
   integrity sha512-wd6JXUmyHmt8T5a2xreUwKcGPq6f1f+WwIJkijUqiGcJz1qqnZgP6XIK+QyIWU5lT7imeNxUll48bziG+TSYcA==
 
-es-check@5.2.4:
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/es-check/-/es-check-5.2.4.tgz#76fe2d96ad238bd8ec1d9c3b3d0e98ddbcc723e7"
-  integrity sha512-FZ3qAJ9hwguqPvGGagaKAVDnusSkezeHbiKNM5rOepOjloeVuX2e6meMxQ+mKcnWbAFucCG7fszNrzUT8bvHcQ==
+es-check@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/es-check/-/es-check-6.0.0.tgz#4df6acadab22ec76d16581158489b2ff20e7ca57"
+  integrity sha512-FwWQ03GgWL8HplV7gWMDtpR5I+n0K/JYLnLoMDw2DrdsfxF2jV+dtpqo0sIVFeoHgYjEeWkb0ntZvEah7R7T1w==
   dependencies:
-    acorn "^6.4.1"
-    caporal "1.4.0"
-    glob "^7.1.2"
+    acorn "^8.4.1"
+    caporal "^1.4.0"
+    glob "^7.1.7"
 
 es-get-iterator@^1.0.2:
   version "1.1.2"
