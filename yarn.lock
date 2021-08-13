@@ -1243,7 +1243,7 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
-atherdon-react-markdown-component-misc@^0.0.1:
+atherdon-react-markdown-component-misc@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-misc/-/atherdon-react-markdown-component-misc-0.0.1.tgz#d340bc9d132182a1e11685b296be30ca2ae87e32"
   integrity sha512-6jeq1CLidAl5Qn7AH0VXm0aSsT1xo9dcCD3gqTqxXkuseOcLsSEuT0xlxXOZ6agPGZBVcMi61cie5DoD0aWnOw==
