@@ -1,5 +1,9 @@
 import React from 'react';
-import Divider from 'components/body/divider';
+
+
+// import Divider from 'components/body/divider';
+
+import { Divider } from "atherdon-react-markdown-component-body"
 
 import HOC from './HOC';
 import Footer from './Footer';

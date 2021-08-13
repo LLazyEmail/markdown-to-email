@@ -1,8 +1,11 @@
 import React from 'react';
 
-import Logo from 'components/body/logo';
+// import Logo from 'components/body/logo';
 import BodyPrototype from './Body/BodyPrototype';
-import Divider from 'components/body/divider';
+// import Divider from 'components/body/divider';
+
+import { Logo } from "atherdon-react-markdown-component-body"
+import { Divider }  from "atherdon-react-markdown-component-body"
 
 import HOC from './HOC';
 import Footer from './Footer';
