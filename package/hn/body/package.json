@@ -1,6 +1,6 @@
 {
   "name": "atherdon-react-markdown-component-misc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Example React Component for npm Publication using Rollup",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
