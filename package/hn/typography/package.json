@@ -1,6 +1,6 @@
 {
   "name": "atherdon-react-markdown-component-typography",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Example React Component for npm Publication using Rollup",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
@@ -40,7 +40,7 @@
     "example react component",
     "example rollup react component"
   ],
-  "license": "MIT", 
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "7.14.8",
     "@babel/core": "7.15.0",
