@@ -1,15 +1,18 @@
 import React from 'react';
 
-import Logo from 'components/body/logo';
-import Divider from 'components/body/divider';
+// import Logo from 'components/body/logo';
+// import Divider from 'components/body/divider';
+
+
+import { Logo } from "atherdon-react-markdown-component-body"
+import { Divider }  from "atherdon-react-markdown-component-body"
+
+//---
+import { Address, AnExample } from 'atherdon-react-markdown-component-misc';
 
 import HOC from './HOC';
 import Footer from './Footer';
 import BodyPrototype from './Body/BodyPrototype';
-
-
-//---
-import { Address, AnExample } from 'atherdon-react-markdown-component-misc';
 
 
 import config from './config';
@@ -24,6 +27,8 @@ const First = ({ header }) => (
 
           <Address />
           <AnExample name="Sharade" />
+
+          
         </td>
       </tr>
       <tr>
