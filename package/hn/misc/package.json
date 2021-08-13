@@ -80,7 +80,7 @@
     "bufferutil": "4.0.3",
     "canvas": "2.8.0",
     "codecov": "3.8.3",
-    "css-loader": "3.6.0",
+    "css-loader": "6.2.0",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.6",
     "es-check": "6.0.0",
