@@ -1243,14 +1243,14 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
-atherdon-react-markdown-component-body@^0.0.4:
+atherdon-react-markdown-component-body@0.0.4, atherdon-react-markdown-component-body@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-body/-/atherdon-react-markdown-component-body-0.0.4.tgz#e2a51a097dae6ecbe1c487a4a2fc13d59388904c"
   integrity sha512-Te4s6iSSaLHDn0GmpASyHafwUrv3KFfD3rLjcfjqxm+ocyAeHYVPwr+CGbOI1PrzVtfIQTDCoKzFz5QmZfutJg==
   dependencies:
     "@babel/runtime" "^7.14.6"
 
-atherdon-react-markdown-component-content@^0.0.2:
+atherdon-react-markdown-component-content@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-content/-/atherdon-react-markdown-component-content-0.0.2.tgz#61ada71f969ede1a4a951cdc4dd15f398735059a"
   integrity sha512-54TmUXzPUSvlP63NTc4Mwx4tN1Sfabwd3dcdzCIPztireA8VqwIMARfxalDxXn0qytjV5Fblc33jMipmCeYMSw==
@@ -1258,14 +1258,14 @@ atherdon-react-markdown-component-content@^0.0.2:
     "@babel/runtime" "^7.14.6"
     atherdon-react-markdown-component-body "^0.0.4"
 
-atherdon-react-markdown-component-misc@^0.0.4:
+atherdon-react-markdown-component-misc@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-misc/-/atherdon-react-markdown-component-misc-0.0.4.tgz#19fba0b4fba52faf9304cc57c02630838da5e5b8"
   integrity sha512-S4G8aVJL/zdM8nHKr8NcF+ndFF4J/2rkjSiJX8Do8Z2xLWrQeU6Z+3lWOI2P+vP5IPLarJCB2soXCM7UG0RStQ==
   dependencies:
     "@babel/runtime" "^7.14.6"
 
-atherdon-react-markdown-component-typography@^0.0.2:
+atherdon-react-markdown-component-typography@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-typography/-/atherdon-react-markdown-component-typography-0.0.2.tgz#49c73a2e54474ffea7298fe8b8816966853b1826"
   integrity sha512-1LVX8QmNxp2e+AB9uVudY7dJYqBCl6KIIDhBjbdNAz0CkuyJUZtheC3FZZb/XaYJrPzAVrYbdpqbi3CNiYSn2Q==
