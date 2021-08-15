@@ -14,13 +14,13 @@ import Headline from './headline/Headline.jsx';
 
 import JoinUs from './joinus/JoinUs.jsx';
 
-import Logo from './logo/Logo.jsx';
+// import Logo from './logo/Logo.jsx';
 
-import PreviewText from './previewText/PreviewText.jsx';
+// import PreviewText from './previewText/PreviewText.jsx';
 
 import Section from './section/Section.jsx';
 
-import Sponsor from './sponsor/Sponsor.jsx';
+// import Sponsor from './sponsor/Sponsor.jsx';
 
 import Table from './table/Table.jsx';
 
