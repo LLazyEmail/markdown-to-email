@@ -6,14 +6,14 @@ import {
 } from "atherdon-react-markdown-component-misc"
 
 
+import { 
+  Table
+} from "atherdon-react-markdown-component-body"
+
+
 import TableLeft from 'components/footer/tableLeft';
 
-
-
 import { styles } from './styles';
-
-import Table from 'components/html/table';
-
 
 import { config } from './config';
 
