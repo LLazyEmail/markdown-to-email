@@ -24,6 +24,9 @@ export default function Home() {
         <Link href="/mdx-test">
           <a>Here test mdx</a>
         </Link>
+        <Link href="/mdx-components">
+          <a>MDX with components inside</a>
+        </Link>
       </ul>
     </div>
   );

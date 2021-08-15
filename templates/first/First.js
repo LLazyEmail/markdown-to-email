@@ -4,9 +4,6 @@ import React from 'react';
 import { Logo } from "atherdon-react-markdown-component-body"
 import { Divider }  from "atherdon-react-markdown-component-body"
 
-//---
-import { Address, AnExample } from 'atherdon-react-markdown-component-misc';
-
 import HOC from './HOC';
 import Footer from './Footer';
 
@@ -21,12 +18,7 @@ const First = ({ header }) => (
     <tbody>
       <tr>
         <td valign="top" id="templatePreheader" style={styles.templatePreheader}>
-          <Logo />
-
-          <Address />
-          <AnExample name="Sharade" />
-
-          
+          <Logo />        
         </td>
       </tr>
       <tr>
