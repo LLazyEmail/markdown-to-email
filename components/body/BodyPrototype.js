@@ -1,11 +1,10 @@
 import React from 'react';
-import Sponsor from './sponsor';
-import MainTitle from '../typography/mainTitle';
-import Divider from './divider';
-import Image from '../typography/image';
-import Heading from '../typography/heading';
-import Strong from '../typography/strong';
-import Paragraph from '../typography/paragraph';
+
+import Sponsor from "atherdon-react-markdown-component-body";
+
+import { 
+  MainTitle, Image, Heading, Strong, Paragraph, Separator, Divider 
+} from "atherdon-react-markdown-component-typography"
 
 const BodyPrototype = () => (
   <>

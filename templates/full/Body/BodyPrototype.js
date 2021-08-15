@@ -12,6 +12,7 @@ import {
 import { links } from './config';
 
 const BodyPrototype = ({ config }) => {
+  // @TODO update this version. i think it's really too much
   const {
     sponsor, mainTitle, memImageLink, heading, paragraphThird, memImageLink2,
     paragraphFourth, heading2, heading3, paragraphFive, paragraphFourth_1,
