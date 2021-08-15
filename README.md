@@ -58,3 +58,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+---
+
+
+Email Templates:
+- https://www.leemunroe.com/responsive-html-email-template/
+- https://github.com/leemunroe/responsive-html-email-template
+
+- https://www.getvero.com/resources/html-email-templates/
+
+
