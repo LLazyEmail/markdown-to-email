@@ -25,6 +25,7 @@ const PLUGINS = [
   }),
   babel({
     babelHelpers: 'runtime',
+    skipPreflightCheck: true,
     exclude: 'node_modules/**',
   }),
   resolve({

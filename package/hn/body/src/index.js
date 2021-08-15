@@ -14,19 +14,16 @@ import Headline from './headline/Headline.jsx';
 
 import JoinUs from './joinus/JoinUs.jsx';
 
-// import Logo from './logo/Logo.jsx';
-
-// import PreviewText from './previewText/PreviewText.jsx';
-
 import Section from './section/Section.jsx';
 
-// import Sponsor from './sponsor/Sponsor.jsx';
-
 import Table from './table/Table.jsx';
+
+import BodyPrototype from './bodyPrototype/BodyPrototype.js';
 
 export {
     Content, CtaList, Divider, EmptySection, 
     GetPublished, Headline, JoinUs, 
-    Logo, PreviewText, Section, Sponsor,
-    Table
+    Section, Table,
+
+    BodyPrototype
 };
