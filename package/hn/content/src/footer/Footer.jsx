@@ -1,16 +1,19 @@
 import React from 'react';
 
-import Copyrights from 'components/misc/copyrights';
+import { 
+  Copyrights, Address, 
+  Unsubscribe, NewsletterSponsorshipLink 
+} from "atherdon-react-markdown-component-misc"
 
-import Address from 'components/misc/address';
-import Unsubscribe from 'components/misc/unsubscribe';
-import NewsletterSponsorshipLink from 'components/misc/newsletter-sponsorship-link';
+import { 
+  Table
+} from "atherdon-react-markdown-component-body"
 
-// import { Copyrights }  from 'newsletter-hn-misc-components'
 
 import TableLeft from './tableLeft';
+
+
 import { styles } from './styles';
-import Table from 'components/html/table';
 import { config } from './config';
 
 const Footer = () => (

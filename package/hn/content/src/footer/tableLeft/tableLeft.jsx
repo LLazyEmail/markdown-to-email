@@ -1,5 +1,7 @@
 import React from 'react';
-import Table from '../../html/table';
+// import Table from '../../html/table';
+import Table from "atherdon-react-markdown-component-body"
+
 import { styles } from './styles';
 
 const TableLeft = ({ href, src, alt }) => (

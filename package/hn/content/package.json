@@ -1,6 +1,6 @@
 {
   "name": "atherdon-react-markdown-component-content",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Example React Component for npm Publication using Rollup",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
@@ -120,7 +120,8 @@
     "react-dom": "^16.12.0 || ^17.0.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.14.6"
+    "@babel/runtime": "^7.14.6",
+    "atherdon-react-markdown-component-body": "^0.0.4"
   },
   "storybook-deployer": {
     "gitUsername": "jaebradley",
