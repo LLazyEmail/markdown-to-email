@@ -5,16 +5,13 @@ import {
   Unsubscribe, NewsletterSponsorshipLink 
 } from "atherdon-react-markdown-component-misc"
 
-
 import { 
   Table
 } from "atherdon-react-markdown-component-body"
 
-
-import TableLeft from 'components/footer/tableLeft';
+import TableLeft from "atherdon-react-markdown-component-content";
 
 import { styles } from './styles';
-
 import { config } from './config';
 
 const Footer = () => (

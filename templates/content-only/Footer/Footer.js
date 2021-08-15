@@ -1,19 +1,14 @@
 import React from 'react';
 
-
-
 import { 
   Copyrights, Address, 
   Unsubscribe, NewsletterSponsorshipLink 
 } from "atherdon-react-markdown-component-misc"
 
-
-import TableLeft from 'components/footer/tableLeft';
-
+import TableLeft from "atherdon-react-markdown-component-content";
+import Table from "atherdon-react-markdown-component-body";
 
 import { styles } from './styles';
-
-import Table from 'components/html/table';
 
 import { config } from './config';
 

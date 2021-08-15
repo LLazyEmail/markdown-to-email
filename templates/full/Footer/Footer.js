@@ -5,15 +5,12 @@ import {
 } from "atherdon-react-markdown-component-misc"
 
 
-import TableLeft from 'components/footer/tableLeft';
+import TableLeft from "atherdon-react-markdown-component-content";
+
 
 import { 
   Table
 } from "atherdon-react-markdown-component-body"
-// import Table from 'components/html/table';
-
-
-
 
 import { styles } from './styles';
 
