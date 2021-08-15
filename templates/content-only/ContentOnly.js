@@ -6,7 +6,11 @@ import React from 'react';
 import { Divider } from "atherdon-react-markdown-component-body"
 
 import HOC from './HOC';
+
 import Footer from './Footer';
+
+
+
 import BodyPrototype from './Body/BodyPrototype';
 
 import config from './config';
@@ -30,7 +34,9 @@ const ContentOnly = ({ header }) => (
         </td>
       </tr>
     </tbody>
-    <Footer />
+
+    {/*<Footer /> */}
+
   </HOC>
 );
 

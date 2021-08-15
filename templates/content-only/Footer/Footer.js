@@ -9,7 +9,6 @@ import TableLeft from "atherdon-react-markdown-component-content";
 import Table from "atherdon-react-markdown-component-body";
 
 import { styles } from './styles';
-
 import { config } from './config';
 
 const Footer = () => (
