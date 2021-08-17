@@ -23,9 +23,9 @@ yarn dev
 ```
 
 
-https://github.com/hashicorp/next-mdx-remote
+- https://github.com/hashicorp/next-mdx-remote
 
-https://github.com/hashicorp/next-mdx-remote#frontmatter--custom-processing
+- https://github.com/hashicorp/next-mdx-remote#frontmatter--custom-processing
 
 #### Remark plugins to try later later later
 - https://github.com/remarkjs/remark-html
@@ -75,3 +75,6 @@ Email Templates:
 - https://mdxjs.com/getting-started/
 
 
+
+
+## Footer and Header should be very interesting to use.
