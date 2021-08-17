@@ -1,6 +1,9 @@
 import React from 'react';
+
 import Fonts from './fonts';
-import headStyles from 'components/misc/head-styles';
+
+import { headStyles } from 'atherdon-react-markdown-component-misc';
+
 
 
 const Head = ({ title }) => (
