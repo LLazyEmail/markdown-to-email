@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Logo, Divider } from "atherdon-react-markdown-component-body"
+import { Divider } from "atherdon-react-markdown-component-body"
+import { Logo } from "atherdon-react-markdown-component-content"
 
 import HOC from './HOC';
 import Footer from './Footer';
@@ -35,7 +36,7 @@ const First = ({ header }) => (
         </td>
       </tr>
     </tbody>
-    {/* <Footer /> */}
+    <Footer />
   </HOC>
 );
 
