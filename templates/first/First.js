@@ -1,8 +1,6 @@
 import React from 'react';
 
-
-import { Logo } from "atherdon-react-markdown-component-body"
-import { Divider }  from "atherdon-react-markdown-component-body"
+import { Logo, Divider } from "atherdon-react-markdown-component-body"
 
 import HOC from './HOC';
 import Footer from './Footer';

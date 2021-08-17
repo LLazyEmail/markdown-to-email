@@ -4,9 +4,9 @@ import {
   Copyright, Address, Unsubscribe, NewsletterSponsorshipLink 
 } from "atherdon-react-markdown-component-misc"
 
-
-import TableLeft from "atherdon-react-markdown-component-content";
-
+import { 
+  TableLeft 
+}  from "atherdon-react-markdown-component-content";
 
 import { 
   Table

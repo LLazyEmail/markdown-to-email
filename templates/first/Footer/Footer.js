@@ -9,7 +9,7 @@ import {
   Table
 } from "atherdon-react-markdown-component-body"
 
-import TableLeft from "atherdon-react-markdown-component-content";
+import { TableLeft } from "atherdon-react-markdown-component-content";
 
 import { styles } from './styles';
 import { config } from './config';

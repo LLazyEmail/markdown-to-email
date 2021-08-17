@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Table from "atherdon-react-markdown-component-body";
+import { Table } from "atherdon-react-markdown-component-body";
 
 const HOC = ({ children, styles }) => (
   <>

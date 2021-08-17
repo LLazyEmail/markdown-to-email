@@ -6,7 +6,7 @@ import {
 
 import { 
   Sponsor, Divider, CtaList, GetPublished, JoinUs
- }  from "atherdon-react-markdown-component-body"
+} from "atherdon-react-markdown-component-body"
 
 
 import { links } from './config';

@@ -2,12 +2,14 @@ import React from 'react';
 
 import BodyPrototype from './Body/BodyPrototype';
 
-// import Divider from 'components/body/divider';
-
-import { Logo, Divider } from "atherdon-react-markdown-component-body"
+import { 
+  Logo, Divider 
+} from "atherdon-react-markdown-component-body"
 
 import HOC from './HOC';
+
 import Footer from './Footer';
+
 import config from './config';
 
 import { styles } from './styles';
@@ -36,7 +38,7 @@ const FullTemplate = ({ header }) => (
         </td>
       </tr>
     </tbody>
-    <Footer />
+    {/* <Footer /> */}
   </HOC>
 );
 
