@@ -2,10 +2,8 @@ import React from 'react';
 
 import BodyPrototype from './Body/BodyPrototype';
 
-import { 
-  Divider 
-} from "atherdon-react-markdown-component-body"
-import { Logo } from "atherdon-react-markdown-component-content"
+import { Divider } from "atherdon-react-markdown-component-body";
+import { Logo } from "atherdon-react-markdown-component-content";
 
 import HOC from './HOC';
 
