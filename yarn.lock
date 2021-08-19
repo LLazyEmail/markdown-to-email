@@ -1279,12 +1279,28 @@ atherdon-react-markdown-component-misc@^0.0.5:
   dependencies:
     "@babel/runtime" "^7.14.6"
 
+atherdon-react-markdown-component-table@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-table/-/atherdon-react-markdown-component-table-0.1.1.tgz#0addcf7e0ca2f704cc5f323f4f5a6a40ef6c945d"
+  integrity sha512-lOb3qc7aDVhPR+M7lQ3ljLzbAJLhH/bjtQw1+a9AOsqAi4uOLcP009DGJiLbaU/jk468R+LUKaRVti7SegTYtg==
+  dependencies:
+    "@babel/runtime" "^7.14.6"
+
 atherdon-react-markdown-component-typography@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-typography/-/atherdon-react-markdown-component-typography-0.0.2.tgz#49c73a2e54474ffea7298fe8b8816966853b1826"
   integrity sha512-1LVX8QmNxp2e+AB9uVudY7dJYqBCl6KIIDhBjbdNAz0CkuyJUZtheC3FZZb/XaYJrPzAVrYbdpqbi3CNiYSn2Q==
   dependencies:
     "@babel/runtime" "^7.14.6"
+
+atherdon-react-markdown-component-wrapper@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-wrapper/-/atherdon-react-markdown-component-wrapper-0.0.3.tgz#88d24abd29258091c52f4dce7abf35daf4362799"
+  integrity sha512-oGBPzr7VgsqEmXhBodSsm5rZfahCS9ftj4mEePG0IPkHPvefOoQzlimnJnELyMC5RryHFCvjsF7IDMqDc3nzqg==
+  dependencies:
+    "@babel/runtime" "^7.14.6"
+    atherdon-react-markdown-component-body "^0.0.4"
+    atherdon-react-markdown-component-typography "^0.0.2"
 
 available-typed-arrays@^1.0.2:
   version "1.0.2"

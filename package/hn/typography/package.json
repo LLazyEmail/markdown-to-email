@@ -118,7 +118,7 @@
     "@babel/runtime": "^7.14.6"
   },
   "storybook-deployer": {
-    "gitUsername": "jaebradley",
-    "gitEmail": "jae.b.bradley@gmail.com"
+    "gitUsername": "xxx",
+    "gitEmail": "xxx"
   }
 }
