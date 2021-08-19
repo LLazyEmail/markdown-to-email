@@ -14,16 +14,11 @@ import Headline from './headline/Headline.jsx';
 
 import JoinUs from './joinus/JoinUs.jsx';
 
-import Section from './section/Section.jsx';
-
-import Table from './table/Table.jsx';
-
+// import Table from './';
+import HOC from './HOC/HOC.jsx';
 import BodyPrototype from './bodyPrototype/BodyPrototype.js';
 
 export {
-    Content, CtaList, Divider, EmptySection, 
-    GetPublished, Headline, JoinUs, 
-    Section, Table,
-
+    HOC,
     BodyPrototype
 };
