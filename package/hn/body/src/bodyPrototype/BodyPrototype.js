@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Sponsor from "atherdon-react-markdown-component-body";
+import { Sponsor } from "atherdon-react-markdown-component-body";
 
 import { 
   MainTitle, Image, Heading, Strong, Paragraph, 

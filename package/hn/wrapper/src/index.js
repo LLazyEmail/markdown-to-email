@@ -14,7 +14,7 @@ import Headline from './headline/Headline.jsx';
 
 import JoinUs from './joinus/JoinUs.jsx';
 
-// import Table from './';
+import Table from './table/Table.jsx';
 import HOC from './HOC/HOC.jsx';
 import BodyPrototype from './bodyPrototype/BodyPrototype.js';
 
