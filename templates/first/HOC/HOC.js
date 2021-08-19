@@ -3,6 +3,8 @@ import React from 'react';
 import { Table } from "atherdon-react-markdown-component-body";
 
 
+console.log(Table)
+
 const HOC = ({ children, styles }) => (
   <>
     <div style={{ textAlign: 'center' }}>
