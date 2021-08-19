@@ -121,7 +121,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.6",
-    "atherdon-react-markdown-component-body": "^0.0.4"
+    "atherdon-react-markdown-component-body": "^0.1.0"
   },
   "storybook-deployer": {
     "gitUsername": "xxx",
