@@ -19,6 +19,7 @@ import { styles } from './styles';
 const First = ({ header }) => (
   <HOC styles={{ ...styles }}>
     <tbody>
+      
       <tr>
         <td valign="top" id="templatePreheader" style={styles.templatePreheader}>
           <Logo />        
