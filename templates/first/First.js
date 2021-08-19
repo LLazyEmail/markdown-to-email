@@ -3,7 +3,11 @@ import React from 'react';
 import { Divider } from "atherdon-react-markdown-component-body"
 import { Logo } from "atherdon-react-markdown-component-content"
 
-import HOC from './HOC';
+// import HOC from './HOC';
+
+import { HOC } from "atherdon-react-markdown-component-wrapper";
+
+
 import Footer from './Footer';
 
 import BodyPrototype from './Body/BodyPrototype';

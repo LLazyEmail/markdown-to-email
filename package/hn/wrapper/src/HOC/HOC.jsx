@@ -4,6 +4,7 @@ import Table from "../Table/Table.jsx";
 const HOC = ({ children, styles }) => (
   <>
     <div style={{ textAlign: 'center' }}>
+
       <Table
         id="bodyTable"
         style={styles.bodyTable}
@@ -21,6 +22,7 @@ const HOC = ({ children, styles }) => (
           </tr>
         </tbody>
       </Table>
+      
     </div>
   </>
 );
