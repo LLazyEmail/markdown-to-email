@@ -1243,6 +1243,13 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
+atherdon-react-markdown-component-body@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-body/-/atherdon-react-markdown-component-body-0.1.0.tgz#76ec54a66f93ef366dc24e17589772c7d2e2c474"
+  integrity sha512-XupRq6I9XSa2LHnlWyART7tLLDdxGi5qfW0cUdIZnY+Dp9SnKlUBoUNC6F8QDEl+tFVJg1Dx4mgR5Fr+PhKdPQ==
+  dependencies:
+    "@babel/runtime" "^7.14.6"
+
 atherdon-react-markdown-component-body@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-body/-/atherdon-react-markdown-component-body-0.0.4.tgz#e2a51a097dae6ecbe1c487a4a2fc13d59388904c"
@@ -1250,14 +1257,7 @@ atherdon-react-markdown-component-body@^0.0.4:
   dependencies:
     "@babel/runtime" "^7.14.6"
 
-atherdon-react-markdown-component-body@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-body/-/atherdon-react-markdown-component-body-0.1.0.tgz#76ec54a66f93ef366dc24e17589772c7d2e2c474"
-  integrity sha512-XupRq6I9XSa2LHnlWyART7tLLDdxGi5qfW0cUdIZnY+Dp9SnKlUBoUNC6F8QDEl+tFVJg1Dx4mgR5Fr+PhKdPQ==
-  dependencies:
-    "@babel/runtime" "^7.14.6"
-
-atherdon-react-markdown-component-content@^0.0.3:
+atherdon-react-markdown-component-content@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-content/-/atherdon-react-markdown-component-content-0.0.3.tgz#724cb782320babad20076766171cfee4ed4766db"
   integrity sha512-zSYBvH4AI/NmS6cQ14u8dwBFBf9g0UQIUKp8fO7AtlcBSTlol1ri8H8gatg+eakQQvNOdcpSLp31ahwBnt99RQ==
@@ -1265,35 +1265,35 @@ atherdon-react-markdown-component-content@^0.0.3:
     "@babel/runtime" "^7.14.6"
     atherdon-react-markdown-component-body "^0.0.4"
 
-atherdon-react-markdown-component-html@^0.0.5:
+atherdon-react-markdown-component-html@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-html/-/atherdon-react-markdown-component-html-0.0.5.tgz#db77d129e1d2ee3da8a309236c179010206bcaf3"
   integrity sha512-gk0FOfi/p700SiAjN4Mg44zb40DmbEhYpv/ACrNI4G+89ZA61PP96fo74qATrqN3rfxTCgRQtbKwQnHT1IApCA==
   dependencies:
     "@babel/runtime" "^7.14.6"
 
-atherdon-react-markdown-component-misc@^0.0.5:
+atherdon-react-markdown-component-misc@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-misc/-/atherdon-react-markdown-component-misc-0.0.5.tgz#0b9b5992d1a19f286b679ec2578653f0fd7700fd"
   integrity sha512-vG5Zwq2bp5gyf1E62ivXp7vqxRFU02zTNvBDWY0K4X+7EC9bdzhPh10Z6elRRyrN2aMRHZ3lvhx+58YXr3ZdOg==
   dependencies:
     "@babel/runtime" "^7.14.6"
 
-atherdon-react-markdown-component-table@^0.1.1:
+atherdon-react-markdown-component-table@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-table/-/atherdon-react-markdown-component-table-0.1.1.tgz#0addcf7e0ca2f704cc5f323f4f5a6a40ef6c945d"
   integrity sha512-lOb3qc7aDVhPR+M7lQ3ljLzbAJLhH/bjtQw1+a9AOsqAi4uOLcP009DGJiLbaU/jk468R+LUKaRVti7SegTYtg==
   dependencies:
     "@babel/runtime" "^7.14.6"
 
-atherdon-react-markdown-component-typography@^0.0.2:
+atherdon-react-markdown-component-typography@0.0.2, atherdon-react-markdown-component-typography@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-typography/-/atherdon-react-markdown-component-typography-0.0.2.tgz#49c73a2e54474ffea7298fe8b8816966853b1826"
   integrity sha512-1LVX8QmNxp2e+AB9uVudY7dJYqBCl6KIIDhBjbdNAz0CkuyJUZtheC3FZZb/XaYJrPzAVrYbdpqbi3CNiYSn2Q==
   dependencies:
     "@babel/runtime" "^7.14.6"
 
-atherdon-react-markdown-component-wrapper@^0.0.3:
+atherdon-react-markdown-component-wrapper@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-wrapper/-/atherdon-react-markdown-component-wrapper-0.0.3.tgz#88d24abd29258091c52f4dce7abf35daf4362799"
   integrity sha512-oGBPzr7VgsqEmXhBodSsm5rZfahCS9ftj4mEePG0IPkHPvefOoQzlimnJnELyMC5RryHFCvjsF7IDMqDc3nzqg==
