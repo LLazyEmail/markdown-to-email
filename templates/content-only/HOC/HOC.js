@@ -4,6 +4,8 @@ import { Table } from "atherdon-react-markdown-component-body";
 const HOC = ({ children, styles }) => (
   <>
     <div style={{ textAlign: 'center' }}>
+
+      {/*
       <Table
         id="bodyTable"
         style={styles.bodyTable}
@@ -21,6 +23,8 @@ const HOC = ({ children, styles }) => (
           </tr>
         </tbody>
       </Table>
+        */}
+
     </div>
   </>
 );

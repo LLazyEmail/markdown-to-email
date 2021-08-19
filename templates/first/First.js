@@ -28,15 +28,16 @@ const First = ({ header }) => (
       <tr>
         <td valign="top" id="templateBody" style={styles.templateBody}>
           <Divider>
+            {/*
             <BodyPrototype
               config={config}
-            />
+            />*/}
           </Divider>
           <Logo />
         </td>
       </tr>
     </tbody>
-    <Footer />
+    {/*<Footer /> */}
   </HOC>
 );
 
