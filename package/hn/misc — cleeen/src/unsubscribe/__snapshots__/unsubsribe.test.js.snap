@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`unsubscribe/index component renders correctly (Snapshot) 1`] = `
+<a
+  data-testid="unsubscribeTest"
+  style={
+    Object {
+      "MsTextSizeAdjust": "100%",
+      "WebkitTextSizeAdjust": "100%",
+      "color": "#656565",
+      "fontWeight": "normal",
+      "msoLineHeightRule": "exactly",
+      "textDecoration": "underline",
+    }
+  }
+>
+  unsubscribe
+</a>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`copyrights/index component renders correctly (Snapshot) 1`] = `
+<em
+  data-testid="copyTest"
+>
+  Copyright ©
+  2021
+   
+  Hacker Noon. All rights reserved.
+</em>
+`;

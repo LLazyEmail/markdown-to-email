@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`address/index component renders correctly 1`] = `
+<div>
+  <strong>
+    Our mailing address is:
+  </strong>
+  <br />
+  PO Box 2206, Edwards CO, 81632, U.S.A.
+</div>
+`;
