@@ -1,8 +1,0 @@
-{
-  "extends": [
-    "airbnb"
-  ],
-  "env": {
-    "jest": true
-  }
-}
