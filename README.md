@@ -78,3 +78,5 @@ Email Templates:
 
 
 ## Footer and Header should be very interesting to use.
+
+Componens library is moved away into a separated repository: https://github.com/atherdon/react-email-letter-components
