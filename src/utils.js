@@ -2,75 +2,9 @@ const fs = require('fs');
 const chalk = require('chalk');
 const { forEach } = require('lodash');
 
-// @todo it's very bad to use converter here, i think it;s deserve a separated file.
-// this utls file should serve a source for a very small and common methods.
-// module.export = Converter;
-
-function checkWarnings(warnings) {  
-
-  forEach(warnings, (index, element) => {
-    if (index) {
-      const message = `WARNING source.md has ${index} ${element}. Replace it with memes`;
-      console.log(chalk.yellow(message));
-    }
-  });
-}
-
-function checkErrors(errors) {
-  if (Object.values(errors).includes(false)) {
-
-    // @TODO replace with lodash
-    forEach(errors, (_, error) => {
-      if (!errors[error]) {
-        const message = `ERROR source.md doesn't have ${error}`;
-        console.log(chalk.red(message));
-      }
-    });
-
-    const message = 'The full template has not been parsed!';
-    console.log(chalk.red.bold(message));
-    return true;
-  }
-  return false;
-}
-
-function displayCLIErrors(errors, warnings) {
-  if (checkErrors(errors)) {
-    // there should be something in here
-  } else {
-    checkWarnings(warnings);
-  }
-}
-
-
-
-function checkHtml(content) {
-  const searchPattern = new RegExp('(<table|<tr>|<td|<tbody>)', 'i');
-  let ind, tempStr = '';
-
-  if (process.env.noAdv) {
-    ind = content.indexOf('<h1 class="mc-toc-title"');
-  } else {
-    ind = content.indexOf('</table></span></span></div>');
-  }
-
-  // hmm, it can be a problem
-  for (let i = ind; i < ind + 5000; i++) {
-    tempStr += content[i];
-  }
-
-  if (searchPattern.test(tempStr)) {
-    console.log(chalk.green("Content has correct html!!!"));
-  } else {
-    console.log(chalk.yellow("Content has not correct html!!!"));
-  }
-}
-
-
 const MESSAGE_HTML_CONTENT_ONLY = 'The content has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE = 'The full-template has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE2 = 'The full-template has been parsed successfully2';
-
 
 const MESSAGE_REACT_FULL_TEMPLATE = 'The FullTemplate has been parsed successfully';
 const MESSAGE_REACT_CONTENT = 'The Content has been parsed successfully';
@@ -132,6 +66,13 @@ function isFolderExists(dir) {
 }
 
 
+
+function generateTemplateName = (suffix, ext = 'html') => {
+
+  return "${suffix}-${Date.now()}.${ext}";
+}
+
+
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
 
@@ -143,16 +84,9 @@ module.exports = {
   writeReactComponent,
   readSourceFile,
   isFolderExists,
-
-  displayCLIErrors,
-  checkErrors,
-  checkWarnings,
-  checkHtml,
   
   FULL_SOURCE,
-  CONTENT_SOURCE
-  
-  
+  CONTENT_SOURCE,
   
 MESSAGE_HTML_CONTENT_ONLY,
 MESSAGE_HTML_FULL_TEMPLATE,
