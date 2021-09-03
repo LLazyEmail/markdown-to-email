@@ -42,6 +42,41 @@ function displayCLIErrors(errors, warnings) {
   }
 }
 
+
+
+function checkHtml(content) {
+  const searchPattern = new RegExp('(<table|<tr>|<td|<tbody>)', 'i');
+  let ind, tempStr = '';
+
+  if (process.env.noAdv) {
+    ind = content.indexOf('<h1 class="mc-toc-title"');
+  } else {
+    ind = content.indexOf('</table></span></span></div>');
+  }
+
+  // hmm, it can be a problem
+  for (let i = ind; i < ind + 5000; i++) {
+    tempStr += content[i];
+  }
+
+  if (searchPattern.test(tempStr)) {
+    console.log(chalk.green("Content has correct html!!!"));
+  } else {
+    console.log(chalk.yellow("Content has not correct html!!!"));
+  }
+}
+
+
+const MESSAGE_HTML_CONTENT_ONLY = 'The content has been parsed successfully';
+const MESSAGE_HTML_FULL_TEMPLATE = 'The full-template has been parsed successfully';
+const MESSAGE_HTML_FULL_TEMPLATE2 = 'The full-template has been parsed successfully2';
+
+
+const MESSAGE_REACT_FULL_TEMPLATE = 'The FullTemplate has been parsed successfully';
+const MESSAGE_REACT_CONTENT = 'The Content has been parsed successfully';
+
+
+
 const reactComponent = `
 import React from "react";
 
@@ -96,28 +131,6 @@ function isFolderExists(dir) {
   }
 }
 
-function checkHtml(content) {
-  const searchPattern = new RegExp('(<table|<tr>|<td|<tbody>)', 'i');
-  let ind, tempStr = '';
-
-  if (process.env.noAdv) {
-    ind = content.indexOf('<h1 class="mc-toc-title"');
-  } else {
-    ind = content.indexOf('</table></span></span></div>');
-  }
-
-  // hmm, it can be a problem
-  for (let i = ind; i < ind + 5000; i++) {
-    tempStr += content[i];
-  }
-
-  if (searchPattern.test(tempStr)) {
-    console.log(chalk.green("Content has correct html!!!"));
-  } else {
-    console.log(chalk.yellow("Content has not correct html!!!"));
-  }
-}
-
 
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
@@ -130,10 +143,21 @@ module.exports = {
   writeReactComponent,
   readSourceFile,
   isFolderExists,
+
   displayCLIErrors,
   checkErrors,
   checkWarnings,
+  checkHtml,
+  
   FULL_SOURCE,
-  CONTENT_SOURCE,
-  checkHtml
+  CONTENT_SOURCE
+  
+  
+  
+MESSAGE_HTML_CONTENT_ONLY,
+MESSAGE_HTML_FULL_TEMPLATE,
+MESSAGE_HTML_FULL_TEMPLATE2,
+
+MESSAGE_REACT_FULL_TEMPLATE,
+MESSAGE_REACT_CONTENT
 };
