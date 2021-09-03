@@ -7,6 +7,7 @@ function checkWarnings(warnings) {
     if (index) {
       const message = `WARNING source.md has ${index} ${element}. Replace it with memes`;
       console.log(chalk.yellow(message));
+      // printMessage();
     }
   });
 }
@@ -18,12 +19,16 @@ function checkErrors(errors) {
     forEach(errors, (_, error) => {
       if (!errors[error]) {
         const message = `ERROR source.md doesn't have ${error}`;
+    
+        // printMessage();
         console.log(chalk.red(message));
       }
     });
 
     const message = 'The full template has not been parsed!';
+    // printMessage();
     console.log(chalk.red.bold(message));
+    
     return true;
   }
   return false;
@@ -55,16 +60,37 @@ function checkHtml(content) {
   }
 
   if (searchPattern.test(tempStr)) {
+    // printMessage();
     console.log(chalk.green("Content has correct html!!!"));
   } else {
+    // printMessage();
     console.log(chalk.yellow("Content has not correct html!!!"));
   }
 }
 
+function printMessage = ({ message, type }) => {
+    
+  if (!message) return;
+  
+  if (type == 'yellow') {
+      console.log(chalk.yellow(message));
+  }
+
+  if (type == 'red'){
+        console.log(chalk.red(message));
+  }
+  
+  if (type == 'green'){
+        console.log(chalk.green(message));
+  }
+  
+}
 
 module.exports = {
   displayCLIErrors,
   checkErrors,
   checkWarnings,
-  checkHtml
+  checkHtml,
+  
+  printMessage
 };
