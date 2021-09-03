@@ -33,7 +33,7 @@ MESSAGE_REACT_CONTENT
 const {
   displayCLIErrors,
   checkWarnings,
-  checkHtml
+  checkHtml, printMessage 
 } = require('./command-line-methods');
 
 
@@ -68,11 +68,6 @@ switch (process.env.PARSE) {
     break;
 }
 
-function generateTemplateName = (suffix, ext = 'html') => {
-
-  return "${suffix}-${Date.now()}.${ext}";
-}
-
 function generateFullTemplate2() {
   const { content, warnings, previewText } = parseFullTHing({ source: FULL_SOURCE });
   
@@ -89,8 +84,8 @@ function generateFullTemplate2() {
   write(fileName, fullContent);
 
   const message = 'The full-template has been parsed successfully2';
-
-  console.log(chalk.green.bold(message));
+  printMessage(message, 'green2'); 
+  
 }
 
 
@@ -123,8 +118,8 @@ function generateFullTemplate() {
   write(fileName, fullContent);
 
   const message = 'The full-template has been parsed successfully';
-
-  console.log(chalk.green.bold(message));
+  printMessage(message, 'green2'); 
+  
 }
 
 function generateReactContent() {
@@ -142,7 +137,7 @@ function generateReactContent() {
   writeReactComponent(fileName, content);
 
   const message = 'The Content has been parsed successfully';
-  console.log(chalk.green.bold(message));
+  printMessage(message, 'green2'); 
   
 }
 
@@ -164,8 +159,7 @@ const fileName = generateTemplateName(`FullTemplate`, 'js);
 
   
   const message = 'The FullTemplate has been parsed successfully';
-
-  console.log(chalk.green.bold(message));
+  printMessage(message, 'green2'); 
   
 }
 
@@ -188,8 +182,7 @@ function generateContentOnly() {
 
   
   const message = 'The content has been parsed successfully';
-
-  console.log(chalk.green.bold(message));
+  printMessage(message, 'green2'); 
   
 }
 
