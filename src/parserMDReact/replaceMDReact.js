@@ -22,16 +22,12 @@ const {
   sponsorship,
   br,
   newLine,
-} = require('./callbacksMDReact');
-
-
+} = require('atherdon-callbacks');
 
 const {
   ulList,
   olList
 } = require('atherdon-callbacks');
-
-
 
 const {
   REGEXP_HEADER,
@@ -55,6 +51,7 @@ const {
   REGEXP_PREVIEW_TEXT,
   REGEXP_SEPARATOR,
 } = require('./constantsMDReact');
+
 
 const {
     REGEXP_UL_LIST,
