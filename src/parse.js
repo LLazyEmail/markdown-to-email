@@ -1,5 +1,8 @@
 const { 
-  readSourceFile, checkErrors 
+  readSourceFile, 
+  
+  
+  checkErrors 
 } = require('./utils');
 
 const { 
@@ -12,13 +15,10 @@ const {
   REGEXP_PREVIEW_TEXT 
 } = require('atherdon-newsletter-constants');
 
-// @todo update this method. I'm sure it can be improved.
-function parse(source) {
-  const markdown = readSourceFile(source);
-
-
+function stateInit = ( markdown ) => {
   // @TODO should we move out state from this file?
-  const state = {
+  
+  let stateObject = {
     content: markdown,
     previewText: '',
     warnings: {
@@ -30,6 +30,15 @@ function parse(source) {
       sponsorshipBottom: false,
     },
   };
+  
+  return stateObject;
+}
+
+// @todo update this method. I'm sure it can be improved.
+function parse(source) {
+  const markdown = readSourceFile(source);
+
+  let state = stateInit(markdown);
 
   Replacer.replaceMDBinded = replaceMarkdown.bind(state);
   Replacer.replaceMDBindedPreviewText =
