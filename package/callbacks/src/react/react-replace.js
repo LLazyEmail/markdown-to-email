@@ -126,6 +126,26 @@ class ReactReplacer {
       this.replaceMDBinded(this._constants.REGEXP_SEPARATOR, separator);
     };
   }
+
+  typography(){
+    this.strong();
+    this.em();
+    this.header();
+    this.image();
+    this.link();
+    this.del();
+    this.q();
+    this.code();
+    this.ul();
+    this.ol();
+    this.blockquote();
+    this.hr();
+    this.paragraph();
+    this.emptyUl();
+    this.emptyOl();
+  }
+
+
 }
 
 export default new ReactReplacer(constants);

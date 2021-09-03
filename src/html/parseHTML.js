@@ -25,34 +25,37 @@ function parse(source) {
   Replacer.replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
   Replacer.comments();
 
-  
 
-  Replacer.strong();
-  Replacer.em();
-  Replacer.header();
-  Replacer.image();
-  Replacer.link();
-  Replacer.del();
-  Replacer.q();
-  Replacer.code();
-  Replacer.ul();
-  Replacer.ol();
-  Replacer.blockquote();
-  Replacer.hr();
-  Replacer.paragraph();
-  Replacer.emptyUl();
-  Replacer.emptyOl();
+  Replacer.typography();
 
-  // this line is generating an error
-  Replacer.emptyBlockquote();
-  Replacer.br();
+  // Replacer.strong();
+  // Replacer.em();
+  // Replacer.header();
+  // Replacer.image();
+  // Replacer.link();
+  // Replacer.del();
+  // Replacer.q();
+  // Replacer.code();
+  // Replacer.ul();
+  // Replacer.ol();
+  // Replacer.blockquote();
+  // Replacer.hr();
+  // Replacer.paragraph();
+  // Replacer.emptyUl();
+  // Replacer.emptyOl();
 
-  if (!process.env.PARSE === 'noAdv' || process.env.PARSE === 'full') {
-    Replacer.sponsorship();
-  }
+  Replacer.miscellaneous();
 
-  Replacer.memes();
-  Replacer.separator();
+  // // this line is generating an error
+  // Replacer.emptyBlockquote();
+  // Replacer.br();
+
+  // if (!process.env.PARSE === 'noAdv' || process.env.PARSE === 'full') {
+  //   Replacer.sponsorship();
+  // }
+
+  // Replacer.memes();
+  // Replacer.separator();
 
   // i'm adding it only because error warning didnt return red stuff
   // checkErrors(state.errors);
