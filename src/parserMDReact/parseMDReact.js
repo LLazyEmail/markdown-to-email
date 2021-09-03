@@ -1,6 +1,12 @@
 const { readSourceFile } = require('../utils');
 
 
+
+const {
+  checkErrors, 
+  stateInit
+} = require('./command-line-methods');
+
 // ReactReplacer
 const {
   ReactReplacer, replaceMarkdown, replaceMarkdownPreviewText
@@ -11,21 +17,9 @@ const {
 function parseMDReact(source, isFull) {
   const markdown = readSourceFile(source);
 
-  const state = {
-    content: markdown,
-    warnings: {
-      images: 0,
-    },
-    errors: {
-      previewText: false,
-      sponsorshipTop: false,
-      sponsorshipBottom: false,
-    },
-  };
-
-
-
-
+    
+  const state = stateInit(markdown);
+    
 
   ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);
   ReactReplacer.replaceMDBindedPreviewText =
