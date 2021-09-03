@@ -1,3 +1,4 @@
+const chalk = require('chalk');
 const { forEach } = require('lodash');
 
 function checkWarnings(warnings) {  
