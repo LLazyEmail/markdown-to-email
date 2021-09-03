@@ -1,12 +1,6 @@
 const { readSourceFile } = require('../utils');
 
-
-
-const {
-  checkErrors, 
-  stateInit
-} = require('../command-line-methods');
-
+const { stateInit } = require('../command-line-methods');
 
 
 
@@ -18,10 +12,8 @@ const {
 
 // @todo update this method. I'm sure it can be improved.
 function parseMDReact(source, isFull) {
-  const markdown = readSourceFile(source);
-
     
-  const state = stateInit(markdown);
+  const state = stateInit(source);
     
 
   ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);

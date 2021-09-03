@@ -11,20 +11,14 @@ const {
   hr,
   empty,
   previewText,
-  separator
-} = require('atherdon-callbacks');
+  separator,
 
-
-
-const {
   image,
   paragraphWrapper,
   sponsorship,
   br,
   newLine,
-} = require('atherdon-callbacks');
 
-const {
   ulList,
   olList
 } = require('atherdon-callbacks');
@@ -50,15 +44,16 @@ const {
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
   REGEXP_SEPARATOR,
-} = require('./constantsMDReact');
 
 
-const {
-    REGEXP_UL_LIST,
-    REGEXP_OL_LIST,
-    REGEXP_EMPTY_UL,
-    REGEXP_EMPTY_OL,
-} = require('./constants-react-2');
+  REGEXP_UL_LIST,
+  REGEXP_OL_LIST,
+  REGEXP_EMPTY_UL,
+  REGEXP_EMPTY_OL
+} = require('atherdon-newsletter-constants');
+
+
+
 
 var ReplacerMDReact = function () {};
 

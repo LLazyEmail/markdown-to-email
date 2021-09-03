@@ -1,9 +1,4 @@
-const { 
-  readSourceFile
-} = require('../utils');
-
 const {
-  checkErrors, 
   stateInit
 } = require('../command-line-methods');
 
@@ -24,7 +19,7 @@ function parse(source) {
 
   // passing content into the state, 
   // so we can do our updates step by step and track any errors  
-  let state = stateInit(readSourceFile(source));
+  let state = stateInit(source);
 
   Replacer.replaceMDBinded = replaceMarkdown.bind(state);
   Replacer.replaceMDBindedPreviewText =
@@ -62,7 +57,9 @@ function parse(source) {
   Replacer.separator();
 
   //i'm adding it only because error warning didnt return red stuff
-  checkErrors(state.errors);
+  // checkErrors(state.errors);
+  state.innerCheckErrors();
+
 
   // console.log(state)
 

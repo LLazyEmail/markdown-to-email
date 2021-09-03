@@ -21,6 +21,7 @@ const {
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
+
 const {
   header,
   image,
@@ -40,9 +41,10 @@ const {
   hr,
   empty,
   newLine,
-} = require('../callbacks');
+} = require('atherdon-callbacks');
 
 // const layouts = require("atherdon-newsletter-constants");
+
 
 const ConverterTypography = {
   heading: {

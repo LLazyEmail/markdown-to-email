@@ -1,10 +1,5 @@
-const { forEach } = require('lodash');
-
-
 // @TODO both layouts things can be moved out from importing it here.
 const layouts = require('atherdon-newsletter-js-layouts');
-
-
 
 const reactLayouts = require('atherdon-newsletter-react');
 
@@ -57,6 +52,9 @@ const {
 } = require('./parserMDReact/parseMDReact');
 
 
+
+
+
 switch (process.env.PARSE) {
   case 'full':
 
@@ -77,6 +75,9 @@ switch (process.env.PARSE) {
     generateFullTemplate();
     break;
 }
+
+
+
 
 function generateFullTemplate2() {
   
@@ -115,6 +116,10 @@ function generateFullTemplate() {
   printMessage(message, 'green2'); 
   
 }
+
+
+
+
 
 
 function generateReactContent() {
@@ -159,6 +164,10 @@ function generateReactFullTemplate() {
 
 
 
+
+
+
+
 // this method is depricated.
 // we will remove export of it at some point.
 function generateContentOnly() {
@@ -178,6 +187,8 @@ function generateContentOnly() {
   printMessage(message, 'green2'); 
   
 }
+
+
 
 module.exports = {
   generateContentOnly,

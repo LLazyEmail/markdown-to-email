@@ -94,7 +94,9 @@ const printMessage = ({ message, type }) => {
 }
 
 
-const stateInit = ( markdown ) => {
+const stateInit = ( source ) => {
+
+  let markdown = readSourceFile(source);
   // @TODO should we move out state from this file?
   
   let stateObject = {
@@ -108,6 +110,10 @@ const stateInit = ( markdown ) => {
       sponsorshipTop: false,
       sponsorshipBottom: false,
     },
+
+    innerCheckErrors: function (){
+      checkErrors(this.errors);
+    }
   };
   
   return stateObject;
