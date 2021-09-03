@@ -16,11 +16,6 @@ const {
   write,
   readFile,
   
-  
-  displayCLIErrors,
-  checkWarnings,
-  checkHtml,
-  
   writeReactComponent,
   FULL_SOURCE,
   CONTENT_SOURCE,
@@ -34,6 +29,12 @@ MESSAGE_REACT_CONTENT
 
   
 } = require('./utils');
+
+const {
+  displayCLIErrors,
+  checkWarnings,
+  checkHtml
+} = require('./command-line-methods');
 
 
 const { 
@@ -73,10 +74,8 @@ function generateTemplateName = (suffix, ext = 'html') => {
 }
 
 function generateFullTemplate2() {
-  const parsedContent = parseFullTHing({ source: FULL_SOURCE });
+  const { content, warnings, previewText } = parseFullTHing({ source: FULL_SOURCE });
   
-  const { content, warnings, previewText } = parsedContent;
-
   // ***
   checkWarnings(warnings);
 
@@ -96,11 +95,9 @@ function generateFullTemplate2() {
 
 
 function generateFullTemplate() {
-  const parsedContent = parseFullTHing({ source: FULL_SOURCE });
+  const { content, warnings, previewText } = parseFullTHing({ source: FULL_SOURCE });
 
   
-  const { content, warnings, previewText } = parsedContent;
-
   // ***
   checkWarnings(warnings);
 
@@ -132,14 +129,12 @@ function generateFullTemplate() {
 
 function generateReactContent() {
 
-  const parsedContent = parseMDReact(CONTENT_SOURCE);
-  // console.log("parsedContent", parsedContent);
+  const { content, warnings, previewText } = parseMDReact(CONTENT_SOURCE);
+  // console.log("parsedContent", { content, warnings, previewText });
   
   
-  const { content, warnings, previewText } = parsedContent;
-
   // ***
-  checkWarnings(parsedContent.warnings);
+  checkWarnings(warnings);
 
   const fileName = generateTemplateName(`Content`, 'js');
 
@@ -153,11 +148,8 @@ function generateReactContent() {
 
 function generateReactFullTemplate() {
 
-  const parsedContent = parseMDReactFullThing({ source: FULL_SOURCE });
+  const { content, warnings, previewText } = parseMDReactFullThing({ source: FULL_SOURCE });
   
-  
-  const { content, warnings, previewText } = parsedContent;
-
   // ***
   checkWarnings(warnings);
 
@@ -170,9 +162,11 @@ const fileName = generateTemplateName(`FullTemplate`, 'js);
 
   write(fileName, fullContent);
 
+  
   const message = 'The FullTemplate has been parsed successfully';
 
   console.log(chalk.green.bold(message));
+  
 }
 
 
@@ -192,9 +186,11 @@ function generateContentOnly() {
   const fileName = `content${Date.now()}.html`;
   write(fileName, parsedContent.content);
 
+  
   const message = 'The content has been parsed successfully';
 
   console.log(chalk.green.bold(message));
+  
 }
 
 module.exports = {
