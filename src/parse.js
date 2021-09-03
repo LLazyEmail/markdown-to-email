@@ -1,9 +1,10 @@
 const { 
-  readSourceFile, 
-  
-  
-  checkErrors 
+  readSourceFile
 } = require('./utils');
+
+const {
+  checkErrors, stateInit 
+} = require('./command-line-methods');
 
 const { 
   Replacer, 
@@ -15,26 +16,8 @@ const {
   REGEXP_PREVIEW_TEXT 
 } = require('atherdon-newsletter-constants');
 
-function stateInit = ( markdown ) => {
-  // @TODO should we move out state from this file?
-  
-  let stateObject = {
-    content: markdown,
-    previewText: '',
-    warnings: {
-      images: 0,
-    },
-    errors: {
-      previewText: false,
-      sponsorshipTop: false,
-      sponsorshipBottom: false,
-    },
-  };
-  
-  return stateObject;
-}
 
-// @todo update this method. I'm sure it can be improved.
+// TODO update this method. I'm sure it can be improved.
 function parse(source) {
   const markdown = readSourceFile(source);
 
