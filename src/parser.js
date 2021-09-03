@@ -1,8 +1,10 @@
-const chalk = require('chalk');
 const { forEach } = require('lodash');
+
 
 // @TODO both layouts things can be moved out from importing it here.
 const layouts = require('atherdon-newsletter-js-layouts');
+
+
 const reactLayouts = require('atherdon-newsletter-react');
 
 const {
@@ -12,34 +14,40 @@ const {
   fullTemplate 
 } = require('./temp-full-template');
 
+
 const {
   write,
   readFile,
   
+  
   writeReactComponent,
+  
+  
   FULL_SOURCE,
-  CONTENT_SOURCE,
-  
-  MESSAGE_HTML_CONTENT_ONLY,
-MESSAGE_HTML_FULL_TEMPLATE,
-MESSAGE_HTML_FULL_TEMPLATE2,
+  CONTENT_SOURCE, 
 
-MESSAGE_REACT_FULL_TEMPLATE,
-MESSAGE_REACT_CONTENT
-
-  
+  generateTemplateName
 } = require('./utils');
 
 const {
   displayCLIErrors,
   checkWarnings,
-  checkHtml, printMessage 
+  checkHtml, printMessage,
+  
+  
+  MESSAGE_HTML_CONTENT_ONLY,
+  MESSAGE_HTML_FULL_TEMPLATE,
+  MESSAGE_HTML_FULL_TEMPLATE2,
+
+  MESSAGE_REACT_FULL_TEMPLATE,
+  MESSAGE_REACT_CONTENT
 } = require('./command-line-methods');
 
 
 const { 
   parse, parseFullTHing 
 } = require('./parse');
+
 
 
 const {
@@ -50,6 +58,7 @@ const {
 
 switch (process.env.PARSE) {
   case 'full':
+
     // generateFullTemplate();
     generateFullTemplate2();
     break;
@@ -69,13 +78,13 @@ switch (process.env.PARSE) {
 }
 
 function generateFullTemplate2() {
+  
   const { content, warnings, previewText } = parseFullTHing({ source: FULL_SOURCE });
   
   // ***
   checkWarnings(warnings);
 
   const fileName = generateTemplateName(`full-template-2`);
-
 
   // ***
   checkHtml(content);
@@ -105,9 +114,6 @@ function generateFullTemplate() {
   // console.log(parsedContent);
 
   // throw new Error("my error message");
-
-
-
 
 
   const fullContent = layouts.fullTemplate(content);
@@ -149,7 +155,7 @@ function generateReactFullTemplate() {
   checkWarnings(warnings);
 
   
-const fileName = generateTemplateName(`FullTemplate`, 'js);
+  const fileName = generateTemplateName(`FullTemplate`, 'js);
 
 
 
@@ -179,7 +185,7 @@ function generateContentOnly() {
 
   const fileName = `content${Date.now()}.html`;
   write(fileName, parsedContent.content);
-
+  
   
   const message = 'The content has been parsed successfully';
   printMessage(message, 'green2'); 
