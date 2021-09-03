@@ -5,25 +5,33 @@ const { forEach } = require('lodash');
 const layouts = require('atherdon-newsletter-js-layouts');
 const reactLayouts = require('atherdon-newsletter-react');
 
-const { 
-  tempFullTemplate, fullTemplate 
+const {
+  // TODO: finish and fix this thing. it was done by Serge quickly, 
+  // and ruined a lot of our logic
+  tempFullTemplate, 
+  fullTemplate 
 } = require('./temp-full-template');
 
 const {
   write,
   readFile,
+  
+  
   displayCLIErrors,
   checkWarnings,
+  checkHtml,
+  
   writeReactComponent,
   FULL_SOURCE,
-  CONTENT_SOURCE,
-  checkHtml
+  CONTENT_SOURCE
+  
 } = require('./utils');
 
 
 const { 
   parse, parseFullTHing 
 } = require('./parse');
+
 
 const {
   parseMDReact,
@@ -36,26 +44,36 @@ switch (process.env.PARSE) {
     // generateFullTemplate();
     generateFullTemplate2();
     break;
+
   case 'reactContentOnly':
     // same as default, but with react components instead.
     generateReactContent();
     break;
+  
   case 'reactFull':
     generateReactFullTemplate();
     break;
+  
   default:
     generateFullTemplate();
     break;
 }
 
+function generateTemplateName = (suffix, ext = 'html') => {
+
+  return "${suffix}-${Date.now()}.${ext}";
+}
+
 function generateFullTemplate2() {
   const parsedContent = parseFullTHing({ source: FULL_SOURCE });
+  
   const { content, warnings, previewText } = parsedContent;
 
   // ***
   checkWarnings(warnings);
 
-  const fileName = `full-template-2-${Date.now()}.html`;
+  const fileName = generateTemplateName(`full-template-2`);
+
 
   // ***
   checkHtml(content);
@@ -72,13 +90,17 @@ function generateFullTemplate2() {
 function generateFullTemplate() {
   const parsedContent = parseFullTHing({ source: FULL_SOURCE });
 
-  // ***
-  checkWarnings(parsedContent.warnings);
-
-  const fileName = `full-template${Date.now()}.html`;
+  
+  const { content, warnings, previewText } = parsedContent;
 
   // ***
-  checkHtml(parsedContent.content);
+  checkWarnings(warnings);
+
+  
+  const fileName = generateTemplateName(`full-template`);
+
+  // ***
+  checkHtml(content);
   //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
   // console.log(parsedContent);
 
@@ -88,7 +110,7 @@ function generateFullTemplate() {
 
 
 
-  const fullContent = layouts.fullTemplate(parsedContent.content);
+  const fullContent = layouts.fullTemplate(content);
 
   // throw new Error("my error message");
 
@@ -104,27 +126,38 @@ function generateReactContent() {
 
   const parsedContent = parseMDReact(CONTENT_SOURCE);
   // console.log("parsedContent", parsedContent);
+  
+  
+  const { content, warnings, previewText } = parsedContent;
+
   // ***
   checkWarnings(parsedContent.warnings);
-  const fileName = `Content${Date.now()}.js`;
 
-  writeReactComponent(fileName, parsedContent.content);
+  const fileName = generateTemplateName(`Content`, 'js');
+
+
+  writeReactComponent(fileName, content);
 
   const message = 'The Content has been parsed successfully';
   console.log(chalk.green.bold(message));
+  
 }
 
 function generateReactFullTemplate() {
 
   const parsedContent = parseMDReactFullThing({ source: FULL_SOURCE });
+  
+  
+  const { content, warnings, previewText } = parsedContent;
+
   // ***
-  checkWarnings(parsedContent.warnings);
+  checkWarnings(warnings);
 
   const fileName = `FullTemplate${Date.now()}.js`;
 
 
 
-  const fullContent = reactLayouts.reactFullTemplate(parsedContent.content);
+  const fullContent = reactLayouts.reactFullTemplate(content);
 
   write(fileName, fullContent);
 
@@ -133,12 +166,19 @@ function generateReactFullTemplate() {
   console.log(chalk.green.bold(message));
 }
 
+
+
 // this method is depricated.
+// we will remove export of it at some point.
 function generateContentOnly() {
 
   const parsedContent = parse(CONTENT_SOURCE);
+  
+  
+  const { content, warnings, previewText } = parsedContent;
+
   // ***
-  checkWarnings(parsedContent.warnings);
+  checkWarnings(warnings);
 
   const fileName = `content${Date.now()}.html`;
   write(fileName, parsedContent.content);
