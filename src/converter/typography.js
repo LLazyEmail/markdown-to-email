@@ -34,16 +34,17 @@ const {
 } = require('../callbacks');
 
 // const layouts = require("atherdon-newsletter-constants");
+// const {  } = require("atherdon-newsletter-constants");
 
 const ConverterTypography = {
   heading: {
     key: 'REGEXP_HEADER',
-    //     value: 1,
+    value: header,
     //     title: "xxx",
   },
   image: {
     key: 'REGEXP_IMAGE',
-    //     value: 1,
+    value: image,
     //     title: "xxx",
   },
   italic: {
@@ -53,12 +54,18 @@ const ConverterTypography = {
   },
   link: {
     key: 'REGEXP_LINK',
-    //     value: 1,
+    value: link,
     //     title: "xxx",
   },
-  list: {
+  
+  ulList: {
     key: 'REGEXP_UL_LIST',
-    //     value: 1,
+    value: ulList,
+    //     title: "xxx",
+  },
+  olList: {
+    key: 'REGEXP_OL_LIST',
+    value: olList,
     //     title: "xxx",
   },
   listItem: {
@@ -73,12 +80,12 @@ const ConverterTypography = {
   },
   paragraph: {
     key: 'REGEXP_PARAGRAPH',
-    //     value: 1,
+    value: paragraphWrapper,
     //     title: "xxx",
   },
   strong: {
     key: 'REGEXP_STRONG',
-    //     value: 1,
+    value: strong,
     //     title: "xxx",
   },
   subtitle: {
@@ -88,5 +95,4 @@ const ConverterTypography = {
   },
 };
 
-// export data
-// export default ConverterTypography
+export default ConverterTypography;
