@@ -46,7 +46,7 @@ const {
 
 const { 
   parse, parseFullTHing 
-} = require('./parse');
+} = require('./html/parseHTML');
 
 
 
