@@ -23,7 +23,15 @@ const {
   
   writeReactComponent,
   FULL_SOURCE,
-  CONTENT_SOURCE
+  CONTENT_SOURCE,
+  
+  MESSAGE_HTML_CONTENT_ONLY,
+MESSAGE_HTML_FULL_TEMPLATE,
+MESSAGE_HTML_FULL_TEMPLATE2,
+
+MESSAGE_REACT_FULL_TEMPLATE,
+MESSAGE_REACT_CONTENT
+
   
 } = require('./utils');
 
@@ -153,7 +161,8 @@ function generateReactFullTemplate() {
   // ***
   checkWarnings(warnings);
 
-  const fileName = `FullTemplate${Date.now()}.js`;
+  
+const fileName = generateTemplateName(`FullTemplate`, 'js);
 
 
 
