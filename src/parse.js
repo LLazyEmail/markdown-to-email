@@ -4,8 +4,7 @@ const {
 
 const {
   checkErrors, 
-  stateInit, 
-  printMessage  
+  stateInit
 } = require('./command-line-methods');
 
 const { 
