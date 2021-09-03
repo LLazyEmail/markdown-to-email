@@ -5,7 +5,10 @@ const { forEach } = require('lodash');
 const layouts = require('atherdon-newsletter-js-layouts');
 
 
+
 const reactLayouts = require('atherdon-newsletter-react');
+
+
 
 const {
   // TODO: finish and fix this thing. it was done by Serge quickly, 
@@ -19,9 +22,7 @@ const {
   write,
   readFile,
   
-  
   writeReactComponent,
-  
   
   FULL_SOURCE,
   CONTENT_SOURCE, 
@@ -30,7 +31,6 @@ const {
 } = require('./utils');
 
 const {
-  displayCLIErrors,
   checkWarnings,
   checkHtml, printMessage,
   
@@ -44,6 +44,7 @@ const {
 } = require('./command-line-methods');
 
 
+
 const { 
   parse, parseFullTHing 
 } = require('./html/parseHTML');
@@ -52,7 +53,7 @@ const {
 
 const {
   parseMDReact,
-  parseMDReactFullThing,
+  parseMDReactFullThing
 } = require('./parserMDReact/parseMDReact');
 
 
@@ -89,6 +90,11 @@ function generateFullTemplate2() {
   // ***
   checkHtml(content);
 
+  //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
+  // console.log(content);
+
+ // throw new Error("my error message");
+
   const fullContent = fullTemplate(content, previewText);
   write(fileName, fullContent);
 
@@ -99,38 +105,21 @@ function generateFullTemplate2() {
 
 
 function generateFullTemplate() {
-  const { content, warnings, previewText } = parseFullTHing({ source: FULL_SOURCE });
 
-  
-  // ***
-  checkWarnings(warnings);
-
-  
+  // same as from top
   const fileName = generateTemplateName(`full-template`);
 
-  // ***
-  checkHtml(content);
-  //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
-  // console.log(parsedContent);
-
-  // throw new Error("my error message");
-
-
   const fullContent = layouts.fullTemplate(content);
-
-  // throw new Error("my error message");
-
-
-  write(fileName, fullContent);
 
   const message = 'The full-template has been parsed successfully';
   printMessage(message, 'green2'); 
   
 }
 
+
 function generateReactContent() {
 
-  const { content, warnings, previewText } = parseMDReact(CONTENT_SOURCE);
+  const { content, warnings } = parseMDReact(CONTENT_SOURCE);
   // console.log("parsedContent", { content, warnings, previewText });
   
   
@@ -155,8 +144,7 @@ function generateReactFullTemplate() {
   checkWarnings(warnings);
 
   
-  const fileName = generateTemplateName(`FullTemplate`, 'js);
-
+  const fileName = generateTemplateName('FullTemplate', 'js');
 
 
   const fullContent = reactLayouts.reactFullTemplate(content);
@@ -175,16 +163,15 @@ function generateReactFullTemplate() {
 // we will remove export of it at some point.
 function generateContentOnly() {
 
-  const parsedContent = parse(CONTENT_SOURCE);
+  const { content, warnings, previewText } = parse(CONTENT_SOURCE);
   
   
-  const { content, warnings, previewText } = parsedContent;
-
   // ***
   checkWarnings(warnings);
 
-  const fileName = `content${Date.now()}.html`;
-  write(fileName, parsedContent.content);
+  const fileName = generateTemplateName('content');
+
+  write(fileName, content);
   
   
   const message = 'The content has been parsed successfully';
