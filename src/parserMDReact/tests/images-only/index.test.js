@@ -1,6 +1,6 @@
 const { writeReactComponent, readSourceFile } = require('@root/utils');
-const { image } = require('../../callbacksMDReact');
 const { replaceMarkdown } = require('@root/helpers');
+const { image } = require('../../callbacksMDReact');
 const { REGEXP_IMAGE } = require('../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';

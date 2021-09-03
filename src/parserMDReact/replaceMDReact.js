@@ -20,7 +20,7 @@ const {
   newLine,
 
   ulList,
-  olList
+  olList,
 } = require('atherdon-callbacks');
 
 const {
@@ -31,7 +31,7 @@ const {
   REGEXP_DEL,
   REGEXP_Q,
   REGEXP_CODE,
- 
+
   REGEXP_BLOCKQUOTE,
   REGEXP_HR,
   REGEXP_PARAGRAPH,
@@ -45,17 +45,13 @@ const {
   REGEXP_PREVIEW_TEXT,
   REGEXP_SEPARATOR,
 
-
   REGEXP_UL_LIST,
   REGEXP_OL_LIST,
   REGEXP_EMPTY_UL,
-  REGEXP_EMPTY_OL
+  REGEXP_EMPTY_OL,
 } = require('atherdon-newsletter-constants');
 
-
-
-
-var ReplacerMDReact = function () {};
+const ReplacerMDReact = function () {};
 
 ReplacerMDReact.prototype.replaceMDBinded = function () {};
 ReplacerMDReact.prototype.replaceMDBindedPreviewText = function () {};

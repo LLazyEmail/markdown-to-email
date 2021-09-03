@@ -1,16 +1,14 @@
 const { main } = require('atherdon-newsletter-js-layouts');
 
-
 // это может потом понадобится
 function tempFullTemplate(content) {
   const mainn = main.replace('{content}', content);
   return `
     ${mainn}
-  `
-};
+  `;
+}
 
-
-// щас это работает лучше 
+// щас это работает лучше
 function fullTemplate(body, previewText) {
   body = body.replace(previewText, '');
   return `<!DOCTYPE html>
@@ -854,6 +852,6 @@ function fullTemplate(body, previewText) {
     </center>
   </body>
 </html>`;
-};
+}
 
 module.exports = { tempFullTemplate, fullTemplate };

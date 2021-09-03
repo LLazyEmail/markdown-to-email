@@ -24,9 +24,9 @@ function writeReactComponent(fileName, content, dir = 'generated', message) {
   const result = reactComponent.replace(/{content}/g, content);
 
   fs.writeFileSync(_path, result, (err) => {
-    if (err){
+    if (err) {
       throw new Error('file not written');
-    } 
+    }
   });
 
   // i dont like this line @TODO change it
@@ -56,13 +56,7 @@ function isFolderExists(dir) {
   }
 }
 
-
-
-const generateTemplateName = (suffix, ext = 'html') => {
-
-  return "${suffix}-${Date.now()}.${ext}";
-}
-
+const generateTemplateName = (suffix, ext = 'html') => `${suffix}-${Date.now()}.${ext}`;
 
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
@@ -75,8 +69,8 @@ module.exports = {
   writeReactComponent,
   readSourceFile,
   isFolderExists,
-  
+
   FULL_SOURCE,
   CONTENT_SOURCE,
-  generateTemplateName
+  generateTemplateName,
 };

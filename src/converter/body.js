@@ -16,18 +16,18 @@ const {
 
 const ConverterBody = {
   header: {
-        key: "REGEXP_HEADER",
-        value: header,
+    key: 'REGEXP_HEADER',
+    value: header,
     //     title: "xxx",
   },
   comments: {
-        key: "REGEXP_HTML_COMMENTS",
+    key: 'REGEXP_HTML_COMMENTS',
     //     value: 1,
     //     title: "xxx",
   },
   memes: {
-        key: "REGEXP_MEM",
-        value: mem,
+    key: 'REGEXP_MEM',
+    value: mem,
     //     title: "xxx",
   },
   previewText: {
@@ -37,7 +37,7 @@ const ConverterBody = {
   },
   sponsor: {
     key: 'REGEXP_SPONSORSHIP',
-        value: sponsorship,
+    value: sponsorship,
     //     title: "xxx",
   },
 };

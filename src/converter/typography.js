@@ -30,7 +30,7 @@ const {
   italic,
   del,
   q,
-  code
+  code,
 } = require('../callbacks');
 
 // const layouts = require("atherdon-newsletter-constants");

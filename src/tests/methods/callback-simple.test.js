@@ -1,4 +1,5 @@
-const { PlainCallbacks, newLine } = require("atherdon-callbacks");
+const { PlainCallbacks, newLine } = require('atherdon-callbacks');
+
 const {
   strong, link, blockquote,
   mem, header,

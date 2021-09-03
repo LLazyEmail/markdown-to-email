@@ -1,24 +1,18 @@
+const {
+  ReactReplacer, replaceMarkdown, replaceMarkdownPreviewText,
+} = require('atherdon-callbacks');
 const { readSourceFile } = require('../utils');
 
 const { stateInit } = require('../command-line-methods');
 
-
-
 // ReactReplacer
-const {
-  ReactReplacer, replaceMarkdown, replaceMarkdownPreviewText
-} = require("atherdon-callbacks");
-
 
 // @todo update this method. I'm sure it can be improved.
 function parseMDReact(source, isFull) {
-    
   const state = stateInit(source);
-    
 
   ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);
-  ReactReplacer.replaceMDBindedPreviewText =
-    replaceMarkdownPreviewText.bind(state);
+  ReactReplacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
   // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
   if (isFull) {
@@ -54,8 +48,6 @@ function parseMDReact(source, isFull) {
   ReactReplacer.sponsorship();
   ReactReplacer.mem();
   ReactReplacer.separator();
-
-
 
   //   // const replaceMDBinded = replaceMarkdown.bind(state);
 
@@ -98,22 +90,15 @@ function parseMDReact(source, isFull) {
   //   ReactReplacer.mem();
   //   ReactReplacer.separator();
 
-
-
-
-
   // console.log( state )
 
   return state;
 }
-
-
 
 function parseMDReactFullThing(params) {
   const { source } = params;
 
   return parseMDReact(source, true);
 }
-
 
 module.exports = { parseMDReact, parseMDReactFullThing };

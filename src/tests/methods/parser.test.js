@@ -22,9 +22,8 @@ const {
   //   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
 
+const { PlainCallbacks, replaceMarkdown, newLine } = require('atherdon-callbacks');
 const { readSourceFile, FULL_SOURCE } = require('../../utils');
-
-const { PlainCallbacks, replaceMarkdown, newLine } = require("atherdon-callbacks");
 
 const {
   strong,

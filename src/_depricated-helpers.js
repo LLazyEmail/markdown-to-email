@@ -1,27 +1,25 @@
 function replaceMarkdown(regexp, callback) {
-    
-    // console.log('helpers- replace markdown method')
-    // console.log(typeof callback)  
+  // console.log('helpers- replace markdown method')
+  // console.log(typeof callback)
 
-  var fixedCallbackMethod = false;
+  let fixedCallbackMethod = false;
   switch (typeof callback) {
-      case 'string':
-          fixedCallbackMethod = callback;
-          break;
+    case 'string':
+      fixedCallbackMethod = callback;
+      break;
 
-      case 'undefined':
-            console.log("ERRROROROR HERE!!!!")
+    case 'undefined':
+      console.log('ERRROROROR HERE!!!!');
 
-          break;  
+      break;
 
-      default:
-          fixedCallbackMethod = callback.bind(this)
-          break;
+    default:
+      fixedCallbackMethod = callback.bind(this);
+      break;
   }
 
   this.content = this.content.replace(regexp, fixedCallbackMethod);
 }
-
 
 // @TODO find out if we really using this method or not?
 function replaceMarkdownPreviewText(regexp) {
@@ -40,13 +38,12 @@ function replaceMarkdownPreviewText(regexp) {
   this.errors.previewText = true;
 
   this.content = this.content.replace(
-        regexp, 
-        () => this.previewText
-    );
+    regexp,
+    () => this.previewText,
+  );
 }
-
 
 module.exports = {
   replaceMarkdown,
-  replaceMarkdownPreviewText
+  replaceMarkdownPreviewText,
 };

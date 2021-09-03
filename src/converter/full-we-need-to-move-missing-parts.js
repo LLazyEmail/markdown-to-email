@@ -45,7 +45,6 @@ const {
 
 // const layouts = require("atherdon-newsletter-constants");
 
-
 const ConverterTypography = {
   heading: {
     //     key: "REGEXP_H3",

@@ -5,12 +5,11 @@ const {
   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
 
+const { PlainCallbacks, replaceMarkdown, replaceMarkdownPreviewText } = require('atherdon-callbacks');
 const {
   readSourceFile,
   FULL_SOURCE,
 } = require('../../utils');
-
-const { PlainCallbacks, replaceMarkdown, replaceMarkdownPreviewText } = require('atherdon-callbacks');
 
 // @TODO looks like the same thing for me
 const markdown = readSourceFile(FULL_SOURCE);

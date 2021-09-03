@@ -1,7 +1,7 @@
 const { REGEXP_HTML_COMMENTS } = require('atherdon-newsletter-constants');
 const { resolve } = require('path');
 const { write, readSourceFile } = require('@root/utils');
-const { replaceMarkdown } = require("atherdon-callbacks");
+const { replaceMarkdown } = require('atherdon-callbacks');
 
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
