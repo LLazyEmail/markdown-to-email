@@ -25,6 +25,8 @@ function parse(source) {
   Replacer.replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
   Replacer.comments();
 
+  
+
   Replacer.strong();
   Replacer.em();
   Replacer.header();

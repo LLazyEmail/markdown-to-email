@@ -128,6 +128,40 @@ class Replace {
       this.replaceMDBinded(this._constants.REGEXP_SEPARATOR, separator);
     };
   }
+
+  typography(){
+    this.strong();
+    this.em();
+    this.header();
+    this.image();
+    this.link();
+    this.del();
+    this.q();
+    this.code();
+    this.ul();
+    this.ol();
+    this.blockquote();
+    this.hr();
+    this.paragraph();
+    this.emptyUl();
+    this.emptyOl();
+  }
+
+  // test this part
+  miscellaneous(){
+    
+    // this line is generating an error
+    this.emptyBlockquote();
+    this.br();
+
+    if (!process.env.PARSE === 'noAdv' || process.env.PARSE === 'full') {
+      this.sponsorship();
+    }
+
+    this.memes();
+    this.separator();
+  }
+
 }
 
 export default new Replace(constants);
