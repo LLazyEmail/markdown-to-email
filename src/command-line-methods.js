@@ -6,8 +6,8 @@ function checkWarnings(warnings) {
   forEach(warnings, (index, element) => {
     if (index) {
       const message = `WARNING source.md has ${index} ${element}. Replace it with memes`;
-      console.log(chalk.yellow(message));
-      // printMessage();
+      // console.log(chalk.yellow(message));
+      printMessage(message, 'yellow');
     }
   });
 }
@@ -19,14 +19,14 @@ function checkErrors(errors) {
       if (!errors[error]) {
         const message = `ERROR source.md doesn't have ${error}`;
 
-        // printMessage();
-        console.log(chalk.red(message));
+        printMessage(message, 'red');
+        // console.log(chalk.red(message));
       }
     });
 
     const message = 'The full template has not been parsed!';
-    // printMessage();
-    console.log(chalk.red.bold(message));
+    printMessage('The full template has not been parsed!', 'red2');
+    // console.log(chalk.red.bold(message));
 
     return true;
   }
@@ -58,11 +58,11 @@ function checkHtml(content) {
   }
 
   if (searchPattern.test(tempStr)) {
-    // printMessage();
-    console.log(chalk.green('Content has correct html!!!'));
+    printMessage('Content has correct html!!!', 'green');
+    // console.log(chalk.green('Content has correct html!!!'));
   } else {
-    // printMessage();
-    console.log(chalk.yellow('Content has not correct html!!!'));
+    printMessage('Content has not correct html!!!', 'yellow');
+    // console.log(chalk.yellow('Content has not correct html!!!'));
   }
 }
 
