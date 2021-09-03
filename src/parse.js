@@ -3,7 +3,9 @@ const {
 } = require('./utils');
 
 const {
-  checkErrors, stateInit 
+  checkErrors, 
+  stateInit, 
+  printMessage  
 } = require('./command-line-methods');
 
 const { 
