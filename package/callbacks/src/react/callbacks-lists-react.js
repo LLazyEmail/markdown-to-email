@@ -1,5 +1,10 @@
 import { replaceReactWrapper, newLine } from '../helpers';
 
+// const {
+//   newLine, replaceReactWrapper
+// } = require("atherdon-callbacks");
+
+
 const hr = `${newLine}<hr />`;
 const empty = '';
 
