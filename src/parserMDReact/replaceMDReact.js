@@ -12,7 +12,9 @@ const {
   empty,
   previewText,
   separator
-} = require('./callbacks-simpleMDReact');
+} = require('atherdon-callbacks');
+
+
 
 const {
   image,
