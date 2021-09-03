@@ -86,11 +86,33 @@ function printMessage = ({ message, type }) => {
   
 }
 
+
+function stateInit = ( markdown ) => {
+  // @TODO should we move out state from this file?
+  
+  let stateObject = {
+    content: markdown,
+    previewText: '',
+    warnings: {
+      images: 0,
+    },
+    errors: {
+      previewText: false,
+      sponsorshipTop: false,
+      sponsorshipBottom: false,
+    },
+  };
+  
+  return stateObject;
+}
+
+
 module.exports = {
   displayCLIErrors,
   checkErrors,
   checkWarnings,
   checkHtml,
   
-  printMessage
+  printMessage,
+  stateInit
 };
