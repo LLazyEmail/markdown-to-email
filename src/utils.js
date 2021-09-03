@@ -58,7 +58,7 @@ function isFolderExists(dir) {
 
 
 
-function generateTemplateName = (suffix, ext = 'html') => {
+const generateTemplateName = (suffix, ext = 'html') => {
 
   return "${suffix}-${Date.now()}.${ext}";
 }

@@ -5,7 +5,10 @@ const { readSourceFile } = require('../utils');
 const {
   checkErrors, 
   stateInit
-} = require('./command-line-methods');
+} = require('../command-line-methods');
+
+
+
 
 // ReactReplacer
 const {

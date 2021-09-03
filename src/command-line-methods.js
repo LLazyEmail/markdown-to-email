@@ -68,7 +68,7 @@ function checkHtml(content) {
   }
 }
 
-function printMessage = ({ message, type }) => {
+const printMessage = ({ message, type }) => {
     
   if (!message) return;
   
@@ -94,7 +94,7 @@ function printMessage = ({ message, type }) => {
 }
 
 
-function stateInit = ( markdown ) => {
+const stateInit = ( markdown ) => {
   // @TODO should we move out state from this file?
   
   let stateObject = {

@@ -1,11 +1,11 @@
 const { 
   readSourceFile
-} = require('./utils');
+} = require('../utils');
 
 const {
   checkErrors, 
   stateInit
-} = require('./command-line-methods');
+} = require('../command-line-methods');
 
 const { 
   Replacer, 
@@ -13,16 +13,18 @@ const {
   replaceMarkdownPreviewText 
 } = require("atherdon-callbacks");
 
+// TODO: something wrong with newsletter-constants module
 const { 
   REGEXP_PREVIEW_TEXT 
-} = require('atherdon-newsletter-constants');
+} = require("atherdon-newsletter-constants");
 
 
 // TODO update this method. I'm sure it can be improved.
 function parse(source) {
-  const markdown = readSourceFile(source);
 
-  let state = stateInit(markdown);
+  // passing content into the state, 
+  // so we can do our updates step by step and track any errors  
+  let state = stateInit(readSourceFile(source));
 
   Replacer.replaceMDBinded = replaceMarkdown.bind(state);
   Replacer.replaceMDBindedPreviewText =

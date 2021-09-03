@@ -39,6 +39,7 @@ import {
     REGEXP_EMPTY_UL,
     REGEXP_EMPTY_OL 
 } from './listsTags';
+
 export {
   REGEXP_HEADER,
   REGEXP_IMAGE,
