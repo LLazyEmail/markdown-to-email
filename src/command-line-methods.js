@@ -80,8 +80,15 @@ function printMessage = ({ message, type }) => {
         console.log(chalk.red(message));
   }
   
-  if (type == 'green'){
+  if (type == 'red2'){
+        console.log(chalk.red.bold(message));
+  }
+  
+  if (type == 'green1'){
         console.log(chalk.green(message));
+  }
+  if (type == 'green2'){
+        console.log(chalk.green.bold(message));
   }
   
 }
