@@ -11,17 +11,13 @@ const {
 const reactLayouts = require('atherdon-newsletter-react');
 
 
-
 const {
   write,
-  readFile,
-
   writeReactComponent,
+  generateTemplateName,
 
   FULL_SOURCE,
-  CONTENT_SOURCE,
-
-  generateTemplateName,
+  CONTENT_SOURCE, 
 } = require('./utils');
 
 const {
@@ -38,7 +34,8 @@ const {
 } = require('./command-line-methods');
 
 const {
-  parse, parseFullTHing,
+  parse, 
+  parseFullTHing,
 } = require('./html/parseHTML');
 
 const {

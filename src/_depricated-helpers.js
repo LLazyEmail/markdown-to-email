@@ -43,6 +43,60 @@ function replaceMarkdownPreviewText(regexp) {
   );
 }
 
+// TODO update this method. I'm sure it can be improved.
+function __parse(source){
+  
+
+  // passing content into the state,
+  // so we can do our updates step by step and track any errors
+  const state = stateInit(source);
+
+  Replacer.replaceMDBinded = replaceMarkdown.bind(state);
+  Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
+
+  Replacer.previewText();
+  Replacer.replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
+  Replacer.comments();
+
+
+
+  Replacer.strong();
+  Replacer.em();
+  Replacer.header();
+  Replacer.image();
+  Replacer.link();
+  Replacer.del();
+  Replacer.q();
+  Replacer.code();
+  Replacer.ul();
+  Replacer.ol();
+  Replacer.blockquote();
+  Replacer.hr();
+  Replacer.paragraph();
+  Replacer.emptyUl();
+  Replacer.emptyOl();
+
+  // this line is generating an error
+  Replacer.emptyBlockquote();
+  Replacer.br();
+
+  if (!process.env.PARSE === 'noAdv' || process.env.PARSE === 'full') {
+    Replacer.sponsorship();
+  }
+
+  Replacer.memes();
+  Replacer.separator();
+
+  // i'm adding it only because error warning didnt return red stuff
+  // checkErrors(state.errors);
+  state.innerCheckErrors();
+
+  // console.log(state)
+
+  return state;
+
+}
+
 module.exports = {
   replaceMarkdown,
   replaceMarkdownPreviewText,

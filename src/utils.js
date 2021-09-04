@@ -21,6 +21,11 @@ function writeReactComponent(fileName, content, dir = 'generated', message) {
   // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
 
   const _path = `${dir}/${fileName}`; // @todo it's not an ideal thing
+
+  // if('react'){
+
+  // }
+
   const result = reactComponent.replace(/{content}/g, content);
 
   fs.writeFileSync(_path, result, (err) => {
@@ -33,6 +38,7 @@ function writeReactComponent(fileName, content, dir = 'generated', message) {
   message && console.log(`file has been written successfully${fileName}`);
 }
 
+// writeHTML
 function write(fileName, content, dir = 'generated', message) {
   // isFolderExists(dir);
   // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
