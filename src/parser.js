@@ -72,8 +72,6 @@ function generateFullTemplate2() {
   // ***
   checkWarnings(warnings);
 
-  const fileName = generateTemplateName('full-template-2');
-
   // ***
   checkHtml(content);
 
@@ -82,7 +80,10 @@ function generateFullTemplate2() {
 
   // throw new Error("my error message");
 
-  const fullContent = fullTemplate(content, previewText);
+  const fullContent = fullTemplate({ content, previewText });
+
+  const fileName = generateTemplateName('full-template-2');
+
   write(fileName, fullContent);
 
   const message = 'The full-template has been parsed successfully2';
@@ -91,9 +92,12 @@ function generateFullTemplate2() {
 
 function generateFullTemplate() {
   // same as from top
+  
+
+  const fullContent = fullTemplateOLD({ content });
+
   const fileName = generateTemplateName('full-template');
 
-  const fullContent = fullTemplateOLD(content);
 
   const message = 'The full-template has been parsed successfully';
   printMessage(message, 'green2');
@@ -106,8 +110,8 @@ function generateReactContent() {
   // ***
   checkWarnings(warnings);
 
-  const fileName = generateTemplateName('Content', 'js');
 
+  const fileName = generateTemplateName('Content', 'js');
   writeReactComponent(fileName, content);
 
   const message = 'The Content has been parsed successfully';
@@ -120,10 +124,10 @@ function generateReactFullTemplate() {
   // ***
   checkWarnings(warnings);
 
-  const fileName = generateTemplateName('FullTemplate', 'js');
-
   const fullContent = reactLayouts.reactFullTemplate(content);
 
+
+  const fileName = generateTemplateName('FullTemplate', 'js');
   write(fileName, fullContent);
 
   const message = 'The FullTemplate has been parsed successfully';
@@ -137,6 +141,7 @@ function generateContentOnly() {
 
   // ***
   checkWarnings(warnings);
+
 
   const fileName = generateTemplateName('content');
 

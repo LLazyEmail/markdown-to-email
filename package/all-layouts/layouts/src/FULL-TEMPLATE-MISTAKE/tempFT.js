@@ -10,7 +10,8 @@ function tempFullTemplate(content) {
 }
 
 // щас это работает лучше
-function fullTemplate(body, previewText) {
+function fullTemplate({ body, previewText }) {
+
   body = body.replace(previewText, '');
   return `<!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
