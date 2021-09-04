@@ -1,18 +1,28 @@
-
-
 import body from 'atherdon-newsletter-js-layouts-body';
 
-import {
+// import {
+//   address,
+//   copyrights,
+//   fonts,
+//   headStyles,
+//   newsletterSponsorshipLink,
+//   unsubscribe,
+//   head 
+// } from 'atherdon-newsletter-js-layouts-misc';
+
+import misc from 'atherdon-newsletter-js-layouts-misc';
+
+const {
   address,
   copyrights,
   fonts,
   headStyles,
   newsletterSponsorshipLink,
   unsubscribe,
-  head 
-} from 'atherdon-newsletter-js-layouts-misc';
+  head
+} = misc;
 
-// import head from 'atherdon-newsletter-js-layouts-misc';
+
 
 import typography from 'atherdon-newsletter-js-layouts-typography';
 
@@ -22,7 +32,9 @@ import main from './main';
 import fullTemplateOld from './FULL-TEMPLATE-MISTAKE/full-template';
 
 
-import { fullTemplate } from './FULL-TEMPLATE-MISTAKE/tempFT';
+import fullTemplate from './FULL-TEMPLATE-MISTAKE/tempFT';
+
+
 
 export {
   body,
