@@ -53,26 +53,10 @@ function parseMDReact(source, isFull) {
 
  
 
-  //   ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);
-  //   ReactReplacer.replaceMDBindedPreviewText =
-  //     replaceMarkdownPreviewText.bind(state);
 
-  //   // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
-  //   if (isFull) {
-  //     ReactReplacer.previewText();
-  //   }
 
   //   ReactReplacer.comments();
-  //   ReactReplacer.strong();
-  //   ReactReplacer.italic();
-  //   ReactReplacer.header();
 
-  //   ReactReplacer.image();
-  //   ReactReplacer.link();
-
-  //   ReactReplacer.del();
-  //   ReactReplacer.q();
-  //   ReactReplacer.code();
 
   //   ReactReplacer.ulList();
   //   // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
