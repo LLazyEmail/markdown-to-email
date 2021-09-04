@@ -1,14 +1,16 @@
 // @TODO both layouts things can be moved out from importing it here.
-const layouts = require('atherdon-newsletter-js-layouts');
-
-const reactLayouts = require('atherdon-newsletter-react');
-
 const {
   // TODO: finish and fix this thing. it was done by Serge quickly,
   // and ruined a lot of our logic
-  tempFullTemplate,
-  fullTemplate,
-} = require('./temp-full-template');
+  fullTemplate, 
+  
+  
+  fullTemplateOLD
+} = require('atherdon-newsletter-js-layouts');
+
+const reactLayouts = require('atherdon-newsletter-react');
+
+
 
 const {
   write,
@@ -94,7 +96,7 @@ function generateFullTemplate() {
   // same as from top
   const fileName = generateTemplateName('full-template');
 
-  const fullContent = layouts.fullTemplate(content);
+  const fullContent = fullTemplateOLD(content);
 
   const message = 'The full-template has been parsed successfully';
   printMessage(message, 'green2');

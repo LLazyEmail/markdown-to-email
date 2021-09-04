@@ -855,4 +855,4 @@ function fullTemplate(body, previewText) {
 </html>`;
 }
 
-export default  fullTemplate;
+export default fullTemplate;
