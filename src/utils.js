@@ -2,6 +2,8 @@ const fs = require('fs');
 const chalk = require('chalk');
 const { forEach } = require('lodash');
 
+
+
 const reactComponent = `
 import React from "react";
 
@@ -16,27 +18,18 @@ const Content = () => {
 export default Content;
 `;
 
-function writeReactComponent(fileName, content, dir = 'generated', message) {
-  // isFolderExists(dir);
-  // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
-
-  const _path = `${dir}/${fileName}`; // @todo it's not an ideal thing
-
-  // if('react'){
-
-  // }
-
-  const result = reactComponent.replace(/{content}/g, content);
-
-  fs.writeFileSync(_path, result, (err) => {
-    if (err) {
-      throw new Error('file not written');
-    }
-  });
-
-  // i dont like this line @TODO change it
-  message && console.log(`file has been written successfully${fileName}`);
+function reactComponentReplace(content){
+  return reactComponent.replace(/{content}/g, content);
 }
+
+function writeReactComponent(fileName, content, dir = 'generated', message) {
+
+  const result = reactComponentReplace(content);
+  write(fileName, result, dir, message);
+}
+
+
+
 
 // writeHTML
 function write(fileName, content, dir = 'generated', message) {
@@ -46,9 +39,12 @@ function write(fileName, content, dir = 'generated', message) {
   const _path = `${dir}/${fileName}`; // @todo it's not an ideal thing
 
   fs.writeFileSync(_path, content, (err) => {
-    if (err) throw new Error('file not written');
+    if (err) {
+      throw new Error('file not written');
+    }
   });
 
+   // i dont like this line @TODO change it
   message && console.log(`file has been written successfully${fileName}`);
 }
 

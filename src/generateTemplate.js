@@ -26,18 +26,18 @@ const {
 } = require('atherdon-newsletter-js-layouts');
 
 
-function zzz(warnings, content, name){
+// function zzz(warnings, content, name){
 
-  // ***
-  checkWarnings(warnings);
+//   // ***
+//   checkWarnings(warnings);
 
-  // const fileName = generateTemplateName(name);
+//   // const fileName = generateTemplateName(name);
 
-  // ***
-  checkHtml(content);
+//   // ***
+//   checkHtml(content);
 
 
-}
+// }
 
 
 function generateFullTemplate2() {
@@ -49,8 +49,6 @@ function generateFullTemplate2() {
   
     // ***
     checkHtml(content);
-
-    // zzz(warnings, content, 'full-template-2')
 
   
     //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE

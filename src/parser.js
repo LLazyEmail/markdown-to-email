@@ -41,7 +41,7 @@ const {
 const {
   parseMDReact,
   parseMDReactFullThing,
-} = require('./parserMDReact/parseMDReact');
+} = require('./react/parseReact');
 
 
 

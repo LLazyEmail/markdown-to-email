@@ -1,7 +1,9 @@
 const {
-  ReactReplacer, replaceMarkdown, replaceMarkdownPreviewText,
+  ReactReplacer, 
+  replaceMarkdown, 
+  replaceMarkdownPreviewText
 } = require('atherdon-callbacks');
-const { readSourceFile } = require('../utils');
+
 
 const { stateInit } = require('../command-line-methods');
 
