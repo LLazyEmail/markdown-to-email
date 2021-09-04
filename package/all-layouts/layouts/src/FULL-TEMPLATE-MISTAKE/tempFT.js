@@ -1,4 +1,17 @@
-function fullTemplate(body) {
+// const { main } = require('atherdon-newsletter-js-layouts');
+import main from '../main';
+
+// это может потом понадобится
+function tempFullTemplate(content) {
+  const mainn = main.replace('{content}', content);
+  return `
+    ${mainn}
+  `;
+}
+
+// щас это работает лучше
+function fullTemplate(body, previewText) {
+  body = body.replace(previewText, '');
   return `<!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
@@ -422,9 +435,8 @@ function fullTemplate(body) {
   </head>
   <body style="height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #ffffff;">
     <!--[if !gte mso 9]><!---->
-    <span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">
-      Throughout the years, there have been various attempts to make programming streamlined and digestible for everyone. Few people have the time and patience to hunch over the laptop for months, years, and zillion hours to acquire coding skills and know-how. This ushered in the budding trend of low-code platforms. The trend has quickly evolved towards data sciences and analytics, reducing the pressure, time, and cost.
-    </span><!--<![endif]-->
+      ${previewText}
+    <!--<![endif]-->
     <center>
       <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;background-color: #ffffff;">
         <tr>
@@ -445,7 +457,7 @@ function fullTemplate(body) {
                           <tbody>
                             <tr>
                               <td class="mcnImageContent" valign="top" style="padding-right: 0px;padding-left: 0px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                <a href="http://www.hackernoon.com" title="" class="" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                <a href="https://www.hackernoon.com" title="" class="" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                   <img align="center" alt="Hacker Noon reflects the technology industry with unfettered stories and opinions written by real tech professionals" src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/logos/brand/hackernoon.png" width="564" style="max-width: 15426px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
                                 </a>
                               </td>
@@ -472,7 +484,44 @@ function fullTemplate(body) {
           </td>
         </tr>
       </table>
-      ${body}
+      <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;background-color: #ffffff;">
+        <tr>
+          <td valign="top" class="mcnTextBlockInner"
+              style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+              <!--[if mso]>
+              <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+              <tr>
+              <![endif]-->
+
+              <!--[if mso]>
+              <td valign="top" width="600" style="width:600px;">
+              <![endif]-->
+              <table align="left" border="0" cellpadding="0" cellspacing="0"
+                style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                width="100%" class="mcnTextContentContainer">
+                <tbody>
+                  <tr>
+
+                    <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;line-height: 150%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #111111;font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 18px;text-align: left;">
+
+                      ${body}
+
+                    </td>
+
+                  </tr>
+                </tbody>
+              </table>
+              <!--[if mso]>
+              </td>
+              <![endif]-->
+
+              <!--[if mso]>
+            </tr>
+            </table>
+            <![endif]-->
+          </td>
+        </tr>
+      </table>
       <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;background-color: #ffffff;">
         <tr>
           <td align="center" valign="top" id="bodyCell" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 10px;width: 100%;border-top: 0;">
@@ -806,4 +855,4 @@ function fullTemplate(body) {
 </html>`;
 }
 
-module.exports = fullTemplate;
+export default { tempFullTemplate, fullTemplate };

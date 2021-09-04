@@ -1,4 +1,5 @@
-function fullTemplate(body) {
+function fullTemplateOLD(body) {
+  
   return `<!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
@@ -806,4 +807,4 @@ function fullTemplate(body) {
 </html>`;
 }
 
-module.exports = fullTemplate;
+export default fullTemplateOLD;

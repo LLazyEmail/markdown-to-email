@@ -1,25 +1,47 @@
-import main from './main';
+
 
 import body from 'atherdon-newsletter-js-layouts-body';
-// import body from './body/';
 
-import misc from 'atherdon-newsletter-js-layouts-misc';
+import {
+  address,
+  copyrights,
+  fonts,
+  headStyles,
+  newsletterSponsorshipLink,
+  unsubscribe,
+  head 
+} from 'atherdon-newsletter-js-layouts-misc';
 
-// import misc from '../../misc/src/misc';
-
-import head from 'atherdon-newsletter-js-layouts-misc';
+// import head from 'atherdon-newsletter-js-layouts-misc';
 
 import typography from 'atherdon-newsletter-js-layouts-typography';
 
-// import typography from './typography';
+import main from './main';
 
-import fullTemplate from './full-template';
+
+import fullTemplateOld from './FULL-TEMPLATE-MISTAKE/full-template';
+
+
+import { fullTemplate } from './FULL-TEMPLATE-MISTAKE/tempFT';
 
 export {
   body,
-  misc,
+
+  //spread misc
+  address,
+  copyrights,
+  fonts,
+  headStyles,
+  newsletterSponsorshipLink,
+  unsubscribe,
+  head,
+
+
   typography,
   main,
-  head,
-  fullTemplate,
+  
+  fullTemplateOld,
+
+  // tempFullTemplate, 
+  fullTemplate
 };
