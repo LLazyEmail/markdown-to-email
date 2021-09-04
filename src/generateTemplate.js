@@ -26,17 +26,32 @@ const {
 } = require('atherdon-newsletter-js-layouts');
 
 
+function zzz(warnings, content, name){
+
+  // ***
+  checkWarnings(warnings);
+
+  // const fileName = generateTemplateName(name);
+
+  // ***
+  checkHtml(content);
+
+
+}
+
 
 function generateFullTemplate2() {
+
     const { content, warnings, previewText } = parseFullTHing({ source: FULL_SOURCE });
   
     // ***
     checkWarnings(warnings);
   
-    const fileName = generateTemplateName('full-template-2');
-  
     // ***
     checkHtml(content);
+
+    // zzz(warnings, content, 'full-template-2')
+
   
     //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
     // console.log(content);
@@ -44,6 +59,8 @@ function generateFullTemplate2() {
     // throw new Error("my error message");
   
     const fullContent = fullTemplate(content, previewText);
+
+    const fileName = generateTemplateName('full-template-2');
     write(fileName, fullContent);
   
     const message = 'The full-template has been parsed successfully2';
@@ -56,10 +73,10 @@ function generateFullTemplate2() {
   
   function generateFullTemplate() {
     // same as from top
-    const fileName = generateTemplateName('full-template');
+    
   
     const fullContent = layouts.fullTemplate(content);
-  
+    const fileName = generateTemplateName('full-template');
     const message = 'The full-template has been parsed successfully';
     printMessage(message, 'green2');
   }
@@ -103,6 +120,7 @@ function geGEGEGEGE({ content, warnings, previewText, fileName }){
     // ***
     checkWarnings(warnings);
   
+
     const fileName = generateTemplateName('Content', 'js');
   
     writeReactComponent(fileName, content);
@@ -118,10 +136,11 @@ function geGEGEGEGE({ content, warnings, previewText, fileName }){
     // ***
     checkWarnings(warnings);
   
-    const fileName = generateTemplateName('FullTemplate', 'js');
+    
   
     const fullContent = reactLayouts.reactFullTemplate(content);
   
+    const fileName = generateTemplateName('FullTemplate', 'js');  
     write(fileName, fullContent);
   
     const message = 'The FullTemplate has been parsed successfully';
@@ -141,10 +160,13 @@ function geGEGEGEGE({ content, warnings, previewText, fileName }){
     // ***
     checkWarnings(warnings);
   
+
     const fileName = generateTemplateName('content');
-  
-    write(fileName, content);
+      write(fileName, content);
   
     const message = 'The content has been parsed successfully';
     printMessage(message, 'green2');
   }
+  
+
+  module.exports = { generateFullTemplate2, generateFullTemplate, geGEGEGEGE, generateReactContent, generateReactFullTemplate, generateContentOnly }

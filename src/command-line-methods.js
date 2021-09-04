@@ -2,6 +2,33 @@ const chalk = require('chalk');
 const { forEach } = require('lodash');
 const { readSourceFile } = require('./utils');
 
+const stateInit = (source) => {
+  const markdown = readSourceFile(source);
+  // @TODO should we move out state from this file?
+
+  const stateObject = {
+    content: markdown,
+    previewText: '',
+    warnings: {
+      images: 0,
+    },
+    errors: {
+      previewText: false,
+      sponsorshipTop: false,
+      sponsorshipBottom: false,
+    },
+
+    innerCheckErrors() {
+      checkErrors(this.errors);
+    },
+    innerWarnings(){
+      checkWarnings(this.warnings);
+    }
+  };
+
+  return stateObject;
+};
+
 function checkWarnings(warnings) {
   forEach(warnings, (index, element) => {
     if (index) {
@@ -25,7 +52,7 @@ function checkErrors(errors) {
     });
 
     const message = 'The full template has not been parsed!';
-    printMessage('The full template has not been parsed!', 'red2');
+    printMessage(message, 'red2');
     // console.log(chalk.red.bold(message));
 
     return true;
@@ -89,29 +116,7 @@ const printMessage = ({ message, type }) => {
   }
 };
 
-const stateInit = (source) => {
-  const markdown = readSourceFile(source);
-  // @TODO should we move out state from this file?
 
-  const stateObject = {
-    content: markdown,
-    previewText: '',
-    warnings: {
-      images: 0,
-    },
-    errors: {
-      previewText: false,
-      sponsorshipTop: false,
-      sponsorshipBottom: false,
-    },
-
-    innerCheckErrors() {
-      checkErrors(this.errors);
-    },
-  };
-
-  return stateObject;
-};
 
 const MESSAGE_HTML_CONTENT_ONLY = 'The content has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE = 'The full-template has been parsed successfully';
