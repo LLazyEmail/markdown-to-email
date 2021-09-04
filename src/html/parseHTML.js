@@ -11,6 +11,7 @@ const {
 
 const { stateInit } = require('../command-line-methods');
 
+
 // TODO update this method. I'm sure it can be improved.
 function parse(source) {
   // passing content into the state,
