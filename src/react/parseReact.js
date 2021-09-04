@@ -23,7 +23,11 @@ function parseMDReact(source, isFull) {
 
 
   ReactReplacer.comments();
-  ReactReplacer.strong();
+
+
+  ReactReplacer.typography();
+
+  // ReactReplacer.strong();
   ReactReplacer.italic();
   ReactReplacer.header();
 

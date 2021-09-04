@@ -129,15 +129,18 @@ class ReactReplacer {
 
   typography(){
     this.strong();
-    this.em();
+    this.italic();
+    // this.em();
     this.header();
     this.image();
     this.link();
     this.del();
     this.q();
     this.code();
-    this.ul();
-    this.ol();
+
+
+    this.ulList();
+    this.olList();
     this.blockquote();
     this.hr();
     this.paragraph();
