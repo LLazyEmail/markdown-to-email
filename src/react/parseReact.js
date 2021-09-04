@@ -27,16 +27,7 @@ function parseMDReact(source, isFull) {
 
   ReactReplacer.typography();
 
-  // ReactReplacer.strong();
-  ReactReplacer.italic();
-  ReactReplacer.header();
 
-  ReactReplacer.image();
-  ReactReplacer.link();
-
-  ReactReplacer.del();
-  ReactReplacer.q();
-  ReactReplacer.code();
 
   ReactReplacer.ulList();
   // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
@@ -60,7 +51,7 @@ function parseMDReact(source, isFull) {
   ReactReplacer.mem();
   ReactReplacer.separator();
 
-  //   // const replaceMDBinded = replaceMarkdown.bind(state);
+ 
 
   //   ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);
   //   ReactReplacer.replaceMDBindedPreviewText =

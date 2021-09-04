@@ -139,13 +139,13 @@ class ReactReplacer {
     this.code();
 
 
-    this.ulList();
-    this.olList();
-    this.blockquote();
-    this.hr();
-    this.paragraph();
-    this.emptyUl();
-    this.emptyOl();
+    // this.ulList();
+    // this.olList();
+    // this.blockquote();
+    // this.hr();
+    // this.paragraph();
+    // this.emptyUl();
+    // this.emptyOl();
   }
 
 
