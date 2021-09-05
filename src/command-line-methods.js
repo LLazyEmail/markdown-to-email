@@ -84,12 +84,12 @@ function checkHtml(content) {
     tempStr += content[i];
   }
 
+  // we can extend these checks and add more  
+  
   if (searchPattern.test(tempStr)) {
     printMessage('Content has correct html!!!', 'green');
-    // console.log(chalk.green('Content has correct html!!!'));
   } else {
     printMessage('Content has not correct html!!!', 'yellow');
-    // console.log(chalk.yellow('Content has not correct html!!!'));
   }
 }
 
