@@ -1,6 +1,11 @@
 const { write } = require('markup-generator');
 const reactLayouts = require('atherdon-newsletter-react');
 
+// const {
+//     parse, 
+//     parseFullTHing,
+//   } = require('./html/parseHTML');
+
 const reactComponent = `
 import React from "react";
 
@@ -26,24 +31,55 @@ function writeReactComponent(fileName, content, dir = 'generated', message) {
 }
 
 
-// const {
-//     parse, 
-//     parseFullTHing,
-//   } = require('./html/parseHTML');
+
 
 
 const MESSAGE_REACT_FULL_TEMPLATE = 'The FullTemplate has been parsed successfully';
 const MESSAGE_REACT_CONTENT = 'The Content has been parsed successfully';
 
-// module.exports = {
 
-//   MESSAGE_REACT_FULL_TEMPLATE,
-//   MESSAGE_REACT_CONTENT,
-// };
+
+function generateReactContent() {
+  const { content, warnings } = parseMDReact(CONTENT_SOURCE);
+  // console.log("parsedContent", { content, warnings, previewText });
+
+  // ***
+  checkWarnings(warnings);
+
+
+  const fileName = generateTemplateName('Content', 'js');
+  writeReactComponent(fileName, content);
+
+  const message = 'The Content has been parsed successfully';
+  printMessage(message, 'green2');
+}
+
+
+
+function generateReactFullTemplate() {
+  const { content, warnings, previewText } = parseMDReactFullThing({ source: FULL_SOURCE });
+
+  // ***
+  checkWarnings(warnings);
+
+  const fullContent = reactLayouts.reactFullTemplate(content);
+
+
+  const fileName = generateTemplateName('FullTemplate', 'js');
+  write(fileName, fullContent);
+
+  const message = 'The FullTemplate has been parsed successfully';
+  printMessage(message, 'green2');
+}
+
 
 
 module.exports = {
+
     reactComponent,
     reactComponentReplace,
-    writeReactComponent
+    writeReactComponent,
+
+    MESSAGE_REACT_FULL_TEMPLATE,
+    MESSAGE_REACT_CONTENT
 };

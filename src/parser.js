@@ -7,8 +7,6 @@ const {
   fullTemplateOLD
 } = require('atherdon-newsletter-js-layouts');
 
-const reactLayouts = require('atherdon-newsletter-react');
-
 const { 
   write,
 
@@ -17,36 +15,26 @@ const {
   printMessage
 } = require('markup-generator');
 
-const { writeReactComponent } = require('./react/methods');
 
 const {
  
   generateTemplateName,
-
   FULL_SOURCE,
   CONTENT_SOURCE, 
 } = require('./utils');
 
 
-const {
-  MESSAGE_HTML_CONTENT_ONLY,
-  MESSAGE_HTML_FULL_TEMPLATE,
-  MESSAGE_HTML_FULL_TEMPLATE2,
-
-  MESSAGE_REACT_FULL_TEMPLATE,
-  MESSAGE_REACT_CONTENT
-} = require('./command-line-methods');
 
 
-const {
-  parse, 
-  parseFullTHing,
-} = require('./html/parseHTML');
+// const {
+//   parse, 
+//   parseFullTHing,
+// } = require('./html/parseHTML');
 
-const {
-  parseMDReact,
-  parseMDReactFullThing,
-} = require('./react/parseReact');
+// const {
+//   parseMDReact,
+//   parseMDReactFullThing,
+// } = require('./react/parseReact');
 
 
 
@@ -116,38 +104,38 @@ function generateFullTemplate() {
 
 
 
-function generateReactContent() {
-  const { content, warnings } = parseMDReact(CONTENT_SOURCE);
-  // console.log("parsedContent", { content, warnings, previewText });
+// function generateReactContent() {
+//   const { content, warnings } = parseMDReact(CONTENT_SOURCE);
+//   // console.log("parsedContent", { content, warnings, previewText });
 
-  // ***
-  checkWarnings(warnings);
-
-
-  const fileName = generateTemplateName('Content', 'js');
-  writeReactComponent(fileName, content);
-
-  const message = 'The Content has been parsed successfully';
-  printMessage(message, 'green2');
-}
+//   // ***
+//   checkWarnings(warnings);
 
 
+//   const fileName = generateTemplateName('Content', 'js');
+//   writeReactComponent(fileName, content);
 
-function generateReactFullTemplate() {
-  const { content, warnings, previewText } = parseMDReactFullThing({ source: FULL_SOURCE });
-
-  // ***
-  checkWarnings(warnings);
-
-  const fullContent = reactLayouts.reactFullTemplate(content);
+//   const message = 'The Content has been parsed successfully';
+//   printMessage(message, 'green2');
+// }
 
 
-  const fileName = generateTemplateName('FullTemplate', 'js');
-  write(fileName, fullContent);
 
-  const message = 'The FullTemplate has been parsed successfully';
-  printMessage(message, 'green2');
-}
+// function generateReactFullTemplate() {
+//   const { content, warnings, previewText } = parseMDReactFullThing({ source: FULL_SOURCE });
+
+//   // ***
+//   checkWarnings(warnings);
+
+//   const fullContent = reactLayouts.reactFullTemplate(content);
+
+
+//   const fileName = generateTemplateName('FullTemplate', 'js');
+//   write(fileName, fullContent);
+
+//   const message = 'The FullTemplate has been parsed successfully';
+//   printMessage(message, 'green2');
+// }
 
 
 
