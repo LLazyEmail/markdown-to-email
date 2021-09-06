@@ -9,10 +9,9 @@ const {
 } = require('atherdon-newsletter-js-layouts');
 
 const reactLayouts = require('atherdon-newsletter-react');
+const { write } = require('markup-generator');
 
 const {
-    write,
-  
     writeReactComponent,
   
     generateTemplateName,
@@ -24,20 +23,6 @@ const {
   // tempFullTemplate,
   fullTemplate,
 } = require('atherdon-newsletter-js-layouts');
-
-
-// function zzz(warnings, content, name){
-
-//   // ***
-//   checkWarnings(warnings);
-
-//   // const fileName = generateTemplateName(name);
-
-//   // ***
-//   checkHtml(content);
-
-
-// }
 
 
 function generateFullTemplate2() {
