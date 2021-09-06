@@ -10,9 +10,9 @@ function tempFullTemplate(content) {
 }
 
 // щас это работает лучше
-function fullTemplate({ body, previewText }) {
+function fullTemplate({ content, previewText }) {
 
-  body = body.replace(previewText, '');
+  content = content.replace(previewText, '');
   return `<!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
@@ -505,7 +505,7 @@ function fullTemplate({ body, previewText }) {
 
                     <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;line-height: 150%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #111111;font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 18px;text-align: left;">
 
-                      ${body}
+                      ${content}
 
                     </td>
 

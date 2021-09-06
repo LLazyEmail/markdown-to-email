@@ -28,15 +28,12 @@ const {
 } = require('./utils');
 
 const {
-  
-
   MESSAGE_HTML_CONTENT_ONLY,
   MESSAGE_HTML_FULL_TEMPLATE,
   MESSAGE_HTML_FULL_TEMPLATE2,
 
   MESSAGE_REACT_FULL_TEMPLATE,
-  MESSAGE_REACT_CONTENT,
-  
+  MESSAGE_REACT_CONTENT
 } = require('./command-line-methods');
 
 const {

@@ -41,7 +41,7 @@ function generateFullTemplate2() {
   
     // throw new Error("my error message");
   
-    const fullContent = fullTemplate(content, previewText);
+    const fullContent = fullTemplate({content, previewText});
 
     const fileName = generateTemplateName('full-template-2');
     write(fileName, fullContent);
