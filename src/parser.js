@@ -17,13 +17,16 @@ const {
   printMessage
 } = require('markup-generator');
 
+const { writeReactComponent } = require('./react/methods');
+
 const {
-  writeReactComponent,
+ 
   generateTemplateName,
 
   FULL_SOURCE,
   CONTENT_SOURCE, 
 } = require('./utils');
+
 
 const {
   MESSAGE_HTML_CONTENT_ONLY,
@@ -33,6 +36,7 @@ const {
   MESSAGE_REACT_FULL_TEMPLATE,
   MESSAGE_REACT_CONTENT
 } = require('./command-line-methods');
+
 
 const {
   parse, 
@@ -67,6 +71,8 @@ switch (process.env.PARSE) {
     break;
 }
 
+
+
 function generateFullTemplate2() {
   const { content, warnings, previewText } = parseFullTHing({ source: FULL_SOURCE });
 
@@ -91,6 +97,9 @@ function generateFullTemplate2() {
   printMessage(message, 'green2');
 }
 
+
+
+
 function generateFullTemplate() {
   // same as from top
   
@@ -103,6 +112,9 @@ function generateFullTemplate() {
   const message = 'The full-template has been parsed successfully';
   printMessage(message, 'green2');
 }
+
+
+
 
 function generateReactContent() {
   const { content, warnings } = parseMDReact(CONTENT_SOURCE);
@@ -118,6 +130,8 @@ function generateReactContent() {
   const message = 'The Content has been parsed successfully';
   printMessage(message, 'green2');
 }
+
+
 
 function generateReactFullTemplate() {
   const { content, warnings, previewText } = parseMDReactFullThing({ source: FULL_SOURCE });
@@ -135,6 +149,8 @@ function generateReactFullTemplate() {
   printMessage(message, 'green2');
 }
 
+
+
 // this method is depricated.
 // we will remove export of it at some point.
 function generateContentOnly() {
@@ -151,6 +167,8 @@ function generateContentOnly() {
   const message = 'The content has been parsed successfully';
   printMessage(message, 'green2');
 }
+
+
 
 module.exports = {
   generateContentOnly,
