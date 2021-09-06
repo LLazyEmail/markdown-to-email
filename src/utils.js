@@ -1,6 +1,6 @@
 const fs = require('fs');
-const chalk = require('chalk');
-const { forEach } = require('lodash');
+// const chalk = require('chalk');
+// const { forEach } = require('lodash');
 
 
 
@@ -27,6 +27,9 @@ function writeReactComponent(fileName, content, dir = 'generated', message) {
   const result = reactComponentReplace(content);
   write(fileName, result, dir, message);
 }
+
+
+
 
 
 
@@ -59,6 +62,7 @@ function isFolderExists(dir) {
 }
 
 const generateTemplateName = (suffix, ext = 'html') => `${suffix}-${Date.now()}.${ext}`;
+
 
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
