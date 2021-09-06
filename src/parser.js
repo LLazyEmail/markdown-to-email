@@ -10,9 +10,15 @@ const {
 
 const reactLayouts = require('atherdon-newsletter-react');
 
+const { 
+  write,
+
+  checkWarnings,
+  checkHtml, printMessage,
+} = require('markup-generator');
 
 const {
-  write,
+  // write,
   writeReactComponent,
   generateTemplateName,
 
@@ -21,8 +27,9 @@ const {
 } = require('./utils');
 
 const {
-  checkWarnings,
-  checkHtml, printMessage,
+  // checkWarnings,
+  // checkHtml, printMessage,
+
 
   MESSAGE_HTML_CONTENT_ONLY,
   MESSAGE_HTML_FULL_TEMPLATE,
