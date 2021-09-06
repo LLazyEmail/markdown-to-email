@@ -4,7 +4,6 @@ const {
   // and ruined a lot of our logic
   fullTemplate, 
   
-  
   fullTemplateOLD
 } = require('atherdon-newsletter-js-layouts');
 
@@ -19,7 +18,6 @@ const {
 } = require('markup-generator');
 
 const {
-
   writeReactComponent,
   generateTemplateName,
 
