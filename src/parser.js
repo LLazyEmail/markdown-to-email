@@ -14,11 +14,12 @@ const {
   write,
 
   checkWarnings,
-  checkHtml, printMessage,
+  checkHtml, 
+  printMessage
 } = require('markup-generator');
 
 const {
-  // write,
+
   writeReactComponent,
   generateTemplateName,
 
@@ -27,9 +28,7 @@ const {
 } = require('./utils');
 
 const {
-  // checkWarnings,
-  // checkHtml, printMessage,
-
+  
 
   MESSAGE_HTML_CONTENT_ONLY,
   MESSAGE_HTML_FULL_TEMPLATE,
