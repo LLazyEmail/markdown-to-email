@@ -1,10 +1,28 @@
-const { write } = require('markup-generator');
+const { 
+  write,
+
+  checkWarnings,
+  checkHtml, 
+  printMessage
+} = require('markup-generator');
+
 const reactLayouts = require('atherdon-newsletter-react');
 
-// const {
-//     parse, 
-//     parseFullTHing,
-//   } = require('./html/parseHTML');
+const {
+  generateTemplateName,
+  FULL_SOURCE,
+  CONTENT_SOURCE, 
+} = require('./utils');
+
+const {
+    parse, 
+    parseFullTHing,
+  } = require('./html/parseHTML');
+
+
+const MESSAGE_REACT_FULL_TEMPLATE = 'The FullTemplate has been parsed successfully';
+const MESSAGE_REACT_CONTENT = 'The Content has been parsed successfully';
+  
 
 const reactComponent = `
 import React from "react";
@@ -33,9 +51,6 @@ function writeReactComponent(fileName, content, dir = 'generated', message) {
 
 
 
-
-const MESSAGE_REACT_FULL_TEMPLATE = 'The FullTemplate has been parsed successfully';
-const MESSAGE_REACT_CONTENT = 'The Content has been parsed successfully';
 
 
 

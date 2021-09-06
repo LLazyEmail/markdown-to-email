@@ -1,40 +1,26 @@
 // @TODO both layouts things can be moved out from importing it here.
-const {
-  // TODO: finish and fix this thing. it was done by Serge quickly,
-  // and ruined a lot of our logic
-  fullTemplate, 
+// const {
+//   // TODO: finish and fix this thing. it was done by Serge quickly,
+//   // and ruined a lot of our logic
+//   fullTemplate, 
   
-  fullTemplateOLD
-} = require('atherdon-newsletter-js-layouts');
+//   fullTemplateOLD
+// } = require('atherdon-newsletter-js-layouts');
 
-const { 
-  write,
+// const { 
+//   write,
 
-  checkWarnings,
-  checkHtml, 
-  printMessage
-} = require('markup-generator');
+//   checkWarnings,
+//   checkHtml, 
+//   printMessage
+// } = require('markup-generator');
 
 
 const {
- 
   generateTemplateName,
   FULL_SOURCE,
   CONTENT_SOURCE, 
 } = require('./utils');
-
-
-
-
-// const {
-//   parse, 
-//   parseFullTHing,
-// } = require('./html/parseHTML');
-
-// const {
-//   parseMDReact,
-//   parseMDReactFullThing,
-// } = require('./react/parseReact');
 
 
 
@@ -61,45 +47,45 @@ switch (process.env.PARSE) {
 
 
 
-function generateFullTemplate2() {
-  const { content, warnings, previewText } = parseFullTHing({ source: FULL_SOURCE });
+// function generateFullTemplate2() {
+//   const { content, warnings, previewText } = parseFullTHing({ source: FULL_SOURCE });
 
-  // ***
-  checkWarnings(warnings);
+//   // ***
+//   checkWarnings(warnings);
 
-  // ***
-  checkHtml(content);
+//   // ***
+//   checkHtml(content);
 
-  //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
-  // console.log(content);
+//   //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
+//   // console.log(content);
 
-  // throw new Error("my error message");
+//   // throw new Error("my error message");
 
-  const fullContent = fullTemplate({ content, previewText });
+//   const fullContent = fullTemplate({ content, previewText });
 
-  const fileName = generateTemplateName('full-template-2');
+//   const fileName = generateTemplateName('full-template-2');
 
-  write(fileName, fullContent);
+//   write(fileName, fullContent);
 
-  const message = 'The full-template has been parsed successfully2';
-  printMessage(message, 'green2');
-}
-
-
+//   const message = 'The full-template has been parsed successfully2';
+//   printMessage(message, 'green2');
+// }
 
 
-function generateFullTemplate() {
-  // same as from top
+
+
+// function generateFullTemplate() {
+//   // same as from top
   
 
-  const fullContent = fullTemplateOLD({ content });
+//   const fullContent = fullTemplateOLD({ content });
 
-  const fileName = generateTemplateName('full-template');
+//   const fileName = generateTemplateName('full-template');
 
 
-  const message = 'The full-template has been parsed successfully';
-  printMessage(message, 'green2');
-}
+//   const message = 'The full-template has been parsed successfully';
+//   printMessage(message, 'green2');
+// }
 
 
 
@@ -141,20 +127,20 @@ function generateFullTemplate() {
 
 // this method is depricated.
 // we will remove export of it at some point.
-function generateContentOnly() {
-  const { content, warnings, previewText } = parse(CONTENT_SOURCE);
+// function generateContentOnly() {
+//   const { content, warnings, previewText } = parse(CONTENT_SOURCE);
 
-  // ***
-  checkWarnings(warnings);
+//   // ***
+//   checkWarnings(warnings);
 
 
-  const fileName = generateTemplateName('content');
+//   const fileName = generateTemplateName('content');
 
-  write(fileName, content);
+//   write(fileName, content);
 
-  const message = 'The content has been parsed successfully';
-  printMessage(message, 'green2');
-}
+//   const message = 'The content has been parsed successfully';
+//   printMessage(message, 'green2');
+// }
 
 
 
