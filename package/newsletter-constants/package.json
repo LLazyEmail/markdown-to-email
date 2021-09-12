@@ -1,6 +1,6 @@
 {
   "name": "atherdon-newsletter-constants",
-  "version": "1.0.11",
+  "version": "1.1.0",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -45,5 +45,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "markdown-regex": "^1.0.1"
   }
 }
