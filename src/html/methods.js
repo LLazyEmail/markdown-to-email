@@ -19,12 +19,12 @@ const {
   generateTemplateName,
   FULL_SOURCE,
   CONTENT_SOURCE, 
-} = require('./utils');
+} = require('./../utils');
 
 const {
   parse, 
   parseFullTHing,
-} = require('./html/parseHTML');
+} = require('./parseHTML');
 
 const MESSAGE_HTML_CONTENT_ONLY = 'The content has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE = 'The full-template has been parsed successfully';
@@ -124,6 +124,10 @@ function generateContentOnly() {
 // }
 
 module.exports = {
+
+  generateFullTemplate2,
+  generateFullTemplate,
+  // geGEGEGEGE
 
     MESSAGE_HTML_CONTENT_ONLY,
     MESSAGE_HTML_FULL_TEMPLATE,

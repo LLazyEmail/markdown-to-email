@@ -12,12 +12,12 @@ const {
   generateTemplateName,
   FULL_SOURCE,
   CONTENT_SOURCE, 
-} = require('./utils');
+} = require('./../utils');
 
 const {
     parse, 
     parseFullTHing,
-  } = require('./html/parseHTML');
+  } = require('./parseReact');
 
 
 const MESSAGE_REACT_FULL_TEMPLATE = 'The FullTemplate has been parsed successfully';

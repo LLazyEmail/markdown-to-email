@@ -1,23 +1,7 @@
-// @TODO both layouts things can be moved out from importing it here.
-// const {
-//   // TODO: finish and fix this thing. it was done by Serge quickly,
-//   // and ruined a lot of our logic
-//   fullTemplate, 
-  
-//   fullTemplateOLD
-// } = require('atherdon-newsletter-js-layouts');
-
-
-
-// const {
-//   generateTemplateName,
-//   FULL_SOURCE,
-//   CONTENT_SOURCE, 
-// } = require('./utils');
-
 const {
-  
-} = require('./');
+  generateFullTemplate2,
+  generateFullTemplate,
+} = require('./html/methods');
 
 const {
   generateReactContent,
@@ -44,16 +28,6 @@ switch (process.env.PARSE) {
     generateFullTemplate();
     break;
 }
-
-
-
-
-
-
-
-
-
-
 
 module.exports = {
   generateContentOnly,
