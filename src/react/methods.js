@@ -95,6 +95,10 @@ module.exports = {
     reactComponentReplace,
     writeReactComponent,
 
+    generateReactContent,
+    generateReactFullTemplate,
+
+
     MESSAGE_REACT_FULL_TEMPLATE,
     MESSAGE_REACT_CONTENT
 };

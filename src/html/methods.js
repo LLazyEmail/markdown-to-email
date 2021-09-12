@@ -89,6 +89,40 @@ function generateContentOnly() {
 }
 
 
+// function generateFullTemplate() {
+//   // same as from top
+  
+
+//   const fullContent = layouts.fullTemplate(content);
+//   const fileName = generateTemplateName('full-template');
+//   const message = 'The full-template has been parsed successfully';
+//   printMessage(message, 'green2');
+// }
+
+// function geGEGEGEGE({ content, warnings, previewText, fileName }){
+//   // console.log("parsedContent", { content, warnings, previewText });
+//   // ***
+//   checkWarnings(warnings);
+  
+//   const fileNamez = generateTemplateName(fileName.a, fileName.b);
+
+//   if(flag == 'fullReactTemplate'){
+
+//       const fullContent = reactLayouts.reactFullTemplate(content);
+
+//       write(fileName, fullContent);
+//   } else {
+
+//       writeReactComponent(fileName, content);    
+//   }
+  
+//   // writeReactComponent(fileName, content);
+
+//   const message = `The ${fileName.a} has been parsed successfully`;
+//   printMessage(message, 'green2');
+
+// }
+
 module.exports = {
 
     MESSAGE_HTML_CONTENT_ONLY,
