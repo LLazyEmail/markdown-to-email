@@ -1,4 +1,5 @@
 const {
+  generateContentOnly, // depricated method
   generateFullTemplate2,
   generateFullTemplate,
 } = require('./html/methods');
@@ -29,7 +30,7 @@ switch (process.env.PARSE) {
     break;
 }
 
-module.exports = {
+module.exports = {  
   generateContentOnly,
   generateFullTemplate,
 };

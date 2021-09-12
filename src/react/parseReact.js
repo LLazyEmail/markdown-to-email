@@ -5,7 +5,7 @@ const {
 } = require('atherdon-callbacks');
 
 
-const { stateInit } = require('../command-line-methods');
+const { stateInit } = require('markup-generator');
 
 // ReactReplacer
 

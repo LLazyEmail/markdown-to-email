@@ -9,7 +9,7 @@ const {
   replaceMarkdownPreviewText,
 } = require('atherdon-callbacks');
 
-const { stateInit } = require('../command-line-methods');
+const { stateInit } = require('markup-generator');
 
 
 // TODO update this method. I'm sure it can be improved.
