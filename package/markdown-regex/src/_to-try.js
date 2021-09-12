@@ -18,10 +18,6 @@
 //   {regex: /<\/blockquote><blockquote>/g, replacement: '\n'}                          // fix extra blockquote
 // ];
 
-/// @TODO add const for newsletter_sponsor_link
-// for hackernoon_logo_path
-// for HN socials, with images and shit
-
 // const REGEXP_H3 = /^### (.*$)/gim;
 // const REGEXP_H2 = /^## (.*$)/gim;
 // const REGEXP_H1 = /^# (.*$)/gim;

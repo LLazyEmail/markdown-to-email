@@ -1,6 +1,6 @@
 {
   "name": "markdown-to-email",
-  "version": "1.6.0",
+  "version": "1.8.5",
   "description": "Translate 'Markdown' Syntax into HTML For Email Newsletters",
   "main": "index.js",
   "scripts": {
