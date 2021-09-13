@@ -140,7 +140,7 @@ Check later:
 - https://www.npmjs.com/package/verymail
 - https://www.npmjs.com/package/markdown-to-mailchimp
 
-
+- https://www.npmjs.com/package/simple-markdown
 
 "amazing tool that can solve a lot of issues": https://github.com/syntax-tree/mdast
 
