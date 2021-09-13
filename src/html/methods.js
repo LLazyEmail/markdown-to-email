@@ -12,11 +12,12 @@ const {
 
   checkWarnings,
   checkHtml, 
-  printMessage
+  printMessage,
+  generateTemplateName
 } = require('markup-generator');
 
 const {
-  generateTemplateName,
+  
   FULL_SOURCE,
   CONTENT_SOURCE, 
 } = require('./../utils');

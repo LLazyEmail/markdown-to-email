@@ -3,16 +3,18 @@ const {
 
   checkWarnings,
   checkHtml, 
-  printMessage
+  printMessage,
+  generateTemplateName
 } = require('markup-generator');
 
 const reactLayouts = require('atherdon-newsletter-react');
 
-const {
-  generateTemplateName,
+const {  
   FULL_SOURCE,
   CONTENT_SOURCE, 
 } = require('./../utils');
+
+
 
 const {
     parse, 
