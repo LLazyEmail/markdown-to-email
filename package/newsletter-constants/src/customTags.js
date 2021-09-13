@@ -4,6 +4,7 @@ const platform = os.platform();
 
 const newLine = platform === "win32" ? "\r\n" : "\n";
 
+
 const REGEXP_SPONSORSHIP = /~(\[(.*?)\]){3}/g;
 const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
 const REGEXP_MEM = /\!\[(.*?)\]\[(.*?)\]\[(.*?)\]/g;
