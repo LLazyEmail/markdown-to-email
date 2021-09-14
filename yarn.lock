@@ -1299,7 +1299,14 @@ atherdon-react-markdown-component-table@0.1.1:
   dependencies:
     "@babel/runtime" "^7.14.6"
 
-atherdon-react-markdown-component-typography@0.0.2, atherdon-react-markdown-component-typography@^0.0.2:
+atherdon-react-markdown-component-typography@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-typography/-/atherdon-react-markdown-component-typography-0.0.3.tgz#adce50ea4c9929657899ad174f2fd4cea0e934a5"
+  integrity sha512-Kd3MjrItT2dnyClRdD3HbwOatMJ1P+PGR583hywMf+TVXA246ijbzeVoV7cYY/JTIvyONNMvI7bHOmKFx53Pfw==
+  dependencies:
+    "@babel/runtime" "^7.14.6"
+
+atherdon-react-markdown-component-typography@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/atherdon-react-markdown-component-typography/-/atherdon-react-markdown-component-typography-0.0.2.tgz#49c73a2e54474ffea7298fe8b8816966853b1826"
   integrity sha512-1LVX8QmNxp2e+AB9uVudY7dJYqBCl6KIIDhBjbdNAz0CkuyJUZtheC3FZZb/XaYJrPzAVrYbdpqbi3CNiYSn2Q==
