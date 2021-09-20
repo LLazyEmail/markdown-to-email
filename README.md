@@ -178,3 +178,5 @@ https://github.com/zaach/jison
 
 
 https://github.com/MarcL/markdown-to-mailchimp
+
+https://github.com/pluralsight/htmlTagValidator
