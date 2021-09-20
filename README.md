@@ -160,3 +160,15 @@ https://github.com/here-be/snapdragon
 https://github.com/wooorm/html-element-attributes
 
 https://www.npmjs.com/package/element-mold
+
+---
+
+https://www.npmjs.com/package/yargs
+
+https://www.npmjs.com/package/commander
+
+---
+
+https://tomassetti.me/parsing-in-javascript/
+https://github.com/aaditmshah/lexer
+https://github.com/zaach/jison
