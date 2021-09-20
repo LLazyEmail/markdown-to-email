@@ -24,16 +24,10 @@ function separator() {
   );
 
   const result = newLine + replaced + newLine;
-
-  //   const result = `${newLine}${replaceHTMLWrapper(
-  //     'separator',
-  //     config,
-  //   )}${newLine}`;
-
   return result;
 }
 
 export {
   mem,
-  separator,
+  separator
 };
