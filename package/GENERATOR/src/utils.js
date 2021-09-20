@@ -20,22 +20,38 @@ function write(fileName, content, dir = 'generated', message) {
     message && console.log(`file has been written successfully${fileName}`);
   }
   
-  function readSourceFile(fileName) {
+function readSourceFile(fileName) {
     return readFileSync(fileName, { encoding: 'utf-8' });
   }
   
-  function isFolderExists(dir) {
+function isFolderExists(dir) {
     if (!existsSync(dir)) {
       mkdirSync(dir);
     }
   }
   
-  const generateTemplateName = (suffix, ext = 'html') => `${suffix}-${Date.now()}.${ext}`;
+const generateTemplateName = (suffix, ext = 'html') => `${suffix}-${Date.now()}.${ext}`;
   
+const countingBytes = (html) => {
+    const bytes = Buffer.byteLength(html, 'utf8');
 
-  export {
+    if (bytes > 1024 * 100) {
+      console.warn(
+        `Email output is ${Math.round(bytes / 1024)}KB. ` +
+        'It is recommended to keep the delivered HTML to smaller ' +
+        'than 100KB, to avoid getting emails cut off or rejected due to spam.'
+      );
+    }
+    
+    return bytes;
+}
+
+
+
+export {
     write,   
     readSourceFile,
     isFolderExists,
-    generateTemplateName
-  }
+    generateTemplateName,    
+    countingBytes
+ }
