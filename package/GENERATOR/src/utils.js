@@ -1,5 +1,8 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 
+const CONST_FILE_CREATED = '';
+const CONST_FILE_NOT_WRITTEN = '';
+
 // writeHTML
 function write(fileName, content, dir = 'generated', message) {
     // isFolderExists(dir);
