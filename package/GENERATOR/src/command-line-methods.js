@@ -2,6 +2,14 @@ import chalk from 'chalk';
 import { forEach } from 'lodash';
 import { readSourceFile } from './utils';
 
+
+
+const WARNING_IMAGE_VERSION = '';
+CONST ERROR_SOURCE_DONT_HAVE = '';
+CONST FULL_TEMPLATE_ERROR = '';
+CONST HTML_EMAIL_SUCCESS = '';
+CONST HTML_EMAIL_ERROR = '';
+
 const stateInit = (source) => {
   // TODO rename  
   const markdown = readSourceFile(source);
@@ -30,6 +38,7 @@ const stateInit = (source) => {
   return stateObject;
 };
 
+    
 function checkWarnings(warnings) {
   forEach(warnings, (index, element) => {
     if (index) {
