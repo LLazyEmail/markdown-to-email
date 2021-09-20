@@ -10,6 +10,15 @@ CONST FULL_TEMPLATE_ERROR = '';
 CONST HTML_EMAIL_SUCCESS = '';
 CONST HTML_EMAIL_ERROR = '';
 
+
+//if (bytes > 1024 * 100) {
+//      console.warn(
+//`Email output is ${Math.round(bytes / 1024)}KB. ` +
+//'It is recommended to keep the delivered HTML to smaller ' +
+//  'than 100KB, to avoid getting emails cut off or rejected due to spam.'
+//  );
+//}
+
 const stateInit = (source) => {
   // TODO rename  
   const markdown = readSourceFile(source);
