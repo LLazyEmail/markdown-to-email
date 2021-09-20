@@ -145,3 +145,14 @@ Check later:
 "amazing tool that can solve a lot of issues": https://github.com/syntax-tree/mdast
 
 
+----
+
+https://www.npmjs.com/package//sanitize-html
+
+https://www.npmjs.com/package/html-element-attributes
+
+https://www.npmjs.com/package/html-tag
+
+
+
+
