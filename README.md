@@ -172,3 +172,9 @@ https://www.npmjs.com/package/commander
 https://tomassetti.me/parsing-in-javascript/
 https://github.com/aaditmshah/lexer
 https://github.com/zaach/jison
+
+
+----
+
+
+https://github.com/MarcL/markdown-to-mailchimp
