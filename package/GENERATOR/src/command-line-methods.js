@@ -3,8 +3,9 @@ import { forEach } from 'lodash';
 import { readSourceFile } from './utils';
 
 const stateInit = (source) => {
+  // TODO rename  
   const markdown = readSourceFile(source);
-  // @TODO should we move out state from this file?
+  // TODO should we move out state from this file?
 
   const stateObject = {
     content: markdown,
@@ -33,7 +34,7 @@ function checkWarnings(warnings) {
   forEach(warnings, (index, element) => {
     if (index) {
       const message = `WARNING source.md has ${index} ${element}. Replace it with memes`;
-      // console.log(chalk.yellow(message));
+      
       printMessage(message, 'yellow');
     }
   });
@@ -41,19 +42,19 @@ function checkWarnings(warnings) {
 
 function checkErrors(errors) {
   if (Object.values(errors).includes(false)) {
-    // @TODO replace with lodash
+    // TODO replace with lodash
     forEach(errors, (_, error) => {
       if (!errors[error]) {
         const message = `ERROR source.md doesn't have ${error}`;
 
         printMessage(message, 'red');
-        // console.log(chalk.red(message));
+       
       }
     });
 
     const message = 'The full template has not been parsed!';
     printMessage(message, 'red2');
-    // console.log(chalk.red.bold(message));
+    
 
     return true;
   }
