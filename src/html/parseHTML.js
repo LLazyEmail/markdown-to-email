@@ -14,8 +14,12 @@ function parse(source) {
   // passing content into the state,
   // so we can do our updates step by step and track any errors
   const state = stateInit(source);
-
+  
+  
+  // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????
   Replacer.replaceMDBinded = replaceMarkdown.bind(state);
+  
+  // I think this version isnt working well
   Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
   Replacer.previewText();
