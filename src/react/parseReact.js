@@ -14,6 +14,8 @@ function parseMDReact(source, isFull) {
   const state = stateInit(source);
 
   ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);
+  
+  // I think we didnt use it quite often
   ReactReplacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
   // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
