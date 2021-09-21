@@ -11,9 +11,9 @@ const {
 
 const { stateInit } = require('markup-generator');
 
-
 // TODO update this method. I'm sure it can be improved.
 function parse(source) {
+  
   // passing content into the state,
   // so we can do our updates step by step and track any errors
   const state = stateInit(source);
@@ -24,8 +24,7 @@ function parse(source) {
   Replacer.previewText();
   Replacer.replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
   Replacer.comments();
-
-
+  // ---
   Replacer.typography();
 
   Replacer.miscellaneous();
