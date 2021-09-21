@@ -1,7 +1,4 @@
 // TODO: something wrong with newsletter-constants module
-const {
-  REGEXP_PREVIEW_TEXT,
-} = require('atherdon-newsletter-constants');
 
 const {
   Replacer,
@@ -22,7 +19,7 @@ function parse(source) {
   Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
   Replacer.previewText();
-  Replacer.replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
+  Replacer.replaceMDBindedPreviewText();
   Replacer.comments();
   // ---
   Replacer.typography();
