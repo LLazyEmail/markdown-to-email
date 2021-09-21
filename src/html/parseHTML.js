@@ -19,7 +19,7 @@ function parse(source) {
   Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
   Replacer.previewText();
-  Replacer.replaceMDBindedPreviewText();
+  // Replacer.replaceMDBindedPreviewText();
   Replacer.comments();
   // ---
   Replacer.typography();
