@@ -13,6 +13,7 @@ const { stateInit } = require('markup-generator');
 function parseMDReact(source, isFull) {
   const state = stateInit(source);
 
+  // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????
   ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);
   
   // I think we didnt use it quite often
