@@ -87,6 +87,7 @@ function displayCLIErrors(errors, warnings) {
   }
 }
 
+
 function checkHtml(content) {
   const searchPattern = new RegExp('(<table|<tr>|<td|<tbody>)', 'i');
   let ind; let
@@ -111,6 +112,8 @@ function checkHtml(content) {
     printMessage('Content has not correct html!!!', 'yellow');
   }
 }
+
+
 
 const printMessage = ({ message, type }) => {
   if (!message) return;

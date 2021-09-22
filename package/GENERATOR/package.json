@@ -46,6 +46,8 @@
     "access": "public"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
     "write": "^2.0.0"
   }
 }
