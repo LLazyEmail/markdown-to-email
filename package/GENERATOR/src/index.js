@@ -1,11 +1,11 @@
 import {
-    __write,   
-    readSourceFile,
-    isFolderExists,
-    generateTemplateName
-  } from './utils'
+  __write,
+  readSourceFile,
+  isFolderExists,
+  generateTemplateName
+} from './utils';
 
-import {  
+import {
   displayCLIErrors,
   checkErrors,
   checkWarnings,
@@ -13,19 +13,19 @@ import {
 
   printMessage,
   stateInit
-} from './command-line-methods'
+} from './command-line-methods';
 
-  export default {
-    __write,   
-    readSourceFile,
-    isFolderExists,
-    generateTemplateName,
+export default {
+  __write,
+  readSourceFile,
+  isFolderExists,
+  generateTemplateName,
 
-    displayCLIErrors,
-    checkErrors,
-    checkWarnings,
-    checkHtml,
-  
-    printMessage,
-    stateInit
-  }
+  displayCLIErrors,
+  checkErrors,
+  checkWarnings,
+  checkHtml,
+
+  printMessage,
+  stateInit
+};

@@ -44,9 +44,7 @@ function replaceMarkdownPreviewText(regexp) {
 }
 
 // TODO update this method. I'm sure it can be improved.
-function __parse(source){
-  
-
+function __parse(source) {
   // passing content into the state,
   // so we can do our updates step by step and track any errors
   const state = stateInit(source);
@@ -57,8 +55,6 @@ function __parse(source){
   Replacer.previewText();
   Replacer.replaceMDBindedPreviewText(REGEXP_PREVIEW_TEXT);
   Replacer.comments();
-
-
 
   Replacer.strong();
   Replacer.em();
@@ -94,7 +90,6 @@ function __parse(source){
   // console.log(state)
 
   return state;
-
 }
 
 module.exports = {
