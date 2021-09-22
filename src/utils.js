@@ -6,5 +6,5 @@ const CONTENT_SOURCE = 'source/source.md';
 
 module.exports = {
   FULL_SOURCE,
-  CONTENT_SOURCE
+  CONTENT_SOURCE,
 };

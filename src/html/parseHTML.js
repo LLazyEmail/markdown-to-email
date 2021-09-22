@@ -10,15 +10,13 @@ const { stateInit } = require('markup-generator');
 
 // TODO update this method. I'm sure it can be improved.
 function parse(source) {
-  
   // passing content into the state,
   // so we can do our updates step by step and track any errors
   const state = stateInit(source);
-  
-  
+
   // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????
   Replacer.replaceMDBinded = replaceMarkdown.bind(state);
-  
+
   // I think this version isnt working well
   Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 

@@ -57,7 +57,7 @@ const ConverterTypography = {
     value: link,
     //     title: "xxx",
   },
-  
+
   ulList: {
     key: 'REGEXP_UL_LIST',
     value: ulList,

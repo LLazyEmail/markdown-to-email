@@ -6,7 +6,7 @@ const {
 
 const {
   generateReactContent,
-  generateReactFullTemplate
+  generateReactFullTemplate,
 } = require('./react/methods');
 
 switch (process.env.PARSE) {
@@ -30,7 +30,7 @@ switch (process.env.PARSE) {
     break;
 }
 
-module.exports = {  
+module.exports = {
   generateContentOnly,
   generateFullTemplate,
 };

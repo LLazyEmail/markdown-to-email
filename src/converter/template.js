@@ -7,7 +7,7 @@ const {
 
 const {
   header,
-  sponsorship
+  sponsorship,
 } = require('../callbacks');
 
 // const layouts = require("atherdon-newsletter-constants");

@@ -1,7 +1,7 @@
 const {
-  ReactReplacer, 
-  replaceMarkdown, 
-  replaceMarkdownPreviewText
+  ReactReplacer,
+  replaceMarkdown,
+  replaceMarkdownPreviewText,
 } = require('atherdon-callbacks');
 
 const { stateInit } = require('markup-generator');
@@ -14,7 +14,7 @@ function parseMDReact(source, isFull) {
 
   // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????
   ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);
-  
+
   // I think we didnt use it quite often
   // ReactReplacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
@@ -22,7 +22,6 @@ function parseMDReact(source, isFull) {
   if (isFull) {
     ReactReplacer.previewText();
   }
-
 
   ReactReplacer.comments();
   ReactReplacer.typography();
@@ -40,12 +39,10 @@ function parseMDReact(source, isFull) {
   //   ReactReplacer.emptyOl();
   //   ReactReplacer.emptyBlockQuote();
 
-  
   ReactReplacer.br();
   ReactReplacer.sponsorship();
   ReactReplacer.mem();
   ReactReplacer.separator();
-
 
   // console.log( state )
 

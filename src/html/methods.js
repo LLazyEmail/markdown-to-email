@@ -2,27 +2,27 @@
 const {
   // TODO: finish and fix this thing. it was done by Serge quickly,
   // and ruined a lot of our logic
-  fullTemplate, 
-  
-  fullTemplateOLD
+  fullTemplate,
+
+  fullTemplateOLD,
 } = require('atherdon-newsletter-js-layouts');
-  
-const { 
+
+const {
   write,
 
   checkWarnings,
-  checkHtml, 
+  checkHtml,
   printMessage,
-  generateTemplateName
+  generateTemplateName,
 } = require('markup-generator');
 
-const {  
+const {
   FULL_SOURCE,
-  CONTENT_SOURCE, 
-} = require('./../utils');
+  CONTENT_SOURCE,
+} = require('../utils');
 
 const {
-  parse, 
+  parse,
   parseFullTHing,
 } = require('./parseHTML');
 
@@ -54,22 +54,16 @@ function generateFullTemplate2() {
   printMessage(message, 'green2');
 }
 
-
-
-
 function generateFullTemplate() {
   // same as from top
-  
 
   const fullContent = fullTemplateOLD({ content });
 
   const fileName = generateTemplateName('full-template');
 
-
   const message = 'The full-template has been parsed successfully';
   printMessage(message, 'green2');
 }
-
 
 // this method is depricated.
 // we will remove export of it at some point.
@@ -79,7 +73,6 @@ function generateContentOnly() {
   // ***
   checkWarnings(warnings);
 
-
   const fileName = generateTemplateName('content');
 
   write(fileName, content);
@@ -88,10 +81,8 @@ function generateContentOnly() {
   printMessage(message, 'green2');
 }
 
-
 // function generateFullTemplate() {
 //   // same as from top
-  
 
 //   const fullContent = layouts.fullTemplate(content);
 //   const fileName = generateTemplateName('full-template');
@@ -103,7 +94,7 @@ function generateContentOnly() {
 //   // console.log("parsedContent", { content, warnings, previewText });
 //   // ***
 //   checkWarnings(warnings);
-  
+
 //   const fileNamez = generateTemplateName(fileName.a, fileName.b);
 
 //   if(flag == 'fullReactTemplate'){
@@ -113,9 +104,9 @@ function generateContentOnly() {
 //       write(fileName, fullContent);
 //   } else {
 
-//       writeReactComponent(fileName, content);    
+//       writeReactComponent(fileName, content);
 //   }
-  
+
 //   // writeReactComponent(fileName, content);
 
 //   const message = `The ${fileName.a} has been parsed successfully`;
@@ -129,8 +120,8 @@ module.exports = {
   generateFullTemplate,
   // geGEGEGEGE
 
-    MESSAGE_HTML_CONTENT_ONLY,
-    MESSAGE_HTML_FULL_TEMPLATE,
-    MESSAGE_HTML_FULL_TEMPLATE2
+  MESSAGE_HTML_CONTENT_ONLY,
+  MESSAGE_HTML_FULL_TEMPLATE,
+  MESSAGE_HTML_FULL_TEMPLATE2,
 
-}
+};

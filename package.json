@@ -10,7 +10,7 @@
     "parseReact": "npm run checkFolders && cross-env PARSE=reactContentOnly node ./src/parser",
     "parseReact:full": "npm run checkFolders && cross-env PARSE=reactFull node ./src/parser",
     "test:react": "npm run checkFolders && jest ./src/parserMDReact/tests",
-    "lint": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
+    "lint:fix": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
     "build:small": "npm run checkFolders && node ./src/index.js",
     "checkFolders": "node ./checkFolders",
     "test": "npm run checkFolders && jest ./src/tests",
