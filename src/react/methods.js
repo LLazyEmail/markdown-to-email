@@ -2,7 +2,7 @@ const {
   write,
 
   checkWarnings,
-  checkHtml, 
+
   printMessage,
   generateTemplateName
 } = require('markup-generator');
@@ -15,11 +15,10 @@ const {
 } = require('./../utils');
 
 
-
-const {
-    parse, 
-    parseFullTHing,
-  } = require('./parseReact');
+// const {
+//     parse, 
+//     parseFullTHing,
+//   } = require('./parseReact');
 
 
 const MESSAGE_REACT_FULL_TEMPLATE = 'The FullTemplate has been parsed successfully';

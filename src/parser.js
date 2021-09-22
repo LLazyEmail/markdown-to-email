@@ -7,7 +7,7 @@ const {
 const {
   generateReactContent,
   generateReactFullTemplate
-} = require('./react/methods')
+} = require('./react/methods');
 
 switch (process.env.PARSE) {
   case 'full':

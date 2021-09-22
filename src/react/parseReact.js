@@ -4,7 +4,6 @@ const {
   replaceMarkdownPreviewText
 } = require('atherdon-callbacks');
 
-
 const { stateInit } = require('markup-generator');
 
 // ReactReplacer
@@ -17,7 +16,7 @@ function parseMDReact(source, isFull) {
   ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);
   
   // I think we didnt use it quite often
-  ReactReplacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
+  // ReactReplacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
   // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
   if (isFull) {
@@ -26,11 +25,7 @@ function parseMDReact(source, isFull) {
 
 
   ReactReplacer.comments();
-
-
   ReactReplacer.typography();
-
-
 
   ReactReplacer.ulList();
   // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
@@ -45,39 +40,12 @@ function parseMDReact(source, isFull) {
   //   ReactReplacer.emptyOl();
   //   ReactReplacer.emptyBlockQuote();
 
-
-
-
   
   ReactReplacer.br();
   ReactReplacer.sponsorship();
   ReactReplacer.mem();
   ReactReplacer.separator();
 
- 
-
-
-
-  //   ReactReplacer.comments();
-
-
-  //   ReactReplacer.ulList();
-  //   // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
-  //   //   ReactReplacer.olList()
-
-  //   ReactReplacer.blockQuote();
-  //   ReactReplacer.hr();
-  //   ReactReplacer.paragraph();
-
-  //   // TODO CHECK CASES WHEN CONTENT CAN HAVE EMPTY LISTS OR BLOCKQUOTE
-  //   //   ReactReplacer.emptyUl();
-  //   //   ReactReplacer.emptyOl();
-  //   //   ReactReplacer.emptyBlockQuote();
-
-  //   ReactReplacer.br();
-  //   ReactReplacer.sponsorship();
-  //   ReactReplacer.mem();
-  //   ReactReplacer.separator();
 
   // console.log( state )
 

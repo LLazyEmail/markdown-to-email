@@ -16,8 +16,7 @@ const {
   generateTemplateName
 } = require('markup-generator');
 
-const {
-  
+const {  
   FULL_SOURCE,
   CONTENT_SOURCE, 
 } = require('./../utils');
