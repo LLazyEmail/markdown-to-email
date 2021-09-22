@@ -4,11 +4,11 @@ import { readSourceFile } from './utils';
 
 
 
-const WARNING_IMAGE_VERSION = '';
-CONST ERROR_SOURCE_DONT_HAVE = '';
-CONST FULL_TEMPLATE_ERROR = '';
-CONST HTML_EMAIL_SUCCESS = '';
-CONST HTML_EMAIL_ERROR = '';
+// const WARNING_IMAGE_VERSION = '';
+// const ERROR_SOURCE_DONT_HAVE = '';
+// const FULL_TEMPLATE_ERROR = '';
+// const HTML_EMAIL_SUCCESS = '';
+// const HTML_EMAIL_ERROR = '';
 
 
 //if (bytes > 1024 * 100) {

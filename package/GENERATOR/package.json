@@ -45,5 +45,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {}
+  "dependencies": {
+    "write": "^2.0.0"
+  }
 }

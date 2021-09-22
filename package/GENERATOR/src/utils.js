@@ -1,12 +1,30 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+import write from 'write';
 
 const CONST_FILE_CREATED = '';
 const CONST_FILE_NOT_WRITTEN = '';
 
+function ____write(fileName, content, dir="generated", message){
+
+  const _path = `${dir}/${fileName}`; // @todo it's not an ideal thing
+
+  // promise
+  write(_path, content)
+    .then(() => {
+      // do stuff
+    });
+  
+
+  // callback
+  write(_path, content, err => {
+    // do stuff with err
+  });
+  }
+
+
 // writeHTML
-function write(fileName, content, dir = 'generated', message) {
-    // isFolderExists(dir);
-    // @todo finish https://stackoverflow.com/questions/50767829/why-node-js-fs-existssync-doesnt-work-well-when-wrapped-in-promise/50768253
+function __write(fileName, content, dir = 'generated', message) {
+    
   
     const _path = `${dir}/${fileName}`; // @todo it's not an ideal thing
   
@@ -59,7 +77,7 @@ const countingBytes = (html) => {
 // }
 
 export {
-    write,   
+    __write,   
     readSourceFile,
     isFolderExists,
     generateTemplateName,    
