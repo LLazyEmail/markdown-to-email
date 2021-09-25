@@ -1,4 +1,4 @@
-const { writeReactComponent, readSourceFile } = require('../../../utils');
+const { writeReactComponent, readSourceFile } = require('../../../../../src/utils');
 const { sponsorship } = require('../../callbacksMDReact');
 const { replaceMarkdown } = require('../../../helpers');
 const { REGEXP_SPONSORSHIP } = require('../../constantsMDReact');

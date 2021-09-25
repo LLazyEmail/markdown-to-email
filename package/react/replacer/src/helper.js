@@ -1,7 +1,7 @@
 import os from 'os';
 // const { forEach } = require('lodash');
 
-import layouts from 'atherdon-newsletter-js-layouts';
+// import layouts from 'atherdon-newsletter-js-layouts';
 
 import reactLayouts from 'atherdon-newsletter-react';
 

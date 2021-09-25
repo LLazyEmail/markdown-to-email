@@ -12,7 +12,7 @@ const reactLayouts = require('atherdon-newsletter-react');
 const {
   FULL_SOURCE,
   CONTENT_SOURCE,
-} = require('../utils');
+} = require('../../../../src/utils');
 
 // const {
 //     parse,

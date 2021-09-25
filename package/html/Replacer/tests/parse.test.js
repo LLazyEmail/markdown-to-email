@@ -1,7 +1,7 @@
 const { isObject } = require('lodash');
 const { parse } = require('../../parse');
 
-const { FULL_SOURCE } = require('../utils');
+const { FULL_SOURCE } = require('../../../../src/utils');
 
 describe('testing parse.js', () => {
   const p = parse(FULL_SOURCE);

@@ -1,13 +1,19 @@
-const {
-  generateContentOnly, // depricated method
-  generateFullTemplate2,
-  generateFullTemplate,
-} = require('./html/methods');
 
-const {
-  generateReactContent,
-  generateReactFullTemplate,
-} = require('./react/methods');
+// const {
+//   generateContentOnly, // depricated method
+//   generateFullTemplate2,
+//   generateFullTemplate,
+// } = require('./html/methods');
+
+
+
+// const {
+//   generateReactContent,
+//   generateReactFullTemplate,
+// } = require('react-replacer');
+
+
+
 
 switch (process.env.PARSE) {
   case 'full':
