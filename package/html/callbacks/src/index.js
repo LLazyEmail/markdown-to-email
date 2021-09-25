@@ -6,7 +6,7 @@ import ReactReplacer from './react/replace';
 
 import {
   newLine, 
-  replaceHTMLWrapper, 
+  replaceWrapper, 
   replaceReactWrapper
 } from './helpers';
 
@@ -21,7 +21,7 @@ export {
   ReactReplacer,
   Replacer,
   newLine,
-  replaceHTMLWrapper,
+  replaceWrapper,
   replaceReactWrapper,
   replaceMarkdown,
   replaceMarkdownPreviewText

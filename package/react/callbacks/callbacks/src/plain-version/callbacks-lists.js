@@ -15,7 +15,7 @@ function ulList(text, list) {
             content: subItem.trim(),
           };
 
-          return `${newLine + replaceHTMLWrapper('listItem', config)}`;
+          return `${newLine + replaceWrapper('listItem', config)}`;
         },
       );
 
@@ -23,7 +23,7 @@ function ulList(text, list) {
         content: parsedSubItem + newLine,
       };
 
-      return `${newLine + replaceHTMLWrapper('list', config)}`;
+      return `${newLine + replaceWrapper('list', config)}`;
     },
   );
 
@@ -34,7 +34,7 @@ function ulList(text, list) {
         content: listItem.trim(),
       };
 
-      return `${newLine + replaceHTMLWrapper('listItem', config)}`;
+      return `${newLine + replaceWrapper('listItem', config)}`;
     },
   );
 
@@ -42,7 +42,7 @@ function ulList(text, list) {
     content: parsedList + newLine,
   };
 
-  return `${newLine + replaceHTMLWrapper('list', config) + newLine}`;
+  return `${newLine + replaceWrapper('list', config) + newLine}`;
 }
 
 // @TODO update this. it's a real shitty method

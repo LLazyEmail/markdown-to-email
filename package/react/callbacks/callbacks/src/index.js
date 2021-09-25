@@ -6,8 +6,8 @@ import ReactReplacer from './react/replace';
 
 import {
   newLine, 
-  replaceHTMLWrapper, 
-  replaceReactWrapper
+  replaceWrapper, 
+  // replaceReactWrapper
 } from './helpers';
 
 import {
@@ -21,8 +21,8 @@ export {
   ReactReplacer,
   Replacer,
   newLine,
-  replaceHTMLWrapper,
-  replaceReactWrapper,
+  replaceWrapper,
+  // replaceReactWrapper,
   replaceMarkdown,
   replaceMarkdownPreviewText
 };

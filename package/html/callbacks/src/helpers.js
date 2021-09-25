@@ -49,5 +49,5 @@ export {
   newLine,
 
   replaceReactWrapper,
-  replaceHTMLWrapper
+  replaceWrapper
 };

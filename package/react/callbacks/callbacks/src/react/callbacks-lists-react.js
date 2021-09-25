@@ -1,4 +1,4 @@
-import { replaceReactWrapper, newLine } from '../helpers';
+import { replaceWrapper, newLine } from '../helpers';
 
 const hr = `${newLine}<hr />`;
 const empty = '';
@@ -11,7 +11,7 @@ function getParsedSubList(subList) {
         content: subItem.trim(),
       };
 
-      return `${newLine + replaceReactWrapper('listItem', config)}`;
+      return `${newLine + replaceWrapper('listItem', config)}`;
     },
   );
 }
@@ -30,7 +30,7 @@ function ulList(text, list) {
         type: 'UL',
       };
 
-      return `${newLine + replaceReactWrapper('list', config)}`;
+      return `${newLine + replaceWrapper('list', config)}`;
     },
   );
 
@@ -41,7 +41,7 @@ function ulList(text, list) {
         content: listItem.trim(),
       };
 
-      return `${newLine + replaceReactWrapper('listItem', config)}`;
+      return `${newLine + replaceWrapper('listItem', config)}`;
     },
   );
 
@@ -50,7 +50,7 @@ function ulList(text, list) {
     type: 'UL',
   };
 
-  return `${newLine + replaceReactWrapper('list', config) + newLine}`;
+  return `${newLine + replaceWrapper('list', config) + newLine}`;
 }
 
 function olList(text, item) {

@@ -28,7 +28,7 @@ function replaceMarkdownPreviewText(regexp) {
   };
 
   /*
-  this.previewText = replaceHTMLWrapper(
+  this.previewText = replaceWrapper(
         "previewText",
         config,
         "body"
