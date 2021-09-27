@@ -1,5 +1,5 @@
 import {
-  replaceHTMLWrapper,
+  replaceWrapper,
   newLine
 } from '../helpers';
 
@@ -10,7 +10,7 @@ function mem(text, src, href, altText) {
     href: href.trim(),
   };
 
-  const result = replaceHTMLWrapper('image', config);
+  const result = replaceWrapper('image', config);
 
   return result;
 }
@@ -18,7 +18,7 @@ function mem(text, src, href, altText) {
 function separator() {
   const config = {};
 
-  const replaced = replaceHTMLWrapper(
+  const replaced = replaceWrapper(
     'separator',
     config,
   );

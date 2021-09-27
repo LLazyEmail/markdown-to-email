@@ -21,7 +21,7 @@ import fullTemplateOld from './FULL-TEMPLATE-MISTAKE/full-template';
 
 import fullTemplate from './FULL-TEMPLATE-MISTAKE/tempFT';
 
-export {
+export default {
   body,
 
   //spread misc

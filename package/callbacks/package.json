@@ -1,6 +1,6 @@
 {
   "name": "atherdon-callbacks",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Me trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "atherdon-newsletter-constants": "^1.0.10",
-    "atherdon-newsletter-js-layouts": "^1.0.17",
+    "atherdon-newsletter-js-layouts": "^1.6.0",
     "atherdon-newsletter-react": "^1.0.11"
   }
 }

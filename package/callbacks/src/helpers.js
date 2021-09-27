@@ -7,7 +7,7 @@ import reactLayouts from 'atherdon-newsletter-react';
 const platform = os.platform();
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
-function replaceHTMLWrapper(wrapperName, config, folder = 'typography') {
+function replaceWrapper(wrapperName, config, folder = 'typography') {
   // this part will be updated very soon
   let wrapper = layouts[folder][wrapperName];
 

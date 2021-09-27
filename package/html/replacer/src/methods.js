@@ -17,11 +17,6 @@ const {
 } = require('markup-generator');
 
 const {
-  FULL_SOURCE,
-  CONTENT_SOURCE,
-} = require('../utils');
-
-const {
   parse,
   parseFullTHing,
 } = require('./parseHTML');
@@ -30,8 +25,8 @@ const MESSAGE_HTML_CONTENT_ONLY = 'The content has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE = 'The full-template has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE2 = 'The full-template has been parsed successfully2';
 
-function generateFullTemplate2() {
-  const { content, warnings, previewText } = parseFullTHing({ source: FULL_SOURCE });
+function generateFullTemplate2(sourceFile) {
+  const { content, warnings, previewText } = parseFullTHing({ source: sourceFile });
 
   // ***
   checkWarnings(warnings);
@@ -67,8 +62,8 @@ function generateFullTemplate() {
 
 // this method is depricated.
 // we will remove export of it at some point.
-function generateContentOnly() {
-  const { content, warnings, previewText } = parse(CONTENT_SOURCE);
+function generateContentOnly(sourceFile) {
+  const { content, warnings, previewText } = parse(sourceFile);
 
   // ***
   checkWarnings(warnings);
@@ -81,7 +76,7 @@ function generateContentOnly() {
   printMessage(message, 'green2');
 }
 
-// function generateFullTemplate() {
+// function generateFullTemplate(sourceFile) {
 //   // same as from top
 
 //   const fullContent = layouts.fullTemplate(content);

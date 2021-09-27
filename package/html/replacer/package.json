@@ -43,5 +43,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "atherdon-callbacks": "^1.4.0",
+    "markup-generator": "^0.2.0"
   }
 }

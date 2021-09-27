@@ -1,4 +1,4 @@
-import { replaceHTMLWrapper, newLine } from '../helpers';
+import { replaceWrapper, newLine } from '../helpers';
 
 /// function is not working as planned
 
@@ -14,7 +14,7 @@ function paragraphWrapper(text, line) {
   const config = {
     content: trimmed,
   };
-  const result = newLine + replaceHTMLWrapper('paragraph', config) + newLine;
+  const result = newLine + replaceWrapper('paragraph', config) + newLine;
   // console.log(config);
 
   return result;
@@ -31,7 +31,7 @@ function image(text, alt, srcWithTooltip) {
 
   this.warnings.images++;
 
-  const result = replaceHTMLWrapper('image', config);
+  const result = replaceWrapper('image', config);
   return result;
 }
 
@@ -62,7 +62,7 @@ function sponsorship(text) {
   // @TODO nope, not good
   this.errors.sponsorshipTop ? this.errors.sponsorshipBottom = true : this.errors.sponsorshipTop = true;
 
-  return replaceHTMLWrapper('sponsor', config, 'body');
+  return replaceWrapper('sponsor', config, 'body');
 }
 
 export {

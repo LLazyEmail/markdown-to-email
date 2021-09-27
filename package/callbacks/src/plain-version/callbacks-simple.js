@@ -1,4 +1,4 @@
-import { replaceHTMLWrapper, newLine } from '../helpers';
+import { replaceWrapper, newLine } from '../helpers';
 
 const italic = '$1<em>$3</em>$4';
 const del = '<del>$1</del>';
@@ -14,7 +14,7 @@ function previewText(text, content) {
   };
 
   this.errors.previewText = true;
-  return replaceHTMLWrapper('previewText', config, 'body');
+  return replaceWrapper('previewText', config, 'body');
 }
 
 function strong(text, doubleAsterix, content, asterix) {
@@ -22,7 +22,7 @@ function strong(text, doubleAsterix, content, asterix) {
     content: `${content + asterix}`,
   };
 
-  const result = replaceHTMLWrapper('strong', config);
+  const result = replaceWrapper('strong', config);
   return result;
 }
 
@@ -32,7 +32,7 @@ function link(text, title, href) {
     href: href.trim(),
   };
 
-  const result = replaceHTMLWrapper('link', config);
+  const result = replaceWrapper('link', config);
   return result;
 }
 
@@ -47,7 +47,7 @@ function mem(text, src, href, altText) {
     href: href.trim(),
   };
 
-  const result = replaceHTMLWrapper('image', config);
+  const result = replaceWrapper('image', config);
   return result;
 }
 
@@ -62,7 +62,7 @@ function header(text, chars, content) {
     'heading',
   ];
 
-  const result = newLine + replaceHTMLWrapper(titleType[chars.length - 1], config);
+  const result = newLine + replaceWrapper(titleType[chars.length - 1], config);
 
   return result;
 }
