@@ -1,6 +1,6 @@
 {
   "name": "markup-generator",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "generator for files. working with 2 options at this moment",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
