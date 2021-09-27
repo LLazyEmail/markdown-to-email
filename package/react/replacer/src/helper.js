@@ -3,13 +3,13 @@ import os from 'os';
 
 // import layouts from 'atherdon-newsletter-js-layouts';
 
-import reactLayouts from 'atherdon-newsletter-react';
+import { reactLayouts as layouts } from 'atherdon-newsletter-react';
 
 const platform = os.platform();
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
 
-
+// really can be done better
 function replaceWrapper(wrapperName, config, folder = 'typography') {
   // this part will be updated very soon
   let wrapper = layouts[folder][wrapperName];
