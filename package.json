@@ -36,7 +36,7 @@
     "atherdon-newsletter-js-layouts": "^1.5.1",
     "atherdon-newsletter-react": "^1.0.11",
     "cross-env": "^7.0.3",
-    "markup-generator": "^0.1.1"
+    "markup-generator": "^0.2.0"
   },
   "jest": {
     "moduleNameMapper": {
