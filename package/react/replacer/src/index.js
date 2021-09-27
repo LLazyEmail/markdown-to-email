@@ -1,11 +1,18 @@
 import {
     generateReactContent,
     generateReactFullTemplate
-} from './parseReact'
+} from './methods'
 
+import {
+    parseMDReact, 
+    parseMDReactFullThing
+} from './parseReact'
 // import 
 
 export default {
     generateReactContent,
     generateReactFullTemplate,
+
+    parseMDReact, 
+    parseMDReactFullThing
 }

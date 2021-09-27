@@ -1,11 +1,11 @@
 // TODO: something wrong with newsletter-constants module
 
-const {
+import {
   replaceMarkdown,
   replaceMarkdownPreviewText,
-} = require('atherdon-callbacks');
+} from 'atherdon-callbacks';
 
-const { stateInit } = require('markup-generator');
+import { stateInit } from 'markup-generator';
 
 import Replacer from './replace';
 
@@ -46,4 +46,4 @@ function parseFullTHing(params) {
   return parse(source);
 }
 
-module.exports = { parse, parseFullTHing };
+export default { parse, parseFullTHing };

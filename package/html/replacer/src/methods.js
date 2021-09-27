@@ -111,7 +111,7 @@ function generateContentOnly(sourceFile) {
 
 // }
 
-module.exports = {
+export default {
 
   generateFullTemplate2,
   generateFullTemplate,

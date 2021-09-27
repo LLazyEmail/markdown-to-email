@@ -1,9 +1,9 @@
-const {
+import {
   replaceMarkdown,
   replaceMarkdownPreviewText,
-} = require('atherdon-callbacks');
+} from 'atherdon-callbacks';
 
-const { stateInit } = require('markup-generator');
+import { stateInit } from 'markup-generator';
 
 
 import ReactReplacer from './replace';
@@ -56,4 +56,4 @@ function parseMDReactFullThing(params) {
   return parseMDReact(source, true);
 }
 
-module.exports = { parseMDReact, parseMDReactFullThing };
+export default { parseMDReact, parseMDReactFullThing };

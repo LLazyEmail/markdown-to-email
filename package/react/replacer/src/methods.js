@@ -1,19 +1,18 @@
-const {
+import reactLayouts from 'atherdon-newsletter-react';
+
+import {
   write,
 
   checkWarnings,
 
   printMessage,
   generateTemplateName,
-} = require('markup-generator');
+} from 'markup-generator';
 
-const reactLayouts = require('atherdon-newsletter-react');
-
-
-// const {
-//     parse,
-//     parseFullTHing,
-//   } = require('./parseReact');
+import {
+    parse,
+    parseFullTHing,
+} from './parseReact';
 
 // TODO add more messages here
 const MESSAGE_REACT_FULL_TEMPLATE = 'The FullTemplate has been parsed successfully';
@@ -75,7 +74,7 @@ function generateReactFullTemplate(sourceFile) {
   printMessage(message, 'green2');
 }
 
-module.exports = {
+export default {
 
   reactComponent,
   reactComponentReplace,
