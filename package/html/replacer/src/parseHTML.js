@@ -1,10 +1,12 @@
 // TODO: something wrong with newsletter-constants module
 
 const {
-  Replacer,
+  // Replacer,
   replaceMarkdown,
   replaceMarkdownPreviewText,
 } = require('atherdon-callbacks');
+
+import Replacer from './replace';
 
 const { stateInit } = require('markup-generator');
 

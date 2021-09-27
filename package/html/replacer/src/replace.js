@@ -1,6 +1,8 @@
 import * as constants from 'atherdon-newsletter-constants';
 
-import {
+import { PlainCallbacks, newLine } from 'atherdon-callbacks';
+
+const {
   strong,
   link,
   blockquote,
@@ -12,110 +14,113 @@ import {
   code,
   hr,
   empty,
-  previewText,
-  separator
-} from './callbacks-simpleMDReact';
+  previewText
+} = PlainCallbacks;
 
-import {
+const {
+  ulList,
+  olList
+} = PlainCallbacks;
+
+const {
   image,
   paragraphWrapper,
   sponsorship,
   br
-} from './callbacksMDReact';
+} = PlainCallbacks;
 
-import {
-  ulList,
-  olList
-} from './callbacks-lists-react';
+const { separator } = PlainCallbacks;
 
-class ReactReplacer {
+// @TODO include things from a new module that we have.
+
+class Replace {
   constructor(constants) {
     this._constants = constants;
 
-    this.replaceMDBinded = () => {};
-    this.replaceMDBindedPreviewText = () => {};
+    this.replaceMDBinded = () => { };
+    this.replaceMDBindedPreviewText = () => { };
 
     this.previewText = function () {
       this.replaceMDBinded(this._constants.REGEXP_PREVIEW_TEXT, previewText);
     };
 
-    this.comments = function () {
+    this.comments = () => {
       this.replaceMDBinded(this._constants.REGEXP_HTML_COMMENTS, empty);
     };
 
-    this.strong = function () {
+    this.strong = () => {
       this.replaceMDBinded(this._constants.REGEXP_STRONG, strong);
     };
 
-    this.italic = function () {
+    this.em = () => {
       this.replaceMDBinded(this._constants.REGEXP_EM, italic);
     };
 
-    this.header = function () {
+    this.header = () => {
       this.replaceMDBinded(this._constants.REGEXP_HEADER, header);
     };
 
-    this.image = function () {
+    this.image = () => {
       this.replaceMDBinded(this._constants.REGEXP_IMAGE, image);
     };
 
-    this.link = function () {
+    this.link = () => {
       this.replaceMDBinded(this._constants.REGEXP_LINK, link);
     };
 
-    this.del = function () {
+    this.del = () => {
       this.replaceMDBinded(this._constants.REGEXP_DEL, del);
     };
 
-    this.q = function () {
+    this.q = () => {
       this.replaceMDBinded(this._constants.REGEXP_Q, q);
     };
 
-    this.code = function () {
+    this.code = () => {
       this.replaceMDBinded(this._constants.REGEXP_CODE, code);
     };
 
-    this.ulList = function () {
+    this.ul = () => {
       this.replaceMDBinded(this._constants.REGEXP_UL_LIST, ulList);
     };
 
-    this.olList = function () {
+    this.ol = () => {
       this.replaceMDBinded(this._constants.REGEXP_OL_LIST, olList);
     };
 
-    this.blockQuote = function () {
+    this.blockquote = () => {
       this.replaceMDBinded(this._constants.REGEXP_BLOCKQUOTE, blockquote);
     };
 
-    this.hr = function () {
+    this.hr = () => {
       this.replaceMDBinded(this._constants.REGEXP_HR, hr);
     };
 
-    this.paragraph = function () {
+    this.paragraph = () => {
       this.replaceMDBinded(this._constants.REGEXP_PARAGRAPH, paragraphWrapper);
     };
 
-    this.emptyUl = function () {
+    this.emptyUl = () => {
       this.replaceMDBinded(this._constants.REGEXP_EMPTY_UL, empty);
     };
 
-    this.emptyOl = function () {
+    this.emptyOl = () => {
       this.replaceMDBinded(this._constants.REGEXP_EMPTY_OL, empty);
     };
 
-    this.emptyBlockQuote = function () {
+    this.emptyBlockquote = () => {
+      // this line is generating an error
       this.replaceMDBinded(this._constants.REGEXP_EMPTY_BLOCKQUOTE, newLine);
     };
 
     this.br = function () {
       this.replaceMDBinded(this._constants.REGEXP_BR, br);
     };
-
     this.sponsorship = function () {
       this.replaceMDBinded(this._constants.REGEXP_SPONSORSHIP, sponsorship);
     };
 
-    this.mem = function () {
+    this.memes = function () {
       this.replaceMDBinded(this._constants.REGEXP_MEM, mem);
     };
 
@@ -126,26 +131,37 @@ class ReactReplacer {
 
   typography(){
     this.strong();
-    this.italic();
-    // this.em();
+    this.em();
     this.header();
     this.image();
     this.link();
     this.del();
     this.q();
     this.code();
-
-
-    // this.ulList();
-    // this.olList();
-    // this.blockquote();
-    // this.hr();
-    // this.paragraph();
-    // this.emptyUl();
-    // this.emptyOl();
+    this.ul();
+    this.ol();
+    this.blockquote();
+    this.hr();
+    this.paragraph();
+    this.emptyUl();
+    this.emptyOl();
   }
 
+  // test this part
+  miscellaneous(){
+    
+    // this line is generating an error
+    this.emptyBlockquote();
+    this.br();
+
+    if (!process.env.PARSE === 'noAdv' || process.env.PARSE === 'full') {
+      this.sponsorship();
+    }
+
+    this.memes();
+    this.separator();
+  }
 
 }
 
-export default new ReactReplacer(constants);
+export default new Replace(constants);

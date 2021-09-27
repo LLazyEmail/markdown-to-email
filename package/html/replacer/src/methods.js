@@ -5,6 +5,8 @@ const {
   fullTemplate,
 
   fullTemplateOLD,
+
+  
 } = require('atherdon-newsletter-js-layouts');
 
 const {
