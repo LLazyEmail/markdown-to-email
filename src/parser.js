@@ -3,36 +3,39 @@
 //   generateContentOnly, // depricated method
 //   generateFullTemplate2,
 //   generateFullTemplate,
-// } = require('./html/methods');
+// } = require('atherdon-newsletter-html-replacer');
 
 
 
-// const {
-//   generateReactContent,
-//   generateReactFullTemplate,
-// } = require('react-replacer');
+const {
+  generateReactContent,
+  generateReactFullTemplate,
+} = require('atherdon-newsletter-react-replacer');
 
 
-
+import {
+    FULL_SOURCE,
+    CONTENT_SOURCE
+} from './utils';
 
 switch (process.env.PARSE) {
   case 'full':
 
     // generateFullTemplate();
-    generateFullTemplate2();
+    generateFullTemplate2(FULL_SOURCE);
     break;
 
   case 'reactContentOnly':
     // same as default, but with react components instead.
-    generateReactContent();
+    generateReactContent(CONTENT_SOURCE);
     break;
 
   case 'reactFull':
-    generateReactFullTemplate();
+    generateReactFullTemplate(FULL_SOURCE);
     break;
 
   default:
-    generateFullTemplate();
+    generateFullTemplate(FULL_SOURCE);
     break;
 }
 

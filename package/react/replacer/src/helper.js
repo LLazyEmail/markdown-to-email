@@ -10,21 +10,21 @@ const newLine = platform === 'win32' ? '\r\n' : '\n';
 
 
 // really can be done better
-function replaceWrapper(wrapperName, config, folder = 'typography') {
-  // this part will be updated very soon
-  let wrapper = layouts[folder][wrapperName];
+// function replaceWrapper(wrapperName, config, folder = 'typography') {
+//   // this part will be updated very soon
+//   let wrapper = layouts[folder][wrapperName];
 
-  // config.map((i,v) => {
-  //  
-  // });
+//   // config.map((i,v) => {
+//   //  
+//   // });
 
-  // @TODO replace with lodash
-  Object.keys(config).forEach((name) => {
-    wrapper = wrapper.replace(new RegExp(`{${name}}`, 'g'), config[name]);
-  });
+//   // @TODO replace with lodash
+//   Object.keys(config).forEach((name) => {
+//     wrapper = wrapper.replace(new RegExp(`{${name}}`, 'g'), config[name]);
+//   });
 
-  return wrapper;
-}
+//   return wrapper;
+// }
 
 // function replaceReactWrapper(wrapperName, config, folder = 'typography') {
 //   // console.log(reactLayouts.Typography.strong);
@@ -51,5 +51,5 @@ function replaceWrapper(wrapperName, config, folder = 'typography') {
 export {
   newLine,
 
-  replaceWrapper,
+  // replaceWrapper,
 };
