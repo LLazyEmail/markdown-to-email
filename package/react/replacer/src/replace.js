@@ -1,6 +1,8 @@
 import * as constants from 'atherdon-newsletter-constants';
 
-import {
+import { ReactCallbacks } from 'atherdon-callbacks';
+
+const {
   strong,
   link,
   blockquote,
@@ -14,19 +16,20 @@ import {
   empty,
   previewText,
   separator
-} from './callbacks-simpleMDReact';
+} = ReactCallbacks;
 
-import {
+
+const {
   image,
   paragraphWrapper,
   sponsorship,
   br
-} from './callbacksMDReact';
+} = ReactCallbacks;
 
-import {
+const {
   ulList,
   olList
-} from './callbacks-lists-react';
+} = ReactCallbacks;
 
 class ReactReplacer {
   constructor(constants) {

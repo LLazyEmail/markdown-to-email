@@ -1,16 +1,15 @@
+const {
+  generateContentOnly, // depricated method
+  generateFullTemplate2,
+  generateFullTemplate,
+} = require('atherdon-newsletter-html-replacer');
+
+
 
 // const {
-//   generateContentOnly, // depricated method
-//   generateFullTemplate2,
-//   generateFullTemplate,
-// } = require('atherdon-newsletter-html-replacer');
-
-
-
-const {
-  generateReactContent,
-  generateReactFullTemplate,
-} = require('atherdon-newsletter-react-replacer');
+//   generateReactContent,
+//   generateReactFullTemplate,
+// } = require('atherdon-newsletter-react-replacer');
 
 
 import {

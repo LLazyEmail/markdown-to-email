@@ -2,6 +2,7 @@ import * as constants from 'atherdon-newsletter-constants';
 
 import { PlainCallbacks, newLine } from 'atherdon-callbacks';
 
+
 const {
   strong,
   link,
@@ -108,6 +109,7 @@ class Replace {
       this.replaceMDBinded(this._constants.REGEXP_EMPTY_OL, empty);
     };
 
+    
     this.emptyBlockquote = () => {
       // this line is generating an error
       this.replaceMDBinded(this._constants.REGEXP_EMPTY_BLOCKQUOTE, newLine);

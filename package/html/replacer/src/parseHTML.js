@@ -1,14 +1,14 @@
 // TODO: something wrong with newsletter-constants module
 
 const {
-  // Replacer,
   replaceMarkdown,
   replaceMarkdownPreviewText,
 } = require('atherdon-callbacks');
 
+const { stateInit } = require('markup-generator');
+
 import Replacer from './replace';
 
-const { stateInit } = require('markup-generator');
 
 // TODO update this method. I'm sure it can be improved.
 function parse(source) {

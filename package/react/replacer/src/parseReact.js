@@ -1,11 +1,12 @@
 const {
-  ReactReplacer,
   replaceMarkdown,
   replaceMarkdownPreviewText,
 } = require('atherdon-callbacks');
 
 const { stateInit } = require('markup-generator');
 
+
+import ReactReplacer from './replace';
 // ReactReplacer
 
 // @todo update this method. I'm sure it can be improved.
