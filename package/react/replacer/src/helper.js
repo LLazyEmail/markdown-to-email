@@ -52,5 +52,4 @@ export {
   newLine,
 
   replaceWrapper,
-  // replaceWrapper
 };

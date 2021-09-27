@@ -15,9 +15,7 @@ const WARNING_EMAIL_LENGTH = `Email output is ${Math.round(bytes / 1024)}KB. ` +
 'than 100KB, to avoid getting emails cut off or rejected due to spam.';
 
 
-
-
-function ____write(fileName, content, dir = "generated", message) {
+function writeHTML(fileName, content, dir = "generated", message) {
   const _path = `${dir}/${fileName}`; // @todo it's not an ideal thing
 
   // promise
@@ -34,7 +32,7 @@ function ____write(fileName, content, dir = "generated", message) {
 
 }
 
-// writeHTML
+// writeHTML - an old version of a method that we have
 function __write(fileName, content, dir = 'generated', message) {
   const _path = `${dir}/${fileName}`; // @todo it's not an ideal thing
 
@@ -86,7 +84,7 @@ const countingBytes = (html) => {
 //-----------
 
 export {
-  __write,
+  writeHTML,
   readSourceFile,
   isFolderExists,
   generateTemplateName,

@@ -1,5 +1,5 @@
 import {
-  __write,
+  writeHTML,
   readSourceFile,
   isFolderExists,
   generateTemplateName
@@ -16,7 +16,7 @@ import {
 } from './command-line-methods';
 
 export default {
-  __write,
+  writeHTML,
   readSourceFile,
   isFolderExists,
   generateTemplateName,
