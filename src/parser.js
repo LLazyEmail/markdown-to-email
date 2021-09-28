@@ -4,8 +4,6 @@ const {
   generateFullTemplate,
 } = require('atherdon-newsletter-html-replacer');
 
-
-
 // const {
 //   generateReactContent,
 //   generateReactFullTemplate,

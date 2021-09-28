@@ -1,5 +1,4 @@
 import * as constants from 'atherdon-newsletter-constants';
-
 import { ReactCallbacks } from 'atherdon-callbacks';
 
 const {

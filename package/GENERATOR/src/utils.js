@@ -1,10 +1,13 @@
 import {
-  readFileSync, writeFileSync, existsSync, mkdirSync
+  readFileSync, 
+  writeFileSync, 
+  existsSync, 
+  mkdirSync
 } from 'fs';
 import write from 'write';
 
 const CONST_FILE_CREATED = '';
-const CONST_FILE_NOT_WRITTEN = '';
+const CONST_FILE_NOT_WRITTEN = 'file not written';
 
 const ERROR_NO_TITLE = '`title` is a required option for `renderTemplate`';
 const ERROR_NO_BODY_CONTENT = '`bodyContent` is a required option for `renderTemplate`';
@@ -27,7 +30,7 @@ function writeHTML(fileName, content, dir = "generated", message) {
     })
     .catch(err => { 
       // console.log(err) 
-      throw new Error('file not written');
+      throw new Error(CONST_FILE_NOT_WRITTEN);
     });
 
 }
@@ -38,7 +41,7 @@ function __write(fileName, content, dir = 'generated', message) {
 
   writeFileSync(_path, content, (err) => {
     if (err) {
-      throw new Error('file not written');
+      throw new Error(CONST_FILE_NOT_WRITTEN);
     }
   });
 

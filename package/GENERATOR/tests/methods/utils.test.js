@@ -1,6 +1,6 @@
 const fs = require('fs');
 const chalk = require('chalk');
-const { readSourceFile, displayCLIErrors, FULL_SOURCE } = require('../../../../../src/utils');
+const { readSourceFile, displayCLIErrors, FULL_SOURCE } = require('../../../../src/utils');
 
 // @TODO we can add tests, related to new layouts structure.
 // just dont want to remove it without replacing
