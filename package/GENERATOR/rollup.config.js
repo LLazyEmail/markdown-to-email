@@ -22,7 +22,10 @@ const name = "newsletterCallbacks";
 
 // packages that should be treated as external dependencies, not bundled
 // e.g. ['axios']
-const external = ["os", "atherdon-newsletter-js-layouts", "atherdon-newsletter-react"];
+const external = [
+  "fs", "os",
+  "atherdon-newsletter-js-layouts", "atherdon-newsletter-react"
+];
 
 const includePathOptions = {
   include: {},

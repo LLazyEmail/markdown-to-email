@@ -2,7 +2,6 @@ import * as constants from 'atherdon-newsletter-constants';
 
 import { PlainCallbacks, newLine } from 'atherdon-callbacks';
 
-
 const {
   strong,
   link,
@@ -14,8 +13,7 @@ const {
   q,
   code,
   hr,
-  empty,
-  previewText
+  empty
 } = PlainCallbacks;
 
 const {
@@ -30,7 +28,7 @@ const {
   br
 } = PlainCallbacks;
 
-const { separator } = PlainCallbacks;
+const { previewText, separator } = PlainCallbacks;
 
 // @TODO include things from a new module that we have.
 

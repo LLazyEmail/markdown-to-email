@@ -74,7 +74,7 @@ function generateReactFullTemplate(sourceFile) {
   printMessage(message, 'green2');
 }
 
-export default {
+export {
 
   reactComponent,
   reactComponentReplace,

@@ -1,7 +1,8 @@
 import {
   generateFullTemplate2, 
   generateFullTemplate, 
-  generateContentOnly 
+  generateContentOnly,
+
 } from './methods'
 
 // import ReactReplacer from './replace';
