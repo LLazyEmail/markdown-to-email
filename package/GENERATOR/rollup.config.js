@@ -23,8 +23,7 @@ const name = "newsletterCallbacks";
 // packages that should be treated as external dependencies, not bundled
 // e.g. ['axios']
 const external = [
-  "fs", "os",
-  "atherdon-newsletter-js-layouts", "atherdon-newsletter-react"
+  "fs", "os"
 ];
 
 const includePathOptions = {
@@ -98,7 +97,8 @@ const plugins = () => [
   includePaths(includePathOptions),
   // notify(),
   globals({
-      os: 'os'
+      os: 'os',
+      fs: 'fs'
   }),
   builtins(),
   
@@ -157,7 +157,8 @@ export default {
 
       // https://rollupjs.org/guide/en#output-globals-g-globals
       globals: {
-        path: "path"
+        path: "path",
+        fs: "fs"
       }
     }
   ]
