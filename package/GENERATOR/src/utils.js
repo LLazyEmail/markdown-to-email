@@ -13,9 +13,9 @@ const ERROR_NO_TITLE = '`title` is a required option for `renderTemplate`';
 const ERROR_NO_BODY_CONTENT = '`bodyContent` is a required option for `renderTemplate`';
 const ERROR_NO_PREVIEW_TEXT = '`previewText` is a required option for `renderTemplate`';
 
-const WARNING_EMAIL_LENGTH = `Email output is ${Math.round(bytes / 1024)}KB. ` +
-'It is recommended to keep the delivered HTML to smaller ' +
-'than 100KB, to avoid getting emails cut off or rejected due to spam.';
+// const WARNING_EMAIL_LENGTH = `Email output is ${Math.round(bytes / 1024)}KB. ` +
+// 'It is recommended to keep the delivered HTML to smaller ' +
+// 'than 100KB, to avoid getting emails cut off or rejected due to spam.';
 
 
 function writeHTML(fileName, content, dir = "generated", message) {
@@ -62,15 +62,15 @@ function isFolderExists(dir) {
 const generateTemplateName = (suffix, ext = 'html') => `${suffix}-${Date.now()}.${ext}`;
 
 //--------
-const countingBytes = (html) => {
-  const bytes = Buffer.byteLength(html, 'utf8');
+// const countingBytes = (html) => {
+//   const bytes = Buffer.byteLength(html, 'utf8');
 
-  if (bytes > 1024 * 100) {
-    console.warn( WARNING_EMAIL_LENGTH );
-  }
+//   if (bytes > 1024 * 100) {
+//     console.warn( WARNING_EMAIL_LENGTH );
+//   }
 
-  return bytes;
-};
+//   return bytes;
+// };
 
 // if (!title) {
 //   throw new Error('`title` is a required option for `renderTemplate`');
@@ -92,7 +92,7 @@ export {
   readSourceFile,
   isFolderExists,
   generateTemplateName,
-  countingBytes,
+  // countingBytes,
 
   ERROR_NO_TITLE,
   ERROR_NO_BODY_CONTENT,
