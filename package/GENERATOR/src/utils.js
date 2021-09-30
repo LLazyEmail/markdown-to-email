@@ -88,6 +88,7 @@ const countingBytes = (html) => {
 
 export {
   writeHTML,
+  __write,
   readSourceFile,
   isFolderExists,
   generateTemplateName,

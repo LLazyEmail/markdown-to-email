@@ -1,7 +1,7 @@
 import reactLayouts from 'atherdon-newsletter-react';
 
 import {
-  write,
+  writeHTML,
 
   checkWarnings,
 
@@ -10,9 +10,9 @@ import {
 } from 'markup-generator';
 
 import {
-    parse,
-    parseFullTHing,
-} from './parseReact';
+    parseMDReact,
+    parseMDReactFullThing,
+} from './parse';
 
 // TODO add more messages here
 const MESSAGE_REACT_FULL_TEMPLATE = 'The FullTemplate has been parsed successfully';
@@ -42,7 +42,7 @@ function reactComponentReplace(content) {
 
 function writeReactComponent(fileName, content, dir = 'generated', message) {
   const result = reactComponentReplace(content);
-  write(fileName, result, dir, message);
+  writeHTML(fileName, result, dir, message);
 }
 
 function generateReactContent(sourceFile) {
@@ -68,7 +68,7 @@ function generateReactFullTemplate(sourceFile) {
   const fullContent = reactLayouts.reactFullTemplate(content);
 
   const fileName = generateTemplateName('FullTemplate', 'js');
-  write(fileName, fullContent);
+  writeHTML(fileName, fullContent);
 
   const message = 'The FullTemplate has been parsed successfully';
   printMessage(message, 'green2');

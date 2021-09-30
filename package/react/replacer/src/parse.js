@@ -56,4 +56,4 @@ function parseMDReactFullThing(params) {
   return parseMDReact(source, true);
 }
 
-export default { parseMDReact, parseMDReactFullThing };
+export { parseMDReact, parseMDReactFullThing };

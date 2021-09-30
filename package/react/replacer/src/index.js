@@ -6,7 +6,7 @@ import {
 import {
     parseMDReact, 
     parseMDReactFullThing
-} from './parseReact'
+} from './parse'
 // import 
 
 export default {

@@ -1,6 +1,7 @@
 {
   "name": "atherdon-newsletter-react-replacer",
-  "version": "0.0.1",
+  
+  "version": "0.1.0",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -46,6 +47,6 @@
   },
   "dependencies": {
     "atherdon-callbacks": "^1.5.0",
-    "markup-generator": "^0.2.0"
+    "markup-generator": "^0.3.1"
   }
 }

@@ -15,7 +15,7 @@ import {
   stateInit
 } from './command-line-methods';
 
-export default {
+export {
   writeHTML,
   readSourceFile,
   isFolderExists,
@@ -27,5 +27,5 @@ export default {
   checkHtml,
 
   printMessage,
-  stateInit
+  stateInit,
 };
