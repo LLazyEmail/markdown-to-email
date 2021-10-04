@@ -51,7 +51,7 @@ function generateFullTemplate2(sourceFile) {
 
   const fileName = generateTemplateName('full-template-2');
 
-  write(fileName, fullContent);
+  writeHTML(fileName, fullContent);
 
   const message = 'The full-template has been parsed successfully2';
   printMessage(message, 'green2');
@@ -80,7 +80,7 @@ const generateContentOnly = (sourceFile) =>  {
 
   const fileName = generateTemplateName('content');
 
-  write(fileName, content);
+  writeHTML(fileName, content);
 
   const message = 'The content has been parsed successfully';
   printMessage(message, 'green2');
