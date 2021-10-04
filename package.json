@@ -22,6 +22,7 @@
   "author": "hirdbluebird, atherdon, vadim9999",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.15.5",
     "@babel/eslint-parser": "7.15.7",
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "14.2.1",
@@ -33,7 +34,7 @@
   "dependencies": {
     "atherdon-callbacks": "^1.4.0",
     "atherdon-newsletter-constants": "^1.0.9",
-    "atherdon-newsletter-html-replacer": "^0.2.0",
+    "atherdon-newsletter-html-replacer": "^0.3.0",
     "atherdon-newsletter-js-layouts": "^1.5.1",
     "atherdon-newsletter-react": "^1.0.11",
     "atherdon-newsletter-react-replacer": "^0.1.1",

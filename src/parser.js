@@ -32,7 +32,7 @@ switch (process.env.PARSE) {
     break;
 
   default:
-    generateFullTemplate(FULL_SOURCE);
+    // generateFullTemplate(FULL_SOURCE);
     break;
 }
 

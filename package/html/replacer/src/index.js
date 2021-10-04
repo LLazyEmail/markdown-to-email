@@ -9,8 +9,8 @@ import {
 
 export default {
 
-    generateContentOnly, // depricated method
+    // generateContentOnly, // depricated method
     generateFullTemplate2,
-    generateFullTemplate,
+    // generateFullTemplate,
     // ReactReplacer
   };

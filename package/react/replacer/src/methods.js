@@ -10,8 +10,8 @@ import {
 } from 'markup-generator';
 
 import {
-    parseMDReact,
-    parseMDReactFullThing,
+  parseMDReact,
+  parseMDReactFullThing,
 } from './parse';
 
 
