@@ -1,7 +1,7 @@
 const {
-  generateContentOnly, // depricated method
+  // generateContentOnly, // depricated method
   generateFullTemplate2,
-  generateFullTemplate,
+  // generateFullTemplate,
 } = require('atherdon-newsletter-html-replacer');
 
 const {
@@ -37,6 +37,6 @@ switch (process.env.PARSE) {
 }
 
 module.exports = {
-  generateContentOnly,
+  // generateContentOnly,
   generateFullTemplate,
 };

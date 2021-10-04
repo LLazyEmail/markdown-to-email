@@ -1,29 +1,37 @@
 // @TODO both layouts things can be moved out from importing it here.
-const {
-  // TODO: finish and fix this thing. it was done by Serge quickly,
+
+
+// import {  
+//   fullTemplate,
+
+//   fullTemplateOLD, 
+// } from 'atherdon-newsletter-js-layouts';
+
+// TODO: finish and fix this thing. it was done by Serge quickly,
   // and ruined a lot of our logic
-  fullTemplate,
+import htmlLayouts from 'atherdon-newsletter-js-layouts';
 
-  fullTemplateOLD, 
-} = require('atherdon-newsletter-js-layouts');
+console.log(htmlLayouts); 
 
-const {
+import {
   write,
 
   checkWarnings,
   checkHtml,
   printMessage,
   generateTemplateName,
-} = require('markup-generator');
+} from 'markup-generator';
 
-const {
+import {
   parse,
   parseFullTHing,
-} = require('./parse');
+} from './parse.js';
 
 const MESSAGE_HTML_CONTENT_ONLY = 'The content has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE = 'The full-template has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE2 = 'The full-template has been parsed successfully2';
+
+const { fullTemplate, fullTemplateOLD } = htmlLayouts;
 
 function generateFullTemplate2(sourceFile) {
   const { content, warnings, previewText } = parseFullTHing({ source: sourceFile });
@@ -91,10 +99,10 @@ const generateContentOnly = (sourceFile) =>  {
 
 
 export {
-  generateContentOnly,
+  // generateContentOnly,
 
   generateFullTemplate2,
-  generateFullTemplate,
+  // generateFullTemplate,
   
 
   MESSAGE_HTML_CONTENT_ONLY,

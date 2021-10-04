@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "atherdon-callbacks": "^1.5.0",
+    "atherdon-newsletter-js-layouts": "^1.6.1",
     "markup-generator": "^0.4.0"
   }
 }

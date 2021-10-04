@@ -1,4 +1,3 @@
-// const { main } = require('atherdon-newsletter-js-layouts');
 import main from '../main';
 
 // это может потом понадобится

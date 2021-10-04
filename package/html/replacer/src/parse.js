@@ -9,7 +9,6 @@ import { stateInit } from 'markup-generator';
 
 import Replacer from './replace';
 
-
 // TODO update this method. I'm sure it can be improved.
 function parse(source) {
   // passing content into the state,
@@ -46,4 +45,4 @@ function parseFullTHing(params) {
   return parse(source);
 }
 
-export default { parse, parseFullTHing };
+export { parse, parseFullTHing };
