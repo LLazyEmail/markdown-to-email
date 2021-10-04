@@ -4,16 +4,16 @@ const {
   generateFullTemplate,
 } = require('atherdon-newsletter-html-replacer');
 
-// const {
-//   generateReactContent,
-//   generateReactFullTemplate,
-// } = require('atherdon-newsletter-react-replacer');
+const {
+  generateReactContent,
+  generateReactFullTemplate,
+} = require('atherdon-newsletter-react-replacer');
 
 
-import {
+const {
     FULL_SOURCE,
     CONTENT_SOURCE
-} from './utils';
+} = require ('./utils');
 
 switch (process.env.PARSE) {
   case 'full':
