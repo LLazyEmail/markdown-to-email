@@ -36,7 +36,7 @@
     "atherdon-newsletter-html-replacer": "^0.1.1",
     "atherdon-newsletter-js-layouts": "^1.5.1",
     "atherdon-newsletter-react": "^1.0.11",
-    "atherdon-newsletter-react-replacer": "^0.1.1",
+    "atherdon-newsletter-react-replacer": "^0.1.0",
     "cross-env": "^7.0.3",
     "markup-generator": "^0.4.0"
   },
