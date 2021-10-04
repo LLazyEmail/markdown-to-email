@@ -1,7 +1,7 @@
 import {
   generateFullTemplate2, 
-  generateFullTemplate, 
-  generateContentOnly,
+  // generateFullTemplate, 
+  // generateContentOnly,
 
 } from './methods'
 

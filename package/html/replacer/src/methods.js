@@ -14,7 +14,7 @@ import htmlLayouts from 'atherdon-newsletter-js-layouts';
 console.log(htmlLayouts); 
 
 import {
-  write,
+  writeHTML,
 
   checkWarnings,
   checkHtml,
