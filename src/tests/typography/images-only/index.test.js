@@ -7,7 +7,6 @@ const { PlainCallbacks, replaceMarkdown } = require('atherdon-callbacks');
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
 
-// const outFolder = 'src/tests/_generated';
 
 describe('testing images-only', () => {
   it('renders images-only', () => {

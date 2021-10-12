@@ -6,8 +6,6 @@ const { replaceMarkdownPreviewText } = require('atherdon-callbacks');
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
 
-// const outFolder = 'src/tests/_generated';
-
 describe('testing preview-text', () => {
   it('renders preview-text', () => {
     const markdown = readSourceFile(`${root}/content.md`);
