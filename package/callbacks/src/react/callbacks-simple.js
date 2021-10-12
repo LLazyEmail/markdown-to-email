@@ -92,7 +92,8 @@ function header(text, chars, content) {
 
   const titleType = ['mainTitle', 'subtitle', 'heading'];
 
-  const result = newLine + replaceReactWrapper(titleType[chars.length - 1], config);
+  const result = newLine + 
+    replaceReactWrapper(titleType[chars.length - 1], config);
 
   return result;
 }

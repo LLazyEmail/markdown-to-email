@@ -1,9 +1,5 @@
 import Callbacks from './all';
 
-
-
-
-
 import {
   newLine, 
   replaceWrapper, 
@@ -11,7 +7,7 @@ import {
 } from './helpers';
 
 export {
-  Callbacks
+  Callbacks,
   
   newLine,
   replaceWrapper,

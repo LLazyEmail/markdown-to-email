@@ -8,6 +8,8 @@ const hr = `${newLine}<hr />`;
 const empty = '';
 // const strong = "<strong>$2$3</strong>";
 
+
+// TODO remove unused `text` argument
 function previewText(text, content) {
   const config = {
     content,

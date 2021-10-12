@@ -4,8 +4,12 @@ import os from 'os';
 import layouts from 'atherdon-newsletter-js-layouts';
 import reactLayouts from 'atherdon-newsletter-react';
 
+
+
 const platform = os.platform();
 const newLine = platform === 'win32' ? '\r\n' : '\n';
+
+
 
 function replaceWrapper(wrapperName, config, folder = 'typography') {
   // this part will be updated very soon
@@ -17,7 +21,10 @@ function replaceWrapper(wrapperName, config, folder = 'typography') {
 
   // @TODO replace with lodash
   Object.keys(config).forEach((name) => {
-    wrapper = wrapper.replace(new RegExp(`{${name}}`, 'g'), config[name]);
+    wrapper = wrapper.replace(
+      new RegExp(`{${name}}`, 'g'), 
+      config[name]
+    );
   });
 
   return wrapper;
@@ -38,7 +45,10 @@ function replaceReactWrapper(wrapperName, config, folder = 'typography') {
 
   // @TODO replace with lodash
   Object.keys(config).forEach((name) => {
-    wrapper = wrapper.replace(new RegExp(`{${name}}`, 'g'), config[name]);
+    wrapper = wrapper.replace(
+      new RegExp(`{${name}}`, 'g'),
+      config[name]
+    );
   });
 
   return wrapper;

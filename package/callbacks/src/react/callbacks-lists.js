@@ -50,6 +50,8 @@ function ulList(text, list) {
     type: 'UL',
   };
 
+  // very bad bad bad bad line
+  // TODO update this return
   return `${newLine + replaceReactWrapper('list', config) + newLine}`;
 }
 
