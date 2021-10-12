@@ -12,19 +12,19 @@ import {
   empty,
   previewText,
   separator
-} from './callbacks-simpleMDReact';
+} from './simple';
 
 import {
   image,
   paragraphWrapper,
   sponsorship,
   br
-} from './callbacksMDReact';
+} from './callbacks';
 
 import {
   ulList,
   olList
-} from './callbacks-lists-react';
+} from './lists';
 
 export default {
   strong,

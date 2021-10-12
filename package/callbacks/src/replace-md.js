@@ -28,7 +28,9 @@ function replaceMarkdown(regexp, callback) {
           break;
 
       case 'undefined':
-            console.log("ERRROROROR HERE!!!!")
+            console.log("ERRROROROR HERE!!!!");
+            console.log(regexp)
+            console.log(callback)
 
           break;  
 
