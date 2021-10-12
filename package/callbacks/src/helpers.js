@@ -1,5 +1,5 @@
 import os from 'os';
-// const { forEach } = require('lodash');
+// const { mapKeys } = require('lodash');
 
 import layouts from 'atherdon-newsletter-js-layouts';
 import reactLayouts from 'atherdon-newsletter-react';
@@ -9,49 +9,53 @@ import reactLayouts from 'atherdon-newsletter-react';
 const platform = os.platform();
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
+function getWrapper(layouts, folder, name){
+  let wrapper = layouts[folder][name];
+  return wrapper;
+}
 
+function loopForWrapper(config, wrapper){
 
-function replaceWrapper(wrapperName, config, folder = 'typography') {
-  // this part will be updated very soon
-  let wrapper = layouts[folder][wrapperName];
+  console.log(config);
 
-  // config.map((i,v) => {
-  //  
+  // _.mapKeys(config, function(value, key) {
+  //   return key + value;
   // });
+
 
   // @TODO replace with lodash
   Object.keys(config).forEach((name) => {
+
+    var currentConfig = config[name];
+    var regularExpression = new RegExp(`{${name}}`, 'g');
+
     wrapper = wrapper.replace(
-      new RegExp(`{${name}}`, 'g'), 
-      config[name]
+      regularExpression, 
+      currentConfig
     );
   });
 
   return wrapper;
 }
 
+function replaceWrapper(wrapperName, config, folder = 'typography') {
+  // this part will be updated very soon
+  let wrapper = getWrapper(layouts, folder, wrapperName)
+  // layouts[folder][wrapperName];
+  
+  let updatedString = loopForWrapper(config, wrapper);
+  return updatedString;
+}
+
 function replaceReactWrapper(wrapperName, config, folder = 'typography') {
   // console.log(reactLayouts.Typography.strong);
   // console.log("name", config);
 
-  // this part will be updated very soon
-  let wrapper = reactLayouts[folder][wrapperName];
+  // this part will be updated very soon  
+  let wrapper = getWrapper(reactLayouts, folder, wrapperName)
   
-
-  // config.map((i,v) => {
-  //  
-  // });
-  
-
-  // @TODO replace with lodash
-  Object.keys(config).forEach((name) => {
-    wrapper = wrapper.replace(
-      new RegExp(`{${name}}`, 'g'),
-      config[name]
-    );
-  });
-
-  return wrapper;
+  let updatedString = loopForWrapper(config, wrapper);
+  return updatedString;
 }
 
 
