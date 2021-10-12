@@ -2,13 +2,12 @@ import chalk from 'chalk';
 import { forEach } from 'lodash';
 import { readSourceFile } from './utils';
 
-// const WARNING_IMAGE_VERSION = '';
-// const ERROR_SOURCE_DONT_HAVE = '';
+// const WARNING_IMAGE_VERSION = `WARNING source.md has ${index} ${element}. Replace it with memes`;
+// const ERROR_SOURCE_DONT_HAVE = `ERROR source.md doesn't have ${error}`;;
 
-// const FULL_TEMPLATE_ERROR = '';
-// const HTML_EMAIL_SUCCESS = '';
-// const HTML_EMAIL_ERROR = '';
-
+// const FULL_TEMPLATE_ERROR = 'The full template has not been parsed!';
+// const HTML_EMAIL_SUCCESS = Content has correct html!!!;
+// const HTML_EMAIL_ERROR = 'Content has not correct html!!!';    
 
 
 const stateInit = (source) => {
