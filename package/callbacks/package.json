@@ -1,6 +1,6 @@
 {
   "name": "atherdon-callbacks",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Me trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -20,12 +20,12 @@
   "devDependencies": {
     "@babel/cli": "7.15.7",
     "@babel/core": "7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
     "@babel/plugin-syntax-dynamic-import": "7.8.3",
     "@babel/preset-env": "7.15.8",
     "@rollup/plugin-babel": "5.3.0",
     "@rollup/plugin-commonjs": "21.0.0",
     "@rollup/plugin-node-resolve": "13.0.5",
-    "babel-eslint": "10.1.0",
     "eslint": "8.0.0",
     "eslint-plugin-json": "3.1.0",
     "prettier": "2.4.1",

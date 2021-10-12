@@ -1,4 +1,6 @@
-import { replaceWrapper, newLine } from '../helpers';
+import { 
+  replaceWrapper, newLine 
+} from './helpers';
 
 const hr = `${newLine}<hr />`;
 const empty = '';
