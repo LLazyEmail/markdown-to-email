@@ -1,5 +1,6 @@
 import os from 'os';
-// const { mapKeys } = require('lodash');
+
+import { mapKeys } from 'lodash';
 
 import layouts from 'atherdon-newsletter-js-layouts';
 import reactLayouts from 'atherdon-newsletter-react';
@@ -37,6 +38,29 @@ function loopForWrapper(config, wrapper){
 
   return wrapper;
 }
+
+// basically, it's a copy of replaceWrapper functions
+function relieve(name, config){
+
+//     config.folder
+// config.type aka plain or react
+  
+  switch(config.type){
+    case 'plain':
+      replaceWrapper()
+      break;
+      
+    case 'react'
+      replaceReactWrapper()
+      break;
+      
+    default:
+      break;
+  }
+  
+}
+
+
 
 function replaceWrapper(wrapperName, config, folder = 'typography') {
   // this part will be updated very soon
