@@ -1,5 +1,7 @@
 ### RegEx constants for thematic newsletters
 
+## yarn add atherdon-newsletter-constants
+
 submodule for https://github.com/atherdon/markdown-to-email
 
 @todo: 
