@@ -77,8 +77,9 @@ function displayCLIErrors(errors, warnings) {
 
 function checkHtml(content) {
   const searchPattern = new RegExp('(<table|<tr>|<td|<tbody>)', 'i');
-  let ind; let
-    tempStr = '';
+  
+  let ind; 
+  let tempStr = '';
 
   if (process.env.noAdv) {
     ind = content.indexOf('<h1 class="mc-toc-title"');

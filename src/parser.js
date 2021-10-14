@@ -9,11 +9,13 @@ const {
   generateReactFullTemplate,
 } = require('atherdon-newsletter-react-replacer');
 
+// @TODO add path, in order to make it work PERFECTLY
+const FULL_SOURCE = 'source/source.md';
 
-const {
-    FULL_SOURCE,
-    CONTENT_SOURCE
-} = require ('./utils');
+// I left this variable here just for depricated methods. it's time to use full-template at all places
+const CONTENT_SOURCE = 'source/source.md';
+
+
 
 switch (process.env.PARSE) {
   case 'full':

@@ -12,14 +12,23 @@ const empty = '';
 // TODO remove unused `text` argument
 function previewText(text, content) {
   const config = {
-    content,
+    content:content,
+    folder: 'body'
   };
+
+
 
   this.errors.previewText = true;
 
 
 
-  return replaceWrapper('previewText', config, 'body');
+  const replaced = replaceWrapper(
+    'previewText', 
+    config,
+    'body'
+  );
+
+  return replaced;
 }
 
 function strong(text, doubleAsterix, content, asterix) {
@@ -27,10 +36,13 @@ function strong(text, doubleAsterix, content, asterix) {
     content: `${content + asterix}`,
   };
 
+  const replaced = replaceWrapper(
+    'strong', 
+    config
+  );
 
-
-  const result = replaceWrapper('strong', config);
-  return result;
+  
+  return replaced;
 }
 
 function link(text, title, href) {
@@ -40,9 +52,12 @@ function link(text, title, href) {
   };
 
 
-
-  const result = replaceWrapper('link', config);
-  return result;
+  const replaced = replaceWrapper(
+    'link', 
+    config
+  );
+  
+  return replaced;
 }
 
 function blockquote(text, tmp, item) {
@@ -57,9 +72,12 @@ function mem(text, src, href, altText) {
   };
 
 
-
-  const result = replaceWrapper('image', config);
-  return result;
+  const replaced = replaceWrapper(
+    'image', 
+    config
+  );
+  
+  return replaced;
 }
 
 function header(text, chars, content) {
@@ -73,9 +91,12 @@ function header(text, chars, content) {
     'heading',
   ];
 
-
+  const replaced = replaceWrapper(
+    titleType[chars.length - 1], 
+    config
+  );
   
-  const result = newLine + replaceWrapper(titleType[chars.length - 1], config);
+  const result = newLine + replaced;
 
   return result;
 }

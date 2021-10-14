@@ -12,7 +12,7 @@ import {
   empty,
   previewText,
   separator
-} from './callbacks-simple';
+} from './simple';
 
 import {
   image,
@@ -24,7 +24,7 @@ import {
 import {
   ulList,
   olList
-} from './callbacks-lists';
+} from './lists';
 
 export default {
   strong,

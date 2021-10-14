@@ -14,6 +14,7 @@
 //     /* work in case there is an error */
 //     throw e;
 //   }
+//
 // https://gist.github.com/harrylove/1230566/d064e5c216384d3846f73ed555e9899be02e8f98#gistcomment-2884621
 // https://stackoverflow.com/a/326693
 function replaceMarkdown(regexp, callback) {
@@ -57,8 +58,11 @@ function replaceMarkdownPreviewText(regexp) {
       );
       console.log(this.previewText)
  */
+
   this.errors.previewText = true;
 
+
+  
   this.content = this.content.replace(
         regexp, 
         () => this.previewText

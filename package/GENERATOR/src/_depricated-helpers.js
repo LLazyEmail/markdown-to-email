@@ -37,6 +37,8 @@ function replaceMarkdownPreviewText(regexp) {
       );
       console.log(this.previewText)
  */
+
+      
   this.errors.previewText = true;
 
   this.content = this.content.replace(
