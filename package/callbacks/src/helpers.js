@@ -45,13 +45,20 @@ function relieve(name, config){
 //     config.folder
 // config.type aka plain or react
   
+let folder = config.folder || 'typography';
+
+// we need to have an if, for passing plain or react stuff
+// let wrapper = getWrapper(layouts, folder, name)
+  
   switch(config.type){
     case 'plain':
-      replaceWrapper()
+      // let wrapper = getWrapper(layouts, folder, name)
+      replaceWrapper(name, config, folder);
       break;
       
     case 'react'
-      replaceReactWrapper()
+      // let wrapper = getWrapper(reactLayouts, folder, name)
+      replaceReactWrapper(name, config, folder);
       break;
       
     default:
@@ -62,21 +69,21 @@ function relieve(name, config){
 
 
 
-function replaceWrapper(wrapperName, config, folder = 'typography') {
+function replaceWrapper(name, config, folder = 'typography') {
   // this part will be updated very soon
-  let wrapper = getWrapper(layouts, folder, wrapperName)
-  // layouts[folder][wrapperName];
+  let wrapper = getWrapper(layouts, folder, name)
+  // layouts[folder][name];
   
   let updatedString = loopForWrapper(config, wrapper);
   return updatedString;
 }
 
-function replaceReactWrapper(wrapperName, config, folder = 'typography') {
+function replaceReactWrapper(name, config, folder = 'typography') {
   // console.log(reactLayouts.Typography.strong);
   // console.log("name", config);
 
   // this part will be updated very soon  
-  let wrapper = getWrapper(reactLayouts, folder, wrapperName)
+  let wrapper = getWrapper(reactLayouts, folder, name)
   
   let updatedString = loopForWrapper(config, wrapper);
   return updatedString;
