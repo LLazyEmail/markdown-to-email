@@ -3,8 +3,8 @@ import misc from 'atherdon-newsletter-js-layouts-misc';
 const {
   address,
   copyrights,
-  fonts,
-  headStyles,
+  // fonts,
+  // headStyles,
   newsletterSponsorshipLink,
   unsubscribe,
 } = misc;
@@ -675,12 +675,8 @@ const footer = `<tr>
                                         <td
                                           valign="top"
                                           style="
-                                            padding-right: 10px;
-                                            padding-bottom: 9px;
-                                            mso-line-height-rule: exactly;
-                                            -ms-text-size-adjust: 100%;
-                                            -webkit-text-size-adjust: 100%;
-                                          "
+                                            padding-right: 10px;padding-bottom: 9px;mso-line-height-rule: exactly;
+                                            -ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
                                           class="mcnFollowContentItemContainer"
                                         >
                                           <table
@@ -690,12 +686,8 @@ const footer = `<tr>
                                             width="100%"
                                             class="mcnFollowContentItem"
                                             style="
-                                              border-collapse: collapse;
-                                              mso-table-lspace: 0pt;
-                                              mso-table-rspace: 0pt;
-                                              -ms-text-size-adjust: 100%;
-                                              -webkit-text-size-adjust: 100%;
-                                            "
+                                              border-collapse: collapse;mso-table-lspace: 0pt;
+                                              mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
                                           >
                                             <tbody>
                                               <tr>
@@ -703,13 +695,9 @@ const footer = `<tr>
                                                   align="left"
                                                   valign="middle"
                                                   style="
-                                                    padding-top: 5px;
-                                                    padding-right: 10px;
-                                                    padding-bottom: 5px;
-                                                    padding-left: 9px;
-                                                    mso-line-height-rule: exactly;
-                                                    -ms-text-size-adjust: 100%;
-                                                    -webkit-text-size-adjust: 100%;
+                                                    padding-top: 5px;padding-right: 10px;padding-bottom: 5px;
+                                                    padding-left: 9px;mso-line-height-rule: exactly;
+                                                    -ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
                                                   "
                                                 >
                                                   <table
@@ -719,11 +707,7 @@ const footer = `<tr>
                                                     cellspacing="0"
                                                     width=""
                                                     style="
-                                                      border-collapse: collapse;
-                                                      mso-table-lspace: 0pt;
-                                                      mso-table-rspace: 0pt;
-                                                      -ms-text-size-adjust: 100%;
-                                                      -webkit-text-size-adjust: 100%;
+                                                      border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
                                                     "
                                                   >
                                                     <tbody>
@@ -734,9 +718,7 @@ const footer = `<tr>
                                                           width="24"
                                                           class="mcnFollowIconContent"
                                                           style="
-                                                            mso-line-height-rule: exactly;
-                                                            -ms-text-size-adjust: 100%;
-                                                            -webkit-text-size-adjust: 100%;
+                                                            mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
                                                           "
                                                         >
                                                           <a
@@ -750,14 +732,9 @@ const footer = `<tr>
                                                             ><img
                                                               src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/youtube.png"
                                                               alt="YouTube"
-                                                              style="
-                                                                display: block;
-                                                                border: 0;
-                                                                height: auto;
-                                                                outline: none;
-                                                                text-decoration: none;
-                                                                -ms-interpolation-mode: bicubic;
-                                                              "
+                                                              style="display: block;  border: 0;
+                                                                height: auto; outline: none;
+                                                                text-decoration: none;  -ms-interpolation-mode: bicubic;"
                                                               height="24"
                                                               width="24"
                                                               class=""
@@ -789,24 +766,16 @@ const footer = `<tr>
                                     cellpadding="0"
                                     cellspacing="0"
                                     style="
-                                      display: inline;
-                                      border-collapse: collapse;
-                                      mso-table-lspace: 0pt;
-                                      mso-table-rspace: 0pt;
-                                      -ms-text-size-adjust: 100%;
-                                      -webkit-text-size-adjust: 100%;
-                                    "
+                                      display: inline;border-collapse: collapse;mso-table-lspace: 0pt;
+                                      mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
                                   >
                                     <tbody>
                                       <tr>
                                         <td
                                           valign="top"
                                           style="
-                                            padding-right: 0;
-                                            padding-bottom: 9px;
-                                            mso-line-height-rule: exactly;
-                                            -ms-text-size-adjust: 100%;
-                                            -webkit-text-size-adjust: 100%;
+                                            padding-right: 0;padding-bottom: 9px;
+                                            mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
                                           "
                                           class="mcnFollowContentItemContainer"
                                         >
@@ -816,28 +785,15 @@ const footer = `<tr>
                                             cellspacing="0"
                                             width="100%"
                                             class="mcnFollowContentItem"
-                                            style="
-                                              border-collapse: collapse;
-                                              mso-table-lspace: 0pt;
-                                              mso-table-rspace: 0pt;
-                                              -ms-text-size-adjust: 100%;
-                                              -webkit-text-size-adjust: 100%;
-                                            "
+                                            style="border-collapse: collapse;mso-table-lspace: 0pt;
+                                              mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
                                           >
                                             <tbody>
                                               <tr>
                                                 <td
                                                   align="left"
                                                   valign="middle"
-                                                  style="
-                                                    padding-top: 5px;
-                                                    padding-right: 10px;
-                                                    padding-bottom: 5px;
-                                                    padding-left: 9px;
-                                                    mso-line-height-rule: exactly;
-                                                    -ms-text-size-adjust: 100%;
-                                                    -webkit-text-size-adjust: 100%;
-                                                  "
+                                                  style="padding-top: 5px;padding-right: 10px; padding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
                                                 >
                                                   <table
                                                     align="left"
@@ -845,13 +801,7 @@ const footer = `<tr>
                                                     cellpadding="0"
                                                     cellspacing="0"
                                                     width=""
-                                                    style="
-                                                      border-collapse: collapse;
-                                                      mso-table-lspace: 0pt;
-                                                      mso-table-rspace: 0pt;
-                                                      -ms-text-size-adjust: 100%;
-                                                      -webkit-text-size-adjust: 100%;
-                                                    "
+                                                    style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
                                                   >
                                                     <tbody>
                                                       <tr>
@@ -860,20 +810,12 @@ const footer = `<tr>
                                                           valign="middle"
                                                           width="24"
                                                           class="mcnFollowIconContent"
-                                                          style="
-                                                            mso-line-height-rule: exactly;
-                                                            -ms-text-size-adjust: 100%;
-                                                            -webkit-text-size-adjust: 100%;
-                                                          "
+                                                          style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
                                                         >
                                                           <a
                                                             href="mailto:stories@hackernoon.com"
                                                             target="_blank"
-                                                            style="
-                                                              mso-line-height-rule: exactly;
-                                                              -ms-text-size-adjust: 100%;
-                                                              -webkit-text-size-adjust: 100%;
-                                                            "
+                                                            style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;                                                            "
                                                             ><img
                                                               src="https://creative-images-upld.s3.amazonaws.com/creative/newsletters/icons/forwardtofriend.png"
                                                               alt="Email"
@@ -933,12 +875,9 @@ const footer = `<tr>
     width="100%"
     class="mcnTextBlock"
     style="
-      min-width: 100%;
-      border-collapse: collapse;
-      mso-table-lspace: 0pt;
-      mso-table-rspace: 0pt;
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
+      min-width: 100%;border-collapse: collapse;
+      mso-table-lspace: 0pt;mso-table-rspace: 0pt;
+      -ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
     "
   >
     <tbody class="mcnTextBlockOuter">
@@ -947,10 +886,8 @@ const footer = `<tr>
           valign="top"
           class="mcnTextBlockInner"
           style="
-            padding-top: 9px;
-            mso-line-height-rule: exactly;
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
+            padding-top: 9px;mso-line-height-rule: exactly;
+            -ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
           "
         >
           <!--[if mso]>
@@ -967,13 +904,8 @@ const footer = `<tr>
             cellpadding="0"
             cellspacing="0"
             style="
-              max-width: 100%;
-              min-width: 100%;
-              border-collapse: collapse;
-              mso-table-lspace: 0pt;
-              mso-table-rspace: 0pt;
-              -ms-text-size-adjust: 100%;
-              -webkit-text-size-adjust: 100%;
+              max-width: 100%;min-width: 100%;border-collapse: collapse;
+              mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
             "
             width="100%"
             class="mcnTextContentContainer"
@@ -984,21 +916,12 @@ const footer = `<tr>
                   valign="top"
                   class="mcnTextContent"
                   style="
-                    padding-top: 0;
-                    padding-right: 18px;
-                    padding-bottom: 9px;
-                    padding-left: 18px;
-                    mso-line-height-rule: exactly;
-                    -ms-text-size-adjust: 100%;
-                    -webkit-text-size-adjust: 100%;
-                    word-break: break-word;
-                    color: #656565;
-                    font-family: 'Source Sans Pro',
-                      'Helvetica Neue', Helvetica, Arial,
-                      sans-serif;
-                    font-size: 12px;
-                    line-height: 150%;
-                    text-align: center;
+                    padding-top: 0; padding-right: 18px; padding-bottom: 9px;
+                    padding-left: 18px; mso-line-height-rule: exactly;
+                    -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;
+                    word-break: break-word; color: #656565;
+                    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial,  sans-serif; 
+                    font-size: 12px;line-height: 150%; text-align: center;
                   "
                 >
                   ${copyrights}

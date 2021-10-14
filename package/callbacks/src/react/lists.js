@@ -7,9 +7,16 @@ function getParsedSubList(subList) {
   return subList.replace(
     new RegExp(`\\s{4}\\*(.*?)${newLine}`, 'g'),
     (text, subItem) => {
+
       const config = {
         content: subItem.trim(),
       };
+
+      const replaced = replaceReactWrapper(
+        'image', 
+        config
+      );
+    
 
       return `${newLine + replaceReactWrapper('listItem', config)}`;
     },
@@ -32,6 +39,12 @@ function ulList(text, list) {
         type: 'UL',
       };
 
+      const replaced = replaceReactWrapper(
+        'image', 
+        config
+      );
+    
+
       return `${newLine + replaceReactWrapper('list', config)}`;
     },
   );
@@ -44,6 +57,12 @@ function ulList(text, list) {
         content: listItem.trim(),
       };
 
+      const replaced = replaceReactWrapper(
+        'image', 
+        config
+      );
+    
+
       return `${newLine + replaceReactWrapper('listItem', config)}`;
     },
   );
@@ -54,6 +73,12 @@ function ulList(text, list) {
     type: 'UL',
   };
 
+
+
+  const replaced = replaceReactWrapper(
+    'image', 
+    config
+  );
 
   
   // very bad bad bad bad line

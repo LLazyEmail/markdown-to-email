@@ -14,7 +14,12 @@ function paragraphWrapper(text, line) {
   };
 
 
-  const result = newLine + replaceReactWrapper('paragraph', config) + newLine;
+  const replaced = replaceReactWrapper(
+    'paragraph', 
+    config
+  );
+
+  const result = newLine + replaced + newLine;
   // console.log(config);
 
   return result;
@@ -33,8 +38,13 @@ function image(text, alt, srcWithTooltip) {
 
 
 
-  const result = replaceReactWrapper('image', config);
-  return result;
+  const replaced = replaceReactWrapper(
+    'image', 
+    config
+  );
+
+  
+  return replaced;
 }
 
 function br(text, newLines) {
@@ -51,14 +61,18 @@ function br(text, newLines) {
 
 function sponsorship(text) {
   const regex = /\[(.*?)\]/g;
+  const regex2 = /[\[\]]/g;
+
   const [content, href, src] = text
     .match(regex)
-    .map((match) => match.replace(/[\[\]]/g, ''));
+    .map((match) => match.replace(regex2, ''));
 
   const config = {
     src: src.trim(),
     href: href.trim(),
     content: content.trim(),
+
+    folder: 'body'
   };
 
   // @TODO nope, not good
@@ -67,8 +81,13 @@ function sponsorship(text) {
     : (this.errors.sponsorshipTop = true);
 
 
-    
-  return replaceReactWrapper('sponsor', config, 'body');
+    const replaced = replaceReactWrapper(
+      'sponsor', 
+      config,
+      'body'
+    );  
+
+    return replaced;
 }
 
 // function tag_loop(){

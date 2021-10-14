@@ -5,15 +5,23 @@ const empty = '';
 
 function previewText(text, content) {
   const config = {
-    content,
+    content: content,
+    folder: 'body'
   };
+
+
 
   //wouldnt work well
   this.previewText = true;
 
 
-
-  return replaceReactWrapper('previewText', config, 'body');
+  const replaced = replaceReactWrapper(
+    'previewText', 
+    config,
+    'body'
+  );
+  
+  return replaced;
 }
 
 function code(text, content) {
@@ -21,10 +29,12 @@ function code(text, content) {
     content,
   };
 
+  const replaced = replaceReactWrapper(
+    'code', 
+    config
+  );
 
-
-  const result = replaceReactWrapper('code', config);
-  return result;
+  return replaced;
 }
 
 function del(text, content) {
@@ -32,10 +42,12 @@ function del(text, content) {
     content,
   };
 
+  const replaced = replaceReactWrapper(
+    'del', 
+    config
+  );
 
-
-  const result = replaceReactWrapper('del', config);
-  return result;
+  return replaced;
 }
 
 function q(text, content) {
@@ -43,10 +55,12 @@ function q(text, content) {
     content,
   };
 
+  const replaced = replaceReactWrapper(
+    'q', 
+    config
+  );
 
-
-  const result = replaceReactWrapper('q', config);
-  return result;
+  return replaced;
 }
 
 function italic(text, left, _, content, right) {
@@ -54,9 +68,12 @@ function italic(text, left, _, content, right) {
     content,
   };
 
+  const replaced = replaceReactWrapper(
+    'italic', 
+    config
+  );
 
-  const result = replaceReactWrapper('italic', config);
-  return result;
+  return replaced;
 }
 
 function strong(text, doubleAsterix, content, asterix) {
@@ -64,10 +81,12 @@ function strong(text, doubleAsterix, content, asterix) {
     content: `${content + asterix}`,
   };
 
+  const replaced = replaceReactWrapper(
+    'strong', 
+    config
+  );
 
-
-  const result = replaceReactWrapper('strong', config);
-  return result;
+  return replaced;
 }
 
 function link(text, title, href) {
@@ -76,10 +95,12 @@ function link(text, title, href) {
     href: href.trim(),
   };
 
+  const replaced = replaceReactWrapper(
+    'link', 
+    config
+  );
 
-
-  const result = replaceReactWrapper('link', config);
-  return result;
+  return replaced;
 }
 
 function blockquote(text, tmp, item) {
@@ -87,9 +108,12 @@ function blockquote(text, tmp, item) {
     content: `${newLine}${item.trim()}`,
   };
 
+  const replaced = replaceReactWrapper(
+    'blockquote', 
+    config
+  );
 
-  const result = replaceReactWrapper('blockquote', config);
-  return result;
+  return replaced;
 }
 
 function mem(text, src, href, altText) {
@@ -99,10 +123,12 @@ function mem(text, src, href, altText) {
     href: href.trim(),
   };
 
+  const replaced = replaceReactWrapper(
+    'image', 
+    config
+  );
 
-
-  const result = replaceReactWrapper('image', config);
-  return result;
+  return replaced;
 }
 
 function header(text, chars, content) {
@@ -110,27 +136,32 @@ function header(text, chars, content) {
     content: content.trim(),
   };
 
-  const titleType = ['mainTitle', 'subtitle', 'heading'];
+  const titleType = [
+    'mainTitle', 
+    'subtitle',
+     'heading'
+    ];
+
+    const replaced = replaceReactWrapper(
+      titleType[chars.length - 1], 
+      config
+    );
 
 
-
-  const result = newLine + 
-    replaceReactWrapper(titleType[chars.length - 1], config);
-
-  return result;
+  return newLine + replaced;
 }
 
 function separator() {
   const config = {};
 
 
-  
-  const result = `${newLine}${replaceReactWrapper(
-    'separator',
-    config,
-  )}${newLine}`;
+  const replaced = replaceReactWrapper(
+    'separator', 
+    config
+  );
 
-  return result;
+
+  return newLine + replaced + newLine;
 }
 
 export {
