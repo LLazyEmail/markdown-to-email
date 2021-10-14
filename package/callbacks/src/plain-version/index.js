@@ -10,12 +10,12 @@ import {
   code,
   hr,
   empty
-} from './callbacks-simple';
+} from './simple';
 
 import {
   ulList,
   olList
-} from './callbacks-lists';
+} from './lists';
 
 import {
   image,
@@ -24,7 +24,7 @@ import {
   br
 } from './callbacks';
 
-import { separator } from './callbacks-custom';
+import { separator } from './custom';
 
 export default {
   strong,

@@ -184,14 +184,10 @@ style="
                         cellspacing="0"
                         width="100%"
                         style="
-                          min-width: 100%;
-                          border-top: 2px none #eaeaea;
-                          border-collapse: collapse;
-                          mso-table-lspace: 0pt;
-                          mso-table-rspace: 0pt;
-                          -ms-text-size-adjust: 100%;
-                          -webkit-text-size-adjust: 100%;
-                        "
+                          min-width: 100%; border-top: 2px none #eaeaea;
+                          border-collapse: collapse;    mso-table-lspace: 0pt;
+                          mso-table-rspace: 0pt;    -ms-text-size-adjust: 100%;
+                          -webkit-text-size-adjust: 100%;  "
                       >
                         <tbody>
                           <tr>

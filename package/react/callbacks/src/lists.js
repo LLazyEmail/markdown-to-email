@@ -43,6 +43,7 @@ function ulList(text, list) {
         content: listItem.trim(),
       };
 
+      
       return `${newLine + replaceWrapper('listItem', config)}`;
     },
   );

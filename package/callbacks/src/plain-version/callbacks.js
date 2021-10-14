@@ -14,7 +14,10 @@ function paragraphWrapper(text, line) {
   const config = {
     content: trimmed,
   };
-  const result = newLine + replaceWrapper('paragraph', config) + newLine;
+  const result = 
+      newLine + 
+      replaceWrapper('paragraph', config) + 
+      newLine;
   // console.log(config);
 
   return result;
@@ -31,7 +34,10 @@ function image(text, alt, srcWithTooltip) {
 
   this.warnings.images++;
 
+
+
   const result = replaceWrapper('image', config);
+
   return result;
 }
 
@@ -39,12 +45,18 @@ function br(text, newLines) {
   // TODO move out this regex into constants file.
   const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
 
+
+
   // @TODO well, it's not good. can be improved with lodash
-    
   const result = arrNewLines.reduce((acc, current, index) => (index > 0 ? `${acc}<br/>${current}` : current), '');
 
   return result;
 }
+
+
+
+
+
 
 function sponsorship(text) {
   // TODO move out this regex into constants file.

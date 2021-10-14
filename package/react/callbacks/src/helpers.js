@@ -14,13 +14,20 @@ const newLine = platform === 'win32' ? '\r\n' : '\n';
 
 
 
-function replaceWrapper(wrapperName, config, folder = 'typography') {
+
+
+function replaceReactWrapper(wrapperName, config, folder = 'typography') {
+  // console.log(reactLayouts.Typography.strong);
+  // console.log("name", config);
+
   // this part will be updated very soon
-  let wrapper = layouts[folder][wrapperName];
+  let wrapper = reactLayouts[folder][wrapperName];
+  
 
   // config.map((i,v) => {
   //  
   // });
+  
 
   // @TODO replace with lodash
   Object.keys(config).forEach((name) => {
@@ -30,31 +37,10 @@ function replaceWrapper(wrapperName, config, folder = 'typography') {
   return wrapper;
 }
 
-// function replaceReactWrapper(wrapperName, config, folder = 'typography') {
-//   // console.log(reactLayouts.Typography.strong);
-//   // console.log("name", config);
-
-//   // this part will be updated very soon
-//   let wrapper = reactLayouts[folder][wrapperName];
-  
-
-//   // config.map((i,v) => {
-//   //  
-//   // });
-  
-
-//   // @TODO replace with lodash
-//   Object.keys(config).forEach((name) => {
-//     wrapper = wrapper.replace(new RegExp(`{${name}}`, 'g'), config[name]);
-//   });
-
-//   return wrapper;
-// }
-
 
 export {
   newLine,
 
-  replaceWrapper,
-  // replaceWrapper
+  // replaceWrapper,
+  replaceReactWrapper
 };

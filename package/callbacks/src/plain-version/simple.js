@@ -16,6 +16,9 @@ function previewText(text, content) {
   };
 
   this.errors.previewText = true;
+
+
+
   return replaceWrapper('previewText', config, 'body');
 }
 
@@ -23,6 +26,8 @@ function strong(text, doubleAsterix, content, asterix) {
   const config = {
     content: `${content + asterix}`,
   };
+
+
 
   const result = replaceWrapper('strong', config);
   return result;
@@ -33,6 +38,8 @@ function link(text, title, href) {
     content: title.trim(),
     href: href.trim(),
   };
+
+
 
   const result = replaceWrapper('link', config);
   return result;
@@ -49,6 +56,8 @@ function mem(text, src, href, altText) {
     href: href.trim(),
   };
 
+
+
   const result = replaceWrapper('image', config);
   return result;
 }
@@ -64,6 +73,8 @@ function header(text, chars, content) {
     'heading',
   ];
 
+
+  
   const result = newLine + replaceWrapper(titleType[chars.length - 1], config);
 
   return result;

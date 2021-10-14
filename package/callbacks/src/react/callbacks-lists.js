@@ -16,6 +16,8 @@ function getParsedSubList(subList) {
   );
 }
 
+
+
 // @TODO it looks even more crazier than it was 2 months ago
 // i'm not suprised that it might get errors(but works fine now)
 function ulList(text, list) {
@@ -34,6 +36,7 @@ function ulList(text, list) {
     },
   );
 
+
   const parsedList = parsedSubListsParts.replace(
     new RegExp(`\\*(.*?)${newLine}`, 'g'),
     (text, listItem) => {
@@ -45,11 +48,14 @@ function ulList(text, list) {
     },
   );
 
+
   const config = {
     content: parsedList + newLine,
     type: 'UL',
   };
 
+
+  
   // very bad bad bad bad line
   // TODO update this return
   return `${newLine + replaceReactWrapper('list', config) + newLine}`;

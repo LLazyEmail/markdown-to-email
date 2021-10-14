@@ -4,6 +4,8 @@ import { replaceWrapper, newLine } from '../helpers';
 // @TODO it looks even more crazier than it was 2 months ago
 // i'm not suprised that it might get errors(but works fine now)
 function ulList(text, list) {
+
+
   // @todo improve this crazy structure.
   const parsedSubListsParts = list.replace(
     new RegExp(`((\\s{4}\\*(.*?)${newLine}){1,})`, 'g'),
@@ -37,6 +39,7 @@ function ulList(text, list) {
       return `${newLine + replaceWrapper('listItem', config)}`;
     },
   );
+  
 
   const config = {
     content: parsedList + newLine,

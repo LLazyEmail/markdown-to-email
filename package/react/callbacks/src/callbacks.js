@@ -14,6 +14,10 @@ function paragraphWrapper(text, line) {
   const config = {
     content: trimmed,
   };
+
+
+
+
   const result = newLine + replaceReactWrapper('paragraph', config) + newLine;
   // console.log(config);
 
@@ -30,6 +34,8 @@ function image(text, alt, srcWithTooltip) {
   };
 
   this.warnings.images++;
+
+
 
   const result = replaceReactWrapper('image', config);
   return result;
@@ -64,6 +70,8 @@ function sponsorship(text) {
     ? (this.errors.sponsorshipBottom = true)
     : (this.errors.sponsorshipTop = true);
 
+
+    
   return replaceReactWrapper('sponsor', config, 'body');
 }
 
