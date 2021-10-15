@@ -26,34 +26,30 @@ function replaceMarkdown(regexp, callback) {
     // console.log('helpers- replace markdown method')
     // console.log(typeof callback)  
 
-
-
-
-
-  var fixedCallbackMethod = false;
-
-  switch (typeof callback) {
-      case 'string':
-          fixedCallbackMethod = callback;
-          break;
-
-      case 'undefined':
-            console.log("ERRROROROR HERE!!!!");
-            console.log(regexp)
-            console.log(callback)
-            throw new Error('catching this error');
-            
-          break;  
-
-      default:
-          fixedCallbackMethod = callback.bind(this)
-          break;
-  }
-
-
    try {
+
+    var fixedCallbackMethod = false;
+
+    switch (typeof callback) {
+        case 'string':
+            fixedCallbackMethod = callback;
+            break;
+  
+        case 'undefined':
+              console.log("ERRROROROR HERE!!!!");
+              console.log(regexp)
+              console.log(callback)
+              throw new Error('catching this error');
+  
+            break;  
+  
+        default:
+            fixedCallbackMethod = callback.bind(this)
+            break;
+    }
+
+
      var result = this.content.replace(regexp, fixedCallbackMethod);
-     /* work after the function is called */
      this.content = result;
   
    }
