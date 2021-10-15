@@ -1,5 +1,8 @@
 import { 
-  replaceWrapper, newLine 
+  replaceWrapper, 
+  newLine,
+  
+  
 } from '../helpers';
 
 /// function is not working as planned
@@ -28,13 +31,17 @@ function paragraphWrapper(text, line) {
 /// !end function is not working as planned
 
 function image(text, alt, srcWithTooltip) {
-  const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
+  const src = 
+    srcWithTooltip
+      .trim()
+      .replace(/\"image_tooltip\"/, '');
 
   const config = {
     src: src.trim(),
     altText: alt,
   };
 
+  // i dont think it will work well
   this.warnings.images++;
 
   const replaced = replaceWrapper(
@@ -87,6 +94,8 @@ function sponsorship(text) {
     ? this.errors.sponsorshipBottom = true 
     : this.errors.sponsorshipTop = true;
 
+
+    
   const replaced = replaceWrapper(
     'sponsor', 
     config

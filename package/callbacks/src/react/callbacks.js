@@ -34,6 +34,7 @@ function image(text, alt, srcWithTooltip) {
     altText: alt,
   };
 
+  // not sure if it will work fine
   this.warnings.images++;
 
 

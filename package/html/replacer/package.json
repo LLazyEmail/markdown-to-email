@@ -1,6 +1,6 @@
 {
   "name": "atherdon-newsletter-html-replacer",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -45,7 +45,7 @@
     "access": "public"
   },
   "dependencies": {
-    "atherdon-callbacks": "^1.5.0",
+    "atherdon-callbacks": "^1.6.0",
     "atherdon-newsletter-js-layouts": "^1.6.1",
     "markup-generator": "^0.4.0"
   }

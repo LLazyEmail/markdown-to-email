@@ -14,13 +14,14 @@ function getParsedSubList(subList) {
         content: subItem.trim(),
       };
 
+
+
       const replaced = replaceWrapper(
         'listItem', 
         config
       );
 
       return  newLine + replaced;
-
       
     },
   );
@@ -37,13 +38,13 @@ function getParsedLists(parsedSubLists){
         content: listItem.trim(),
       };
 
+
       var replaced = replaceWrapper(
         'listItem', 
         config
       );
 
       return newLine + replaced; 
-
 
     },
   );
@@ -57,7 +58,6 @@ function ulList(text, list) {
 
   const regex = new RegExp(`((\\s{4}\\*(.*?)${newLine}){1,})`, 'g');
 
-
   // @todo improve this crazy structure.
   const parsedSubListsParts = list.replace(
     regex,
@@ -68,7 +68,7 @@ function ulList(text, list) {
       const config = {
         content: parsedSubItem + newLine,
       };
-
+      
       var replaced = replaceWrapper(
         'list', 
         config

@@ -23,7 +23,7 @@ function getWrapper(name, config){
 
 function loopForWrapper(config, wrapper){
 
-  console.log(config);
+  // console.log(config);
 
   // _.mapKeys(config, function(value, key) {
   //   return key + value;
@@ -63,7 +63,7 @@ function relieve(name, config){
       replaceWrapper(name, config, folder);
       break;
       
-    case 'react'
+    case 'react':
       // let wrapper = getWrapper(reactLayouts, folder, name)
       replaceReactWrapper(name, config, folder);
       break;
@@ -91,14 +91,18 @@ function replaceWrapper(name, config, folder = 'typography') {
 
   // TODO later we can get rid of it completely.
   // right now it's only for back campatibility purposes
-  let configCopy = Object.assign(config, { 'layouts':layouts, 'folder': folder })
+  let configCopy = Object.assign(config, { 
+      'layouts':layouts, 
+      'folder': folder 
+    })
 
+  // console.log(configCopy);
 
   // this part will be updated very soon
   let wrapper = getWrapper(name, configCopy)
-  // layouts[folder][name];
   
   let updatedString = loopForWrapper(configCopy, wrapper);
+
   return updatedString;
 }
 
@@ -106,8 +110,13 @@ function replaceReactWrapper(name, config, folder = 'typography') {
   // console.log(reactLayouts.Typography.strong);
   // console.log("name", config);
 
-  let configCopy = Object.assign(config, { 'layouts':reactLayouts, 'folder': folder })
+  let configCopy = Object.assign(config, {
+    'layouts':reactLayouts, 
+    'folder': folder 
+  })
  
+  // console.log(configCopy);
+
   let wrapper = getWrapper(name, configCopy)
   
   let updatedString = loopForWrapper(config, wrapper);

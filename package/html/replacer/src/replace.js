@@ -1,6 +1,8 @@
 import * as constants from 'atherdon-newsletter-constants';
 
-import { PlainCallbacks, newLine } from 'atherdon-callbacks';
+import { 
+  PlainCallbacks, newLine 
+} from 'atherdon-callbacks';
 
 const {
   strong,
