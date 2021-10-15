@@ -11,6 +11,10 @@ const REGEXP_NEWLINE = newLine + 'g';
 
 // const REGEXP_SPONSORHSHIP = 
 
+// command-line-methods.js
+// const REGEXP_BASIC_TABLE_TAGS = new RegExp('(<table|<tr>|<td|<tbody>)', 'i');
+  
+
 export default {
   REGEXP_SECTION_TAGS,
   REGEXP_IMAGE_TOOLTIP,
