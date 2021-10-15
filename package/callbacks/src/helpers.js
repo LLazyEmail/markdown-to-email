@@ -83,27 +83,29 @@ function _NewReplace(name, config){
 
   // let updatedString = loopForWrapper(configCopy, wrapper);
   // return updatedString;
-
+  return generateNewString(name, configCopy);
 }
 
+function generateNewString(name, config){
+  let wrapper = getWrapper(name, config)
+  
+  let updatedString = loopForWrapper(config, wrapper);
+
+  return updatedString;
+}
 
 function replaceWrapper(name, config, folder = 'typography') {
 
   // TODO later we can get rid of it completely.
   // right now it's only for back campatibility purposes
   let configCopy = Object.assign(config, { 
-      'layouts':layouts, 
+      'layouts': layouts, 
       'folder': folder 
     })
 
   // console.log(configCopy);
 
-  // this part will be updated very soon
-  let wrapper = getWrapper(name, configCopy)
-  
-  let updatedString = loopForWrapper(configCopy, wrapper);
-
-  return updatedString;
+  return generateNewString(name, configCopy);
 }
 
 function replaceReactWrapper(name, config, folder = 'typography') {
@@ -117,10 +119,7 @@ function replaceReactWrapper(name, config, folder = 'typography') {
  
   // console.log(configCopy);
 
-  let wrapper = getWrapper(name, configCopy)
-  
-  let updatedString = loopForWrapper(config, wrapper);
-  return updatedString;
+  return generateNewString(name, configCopy);
 }
 
 

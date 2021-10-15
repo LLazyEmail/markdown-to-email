@@ -17,12 +17,21 @@
 //
 // https://gist.github.com/harrylove/1230566/d064e5c216384d3846f73ed555e9899be02e8f98#gistcomment-2884621
 // https://stackoverflow.com/a/326693
+
+
+
+
 function replaceMarkdown(regexp, callback) {
     
     // console.log('helpers- replace markdown method')
     // console.log(typeof callback)  
 
+
+
+
+
   var fixedCallbackMethod = false;
+
   switch (typeof callback) {
       case 'string':
           fixedCallbackMethod = callback;
@@ -32,7 +41,8 @@ function replaceMarkdown(regexp, callback) {
             console.log("ERRROROROR HERE!!!!");
             console.log(regexp)
             console.log(callback)
-
+            throw new Error('catching this error');
+            
           break;  
 
       default:
@@ -40,7 +50,22 @@ function replaceMarkdown(regexp, callback) {
           break;
   }
 
-  this.content = this.content.replace(regexp, fixedCallbackMethod);
+
+   try {
+     var result = this.content.replace(regexp, fixedCallbackMethod);
+     /* work after the function is called */
+     this.content = result;
+  
+   }
+   catch (e) {
+     /* work in case there is an error */
+    //  throw e;
+     throw new Error('replace markdown ');  
+   }
+
+
+
+  // this.content = this.content.replace(regexp, fixedCallbackMethod);
 }
 
 // i think this method would be broken now, because we cant play with "this."
@@ -59,6 +84,7 @@ function replaceMarkdownPreviewText(regexp) {
       console.log(this.previewText)
  */
 
+      //this might now working anymore
   this.errors.previewText = true;
 
 
