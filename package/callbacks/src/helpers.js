@@ -113,7 +113,7 @@ function replaceReactWrapper(name, config, folder = 'typography') {
   // console.log("name", config);
 
   let configCopy = Object.assign(config, {
-    'layouts':reactLayouts, 
+    'layouts': reactLayouts, 
     'folder': folder 
   })
  

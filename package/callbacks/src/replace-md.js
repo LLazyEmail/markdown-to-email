@@ -1,26 +1,3 @@
-// @TODO explore it later
-// try {
-//   myroutine(); // may throw three types of exceptions
-// } catch (e) {
-// }   
- 
-  /* work before the function is called */
-//   try {
-//     var returnValue = originalFunction.call(this, a, b, c);
-//     /* work after the function is called */
-//     return returnValue;
-//   }
-//   catch (e) {
-//     /* work in case there is an error */
-//     throw e;
-//   }
-//
-// https://gist.github.com/harrylove/1230566/d064e5c216384d3846f73ed555e9899be02e8f98#gistcomment-2884621
-// https://stackoverflow.com/a/326693
-
-
-
-
 function replaceMarkdown(regexp, callback) {
     
     // console.log('helpers- replace markdown method')
@@ -30,18 +7,17 @@ function replaceMarkdown(regexp, callback) {
 
     var fixedCallbackMethod = false;
 
+    if(!typeof callback){
+      console.log("ERRROROROR HERE!!!!");
+      console.log(regexp)
+      console.log(callback)
+      throw new Error('catching this error');
+    }
+
     switch (typeof callback) {
         case 'string':
             fixedCallbackMethod = callback;
             break;
-  
-        case 'undefined':
-              console.log("ERRROROROR HERE!!!!");
-              console.log(regexp)
-              console.log(callback)
-              throw new Error('catching this error');
-  
-            break;  
   
         default:
             fixedCallbackMethod = callback.bind(this)
@@ -55,8 +31,8 @@ function replaceMarkdown(regexp, callback) {
    }
    catch (e) {
      /* work in case there is an error */
-    //  throw e;
-     throw new Error('replace markdown ');  
+     throw e;
+     throw new Error('replaceMarkdown method');  
    }
 
 
