@@ -61,7 +61,7 @@ function generateReactContent(sourceFile) {
 }
 
 function generateReactFullTemplate(sourceFile) {
-  const { content, warnings, previewText } = parseMDReactFullThing({ source: sourceFile });
+  const { content, warnings, previewText } = parseMDReact(sourceFile)
 
   // ***
   checkWarnings(warnings);

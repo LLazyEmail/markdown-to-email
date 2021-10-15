@@ -50,9 +50,7 @@ function parseMDReact(source, isFull) {
   return state;
 }
 
-function parseMDReactFullThing(params) {
-  const { source } = params;
-
+function parseMDReactFullThing(source) {
   return parseMDReact(source, true);
 }
 

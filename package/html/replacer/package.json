@@ -45,7 +45,7 @@
     "access": "public"
   },
   "dependencies": {
-    "atherdon-callbacks": "^1.6.0",
+    "atherdon-callbacks": "^1.10.0",
     "atherdon-newsletter-js-layouts": "^1.6.1",
     "markup-generator": "^0.4.0"
   }
