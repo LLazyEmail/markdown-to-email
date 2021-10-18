@@ -133,10 +133,14 @@ class Replace {
     };
   }
 
+  template(){
+    this.header();
+  }
+
   typography(){
     this.strong();
     this.em();
-    this.header();
+    // this.header();
     this.image();
     this.link();
     this.del();

@@ -1,98 +1,127 @@
 const {
-  REGEXP_HEADER,
+  REGEXP_STRONG,
+  REGEXP_EM,
+
   REGEXP_IMAGE,
   REGEXP_LINK,
-  REGEXP_STRONG,
+  
   REGEXP_DEL,
   REGEXP_Q,
-
-  REGEXP_PARAGRAPH,
+  REGEXP_CODE,
 
   REGEXP_UL_LIST,
   REGEXP_OL_LIST,
 
-  REGEXP_EM,
+  REGEXP_BLOCKQUOTE,
 
-  REGEXP_HTML_COMMENTS,
-  REGEXP_MEM,
+  REGEXP_HR,
+  REGEXP_PARAGRAPH,
+
+  REGEXP_EMPTY_UL,
+  REGEXP_EMPTY_OL   
 } = require('atherdon-newsletter-constants');
+
+
+
+
 const {
-  header,
+  
+  strong,
+  italic,
   image,
   link,
-  ulList,
-  olList,
-
-  paragraphWrapper,
-  br,
-  strong,
-  mem,
-  italic,
   del,
   q,
   code,
+
+  ulList,
+  olList,
+
+  blockquote,
+  hr,
+  
+  paragraphWrapper,
+
+  // br,
+  // strong,
+  empty
 } = require('../callbacks');
 
-// const layouts = require("atherdon-newsletter-constants");
+
 // const {  } = require("atherdon-newsletter-constants");
 
-const ConverterTypography = {
-  heading: {
-    key: 'REGEXP_HEADER',
-    value: header,
-    //     title: "xxx",
-  },
-  image: {
-    key: 'REGEXP_IMAGE',
-    value: image,
-    //     title: "xxx",
+
+
+const Typography = {
+
+  strong: {
+    key: 'REGEXP_STRONG',
+    value: strong,
   },
   italic: {
     key: 'REGEXP_EM',
-    //     value: 1,
-    //     title: "xxx",
+    value: italic,
   },
+
+  image: {
+    key: 'REGEXP_IMAGE',
+    value: image,
+  },
+  
   link: {
     key: 'REGEXP_LINK',
     value: link,
-    //     title: "xxx",
+  },
+
+  del: {
+    key: 'REGEXP_DEL',
+    value: del,
+  },
+
+  q: {
+    key: 'REGEXP_Q',
+    value: q,
+
+  },
+  code: {
+    key: 'REGEXP_CODE',
+    value: code,
+
   },
 
   ulList: {
     key: 'REGEXP_UL_LIST',
     value: ulList,
-    //     title: "xxx",
   },
   olList: {
     key: 'REGEXP_OL_LIST',
     value: olList,
-    //     title: "xxx",
   },
-  listItem: {
-    key: 'REGEXP_H3',
-    //     value: 1,
-    //     title: "xxx",
+
+  blockquote: {
+    key: 'REGEXP_BLOCKQUOTE',
+    value: blockquote,
   },
-  mainTitle: {
-    key: 'REGEXP_HEADER',
-    //     value: 1,
-    //     title: "xxx",
+
+  hr: {
+    key: 'REGEXP_HR',
+    value: hr,    
   },
+
+
   paragraph: {
     key: 'REGEXP_PARAGRAPH',
     value: paragraphWrapper,
-    //     title: "xxx",
   },
-  strong: {
-    key: 'REGEXP_STRONG',
-    value: strong,
-    //     title: "xxx",
+
+  emptyUL: {
+    key: 'REGEXP_EMPTY_UL',
+    value: empty,
   },
-  subtitle: {
-    key: 'REGEXP_H2',
-    //     value: 1,
-    //     title: "xxx",
+  emptyOL: {
+    key: 'REGEXP_EMPTY_OL',
+    value: empty,
   },
 };
 
-export default ConverterTypography;
+export default Typography;

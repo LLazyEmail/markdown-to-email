@@ -3,16 +3,16 @@
 
 // function tag_loop(){
 //     var arr = {
-//         header,
-//         content,
-//         footer,
-//        social,
-//         unsub
+//      
+//         contentBlock1,
+//         contentBlock2,
+//         contentBlock3,
+//  
 //     }
-//     var completed_HTML = '';
+//     var completed_content = '';
 //     _.each(arr,{
 
-//         completed_HTML += element;
+//         completed_content += element;
 
 //     });
 // }

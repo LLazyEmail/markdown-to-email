@@ -2,37 +2,51 @@ const {
   REGEXP_HEADER,
   REGEXP_SPONSORSHIP,
   REGEXP_HTML_COMMENTS,
+  REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
 
-const {
+
+// import * as constants from 'atherdon-newsletter-constants';
+
+
+
+
+import { 
+  PlainCallbacks
+} from 'atherdon-callbacks';
+
+const { 
   header,
   sponsorship,
-} = require('../callbacks');
+  mem,
+  previewText,
+  empty 
+} = PlainCallbacks;
 
 // const layouts = require("atherdon-newsletter-constants");
 
-const ConverterBody = {
+const Template = {
   header: {
     key: 'REGEXP_HEADER',
     value: header,
-    //     title: "xxx",
   },
   comments: {
     key: 'REGEXP_HTML_COMMENTS',
-    //     value: 1,
-    //     title: "xxx",
+    value: empty,
+  },
+  memes: {
+    key: 'REGEXP_MEM',
+    value: mem,
   },
   previewText: {
     key: 'REGEXP_PREVIEW_TEXT',
-    //     value: 1,
-    //     title: "xxx",
+    value: previewText,
   },
   sponsor: {
     key: 'REGEXP_SPONSORSHIP',
     value: sponsorship,
-    //     title: "xxx",
   },
 };
 
-module.exports = ConverterBody;
+export default Template
