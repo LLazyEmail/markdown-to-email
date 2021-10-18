@@ -47,7 +47,7 @@ const {
   empty
 } = PlainCallbacks;
 
-
+// https://github.com/atherdon/markdown-regex/blob/main/src/index.js
 
 const Typography = {
 

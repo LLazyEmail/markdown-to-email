@@ -10,7 +10,7 @@
 // import * as constants from 'atherdon-newsletter-constants';
 
 
-
+// https://github.com/atherdon/markdown-regex/blob/main/src/index.js
 
 import { 
   PlainCallbacks
