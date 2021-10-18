@@ -1,10 +1,10 @@
-const {
-  REGEXP_HEADER,
-  REGEXP_SPONSORSHIP,
-  REGEXP_HTML_COMMENTS,
-  REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT,
-} = require('atherdon-newsletter-constants');
+// const {
+//   REGEXP_HEADER,
+//   REGEXP_SPONSORSHIP,
+//   REGEXP_HTML_COMMENTS,
+//   REGEXP_MEM,
+//   REGEXP_PREVIEW_TEXT,
+// } = require('atherdon-newsletter-constants');
 
 
 // import * as constants from 'atherdon-newsletter-constants';

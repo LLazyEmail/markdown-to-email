@@ -1,28 +1,28 @@
-const {
-  REGEXP_STRONG,
-  REGEXP_EM,
+// const {
+//   REGEXP_STRONG,
+//   REGEXP_EM,
 
-  REGEXP_IMAGE,
-  REGEXP_LINK,
+//   REGEXP_IMAGE,
+//   REGEXP_LINK,
   
-  REGEXP_DEL,
-  REGEXP_Q,
-  REGEXP_CODE,
+//   REGEXP_DEL,
+//   REGEXP_Q,
+//   REGEXP_CODE,
 
-  REGEXP_UL_LIST,
-  REGEXP_OL_LIST,
+//   REGEXP_UL_LIST,
+//   REGEXP_OL_LIST,
 
-  REGEXP_BLOCKQUOTE,
+//   REGEXP_BLOCKQUOTE,
 
-  REGEXP_HR,
-  REGEXP_PARAGRAPH,
+//   REGEXP_HR,
+//   REGEXP_PARAGRAPH,
 
-  REGEXP_EMPTY_UL,
-  REGEXP_EMPTY_OL   
-} = require('atherdon-newsletter-constants');
-
-
-
+//   REGEXP_EMPTY_UL,
+//   REGEXP_EMPTY_OL   
+// } = require('atherdon-newsletter-constants');
+import { 
+  PlainCallbacks
+} from 'atherdon-callbacks';
 
 const {
   
@@ -45,10 +45,7 @@ const {
   // br,
   // strong,
   empty
-} = require('../callbacks');
-
-
-// const {  } = require("atherdon-newsletter-constants");
+} = PlainCallbacks;
 
 
 
