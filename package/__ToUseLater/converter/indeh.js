@@ -1,3 +1,6 @@
+// CAN BE USED FOR CONTENT PART
+
+
 // function tag_loop(){
 //     var arr = {
 //         header,

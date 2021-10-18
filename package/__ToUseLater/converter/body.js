@@ -1,3 +1,6 @@
+// Using it as body
+
+
 const {
   REGEXP_HEADER,
   REGEXP_SPONSORSHIP,
@@ -6,15 +9,24 @@ const {
   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
 
-const {
+
+import * as constants from 'atherdon-newsletter-constants';
+
+import { 
+  PlainCallbacks
+} from 'atherdon-callbacks';
+
+const { 
   header,
   sponsorship,
   mem,
-} = require('../callbacks');
+  previewText,
+  empty 
+} = PlainCallbacks;
 
 // const layouts = require("atherdon-newsletter-constants");
 
-const ConverterBody = {
+const Template = {
   header: {
     key: 'REGEXP_HEADER',
     value: header,
@@ -22,7 +34,7 @@ const ConverterBody = {
   },
   comments: {
     key: 'REGEXP_HTML_COMMENTS',
-    //     value: 1,
+    value: empty,
     //     title: "xxx",
   },
   memes: {
@@ -32,7 +44,7 @@ const ConverterBody = {
   },
   previewText: {
     key: 'REGEXP_PREVIEW_TEXT',
-    //     value: 1,
+    value: previewText,
     //     title: "xxx",
   },
   sponsor: {
@@ -42,4 +54,4 @@ const ConverterBody = {
   },
 };
 
-// export data
+export default Template
