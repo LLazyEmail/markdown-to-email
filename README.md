@@ -86,8 +86,9 @@ The parser reads source file from `source/source.md` and based on opening tag re
 - https://github.com/remarkjs/remark-html
 - https://github.com/remarkjs/remark-breaks
 - https://github.com/vercel/remark-capitalize
-- https://github.com/remarkjs/remark-html
+
 - https://github.com/laat/remark-first-heading
+
 - https://github.com/remarkjs/remark-images
 - https://github.com/remarkjs/remark-lint
 - https://github.com/remarkjs/remark-inline-links
