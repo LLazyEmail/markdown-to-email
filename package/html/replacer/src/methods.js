@@ -11,7 +11,7 @@
   // and ruined a lot of our logic
 import htmlLayouts from 'atherdon-newsletter-js-layouts';
 
-console.log(htmlLayouts); 
+// console.log(htmlLayouts); 
 
 import {
   writeHTML,

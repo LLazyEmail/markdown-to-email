@@ -35,7 +35,7 @@ function writeHTML(fileName, content, dir = "generated", message) {
 
 }
 
-// writeHTML - an old version of a method that we have
+// __write - an old version of a method that we have
 function __write(fileName, content, dir = 'generated', message) {
   const _path = `${dir}/${fileName}`; // @todo it's not an ideal thing
 

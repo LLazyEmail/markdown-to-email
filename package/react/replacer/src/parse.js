@@ -9,41 +9,78 @@ import { stateInit } from 'markup-generator';
 import ReactReplacer from './replace';
 // ReactReplacer
 
+function configureReplacer(state, isFull){
+  // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????
+  ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);
+
+    // I think we didnt use it quite often
+    // ReactReplacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
+
+    // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
+    if (isFull) {
+      ReactReplacer.previewText();
+    }
+
+    ReactReplacer.comments();
+    ReactReplacer.typography();
+
+    ReactReplacer.ulList();
+    // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
+    //   ReactReplacer.olList()
+
+    ReactReplacer.blockQuote();
+    ReactReplacer.hr();
+    ReactReplacer.paragraph();
+
+    // TODO CHECK CASES WHEN CONTENT CAN HAVE EMPTY LISTS OR BLOCKQUOTE
+    //   ReactReplacer.emptyUl();
+    //   ReactReplacer.emptyOl();
+    //   ReactReplacer.emptyBlockQuote();
+
+    ReactReplacer.br();
+    ReactReplacer.sponsorship();
+    ReactReplacer.mem();
+    ReactReplacer.separator();
+}
+
 // @todo update this method. I'm sure it can be improved.
 function parseMDReact(source, isFull) {
   const state = stateInit(source);
 
-  // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????
-  ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);
 
-  // I think we didnt use it quite often
-  // ReactReplacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
+  configureReplacer(state, isFull);
 
-  // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
-  if (isFull) {
-    ReactReplacer.previewText();
-  }
+  // // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????
+  // ReactReplacer.replaceMDBinded = replaceMarkdown.bind(state);
 
-  ReactReplacer.comments();
-  ReactReplacer.typography();
+  // // I think we didnt use it quite often
+  // // ReactReplacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
-  ReactReplacer.ulList();
-  // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
-  //   ReactReplacer.olList()
+  // // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
+  // if (isFull) {
+  //   ReactReplacer.previewText();
+  // }
 
-  ReactReplacer.blockQuote();
-  ReactReplacer.hr();
-  ReactReplacer.paragraph();
+  // ReactReplacer.comments();
+  // ReactReplacer.typography();
 
-  // TODO CHECK CASES WHEN CONTENT CAN HAVE EMPTY LISTS OR BLOCKQUOTE
-  //   ReactReplacer.emptyUl();
-  //   ReactReplacer.emptyOl();
-  //   ReactReplacer.emptyBlockQuote();
+  // ReactReplacer.ulList();
+  // // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
+  // //   ReactReplacer.olList()
 
-  ReactReplacer.br();
-  ReactReplacer.sponsorship();
-  ReactReplacer.mem();
-  ReactReplacer.separator();
+  // ReactReplacer.blockQuote();
+  // ReactReplacer.hr();
+  // ReactReplacer.paragraph();
+
+  // // TODO CHECK CASES WHEN CONTENT CAN HAVE EMPTY LISTS OR BLOCKQUOTE
+  // //   ReactReplacer.emptyUl();
+  // //   ReactReplacer.emptyOl();
+  // //   ReactReplacer.emptyBlockQuote();
+
+  // ReactReplacer.br();
+  // ReactReplacer.sponsorship();
+  // ReactReplacer.mem();
+  // ReactReplacer.separator();
 
   // console.log( state )
 
