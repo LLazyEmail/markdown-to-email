@@ -80,7 +80,7 @@ add `[separator]`
 ## Work principles
 The parser reads source file from `source/source.md` and based on opening tag renders goes in `layouts` folder and chooses relevant typography or section (sponsorship) element. Supported tags displayed in this document.
 
-
+![mindmap](Mind Map.png)
 
 #### Remark plugins to try later later later
 - https://github.com/remarkjs/remark-html
