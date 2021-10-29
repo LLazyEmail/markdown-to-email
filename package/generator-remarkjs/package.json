@@ -8,5 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vadim Putrov",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "remark-parse": "^10.0.0",
+    "unified": "^10.1.0"
+  }
 }
