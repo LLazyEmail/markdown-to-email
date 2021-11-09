@@ -1,10 +1,10 @@
-import { address } from './partials/address';
-import { copyrights } from './partials/copyrights';
-import { fonts } from './partials/fonts';
-import { headStyles } from './partials/head-styles';
-import { newsletterSponsorshipLink } from './partials/newsletter-sponsorship-link';
-import { unsubscribe } from './partials/unsubscribe';
-import head from './partials/head';
+import { address } from './templates/address';
+import { copyrights } from './templates/copyrights';
+import { fonts } from './templates/fonts';
+import { headStyles } from './templates/head-styles';
+import { newsletterSponsorshipLink } from './templates/newsletter-sponsorship-link';
+import { unsubscribe } from './templates/unsubscribe';
+import head from './templates/head';
 
 const misc = {
   address,
