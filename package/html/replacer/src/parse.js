@@ -34,19 +34,6 @@ function parse(source) {
 
   configureReplacer(state);
 
-  // // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????
-  // Replacer.replaceMDBinded = replaceMarkdown.bind(state);
-
-  // // I think this version isnt working well
-  // Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
-
-  // Replacer.previewText();
-  // // Replacer.replaceMDBindedPreviewText();
-  // Replacer.comments();
-  // // ---
-  // Replacer.typography();
-
-  // Replacer.miscellaneous();
 
   // i'm adding it only because error warning didnt return red stuff
   state.innerCheckErrors();
