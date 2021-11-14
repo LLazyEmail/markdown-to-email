@@ -1,4 +1,4 @@
-import Misc from '../misc';
+import Misc from '../../misc';
 
 const {
     address,
