@@ -9,7 +9,10 @@
 
 // TODO: finish and fix this thing. it was done by Serge quickly,
   // and ruined a lot of our logic
-import htmlLayouts from 'atherdon-newsletter-js-layouts';
+// import htmlLayouts from 'atherdon-newsletter-js-layouts';
+
+
+import htmlLayouts from 'atherdon-old-newsletter-js-outertemplate';
 
 // console.log(htmlLayouts); 
 
@@ -31,7 +34,13 @@ const MESSAGE_HTML_CONTENT_ONLY = 'The content has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE = 'The full-template has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE2 = 'The full-template has been parsed successfully2';
 
-const { fullTemplate, fullTemplateOLD } = htmlLayouts;
+const { 
+  fullTemplate, fullTemplateOLD, 
+  
+  generateEmptyTemplateComponent, generateTemplateComponent 
+} = htmlLayouts;
+
+// const { fullTemplate, fullTemplateOLD } = htmlLayouts;
 
 function generateFullTemplate2(sourceFile) {
   const { content, warnings, previewText } = parseFullTHing({ source: sourceFile });
