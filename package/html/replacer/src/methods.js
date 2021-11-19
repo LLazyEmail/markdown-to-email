@@ -11,8 +11,13 @@
   // and ruined a lot of our logic
 // import htmlLayouts from 'atherdon-newsletter-js-layouts';
 
-
+// rename too something else, because we have a mix there
 import htmlLayouts from 'atherdon-old-newsletter-js-outertemplate';
+
+const {
+  generateTemplateComponent,
+  generateEmptyTemplateComponent
+} = htmlLayouts; 
 
 // console.log(htmlLayouts); 
 
@@ -105,7 +110,15 @@ const generateContentOnly = (sourceFile) =>  {
 //   printMessage(message, 'green2');
 // }
 
-
+//--------------
+function compileEmptyTemplate(){
+  generateEmptyTemplateComponent();
+}
+//--------------
+function compileTemplate(){
+  generateTemplateComponent()
+}
+//--------------
 
 export {
   // generateContentOnly,
@@ -117,5 +130,7 @@ export {
   MESSAGE_HTML_CONTENT_ONLY,
   MESSAGE_HTML_FULL_TEMPLATE,
   MESSAGE_HTML_FULL_TEMPLATE2,
-
+  
+  compileEmptyTemplate,
+  compileTemplate
 };
