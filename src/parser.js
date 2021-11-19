@@ -9,6 +9,13 @@ const {
   generateReactFullTemplate,
 } = require('atherdon-newsletter-react-replacer');
 
+
+//const {
+//  generateEmptyTemplateComponent,
+//  generateTemplateComponent
+//} = require('atherdon-old-newsletter-js-outertemplate');
+
+
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
 
@@ -31,6 +38,14 @@ switch (process.env.PARSE) {
 
   case 'reactFull':
     generateReactFullTemplate(FULL_SOURCE);
+    break;
+
+  
+  case 'plain-empty':
+    //generateReactFullTemplate(FULL_SOURCE);
+    break;
+  case 'plain-template':
+    //generateReactFullTemplate(FULL_SOURCE);
     break;
 
   default:
