@@ -3,6 +3,9 @@ import {
   // generateFullTemplate, 
   // generateContentOnly,
 
+
+  
+
 } from './methods'
 
 // import ReactReplacer from './replace';

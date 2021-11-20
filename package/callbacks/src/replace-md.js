@@ -10,7 +10,7 @@ function extractOptions(converter, key){
   return converter.key;
 }
 
-function replaceMarkdownNew(key){
+function replaceMarkdownNew( key ){
 
   
   const {regexp, callback} = extractOptions(converter, key);

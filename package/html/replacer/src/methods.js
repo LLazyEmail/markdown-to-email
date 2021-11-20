@@ -11,13 +11,15 @@
   // and ruined a lot of our logic
 // import htmlLayouts from 'atherdon-newsletter-js-layouts';
 
+
+
 // rename too something else, because we have a mix there
 import htmlLayouts from 'atherdon-old-newsletter-js-outertemplate';
 
-const {
-  generateTemplateComponent,
-  generateEmptyTemplateComponent
-} = htmlLayouts; 
+// const {
+//   generateTemplateComponent,
+//   generateEmptyTemplateComponent
+// } = htmlLayouts; 
 
 // console.log(htmlLayouts); 
 
@@ -42,7 +44,9 @@ const MESSAGE_HTML_FULL_TEMPLATE2 = 'The full-template has been parsed successfu
 const { 
   fullTemplate, fullTemplateOLD, 
   
-  generateEmptyTemplateComponent, generateTemplateComponent 
+  
+  generateEmptyTemplateComponent, 
+  generateTemplateComponent 
 } = htmlLayouts;
 
 // const { fullTemplate, fullTemplateOLD } = htmlLayouts;
@@ -116,7 +120,7 @@ function compileEmptyTemplate(){
 }
 //--------------
 function compileTemplate(){
-  generateTemplateComponent()
+  generateTemplateComponent();
 }
 //--------------
 

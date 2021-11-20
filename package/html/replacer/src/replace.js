@@ -3,7 +3,7 @@
 
 // import * as constants from 'atherdon-newsletter-constants';
 
-
+// ---------------------------------
 
 import { 
   PlainCallbacks, newLine 
@@ -36,6 +36,11 @@ const {
 } = PlainCallbacks;
 
 const { previewText, separator } = PlainCallbacks;
+// ---------------------------------
+
+
+
+
 
 
 

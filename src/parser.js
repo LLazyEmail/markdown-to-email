@@ -10,10 +10,10 @@ const {
 } = require('atherdon-newsletter-react-replacer');
 
 
-//const {
-//  generateEmptyTemplateComponent,
-//  generateTemplateComponent
-//} = require('atherdon-old-newsletter-js-outertemplate');
+const {
+ generateEmptyTemplateComponent,
+ generateTemplateComponent
+} = require('atherdon-old-newsletter-js-outertemplate');
 
 
 // @TODO add path, in order to make it work PERFECTLY
@@ -40,13 +40,15 @@ switch (process.env.PARSE) {
     generateReactFullTemplate(FULL_SOURCE);
     break;
 
-  
-  case 'plain-empty':
-    //generateReactFullTemplate(FULL_SOURCE);
+  //------------------
+  case 'plainEmpty':
+    generateEmptyTemplateComponent();
     break;
-  case 'plain-template':
-    //generateReactFullTemplate(FULL_SOURCE);
+
+  case 'plainTemplate':
+    generateTemplateComponent();
     break;
+  //------------------
 
   default:
     // generateFullTemplate(FULL_SOURCE);
