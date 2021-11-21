@@ -2,14 +2,16 @@ const {
   // generateContentOnly, // depricated method
   generateFullTemplate2,
   // generateFullTemplate,
+
+  compileEmptyTemplate,
+  compileTemplate 
 } = require('atherdon-newsletter-html-replacer');
 
 const {
   generateReactContent,
   generateReactFullTemplate,
 
-  compileEmptyTemplate,
-  compileTemplate 
+
 } = require('atherdon-newsletter-react-replacer');
 
 
