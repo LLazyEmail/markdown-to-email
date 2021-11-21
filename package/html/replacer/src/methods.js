@@ -116,11 +116,26 @@ const generateContentOnly = (sourceFile) =>  {
 
 //--------------
 function compileEmptyTemplate(){
-  generateEmptyTemplateComponent();
+
+  const content  = generateEmptyTemplateComponent();
+  const fileName = generateTemplateName('lit-empty');
+
+  writeHTML(fileName, content);
+
+  const message = 'Testing LIT template';
+  printMessage(message, 'green2');
+
 }
 //--------------
 function compileTemplate(){
-  generateTemplateComponent();
+  const content  = generateTemplateComponent();
+
+  const fileName = generateTemplateName('lit-template');
+
+  writeHTML(fileName, content);
+
+  const message = 'Testing LIT template';
+  printMessage(message, 'green2');
 }
 //--------------
 

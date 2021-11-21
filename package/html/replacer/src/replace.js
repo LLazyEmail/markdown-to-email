@@ -50,7 +50,8 @@ const { previewText, separator } = PlainCallbacks;
 // we need to pass all constants somewhere, but not to the replaceWrapper
 
 class Replace {
-  constructor(constants) {
+  // constructor(constants) {
+  constructor() {
 
 
     // this._constants = constants;
