@@ -13,7 +13,7 @@ function extractOptions(converter, key){
 function replaceMarkdownNew( key ){
 
   
-  const {regexp, callback} = extractOptions(converter, key);
+  const { regexp, callback } = extractOptions(converter, key);
   
   // const {regexp, callback} = options;
 
@@ -35,6 +35,12 @@ function replaceMarkdownNew( key ){
   //   }
     
 }
+
+
+
+// THIS WILL BE BROKEN SOOOOON
+// this.replaceMDBinded(this._constants.REGEXP_PREVIEW_TEXT, previewText);
+// this.replaceMDBinded("previewText");
 
 function replaceMarkdown(regexp, callback) {
     

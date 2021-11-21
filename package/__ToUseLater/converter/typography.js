@@ -20,6 +20,7 @@
 //   REGEXP_EMPTY_UL,
 //   REGEXP_EMPTY_OL   
 // } = require('atherdon-newsletter-constants');
+
 import { 
   PlainCallbacks
 } from 'atherdon-callbacks';

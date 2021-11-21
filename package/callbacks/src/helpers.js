@@ -7,6 +7,14 @@ import reactLayouts from 'atherdon-newsletter-react';
 
 
 
+
+
+console.log(layouts);
+
+
+
+
+
 const platform = os.platform();
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 

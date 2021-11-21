@@ -114,6 +114,10 @@ const generateContentOnly = (sourceFile) =>  {
 //   printMessage(message, 'green2');
 // }
 
+
+
+
+
 //--------------
 function compileEmptyTemplate(){
 
