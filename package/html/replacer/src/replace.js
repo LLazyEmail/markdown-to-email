@@ -219,4 +219,5 @@ class Replace {
 
 }
 
-export default new Replace(constants);
+export default new Replace();
+// export default new Replace(constants);

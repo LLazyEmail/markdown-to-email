@@ -1,10 +1,18 @@
+// ----------------------------
+// Delete it later
+const {
+  writeHTML,  
+  generateTemplateName,
+} = require('markup-generator');
+// ----------------------------
+
 const {
   // generateContentOnly, // depricated method
   generateFullTemplate2,
   // generateFullTemplate,
 
-  compileEmptyTemplate,
-  compileTemplate 
+  // compileEmptyTemplate,
+  // compileTemplate 
 } = require('atherdon-newsletter-html-replacer');
 
 const {
@@ -15,10 +23,10 @@ const {
 } = require('atherdon-newsletter-react-replacer');
 
 
-// const {
-//  generateEmptyTemplateComponent,
-//  generateTemplateComponent
-// } = require('atherdon-old-newsletter-js-outertemplate');
+const {
+ generateEmptyTemplateComponent,
+ generateTemplateComponent
+} = require('atherdon-old-newsletter-js-outertemplate');
 
 
 // @TODO add path, in order to make it work PERFECTLY
@@ -47,11 +55,20 @@ switch (process.env.PARSE) {
 
   //------------------
   case 'plainEmpty':
-    compileEmptyTemplate();
+    // compileEmptyTemplate();
+    // generateEmptyTemplateComponent()
+
+
+    const content  = generateEmptyTemplateComponent();
+    const fileName = generateTemplateName('lit-empty');
+  
+    writeHTML(fileName, content);
+    
     break;
 
   case 'plainTemplate':
-    compileTemplate();
+    // compileTemplate();
+    generateTemplateComponent()
     break;
   //------------------
 

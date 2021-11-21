@@ -1,6 +1,6 @@
 {
   "name": "atherdon-newsletter-html-replacer",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",

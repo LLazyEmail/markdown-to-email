@@ -1,5 +1,8 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/atherdon/markdown-to-email)
 
+
+## Replacer v.0.4 working fine
+
 # Markdown to email template generator
 This simple and light tool generates email from markdown. 
 The command is `npm run parse`. 
