@@ -2,19 +2,10 @@ import {
   replaceWrapper, newLine 
 } from './helpers';
 
+//----------------------
+
 const hr = `${newLine}<hr />`;
 const empty = '';
-
-function previewText(text, content) {
-  const config = {
-    content,
-  };
-
-  this.previewText = true;
-
-
-  return replaceWrapper('previewText', config, 'body');
-}
 
 function code(text, content) {
   const config = {
@@ -82,6 +73,7 @@ function link(text, title, href) {
   return result;
 }
 
+
 function blockquote(text, tmp, item) {
   const config = {
     content: `${newLine}${item.trim()}`,
@@ -91,6 +83,11 @@ function blockquote(text, tmp, item) {
   const result = replaceWrapper('blockquote', config);
   return result;
 }
+
+
+
+
+
 
 function mem(text, src, href, altText) {
   const config = {
@@ -104,6 +101,9 @@ function mem(text, src, href, altText) {
   const result = replaceWrapper('image', config);
   return result;
 }
+
+
+
 
 function header(text, chars, content) {
   const config = {
@@ -134,6 +134,17 @@ function separator() {
   )}${newLine}`;
 
   return result;
+}
+
+function previewText(text, content) {
+  const config = {
+    content,
+  };
+
+  this.previewText = true;
+
+
+  return replaceWrapper('previewText', config, 'body');
 }
 
 export {

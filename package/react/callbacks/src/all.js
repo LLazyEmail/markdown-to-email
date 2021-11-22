@@ -12,19 +12,19 @@ import {
     empty,
     previewText,
     separator
-  } from '../simple';
+  } from './simple';
   
   import {
     image,
     paragraphWrapper,
     sponsorship,
     br
-  } from '../callbacks';
+  } from './callbacks';
   
   import {
     ulList,
     olList
-  } from '../lists';
+  } from './lists';
   
   export default {
     strong,
