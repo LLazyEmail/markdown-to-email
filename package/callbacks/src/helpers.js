@@ -5,28 +5,6 @@ import { mapKeys } from 'lodash';
 
 
 
-
-
-
-import layouts from 'atherdon-newsletter-js-layouts';
-
-
-
-
-import reactLayouts from 'atherdon-newsletter-react';
-
-
-
-
-
-console.log(layouts);
-
-console.log(reactLayouts);
-
-
-
-
-
 const platform = os.platform();
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
@@ -68,34 +46,7 @@ function loopForWrapper(config, wrapper){
   return wrapper;
 }
 
-// basically, it's a copy of replaceWrapper functions
 
-// config.folder
-// config.type aka plain or react
-function relieve(name, config){
-
-    
-  let folder = config.folder || 'typography';
-
-// we need to have an if, for passing plain or react stuff
-// let wrapper = getWrapper(layouts, folder, name)
-  
-  switch(config.type){
-    case 'plain':
-      // let wrapper = getWrapper(layouts, folder, name)
-      replaceWrapper(name, config, folder);
-      break;
-      
-    case 'react':
-      // let wrapper = getWrapper(reactLayouts, folder, name)
-      replaceReactWrapper(name, config, folder);
-      break;
-      
-    default:
-      break;
-  }
-  
-}
 
 
 
@@ -108,7 +59,7 @@ function _NewReplace(name, config){
 
   // let updatedString = loopForWrapper(configCopy, wrapper);
   // return updatedString;
-  return generateNewString(name, configCopy);
+  return generateNewString(name, config);
 }
 
 
@@ -123,35 +74,40 @@ function generateNewString(name, config){
 
 
 
-function replaceWrapper(name, config, folder = 'typography') {
-
-  // TODO later we can get rid of it completely.
-  // right now it's only for back campatibility purposes
-  let configCopy = Object.assign(config, { 
-      'layouts': layouts, 
-      'folder': folder 
-    })
-
-  // console.log(configCopy);
-
-  return generateNewString(name, configCopy);
-}
+//-----------------
 
 
 
-function replaceReactWrapper(name, config, folder = 'typography') {
-  // console.log(reactLayouts.Typography.strong);
-  // console.log("name", config);
+// moving into separated callbacks
+// function replaceWrapper(name, config, folder = 'typography') {
 
-  let configCopy = Object.assign(config, {
-    'layouts': reactLayouts, 
-    'folder': folder 
-  })
+//   // TODO later we can get rid of it completely.
+//   // right now it's only for back campatibility purposes
+//   let configCopy = Object.assign(config, { 
+//       'layouts': layouts, 
+//       'folder': folder 
+//     })
+
+//   // console.log(configCopy);
+
+//   return generateNewString(name, configCopy);
+// }
+
+
+
+// function replaceReactWrapper(name, config, folder = 'typography') {
+//   // console.log(reactLayouts.Typography.strong);
+//   // console.log("name", config);
+
+//   let configCopy = Object.assign(config, {
+//     'layouts': reactLayouts, 
+//     'folder': folder 
+//   })
  
-  // console.log(configCopy);
+//   // console.log(configCopy);
 
-  return generateNewString(name, configCopy);
-}
+//   return generateNewString(name, configCopy);
+// }
 
 
 
@@ -159,8 +115,10 @@ function replaceReactWrapper(name, config, folder = 'typography') {
 export {
   newLine,
 
-  replaceReactWrapper,
-  replaceWrapper,
+
+  generateNewString,
+  // replaceReactWrapper,
+  // replaceWrapper,
 
   relieve,
 

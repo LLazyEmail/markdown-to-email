@@ -9,27 +9,9 @@ const empty = '';
 // const strong = "<strong>$2$3</strong>";
 
 
-// TODO remove unused `text` argument
-function previewText(text, content) {
-  const config = {
-    content:content,
-    folder: 'body'
-  };
 
 
 
-  this.errors.previewText = true;
-
-
-
-  const replaced = replaceWrapper(
-    'previewText', 
-    config,
-    'body'
-  );
-
-  return replaced;
-}
 
 function strong(text, doubleAsterix, content, asterix) {
   const config = {
@@ -64,6 +46,31 @@ function blockquote(text, tmp, item) {
   return `${newLine}<blockquote>${item.trim()}</blockquote>`;
 }
 
+
+
+// TODO remove unused `text` argument
+function previewText(text, content) {
+  const config = {
+    content:content,
+    folder: 'body'
+  };
+
+
+
+  this.errors.previewText = true;
+
+
+
+  const replaced = replaceWrapper(
+    'previewText', 
+    config,
+    'body'
+  );
+
+  return replaced;
+}
+
+
 function mem(text, src, href, altText) {
   const config = {
     src: src.trim(),
@@ -79,6 +86,8 @@ function mem(text, src, href, altText) {
   
   return replaced;
 }
+
+
 
 function header(text, chars, content) {
   const config = {
@@ -100,6 +109,8 @@ function header(text, chars, content) {
 
   return result;
 }
+
+
 
 export {
   strong,

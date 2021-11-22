@@ -2,7 +2,7 @@
 // HELPER FROM MAIN CALLBACKS
 import { 
   replaceReactWrapper, newLine 
-} from './helpers';
+} from '../helpers';
 
 
 
