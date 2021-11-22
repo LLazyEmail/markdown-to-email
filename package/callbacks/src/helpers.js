@@ -2,6 +2,8 @@ import os from 'os';
 
 import { mapKeys } from 'lodash';
 
+
+
 import layouts from 'atherdon-newsletter-js-layouts';
 
 import reactLayouts from 'atherdon-newsletter-react';
@@ -142,5 +144,8 @@ export {
   replaceReactWrapper,
   replaceWrapper,
 
-  relieve
+  relieve,
+
+
+  _NewReplace
 };
