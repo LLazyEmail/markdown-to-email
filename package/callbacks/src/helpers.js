@@ -3,6 +3,7 @@ import os from 'os';
 import { mapKeys } from 'lodash';
 
 import layouts from 'atherdon-newsletter-js-layouts';
+
 import reactLayouts from 'atherdon-newsletter-react';
 
 
@@ -11,12 +12,16 @@ import reactLayouts from 'atherdon-newsletter-react';
 
 console.log(layouts);
 
+console.log(reactLayouts);
+
 
 
 
 
 const platform = os.platform();
 const newLine = platform === 'win32' ? '\r\n' : '\n';
+
+
 
 
 function getWrapper(name, config){

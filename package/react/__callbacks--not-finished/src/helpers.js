@@ -16,6 +16,9 @@ const newLine = platform === 'win32' ? '\r\n' : '\n';
 
 
 
+
+
+
 function replaceReactWrapper(wrapperName, config, folder = 'typography') {
   // console.log(reactLayouts.Typography.strong);
   // console.log("name", config);
