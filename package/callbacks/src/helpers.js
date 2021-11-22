@@ -4,7 +4,14 @@ import { mapKeys } from 'lodash';
 
 
 
+
+
+
+
 import layouts from 'atherdon-newsletter-js-layouts';
+
+
+
 
 import reactLayouts from 'atherdon-newsletter-react';
 
@@ -33,6 +40,7 @@ function getWrapper(name, config){
   let wrapper = layouts[folder][name];
   return wrapper;
 }
+
 
 // here we can have a problem, because we're passing more information into a config that it was before
 
@@ -89,6 +97,8 @@ function relieve(name, config){
   
 }
 
+
+
 function _NewReplace(name, config){
   // TODO later we can get rid of it completely.
   // right now it's only for back campatibility purposes
@@ -101,6 +111,8 @@ function _NewReplace(name, config){
   return generateNewString(name, configCopy);
 }
 
+
+
 function generateNewString(name, config){
   let wrapper = getWrapper(name, config)
   
@@ -108,6 +120,8 @@ function generateNewString(name, config){
 
   return updatedString;
 }
+
+
 
 function replaceWrapper(name, config, folder = 'typography') {
 
@@ -123,6 +137,8 @@ function replaceWrapper(name, config, folder = 'typography') {
   return generateNewString(name, configCopy);
 }
 
+
+
 function replaceReactWrapper(name, config, folder = 'typography') {
   // console.log(reactLayouts.Typography.strong);
   // console.log("name", config);
@@ -136,6 +152,8 @@ function replaceReactWrapper(name, config, folder = 'typography') {
 
   return generateNewString(name, configCopy);
 }
+
+
 
 
 export {

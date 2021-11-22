@@ -18,11 +18,13 @@ export {
   ReactCallbacks,
 
   
+
+
   newLine,
   replaceWrapper,
 
-  // replaceReactWrapper,
 
+  replaceReactWrapper,
   replaceMarkdown,
   replaceMarkdownPreviewText
 };

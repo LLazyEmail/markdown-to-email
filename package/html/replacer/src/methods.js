@@ -1,27 +1,8 @@
 // @TODO both layouts things can be moved out from importing it here.
 
-
-// import {  
-//   fullTemplate,
-
-//   fullTemplateOLD, 
-// } from 'atherdon-newsletter-js-layouts';
-
-// TODO: finish and fix this thing. it was done by Serge quickly,
-  // and ruined a lot of our logic
-// import htmlLayouts from 'atherdon-newsletter-js-layouts';
-
-
-
 // rename too something else, because we have a mix there
 import htmlLayouts from 'atherdon-old-newsletter-js-outertemplate';
 
-// const {
-//   generateTemplateComponent,
-//   generateEmptyTemplateComponent
-// } = htmlLayouts; 
-
-// console.log(htmlLayouts); 
 
 import {
   writeHTML,
@@ -49,10 +30,10 @@ const {
   generateTemplateComponent 
 } = htmlLayouts;
 
-// const { fullTemplate, fullTemplateOLD } = htmlLayouts;
 
 function generateFullTemplate2(sourceFile) {
-  const { content, warnings, previewText } = parseFullTHing({ source: sourceFile });
+  const { content, warnings, previewText } = 
+      parseFullTHing({ source: sourceFile });
 
   // ***
   checkWarnings(warnings);
@@ -132,6 +113,9 @@ function compileEmptyTemplate(){
 }
 //--------------
 function compileTemplate(){
+
+  // pass here a content thing that might
+
   const content  = generateTemplateComponent();
 
   const fileName = generateTemplateName('lit-template');
