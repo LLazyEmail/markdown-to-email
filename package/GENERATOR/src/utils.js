@@ -76,17 +76,7 @@ const generateTemplateName = (suffix, ext = 'html') => `${suffix}-${Date.now()}.
 //   return bytes;
 // };
 
-// if (!title) {
-//   throw new Error('`title` is a required option for `renderTemplate`');
-// }
 
-// if (!bodyContent) {
-//   throw new Error('`bodyContent` is a required option for `renderTemplate`');
-// }
-
-// if (!previewText) {
-//   throw new Error('`previewText` is a required option for `renderTemplate`');
-// }
 
 //-----------
 
