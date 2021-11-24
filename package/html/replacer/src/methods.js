@@ -32,39 +32,53 @@ const {
 
 
 function generateFullTemplate2(sourceFile) {
+  
+  // should warnings be returned here?  
   const { content, warnings, previewText } = 
       parseFullTHing({ source: sourceFile });
 
   // ***
-  checkWarnings(warnings);
+  //checkWarnings(warnings);
 
   // ***
-  checkHtml(content);
+  //checkHtml(content);
+  
+  verification(warnings, content);
 
   //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
   // console.log(content);
 
   // throw new Error("my error message");
 
-  const fullContent = fullTemplate({ content, previewText });
+  
+  
+  
+  const fullTemplate = fullTemplate({ content, previewText });
 
-  const fileName = generateTemplateName('full-template-2');
+  //const fileName = generateTemplateName('full-template-2');
 
-  writeHTML(fileName, fullContent);
+  //writeHTML(fileName, fullTemplate);
 
-  const message = 'The full-template has been parsed successfully2';
-  printMessage(message, 'green2');
+  //const message = 'The full-template has been parsed successfully2';
+  //printMessage(message, 'green2');
+  
+  deliver(fullTemplate, 'full-template-2', MESSAGE_HTML_FULL_TEMPLATE2);
+  
 }
 
 function generateFullTemplate() {
   // same as from top
 
-  const fullContent = fullTemplateOLD({ content });
+  
+  
+  const template = fullTemplateOLD({ content });
 
-  const fileName = generateTemplateName('full-template');
+  //const fileName = generateTemplateName('full-template');
 
-  const message = 'The full-template has been parsed successfully';
-  printMessage(message, 'green2');
+  //const message = 'The full-template has been parsed successfully';
+  //printMessage(message, 'green2');
+  
+  deliver(template, 'full-template', MESSAGE_HTML_CONTENT_ONLY);
 }
 
 
@@ -75,15 +89,36 @@ const generateContentOnly = (sourceFile) =>  {
   const { content, warnings, previewText } = parse(sourceFile);
 
   // ***
-  checkWarnings(warnings);
+  //checkWarnings(warnings);
 
-  const fileName = generateTemplateName('content');
+  verification(warnings);
+  
+  
+  deliver(content, 'content', MESSAGE_HTML_CONTENT_ONLY);
+  
+  
+  //const fileName = generateTemplateName('content');
 
-  writeHTML(fileName, content);
+  //writeHTML(fileName, content);
 
-  const message = 'The content has been parsed successfully';
+  //const message = 'The content has been parsed successfully';
+  //printMessage(message, 'green2');
+
+}
+
+function generateInterior = (sourceFile) => {
+
+    const { content, warnings, previewText } = parse(sourceFile);
+  
+  verification(warnings);
+  
+}
+
+function deliver(template, name, message){
+  
+  const fileName = generateTemplateName(name);
+  writeHTML(fileName, template);
   printMessage(message, 'green2');
-
 }
 
 // function generateFullTemplate(sourceFile) {
@@ -96,34 +131,58 @@ const generateContentOnly = (sourceFile) =>  {
 // }
 
 
+function verification(warnings, content=false){
 
+  // ***
+  if(warnings) checkWarnings(warnings);
+
+  // ***
+  if(content) checkHtml(content);
+  
+}
 
 
 //--------------
 function compileEmptyTemplate(){
 
-  const content  = generateEmptyTemplateComponent();
-  const fileName = generateTemplateName('lit-empty');
+  //---------------------
+  
+  
+  
+  const cleanTemplate  = generateEmptyTemplateComponent();
+  
+  //const fileName = generateTemplateName('lit-empty');
 
-  writeHTML(fileName, content);
+  //writeHTML(fileName, content);
 
-  const message = 'Testing LIT template';
-  printMessage(message, 'green2');
+  //const message = 'Testing LIT template';
+  //printMessage(message, 'green2');
+  
+  
+  deliver(cleanTemplate, 'lit-empty', 'Testing LIT template');
 
 }
 //--------------
+
 function compileTemplate(){
 
+  
+  //---------------------
+  
+  
   // pass here a content thing that might
 
-  const content  = generateTemplateComponent();
+  const template  = generateTemplateComponent();
 
-  const fileName = generateTemplateName('lit-template');
+  //const fileName = generateTemplateName('lit-template');
 
-  writeHTML(fileName, content);
+  //writeHTML(fileName, content);
 
-  const message = 'Testing LIT template';
-  printMessage(message, 'green2');
+  //const message = 'Testing LIT template';
+  //printMessage(message, 'green2');
+  
+  
+  deliver(template, 'lit-template', 'Testing LIT template');
 }
 //--------------
 
