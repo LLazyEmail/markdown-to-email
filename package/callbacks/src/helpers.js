@@ -1,21 +1,25 @@
 import os from 'os';
-
 import { mapKeys } from 'lodash';
 
 
 
-
-const platform = os.platform();
-const newLine = platform === 'win32' ? '\r\n' : '\n';
+//const platform = os.platform();
+//const newLine = platform === 'win32' ? '\r\n' : '\n';
 
 
 
 
 function getWrapper(name, config){
 
+  
+  
   let { layouts, folder } = config;
 
+  console.log(layouts);
+  
   let wrapper = layouts[folder][name];
+  console.log(wrapper);
+  
   return wrapper;
 }
 
@@ -24,13 +28,20 @@ function getWrapper(name, config){
 
 function loopForWrapper(config, wrapper){
 
-  // console.log(config);
+   console.log(config);
 
+   console.log(wrapper);
+  
+  
+  
+  
+  
   // _.mapKeys(config, function(value, key) {
   //   return key + value;
   // });
 
 
+  
   // @TODO replace with lodash
   Object.keys(config).forEach((name) => {
 
@@ -47,33 +58,14 @@ function loopForWrapper(config, wrapper){
 }
 
 
-
-
-
-function _NewReplace(name, config){
-  // TODO later we can get rid of it completely.
-  // right now it's only for back campatibility purposes
-  // let configCopy = Object.assign(config, { 'layouts':layouts, 'folder': folder })
-  
-  // let wrapper = getWrapper(name, configCopy)
-
-  // let updatedString = loopForWrapper(configCopy, wrapper);
-  // return updatedString;
-  return generateNewString(name, config);
-}
-
-
-
 function generateNewString(name, config){
   let wrapper = getWrapper(name, config)
   
+  // stopping it here....
   let updatedString = loopForWrapper(config, wrapper);
 
   return updatedString;
 }
-
-
-
 //-----------------
 
 
@@ -111,9 +103,21 @@ function generateNewString(name, config){
 
 
 
+//function _NewReplace(name, config){
+//  // TODO later we can get rid of it completely.
+//  // right now it's only for back campatibility purposes
+//  // let configCopy = Object.assign(config, { 'layouts':layouts, 'folder': folder })
+  
+//  // let wrapper = getWrapper(name, configCopy)
+
+//  // let updatedString = loopForWrapper(configCopy, wrapper);
+//  // return updatedString;
+//  return generateNewString(name, config);
+//}
+
 
 export {
-  newLine,
+  //newLine,
 
 
   generateNewString,
