@@ -38,11 +38,6 @@ function generateFullTemplate2(sourceFile) {
       parseFullTHing({ source: sourceFile });
 
   // ***
-  //checkWarnings(warnings);
-
-  // ***
-  //checkHtml(content);
-  
   verification(warnings, content);
 
   //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
@@ -54,14 +49,7 @@ function generateFullTemplate2(sourceFile) {
   
   
   const fullTemplate = fullTemplate({ content, previewText });
-
-  //const fileName = generateTemplateName('full-template-2');
-
-  //writeHTML(fileName, fullTemplate);
-
-  //const message = 'The full-template has been parsed successfully2';
-  //printMessage(message, 'green2');
-  
+ 
   deliver(fullTemplate, 'full-template-2', MESSAGE_HTML_FULL_TEMPLATE2);
   
 }
@@ -72,11 +60,6 @@ function generateFullTemplate() {
   
   
   const template = fullTemplateOLD({ content });
-
-  //const fileName = generateTemplateName('full-template');
-
-  //const message = 'The full-template has been parsed successfully';
-  //printMessage(message, 'green2');
   
   deliver(template, 'full-template', MESSAGE_HTML_CONTENT_ONLY);
 }
@@ -89,26 +72,16 @@ const generateContentOnly = (sourceFile) =>  {
   const { content, warnings, previewText } = parse(sourceFile);
 
   // ***
-  //checkWarnings(warnings);
-
   verification(warnings);
   
   
   deliver(content, 'content', MESSAGE_HTML_CONTENT_ONLY);
   
-  
-  //const fileName = generateTemplateName('content');
-
-  //writeHTML(fileName, content);
-
-  //const message = 'The content has been parsed successfully';
-  //printMessage(message, 'green2');
-
 }
 
 function generateInterior = (sourceFile) => {
 
-    const { content, warnings, previewText } = parse(sourceFile);
+  const { content, warnings, previewText } = parse(sourceFile);
   
   verification(warnings);
   
@@ -151,14 +124,6 @@ function compileEmptyTemplate(){
   
   const cleanTemplate  = generateEmptyTemplateComponent();
   
-  //const fileName = generateTemplateName('lit-empty');
-
-  //writeHTML(fileName, content);
-
-  //const message = 'Testing LIT template';
-  //printMessage(message, 'green2');
-  
-  
   deliver(cleanTemplate, 'lit-empty', 'Testing LIT template');
 
 }
@@ -173,14 +138,6 @@ function compileTemplate(){
   // pass here a content thing that might
 
   const template  = generateTemplateComponent();
-
-  //const fileName = generateTemplateName('lit-template');
-
-  //writeHTML(fileName, content);
-
-  //const message = 'Testing LIT template';
-  //printMessage(message, 'green2');
-  
   
   deliver(template, 'lit-template', 'Testing LIT template');
 }
