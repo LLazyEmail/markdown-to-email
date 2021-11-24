@@ -3,6 +3,8 @@
 
 ## Replacer v.0.4 working fine
 
+## Methods in package/* might be broken for some time
+
 # Markdown to email template generator
 This simple and light tool generates email from markdown. 
 The command is `npm run parse`. 
