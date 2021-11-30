@@ -31,7 +31,7 @@
     "eslint-plugin-import": "2.25.3",
     "eslint-plugin-json": "3.1.0",
     "eslint-plugin-require-path-exists": "1.1.9",
-    "jest": "27.3.1"
+    "jest": "27.4.1"
   },
   "dependencies": {
     "atherdon-callbacks": "^1.10.0",
