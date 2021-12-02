@@ -1,40 +1,4 @@
 
-//-------------------------------------------
-import { ReactCallbacks } from 'atherdon-callbacks';
-
-const {
-  strong,
-  link,
-  blockquote,
-  mem,
-  header,
-  italic,
-  del,
-  q,
-  code,
-  hr,
-  empty,
-  previewText,
-  separator
-} = ReactCallbacks;
-
-
-const {
-  image,
-  paragraphWrapper,
-  sponsorship,
-  br
-} = ReactCallbacks;
-
-const {
-  ulList,
-  olList
-} = ReactCallbacks;
-
-
-//----------------------------------
-
-
 class ReactReplacer {
   constructor(constants) {
     
