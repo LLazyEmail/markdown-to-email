@@ -85,7 +85,7 @@ add `[separator]`
 ## Work principles
 The parser reads source file from `source/source.md` and based on opening tag renders goes in `layouts` folder and chooses relevant typography or section (sponsorship) element. Supported tags displayed in this document.
 
-![mindmap](https://raw.githubusercontent.com/atherdon/markdown-to-email/main/Mind%20Map.png)
+![mindmap](https://github.com/atherdon/markdown-to-email/blob/main/MindMap1.png?raw=true)
 
 
 
