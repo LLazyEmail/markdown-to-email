@@ -1,4 +1,4 @@
-import Callbacks from './all';
+import Callbacks from './methods/all';
 
 import {
   newLine, 

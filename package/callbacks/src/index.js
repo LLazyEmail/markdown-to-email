@@ -1,13 +1,17 @@
-import PlainCallbacks from './plain-version/index';
-import ReactCallbacks from './react/index';
+import PlainCallbacks from 'atherdon-html-callbacks';
+
+// import ReactCallbacks from './react/index';
 
 
 
 
 import {
-  newLine, 
-  replaceWrapper, 
-  replaceReactWrapper
+  // newLine, 
+  // replaceWrapper, 
+  // replaceReactWrapper
+
+  generateNewString, getWrapper
+
 } from './helpers';
 
 import {
@@ -17,16 +21,19 @@ import {
 
 export {
   PlainCallbacks,
-  ReactCallbacks,
+  // ReactCallbacks,
 
   
 
 
-  newLine,
-  replaceWrapper,
+  // newLine,
+  // replaceWrapper,
 
 
-  replaceReactWrapper,
+  // replaceReactWrapper,
   replaceMarkdown,
-  replaceMarkdownPreviewText
+  replaceMarkdownPreviewText,
+
+  generateNewString, getWrapper
+
 };

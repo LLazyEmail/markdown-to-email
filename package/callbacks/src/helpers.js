@@ -124,11 +124,10 @@ export {
   // replaceReactWrapper,
   // replaceWrapper,
 
-  relieve,
 
 
-  _NewReplace,
+  // _NewReplace,
 
-  getWrapper, generateNewString
+  getWrapper
 
 };
