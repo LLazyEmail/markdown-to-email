@@ -1,21 +1,21 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/atherdon/markdown-to-email)
 
 
-## Replacer v.0.4 working fine
+### Replacer v.0.4 working fine
 
-## Methods in package/* might be broken for some time
+### Methods in package/* might be broken for some time
 
-## Generator Module was moved out into https://github.com/LLazyEmail/generator-module
+### Generator Module was moved out into https://github.com/LLazyEmail/generator-module
 
 # Markdown to email template generator
-This simple and light tool generates email from markdown. 
-The command is `npm run parse`. 
+
+This simple and light tool generates email template from markdown. The command is `npm run parse`. 
 The path to markdown file must be `./source/source.md`, and output directory is `generated/newEmail.html`.
 
-We tried to create our own wheel, then we failed.
-Arthur get bored trying to fix it and make it work properly.
+We tried to create our own wheel, then we failed. Arthur get bored trying to fix it and make it work properly.
 So he just decide to google a working version that can solve his problems.
 
+Story: 
 0. I find this link https://gist.github.com/jbroadway/2836900
 1. then this link https://gist.github.com/budparr/112f08a3033dd878d0e271e2af61faef
 2. and then I added javascript into my google Search https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
@@ -24,10 +24,11 @@ So he just decide to google a working version that can solve his problems.
 5. then I find out that all template engines still sucks and decide to migrate "frontend" part to react
 6. i'm exploring the best known to me tools for markdown: remark and rehype. plus, as docusaurus using them and mdx format - we'll try it too
 
-`yarn parse`
+how to run a parser
 
+```yarn parse```
 
-Great Online Preview tool https://dillinger.io/
+if you need help with markdown - Great Online Preview tool https://dillinger.io/
 
 
 ## Syntax
