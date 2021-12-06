@@ -1,5 +1,6 @@
 import { 
-  replaceWrapper, newLine 
+  replaceWrapper, 
+  newLine 
 } from '../helpers';
 
 //----------------------

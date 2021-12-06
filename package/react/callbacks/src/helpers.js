@@ -58,5 +58,5 @@ export {
   newLine,
 
   // replaceWrapper,
-  replaceReactWrapper
+  // replaceReactWrapper
 };

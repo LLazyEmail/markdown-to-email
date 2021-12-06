@@ -2,7 +2,7 @@ import Callbacks from './methods/all';
 
 import {
   newLine, 
-  replaceWrapper, 
+  // replaceWrapper, 
 
 } from './helpers';
 
@@ -10,6 +10,6 @@ export {
   Callbacks,
   
   newLine,
-  replaceWrapper,
+  // replaceWrapper,
   
 };
