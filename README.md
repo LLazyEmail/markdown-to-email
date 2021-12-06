@@ -5,6 +5,8 @@
 
 ## Methods in package/* might be broken for some time
 
+## Generator Module was moved out into https://github.com/LLazyEmail/generator-module
+
 # Markdown to email template generator
 This simple and light tool generates email from markdown. 
 The command is `npm run parse`. 
