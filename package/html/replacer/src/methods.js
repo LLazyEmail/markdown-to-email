@@ -79,7 +79,7 @@ const generateContentOnly = (sourceFile) =>  {
   
 }
 
-function generateInterior = (sourceFile) => {
+const generateInterior = (sourceFile) => {
 
   const { content, warnings, previewText } = parse(sourceFile);
   
@@ -87,7 +87,7 @@ function generateInterior = (sourceFile) => {
   
 }
 
-function deliver(template, name, message){
+const deliver = (template, name, message) => {
   
   const fileName = generateTemplateName(name);
   writeHTML(fileName, template);

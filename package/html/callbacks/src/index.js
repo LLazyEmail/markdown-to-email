@@ -10,21 +10,21 @@ import {
     code,
     hr,
     empty
-  } from './simple';
+  } from './methods/simple';
   
   import {
     ulList,
     olList
-  } from './lists';
+  } from './methods/lists';
   
   import {
     image,
     paragraphWrapper,
     sponsorship,
     br
-  } from './callbacks';
+  } from './methods/callbacks';
   
-  import { separator } from './custom';
+  import { separator } from './methods/custom';
   
   export default {
     strong,

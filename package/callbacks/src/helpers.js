@@ -127,5 +127,8 @@ export {
   relieve,
 
 
-  _NewReplace
+  _NewReplace,
+
+  getWrapper, generateNewString
+
 };

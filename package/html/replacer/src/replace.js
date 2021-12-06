@@ -107,6 +107,8 @@ class Replace {
 
   template(){
     this.header();
+
+    
   }
   
   // test this part
