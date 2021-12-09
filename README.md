@@ -1,11 +1,10 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/atherdon/markdown-to-email)
 
+Maintainer notes:
 
-### Replacer v.0.4 working fine
-
-### Methods in package/* might be broken for some time
-
-### Generator Module was moved out into https://github.com/LLazyEmail/generator-module
+- Replacer v.0.4 working fine
+- Methods in package/* might be broken for some time
+- **Generator Module was moved out into https://github.com/LLazyEmail/generator-module**
 
 # Markdown to email template generator
 
@@ -90,7 +89,11 @@ The parser reads source file from `source/source.md` and based on opening tag re
 
 ![mindmap](https://github.com/atherdon/markdown-to-email/blob/main/MindMap1.png?raw=true)
 
+## Reasons to use generator instead of pretending that human errors didnt exists(especially human reactions on deadlines)
 
+![oops](https://raw.githubusercontent.com/atherdon/markdown-to-email/main/Correction.png)
+
+![ooops2](https://raw.githubusercontent.com/atherdon/markdown-to-email/main/Oops-I.png)
 
 Links
 - https://codepen.io/rh/pen/BoyNdy
