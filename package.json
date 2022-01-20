@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "atherdon-callbacks": "^1.10.0",
-    "atherdon-newsletter-html-replacer": "^0.4.0",
+    "atherdon-newsletter-html-replacer": "^0.9.0",
     "atherdon-newsletter-js-layouts": "^1.5.1",
     "atherdon-newsletter-react": "^1.0.11",
     "atherdon-newsletter-react-replacer": "^0.4.0",
