@@ -1,5 +1,8 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/atherdon/markdown-to-email)
 
+
+install  "pixel-email-cli" and try it https://github.com/LLazyEmail/pixel-email-cli
+
 Maintainer notes:
 
 - Replacer v.0.4 working fine
