@@ -76,8 +76,3 @@ switch (process.env.PARSE) {
     // generateFullTemplate(FULL_SOURCE);
     break;
 }
-
-// module.exports = {
-//   // generateContentOnly,
-//   // generateFullTemplate,
-// };
