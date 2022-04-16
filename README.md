@@ -8,7 +8,8 @@ Maintainer notes:
 - Replacer v.0.4 working fine
 - Methods in package/* might be broken for some time
 - **Generator Module was moved out into https://github.com/LLazyEmail/generator-module**
-- **Replacer for React DOM right now is broken. I'm moving it out into https://github.com/LLazyEmail/_trying-lit**
+- **Replacer for React DOM right now is broken. I'm moving it out into https://github.com/LLazyEmail/react-plain-template-example**
+- **React version isn't working now. Probably we'll skip few releases and make it work as it should be.**
 
 # Markdown to email template generator
 
