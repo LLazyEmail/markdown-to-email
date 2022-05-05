@@ -13,6 +13,7 @@
     "defaultT": "npm run checkFolders && cross-env PARSE=plainTemplate node ./src/parser",
     "test:react": "npm run checkFolders && jest ./src/parserMDReact/tests",
     "lint:fix": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
+    "lint": "eslint ./src --ignore-pattern \"./package.json\" ",
     "build:small": "npm run checkFolders && node ./src/index.js",
     "checkFolders": "node ./checkFolders",
     "test": "npm run checkFolders && jest ./src/tests",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@babel/core": "7.17.9",
     "@babel/eslint-parser": "7.17.0",
+    "babel-eslint": "10.1.0",
     "eslint": "8.13.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.26.0",
