@@ -1,9 +1,6 @@
 // ----------------------------
 // Delete it later
-const {
-  writeHTML,  
-  generateTemplateName,
-} = require('markup-generator');
+const { writeHTML, generateTemplateName } = require('markup-generator');
 // ----------------------------
 
 const {
@@ -12,22 +9,18 @@ const {
   // generateFullTemplate,
 
   // compileEmptyTemplate,
-  // compileTemplate 
+  // compileTemplate
 } = require('atherdon-newsletter-html-replacer');
 
 const {
   generateReactContent,
   generateReactFullTemplate,
-
-
 } = require('atherdon-newsletter-react-replacer');
 
-
 const {
- generateEmptyTemplateComponent,
- generateTemplateComponent
+  generateEmptyTemplateComponent,
+  generateTemplateComponent,
 } = require('atherdon-old-newsletter-js-outertemplate');
-
 
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
@@ -35,11 +28,8 @@ const FULL_SOURCE = 'source/source.md';
 // I left this variable here just for depricated methods. it's time to use full-template at all places
 const CONTENT_SOURCE = 'source/source.md';
 
-
-
 switch (process.env.PARSE) {
   case 'full':
-
     // generateFullTemplate();
     generateFullTemplate2(FULL_SOURCE);
     break;
@@ -58,17 +48,19 @@ switch (process.env.PARSE) {
     // compileEmptyTemplate();
     // generateEmptyTemplateComponent()
 
-
-    const content  = generateEmptyTemplateComponent();
+    // TODO find out and remove disabling rules
+    // eslint-disable-next-line no-case-declarations
+    const content = generateEmptyTemplateComponent();
+    // eslint-disable-next-line no-case-declarations
     const fileName = generateTemplateName('lit-empty');
-  
+
     writeHTML(fileName, content);
-    
+
     break;
 
   case 'plainTemplate':
     // compileTemplate();
-    generateTemplateComponent()
+    generateTemplateComponent();
     break;
   //------------------
 
