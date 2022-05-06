@@ -20,7 +20,8 @@
     "test:typography": "npm run ./src/tests/typography",
     "test:methods": "npm run ./src/tests/methods",
     "test:custom": "npm run ./src/tests/custom",
-    "test:watch": "npm run checkFolders && jest --watch ./src/tests"
+    "test:watch": "npm run checkFolders && jest --watch ./src/tests",
+    "prepare": "husky install"
   },
   "author": "hirdbluebird, atherdon, vadim9999",
   "license": "ISC",
@@ -30,10 +31,15 @@
     "babel-eslint": "10.1.0",
     "eslint": "8.13.0",
     "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-json": "3.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-require-path-exists": "1.1.9",
-    "jest": "27.5.1"
+    "husky": "^7.0.0",
+    "jest": "27.5.1",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2"
   },
   "dependencies": {
     "atherdon-callbacks": "^1.10.0",
@@ -45,6 +51,11 @@
     "cross-env": "^7.0.3",
     "markup-generator": "^0.4.0",
     "path-exists": "^5.0.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "npm run lint"
+    ]
   },
   "jest": {
     "moduleNameMapper": {
