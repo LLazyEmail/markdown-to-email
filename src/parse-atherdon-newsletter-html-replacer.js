@@ -16,6 +16,7 @@ function configureReplacer(state) {
   // I think this version isnt working well
   Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
+  // TODO crashed when here in FULL mode, needs to be fixed
   Replacer.previewText();
   // Replacer.replaceMDBindedPreviewText();
   Replacer.comments();
@@ -49,5 +50,4 @@ function parseFullTHing(params) {
   return parse(source);
 }
 
-// eslint-disable-next-line import/prefer-default-export
 export { parseFullTHing };

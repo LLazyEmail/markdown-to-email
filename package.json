@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
-    "parse": "npm run build && npm run checkFolders && cross-env PARSE=full node bundle.js",
+    "parse": "npm run build && npm run checkFolders && cross-env PARSE=full node ./lib/bundle.js",
     "parseNoAdv": "npm run checkFolders && cross-env PARSE=noAdv node ./src/parser",
     "parse:full": "npm run checkFolders && cross-env PARSE=full node ./src/parser",
     "parseReact": "npm run checkFolders && cross-env PARSE=reactContentOnly node ./src/parser",

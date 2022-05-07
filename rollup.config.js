@@ -5,12 +5,16 @@ import babel from '@rollup/plugin-babel';
 export default {
   input: 'src/parser.js',
   output: {
-    file: 'bundle.js',
+    file: 'lib/bundle.js',
     format: 'cjs',
   },
   plugins: [
     resolve(),
     babel({
+      // exclude: [
+      //   "node_modules/**",
+      //    // "/src/data/__tests__"
+      //  ],
       babelHelpers: 'bundled',
     }),
   ],
