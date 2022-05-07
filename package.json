@@ -4,7 +4,8 @@
   "description": "Translate 'Markdown' Syntax into HTML For Email Newsletters",
   "main": "index.js",
   "scripts": {
-    "parse": "npm run checkFolders && cross-env PARSE=full node ./src/parser",
+    "build": "rollup -c",
+    "parse": "npm run build && npm run checkFolders && cross-env PARSE=full node bundle.js",
     "parseNoAdv": "npm run checkFolders && cross-env PARSE=noAdv node ./src/parser",
     "parse:full": "npm run checkFolders && cross-env PARSE=full node ./src/parser",
     "parseReact": "npm run checkFolders && cross-env PARSE=reactContentOnly node ./src/parser",
@@ -26,8 +27,12 @@
   "author": "hirdbluebird, atherdon, vadim9999",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "7.17.10",
     "@babel/core": "7.17.9",
     "@babel/eslint-parser": "7.17.0",
+    "@babel/preset-env": "7.17.10",
+    "@rollup/plugin-babel": "5.3.1",
+    "@rollup/plugin-node-resolve": "13.3.0",
     "eslint": "8.13.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "^8.5.0",
@@ -38,11 +43,11 @@
     "husky": "7.0.0",
     "jest": "27.5.1",
     "lint-staged": "12.4.1",
-    "prettier": "^2.6.2"
+    "prettier": "2.6.2",
+    "rollup": "2.72.0"
   },
   "dependencies": {
     "atherdon-callbacks": "^1.10.0",
-    "atherdon-newsletter-html-replacer": "^0.4.0",
     "atherdon-newsletter-js-layouts": "^1.5.1",
     "atherdon-newsletter-react": "^1.0.11",
     "atherdon-newsletter-react-replacer": "^0.4.0",

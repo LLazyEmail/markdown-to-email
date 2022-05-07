@@ -1,26 +1,15 @@
 // ----------------------------
 // Delete it later
-const { writeHTML, generateTemplateName } = require('markup-generator');
 // ----------------------------
 
-const {
-  // generateContentOnly, // depricated method
-  generateFullTemplate2,
-  // generateFullTemplate,
-
-  // compileEmptyTemplate,
-  // compileTemplate
-} = require('atherdon-newsletter-html-replacer');
-
-const {
-  generateReactContent,
-  generateReactFullTemplate,
-} = require('atherdon-newsletter-react-replacer');
-
-const {
-  generateEmptyTemplateComponent,
-  generateTemplateComponent,
-} = require('atherdon-old-newsletter-js-outertemplate');
+import { writeHTML, generateTemplateName } from 'markup-generator';
+import reactReplacer from 'atherdon-newsletter-react-replacer';
+// import {
+//   generateEmptyTemplateComponent,
+//   generateTemplateComponent,
+// } from 'atherdon-old-newsletter-js-outertemplate';
+import outerTemplate from 'atherdon-old-newsletter-js-outertemplate';
+import { generateFullTemplate2 } from './methods';
 
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
@@ -36,11 +25,11 @@ switch (process.env.PARSE) {
 
   case 'reactContentOnly':
     // same as default, but with react components instead.
-    generateReactContent(CONTENT_SOURCE);
+    reactReplacer.generateReactContent(CONTENT_SOURCE);
     break;
 
   case 'reactFull':
-    generateReactFullTemplate(FULL_SOURCE);
+    reactReplacer.generateReactFullTemplate(FULL_SOURCE);
     break;
 
   //------------------
@@ -50,7 +39,7 @@ switch (process.env.PARSE) {
 
     // TODO find out and remove disabling rules
     // eslint-disable-next-line no-case-declarations
-    const content = generateEmptyTemplateComponent();
+    const content = outerTemplate.generateEmptyTemplateComponent();
     // eslint-disable-next-line no-case-declarations
     const fileName = generateTemplateName('lit-empty');
 
@@ -60,7 +49,7 @@ switch (process.env.PARSE) {
 
   case 'plainTemplate':
     // compileTemplate();
-    generateTemplateComponent();
+    outerTemplate.generateTemplateComponent();
     break;
   //------------------
 

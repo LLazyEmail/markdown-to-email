@@ -1,7 +1,6 @@
 {
   "env": {
     "browser": true,
-    "commonjs": true,
     "es6": true,
     "node": true,
     "jest": true
@@ -27,6 +26,7 @@
     "import/no-unresolved": 0,
     "import/no-dynamic-require": 0,
     "global-require": 0,
-    "no-param-reassign": 0
+    "no-param-reassign": 0,
+    "import/prefer-default-export": 0
   }
 }
