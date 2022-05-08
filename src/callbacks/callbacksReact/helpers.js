@@ -1,7 +1,7 @@
 import os from 'os';
 // const { forEach } = require('lodash');
 
-import reactLayouts from 'atherdon-newsletter-react';
+import reactLayouts from '../../templates/NewsletterReactTemplate';
 
 console.log(reactLayouts);
 
