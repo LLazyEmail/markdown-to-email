@@ -3,12 +3,15 @@
 // ----------------------------
 
 import { writeHTML, generateTemplateName } from 'markup-generator';
-import reactReplacer from 'atherdon-newsletter-react-replacer';
+import { generateFullTemplate2 } from './parserMDHtml';
+import {
+  generateReactContent,
+  generateReactFullTemplate,
+} from './parserMDReact';
 import {
   generateTemplateComponent,
   generateEmptyTemplateComponent,
 } from './templates/OuterTemplate';
-import { generateFullTemplate2 } from './methods';
 
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
@@ -25,11 +28,11 @@ switch (process.env.PARSE) {
 
   case 'reactContentOnly':
     // same as default, but with react components instead.
-    reactReplacer.generateReactContent(CONTENT_SOURCE);
+    generateReactContent(CONTENT_SOURCE);
     break;
 
   case 'reactFull':
-    reactReplacer.generateReactFullTemplate(FULL_SOURCE);
+    generateReactFullTemplate(FULL_SOURCE);
     break;
 
   //------------------
