@@ -1,0 +1,11 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "ignore": ["src/tests", "tests", "src/parserMDReact/tests"]
+}
