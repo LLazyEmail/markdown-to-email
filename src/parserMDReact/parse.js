@@ -3,7 +3,7 @@ import {
   //   replaceMarkdownPreviewText,
 } from 'atherdon-callbacks';
 
-import { stateInit } from 'markup-generator';
+import { stateInit } from '../helper';
 
 import ReactReplacer from './replace';
 // ReactReplacer

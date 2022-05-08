@@ -5,7 +5,7 @@ import {
   checkWarnings,
   printMessage,
   generateTemplateName,
-} from 'markup-generator';
+} from '../helper';
 
 import {
   parseMDReact,

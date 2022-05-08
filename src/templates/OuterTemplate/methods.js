@@ -1,4 +1,4 @@
-import { writeHTML, generateTemplateName } from 'markup-generator';
+import { writeHTML, generateTemplateName } from '../../helper';
 //-----
 
 // methods like displayMain, displayHead and others not working well,

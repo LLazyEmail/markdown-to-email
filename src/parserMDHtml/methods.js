@@ -6,7 +6,7 @@ import {
   checkHtml,
   printMessage,
   generateTemplateName,
-} from 'markup-generator';
+} from '../helper';
 
 // rename too something else, because we have a mix there
 import {

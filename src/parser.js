@@ -2,7 +2,7 @@
 // Delete it later
 // ----------------------------
 
-import { writeHTML, generateTemplateName } from 'markup-generator';
+import { writeHTML, generateTemplateName, isFolderExists } from './helper';
 import { generateFullTemplate2 } from './parserMDHtml';
 import {
   generateReactContent,
@@ -18,6 +18,9 @@ const FULL_SOURCE = 'source/source.md';
 
 // I left this variable here just for depricated methods. it's time to use full-template at all places
 const CONTENT_SOURCE = 'source/source.md';
+
+isFolderExists('./generated');
+isFolderExists('./tests/_generated');
 
 console.info(process.env.PARSE, '***mode');
 switch (process.env.PARSE) {

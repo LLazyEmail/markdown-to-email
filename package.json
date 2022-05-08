@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
-    "parse": "npm run build && npm run checkFolders && cross-env PARSE=full node ./dist/bundle",
+    "parse": "npm run build && cross-env PARSE=full node ./dist/bundle",
     "parseNoAdv": "npm run build && npm run checkFolders && cross-env PARSE=noAdv node ./dist/bundle",
     "parse:full": "npm run build && npm run checkFolders && cross-env PARSE=full node ./dist/bundle",
     "parseReact": "npm run build && npm run checkFolders && cross-env PARSE=reactContentOnly node ./dist/bundle",
@@ -32,6 +32,7 @@
     "@babel/eslint-parser": "7.17.0",
     "@babel/preset-env": "7.17.10",
     "@rollup/plugin-babel": "5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "13.3.0",
     "eslint": "8.13.0",
     "eslint-config-airbnb-base": "15.0.0",
@@ -44,15 +45,18 @@
     "jest": "27.5.1",
     "lint-staged": "12.4.1",
     "prettier": "2.6.2",
-    "rollup": "2.72.0"
+    "rollup": "2.72.0",
+    "rollup-plugin-node-polyfills": "0.2.1"
   },
   "dependencies": {
-    "atherdon-callbacks": "^1.10.0",
-    "atherdon-newsletter-js-layouts": "^1.5.1",
-    "atherdon-newsletter-react": "^1.0.11",
-    "cross-env": "^7.0.3",
-    "markup-generator": "^0.4.0",
-    "path-exists": "^5.0.0"
+    "atherdon-callbacks": "1.10.0",
+    "atherdon-newsletter-js-layouts": "1.5.1",
+    "atherdon-newsletter-react": "1.0.11",
+    "chalk": "5.0.1",
+    "cross-env": "7.0.3",
+    "lodash": "4.17.21",
+    "path-exists": "5.0.0",
+    "write": "2.0.0"
   },
   "lint-staged": {
     "src/**/*.{js,ts}": [
