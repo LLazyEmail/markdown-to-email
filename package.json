@@ -50,7 +50,6 @@
   },
   "dependencies": {
     "atherdon-callbacks": "1.10.0",
-    "atherdon-newsletter-js-layouts": "1.5.1",
     "chalk": "5.0.1",
     "cross-env": "7.0.3",
     "lodash": "4.17.21",
