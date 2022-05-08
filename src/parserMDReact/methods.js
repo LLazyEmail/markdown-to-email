@@ -1,4 +1,4 @@
-import reactLayouts from 'atherdon-newsletter-react';
+import reactLayouts from '../templates/NewsletterReactTemplate';
 
 import {
   writeHTML,
