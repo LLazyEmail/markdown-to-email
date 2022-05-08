@@ -8,7 +8,7 @@ import {
   printMessage,
   generateTemplateName,
 } from 'markup-generator';
-import { fullTemplate } from './templates/OuterTemplate/fullTemplate';
+import { fullTemplate } from './templates/OuterTemplate';
 
 import { parseFullTHing } from './parse-atherdon-newsletter-html-replacer';
 
