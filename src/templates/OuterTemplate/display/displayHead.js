@@ -3,7 +3,7 @@
 // @TODO we need to finalize this file, so we can accept real data, not just static title...
 
 // partials
-import misc from 'atherdon-newsletter-js-layouts-misc';
+import misc from '../layouts/misc';
 import { headStyles } from '../components/head-styles';
 
 import headComponent from '../components/head';

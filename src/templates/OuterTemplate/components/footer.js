@@ -1,4 +1,4 @@
-// import misc from 'atherdon-newsletter-js-layouts-misc';
+// import misc from '../layouts/misc';
 
 // const {
 //   address,

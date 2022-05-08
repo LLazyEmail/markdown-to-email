@@ -5,9 +5,9 @@
 // DISPLAY STUFF GET OUT FROM THIS FILE.
 // WILL BE DELETED LATER
 
-// import body from 'atherdon-newsletter-js-layouts-body';
+// import body from '../layouts/body';
 
-// import misc from 'atherdon-newsletter-js-layouts-misc';
+// import misc from '../layouts/misc';
 
 // import footer from './footer';
 

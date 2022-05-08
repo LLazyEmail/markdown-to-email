@@ -1,4 +1,4 @@
-import body from 'atherdon-newsletter-js-layouts-body';
+import body from '../layouts/body';
 
 import headComponent from '../components/head';
 
