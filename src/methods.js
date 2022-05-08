@@ -1,8 +1,5 @@
 // @TODO both layouts things can be moved out from importing it here.
 
-// rename too something else, because we have a mix there
-import htmlLayouts from 'atherdon-old-newsletter-js-outertemplate';
-
 import {
   writeHTML,
   checkWarnings,
@@ -11,6 +8,14 @@ import {
   generateTemplateName,
 } from 'markup-generator';
 
+// rename too something else, because we have a mix there
+import {
+  fullTemplate,
+  // fullTemplateOLD,
+  generateEmptyTemplateComponent,
+  generateTemplateComponent,
+} from './templates/OuterTemplate';
+
 import { parseFullTHing } from './parse';
 
 const MESSAGE_HTML_CONTENT_ONLY = 'The content has been parsed successfully';
@@ -18,14 +23,6 @@ const MESSAGE_HTML_FULL_TEMPLATE =
   'The full-template has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE2 =
   'The full-template has been parsed successfully2';
-
-const {
-  fullTemplate,
-  // fullTemplateOLD,
-
-  generateEmptyTemplateComponent,
-  generateTemplateComponent,
-} = htmlLayouts;
 
 const deliver = (template, name, message) => {
   const fileName = generateTemplateName(name);

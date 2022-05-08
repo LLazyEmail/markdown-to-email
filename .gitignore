@@ -24,4 +24,4 @@ package/callbacks/node_modules/*
 
 yarn.lock
 
-bundle.js
+dist

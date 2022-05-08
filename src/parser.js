@@ -4,14 +4,12 @@
 
 import { writeHTML, generateTemplateName } from 'markup-generator';
 import reactReplacer from 'atherdon-newsletter-react-replacer';
-// import {
-//   generateEmptyTemplateComponent,
-//   generateTemplateComponent,
-// } from 'atherdon-old-newsletter-js-outertemplate';
-import outerTemplate from 'atherdon-old-newsletter-js-outertemplate';
+import {
+  generateTemplateComponent,
+  generateEmptyTemplateComponent,
+} from './templates/OuterTemplate';
 import { generateFullTemplate2 } from './methods';
 
-import { generateEmptyTemplateComponent } from './templates/OuterTemplate';
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
 
@@ -21,7 +19,6 @@ const CONTENT_SOURCE = 'source/source.md';
 console.info(process.env.PARSE, '***mode');
 switch (process.env.PARSE) {
   case 'full':
-    console.log('FULL');
     // generateFullTemplate();
     generateFullTemplate2(FULL_SOURCE);
     break;
@@ -52,7 +49,7 @@ switch (process.env.PARSE) {
 
   case 'plainTemplate':
     // compileTemplate();
-    outerTemplate.generateTemplateComponent();
+    generateTemplateComponent();
     break;
   //------------------
 
