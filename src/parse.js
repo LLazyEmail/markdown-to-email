@@ -50,4 +50,4 @@ function parseFullTHing(params) {
   return parse(source);
 }
 
-export { parseFullTHing };
+export { parseFullTHing, parse };
