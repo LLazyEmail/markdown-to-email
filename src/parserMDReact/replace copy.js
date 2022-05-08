@@ -1,6 +1,6 @@
 /* eslint-disable */
 import * as constants from 'atherdon-newsletter-constants';
-import { ReactCallbacks } from 'atherdon-callbacks';
+import { ReactCallbacks } from '../callbacks';
 
 const {
   strong,

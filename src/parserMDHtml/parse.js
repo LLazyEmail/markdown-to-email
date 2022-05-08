@@ -1,9 +1,6 @@
 // TODO: something wrong with newsletter-constants module
 
-import {
-  replaceMarkdown,
-  replaceMarkdownPreviewText,
-} from 'atherdon-callbacks';
+import { replaceMarkdown, replaceMarkdownPreviewText } from '../callbacks';
 
 import { stateInit } from '../helper';
 

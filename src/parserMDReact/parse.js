@@ -1,7 +1,7 @@
 import {
   replaceMarkdown,
   //   replaceMarkdownPreviewText,
-} from 'atherdon-callbacks';
+} from '../callbacks';
 
 import { stateInit } from '../helper';
 

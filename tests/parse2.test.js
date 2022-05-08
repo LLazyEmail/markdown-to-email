@@ -23,7 +23,7 @@
 // } = require('atherdon-newsletter-constants');
 
 // const { write, readSourceFile, FULL_SOURCE } = require('../../utils');
-// const { PlainCallbacks, replaceMarkdown, replaceMarkdownPreviewText } = require("atherdon-callbacks");
+// const { PlainCallbacks, replaceMarkdown, replaceMarkdownPreviewText } = require("../callbacks");
 
 // const {
 //   strong,

@@ -3,7 +3,7 @@
 
 // ---------------------------------
 
-import { PlainCallbacks, newLine } from 'atherdon-callbacks';
+import { PlainCallbacks, newLine } from '../callbacks';
 
 const {
   strong,
