@@ -1,0 +1,52 @@
+import {
+    strong,
+    link,
+    blockquote,
+    mem,
+    header,
+    italic,
+    del,
+    q,
+    code,
+    hr,
+    empty
+  } from './methods/simple';
+  
+  import {
+    ulList,
+    olList
+  } from './methods/lists';
+  
+  import {
+    image,
+    paragraphWrapper,
+    sponsorship,
+    br
+  } from './methods/callbacks';
+  
+  import { separator } from './methods/custom';
+  
+  export default {
+    strong,
+    link,
+    blockquote,
+    mem,
+    header,
+    italic,
+    del,
+    q,
+    code,
+    hr,
+    empty,
+  
+    ulList,
+    olList,
+  
+    image,
+    paragraphWrapper,
+    sponsorship,
+    br,
+  
+    separator
+  };
+  
