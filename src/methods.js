@@ -10,7 +10,7 @@ import {
 } from 'markup-generator';
 import { fullTemplate } from './templates/OuterTemplate';
 
-import { parseFullTHing } from './parse-atherdon-newsletter-html-replacer';
+import { parseFullTHing } from './parse';
 
 const MESSAGE_HTML_FULL_TEMPLATE2 =
   'The full-template has been parsed successfully2';
