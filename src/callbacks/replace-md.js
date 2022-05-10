@@ -32,8 +32,10 @@
   //   }
 } */
 
-// THIS WILL BE BROKEN SOOOOON
+// TODO THIS WILL BE BROKEN SOOOOON
+// This structure was before
 // this.replaceMDBinded(this._constants.REGEXP_PREVIEW_TEXT, previewText);
+// Should be working like this
 // this.replaceMDBinded("previewText");
 
 function replaceMarkdown(regexp, callback) {
