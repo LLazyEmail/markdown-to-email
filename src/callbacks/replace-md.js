@@ -6,7 +6,27 @@
 import { sponsorship } from "./callbacksHtml/methods/callbacks";
 import { separator } from "./callbacksHtml/methods/custom";
 import { mem, previewText } from "./callbacksHtml/methods/simple";
+import {strong,
+  link,
+  blockquote,
+  mem,
+  header,
+  italic,
+  del,
+  q,
+  code,
+  hr,
+  empty,
 
+  ulList,
+  olList,
+
+  image,
+  paragraphWrapper,
+  sponsorship,
+  br,
+
+  separator,} from "./callbacksHtml/index.js"
 // function extractOptions(converter, key) {
 //   if (!converter.key) throw new Error('no options for this converter');
 
@@ -133,10 +153,10 @@ const map = {
     }
 }
 
-function replaceMarkdown(callback) {
+function Markdown(callback) {
   // console.log('helpers- replace markdown method')
   // console.log(typeof callback)
-  const str = map.callback
+  const LocalObject = map[callback]
   // eslint-disable-next-line no-useless-catch
   try {
     let fixedCallbackMethod = false;
@@ -158,7 +178,7 @@ function replaceMarkdown(callback) {
         break;
     }
 
-    const result = this.content.replace(str.constant, fixedCallbackMethod);
+    const result = this.content.replace(LocalObject.constant, fixedCallbackMethod);
     this.content = result;
   } catch (e) {
     /* work in case there is an error */
@@ -193,4 +213,4 @@ function replaceMarkdownPreviewText(regexp) {
   this.content = this.content.replace(regexp, () => this.previewText);
 }
 
-export { replaceMarkdown, replaceMarkdownPreviewText };
+export { Markdown, replaceMarkdownPreviewText };
