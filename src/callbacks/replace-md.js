@@ -3,6 +3,10 @@
 // https://www.npmjs.com/package/batch-replace
 // https://www.npmjs.com/package/pupa
 
+import { sponsorship } from "./callbacksHtml/methods/callbacks";
+import { separator } from "./callbacksHtml/methods/custom";
+import { mem, previewText } from "./callbacksHtml/methods/simple";
+
 // function extractOptions(converter, key) {
 //   if (!converter.key) throw new Error('no options for this converter');
 
@@ -38,10 +42,101 @@
 // Should be working like this
 // this.replaceMDBinded("previewText");
 
-function replaceMarkdown(regexp, callback) {
+const map = {
+    'strong': {
+      constant: REGEXP_STRONG,
+      callback: strong
+    },
+    'previewText':{
+      constant: REGEXP_PREVIEW_TEXT,
+      callback: previewText
+    },
+    'empty': {
+      constant: REGEXP_HTML_COMMENTS,
+      callback: comments
+    },
+    'italic': {
+      constant: REGEXP_EM,
+      callback: italic
+    },
+    'header': {
+      constant: REGEXP_HEADER,
+      callback: header
+    },
+    'image': {
+      constant: REGEXP_IMAGE,
+      callback: image
+    },
+    'link': { 
+      constant: REGEXP_LINK,
+      callback: link
+    },
+    'del': {
+      constant: REGEXP_DEL,
+      callback: del
+    },
+    'q': { 
+      constant: REGEXP_Q,
+      callback: q
+    },
+    'code': {
+      constant: REGEXP_CODE,
+      callback: code
+    },
+    'ulList': { 
+      constant: REGEXP_UL_LIST,
+      callback: ulList
+    },
+    'olList': { 
+      constant: REGEXP_OL_LIST,
+      callback: olList 
+    },
+    'blockquote': {
+      constant: REGEXP_BLOCKQUOTE,
+      callback: blockQuote
+    },
+    'hr': {
+      constant: REGEXP_HR,
+      callback: hr
+    },
+    'paragraphWrapper': {
+      constant: REGEXP_PARAGRAPH,
+      callback: paragraph
+    },
+    'REGEXP_EMPTY_UL': {
+      constant: REGEXP_EMPTY_UL,
+      callback: emptyUl
+    },
+    'REGEXP_EMPTY_OL': {
+      constant: REGEXP_EMPTY_OL,
+      callback: emptyOl
+    },
+    'REGEXP_EMPTY_BLOCKQUOTE': {
+      constant: REGEXP_EMPTY_BLOCKQUOTE,
+      callback: emptyBlockQuote
+    },
+    'REGEXP_BR': { 
+      constant: REGEXP_BR,
+      callback: br
+    },
+    'sponsorship': {
+      constant: REGEXP_SPONSORSHIP,
+      callback: sponsorship
+    },
+    'mem': {
+      constant: REGEXP_MEM,
+      callback: mem
+    },
+    'separator': {
+      constant: REGEXP_SEPARATOR,
+      callback: separator
+    }
+}
+
+function replaceMarkdown(callback) {
   // console.log('helpers- replace markdown method')
   // console.log(typeof callback)
-
+  const str = map.callback
   // eslint-disable-next-line no-useless-catch
   try {
     let fixedCallbackMethod = false;
@@ -63,7 +158,7 @@ function replaceMarkdown(regexp, callback) {
         break;
     }
 
-    const result = this.content.replace(regexp, fixedCallbackMethod);
+    const result = this.content.replace(str.constant, fixedCallbackMethod);
     this.content = result;
   } catch (e) {
     /* work in case there is an error */
