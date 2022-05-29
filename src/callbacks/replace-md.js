@@ -153,7 +153,7 @@ const map = {
     }
 }
 
-function Markdown(callback) {
+function replaceMarkdown(callback) {
   // console.log('helpers- replace markdown method')
   // console.log(typeof callback)
   const LocalObject = map[callback]
@@ -213,4 +213,4 @@ function replaceMarkdownPreviewText(regexp) {
   this.content = this.content.replace(regexp, () => this.previewText);
 }
 
-export { Markdown, replaceMarkdownPreviewText };
+export { replaceMarkdown, replaceMarkdownPreviewText };
