@@ -21,7 +21,7 @@ import {
   ulList,
   olList,
   image,
-  // paragraphWrapper,
+  paragraphWrapper,
   sponsorship,
   br,
   separator,
@@ -45,6 +45,7 @@ import {
   REGEXP_SPONSORSHIP,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
+  REGEXP_PARAGRAPH,
   REGEXP_SEPARATOR,
 } from '../constants';
 //   return converter.key;
@@ -136,10 +137,10 @@ const map = {
     constant: REGEXP_HR,
     replacer: hr,
   },
-  // 'paragraphWrapper': {
-  //   constant: REGEXP_PARAGRAPH,
-  //   replacer: paragraph
-  // },
+  paragraphWrapper: {
+    constant: REGEXP_PARAGRAPH,
+    replacer: paragraphWrapper,
+  },
   // 'REGEXP_EMPTY_UL': {
   //   constant: REGEXP_EMPTY_UL,
   //   replacer: emptyUl
@@ -152,7 +153,7 @@ const map = {
   //   constant: REGEXP_EMPTY_BLOCKQUOTE,
   //   replacer: emptyBlockQuote
   // },
-  REGEXP_BR: {
+  br: {
     constant: REGEXP_BR,
     replacer: br,
   },
@@ -160,7 +161,7 @@ const map = {
     constant: REGEXP_SPONSORSHIP,
     replacer: sponsorship,
   },
-  mem: {
+  memes: {
     constant: REGEXP_MEM,
     replacer: mem,
   },
@@ -171,14 +172,11 @@ const map = {
 };
 
 function replaceMarkdown(nameOfCallback) {
-  const fromMap = map[nameOfCallback];
-
   if (!nameOfCallback) {
-    console.log('ERRROROROR HERE!!!!');
-    // console.log(regexp);
-    // console.log(callback);
-    throw new Error('catching this error');
+    throw new Error('name of callback is undefined or empty');
   }
+
+  const fromMap = map[nameOfCallback];
 
   const forReplacer =
     typeof fromMap.replacer === 'string'

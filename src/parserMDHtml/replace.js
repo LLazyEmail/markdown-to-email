@@ -106,7 +106,8 @@ class Replace {
   // test this part
   miscellaneous() {
     // this line is generating an error
-    this.emptyBlockquote();
+    // TODO fix this
+    // this.emptyBlockquote();
     this.br();
 
     if (!process.env.PARSE === 'noAdv' || process.env.PARSE === 'full') {
@@ -136,8 +137,9 @@ class Replace {
     this.hr();
     //-----
     this.paragraph();
-    this.emptyUl();
-    this.emptyOl();
+    // TODO fix this
+    // this.emptyUl();
+    // this.emptyOl();
   }
 }
 

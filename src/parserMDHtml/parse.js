@@ -16,7 +16,7 @@ function configureReplacer(state) {
   // TODO crashed when here in FULL mode, needs to be fixed
   Replacer.previewText();
   // Replacer.replaceMDBindedPreviewText();
-  Replacer.comments();
+  // Replacer.comments();
   // ---
   Replacer.typography();
 
