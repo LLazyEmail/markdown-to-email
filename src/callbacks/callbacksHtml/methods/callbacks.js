@@ -2,7 +2,7 @@ import { replaceWrapper, newLine } from '../helpers';
 
 /// function is not working as planned
 
-function paragraphWrapper(text, line) {
+export function paragraphWrapper(text, line) {
   const trimmed = line.trim();
 
   // TODO move out this regex into constants file.
@@ -20,7 +20,7 @@ function paragraphWrapper(text, line) {
 }
 /// !end function is not working as planned
 
-function image(text, alt, srcWithTooltip) {
+export function image(text, alt, srcWithTooltip) {
   // eslint-disable-next-line no-useless-escape
   const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
 
@@ -38,7 +38,7 @@ function image(text, alt, srcWithTooltip) {
   return replaced;
 }
 
-function br(text, newLines) {
+export function br(text, newLines) {
   // TODO move out this regex into constants file.
 
   const regex = new RegExp(newLine, 'g');
@@ -53,7 +53,7 @@ function br(text, newLines) {
   return result;
 }
 
-function sponsorship(text) {
+export function sponsorship(text) {
   // TODO move out this regex into constants file.
   const regex = /\[(.*?)\]/g;
 
@@ -81,4 +81,4 @@ function sponsorship(text) {
   return replaced;
 }
 
-export { paragraphWrapper, image, sponsorship, br };
+// export { paragraphWrapper, image, sponsorship, br };

@@ -3,9 +3,11 @@
 // https://www.npmjs.com/package/batch-replace
 // https://www.npmjs.com/package/pupa
 
-import { sponsorship } from "./callbacksHtml/methods/callbacks";
+
+
+// import { sponsorship } from "./callbacksHtml/methods/callbacks";
 import { separator } from "./callbacksHtml/methods/custom";
-import { mem, previewText } from "./callbacksHtml/methods/simple";
+// import { mem, previewText } from "./callbacksHtml/methods/simple";
 import {strong,
   link,
   blockquote,
@@ -26,7 +28,8 @@ import {strong,
   sponsorship,
   br,
 
-  separator,} from "./callbacksHtml/index.js"
+  // separator,
+} from "./callbacksHtml/index.js"
 // function extractOptions(converter, key) {
 //   if (!converter.key) throw new Error('no options for this converter');
 
@@ -65,130 +68,102 @@ import {strong,
 const map = {
     'strong': {
       constant: REGEXP_STRONG,
-      callback: strong
+      replacer: strong
     },
     'previewText':{
       constant: REGEXP_PREVIEW_TEXT,
-      callback: previewText
+      replacer: previewText
     },
     'empty': {
       constant: REGEXP_HTML_COMMENTS,
-      callback: comments
+      replacer: comments
     },
     'italic': {
       constant: REGEXP_EM,
-      callback: italic
+      replacer: italic
     },
     'header': {
       constant: REGEXP_HEADER,
-      callback: header
+      replacer: header
     },
     'image': {
       constant: REGEXP_IMAGE,
-      callback: image
+      replacer: image
     },
     'link': { 
       constant: REGEXP_LINK,
-      callback: link
+      replacer: link
     },
     'del': {
       constant: REGEXP_DEL,
-      callback: del
+      replacer: del
     },
     'q': { 
       constant: REGEXP_Q,
-      callback: q
+      replacer: q
     },
     'code': {
       constant: REGEXP_CODE,
-      callback: code
+      replacer: code
     },
     'ulList': { 
       constant: REGEXP_UL_LIST,
-      callback: ulList
+      replacer: ulList
     },
     'olList': { 
       constant: REGEXP_OL_LIST,
-      callback: olList 
+      replacer: olList 
     },
     'blockquote': {
       constant: REGEXP_BLOCKQUOTE,
-      callback: blockQuote
+      replacer: blockQuote
     },
     'hr': {
       constant: REGEXP_HR,
-      callback: hr
+      replacer: hr
     },
     'paragraphWrapper': {
       constant: REGEXP_PARAGRAPH,
-      callback: paragraph
+      replacer: paragraph
     },
     'REGEXP_EMPTY_UL': {
       constant: REGEXP_EMPTY_UL,
-      callback: emptyUl
+      replacer: emptyUl
     },
     'REGEXP_EMPTY_OL': {
       constant: REGEXP_EMPTY_OL,
-      callback: emptyOl
+      replacer: emptyOl
     },
     'REGEXP_EMPTY_BLOCKQUOTE': {
       constant: REGEXP_EMPTY_BLOCKQUOTE,
-      callback: emptyBlockQuote
+      replacer: emptyBlockQuote
     },
     'REGEXP_BR': { 
       constant: REGEXP_BR,
-      callback: br
+      replacer: br
     },
     'sponsorship': {
       constant: REGEXP_SPONSORSHIP,
-      callback: sponsorship
+      replacer: sponsorship
     },
     'mem': {
       constant: REGEXP_MEM,
-      callback: mem
+      replacer: mem
     },
     'separator': {
       constant: REGEXP_SEPARATOR,
-      callback: separator
+      replacer: separator
     }
 }
 
-function replaceMarkdown(callback) {
-  // console.log('helpers- replace markdown method')
-  // console.log(typeof callback)
-  const LocalObject = map[callback]
-  // eslint-disable-next-line no-useless-catch
-  try {
-    let fixedCallbackMethod = false;
 
-    if (!typeof callback) {
-      console.log('ERRROROROR HERE!!!!');
-      console.log(regexp);
-      console.log(callback);
-      throw new Error('catching this error');
-    }
+function replaceMarkdown(nameOfCallback) {
 
-    switch (typeof callback) {
-      case 'string':
-        fixedCallbackMethod = callback;
-        break;
+  const fromMap = map[nameOfCallback]
+  const forReplacer = typeof fromMap.replacer === "string" ? fromMap.replacer : fromMap.replacer.bind(this)
 
-      default:
-        fixedCallbackMethod = callback.bind(this);
-        break;
-    }
-
-    const result = this.content.replace(LocalObject.constant, fixedCallbackMethod);
-    this.content = result;
-  } catch (e) {
-    /* work in case there is an error */
-
-    throw e;
-
-    // throw new Error('replaceMarkdown method');
-  }
-
-  // this.content = this.content.replace(regexp, fixedCallbackMethod);
+  this.content = this.content.replace(fromMap.constant, forReplacer);
+ 
 }
 
 // i think this method would be broken now, because we cant play with "this."
