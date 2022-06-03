@@ -157,17 +157,20 @@ const map = {
 
 
 function replaceMarkdown(nameOfCallback) {
-  try {
-
   const fromMap = map[nameOfCallback]
+
+
+  if (!typeof nameOfCallback) {
+          console.log('ERRROROROR HERE!!!!');
+          console.log(regexp);
+          console.log(callback);
+          throw new Error('catching this error');
+        }
+
   const forReplacer = typeof fromMap.replacer === "string" ? fromMap.replacer : fromMap.replacer.bind(this)
 
   this.content = this.content.replace(fromMap.replacer, forReplacer);
-  }catch (e) {
 
-    throw e;
-
-  }
  
 }
 
