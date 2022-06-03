@@ -19,7 +19,7 @@ import { image, paragraphWrapper, sponsorship, br } from './methods/callbacks';
 import { separator } from './methods/custom';
 
 // export default {
-export  {
+export {
   strong,
   link,
   blockquote,
@@ -31,14 +31,11 @@ export  {
   code,
   hr,
   empty,
-
   ulList,
   olList,
-
   image,
   paragraphWrapper,
   sponsorship,
   br,
-
   separator,
 };

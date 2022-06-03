@@ -3,12 +3,11 @@
 // https://www.npmjs.com/package/batch-replace
 // https://www.npmjs.com/package/pupa
 
-
-
 // import { sponsorship } from "./callbacksHtml/methods/callbacks";
 // import { separator } from "./callbacksHtml/methods/custom";
-import {previewText } from "./callbacksHtml/methods/simple";
-import {strong,
+import { previewText } from './callbacksHtml/methods/simple';
+import {
+  strong,
   link,
   blockquote,
   mem,
@@ -18,20 +17,36 @@ import {strong,
   q,
   code,
   hr,
-  empty,
-
+  // empty,
   ulList,
   olList,
-
   image,
-  paragraphWrapper,
+  // paragraphWrapper,
   sponsorship,
   br,
-
-  separator,} from "./callbacksHtml/index.js"
+  separator,
+} from './callbacksHtml/index';
 // function extractOptions(converter, key) {
 //   if (!converter.key) throw new Error('no options for this converter');
-
+import {
+  REGEXP_HEADER,
+  REGEXP_IMAGE,
+  REGEXP_LINK,
+  REGEXP_STRONG,
+  REGEXP_DEL,
+  REGEXP_Q,
+  REGEXP_CODE,
+  REGEXP_UL_LIST,
+  REGEXP_OL_LIST,
+  REGEXP_BLOCKQUOTE,
+  REGEXP_HR,
+  REGEXP_BR,
+  REGEXP_EM,
+  REGEXP_SPONSORSHIP,
+  REGEXP_MEM,
+  REGEXP_PREVIEW_TEXT,
+  REGEXP_SEPARATOR,
+} from '../constants';
 //   return converter.key;
 // }
 
@@ -65,61 +80,61 @@ import {strong,
 // this.replaceMDBinded("previewText");
 
 const map = {
-  'strong': {
+  strong: {
     constant: REGEXP_STRONG,
-    replacer: strong
+    replacer: strong,
   },
-  'previewText':{
+  previewText: {
     constant: REGEXP_PREVIEW_TEXT,
-    replacer: previewText
+    replacer: previewText,
   },
   // 'empty': {
   //   constant: REGEXP_HTML_COMMENTS,
   //   replacer: comments
   // },
-  'italic': {
+  italic: {
     constant: REGEXP_EM,
-    replacer: italic
+    replacer: italic,
   },
-  'header': {
+  header: {
     constant: REGEXP_HEADER,
-    replacer: header
+    replacer: header,
   },
-  'image': {
+  image: {
     constant: REGEXP_IMAGE,
-    replacer: image
+    replacer: image,
   },
-  'link': { 
+  link: {
     constant: REGEXP_LINK,
-    replacer: link
+    replacer: link,
   },
-  'del': {
+  del: {
     constant: REGEXP_DEL,
-    replacer: del
+    replacer: del,
   },
-  'q': { 
+  q: {
     constant: REGEXP_Q,
-    replacer: q
+    replacer: q,
   },
-  'code': {
+  code: {
     constant: REGEXP_CODE,
-    replacer: code
+    replacer: code,
   },
-  'ulList': { 
+  ulList: {
     constant: REGEXP_UL_LIST,
-    replacer: ulList
+    replacer: ulList,
   },
-  'olList': { 
+  olList: {
     constant: REGEXP_OL_LIST,
-    replacer: olList 
+    replacer: olList,
   },
-  'blockquote': {
+  blockquote: {
     constant: REGEXP_BLOCKQUOTE,
-    replacer: blockquote
+    replacer: blockquote,
   },
-  'hr': {
+  hr: {
     constant: REGEXP_HR,
-    replacer: hr
+    replacer: hr,
   },
   // 'paragraphWrapper': {
   //   constant: REGEXP_PARAGRAPH,
@@ -137,41 +152,40 @@ const map = {
   //   constant: REGEXP_EMPTY_BLOCKQUOTE,
   //   replacer: emptyBlockQuote
   // },
-  'REGEXP_BR': { 
+  REGEXP_BR: {
     constant: REGEXP_BR,
-    replacer: br
+    replacer: br,
   },
-  'sponsorship': {
+  sponsorship: {
     constant: REGEXP_SPONSORSHIP,
-    replacer: sponsorship
+    replacer: sponsorship,
   },
-  'mem': {
+  mem: {
     constant: REGEXP_MEM,
-    replacer: mem
+    replacer: mem,
   },
-  'separator': {
+  separator: {
     constant: REGEXP_SEPARATOR,
-    replacer: separator
-  }
-}
-
+    replacer: separator,
+  },
+};
 
 function replaceMarkdown(nameOfCallback) {
-  const fromMap = map[nameOfCallback]
-
+  const fromMap = map[nameOfCallback];
 
   if (!nameOfCallback) {
-          console.log('ERRROROROR HERE!!!!');
-          console.log(regexp);
-          console.log(callback);
-          throw new Error('catching this error');
-        }
+    console.log('ERRROROROR HERE!!!!');
+    // console.log(regexp);
+    // console.log(callback);
+    throw new Error('catching this error');
+  }
 
-  const forReplacer = typeof fromMap.replacer === "string" ? fromMap.replacer : fromMap.replacer.bind(this)
+  const forReplacer =
+    typeof fromMap.replacer === 'string'
+      ? fromMap.replacer
+      : fromMap.replacer.bind(this);
 
   this.content = this.content.replace(fromMap.replacer, forReplacer);
-
- 
 }
 
 // i think this method would be broken now, because we cant play with "this."

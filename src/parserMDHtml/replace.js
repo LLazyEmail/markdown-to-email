@@ -10,10 +10,10 @@ class Replace {
       this.replaceMDBinded('previewText');
     };
 
-    this.comments = () => {
-      // HEEEEEEYY
-      this.replaceMDBinded('');
-    };
+    // this.comments = () => {
+    //   // HEEEEEEYY
+    //   this.replaceMDBinded('');
+    // };
 
     this.strong = () => {
       this.replaceMDBinded('strong');
