@@ -10,7 +10,7 @@
 import {previewText } from "./callbacksHtml/methods/simple";
 import {strong,
   link,
-  blockQuote,
+  blockquote,
   mem,
   header,
   italic,
@@ -115,7 +115,7 @@ const map = {
   },
   'blockquote': {
     constant: REGEXP_BLOCKQUOTE,
-    replacer: blockQuote
+    replacer: blockquote
   },
   'hr': {
     constant: REGEXP_HR,
