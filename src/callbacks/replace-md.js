@@ -160,7 +160,7 @@ function replaceMarkdown(nameOfCallback) {
   const fromMap = map[nameOfCallback]
 
 
-  if (!typeof nameOfCallback) {
+  if (!nameOfCallback) {
           console.log('ERRROROROR HERE!!!!');
           console.log(regexp);
           console.log(callback);
