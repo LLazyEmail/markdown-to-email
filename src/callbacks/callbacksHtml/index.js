@@ -18,7 +18,8 @@ import { image, paragraphWrapper, sponsorship, br } from './methods/callbacks';
 
 import { separator } from './methods/custom';
 
-export default {
+// export default {
+export  {
   strong,
   link,
   blockquote,

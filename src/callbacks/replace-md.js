@@ -3,9 +3,11 @@
 // https://www.npmjs.com/package/batch-replace
 // https://www.npmjs.com/package/pupa
 
-import { sponsorship } from "./callbacksHtml/methods/callbacks";
-import { separator } from "./callbacksHtml/methods/custom";
-import { mem, previewText } from "./callbacksHtml/methods/simple";
+
+
+// import { sponsorship } from "./callbacksHtml/methods/callbacks";
+// import { separator } from "./callbacksHtml/methods/custom";
+import {previewText } from "./callbacksHtml/methods/simple";
 import {strong,
   link,
   blockquote,
@@ -63,132 +65,113 @@ import {strong,
 // this.replaceMDBinded("previewText");
 
 const map = {
-    'strong': {
-      constant: REGEXP_STRONG,
-      callback: strong
-    },
-    'previewText':{
-      constant: REGEXP_PREVIEW_TEXT,
-      callback: previewText
-    },
-    'empty': {
-      constant: REGEXP_HTML_COMMENTS,
-      callback: comments
-    },
-    'italic': {
-      constant: REGEXP_EM,
-      callback: italic
-    },
-    'header': {
-      constant: REGEXP_HEADER,
-      callback: header
-    },
-    'image': {
-      constant: REGEXP_IMAGE,
-      callback: image
-    },
-    'link': { 
-      constant: REGEXP_LINK,
-      callback: link
-    },
-    'del': {
-      constant: REGEXP_DEL,
-      callback: del
-    },
-    'q': { 
-      constant: REGEXP_Q,
-      callback: q
-    },
-    'code': {
-      constant: REGEXP_CODE,
-      callback: code
-    },
-    'ulList': { 
-      constant: REGEXP_UL_LIST,
-      callback: ulList
-    },
-    'olList': { 
-      constant: REGEXP_OL_LIST,
-      callback: olList 
-    },
-    'blockquote': {
-      constant: REGEXP_BLOCKQUOTE,
-      callback: blockQuote
-    },
-    'hr': {
-      constant: REGEXP_HR,
-      callback: hr
-    },
-    'paragraphWrapper': {
-      constant: REGEXP_PARAGRAPH,
-      callback: paragraph
-    },
-    'REGEXP_EMPTY_UL': {
-      constant: REGEXP_EMPTY_UL,
-      callback: emptyUl
-    },
-    'REGEXP_EMPTY_OL': {
-      constant: REGEXP_EMPTY_OL,
-      callback: emptyOl
-    },
-    'REGEXP_EMPTY_BLOCKQUOTE': {
-      constant: REGEXP_EMPTY_BLOCKQUOTE,
-      callback: emptyBlockQuote
-    },
-    'REGEXP_BR': { 
-      constant: REGEXP_BR,
-      callback: br
-    },
-    'sponsorship': {
-      constant: REGEXP_SPONSORSHIP,
-      callback: sponsorship
-    },
-    'mem': {
-      constant: REGEXP_MEM,
-      callback: mem
-    },
-    'separator': {
-      constant: REGEXP_SEPARATOR,
-      callback: separator
-    }
+  'strong': {
+    constant: REGEXP_STRONG,
+    replacer: strong
+  },
+  'previewText':{
+    constant: REGEXP_PREVIEW_TEXT,
+    replacer: previewText
+  },
+  // 'empty': {
+  //   constant: REGEXP_HTML_COMMENTS,
+  //   replacer: comments
+  // },
+  'italic': {
+    constant: REGEXP_EM,
+    replacer: italic
+  },
+  'header': {
+    constant: REGEXP_HEADER,
+    replacer: header
+  },
+  'image': {
+    constant: REGEXP_IMAGE,
+    replacer: image
+  },
+  'link': { 
+    constant: REGEXP_LINK,
+    replacer: link
+  },
+  'del': {
+    constant: REGEXP_DEL,
+    replacer: del
+  },
+  'q': { 
+    constant: REGEXP_Q,
+    replacer: q
+  },
+  'code': {
+    constant: REGEXP_CODE,
+    replacer: code
+  },
+  'ulList': { 
+    constant: REGEXP_UL_LIST,
+    replacer: ulList
+  },
+  'olList': { 
+    constant: REGEXP_OL_LIST,
+    replacer: olList 
+  },
+  'blockquote': {
+    constant: REGEXP_BLOCKQUOTE,
+    replacer: blockquote
+  },
+  'hr': {
+    constant: REGEXP_HR,
+    replacer: hr
+  },
+  // 'paragraphWrapper': {
+  //   constant: REGEXP_PARAGRAPH,
+  //   replacer: paragraph
+  // },
+  // 'REGEXP_EMPTY_UL': {
+  //   constant: REGEXP_EMPTY_UL,
+  //   replacer: emptyUl
+  // },
+  // 'REGEXP_EMPTY_OL': {
+  //   constant: REGEXP_EMPTY_OL,
+  //   replacer: emptyOl
+  // },
+  // 'REGEXP_EMPTY_BLOCKQUOTE': {
+  //   constant: REGEXP_EMPTY_BLOCKQUOTE,
+  //   replacer: emptyBlockQuote
+  // },
+  'REGEXP_BR': { 
+    constant: REGEXP_BR,
+    replacer: br
+  },
+  'sponsorship': {
+    constant: REGEXP_SPONSORSHIP,
+    replacer: sponsorship
+  },
+  'mem': {
+    constant: REGEXP_MEM,
+    replacer: mem
+  },
+  'separator': {
+    constant: REGEXP_SEPARATOR,
+    replacer: separator
+  }
 }
 
-function replaceMarkdown(callback) {
-  // console.log('helpers- replace markdown method')
-  // console.log(typeof callback)
-  const LocalObject = map[callback]
-  // eslint-disable-next-line no-useless-catch
-  try {
-    let fixedCallbackMethod = false;
 
-    if (!typeof callback) {
-      console.log('ERRROROROR HERE!!!!');
-      console.log(regexp);
-      console.log(callback);
-      throw new Error('catching this error');
-    }
+function replaceMarkdown(nameOfCallback) {
+  const fromMap = map[nameOfCallback]
 
-    switch (typeof callback) {
-      case 'string':
-        fixedCallbackMethod = callback;
-        break;
 
-      default:
-        fixedCallbackMethod = callback.bind(this);
-        break;
-    }
+  if (!typeof nameOfCallback) {
+          console.log('ERRROROROR HERE!!!!');
+          console.log(regexp);
+          console.log(callback);
+          throw new Error('catching this error');
+        }
 
-    const result = this.content.replace(LocalObject.constant, fixedCallbackMethod);
-    this.content = result;
-  } catch (e) {
-    /* work in case there is an error */
+  const forReplacer = typeof fromMap.replacer === "string" ? fromMap.replacer : fromMap.replacer.bind(this)
 
-    throw e;
+  this.content = this.content.replace(fromMap.replacer, forReplacer);
 
-    // throw new Error('replaceMarkdown method');
-  }
-
-  // this.content = this.content.replace(regexp, fixedCallbackMethod);
+ 
 }
 
 // i think this method would be broken now, because we cant play with "this."

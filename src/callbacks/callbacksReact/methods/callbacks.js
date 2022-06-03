@@ -5,7 +5,7 @@ import { replaceReactWrapper, newLine } from '../helpers';
 
 /// function is not working as planned
 
-function paragraphWrapper(text, line) {
+export function paragraphWrapper(text, line) {
   const trimmed = line.trim();
   if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
     // @TODO move out this regex into constants file.
@@ -23,7 +23,7 @@ function paragraphWrapper(text, line) {
 }
 /// !end function is not working as planned
 
-function image(text, alt, srcWithTooltip) {
+export function image(text, alt, srcWithTooltip) {
   const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
 
   const config = {
@@ -37,7 +37,7 @@ function image(text, alt, srcWithTooltip) {
   return result;
 }
 
-function br(text, newLines) {
+export function br(text, newLines) {
   const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
 
   // @TODO well, it's not good. can be improved with lodash
@@ -50,7 +50,7 @@ function br(text, newLines) {
   return result;
 }
 
-function sponsorship(text) {
+export function sponsorship(text) {
   const regex = /\[(.*?)\]/g;
   const [content, href, src] = text
     .match(regex)
@@ -86,4 +86,14 @@ function sponsorship(text) {
 //     });
 // }
 
-export { paragraphWrapper, image, sponsorship, br, newLine };
+
+
+
+
+
+
+
+
+
+
+// export { paragraphWrapper, image, sponsorship, br, newLine };
