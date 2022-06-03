@@ -53,7 +53,6 @@
     "cross-env": "7.0.3",
     "lodash": "4.17.21",
     "path-exists": "5.0.0",
-    "pixel-email-cli": "^0.2.0",
     "write": "2.0.0"
   },
   "lint-staged": {

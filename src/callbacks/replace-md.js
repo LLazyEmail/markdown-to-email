@@ -6,11 +6,11 @@
 
 
 // import { sponsorship } from "./callbacksHtml/methods/callbacks";
-import { separator } from "./callbacksHtml/methods/custom";
-// import { mem, previewText } from "./callbacksHtml/methods/simple";
+// import { separator } from "./callbacksHtml/methods/custom";
+import {previewText } from "./callbacksHtml/methods/simple";
 import {strong,
   link,
-  blockquote,
+  blockQuote,
   mem,
   header,
   italic,
@@ -28,8 +28,7 @@ import {strong,
   sponsorship,
   br,
 
-  // separator,
-} from "./callbacksHtml/index.js"
+  separator,} from "./callbacksHtml/index.js"
 // function extractOptions(converter, key) {
 //   if (!converter.key) throw new Error('no options for this converter');
 
@@ -66,103 +65,109 @@ import {strong,
 // this.replaceMDBinded("previewText");
 
 const map = {
-    'strong': {
-      constant: REGEXP_STRONG,
-      replacer: strong
-    },
-    'previewText':{
-      constant: REGEXP_PREVIEW_TEXT,
-      replacer: previewText
-    },
-    'empty': {
-      constant: REGEXP_HTML_COMMENTS,
-      replacer: comments
-    },
-    'italic': {
-      constant: REGEXP_EM,
-      replacer: italic
-    },
-    'header': {
-      constant: REGEXP_HEADER,
-      replacer: header
-    },
-    'image': {
-      constant: REGEXP_IMAGE,
-      replacer: image
-    },
-    'link': { 
-      constant: REGEXP_LINK,
-      replacer: link
-    },
-    'del': {
-      constant: REGEXP_DEL,
-      replacer: del
-    },
-    'q': { 
-      constant: REGEXP_Q,
-      replacer: q
-    },
-    'code': {
-      constant: REGEXP_CODE,
-      replacer: code
-    },
-    'ulList': { 
-      constant: REGEXP_UL_LIST,
-      replacer: ulList
-    },
-    'olList': { 
-      constant: REGEXP_OL_LIST,
-      replacer: olList 
-    },
-    'blockquote': {
-      constant: REGEXP_BLOCKQUOTE,
-      replacer: blockQuote
-    },
-    'hr': {
-      constant: REGEXP_HR,
-      replacer: hr
-    },
-    'paragraphWrapper': {
-      constant: REGEXP_PARAGRAPH,
-      replacer: paragraph
-    },
-    'REGEXP_EMPTY_UL': {
-      constant: REGEXP_EMPTY_UL,
-      replacer: emptyUl
-    },
-    'REGEXP_EMPTY_OL': {
-      constant: REGEXP_EMPTY_OL,
-      replacer: emptyOl
-    },
-    'REGEXP_EMPTY_BLOCKQUOTE': {
-      constant: REGEXP_EMPTY_BLOCKQUOTE,
-      replacer: emptyBlockQuote
-    },
-    'REGEXP_BR': { 
-      constant: REGEXP_BR,
-      replacer: br
-    },
-    'sponsorship': {
-      constant: REGEXP_SPONSORSHIP,
-      replacer: sponsorship
-    },
-    'mem': {
-      constant: REGEXP_MEM,
-      replacer: mem
-    },
-    'separator': {
-      constant: REGEXP_SEPARATOR,
-      replacer: separator
-    }
+  'strong': {
+    constant: REGEXP_STRONG,
+    replacer: strong
+  },
+  'previewText':{
+    constant: REGEXP_PREVIEW_TEXT,
+    replacer: previewText
+  },
+  // 'empty': {
+  //   constant: REGEXP_HTML_COMMENTS,
+  //   replacer: comments
+  // },
+  'italic': {
+    constant: REGEXP_EM,
+    replacer: italic
+  },
+  'header': {
+    constant: REGEXP_HEADER,
+    replacer: header
+  },
+  'image': {
+    constant: REGEXP_IMAGE,
+    replacer: image
+  },
+  'link': { 
+    constant: REGEXP_LINK,
+    replacer: link
+  },
+  'del': {
+    constant: REGEXP_DEL,
+    replacer: del
+  },
+  'q': { 
+    constant: REGEXP_Q,
+    replacer: q
+  },
+  'code': {
+    constant: REGEXP_CODE,
+    replacer: code
+  },
+  'ulList': { 
+    constant: REGEXP_UL_LIST,
+    replacer: ulList
+  },
+  'olList': { 
+    constant: REGEXP_OL_LIST,
+    replacer: olList 
+  },
+  'blockquote': {
+    constant: REGEXP_BLOCKQUOTE,
+    replacer: blockQuote
+  },
+  'hr': {
+    constant: REGEXP_HR,
+    replacer: hr
+  },
+  // 'paragraphWrapper': {
+  //   constant: REGEXP_PARAGRAPH,
+  //   replacer: paragraph
+  // },
+  // 'REGEXP_EMPTY_UL': {
+  //   constant: REGEXP_EMPTY_UL,
+  //   replacer: emptyUl
+  // },
+  // 'REGEXP_EMPTY_OL': {
+  //   constant: REGEXP_EMPTY_OL,
+  //   replacer: emptyOl
+  // },
+  // 'REGEXP_EMPTY_BLOCKQUOTE': {
+  //   constant: REGEXP_EMPTY_BLOCKQUOTE,
+  //   replacer: emptyBlockQuote
+  // },
+  'REGEXP_BR': { 
+    constant: REGEXP_BR,
+    replacer: br
+  },
+  'sponsorship': {
+    constant: REGEXP_SPONSORSHIP,
+    replacer: sponsorship
+  },
+  'mem': {
+    constant: REGEXP_MEM,
+    replacer: mem
+  },
+  'separator': {
+    constant: REGEXP_SEPARATOR,
+    replacer: separator
+  }
 }
 
 
 function replaceMarkdown(nameOfCallback) {
+  try {
 
   const fromMap = map[nameOfCallback]
   const forReplacer = typeof fromMap.replacer === "string" ? fromMap.replacer : fromMap.replacer.bind(this)
 
-  this.content = this.content.replace(fromMap.constant, forReplacer);
+  this.content = this.content.replace(fromMap.replacer, forReplacer);
+  }catch (e) {
+
+    throw e;
+
+  }
  
 }
 
