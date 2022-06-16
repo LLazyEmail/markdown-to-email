@@ -80,6 +80,8 @@ import {
 // Should be working like this
 // this.replaceMDBinded("previewText");
 
+
+// @TODO map is a stupid name, that is also a name for a lodash method.
 const map = {
   strong: {
     constant: REGEXP_STRONG,
@@ -171,19 +173,74 @@ const map = {
   },
 };
 
-function replaceMarkdown(nameOfCallback) {
-  if (!nameOfCallback) {
+// @TODO replace the name of this method
+function prepOurCallback(callbackName) {
+  if (!callbackName) {
     throw new Error('name of callback is undefined or empty');
   }
 
-  const fromMap = map[nameOfCallback];
+  const fromMap = map[callbackName];
 
-  const forReplacer =
-    typeof fromMap.replacer === 'string'
-      ? fromMap.replacer
-      : fromMap.replacer.bind(this);
+  return fromMap;
+}
 
-  this.content = this.content.replace(fromMap.replacer, forReplacer);
+function debuggingReplacer(name){
+  let namesArr = ['sponsorship'];
+  return namesArr.includes(name)
+}
+
+function replaceMarkdown(nameOfCallback) {
+
+
+  
+  // if (!nameOfCallback) {
+  //   throw new Error('name of callback is undefined or empty');
+  // }
+
+  // const fromMap = map[nameOfCallback];
+
+  const fromMap = prepOurCallback(nameOfCallback);
+
+  
+  // console.log(fromMap.constant);
+  // console.log(fromMap.replacer);
+
+
+  // @TODO I dont like  names fromMap & nameOfCallback & forReplacer
+  // fromMap.replacer is a single regex value
+  // forReplacer is a new sting that will be applied
+
+  // @TODO https://github.com/LLazyEmail/markdown-to-email/issues/931
+  var forReplacer = '';
+  if (typeof fromMap.replacer === 'string'){
+    forReplacer = fromMap.replacer;
+  } else {
+    forReplacer = fromMap.replacer.bind(this);
+  }
+
+  // very cool, but generates an error, so not so cool at all.
+  // const forReplacer =
+  //   typeof fromMap.replacer === 'string'
+  //     ? fromMap.replacer
+  //     : fromMap.replacer.bind(this);
+
+  
+
+  // console.log(fromMap.replacer);    
+  // console.log(forReplacer);
+  // console.log('------');
+
+  
+  console.log(nameOfCallback);
+
+
+  if(debuggingReplacer(nameOfCallback)){
+    this.content = this.content.replace(fromMap.constant, forReplacer);
+  }
+
+  
+  // this.content = this.content.replace(fromMap.replacer, forReplacer);
+
 }
 
 // i think this method would be broken now, because we cant play with "this."
