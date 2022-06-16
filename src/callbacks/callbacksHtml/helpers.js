@@ -26,19 +26,39 @@ function checkerr(variable = false) {
 function replaceWrapper(name, config, folder = 'typography') {
 
   
+  console.log(name, config);
+
+
 
   
   // TODO later we can get rid of it completely.
   // right now it's only for back campatibility purposes
+
+
+
   // const configCopy = Object.assign(config, {
   //   // TODO I am not sure is it correct structure
   //   layouts: { body, misc },
   //   folder,
   // });
   // console.log(configCopy);
+
+  
+  // let newString = generateNewString(name, configCopy);
+  // return newString;
   // return generateNewString(name, configCopy);
 
-  if (!checkerr()) throw new Error('replaceWrapper is blank');
+
+  if (typeof variable === 'undefined' || variable === null) {
+    // variable is undefined or null
+    // return false;
+    throw new Error('replaceWrapper is blank');
+  }
+
+
+  // if (!checkerr()) {
+  //   throw new Error('replaceWrapper is blank');
+  // }
   
   // if(checkerr()){
   //   throw new Error

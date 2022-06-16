@@ -64,13 +64,19 @@ export function br(text, newLines) {
 }
 
 export function sponsorship(text) {
+
+
   // TODO move out this regex into constants file.
   const regex = /\[(.*?)\]/g;
+
+
+  const regex2 = /[\[\]]/g; 
+
 
   const [content, href, src] = text
     .match(regex)
     // eslint-disable-next-line no-useless-escape
-    .map((match) => match.replace(/[\[\]]/g, '')); // TODO move out this regex into constants file.
+    .map((match) => match.replace(regex2, '')); // TODO move out this regex into constants file.
 
   const config = {
     src: src.trim(),
@@ -93,9 +99,9 @@ export function sponsorship(text) {
 
   const replaced = replaceWrapper('sponsor', config);
 
+  console.log(replaced);
 
 
-  
   return replaced;
 }
 
