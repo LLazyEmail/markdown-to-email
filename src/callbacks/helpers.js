@@ -46,6 +46,8 @@ function generateNewString(name, config) {
   return updatedString;
 }
 //-----------------
+//-----------------
+//-----------------
 
 // moving into separated callbacks
 // function replaceWrapper(name, config, folder = 'typography') {
@@ -62,6 +64,8 @@ function generateNewString(name, config) {
 //   return generateNewString(name, configCopy);
 // }
 
+//-----------------
+//-----------------
 // function replaceReactWrapper(name, config, folder = 'typography') {
 //   // console.log(reactLayouts.Typography.strong);
 //   // console.log("name", config);
@@ -76,6 +80,8 @@ function generateNewString(name, config) {
 //   return generateNewString(name, configCopy);
 // }
 
+//-----------------
+//-----------------
 // function _NewReplace(name, config){
 //  // TODO later we can get rid of it completely.
 //  // right now it's only for back campatibility purposes
@@ -88,6 +94,8 @@ function generateNewString(name, config) {
 //  return generateNewString(name, config);
 // }
 
+//-----------------
+//-----------------
 export {
   // newLine,
 
