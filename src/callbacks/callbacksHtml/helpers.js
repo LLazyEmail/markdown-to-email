@@ -1,7 +1,7 @@
 import { generateNewString } from '../helpers';
 
-// import body from '../../templates/OuterTemplate/layouts/body';
-// import misc from '../../templates/OuterTemplate/layouts/misc';
+import body from '../../templates/OuterTemplate/layouts/body';
+import misc from '../../templates/OuterTemplate/layouts/misc';
 
 
 // import NewPlainJSLayouts from '../../templates/OuterTemplate';
@@ -12,20 +12,20 @@ import { generateNewString } from '../helpers';
 // TODO needs to be checked and replace on correct
 const newLine = '\n';
 
-function checkerr(variable = false) {
+// function checkerr(variable = false) {
 
-  // console.log( typeof element.replacer === 'undefined' );
-  // console.log( element.replacer === null );
+//   // console.log( typeof element.replacer === 'undefined' );
+//   // console.log( element.replacer === null );
 
-  if (typeof variable === 'undefined' || variable === null) {
-    // variable is undefined or null
-    return false;
-  }
-  return true;
-}
+//   if (typeof variable === 'undefined' || variable === null) {
+//     // variable is undefined or null
+//     return false;
+//   }
+//   return true;
+// }
 
 // eslint-disable-next-line no-unused-vars
-function replaceWrapper(name, config, folder = 'typography') {
+function replaceWrapper(name, config, folder = 'typography', debug = true) {
 
   
   // console.log(config);
@@ -39,13 +39,16 @@ function replaceWrapper(name, config, folder = 'typography') {
 
   //   // TODO I am not sure is it correct structure
   const configCopy = Object.assign(config, {
-    // layouts: { body, misc },
+    layouts: { body, misc },
     folder,
   });
-  console.log(configCopy);
+
+  // if(debug)  console.log(configCopy);
 
 
-  // let newString = generateNewString(name, configCopy);
+  let newString = generateNewString(name, configCopy);
+
+  if(debug) console.log(newString);
   // return newString;
   // return generateNewString(name, configCopy);
 
