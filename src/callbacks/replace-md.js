@@ -208,9 +208,9 @@ function methodForTestingValues(){
     // console.log(element)
     // console.log(element.replacer);
 
-    console.log( typeof element.replacer === 'undefined' );
-    console.log( element.replacer === null );
-    console.log('----------');
+    // console.log( typeof element.replacer === 'undefined' );
+    // console.log( element.replacer === null );
+    // console.log('----------');
     
   });
 
@@ -265,10 +265,11 @@ function replaceMarkdown(nameOfCallback) {
 
 
   if(debuggingReplacer(nameOfCallback)){
+    console.log(nameOfCallback)
     this.content = this.content.replace(fromMap.constant, forReplacer);
   }
 
-  
+  return '';
   // this.content = this.content.replace(fromMap.replacer, forReplacer);
 
 }

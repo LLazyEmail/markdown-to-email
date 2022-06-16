@@ -33,6 +33,8 @@ function strong(text, doubleAsterix, content, asterix) {
   };
 
 
+
+
   
   const replaced = replaceWrapper('strong', config);
 
@@ -44,6 +46,8 @@ function link(text, title, href) {
     content: title.trim(),
     href: href.trim(),
   };
+
+
 
 
 
@@ -67,6 +71,8 @@ function previewText(text, content) {
 
 
 
+
+
   const replaced = replaceWrapper('previewText', config, 'body');
 
   return replaced;
@@ -78,6 +84,8 @@ function mem(text, src, href, altText) {
     altText: altText.trim(),
     href: href.trim(),
   };
+
+
 
 
 
@@ -95,6 +103,8 @@ function header(text, chars, content) {
 
 
 
+
+  
   const replaced = replaceWrapper(titleType[chars.length - 1], config);
 
   const result = newLine + replaced;

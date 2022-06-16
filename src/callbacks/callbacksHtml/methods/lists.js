@@ -10,6 +10,10 @@ function getParsedSubList(subList) {
       content: subItem.trim(),
     };
 
+
+
+
+
     const replaced = replaceWrapper('listItem', config);
 
     return newLine + replaced;
@@ -23,6 +27,10 @@ function getParsedLists(parsedSubLists) {
     const config = {
       content: listItem.trim(),
     };
+
+
+
+
 
     const replaced = replaceWrapper('listItem', config);
 
@@ -45,6 +53,10 @@ function ulList(text, list) {
       content: parsedSubItem + newLine,
     };
 
+
+
+
+
     const replaced = replaceWrapper('list', config);
     return newLine + replaced;
   });
@@ -55,6 +67,10 @@ function ulList(text, list) {
     content: parsedList + newLine,
   };
 
+
+
+
+  
   const replaced = replaceWrapper('list', config);
 
   return newLine + replaced + newLine;

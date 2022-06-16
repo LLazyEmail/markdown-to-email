@@ -7,6 +7,9 @@ function mem(text, src, href, altText) {
     href: href.trim(),
   };
 
+
+
+
   const replaced = replaceWrapper('image', config);
 
   return replaced;
@@ -15,6 +18,10 @@ function mem(text, src, href, altText) {
 function separator() {
   const config = {};
 
+
+
+
+  
   const replaced = replaceWrapper('separator', config);
 
   const result = newLine + replaced + newLine;
