@@ -10,10 +10,22 @@
 // TODO needs to be checked and replace on correct
 const newLine = '\n';
 
+function checkerr(variable = false) {
+
+  // console.log( typeof element.replacer === 'undefined' );
+  // console.log( element.replacer === null );
+
+  if (typeof variable === 'undefined' || variable === null) {
+    // variable is undefined or null
+    return false;
+  }
+  return true;
+}
+
 // eslint-disable-next-line no-unused-vars
 function replaceWrapper(name, config, folder = 'typography') {
 
-
+  
 
   
   // TODO later we can get rid of it completely.
@@ -26,6 +38,11 @@ function replaceWrapper(name, config, folder = 'typography') {
   // console.log(configCopy);
   // return generateNewString(name, configCopy);
 
+  if (!checkerr()) throw new Error('replaceWrapper is blank');
+  
+  // if(checkerr()){
+  //   throw new Error
+  // }
 
 }
 

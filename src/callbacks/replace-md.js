@@ -5,9 +5,12 @@
 
 // import { sponsorship } from "./callbacksHtml/methods/callbacks";
 // import { separator } from "./callbacksHtml/methods/custom";
+// --
+import _ from 'lodash';
 import { previewText } from './callbacksHtml/methods/simple';
 import {
   strong,
+  
   link,
   blockquote,
   mem,
@@ -22,12 +25,20 @@ import {
   olList,
   image,
   paragraphWrapper,
+
   sponsorship,
+
   br,
   separator,
 } from './callbacksHtml/index';
+
+
 // function extractOptions(converter, key) {
 //   if (!converter.key) throw new Error('no options for this converter');
+//   return converter.key;
+// }
+
+
 import {
   REGEXP_HEADER,
   REGEXP_IMAGE,
@@ -48,8 +59,7 @@ import {
   REGEXP_PARAGRAPH,
   REGEXP_SEPARATOR,
 } from '../constants';
-//   return converter.key;
-// }
+
 
 // TODO what is it?
 /* function replaceMarkdownNew(key) {
@@ -81,8 +91,8 @@ import {
 // this.replaceMDBinded("previewText");
 
 
-// @TODO map is a stupid name, that is also a name for a lodash method.
-const map = {
+// @TODO "map" is a stupid name, that is also a name for a lodash method.
+const mapObject = {
   strong: {
     constant: REGEXP_STRONG,
     replacer: strong,
@@ -179,7 +189,7 @@ function prepOurCallback(callbackName) {
     throw new Error('name of callback is undefined or empty');
   }
 
-  const fromMap = map[callbackName];
+  const fromMap = mapObject[callbackName];
 
   return fromMap;
 }
@@ -189,10 +199,30 @@ function debuggingReplacer(name){
   return namesArr.includes(name)
 }
 
+function methodForTestingValues(){
+  // mapObject.forEach((element) => {
+  //   console.log(element.replacer);
+  // })
+
+  _.map(mapObject, (element) => {
+    // console.log(element)
+    // console.log(element.replacer);
+
+    console.log( typeof element.replacer === 'undefined' );
+    console.log( element.replacer === null );
+    console.log('----------');
+    
+  });
+
+}
+
 function replaceMarkdown(nameOfCallback) {
 
 
-  
+  methodForTestingValues();
+
+
+
   // if (!nameOfCallback) {
   //   throw new Error('name of callback is undefined or empty');
   // }
@@ -212,11 +242,11 @@ function replaceMarkdown(nameOfCallback) {
 
   // @TODO https://github.com/LLazyEmail/markdown-to-email/issues/931
   var forReplacer = '';
-  if (typeof fromMap.replacer === 'string'){
-    forReplacer = fromMap.replacer;
-  } else {
+  // if (typeof fromMap.replacer === 'string'){
+  //   forReplacer = fromMap.replacer;
+  // } else {
     forReplacer = fromMap.replacer.bind(this);
-  }
+  // }
 
   // very cool, but generates an error, so not so cool at all.
   // const forReplacer =
@@ -231,7 +261,7 @@ function replaceMarkdown(nameOfCallback) {
   // console.log('------');
 
   
-  console.log(nameOfCallback);
+  // console.log(nameOfCallback);
 
 
   if(debuggingReplacer(nameOfCallback)){
