@@ -14,6 +14,10 @@ export function paragraphWrapper(text, line) {
     content: trimmed,
   };
 
+
+
+
+
   const replaced = replaceWrapper('paragraph', config);
 
   return newLine + replaced + newLine;
@@ -33,6 +37,10 @@ export function image(text, alt, srcWithTooltip) {
   // eslint-disable-next-line no-plusplus
   this.warnings.images++;
 
+
+
+
+
   const replaced = replaceWrapper('image', config);
 
   return replaced;
@@ -43,6 +51,8 @@ export function br(text, newLines) {
 
   const regex = new RegExp(newLine, 'g');
   const arrNewLines = newLines.match(regex);
+
+
 
   // @TODO well, it's not good. can be improved with lodash
   const result = arrNewLines.reduce(
@@ -75,6 +85,9 @@ export function sponsorship(text) {
   this.errors.sponsorshipTop
     ? (this.errors.sponsorshipBottom = true)
     : (this.errors.sponsorshipTop = true);
+
+
+
 
   const replaced = replaceWrapper('sponsor', config);
 
