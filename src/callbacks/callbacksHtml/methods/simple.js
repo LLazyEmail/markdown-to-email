@@ -118,11 +118,13 @@ export {
   blockquote,
   mem,
   header,
-  italic,
-  del,
-  q,
-  code,
-  hr,
-  empty,
+
+  // italic,
+  // del,
+  // q,
+  // code,
+  // hr,
+  // empty,
+
   previewText,
 };

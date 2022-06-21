@@ -15,7 +15,7 @@ import {
     code,
     hr,
     empty
-   } './methods/simple-without-replacer';
+   } from './methods/simple-without-replacer';
 
   import {
     ulList,

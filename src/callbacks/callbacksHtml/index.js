@@ -4,13 +4,25 @@ import {
   blockquote,
   mem,
   header,
+
+  // italic,
+  // del,
+  // q,
+  // code,
+  // hr,
+  // empty,
+
+} from './methods/simple';
+
+import {
   italic,
   del,
   q,
   code,
   hr,
-  empty,
-} from './methods/simple';
+  empty
+ } from './methods/simple-without-replacer';
+
 
 import { ulList, olList } from './methods/lists';
 
