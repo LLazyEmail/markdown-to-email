@@ -1,60 +1,8 @@
-import { replaceWrapper, newLine } from '../helpers';
-
-
-// const italic = '$1<em>$3</em>$4';
-
-const italic = () => '$1<em>$3</em>$4';
-
-// const del = '<del>$1</del>';
-
-const del = () => '<del>$1</del>';
-
-// const q = '<q>$1</q>';
-
-const q = () => '<q>$1</q>';
-
-// const code = '<code>$1</code>';
-
-const code = () => '<code>$1</code>';
-
-// const hr = `${newLine}<hr />`;
-
-const hr = () => `${newLine}<hr />`;
-
-// const empty = '';
-
-const empty = () => '';
-
-// const strong = "<strong>$2$3</strong>";
-
-function strong(text, doubleAsterix, content, asterix) {
-  const config = {
-    content: `${content + asterix}`,
-  };
+import { replaceWrapper, newLine, beforeBeginingNewLine } from '../helpers';
 
 
 
 
-  
-  const replaced = replaceWrapper('strong', config);
-
-  return replaced;
-}
-
-function link(text, title, href) {
-  const config = {
-    content: title.trim(),
-    href: href.trim(),
-  };
-
-
-
-
-
-  const replaced = replaceWrapper('link', config);
-
-  return replaced;
-}
 
 function blockquote(text, tmp, item) {
   return `${newLine}<blockquote>${item.trim()}</blockquote>`;
@@ -78,21 +26,7 @@ function previewText(text, content) {
   return replaced;
 }
 
-function mem(text, src, href, altText) {
-  const config = {
-    src: src.trim(),
-    altText: altText.trim(),
-    href: href.trim(),
-  };
 
-
-
-
-
-  const replaced = replaceWrapper('image', config);
-
-  return replaced;
-}
 
 function header(text, chars, content) {
   const config = {

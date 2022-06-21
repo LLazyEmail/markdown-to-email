@@ -4,6 +4,8 @@
 // const platform = os.platform();
 // const newLine = platform === 'win32' ? '\r\n' : '\n';
 
+
+
 function getWrapper(name, config) {
   const { layouts, folder } = config;
 
@@ -14,6 +16,7 @@ function getWrapper(name, config) {
 
   return wrapper;
 }
+
 
 // here we can have a problem, because we're passing more information into a config that it was before
 
@@ -29,9 +32,12 @@ function loopForWrapper(config, wrapper) {
   // @TODO replace with lodash
   Object.keys(config).forEach((name) => {
     const currentConfig = config[name];
+
+
     const regularExpression = new RegExp(`{${name}}`, 'g');
 
     wrapper = wrapper.replace(regularExpression, currentConfig);
+
   });
 
   return wrapper;
@@ -45,6 +51,7 @@ function generateNewString(name, config) {
 
   return updatedString;
 }
+
 //-----------------
 //-----------------
 //-----------------
@@ -97,7 +104,7 @@ function generateNewString(name, config) {
 //-----------------
 //-----------------
 export {
-  // newLine,
+  
 
   generateNewString,
   // replaceReactWrapper,

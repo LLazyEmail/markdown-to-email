@@ -1,9 +1,10 @@
 
-import { replaceWrapper, newLine } from '../helpers';
+import { replaceWrapper, newLine, beforeBeginingNewLine, beforeEnd } from '../helpers';
 
 
 function getParsedSubList(subList) {
 
+  // beforeEnd
   const regex_variable = `\\s{4}\\*(.*?)${newLine}`;
   const regex = new RegExp(regex_variable, 'g');
 
@@ -31,6 +32,8 @@ function getParsedSubList(subList) {
 
 
 function getParsedLists(parsedSubLists){
+
+  // beforeEnd
 
   const regex_variable = `\\*(.*?)${newLine}`;
   const regex = new RegExp(regex_variable, 'g');
@@ -108,6 +111,10 @@ function ulList(text, list) {
 
 // @TODO update this. it's a real shitty method
 function olList(text, item) {
+
+  // beforeBeginingNewLine
+
+
   return 
     `${newLine}<ol>${newLine}\t
       <li>${   item.trim() }</li>

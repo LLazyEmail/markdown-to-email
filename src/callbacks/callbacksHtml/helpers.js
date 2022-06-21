@@ -12,6 +12,14 @@ import misc from '../../templates/OuterTemplate/layouts/misc';
 // TODO needs to be checked and replace on correct
 const newLine = '\n';
 
+function beforeBeginingNewLine(string){
+  return newLine + string;
+}
+
+function beforeEnd(string){
+  return string + newLine;
+}
+
 // function checkerr(variable = false) {
 
 //   // console.log( typeof element.replacer === 'undefined' );

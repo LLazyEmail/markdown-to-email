@@ -6,6 +6,8 @@
 function relieve(name, config) {
   const folder = config.folder || 'typography';
 
+
+  
   // we need to have an if, for passing plain or react stuff
   // let wrapper = getWrapper(layouts, folder, name)
 
