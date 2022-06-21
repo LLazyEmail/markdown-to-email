@@ -68,6 +68,11 @@ function replaceWrapper(name, config, folder = 'typography', debug = true) {
 
 }
 
+
+// I plan to add more replaceWrappers for now, in order to simplify our processes a little bit.
+// as we redoing this thing again and again, it's probably a better way to make it work as we wishing for
+
+
 export {
   newLine,
   replaceWrapper,

@@ -1,11 +1,12 @@
 import { replaceWrapper, newLine } from '../helpers';
 
 /// function is not working as planned
-
+// TODO remove unused `text` argument
 export function paragraphWrapper(text, line) {
   const trimmed = line.trim();
 
   // TODO move out this regex into constants file.
+  
   if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
     return newLine + line + newLine;
   }
@@ -24,28 +25,10 @@ export function paragraphWrapper(text, line) {
 }
 /// !end function is not working as planned
 
-export function image(text, alt, srcWithTooltip) {
-  // eslint-disable-next-line no-useless-escape
-  const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
-
-  const config = {
-    src: src.trim(),
-    altText: alt,
-  };
-
-  // i dont think it will work well
-  // eslint-disable-next-line no-plusplus
-  this.warnings.images++;
 
 
 
-
-
-  const replaced = replaceWrapper('image', config);
-
-  return replaced;
-}
-
+// TODO remove unused `text` argument
 export function br(text, newLines) {
   // TODO move out this regex into constants file.
 
@@ -63,6 +46,8 @@ export function br(text, newLines) {
   return result;
 }
 
+
+// TODO remove unused `text` argument
 export function sponsorship(text) {
 
 

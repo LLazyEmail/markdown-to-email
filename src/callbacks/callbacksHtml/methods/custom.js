@@ -1,5 +1,6 @@
 import { replaceWrapper, newLine } from '../helpers';
 
+// TODO remove unused `text` argument
 function mem(text, src, href, altText) {
   const config = {
     src: src.trim(),
@@ -15,6 +16,8 @@ function mem(text, src, href, altText) {
   return replaced;
 }
 
+
+
 function separator() {
   const config = {};
 
@@ -29,3 +32,4 @@ function separator() {
 }
 
 export { mem, separator };
+
