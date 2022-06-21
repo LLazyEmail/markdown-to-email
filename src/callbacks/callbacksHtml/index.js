@@ -29,8 +29,12 @@ import {
 
 import { ulList, olList } from './methods/lists';
 
-import { image, paragraphWrapper, sponsorship, br } from './methods/callbacks';
-
+import { 
+  // image, 
+  paragraphWrapper,
+  // sponsorship,
+   br } from './methods/callbacks';
+// import {image }
 import { separator } from './methods/custom';
 
 // export default {
@@ -38,7 +42,7 @@ export {
   strong,
   link,
   blockquote,
-  mem,
+  // mem,
   header,
   italic,
   del,
@@ -48,9 +52,9 @@ export {
   empty,
   ulList,
   olList,
-  image,
+  // image,
   paragraphWrapper,
-  sponsorship,
+  // sponsorship,
   br,
   separator,
 };

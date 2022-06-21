@@ -17,7 +17,7 @@ import {
   
   link,
   blockquote,
-  mem,
+  // mem,
   header,
   italic,
   del,
@@ -27,10 +27,10 @@ import {
   // empty,
   ulList,
   olList,
-  image,
+  // image,
   paragraphWrapper,
 
-  sponsorship,
+  // sponsorship,
 
   br,
   separator,
