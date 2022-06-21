@@ -1,8 +1,7 @@
 import {
-  strong,
-  link,
+  
   blockquote,
-  mem,
+  // mem,
   header,
 
   // italic,
@@ -13,6 +12,10 @@ import {
   // empty,
 
 } from './methods/simple';
+
+
+import { strong } from './methods/strong';
+import { link } from './methods/link';
 
 import {
   italic,

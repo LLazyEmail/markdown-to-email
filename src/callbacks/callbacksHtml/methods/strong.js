@@ -12,3 +12,10 @@ function strong(text, doubleAsterix, content, asterix) {
   
     return replaced;
   }
+
+
+  // 
+
+  export {
+    strong
+  }

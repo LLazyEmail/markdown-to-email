@@ -16,22 +16,6 @@ function mem(text, src, href, altText) {
   return replaced;
 }
 
-function mem(text, src, href, altText) {
-  const config = {
-    src: src.trim(),
-    altText: altText.trim(),
-    href: href.trim(),
-  };
-
-
-
-
-
-  const replaced = replaceWrapper('image', config);
-
-  return replaced;
-}
-
 function separator() {
   const config = {};
 

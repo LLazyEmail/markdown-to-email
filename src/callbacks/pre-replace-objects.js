@@ -69,4 +69,19 @@ import {
 // // multiple sources
 // objectAssign({foo: 0}, {bar: 1}, {baz: 2});
 
+// Module Pattern
 
+function returnReplaceObject(constant, replacer){
+  return { constant, replacer };
+}
+
+
+const strongA = returnReplaceObject(REGEXP_STRONG, strong);
+console.log(strongA);
+
+// strong: {
+//   constant: REGEXP_STRONG,
+//   replacer: strong,
+// },
+
+export default {strongA}

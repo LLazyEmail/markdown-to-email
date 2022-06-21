@@ -47,10 +47,10 @@ function header(text, chars, content) {
 }
 
 export {
-  strong,
-  link,
+  // strong,
+  // link,
   blockquote,
-  mem,
+  // mem,
   header,
 
   // italic,

@@ -19,3 +19,7 @@ function link(text, title, href) {
 
     return replaced;
   }
+
+  export {
+    link
+  }

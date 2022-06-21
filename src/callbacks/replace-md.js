@@ -7,6 +7,10 @@
 // import { separator } from "./callbacksHtml/methods/custom";
 // --
 import _ from 'lodash';
+
+
+import MainObject from './pre-replace-objects';
+
 import { previewText } from './callbacksHtml/methods/simple';
 import {
   strong,
