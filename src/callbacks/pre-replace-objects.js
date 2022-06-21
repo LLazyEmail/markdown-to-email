@@ -1,34 +1,34 @@
 
-import objectAssign from 'object-assign';
+// import objectAssign from 'object-assign';
  
 
 // import { sponsorship } from "./callbacksHtml/methods/callbacks";
 // import { separator } from "./callbacksHtml/methods/custom";
 // --
 import _ from 'lodash';
-import { previewText } from './callbacksHtml/methods/simple';
+import { _previewText } from './callbacksHtml/methods/simple';
 import {
-  strong,
+  _strong,
   
-  link,
-  blockquote,
-  mem,
-  header,
-  italic,
-  del,
-  q,
-  code,
-  hr,
-  // empty,
-  ulList,
-  olList,
-  image,
-  paragraphWrapper,
+  _link,
+  _blockquote,
+  _mem,
+  _header,
+  _italic,
+  _del,
+  _q,
+  _code,
+  _hr,
+  // _empty,
+  _ulList,
+  _olList,
+  _image,
+  _paragraphWrapper,
 
-  sponsorship,
+  _sponsorship,
 
-  br,
-  separator,
+  _br,
+  _separator,
 } from './callbacksHtml/index';
 
 
@@ -71,17 +71,51 @@ import {
 
 // Module Pattern
 
-function returnReplaceObject(constant, replacer){
+// later we'll extend this method
+// object assing will help us.
+function objectBuilder(constant, replacer){
   return { constant, replacer };
 }
 
 
-const strongA = returnReplaceObject(REGEXP_STRONG, strong);
-console.log(strongA);
+// const objectBuilder = (constant, replacer) => {constant, replacer}
 
-// strong: {
-//   constant: REGEXP_STRONG,
-//   replacer: strong,
-// },
 
-export default {strongA}
+const strong = objectBuilder(REGEXP_STRONG, _strong);
+console.log(strong);
+
+const link = objectBuilder(REGEXP_LINK, _link)
+
+const del  = objectBuilder(REGEXP_DEL, _del)
+
+const image  = objectBuilder(REGEXP_IMAGE, _image)
+
+const previewText = objectBuilder(REGEXP_PREVIEW_TEXT, _previewText)
+
+const italic  = objectBuilder(REGEXP_EM, _italic)
+
+const header  = objectBuilder(REGEXP_HEADER, _header)
+
+const q = objectBuilder(REGEXP_Q, _q)
+
+const code  = objectBuilder(REGEXP_CODE, _code)
+
+const ulList = objectBuilder(REGEXP_UL_LIST, _ulList)
+
+const olList = objectBuilder(REGEXP_OL_LIST, _olList)
+
+const blockquote = objectBuilder(REGEXP_BLOCKQUOTE, _blockquote)
+
+const hr = objectBuilder(REGEXP_HR, _hr)
+
+const paragraphWrapper = objectBuilder(REGEXP_PARAGRAPH, _paragraphWrapper)
+
+const br = objectBuilder(REGEXP_BR, _br)
+
+const sponsorship = objectBuilder(REGEXP_SPONSORSHIP, _sponsorship)
+
+const memes = objectBuilder(REGEXP_MEM, _mem)
+
+const separator = objectBuilder(REGEXP_SEPARATOR, _separator)
+
+export default { strong } 

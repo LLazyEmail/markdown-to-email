@@ -1,5 +1,5 @@
 // TODO make sense to the text variable
-function strong(text, doubleAsterix, content, asterix) {
+function _strong(text, doubleAsterix, content, asterix) {
     const config = {
       content: `${content + asterix}`,
     };
@@ -17,5 +17,5 @@ function strong(text, doubleAsterix, content, asterix) {
   // 
 
   export {
-    strong
+    _strong
   }

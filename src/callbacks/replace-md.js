@@ -11,30 +11,33 @@ import _ from 'lodash';
 
 import MainObject from './pre-replace-objects';
 
-import { previewText } from './callbacksHtml/methods/simple';
-import {
-  strong,
+console.log(MainObject);
+
+// import { previewText } from './callbacksHtml/methods/simple';
+
+// import {
+//   strong,
   
-  link,
-  blockquote,
-  // mem,
-  header,
-  italic,
-  del,
-  q,
-  code,
-  hr,
-  // empty,
-  ulList,
-  olList,
-  // image,
-  paragraphWrapper,
+//   link,
+//   blockquote,
+//   // mem,
+//   header,
+//   italic,
+//   del,
+//   q,
+//   code,
+//   hr,
+//   // empty,
+//   ulList,
+//   olList,
+//   // image,
+//   paragraphWrapper,
 
-  // sponsorship,
+//   // sponsorship,
 
-  br,
-  separator,
-} from './callbacksHtml/index';
+//   br,
+//   separator,
+// } from './callbacksHtml/index';
 
 
 // function extractOptions(converter, key) {
@@ -43,26 +46,26 @@ import {
 // }
 
 
-import {
-  REGEXP_HEADER,
-  REGEXP_IMAGE,
-  REGEXP_LINK,
-  REGEXP_STRONG,
-  REGEXP_DEL,
-  REGEXP_Q,
-  REGEXP_CODE,
-  REGEXP_UL_LIST,
-  REGEXP_OL_LIST,
-  REGEXP_BLOCKQUOTE,
-  REGEXP_HR,
-  REGEXP_BR,
-  REGEXP_EM,
-  REGEXP_SPONSORSHIP,
-  REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT,
-  REGEXP_PARAGRAPH,
-  REGEXP_SEPARATOR,
-} from '../constants';
+// import {
+//   REGEXP_HEADER,
+//   REGEXP_IMAGE,
+//   REGEXP_LINK,
+//   REGEXP_STRONG,
+//   REGEXP_DEL,
+//   REGEXP_Q,
+//   REGEXP_CODE,
+//   REGEXP_UL_LIST,
+//   REGEXP_OL_LIST,
+//   REGEXP_BLOCKQUOTE,
+//   REGEXP_HR,
+//   REGEXP_BR,
+//   REGEXP_EM,
+//   REGEXP_SPONSORSHIP,
+//   REGEXP_MEM,
+//   REGEXP_PREVIEW_TEXT,
+//   REGEXP_PARAGRAPH,
+//   REGEXP_SEPARATOR,
+// } from '../constants';
 
 
 
@@ -97,6 +100,8 @@ import {
   //   }
 } */
 
+
+
 // TODO THIS WILL BE BROKEN SOOOOON
 // This structure was before
 // this.replaceMDBinded(this._constants.REGEXP_PREVIEW_TEXT, previewText);
@@ -106,38 +111,38 @@ import {
 
 // @TODO "map" is a stupid name, that is also a name for a lodash method.
 const mapObject = {
-  strong: {
-    constant: REGEXP_STRONG,
-    replacer: strong,
-  },
-  previewText: {
-    constant: REGEXP_PREVIEW_TEXT,
-    replacer: previewText,
-  },
+  // strong: {
+  //   constant: REGEXP_STRONG,
+  //   replacer: strong,
+  // },
+  // previewText: {
+  //   constant: REGEXP_PREVIEW_TEXT,
+  //   replacer: previewText,
+  // },
   // 'empty': {
   //   constant: REGEXP_HTML_COMMENTS,
   //   replacer: comments
   // },
-  italic: {
-    constant: REGEXP_EM,
-    replacer: italic,
-  },
+  // italic: {
+  //   constant: REGEXP_EM,
+  //   replacer: italic,
+  // },
   header: {
     constant: REGEXP_HEADER,
     replacer: header,
   },
-  image: {
-    constant: REGEXP_IMAGE,
-    replacer: image,
-  },
-  link: {
-    constant: REGEXP_LINK,
-    replacer: link,
-  },
-  del: {
-    constant: REGEXP_DEL,
-    replacer: del,
-  },
+  // image: {
+  //   constant: REGEXP_IMAGE,
+  //   replacer: image,
+  // },
+  // link: {
+  //   constant: REGEXP_LINK,
+  //   replacer: link,
+  // },
+  // del: {
+  //   constant: REGEXP_DEL,
+  //   replacer: del,
+  // },
   q: {
     constant: REGEXP_Q,
     replacer: q,
@@ -166,6 +171,8 @@ const mapObject = {
     constant: REGEXP_PARAGRAPH,
     replacer: paragraphWrapper,
   },
+
+
   // 'REGEXP_EMPTY_UL': {
   //   constant: REGEXP_EMPTY_UL,
   //   replacer: emptyUl
@@ -178,22 +185,22 @@ const mapObject = {
   //   constant: REGEXP_EMPTY_BLOCKQUOTE,
   //   replacer: emptyBlockQuote
   // },
-  br: {
-    constant: REGEXP_BR,
-    replacer: br,
-  },
-  sponsorship: {
-    constant: REGEXP_SPONSORSHIP,
-    replacer: sponsorship,
-  },
-  memes: {
-    constant: REGEXP_MEM,
-    replacer: mem,
-  },
-  separator: {
-    constant: REGEXP_SEPARATOR,
-    replacer: separator,
-  },
+
+
+  // br: {
+  //   constant: REGEXP_BR,
+  //   replacer: br,
+  // },
+  // sponsorship: {
+  //   constant: REGEXP_SPONSORSHIP,
+  //   replacer: sponsorship,
+  // },
+  // memes: {
+  //   constant: REGEXP_MEM,
+  //   replacer: mem,
+  // },
+
+  
 };
 
 // @TODO replace the name of this method
