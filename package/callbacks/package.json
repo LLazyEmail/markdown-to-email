@@ -49,6 +49,7 @@
     "atherdon-html-callbacks": "^0.2.0",
     "atherdon-newsletter-constants": "^1.0.10",
     "atherdon-newsletter-js-layouts": "^1.6.0",
-    "atherdon-newsletter-react": "^1.0.11"
+    "atherdon-newsletter-react": "^1.0.11",
+    "object-assign": "^4.1.1"
   }
 }

@@ -2,8 +2,9 @@ import { replaceWrapper, newLine } from '../helpers';
 
 
 
-
+// TODO remove unused `text` argument
 function strong(text, doubleAsterix, content, asterix) {
+
   const config = {
     content: `${content + asterix}`,
   };
@@ -16,7 +17,7 @@ function strong(text, doubleAsterix, content, asterix) {
   
   return replaced;
 }
-
+// TODO remove unused `text` argument
 function link(text, title, href) {
   const config = {
     content: title.trim(),
@@ -31,7 +32,7 @@ function link(text, title, href) {
   
   return replaced;
 }
-
+// TODO remove unused `text` argument
 function blockquote(text, tmp, item) {
   return `${newLine}<blockquote>${item.trim()}</blockquote>`;
 }
@@ -60,7 +61,7 @@ function previewText(text, content) {
   return replaced;
 }
 
-
+// TODO remove unused `text` argument
 function mem(text, src, href, altText) {
   const config = {
     src: src.trim(),
@@ -78,7 +79,7 @@ function mem(text, src, href, altText) {
 }
 
 
-
+// TODO remove unused `text` argument
 function header(text, chars, content) {
   const config = {
     content: content.trim(),

@@ -4,14 +4,19 @@ import {
     blockquote,
     mem,
     header,
+
+    
+  } from './methods/simple';
+  
+  import {
     italic,
     del,
     q,
     code,
     hr,
     empty
-  } from './methods/simple';
-  
+   } './methods/simple-without-replacer';
+
   import {
     ulList,
     olList

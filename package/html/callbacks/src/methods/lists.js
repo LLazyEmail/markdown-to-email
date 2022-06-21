@@ -6,7 +6,8 @@ import { replaceWrapper, newLine } from '../helpers';
 
 function getParsedSubList(subList) {
 
-  const regex = new RegExp(`\\s{4}\\*(.*?)${newLine}`, 'g');
+  const regex_variable = `\\s{4}\\*(.*?)${newLine}`;
+  const regex = new RegExp(regex_variable, 'g');
 
   return subList.replace(
     regex,
@@ -32,7 +33,9 @@ function getParsedSubList(subList) {
 
 
 function getParsedLists(parsedSubLists){
-  const regex = new RegExp(`\\*(.*?)${newLine}`, 'g');
+
+  const regex_variable = `\\*(.*?)${newLine}`;
+  const regex = new RegExp(regex_variable, 'g');
 
   const parsedList = parsedSubLists.replace(
     regex,
@@ -62,7 +65,8 @@ function getParsedLists(parsedSubLists){
 // i'm not suprised that it might get errors(but works fine now)
 function ulList(text, list) {
 
-  const regex = new RegExp(`((\\s{4}\\*(.*?)${newLine}){1,})`, 'g');
+  const regex_variable = `((\\s{4}\\*(.*?)${newLine}){1,})`;
+  const regex = new RegExp(regex_variable, 'g');
 
   // @todo improve this crazy structure.
   const parsedSubListsParts = list.replace(
