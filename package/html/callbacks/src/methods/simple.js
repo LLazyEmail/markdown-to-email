@@ -1,17 +1,5 @@
 import { replaceWrapper, newLine } from '../helpers';
 
-const italic = '$1<em>$3</em>$4';
-const del = '<del>$1</del>';
-const q = '<q>$1</q>';
-const code = '<code>$1</code>';
-const hr = `${newLine}<hr />`;
-const empty = '';
-// const strong = "<strong>$2$3</strong>";
-
-
-
-// const italic = '$1<em>$3</em>$4';
-
 const italic = () => '$1<em>$3</em>$4';
 
 // const del = '<del>$1</del>';
