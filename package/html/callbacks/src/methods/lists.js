@@ -2,6 +2,8 @@
 
 import { replaceWrapper, newLine } from '../helpers';
 
+
+
 function getParsedSubList(subList) {
 
   const regex = new RegExp(`\\s{4}\\*(.*?)${newLine}`, 'g');
@@ -27,6 +29,8 @@ function getParsedSubList(subList) {
   );
 }
 
+
+
 function getParsedLists(parsedSubLists){
   const regex = new RegExp(`\\*(.*?)${newLine}`, 'g');
 
@@ -51,6 +55,8 @@ function getParsedLists(parsedSubLists){
 
   return parsedList;
 }
+
+
 
 // @TODO it looks even more crazier than it was 2 months ago
 // i'm not suprised that it might get errors(but works fine now)
@@ -79,6 +85,8 @@ function ulList(text, list) {
   );
 
 
+
+
   const parsedList = getParsedLists(parsedSubListsParts);  
 
   const config = {
@@ -94,12 +102,17 @@ function ulList(text, list) {
 
 }
 
+
+
 // @TODO update this. it's a real shitty method
 function olList(text, item) {
-  return `${newLine}<ol>${newLine}\t<li>${
-    item.trim()
-  }</li>${newLine}</ol>`;
+  return 
+    `${newLine}<ol>${newLine}\t
+      <li>${   item.trim() }</li>
+      ${newLine}</ol>`;
 }
+
+
 
 export {
   ulList,
