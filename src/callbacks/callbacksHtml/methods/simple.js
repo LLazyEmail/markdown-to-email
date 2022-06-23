@@ -1,11 +1,14 @@
 import { replaceWrapper, newLine, beforeBeginingNewLine } from '../helpers';
 
 
+// explore why some methods dont have a config, 
+// but others have it and call replaceWrapper
+function _blockquote(text, tmp, item) {
 
-
-
-function blockquote(text, tmp, item) {
-  return `${newLine}<blockquote>${item.trim()}</blockquote>`;
+  var tag = `<blockquote>${item.trim()}</blockquote>`;
+  return beforeBeginingNewLine(tag);
+  
+  // `${newLine}<blockquote>${item.trim()}</blockquote>`;
 }
 
 // TODO remove unused `text` argument
@@ -28,7 +31,7 @@ function previewText(text, content) {
 
 
 
-function header(text, chars, content) {
+function _header(text, chars, content) {
   const config = {
     content: content.trim(),
   };
@@ -49,9 +52,9 @@ function header(text, chars, content) {
 export {
   // strong,
   // link,
-  blockquote,
+  _blockquote,
   // mem,
-  header,
+  _header,
 
   // italic,
   // del,
@@ -60,5 +63,5 @@ export {
   // hr,
   // empty,
 
-  previewText,
+  _previewText,
 };

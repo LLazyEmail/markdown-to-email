@@ -1,7 +1,7 @@
 // TODO remove unused `text` argument
 
 
-function link(text, title, href) {
+function _link(text, title, href) {
     const config = {
       content: title.trim(),
       href: href.trim(),
@@ -20,6 +20,4 @@ function link(text, title, href) {
     return replaced;
   }
 
-  export {
-    link
-  }
+  export default _link;

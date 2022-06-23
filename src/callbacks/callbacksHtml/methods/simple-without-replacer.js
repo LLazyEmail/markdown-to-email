@@ -1,36 +1,22 @@
 import { newLine } from '../helpers';
 
-const italic = () => '$1<em>$3</em>$4';
+const _italic = () => '$1<em>$3</em>$4';
 
-// const del = '<del>$1</del>';
+const _del = () => '<del>$1</del>';
 
-const del = () => '<del>$1</del>';
+const _q = () => '<q>$1</q>';
 
-// const q = '<q>$1</q>';
+const _code = () => '<code>$1</code>';
 
-const q = () => '<q>$1</q>';
+const _hr = () => `${newLine}<hr />`;
 
-// const code = '<code>$1</code>';
-
-const code = () => '<code>$1</code>';
-
-// const hr = `${newLine}<hr />`;
-
-const hr = () => `${newLine}<hr />`;
-
-// const empty = '';
-
-const empty = () => '';
-
-
+const _empty = () => '';
 
 export {
-
-    italic,
-    del,
-    q,
-    code,
-    hr,
-    empty
+    _italic,
+    _del,
+    _q,
+    _code,
+    _hr,
+    _empty
   };
-  

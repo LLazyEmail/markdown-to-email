@@ -1,6 +1,6 @@
 
 // TODO remove unused `text` argument
-export function image(text, alt, srcWithTooltip) {
+export function _image(text, alt, srcWithTooltip) {
     // eslint-disable-next-line no-useless-escape
     const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
   
@@ -22,4 +22,4 @@ export function image(text, alt, srcWithTooltip) {
     return replaced;
   }
 
-  
+  // export default _image

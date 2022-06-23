@@ -1,7 +1,7 @@
 
 
 // TODO remove unused `text` argument
-export function sponsorship(text) {
+export function _sponsorship(text) {
 
 
     // TODO move out this regex into constants file.
@@ -43,3 +43,4 @@ export function sponsorship(text) {
     return replaced;
   }
   
+  // export default _sponsorship

@@ -64,7 +64,7 @@ function getParsedLists(parsedSubLists){
 
 // @TODO it looks even more crazier than it was 2 months ago
 // i'm not suprised that it might get errors(but works fine now)
-function ulList(text, list) {
+function _ulList(text, list) {
 
   const regex_variable = `((\\s{4}\\*(.*?)${newLine}){1,})`;
   const regex = new RegExp(regex_variable, 'g');
@@ -110,7 +110,7 @@ function ulList(text, list) {
 
 
 // @TODO update this. it's a real shitty method
-function olList(text, item) {
+function _olList(text, item) {
 
   // beforeBeginingNewLine
 
@@ -124,6 +124,6 @@ function olList(text, item) {
 
 
 export {
-  ulList,
-  olList
+  _ulList,
+  _olList
 };

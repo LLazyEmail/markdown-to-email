@@ -217,7 +217,7 @@ function replaceMarkdown(nameOfCallback) {
 
   return '';
   // this.content = this.content.replace(fromMap.replacer, forReplacer);
-
+ 
 }
 
 // i think this method would be broken now, because we cant play with "this."

@@ -83,6 +83,8 @@ function replaceWrapper(name, config, folder = 'typography', debug = true) {
 
 export {
   newLine,
+  beforeBeginingNewLine,
+  beforeEnd,
   replaceWrapper,
   // replaceReactWrapper
 };

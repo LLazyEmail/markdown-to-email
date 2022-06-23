@@ -16,6 +16,4 @@ function _strong(text, doubleAsterix, content, asterix) {
 
   // 
 
-  export {
-    _strong
-  }
+  // export default _strong

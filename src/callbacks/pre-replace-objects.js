@@ -1,9 +1,7 @@
 
-// import objectAssign from 'object-assign';
- 
 
-// import { sponsorship } from "./callbacksHtml/methods/callbacks";
-// import { separator } from "./callbacksHtml/methods/custom";
+// import { _sponsorship } from "./callbacksHtml/methods/callbacks";
+// import { _separator } from "./callbacksHtml/methods/custom";
 // --
 import _ from 'lodash';
 import { _previewText } from './callbacksHtml/methods/simple';

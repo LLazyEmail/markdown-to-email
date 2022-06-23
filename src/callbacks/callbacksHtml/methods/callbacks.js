@@ -2,7 +2,7 @@ import { replaceWrapper, newLine } from '../helpers';
 
 /// function is not working as planned
 // TODO remove unused `text` argument
-export function paragraphWrapper(text, line) {
+export function _paragraphWrapper(text, line) {
   const trimmed = line.trim();
 
   // TODO move out this regex into constants file.
@@ -29,7 +29,7 @@ export function paragraphWrapper(text, line) {
 
 
 // TODO remove unused `text` argument
-export function br(text, newLines) {
+export function _br(text, newLines) {
   // TODO move out this regex into constants file.
 
   const regex = new RegExp(newLine, 'g');
@@ -46,4 +46,7 @@ export function br(text, newLines) {
   return result;
 }
 
-// export { paragraphWrapper, image, sponsorship, br };
+// export { 
+  // _paragraphWrapper, _image, 
+  // _sponsorship, _br 
+// };
