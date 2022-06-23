@@ -10,7 +10,7 @@ import {
   
   _link,
   _blockquote,
-  _mem,
+  _meme,
   _header,
   _italic,
   _del,
@@ -73,8 +73,9 @@ import {
 // object assing will help us.
 function objectBuilder(constant, replacer){
 
-  if(!constant) throw new Error('something wrong with RegEx constant ${constant}')
-  if(!replacer) throw new Error('something wrong with replacer function ${replacer}')
+  // TODO add typeof for checking replacer as a function
+  if(!constant) throw new Error(`something wrong with RegEx constant ${constant}`)
+  if(!replacer) throw new Error(`something wrong with replacer function ${replacer}`)
 
   return { constant, replacer };
 }
@@ -116,7 +117,7 @@ const br = objectBuilder(REGEXP_BR, _br)
 
 const sponsorship = objectBuilder(REGEXP_SPONSORSHIP, _sponsorship)
 
-const memes = objectBuilder(REGEXP_MEM, _mem)
+const memes = objectBuilder(REGEXP_MEM, _meme)
 
 const separator = objectBuilder(REGEXP_SEPARATOR, _separator)
 
