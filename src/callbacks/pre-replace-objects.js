@@ -118,4 +118,39 @@ const memes = objectBuilder(REGEXP_MEM, _mem)
 
 const separator = objectBuilder(REGEXP_SEPARATOR, _separator)
 
-export default { strong } 
+
+  // 'REGEXP_EMPTY_UL': {
+  //   constant: REGEXP_EMPTY_UL,
+  //   replacer: emptyUl
+  // },
+  // 'REGEXP_EMPTY_OL': {
+  //   constant: REGEXP_EMPTY_OL,
+  //   replacer: emptyOl
+  // },
+  // 'REGEXP_EMPTY_BLOCKQUOTE': {
+  //   constant: REGEXP_EMPTY_BLOCKQUOTE,
+  //   replacer: emptyBlockQuote
+  // },
+
+
+
+export default { 
+  strong,   
+  link, 
+  del,  
+  image,  
+  previewText, 
+  italic,  
+  header,  
+  q, 
+  code ,
+  ulList, 
+  olList ,
+  blockquote ,
+  hr ,
+  paragraphWrapper ,
+  br ,
+  sponsorship,
+  memes ,
+  separator, 
+} 

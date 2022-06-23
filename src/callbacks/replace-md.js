@@ -9,9 +9,9 @@
 import _ from 'lodash';
 
 
-import MainObject from './pre-replace-objects';
+import mapObject from './pre-replace-objects';
 
-console.log(MainObject);
+console.log(mapObject);
 
 // import { previewText } from './callbacksHtml/methods/simple';
 
@@ -110,7 +110,7 @@ console.log(MainObject);
 
 
 // @TODO "map" is a stupid name, that is also a name for a lodash method.
-const mapObject = {
+const mapObjectXXX = {
   // strong: {
   //   constant: REGEXP_STRONG,
   //   replacer: strong,
@@ -143,63 +143,28 @@ const mapObject = {
   //   constant: REGEXP_DEL,
   //   replacer: del,
   // },
-  q: {
-    constant: REGEXP_Q,
-    replacer: q,
-  },
-  code: {
-    constant: REGEXP_CODE,
-    replacer: code,
-  },
-  ulList: {
-    constant: REGEXP_UL_LIST,
-    replacer: ulList,
-  },
-  olList: {
-    constant: REGEXP_OL_LIST,
-    replacer: olList,
-  },
-  blockquote: {
-    constant: REGEXP_BLOCKQUOTE,
-    replacer: blockquote,
-  },
-  hr: {
-    constant: REGEXP_HR,
-    replacer: hr,
-  },
-  paragraphWrapper: {
-    constant: REGEXP_PARAGRAPH,
-    replacer: paragraphWrapper,
-  },
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+ 
+  
 
 
-  // 'REGEXP_EMPTY_UL': {
-  //   constant: REGEXP_EMPTY_UL,
-  //   replacer: emptyUl
-  // },
-  // 'REGEXP_EMPTY_OL': {
-  //   constant: REGEXP_EMPTY_OL,
-  //   replacer: emptyOl
-  // },
-  // 'REGEXP_EMPTY_BLOCKQUOTE': {
-  //   constant: REGEXP_EMPTY_BLOCKQUOTE,
-  //   replacer: emptyBlockQuote
-  // },
+ 
+  
 
+  
 
-  // br: {
-  //   constant: REGEXP_BR,
-  //   replacer: br,
-  // },
-  // sponsorship: {
-  //   constant: REGEXP_SPONSORSHIP,
-  //   replacer: sponsorship,
-  // },
-  // memes: {
-  //   constant: REGEXP_MEM,
-  //   replacer: mem,
-  // },
-
+  
   
 };
 
