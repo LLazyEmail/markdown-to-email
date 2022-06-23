@@ -82,7 +82,7 @@ function objectBuilder(constant, replacer){
 
 
 const strong = objectBuilder(REGEXP_STRONG, _strong);
-console.log(strong);
+// console.log(strong);
 
 const link = objectBuilder(REGEXP_LINK, _link)
 

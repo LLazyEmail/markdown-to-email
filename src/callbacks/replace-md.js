@@ -115,18 +115,7 @@ const mapObjectXXX = {
   //   constant: REGEXP_STRONG,
   //   replacer: strong,
   // },
-  // previewText: {
-  //   constant: REGEXP_PREVIEW_TEXT,
-  //   replacer: previewText,
-  // },
-  // 'empty': {
-  //   constant: REGEXP_HTML_COMMENTS,
-  //   replacer: comments
-  // },
-  // italic: {
-  //   constant: REGEXP_EM,
-  //   replacer: italic,
-  // },
+ 
   header: {
     constant: REGEXP_HEADER,
     replacer: header,
@@ -135,36 +124,8 @@ const mapObjectXXX = {
   //   constant: REGEXP_IMAGE,
   //   replacer: image,
   // },
-  // link: {
-  //   constant: REGEXP_LINK,
-  //   replacer: link,
-  // },
-  // del: {
-  //   constant: REGEXP_DEL,
-  //   replacer: del,
-  // },
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
  
-  
 
-
- 
-  
-
-  
-
-  
   
 };
 
