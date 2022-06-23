@@ -19,23 +19,21 @@ import {
 
 import { _ulList, _olList } from './methods/lists';
 
+import _br  from './methods/br';
+
+import { _image } from './methods/image';
+import { _meme, _separator } from './methods/custom';
+import { _sponsorship } from './methods/sponsor';
+
 import { 
-  _paragraphWrapper,
-  _br 
-} from './methods/callbacks';
-
-import { _image } from './methods/image'
-import { _meme } from './methods/
-// import { _sponsorship } from '
-
-import { separator } from './methods/custom';
-
+  _paragraphWrapper
+ } from './methods/paragraph';
 
 export {
   _strong,
   _link,
   _blockquote,
-  // _meme,
+  _meme,
 
   _header,
   _italic,
@@ -46,11 +44,11 @@ export {
   _empty,
   _ulList,
   _olList,
-  // image,
+  _image,
 
   _paragraphWrapper,
-  // sponsorship,
+  _sponsorship,
 
   _br,
-  // _separator,
+  _separator,
 };

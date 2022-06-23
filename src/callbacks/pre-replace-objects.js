@@ -72,6 +72,10 @@ import {
 // later we'll extend this method
 // object assing will help us.
 function objectBuilder(constant, replacer){
+
+  if(!constant) throw new Error('something wrong with RegEx constant ${constant}')
+  if(!replacer) throw new Error('something wrong with replacer function ${replacer}')
+
   return { constant, replacer };
 }
 
