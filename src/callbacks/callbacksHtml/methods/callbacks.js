@@ -19,7 +19,9 @@ export function _paragraphWrapper(text, line) {
 
 
 
-  const replaced = replaceWrapper('paragraph', config);
+  const replaced = replaceWrapper(
+    'paragraph', config
+    );
 
   return newLine + replaced + newLine;
 }

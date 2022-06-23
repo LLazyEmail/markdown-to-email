@@ -17,9 +17,12 @@ export function _image(text, alt, srcWithTooltip) {
   
   
   
-    const replaced = replaceWrapper('image', config);
+    const replaced = replaceWrapper(
+      
+      'image', config
+      );
   
     return replaced;
   }
 
-  // export default _image
+  export default _image

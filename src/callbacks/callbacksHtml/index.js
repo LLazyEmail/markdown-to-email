@@ -1,48 +1,42 @@
-import {
-  
-  blockquote,
-  // mem,
-  header,
-
-  // italic,
-  // del,
-  // q,
-  // code,
-  // hr,
-  // empty,
-
+import {  
+  _blockquote,
+  _header
 } from './methods/simple';
 
 
-import { strong } from './methods/strong';
-import { link } from './methods/link';
+import _strong from './methods/strong';
+import _link from './methods/link';
 
 import {
-  italic,
-  del,
-  q,
-  code,
-  hr,
-  empty
+  _italic,
+  _del,
+  _q,
+  _code,
+  _hr,
+  _empty
  } from './methods/simple-without-replacer';
 
 
-import { ulList, olList } from './methods/lists';
+import { _ulList, _olList } from './methods/lists';
 
 import { 
-  // image, 
-  paragraphWrapper,
-  // sponsorship,
-   br } from './methods/callbacks';
-// import {image }
+  _paragraphWrapper,
+  _br 
+} from './methods/callbacks';
+
+// import { _image } from '
+// import { _meme } from '
+// import { _sponsorship } from '
+
 import { separator } from './methods/custom';
 
-// export default {
+
 export {
   _strong,
   _link,
   _blockquote,
-  // mem,
+  // _meme,
+
   _header,
   _italic,
   _del,
@@ -53,8 +47,10 @@ export {
   _ulList,
   _olList,
   // image,
+
   _paragraphWrapper,
   // sponsorship,
+
   _br,
-  _separator,
+  // _separator,
 };

@@ -11,7 +11,9 @@ function _meme(text, src, href, altText) {
 
 
 
-  const replaced = replaceWrapper('image', config);
+  const replaced = replaceWrapper(
+    'image', config
+    );
 
   return replaced;
 }
@@ -23,7 +25,9 @@ function _separator() {
 
 
   
-  const replaced = replaceWrapper('separator', config);
+  const replaced = replaceWrapper(
+    'separator', config
+    );
 
   const result = newLine + replaced + newLine;
   return result;

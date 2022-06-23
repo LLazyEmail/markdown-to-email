@@ -8,11 +8,10 @@ function _blockquote(text, tmp, item) {
   var tag = `<blockquote>${item.trim()}</blockquote>`;
   return beforeBeginingNewLine(tag);
   
-  // `${newLine}<blockquote>${item.trim()}</blockquote>`;
 }
 
 // TODO remove unused `text` argument
-function previewText(text, content) {
+function _previewText(text, content) {
   const config = {
     content,
     folder: 'body',
@@ -24,7 +23,9 @@ function previewText(text, content) {
 
 
 
-  const replaced = replaceWrapper('previewText', config, 'body');
+  const replaced = replaceWrapper(
+    'previewText', config, 'body'
+    );
 
   return replaced;
 }

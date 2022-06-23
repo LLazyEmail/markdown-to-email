@@ -11,7 +11,9 @@ function _link(text, title, href) {
   
   
   
-    const replaced = replaceWrapper('link', config);
+    const replaced = replaceWrapper(
+      'link', config
+      );
   
 
     

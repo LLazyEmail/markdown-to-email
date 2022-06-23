@@ -35,7 +35,9 @@ export function _sponsorship(text) {
   
   
   
-    const replaced = replaceWrapper('sponsor', config);
+    const replaced = replaceWrapper(
+      'sponsor', config
+      );
   
     console.log(replaced);
   
