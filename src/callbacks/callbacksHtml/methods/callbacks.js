@@ -49,6 +49,8 @@ export function _br(text, newLines) {
 }
 
 // export { 
-  // _paragraphWrapper, _image, 
-  // _sponsorship, _br 
+  _paragraphWrapper, 
+  // _image, 
+  // _sponsorship, 
+  _br 
 // };

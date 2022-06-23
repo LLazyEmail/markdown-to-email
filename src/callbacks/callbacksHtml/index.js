@@ -24,8 +24,8 @@ import {
   _br 
 } from './methods/callbacks';
 
-// import { _image } from '
-// import { _meme } from '
+import { _image } from './methods/image'
+import { _meme } from './methods/
 // import { _sponsorship } from '
 
 import { separator } from './methods/custom';
