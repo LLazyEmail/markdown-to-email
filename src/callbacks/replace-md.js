@@ -6,17 +6,13 @@
 import _ from 'lodash';
 import mapObject from './pre-replace-objects';
 
-
-
-
-
 // @TODO replace the name of this method
-function prepOurCallback(callbackName) {
-  if (!callbackName) {
-    throw new Error('name of callback is undefined or empty');
+function prepOurCallback(callback_name) {
+  if (!callback_name) {
+    throw new Error(`name of ${callback_name} is undefined or empty');
   }
 
-  const settings = mapObject[callbackName];
+  const settings = mapObject[callback_name];
 //console.log(settings)
   return settings;
 }
@@ -37,7 +33,7 @@ function debuggingReplacer(name){
 //     // console.log(element.replacer);
 
     
-//     // console.log( element.replacer === null );
+//     //
 //     // console.log('----------');
     
 //   });
@@ -46,43 +42,21 @@ function debuggingReplacer(name){
 
 
 // Should be working like this this.replaceMDBinded("previewText");
+//----------------------------
 function replaceMarkdown(callback_name) {
-nameOfCallback
 
   // methodForTestingValues();
 
-
-
-  // if (!callback_name) {
-  //   throw new Error('name of callback is undefined or empty');
-  // }
-
-
   const fromMap = prepOurCallback(callback_name);
-
+  // @TODO I dont like  names fromMap & nameOfCallback & forReplacer
+  // fromMap.replacer is a single regex value
+  // forReplacer is a new sting that will be applied
   
   // console.log(fromMap.constant);
   // console.log(fromMap.replacer);
   // console.log(fromMap.literal);
-
-
-  // @TODO I dont like  names fromMap & nameOfCallback & forReplacer
-  // fromMap.replacer is a single regex value
-  // forReplacer is a new sting that will be applied
-
-  // @TODO https://github.com/LLazyEmail/markdown-to-email/issues/931
-  var forReplacer = '';
-  
-  //i think it was fixed, so we dont need this check
-  // if (typeof fromMap.replacer === 'string'){
-  //   forReplacer = fromMap.replacer;
-  // } else {
-  //  forReplacer = fromMap.replacer.bind(this);
-  // }
-
-  // or 
-  
-  
+ 
+ 
   // very cool, but generates an error, so not so cool at all.
   // const forReplacer =
   //   typeof fromMap.replacer === 'string'
@@ -90,7 +64,7 @@ nameOfCallback
   //     : fromMap.replacer.bind(this);
 
   
-  forReplacer = fromMap.replacer.bind(this);
+  const forReplacer = fromMap.replacer.bind(this);
 
   
 
@@ -102,8 +76,8 @@ nameOfCallback
   // console.log(nameOfCallback);
 
 
-  if(debuggingReplacer(nameOfCallback)){
-    console.log(nameOfCallback)
+  if(debuggingReplacer(callback_name)){
+    console.log(callback_name)
     this.content = this.content.replace(fromMap.constant, forReplacer);
   }
 
