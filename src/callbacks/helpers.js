@@ -29,7 +29,7 @@ function loopForWrapper(config, wrapper) {
   //   return key + value;
   // });
 
-  // @TODO replace with lodash
+  // TODO replace with lodash
   Object.keys(config).forEach((name) => {
     const currentConfig = config[name];
 

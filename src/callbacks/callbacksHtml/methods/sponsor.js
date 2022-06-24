@@ -18,6 +18,7 @@ export function _sponsorship(text) {
       // eslint-disable-next-line no-useless-escape
       .map((match) => match.replace(regex2, '')); 
   
+
     const config = {
       src: src.trim(),
       href: href.trim(),
@@ -25,7 +26,7 @@ export function _sponsorship(text) {
   
 
 
-
+      // we will be able to remove it when we find a way to do it.
       folder: 'body',
 
 
