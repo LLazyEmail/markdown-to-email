@@ -23,6 +23,7 @@ const REGEXP_LINK_HTTPS = new RegExp('>https', 'g');
 const REGEXP_STR_BEGIN = '>https';
 const REGEXP_STR_END = 'f<';
 
+// TODO add that beforeMethod
 const REGEXP_SEPARATOR = new RegExp(`${newLine}\\[separator\\]${newLine}`, 'g');
 
 export {
