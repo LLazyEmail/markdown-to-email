@@ -16,9 +16,9 @@ function prepOurCallback(callbackName) {
     throw new Error('name of callback is undefined or empty');
   }
 
-  const fromMap = mapObject[callbackName];
-
-  return fromMap;
+  const settings = mapObject[callbackName];
+//console.log(settings)
+  return settings;
 }
 
 function debuggingReplacer(name){
@@ -46,24 +46,24 @@ function debuggingReplacer(name){
 
 
 // Should be working like this this.replaceMDBinded("previewText");
-function replaceMarkdown(nameOfCallback) {
-
+function replaceMarkdown(callback_name) {
+nameOfCallback
 
   // methodForTestingValues();
 
 
 
-  // if (!nameOfCallback) {
+  // if (!callback_name) {
   //   throw new Error('name of callback is undefined or empty');
   // }
 
-  // const fromMap = map[nameOfCallback];
 
-  const fromMap = prepOurCallback(nameOfCallback);
+  const fromMap = prepOurCallback(callback_name);
 
   
   // console.log(fromMap.constant);
   // console.log(fromMap.replacer);
+  // console.log(fromMap.literal);
 
 
   // @TODO I dont like  names fromMap & nameOfCallback & forReplacer
@@ -72,17 +72,25 @@ function replaceMarkdown(nameOfCallback) {
 
   // @TODO https://github.com/LLazyEmail/markdown-to-email/issues/931
   var forReplacer = '';
+  
+  //i think it was fixed, so we dont need this check
   // if (typeof fromMap.replacer === 'string'){
   //   forReplacer = fromMap.replacer;
   // } else {
-    forReplacer = fromMap.replacer.bind(this);
+  //  forReplacer = fromMap.replacer.bind(this);
   // }
 
+  // or 
+  
+  
   // very cool, but generates an error, so not so cool at all.
   // const forReplacer =
   //   typeof fromMap.replacer === 'string'
   //     ? fromMap.replacer
   //     : fromMap.replacer.bind(this);
+
+  
+  forReplacer = fromMap.replacer.bind(this);
 
   
 
