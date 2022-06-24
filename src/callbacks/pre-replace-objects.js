@@ -53,6 +53,24 @@ import {
 import {
   sponsor as sponsorLiteral 
   // sponsorComponent
+  
+  
+  //strong as strongLiteral,
+  
+  //link as linkLiteral,
+  //blockquote as blockquoteLiteral,
+  //meme as memeLiteral,
+  //header as headerLiteral,
+  //italic as italicLiteral,
+  //del as delLiteral,
+  //q as qLiteral,
+  //code as codeLiteral,
+  //hr  as hrLiteral,
+  // empty as emptyLiteral,
+  //ulList as ulListLiteral,
+  //olList as olListLiteral,
+  //image as imageLiteral,
+  //paragraph as paragraphLiteral,
 } from '../templates/OuterTemplate/layouts/body';
 
 
@@ -97,34 +115,56 @@ function objectBuilder(constant, replacer, literal = false){
 }
 
 
+  //strong as strongLiteral,
 const strong = objectBuilder(REGEXP_STRONG, _strong);
 // console.log(strong);
 
+
+//link as linkLiteral,  
 const link = objectBuilder(REGEXP_LINK, _link)
 
+  //del as delLiteral,
 const del  = objectBuilder(REGEXP_DEL, _del)
+
+  //image as imageLiteral,
 
 const image  = objectBuilder(REGEXP_IMAGE, _image)
 
 const previewText = objectBuilder(REGEXP_PREVIEW_TEXT, _previewText)
 
+// empty as emptyLiteral,
+
+  //italic as italicLiteral,
 const italic  = objectBuilder(REGEXP_EM, _italic)
 
+
+  //header as headerLiteral,
 const header  = objectBuilder(REGEXP_HEADER, _header)
 
 // console.log(header);
 
+  //q as qLiteral,
 const q = objectBuilder(REGEXP_Q, _q)
 
+//code as codeLiteral,
+
 const code  = objectBuilder(REGEXP_CODE, _code)
+  //ulList as ulListLiteral,
 
 const ulList = objectBuilder(REGEXP_UL_LIST, _ulList)
 
+  //olList as olListLiteral,
+
 const olList = objectBuilder(REGEXP_OL_LIST, _olList)
 
+//blockquote as blockquoteLiteral,  
 const blockquote = objectBuilder(REGEXP_BLOCKQUOTE, _blockquote)
 
+  //hr  as hrLiteral,
+
 const hr = objectBuilder(REGEXP_HR, _hr)
+
+  //paragraph as paragraphLiteral
 
 const paragraphWrapper = objectBuilder(REGEXP_PARAGRAPH, _paragraphWrapper)
 
@@ -133,9 +173,15 @@ const br = objectBuilder(REGEXP_BR, _br)
 // folder: 'body',
 const sponsorship = objectBuilder(REGEXP_SPONSORSHIP, _sponsorship, sponsorLiteral)
 
+
+//meme as memeLiteral,
 const memes = objectBuilder(REGEXP_MEM, _meme)
 
 const separator = objectBuilder(REGEXP_SEPARATOR, _separator)
+
+
+
+  //code as codeLiteral,
 
 
   // 'REGEXP_EMPTY_UL': {
