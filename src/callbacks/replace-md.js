@@ -13,30 +13,6 @@ import mapObject from './pre-replace-objects';
 
 
 
-// import {
-//   strong,
-  
-//   link,
-//   blockquote,
-//   // mem,
-//   header,
-//   italic,
-//   del,
-//   q,
-//   code,
-//   hr,
-//   // empty,
-//   ulList,
-//   olList,
-//   // image,
-//   paragraphWrapper,
-
-//   // sponsorship,
-
-//   br,
-//   separator,
-// } from './callbacksHtml/index';
-
 
 // function extractOptions(converter, key) {
 //   if (!converter.key) throw new Error('no options for this converter');
@@ -44,59 +20,6 @@ import mapObject from './pre-replace-objects';
 // }
 
 
-// import {
-//   REGEXP_HEADER,
-//   REGEXP_IMAGE,
-//   REGEXP_LINK,
-//   REGEXP_STRONG,
-//   REGEXP_DEL,
-//   REGEXP_Q,
-//   REGEXP_CODE,
-//   REGEXP_UL_LIST,
-//   REGEXP_OL_LIST,
-//   REGEXP_BLOCKQUOTE,
-//   REGEXP_HR,
-//   REGEXP_BR,
-//   REGEXP_EM,
-//   REGEXP_SPONSORSHIP,
-//   REGEXP_MEM,
-//   REGEXP_PREVIEW_TEXT,
-//   REGEXP_PARAGRAPH,
-//   REGEXP_SEPARATOR,
-// } from '../constants';
-
-
-
-
-
-
-
-
-
-
-
-// TODO what is it?
-/* function replaceMarkdownNew(key) {
-  const { regexp, callback } = extractOptions(converter, key);
-
-  // const {regexp, callback} = options;
-
-  //   try {
-
-  //       if (!regexp) throw new Error('regular expression is blank');
-  //       if (!callback) throw new Error('no callback presented');
-
-  //       // ... add more here later
-
-  //   } catch(err) {
-  //       // we need to test how it actually work
-  //       var caller_line = err.stack.split("\n")[4];
-  //       var index = caller_line.indexOf("at ");
-  //       var clean = caller_line.slice(index+2, caller_line.length);
-
-  //       throw err;
-  //   }
-} */
 
 
 
