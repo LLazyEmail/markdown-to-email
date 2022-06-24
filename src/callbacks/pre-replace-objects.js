@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _, { head } from 'lodash';
 import { _previewText } from './callbacksHtml/methods/simple';
 import {
   _strong,
@@ -47,7 +47,8 @@ import {
   REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
   REGEXP_SEPARATOR,
-} from '../constants';
+} from '../constants/index';
+
 
 
 // function extractOptions(converter, key) {
@@ -92,6 +93,8 @@ const previewText = objectBuilder(REGEXP_PREVIEW_TEXT, _previewText)
 const italic  = objectBuilder(REGEXP_EM, _italic)
 
 const header  = objectBuilder(REGEXP_HEADER, _header)
+
+console.log(header);
 
 const q = objectBuilder(REGEXP_Q, _q)
 

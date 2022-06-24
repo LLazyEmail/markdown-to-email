@@ -1,4 +1,11 @@
 
+// function extractOptions(converter, key) {
+//   if (!converter.key) throw new Error('no options for this converter');
+//   return converter.key;
+// }
+
+
+
 // TODO what is it?
 /* function replaceMarkdownNew(key) {
   const { regexp, callback } = extractOptions(converter, key);

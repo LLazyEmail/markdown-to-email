@@ -3,25 +3,8 @@
 // https://www.npmjs.com/package/batch-replace
 // https://www.npmjs.com/package/pupa
 
-
 import _ from 'lodash';
-
-
 import mapObject from './pre-replace-objects';
-
-// console.log(mapObject);
-
-
-
-
-// function extractOptions(converter, key) {
-//   if (!converter.key) throw new Error('no options for this converter');
-//   return converter.key;
-// }
-
-
-
-
 
 // TODO THIS WILL BE BROKEN SOOOOON
 // This structure was before
@@ -29,26 +12,6 @@ import mapObject from './pre-replace-objects';
 // Should be working like this
 // this.replaceMDBinded("previewText");
 
-
-// @TODO "map" is a stupid name, that is also a name for a lodash method.
-const mapObjectXXX = {
-  // strong: {
-  //   constant: REGEXP_STRONG,
-  //   replacer: strong,
-  // },
- 
-  header: {
-    constant: REGEXP_HEADER,
-    replacer: header,
-  },
-  // image: {
-  //   constant: REGEXP_IMAGE,
-  //   replacer: image,
-  // },
- 
-
-  
-};
 
 // @TODO replace the name of this method
 function prepOurCallback(callbackName) {
