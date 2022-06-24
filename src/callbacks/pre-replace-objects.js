@@ -88,7 +88,7 @@ import {
 
 
 
-
+// WE NEED MAKE IT WORK
 // function checkerr(variable = false) {
 
 //   // console.log( typeof element.replacer === 'undefined' );
@@ -101,6 +101,8 @@ import {
 //   return true;
 // }
 
+const ERROR_REGEX_CONSTANT = `something wrong with RegEx constant ${constant}`;
+const ERROR_REPLACER_FUNCTION = `something wrong with replacer function ${replacer}`;
 
 // later we'll extend this method
 // object assing will help us.
