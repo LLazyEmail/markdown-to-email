@@ -1,13 +1,35 @@
 
 //   // newLine,
-replaceWrapper
+import { replaceWrapper} from '';
+
+generateNewString
+
+function tracingVariables = () => {
+  //   try {
+
+  //       if (!regexp) throw new Error('regular expression is blank');
+  //       if (!callback) throw new Error('no callback presented');
+
+//       should we do something here?
+  
+  //       // ... add more here later
+
+  //   } catch(err) {
+  //       // we need to test how it actually work
+  //       var caller_line = err.stack.split("\n")[4];
+  //       var index = caller_line.indexOf("at ");
+  //       var clean = caller_line.slice(index+2, caller_line.length);
+
+  //       throw err;
+  //   }
+}
 
 
 class Overhaul { 
 
   constructor() {
 
-    // TODO what is it?
+    
     this.replaceMarkdownNew = (key) => {
 
     }
@@ -74,6 +96,21 @@ class Overhaul {
     }
 
   }
+  
+  this.replaceReactWrapper = (name, config, folder = 'typography'){
+    //   // console.log(reactLayouts.Typography.strong);
+    //   // console.log("name", config);
+
+    //   let configCopy = Object.assign(config, {
+    //     'layouts': reactLayouts,
+    //     'folder': folder
+    //   })
+
+    //   // console.log(configCopy);
+
+    //   return generateNewString(name, configCopy);
+  
+  }
 
 
 }
@@ -81,22 +118,6 @@ class Overhaul {
 
 
 
-
-//-----------------
-//-----------------
-// function replaceReactWrapper(name, config, folder = 'typography') {
-//   // console.log(reactLayouts.Typography.strong);
-//   // console.log("name", config);
-
-//   let configCopy = Object.assign(config, {
-//     'layouts': reactLayouts,
-//     'folder': folder
-//   })
-
-//   // console.log(configCopy);
-
-//   return generateNewString(name, configCopy);
-// }
 
 //-----------------
 
@@ -121,10 +142,6 @@ function repSponsor(name, config, folder = 'typography', debug = true){
 
 
   // return generateNewString(name, configCopy);
-
-
-
-
 
   // if (typeof variable === 'undefined' || variable === null) {
   //   // variable is undefined or null
@@ -171,8 +188,22 @@ function repSponsor(name, config, folder = 'typography', debug = true){
 //   return generateNewString(name, configCopy);
 // }
 
+const reactWrapper = () => {
+ //   // console.log(reactLayouts.Typography.strong);
+    //   // console.log("name", config);
+
+    //   let configCopy = Object.assign(config, {
+    //     'layouts': reactLayouts,
+    //     'folder': folder
+    //   })
+  
+  
+//   return ....
+}
+
 
 function EmployeeDetails() {
+  
   var name: "Mayank";
   var age = 30;
   var designation = "Developer",
@@ -183,8 +214,8 @@ function EmployeeDetails() {
   }
 
   return {
-    name: name,
-    age: age,
+    name,
+    age,
     designation: designation,
     calculateBonus: calculateBonus
   }
