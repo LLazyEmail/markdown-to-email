@@ -4,8 +4,6 @@
 // const platform = os.platform();
 // const newLine = platform === 'win32' ? '\r\n' : '\n';
 
-
-
 function getWrapper(name, config) {
   const { layouts, folder } = config;
 
@@ -53,18 +51,8 @@ function generateNewString(name, config) {
 }
 
 //-----------------
-//-----------------
-//-----------------
 
-
-
-
-//-----------------
-export {
-  
+export {  
   generateNewString,
-  // replaceReactWrapper,
-  // replaceWrapper,
-
   getWrapper,
 };
