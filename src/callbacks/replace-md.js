@@ -64,6 +64,7 @@ function replaceMarkdown(callback_name) {
   //     : fromMap.replacer.bind(this);
 
   
+  // TO DEBUG forReplacer I DONT THINK IT"S WORKING CORRECTLY....
   const forReplacer = fromMap.replacer.bind(this);
 
   
