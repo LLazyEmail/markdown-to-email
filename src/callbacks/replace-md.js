@@ -29,29 +29,30 @@ function debuggingReplacer(name){
   return namesArr.includes(name)
 }
 
-function methodForTestingValues(){
-  // mapObject.forEach((element) => {
-  //   console.log(element.replacer);
-  // })
 
-  _.map(mapObject, (element) => {
-    // console.log(element)
-    // console.log(element.replacer);
+// function methodForTestingValues(){
+//   // mapObject.forEach((element) => {
+//   //   console.log(element.replacer);
+//   // })
 
-    // console.log( typeof element.replacer === 'undefined' );
-    // console.log( element.replacer === null );
-    // console.log('----------');
+//   _.map(mapObject, (element) => {
+//     // console.log(element)
+//     // console.log(element.replacer);
+
     
-  });
+//     // console.log( element.replacer === null );
+//     // console.log('----------');
+    
+//   });
 
-}
+// }
 
 
 
 function replaceMarkdown(nameOfCallback) {
 
 
-  methodForTestingValues();
+  // methodForTestingValues();
 
 
 

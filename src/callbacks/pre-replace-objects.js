@@ -24,10 +24,6 @@ import {
   _separator,
 } from './callbacksHtml/index';
 
-
-
-
-
 import {
   REGEXP_HEADER,
   REGEXP_IMAGE,
@@ -57,26 +53,36 @@ import {
 // }
 
 
-// objectAssign({foo: 0}, {bar: 1});
-// //=> {foo: 0, bar: 1}
- 
-// // multiple sources
-// objectAssign({foo: 0}, {bar: 1}, {baz: 2});
-
 // Module Pattern
+
+
+
+
+// function checkerr(variable = false) {
+
+//   // console.log( typeof element.replacer === 'undefined' );
+//   // console.log( element.replacer === null );
+
+//   if (typeof variable === 'undefined' || variable === null) {
+//     // variable is undefined or null
+//     return false;
+//   }
+//   return true;
+// }
+
 
 // later we'll extend this method
 // object assing will help us.
+// const objectBuilder = (constant, replacer) => {constant, replacer}
 function objectBuilder(constant, replacer){
 
   // TODO add typeof for checking replacer as a function
+  // console.log( typeof element.replacer === 'undefined' );
   if(!constant) throw new Error(`something wrong with RegEx constant ${constant}`)
   if(!replacer) throw new Error(`something wrong with replacer function ${replacer}`)
 
   return { constant, replacer };
 }
-
-// const objectBuilder = (constant, replacer) => {constant, replacer}
 
 
 const strong = objectBuilder(REGEXP_STRONG, _strong);
@@ -94,7 +100,7 @@ const italic  = objectBuilder(REGEXP_EM, _italic)
 
 const header  = objectBuilder(REGEXP_HEADER, _header)
 
-console.log(header);
+// console.log(header);
 
 const q = objectBuilder(REGEXP_Q, _q)
 

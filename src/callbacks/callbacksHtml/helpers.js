@@ -1,5 +1,6 @@
 import { generateNewString } from '../helpers';
 
+
 import body from '../../templates/OuterTemplate/layouts/body';
 import misc from '../../templates/OuterTemplate/layouts/misc';
 
@@ -9,8 +10,9 @@ import misc from '../../templates/OuterTemplate/layouts/misc';
 // console.log(layouts);
 
 // console.log(NewPlainJSLayouts);
+
 // TODO needs to be checked and replace on correct
-const newLine = '\n';
+// const newLine = '\n';
 
 function beforeBeginingNewLine(string){
   return newLine + string;
@@ -20,17 +22,27 @@ function beforeEnd(string){
   return string + newLine;
 }
 
-// function checkerr(variable = false) {
 
-//   // console.log( typeof element.replacer === 'undefined' );
-//   // console.log( element.replacer === null );
 
-//   if (typeof variable === 'undefined' || variable === null) {
-//     // variable is undefined or null
-//     return false;
-//   }
-//   return true;
-// }
+
+
+
+
+// eslint-disable-next-line no-unused-vars
+function replaceWrapper2(params) {
+  
+
+  const { name, config, folder, debug } = params;
+
+  if(!folder) folder = 'typography';
+  if(!debug) debug = true;
+
+
+}
+
+
+function replaceContent(){}
+function replaceOuterTemplate(){}
 
 // eslint-disable-next-line no-unused-vars
 function replaceWrapper(name, config, folder = 'typography', debug = true) {
@@ -51,7 +63,7 @@ function replaceWrapper(name, config, folder = 'typography', debug = true) {
     folder,
   });
 
-  // if(debug)  console.log(configCopy);
+  if(debug)  console.log(configCopy);
 
 
   let newString = generateNewString(name, configCopy);
@@ -86,5 +98,9 @@ export {
   beforeBeginingNewLine,
   beforeEnd,
   replaceWrapper,
+  replaceWrapper2,
+
+  replaceContent,
+  replaceOuterTemplate
   // replaceReactWrapper
 };

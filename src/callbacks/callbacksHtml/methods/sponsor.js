@@ -1,20 +1,22 @@
+import { replaceWrapper, replaceWrapper2 } from '../helpers';
 
-
-// TODO remove unused `text` argument
+// TODO I think text variable here is like a params or something, 
+// because we spread it into 3 variables later
+// we probably can rename it, cause it's very confusing
 export function _sponsorship(text) {
 
 
     // TODO move out this regex into constants file.
     const regex = /\[(.*?)\]/g;
   
-  
+    // TODO move out this regex into constants file.
     const regex2 = /[\[\]]/g; 
   
   
     const [content, href, src] = text
       .match(regex)
       // eslint-disable-next-line no-useless-escape
-      .map((match) => match.replace(regex2, '')); // TODO move out this regex into constants file.
+      .map((match) => match.replace(regex2, '')); 
   
     const config = {
       src: src.trim(),
@@ -22,6 +24,10 @@ export function _sponsorship(text) {
       content: content.trim(),
   
       folder: 'body',
+
+
+      name: 'sponsor',
+      debug: true
     };
   
     // @TODO nope, not good
@@ -32,9 +38,11 @@ export function _sponsorship(text) {
   
   
   
+    // const newString = replaceWrapper2(config);
+    // console.log(newString);
   
-  
-  
+
+
     const replaced = replaceWrapper(
       'sponsor', config
       );
