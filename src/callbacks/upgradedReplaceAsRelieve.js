@@ -170,3 +170,24 @@ function repSponsor(name, config, folder = 'typography', debug = true){
 
 //   return generateNewString(name, configCopy);
 // }
+
+
+function EmployeeDetails() {
+  var name: "Mayank";
+  var age = 30;
+  var designation = "Developer",
+  var salary = 10000;
+
+  var calculateBonus = function(amount) {
+    salary = salary + amount;
+  }
+
+  return {
+    name: name,
+    age: age,
+    designation: designation,
+    calculateBonus: calculateBonus
+  }
+}
+
+var newEmployee = EmployeeDetails()
