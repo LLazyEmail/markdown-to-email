@@ -2,6 +2,8 @@ import { replaceWrapper, newLine } from '../helpers';
 
 // TODO remove unused `text` argument
 function _meme(text, src, href, altText) {
+  
+  
   const config = {
     src: src.trim(),
     altText: altText.trim(),
@@ -10,7 +12,7 @@ function _meme(text, src, href, altText) {
 
 
 
-
+  //REPLACEWRAPPER CAN BECOME REPLACE LITERAL
   const replaced = replaceWrapper(
     'image', config
     );
