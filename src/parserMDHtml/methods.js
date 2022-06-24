@@ -24,12 +24,14 @@ const MESSAGE_HTML_FULL_TEMPLATE =
 const MESSAGE_HTML_FULL_TEMPLATE2 =
   'The full-template has been parsed successfully2';
 
+  
+//------------------------------
 const deliver = (template, name, message) => {
   const fileName = generateTemplateName(name);
   writeHTML(fileName, template);
   printMessage(message, 'green2');
 };
-
+//------------------------------
 function verification(warnings, content = false) {
   // ***
   if (warnings) checkWarnings(warnings);
@@ -37,7 +39,7 @@ function verification(warnings, content = false) {
   // ***
   if (content) checkHtml(content);
 }
-
+//------------------------------
 function generateFullTemplate2(sourceFile) {
   // should warnings be returned here?
   const { content, warnings, previewText } = parseFullTHing({
@@ -77,13 +79,15 @@ function generateFullTemplate2(sourceFile) {
 
 //   deliver(content, 'content', MESSAGE_HTML_CONTENT_ONLY);
 // };
-
+//------------------------------
+//------------------------------
 // const generateInterior = (sourceFile) => {
 //   const { content, warnings, previewText } = parse(sourceFile);
 
 //   verification(warnings);
 // };
-
+//------------------------------
+//------------------------------
 // function generateFullTemplate(sourceFile) {
 //   // same as from top
 
@@ -93,7 +97,8 @@ function generateFullTemplate2(sourceFile) {
 //   printMessage(message, 'green2');
 // }
 
-//--------------
+//-----------------------------
+//------------------------------
 function compileEmptyTemplate() {
   //---------------------
 

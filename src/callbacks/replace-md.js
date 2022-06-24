@@ -6,11 +6,8 @@
 import _ from 'lodash';
 import mapObject from './pre-replace-objects';
 
-// TODO THIS WILL BE BROKEN SOOOOON
-// This structure was before
-// this.replaceMDBinded(this._constants.REGEXP_PREVIEW_TEXT, previewText);
-// Should be working like this
-// this.replaceMDBinded("previewText");
+
+
 
 
 // @TODO replace the name of this method
@@ -48,7 +45,7 @@ function debuggingReplacer(name){
 // }
 
 
-
+// Should be working like this this.replaceMDBinded("previewText");
 function replaceMarkdown(nameOfCallback) {
 
 

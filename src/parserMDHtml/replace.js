@@ -2,6 +2,7 @@
 // we need to pass all constants somewhere, but not to the replaceWrapper
 
 class Replace {
+  
   constructor() {
     this.replaceMDBinded = () => {};
     this.replaceMDBindedPreviewText = () => {};
