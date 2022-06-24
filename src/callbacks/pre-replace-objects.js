@@ -45,6 +45,17 @@ import {
   REGEXP_SEPARATOR,
 } from '../constants/index';
 
+// import body from '../templates/OuterTemplate/layouts/body';
+
+// import misc from '../templates/OuterTemplate/layouts/misc';
+
+
+import {
+  sponsor as sponsorLiteral 
+  // sponsorComponent
+} from '../templates/OuterTemplate/layouts/body';
+
+
 
 
 // function extractOptions(converter, key) {
@@ -74,14 +85,15 @@ import {
 // later we'll extend this method
 // object assing will help us.
 // const objectBuilder = (constant, replacer) => {constant, replacer}
-function objectBuilder(constant, replacer){
+function objectBuilder(constant, replacer, literal = false){
 
   // TODO add typeof for checking replacer as a function
   // console.log( typeof element.replacer === 'undefined' );
   if(!constant) throw new Error(`something wrong with RegEx constant ${constant}`)
   if(!replacer) throw new Error(`something wrong with replacer function ${replacer}`)
 
-  return { constant, replacer };
+  // i want to replace it later with components
+  return { constant, replacer, literal };
 }
 
 
@@ -118,7 +130,8 @@ const paragraphWrapper = objectBuilder(REGEXP_PARAGRAPH, _paragraphWrapper)
 
 const br = objectBuilder(REGEXP_BR, _br)
 
-const sponsorship = objectBuilder(REGEXP_SPONSORSHIP, _sponsorship)
+// folder: 'body',
+const sponsorship = objectBuilder(REGEXP_SPONSORSHIP, _sponsorship, sponsorLiteral)
 
 const memes = objectBuilder(REGEXP_MEM, _meme)
 
@@ -129,14 +142,19 @@ const separator = objectBuilder(REGEXP_SEPARATOR, _separator)
   //   constant: REGEXP_EMPTY_UL,
   //   replacer: emptyUl
   // },
+
+
   // 'REGEXP_EMPTY_OL': {
   //   constant: REGEXP_EMPTY_OL,
   //   replacer: emptyOl
   // },
+
+  
   // 'REGEXP_EMPTY_BLOCKQUOTE': {
   //   constant: REGEXP_EMPTY_BLOCKQUOTE,
   //   replacer: emptyBlockQuote
   // },
+
 
 
 

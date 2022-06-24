@@ -85,9 +85,17 @@ class Replace {
       this.replaceMDBinded('br');
     };
 
+
+
+
+
+
     this.sponsorship = function () {
       this.replaceMDBinded('sponsorship');
     };
+
+
+    
 
     // here we have a different name
     this.memes = function () {
@@ -102,6 +110,11 @@ class Replace {
   template() {
     this.header();
   }
+
+
+  // TODO I think we need to upgrade this class, 
+  // in order to match it with our updated logic of organizing components
+
 
   // test this part
   miscellaneous() {

@@ -1,4 +1,4 @@
-import { replaceWrapper, replaceWrapper2 } from '../helpers';
+import { replaceWrapper, repSponsor } from '../helpers';
 
 // TODO I think text variable here is like a params or something, 
 // because we spread it into 3 variables later
@@ -23,10 +23,18 @@ export function _sponsorship(text) {
       href: href.trim(),
       content: content.trim(),
   
+
+
+
       folder: 'body',
 
 
       name: 'sponsor',
+
+
+
+
+
       debug: true
     };
   
@@ -42,8 +50,9 @@ export function _sponsorship(text) {
     // console.log(newString);
   
 
+    // ITS IMPORTANT TO BE ABLE TO FIND A WAY TO GENERATE AN ERROR AND PASS IT TO THE PREV CALLER.
 
-    const replaced = replaceWrapper(
+    const replaced = repSponsor(
       'sponsor', config
       );
   

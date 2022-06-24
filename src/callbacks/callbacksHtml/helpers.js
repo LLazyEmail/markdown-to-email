@@ -11,8 +11,9 @@ import misc from '../../templates/OuterTemplate/layouts/misc';
 
 // console.log(NewPlainJSLayouts);
 
+
 // TODO needs to be checked and replace on correct
-// const newLine = '\n';
+const newLine = '\n';
 
 function beforeBeginingNewLine(string){
   return newLine + string;
@@ -41,8 +42,57 @@ function replaceWrapper2(params) {
 }
 
 
-function replaceContent(){}
-function replaceOuterTemplate(){}
+function replaceContent(){
+
+}
+
+function replaceOuterTemplate(){
+
+}
+
+
+function repSponsor(name, config, folder = 'typography', debug = true){
+
+  //   // TODO I am not sure is it correct structure
+  const configCopy = Object.assign(config, {
+    layouts: { body, misc },
+    folder,
+  });
+
+  if(debug)  console.log(configCopy);
+
+
+  let newString = generateNewString(name, configCopy);
+
+  if(debug) console.log(newString);
+
+
+  // return newString;
+
+
+  // return generateNewString(name, configCopy);
+
+
+
+
+
+  // if (typeof variable === 'undefined' || variable === null) {
+  //   // variable is undefined or null
+  //   // return false;
+  //   throw new Error('replaceWrapper is blank');
+  // }
+
+
+  // if (!checkerr()) {
+  //   throw new Error('replaceWrapper is blank');
+  // }
+  
+
+}
+
+// TODO each time we are passing a huge variable with layouts for each wrapper.
+// instead we can do it differently
+// while we still using this method - we will keep it, but soon or later we'll delete it completely
 
 // eslint-disable-next-line no-unused-vars
 function replaceWrapper(name, config, folder = 'typography', debug = true) {
@@ -74,11 +124,11 @@ function replaceWrapper(name, config, folder = 'typography', debug = true) {
 
 
 
-  if (typeof variable === 'undefined' || variable === null) {
-    // variable is undefined or null
-    // return false;
-    throw new Error('replaceWrapper is blank');
-  }
+  // if (typeof variable === 'undefined' || variable === null) {
+  //   // variable is undefined or null
+  //   // return false;
+  //   throw new Error('replaceWrapper is blank');
+  // }
 
 
   // if (!checkerr()) {
@@ -98,7 +148,10 @@ export {
   beforeBeginingNewLine,
   beforeEnd,
   replaceWrapper,
+
+  
   replaceWrapper2,
+  repSponsor,
 
   replaceContent,
   replaceOuterTemplate
