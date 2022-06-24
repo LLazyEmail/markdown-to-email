@@ -3,6 +3,8 @@ import chalk from 'chalk';
 import { forEach } from 'lodash';
 import { readSourceFile } from './utils';
 
+// TODO should we remake whole state as a class with "frozen" methods?
+
 // const WARNING_IMAGE_VERSION = `WARNING source.md has ${index} ${element}. Replace it with memes`;
 // const ERROR_SOURCE_DONT_HAVE = `ERROR source.md doesn't have ${error}`;;
 
@@ -133,24 +135,6 @@ const printMessage = ({ message, type }) => {
       console.log(`Sorry, we are out of ${type}.`);
   }
 
-  //  if (type == 'yellow') {
-  //    console.log(chalk.yellow(message));
-  //  }
-
-  //  if (type == 'red') {
-  //    console.log(chalk.red(message));
-  //  }
-
-  //  if (type == 'red2') {
-  //    console.log(chalk.red.bold(message));
-  //  }
-
-  //  if (type == 'green1') {
-  //    console.log(chalk.green(message));
-  //  }
-  //  if (type == 'green2') {
-  //    console.log(chalk.green.bold(message));
-  //  }
 };
 
 // const ERROR_TITLE = '`title` is a required option for `renderTemplate`'
