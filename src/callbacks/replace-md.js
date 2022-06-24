@@ -3,17 +3,15 @@
 // https://www.npmjs.com/package/batch-replace
 // https://www.npmjs.com/package/pupa
 
-// import { sponsorship } from "./callbacksHtml/methods/callbacks";
-// import { separator } from "./callbacksHtml/methods/custom";
-// --
+
 import _ from 'lodash';
 
 
 import mapObject from './pre-replace-objects';
 
-console.log(mapObject);
+// console.log(mapObject);
 
-// import { previewText } from './callbacksHtml/methods/simple';
+
 
 // import {
 //   strong,
@@ -162,6 +160,8 @@ function methodForTestingValues(){
 
 }
 
+
+
 function replaceMarkdown(nameOfCallback) {
 
 
@@ -220,6 +220,8 @@ function replaceMarkdown(nameOfCallback) {
  
 }
 
+
+
 // i think this method would be broken now, because we cant play with "this."
 // @TODO find out if we really using this method or not?
 function replaceMarkdownPreviewText(regexp) {
@@ -241,5 +243,7 @@ function replaceMarkdownPreviewText(regexp) {
 
   this.content = this.content.replace(regexp, () => this.previewText);
 }
+
+
 
 export { replaceMarkdown, replaceMarkdownPreviewText };

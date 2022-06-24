@@ -1,8 +1,3 @@
-
-
-// import { _sponsorship } from "./callbacksHtml/methods/callbacks";
-// import { _separator } from "./callbacksHtml/methods/custom";
-// --
 import _ from 'lodash';
 import { _previewText } from './callbacksHtml/methods/simple';
 import {
@@ -79,7 +74,6 @@ function objectBuilder(constant, replacer){
 
   return { constant, replacer };
 }
-
 
 // const objectBuilder = (constant, replacer) => {constant, replacer}
 
