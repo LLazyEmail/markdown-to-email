@@ -71,6 +71,8 @@ import {
   //olList as olListLiteral,
   //image as imageLiteral,
   //paragraph as paragraphLiteral,
+  
+  //br
 } from '../templates/OuterTemplate/layouts/body';
 
 
@@ -115,58 +117,57 @@ function objectBuilder(constant, replacer, literal = false){
 }
 
 
-  //strong as strongLiteral,
-const strong = objectBuilder(REGEXP_STRONG, _strong);
+  //strongLiteral,
+const strong = objectBuilder(REGEXP_STRONG, _strong, strongLiteral);
 // console.log(strong);
 
 
-//link as linkLiteral,  
-const link = objectBuilder(REGEXP_LINK, _link)
+// as linkLiteral,  
+const link = objectBuilder(REGEXP_LINK, _link, linkLiteral)
 
-  //del as delLiteral,
-const del  = objectBuilder(REGEXP_DEL, _del)
+  // as delLiteral,
+const del  = objectBuilder(REGEXP_DEL, _del, delLiteral)
 
-  //image as imageLiteral,
+  // as imageLiteral,
+const image  = objectBuilder(REGEXP_IMAGE, _image, imageLiteral)
 
-const image  = objectBuilder(REGEXP_IMAGE, _image)
-
-const previewText = objectBuilder(REGEXP_PREVIEW_TEXT, _previewText)
+const previewText = objectBuilder(REGEXP_PREVIEW_TEXT, _previewText, false)
 
 // empty as emptyLiteral,
 
-  //italic as italicLiteral,
-const italic  = objectBuilder(REGEXP_EM, _italic)
+  // as italicLiteral,
+const italic  = objectBuilder(REGEXP_EM, _italic, italicLiteral)
 
 
-  //header as headerLiteral,
-const header  = objectBuilder(REGEXP_HEADER, _header)
+  // as headerLiteral,
+const header  = objectBuilder(REGEXP_HEADER, _header, headerLiteral)
 
 // console.log(header);
 
-  //q as qLiteral,
-const q = objectBuilder(REGEXP_Q, _q)
+  //  qLiteral,
+const q = objectBuilder(REGEXP_Q, _q, qLiteral)
 
-//code as codeLiteral,
+//  codeLiteral,
 
-const code  = objectBuilder(REGEXP_CODE, _code)
-  //ulList as ulListLiteral,
+const code  = objectBuilder(REGEXP_CODE, _code, codeLiteral)
+  //  ulListLiteral,
 
-const ulList = objectBuilder(REGEXP_UL_LIST, _ulList)
+const ulList = objectBuilder(REGEXP_UL_LIST, _ulList, ulListLiteral)
 
-  //olList as olListLiteral,
+  //  olListLiteral,
 
-const olList = objectBuilder(REGEXP_OL_LIST, _olList)
+const olList = objectBuilder(REGEXP_OL_LIST, _olList, olListLiteral)
 
-//blockquote as blockquoteLiteral,  
-const blockquote = objectBuilder(REGEXP_BLOCKQUOTE, _blockquote)
+//  blockquoteLiteral,  
+const blockquote = objectBuilder(REGEXP_BLOCKQUOTE, _blockquote, blockquoteLiteral)
 
-  //hr  as hrLiteral,
+  //   hrLiteral,
 
-const hr = objectBuilder(REGEXP_HR, _hr)
+const hr = objectBuilder(REGEXP_HR, _hr, hrLiteral)
 
-  //paragraph as paragraphLiteral
+  //  paragraphLiteral
 
-const paragraphWrapper = objectBuilder(REGEXP_PARAGRAPH, _paragraphWrapper)
+const paragraphWrapper = objectBuilder(REGEXP_PARAGRAPH, _paragraphWrapper, paragraphLiteral)
 
 const br = objectBuilder(REGEXP_BR, _br)
 
@@ -174,14 +175,12 @@ const br = objectBuilder(REGEXP_BR, _br)
 const sponsorship = objectBuilder(REGEXP_SPONSORSHIP, _sponsorship, sponsorLiteral)
 
 
-//meme as memeLiteral,
-const memes = objectBuilder(REGEXP_MEM, _meme)
+//  memeLiteral,
+const memes = objectBuilder(REGEXP_MEM, _meme, memeLiteral)
 
 const separator = objectBuilder(REGEXP_SEPARATOR, _separator)
 
 
-
-  //code as codeLiteral,
 
 
   // 'REGEXP_EMPTY_UL': {
