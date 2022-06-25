@@ -1,6 +1,6 @@
 {
   "name": "atherdon-newsletter-js-layouts-typography",
-  "version": "1.2.0",
+  "version": "2.1.0",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -11,7 +11,7 @@
     "build": "npm run clean && npm run bundle",
     "build:babel": "babel src -d dist",
     "prepublish": "npm run clean && npm run build",
-    "test": "npm run test",
+    "test": "jest ./tests --passWithNoTests",
     "clean": "shx rm -rf ./coverage && shx rm -rf ./dist",
     "lint:prettier": "prettier --write src/",
     "lint": "eslint --ext .js . --ignore-path ./.eslintignore --resolve-plugins-relative-to .",
@@ -19,18 +19,20 @@
     "lint2:fix": "eslint --fix . --ignore-path ./.eslintignore --resolve-plugins-relative-to ."
   },
   "devDependencies": {
-    "@babel/cli": "7.17.6",
-    "@babel/core": "7.17.9",
+    "@babel/cli": "7.17.10",
+    "@babel/core": "7.18.5",
     "@babel/plugin-syntax-dynamic-import": "7.8.3",
-    "@babel/preset-env": "7.16.11",
+    "@babel/plugin-transform-runtime": "7.18.5",
+    "@babel/preset-env": "7.18.2",
     "@rollup/plugin-babel": "5.3.1",
-    "@rollup/plugin-commonjs": "21.1.0",
-    "@rollup/plugin-node-resolve": "13.2.1",
+    "@rollup/plugin-commonjs": "22.0.0",
+    "@rollup/plugin-node-resolve": "13.3.0",
     "babel-eslint": "10.1.0",
-    "eslint": "8.13.0",
+    "eslint": "8.18.0",
     "eslint-plugin-json": "3.1.0",
-    "prettier": "2.6.2",
-    "rollup": "2.70.2",
+    "jest": "28.1.1",
+    "prettier": "2.7.1",
+    "rollup": "2.75.7",
     "rollup-plugin-includepaths": "0.2.4",
     "rollup-plugin-node-builtins": "2.1.2",
     "rollup-plugin-node-globals": "1.4.0",
@@ -44,5 +46,11 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.18.3"
   }
 }
