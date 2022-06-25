@@ -1,4 +1,4 @@
-import _, { head } from 'lodash';
+import _ from 'lodash';
 import { _previewText } from '../../callbacks/callbacksHtml/methods/simple';
 import {
   _strong,
@@ -45,9 +45,14 @@ import {
   REGEXP_SEPARATOR,
 } from '../../constants/index';
 
-// import body from '../templates/OuterTemplate/layouts/body';
-
 // import misc from '../templates/OuterTemplate/layouts/misc';
+
+
+
+import body from '../../templates/PlainJSOuterTemplate/layouts/body';
+
+const { sponsorLiteral, previewTextLiteral } = body;
+
 
 
 // import {
@@ -72,37 +77,37 @@ import {
   //image as imageLiteral,
   //paragraph as paragraphLiteral,
   
-  //br
-// } from '../../templates/PlainJSOuterTemplate/layouts/body';
 
-import body from '../../templates/PlainJSOuterTemplate/layouts/body';
-
-const { sponsorLiteral, previewTextLiteral } = body;
 
 import {
   headingLiteral,
   imageLiteral,
   italicLiteral,
   linkLiteral,
+
   listLiteral,
   listItemLiteral,
+
   titleLiteral,
+
   paragraphLiteral,
   strongLiteral,
+
   subtitleLiteral,
-  separatorLiteral } from '../plainjs-template/typography/index';
+  separatorLiteral 
+} from '../plainjs-template/typography/index';
 
-
+  
 // console.log(paragraphLiteral);
+
+const ERROR_REGEX_CONSTANT = (value) => `something wrong with RegEx constant ${value}`;
+const ERROR_REPLACER_FUNCTION = (value) =>  `something wrong with replacer function ${value}`;
+
 
 // function extractOptions(converter, key) {
 //   if (!converter.key) throw new Error('no options for this converter');
 //   return converter.key;
 // }
-
-
-// Module Pattern
-
 
 
 // WE NEED MAKE IT WORK
@@ -118,8 +123,6 @@ import {
 //   return true;
 // }
 
-const ERROR_REGEX_CONSTANT = `something wrong with RegEx constant ${constant}`;
-const ERROR_REPLACER_FUNCTION = `something wrong with replacer function ${replacer}`;
 
 // later we'll extend this method
 // object assing will help us.
@@ -128,9 +131,11 @@ function objectBuilder(constant, replacer, literal = false){
 
   // TODO add typeof for checking replacer as a function
   // console.log( typeof element.replacer === 'undefined' );
-  if(!constant) throw new Error(`something wrong with RegEx constant ${constant}`)
-  if(!replacer) throw new Error(`something wrong with replacer function ${replacer}`)
+  if(!constant) throw new Error(ERROR_REGEX_CONSTANT)
+  if(!replacer) throw new Error(ERROR_REPLACER_FUNCTION)
 
+
+  
   // i want to replace it later with components
   return { constant, replacer, literal };
 }
