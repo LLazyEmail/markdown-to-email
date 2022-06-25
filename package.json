@@ -46,7 +46,8 @@
     "lint-staged": "12.4.1",
     "prettier": "2.7.0",
     "rollup": "2.75.6",
-    "rollup-plugin-node-polyfills": "0.2.1"
+    "rollup-plugin-node-polyfills": "0.2.1",
+    "winston": "^3.8.0"
   },
   "dependencies": {
     "chalk": "5.0.1",
