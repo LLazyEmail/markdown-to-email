@@ -4,25 +4,7 @@ import { replaceWrapper } from '';
 
 import { generateNewString } from '';
 
-function tracingVariables = () => {
-  //   try {
-
-  //       if (!regexp) throw new Error('regular expression is blank');
-  //       if (!callback) throw new Error('no callback presented');
-
-//       should we do something here?
-  
-  //       // ... add more here later
-
-  //   } catch(err) {
-  //       // we need to test how it actually work
-  //       var caller_line = err.stack.split("\n")[4];
-  //       var index = caller_line.indexOf("at ");
-  //       var clean = caller_line.slice(index+2, caller_line.length);
-
-  //       throw err;
-  //   }
-}
+// function tracingVariables moved into domain/error-handling
 
 
 class Overhaul { 

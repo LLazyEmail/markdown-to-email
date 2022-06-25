@@ -42,3 +42,33 @@ function objectBuilder(constant, replacer, literal = false){
   // i want to replace it later with components
   return { constant, replacer, literal };
 }
+
+const error_trace_output = (error) => {
+
+  // we need to test how it actually work
+  var caller_line = error.stack.split("\n")[4];
+  var index = caller_line.indexOf("at ");
+  var clean = caller_line.slice(index+2, caller_line.length);
+
+  throw error;
+}
+
+function tracingVariables = (regexp, replacer, callback) => {
+  //   try {
+
+  //       if (!regexp) throw new Error('regular expression is blank');
+  //       if (!callback) throw new Error('no callback presented');
+
+//       should we do something here?
+  
+  //       // ... add more here later
+
+  //   } catch(err) {
+  //       // we need to test how it actually work
+  //       var caller_line = err.stack.split("\n")[4];
+  //       var index = caller_line.indexOf("at ");
+  //       var clean = caller_line.slice(index+2, caller_line.length);
+
+  //       throw err;
+  //   }
+}
