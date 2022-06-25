@@ -76,7 +76,11 @@ import {
 // } from '../../templates/PlainJSOuterTemplate/layouts/body';
 
 import body from '../../templates/PlainJSOuterTemplate/layouts/body';
-console.log(body);
+
+const { sponsorLiteral } = body;
+
+
+console.log(sponsorLiteral);
 
 // function extractOptions(converter, key) {
 //   if (!converter.key) throw new Error('no options for this converter');

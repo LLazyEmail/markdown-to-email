@@ -13,7 +13,7 @@ const body = {
   logoTop,
   previewText,
   section,
-  sponsor,
+  sponsorLiteral: sponsor,
 
   ctaList,
 
