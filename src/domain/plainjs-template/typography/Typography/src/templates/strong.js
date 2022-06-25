@@ -1,4 +1,4 @@
-const strong = `<strong style="font-weight: bolder;">{content}</strong>`;
+const strongLiteral = `<strong style="font-weight: bolder;">{content}</strong>`;
 
 
-export  strong;
+export default strongLiteral;

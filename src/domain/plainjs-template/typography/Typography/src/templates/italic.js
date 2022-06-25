@@ -1,4 +1,4 @@
-const italic = `<i>{content}</i>`;
+const italicLiteral = `<i>{content}</i>`;
 
 
-export italic;
+export default italicLiteral;

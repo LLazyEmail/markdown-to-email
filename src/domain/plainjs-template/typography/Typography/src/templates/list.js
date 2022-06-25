@@ -1,4 +1,4 @@
-const list = `<ul dir="ltr">{content}</ul>`;
+const listLiteral = `<ul dir="ltr">{content}</ul>`;
 
 
-export  list;
+export default listLiteral;
