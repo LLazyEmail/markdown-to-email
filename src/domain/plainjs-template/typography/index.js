@@ -1,48 +1,27 @@
-//strong as strongLiteral,
-  
-  //link as linkLiteral,
-  //blockquote as blockquoteLiteral,
-  //meme as memeLiteral,
-  //header as headerLiteral,
-  //italic as italicLiteral,
-  //del as delLiteral,
-  //q as qLiteral,
-  //code as codeLiteral,
-  //hr  as hrLiteral,
-  // empty as emptyLiteral,
-  //ulList as ulListLiteral,
-  //olList as olListLiteral,
-  //image as imageLiteral,
+import headingLiteral from './literals/heading';
+import imageLiteral from './literals/image';
+import italicLiteral from './literals/italic';
+import linkLiteral from './literals/link';
+import listLiteral   from './literals/list';
+import listItemLiteral from './literals/listItem';
+import titleLiteral  from './literals/mainTitle';
+import paragraphLiteral from './literals/paragraph';
+import strongLiteral   from './literals/strong';
+import subtitleLiteral  from './literals/subtitle';
+import separatorLiteral from './literals/separator';
 
 
-import { headline, headlineComponent } from './templates/headline';
-import { logoBottom, logoBottomComponent } from './templates/logoBottom';
-import { logoTop, logoTopComponent } from './templates/logoTop';
-import { previewText, previewTextComponent } from './templates/previewText';
-import { section, sectionComponent } from './templates/section';
-import { sponsor, sponsorComponent } from './templates/sponsor';
+export {
+  headingLiteral,
+  imageLiteral,
+  italicLiteral,
+  linkLiteral,
+  listLiteral,
+  listItemLiteral,
+  titleLiteral,
+  paragraphLiteral,
+  strongLiteral,
+  subtitleLiteral,
+  separatorLiteral,
 
-import { ctaList, ctaComponent } from './templates/ctaList';
-
-
- 
-const body = {
-  headline,
-  logoBottom,
-  logoTop,
-  previewTextLiteral: previewText,
-  section,
-  sponsorLiteral: sponsor,
-
-  ctaList,
-
-  headlineComponent,
-  logoBottomComponent,
-  logoTopComponent,
-  previewTextComponent,
-  sectionComponent,
-  sponsorComponent,
-  ctaComponent,
 };
-
-export default body;

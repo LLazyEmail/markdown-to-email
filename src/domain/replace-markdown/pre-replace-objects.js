@@ -79,8 +79,21 @@ import body from '../../templates/PlainJSOuterTemplate/layouts/body';
 
 const { sponsorLiteral, previewTextLiteral } = body;
 
+import {
+  headingLiteral,
+  imageLiteral,
+  italicLiteral,
+  linkLiteral,
+  listLiteral,
+  listItemLiteral,
+  titleLiteral,
+  paragraphLiteral,
+  strongLiteral,
+  subtitleLiteral,
+  separatorLiteral } from '../plainjs-template/typography/index';
 
-console.log(sponsorLiteral);
+
+console.log(headingLiteral);
 
 // function extractOptions(converter, key) {
 //   if (!converter.key) throw new Error('no options for this converter');
