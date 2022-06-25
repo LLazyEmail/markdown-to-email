@@ -1,5 +1,5 @@
 import _, { head } from 'lodash';
-import { _previewText } from './callbacksHtml/methods/simple';
+import { _previewText } from '../../callbacks/callbacksHtml/methods/simple';
 import {
   _strong,
   
@@ -22,7 +22,7 @@ import {
 
   _br,
   _separator,
-} from './callbacksHtml/index';
+} from '../../callbacks/callbacksHtml/index';
 
 import {
   REGEXP_HEADER,
@@ -43,15 +43,15 @@ import {
   REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
   REGEXP_SEPARATOR,
-} from '../constants/index';
+} from '../../constants/index';
 
 // import body from '../templates/OuterTemplate/layouts/body';
 
 // import misc from '../templates/OuterTemplate/layouts/misc';
 
 
-import {
-  sponsor as sponsorLiteral 
+// import {
+  // sponsor as sponsorLiteral 
   // sponsorComponent
   
   
@@ -73,10 +73,10 @@ import {
   //paragraph as paragraphLiteral,
   
   //br
-} from '../templates/OuterTemplate/layouts/body';
+// } from '../../templates/PlainJSOuterTemplate/layouts/body';
 
-
-
+import body from '../../templates/PlainJSOuterTemplate/layouts/body';
+console.log(body);
 
 // function extractOptions(converter, key) {
 //   if (!converter.key) throw new Error('no options for this converter');

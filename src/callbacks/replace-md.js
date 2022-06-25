@@ -4,12 +4,12 @@
 // https://www.npmjs.com/package/pupa
 
 import _ from 'lodash';
-import mapObject from './pre-replace-objects';
+import mapObject from '../domain/replace-markdown/pre-replace-objects';
 
 // @TODO replace the name of this method
 function prepOurCallback(callback_name) {
   if (!callback_name) {
-    throw new Error(`name of ${callback_name} is undefined or empty');
+    throw new Error(`name of ${callback_name} is undefined or empty`);
   }
 
   const settings = mapObject[callback_name];

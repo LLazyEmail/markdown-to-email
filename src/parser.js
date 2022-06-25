@@ -11,7 +11,7 @@ import {
 import {
   generateTemplateComponent,
   generateEmptyTemplateComponent,
-} from './templates/OuterTemplate';
+} from './templates/PlainJSOuterTemplate';
 
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';

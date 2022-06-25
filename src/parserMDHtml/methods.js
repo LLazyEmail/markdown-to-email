@@ -14,7 +14,7 @@ import {
   // fullTemplateOLD,
   generateEmptyTemplateComponent,
   generateTemplateComponent,
-} from '../templates/OuterTemplate';
+} from '../templates/PlainJSOuterTemplate';
 
 import { parseFullTHing } from './parse';
 

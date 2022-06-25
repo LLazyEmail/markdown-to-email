@@ -1,8 +1,8 @@
 import { generateNewString } from '../helpers';
 
 
-import body from '../../templates/OuterTemplate/layouts/body';
-import misc from '../../templates/OuterTemplate/layouts/misc';
+import body from '../../templates/PlainJSOuterTemplate/layouts/body';
+import misc from '../../templates/PlainJSOuterTemplate/layouts/misc';
 
 
 // import NewPlainJSLayouts from '../../templates/OuterTemplate';
