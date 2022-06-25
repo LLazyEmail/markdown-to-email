@@ -93,7 +93,7 @@ import {
   separatorLiteral } from '../plainjs-template/typography/index';
 
 
-console.log(headingLiteral);
+// console.log(paragraphLiteral);
 
 // function extractOptions(converter, key) {
 //   if (!converter.key) throw new Error('no options for this converter');
@@ -218,9 +218,6 @@ const separator = objectBuilder(REGEXP_SEPARATOR, _separator)
   //   constant: REGEXP_EMPTY_BLOCKQUOTE,
   //   replacer: emptyBlockQuote
   // },
-
-
-
 
 export default { 
   strong,   
