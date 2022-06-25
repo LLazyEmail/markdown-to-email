@@ -13,7 +13,7 @@ function extractOptions(converter, key) {
 }
 
 
-// WE NEED MAKE IT WORK
+// TODO WE NEED MAKE IT WORK
 function checkerr(variable = false) {
 
   // console.log( typeof element.replacer === 'undefined' );
