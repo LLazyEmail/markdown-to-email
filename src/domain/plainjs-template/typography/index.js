@@ -1,3 +1,20 @@
+//strong as strongLiteral,
+  
+  //link as linkLiteral,
+  //blockquote as blockquoteLiteral,
+  //meme as memeLiteral,
+  //header as headerLiteral,
+  //italic as italicLiteral,
+  //del as delLiteral,
+  //q as qLiteral,
+  //code as codeLiteral,
+  //hr  as hrLiteral,
+  // empty as emptyLiteral,
+  //ulList as ulListLiteral,
+  //olList as olListLiteral,
+  //image as imageLiteral,
+
+
 import { headline, headlineComponent } from './templates/headline';
 import { logoBottom, logoBottomComponent } from './templates/logoBottom';
 import { logoTop, logoTopComponent } from './templates/logoTop';

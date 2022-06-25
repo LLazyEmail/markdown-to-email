@@ -77,7 +77,7 @@ import {
 
 import body from '../../templates/PlainJSOuterTemplate/layouts/body';
 
-const { sponsorLiteral } = body;
+const { sponsorLiteral, previewTextLiteral } = body;
 
 
 console.log(sponsorLiteral);
@@ -137,7 +137,7 @@ const del  = objectBuilder(REGEXP_DEL, _del, delLiteral)
   // as imageLiteral,
 const image  = objectBuilder(REGEXP_IMAGE, _image, imageLiteral)
 
-const previewText = objectBuilder(REGEXP_PREVIEW_TEXT, _previewText, false)
+const previewText = objectBuilder(REGEXP_PREVIEW_TEXT, _previewText, previewTextLiteral)
 
 // empty as emptyLiteral,
 
