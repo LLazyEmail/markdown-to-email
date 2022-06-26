@@ -1,10 +1,11 @@
+import { catch_error_trace_output } from '../domain/error-handle/index';
+
+
 // import os from 'os';
 // import { mapKeys } from 'lodash';
 
 // const platform = os.platform();
 // const newLine = platform === 'win32' ? '\r\n' : '\n';
-import { catch_error_trace_output } from '../domain/error-handle/index'
-
 
 function getWrapper(name, config) {
 
@@ -24,7 +25,7 @@ function getWrapper(name, config) {
     catch_error_trace_output(error);
     
   }
-
+}
 
   
   // console.log(wrapper);
