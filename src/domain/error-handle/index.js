@@ -1,6 +1,6 @@
 //---------------------
 
-something like 
+// something like 
 
 
 const ERROR_REGEX_CONSTANT = (value) => `something wrong with RegEx constant ${value}`;
@@ -43,7 +43,7 @@ function objectBuilder(constant, replacer, literal = false){
   return { constant, replacer, literal };
 }
 
-const error_trace_output = (error) => {
+const catch_error_trace_output = (error) => {
 
   // we need to test how it actually work
   var caller_line = error.stack.split("\n")[4];
@@ -53,22 +53,27 @@ const error_trace_output = (error) => {
   throw error;
 }
 
-function tracingVariables = (regexp, replacer, callback) => {
-  //   try {
+const tracingVariables = (regexp, replacer, callback) => {
+    try {
 
-  //       if (!regexp) throw new Error('regular expression is blank');
-  //       if (!callback) throw new Error('no callback presented');
+        if (!regexp) throw new Error('regular expression is blank');
+        if (!callback) throw new Error('no callback presented');
 
-//       should we do something here?
+      // should we do something here?
   
-  //       // ... add more here later
+        // ... add more here later
 
-  //   } catch(err) {
-  //       // we need to test how it actually work
-  //       var caller_line = err.stack.split("\n")[4];
-  //       var index = caller_line.indexOf("at ");
-  //       var clean = caller_line.slice(index+2, caller_line.length);
+    } catch(err) {
+        // we need to test how it actually work
+        var caller_line = err.stack.split("\n")[4];
+        var index = caller_line.indexOf("at ");
+        var clean = caller_line.slice(index+2, caller_line.length);
 
-  //       throw err;
-  //   }
+        throw err;
+    }
+}
+
+
+export {
+  catch_error_trace_output
 }

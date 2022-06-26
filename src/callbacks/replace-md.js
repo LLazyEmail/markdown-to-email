@@ -23,6 +23,7 @@ function debuggingReplacer(name){
 }
 
 
+
 // function methodForTestingValues(){
 //   // mapObject.forEach((element) => {
 //   //   console.log(element.replacer);
@@ -39,6 +40,8 @@ function debuggingReplacer(name){
 //   });
 
 // }
+
+
 
 
 // Should be working like this this.replaceMDBinded("previewText");

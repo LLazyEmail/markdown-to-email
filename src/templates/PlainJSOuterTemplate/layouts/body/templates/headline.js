@@ -1,7 +1,8 @@
 const headline = `content`;
 
 const headlineComponent = (content) => {
-  // if (!unsubscribe) new Error('invalid unsubscribe');
+  if (!content) new Error('invalid content');
+
   return content;
 };
 
