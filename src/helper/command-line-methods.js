@@ -1,7 +1,9 @@
 /* eslint-disable no-use-before-define */
 import chalk from 'chalk';
 import { forEach } from 'lodash';
-import { readSourceFile } from './utils';
+
+
+// import { readSourceFile } from './utils';
 
 // TODO should we remake whole state as a class with "frozen" methods?
 
@@ -14,34 +16,7 @@ import { readSourceFile } from './utils';
 
 // import { WARNING_IMAGE_VERSION, ERROR_SOURCE_DONT_HAVE, FULL_TEMPLATE_ERROR, HTML_EMAIL_SUCCESS, HTML_EMAIL_ERROR } from './constants';
 
-// convert into singleton
-const stateInit = (source) => {
-  // TODO rename
-  const markdown = readSourceFile(source);
-  // TODO should we move out state from this file?
 
-  const stateObject = {
-    content: markdown,
-    previewText: '',
-    warnings: {
-      images: 0,
-    },
-    errors: {
-      previewText: false,
-      sponsorshipTop: false,
-      sponsorshipBottom: false,
-    },
-
-    innerCheckErrors() {
-      checkErrors(this.errors);
-    },
-    innerWarnings() {
-      checkWarnings(this.warnings);
-    },
-  };
-
-  return stateObject;
-};
 
 function checkWarnings(warnings) {
   forEach(warnings, (index, element) => {
@@ -169,5 +144,5 @@ export {
   checkingBodyContent,
   checkingPreviewText,
   printMessage,
-  stateInit,
+  // stateInit,
 };

@@ -2,7 +2,9 @@
 
 import { replaceMarkdown, replaceMarkdownPreviewText } from '../callbacks';
 
-import { stateInit } from '../helper';
+// import { stateInit } from '../helper';
+
+import stateInit from '../domain/state';
 
 import Replacer from './replace';
 

@@ -53,6 +53,8 @@ function replaceOuterTemplate(){
 
 function repSponsor(name, config, folder = 'typography', debug = true){
 
+
+  
   //   // TODO I am not sure is it correct structure
   const configCopy = Object.assign(config, {
     layouts: { body, misc },

@@ -3,7 +3,9 @@ import {
   //   replaceMarkdownPreviewText,
 } from '../callbacks';
 
-import { stateInit } from '../helper';
+// import { stateInit } from '../helper';
+
+import stateInit from '../domain/state';
 
 import ReactReplacer from './replace';
 // ReactReplacer

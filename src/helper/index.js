@@ -10,8 +10,10 @@ import {
   checkWarnings,
   checkHtml,
   printMessage,
-  stateInit,
+
+  // stateInit,
 } from './command-line-methods';
+
 
 export {
   writeHTML,
@@ -23,5 +25,5 @@ export {
   checkWarnings,
   checkHtml,
   printMessage,
-  stateInit,
+  // stateInit,
 };
