@@ -19,11 +19,12 @@ export function _sponsorship(markdown_string) {
       // eslint-disable-next-line no-useless-escape
       .map((match) => match.replace(regex2, '')); 
   
-  const params = {
-    src: src.trim(),
-    href: href.trim(),
-    content: content.trim(),
-  }
+
+    const params = {
+      src: src.trim(),
+      href: href.trim(),
+      content: content.trim(),
+    }
 
 
     const config = {

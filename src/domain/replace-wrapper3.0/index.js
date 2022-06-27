@@ -40,16 +40,50 @@ function repSponsor(config){
   
     if(debug) console.log(newString);
   
-    if (!inspector(newString)) {
-      throw new Error('replace wrapper 3.0 is blank');
-    }   
+    // if (!inspector(newString)) {
+    //   throw new Error('replace wrapper 3.0 is blank');
+    // }   
+    inspectorCheck(newString);
     
     return newString;
   
   
+}
+//-------------------
+const replacerParagraph = (config) => {
+
+  const { debug } = config || false;
+
+  const configCopy = Object.assign(
+    config, 
+    WR3_getWrapper(config.name)
+  );
+
+  if(debug) console.log(configCopy);
+
+  let newString = WR3_generateNewString(configCopy);
   
+  if(debug) console.log(newString);
   
-  }
+  // if (!inspector(newString)) {
+  //   throw new Error('replace wrapper 3.0 is blank');
+  // }   
+  inspectorCheck(newString);
+    
+  return newString;
+
+
+
+}
+
+
+const inspectorCheck = (string) => {
+  if (!inspector(string)) {
+    throw new Error('replace wrapper 3.0 is blank');
+  } 
+}
+
+
 
 function WR3_generateNewString(config){
 
@@ -61,4 +95,4 @@ function WR3_generateNewString(config){
     return updatedString;
 }
 
-  export {repSponsor}
+  export { repSponsor, replacerParagraph }

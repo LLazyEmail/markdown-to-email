@@ -18,7 +18,11 @@ function prepOurCallback(callback_name) {
 }
 
 function debuggingReplacer(name){
-  let namesArr = ['sponsorship', 'paragraph'];
+  let namesArr = [
+    'sponsorship', 
+    'paragraph',
+    'link'
+  ];
   return namesArr.includes(name)
 }
 
@@ -27,6 +31,7 @@ function debuggingReplacer(name){
 // function methodForTestingValues(){
 //   // mapObject.forEach((element) => {
 //   //   console.log(element.replacer);
+
 //   // })
 
 //   _.map(mapObject, (element) => {
