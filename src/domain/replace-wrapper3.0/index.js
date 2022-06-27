@@ -23,57 +23,54 @@ const WR3_getWrapper = (name) => {
 
 function repSponsor(config){
 
-    const { debug } = config || false;
-
+    // const { debug } = config || false;
 
     const configCopy = Object.assign(
         config, 
         WR3_getWrapper(config.name)
     );
-  
-  
-  
-  
-    if(debug) console.log(configCopy);
-  
+    
     let newString = WR3_generateNewString(configCopy);
   
-    if(debug) console.log(newString);
-  
-    // if (!inspector(newString)) {
-    //   throw new Error('replace wrapper 3.0 is blank');
-    // }   
-    inspectorCheck(newString);
-    
     return newString;
-  
   
 }
 //-------------------
 const replacerParagraph = (config) => {
 
-  const { debug } = config || false;
+  // const { debug } = config || false;
 
   const configCopy = Object.assign(
     config, 
     WR3_getWrapper(config.name)
   );
 
-  if(debug) console.log(configCopy);
-
+  // if(debug) console.log(configCopy);
   let newString = WR3_generateNewString(configCopy);
-  
-  if(debug) console.log(newString);
-  
-  // if (!inspector(newString)) {
-  //   throw new Error('replace wrapper 3.0 is blank');
-  // }   
-  inspectorCheck(newString);
+  // if(debug) console.log(newString);
+  // inspectorCheck(newString);
     
   return newString;
 
+}
 
+const replaceLink = (config) => {
 
+  // const { debug } = config || false;
+
+  const configCopy = Object.assign(
+    config, 
+    WR3_getWrapper(config.name)
+  );
+
+  // if(debug) console.log(configCopy);
+
+  let newString = WR3_generateNewString(configCopy);
+  
+  // if(debug) console.log(newString);
+  // inspectorCheck(newString);
+    
+  return newString;
 }
 
 
@@ -83,16 +80,23 @@ const inspectorCheck = (string) => {
   } 
 }
 
-
-
 function WR3_generateNewString(config){
 
     // const wrapper = getWrapper(name, config);
 // console.log(config.literal)
     // stopping it here....
+
+    // if(config.debug) console.log(config);
+  
     const updatedString = _loopForWrapper(config.params, config.literal);
+
+    if(config.debug) console.log(config);
+
+    if(config.debug) console.log(updatedString);
+  
+    inspectorCheck(updatedString);  
   
     return updatedString;
 }
 
-  export { repSponsor, replacerParagraph }
+  export { repSponsor, replacerParagraph, replaceLink }

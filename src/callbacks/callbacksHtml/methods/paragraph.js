@@ -6,19 +6,24 @@ import { catch_error_trace_output } from '../../../domain/error-handle'
 
 // function now working as planned
 // TODO remove unused `text` argument
-export function _paragraphWrapper(text, line) {
+export function _paragraphWrapper(text, markdown_string) {
 
   // console.log(text)
   // console.log(line)
   // console.log('------')
   
 
-  const trimmed = line.trim();
+  const trimmed = markdown_string.trim();
 
   // TODO move out this regex into constants file.
+  // probably it's better to make it as a separate method + wrap with try - catch stuff
 
   if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
-    return newLine + line + newLine;
+
+
+    return newLine + markdown_string + newLine;
+
+
   }
 
   const params = {
