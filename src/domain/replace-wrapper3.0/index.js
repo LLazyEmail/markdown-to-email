@@ -8,7 +8,7 @@ import misc from '../../templates/PlainJSOuterTemplate/layouts/misc';
 
 import { getWrapper, generateNewString, _loopForWrapper } from '../../callbacks/helpers'
 
-
+import { inspector } from '../error-handle';
 
 import mainObj from '../replace-markdown/pre-replace-objects';
 
@@ -18,71 +18,45 @@ import mainObj from '../replace-markdown/pre-replace-objects';
 // }
 
 const WR3_getWrapper = (name) => {
-    return { wrapper: mainObj[name] }
+    return { literal: mainObj[name]['literal'] }
 }
 
 function repSponsor(config){
 
-    // console.log(config)
-    // name, config, folder = 'typography', debug = true
-  
-  
-    //   // TODO I am not sure is it correct structure
-    const configCopy = Object.assign(config, {
-    //   layouts: { 
-    //     body, misc 
-    // },
-    // wrapper: mainObj[config.name]
-      // folder,
-  
-      
-    }, WR3_getWrapper(config.name));
+    const { debug } = config || false;
+
+
+    const configCopy = Object.assign(
+        config, 
+        WR3_getWrapper(config.name)
+    );
   
   
   
   
-    // if(config.debug)  console.log(configCopy);
-  
-    // console.log(mainObj[configCopy.name])
-  
-    // wrapper: getWrapper(config.name, config)
-  
+    if(debug) console.log(configCopy);
   
     let newString = WR3_generateNewString(configCopy);
   
     if(debug) console.log(newString);
   
-  
+    if (!inspector(newString)) {
+      throw new Error('replace wrapper 3.0 is blank');
+    }   
     
-    // return newString;
-  
-  
-    // return generateNewString(name, configCopy);
+    return newString;
   
   
   
-  
-  
-    // if (typeof variable === 'undefined' || variable === null) {
-    //   // variable is undefined or null
-    //   // return false;
-    //   throw new Error('replaceWrapper is blank');
-    // }
-  
-  
-    // if (!checkerr()) {
-    //   throw new Error('replaceWrapper is blank');
-    // }
-    
   
   }
 
 function WR3_generateNewString(config){
 
     // const wrapper = getWrapper(name, config);
-
+// console.log(config.literal)
     // stopping it here....
-    const updatedString = loopForWrapper(config.params, config.wrapper);
+    const updatedString = _loopForWrapper(config.params, config.literal);
   
     return updatedString;
 }

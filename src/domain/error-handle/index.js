@@ -14,7 +14,7 @@ function extractOptions(converter, key) {
 
 
 // TODO WE NEED MAKE IT WORK
-function checkerr(variable = false) {
+function inspector(variable = false) {
 
   // console.log( typeof element.replacer === 'undefined' );
   // console.log( element.replacer === null );
@@ -75,5 +75,6 @@ const tracingVariables = (regexp, replacer, callback) => {
 
 
 export {
-  catch_error_trace_output
+  catch_error_trace_output,
+  inspector
 }
