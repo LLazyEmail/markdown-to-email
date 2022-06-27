@@ -20,7 +20,7 @@ export function _paragraphWrapper(text, line) {
 
 
   const replaced = replaceWrapper(
-    'paragraph', config
+    'paragraph', config, 'typography', false
     );
 
   return newLine + replaced + newLine;

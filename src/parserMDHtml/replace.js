@@ -65,7 +65,7 @@ class Replace {
     };
 
     this.paragraph = () => {
-      this.replaceMDBinded('paragraphWrapper');
+      this.replaceMDBinded('paragraph');
     };
 
     this.emptyUl = () => {

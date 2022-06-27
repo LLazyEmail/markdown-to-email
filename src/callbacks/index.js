@@ -26,11 +26,6 @@ export {
 
   // replaceReactWrapper,
 
-
-  // replaceMarkdown,
-  // replaceMarkdownPreviewText,
-
-
   generateNewString,
   getWrapper,
 };

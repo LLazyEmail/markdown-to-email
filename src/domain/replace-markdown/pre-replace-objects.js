@@ -215,7 +215,7 @@ export default {
   olList ,
   blockquote ,
   hr ,
-  paragraphWrapper ,
+  paragraph,
   br ,
   sponsorship,
   memes ,

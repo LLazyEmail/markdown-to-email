@@ -61,7 +61,7 @@ class ReactReplacer {
     };
 
     this.paragraph = function () {
-      this.replaceMDBinded('paragraphWrapper');
+      this.replaceMDBinded('paragraph');
     };
 
     this.emptyUl = function () {
