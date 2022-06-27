@@ -22,7 +22,8 @@ import { _ulList, _olList } from './methods/lists';
 import _br  from './methods/br';
 
 import { _image } from './methods/image';
-import { _meme, _separator } from './methods/separator';
+import _separator  from './methods/separator';
+import _meme from './methods/memes';
 import { _sponsorship } from './methods/sponsor';
 
 import { 

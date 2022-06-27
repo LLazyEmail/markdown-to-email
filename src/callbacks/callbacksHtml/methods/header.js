@@ -4,9 +4,18 @@ import { replaceHeader } from '../../../domain/replace-wrapper3.0'
 
 import { catch_error_trace_output } from '../../../domain/error-handle'
 
+import CallbackFactory from '../../../domain/callbacks-factory';
+
+
 // TODO fix issue related to text variable
 function _header(text, chars, content) {
   
+
+
+
+  // const factory = CallbackFactory.create();
+
+  // console.log('123')
 
   const params = {
     content: content.trim(),    

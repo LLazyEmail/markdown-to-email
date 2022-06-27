@@ -6,11 +6,16 @@
 import body from '../../templates/PlainJSOuterTemplate/layouts/body';
 import misc from '../../templates/PlainJSOuterTemplate/layouts/misc';
 
-import { getWrapper, generateNewString, _loopForWrapper } from '../../callbacks/helpers'
+import { 
+  getWrapper, generateNewString, _loopForWrapper 
+} from '../../callbacks/helpers'
 
 import { inspector } from '../error-handle';
 
 import mainObj from '../replace-markdown/pre-replace-objects';
+
+
+import CallbackFactory from '../callbacks-factory';
 
 // const WR3_Template(params){
 //     const  {src, href, content, wrapper}=params; 
@@ -74,6 +79,9 @@ const replaceLink = (config) => {
 }
 
 const replaceHeader = (config) => {
+
+
+ 
 
   // const { debug } = config || false;
 

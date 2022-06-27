@@ -19,10 +19,11 @@ function prepOurCallback(callback_name) {
 
 function debuggingReplacer(name){
   let namesArr = [
-    'sponsorship', 
-    'paragraph',
-    'link',
-    'header'
+    // 'sponsorship', 
+    // 'paragraph',
+    // 'link',
+    // 'header'
+    'strong'
   ];
   return namesArr.includes(name)
 }

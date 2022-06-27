@@ -3,54 +3,69 @@
 
 import { catch_error_trace_output } from '../../domain/error-handle';
 
+import { inspector } from '../error-handle';
 
-function _link(text, title, href) {
-    // const params = ;
-  
-    
-    const config = {
-      params: {
-        content: title.trim(),
-        href: href.trim(),
-      },
-      name: 'link',
-  
-      // debug: true
+function _link(text, title, href) {    
+    const config = {      
+      name: 'link',  
     };
-    
-
 }
 
 
+const WR3_getWrapper = (name) => {
+  return { literal: mainObj[name]['literal'] }
+}
+
 class CallbackFactory {
+
+    error = false;
 
 
 
     create = (settings) => {
         
+
+      // if(inspector(settings) throw new Error('nooooo settings')
+
         // if (!settings)
         // add error checking here.. probably few versions to test
-        error = false;
+        // error = false;
 
 
-        const { config, literal, replacerMethod } = settings;
+
+        // const { 
+        //   config, name, 
+        //   ooobj, replacerMethod, debug 
+        // } = settings || false;
+
+        // const { regex, replacer, literal } = ooobj;
+
+
+
 
         // config.name 
 
+        // params: {
+        //   content: title.trim(),
+        //   href: href.trim(),
+        // };
 
         
-
-
         // let partial;
 
         //here i want to apply a check and see if everything is fine, if not we generate error = true 
-        try {
+        // try {
 
-            const replaced = replaceLink(config);
+        //     const replaced = replacerMethod(config);
+
+
+        //     let newString = WR3_generateNewString(configCopy);
+  
+        //     return newString;
           
-            return replaced;
+        //     return replaced;
         
-          } catch (error) { catch_error_trace_output(error); }
+        //   } catch (error) { catch_error_trace_output(error); }
 
          
           
@@ -77,9 +92,3 @@ class CallbackFactory {
 }
 
 export default CallbackFactory;
-
-
-
-
-
-

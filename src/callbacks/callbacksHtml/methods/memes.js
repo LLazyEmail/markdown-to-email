@@ -42,4 +42,4 @@ function _meme(text, src, href, altText) {
   
 }
 
-  export default _memes;
+  export default _meme;
