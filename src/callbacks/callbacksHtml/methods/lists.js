@@ -2,6 +2,8 @@
 import { replaceWrapper, newLine, beforeBeginingNewLine, beforeEnd } from '../helpers';
 
 
+ 
+
 function getParsedSubList(subList) {
 
   // beforeEnd
@@ -12,9 +14,18 @@ function getParsedSubList(subList) {
     regex,
     (text, subItem) => {
 
+
+
+      const params = {
+    
+      };
+
+      
+
       const config = {
         content: subItem.trim(),
       };
+
 
 
 
@@ -24,6 +35,17 @@ function getParsedSubList(subList) {
       );
 
       return  newLine + replaced;
+
+      try {
+
+        const replaced = replaceHeader(config);
+        
+    
+    
+        const result = newLine + replaced + newLine;
+        return result;
+    
+      } catch (error) { catch_error_trace_output(error); }
       
     },
   );
@@ -42,9 +64,19 @@ function getParsedLists(parsedSubLists){
     regex,
     (text, listItem) => {
 
-      const config = {
+// NOT FINISHED
+      const params = {
         content: listItem.trim(),
       };
+
+
+      const config = {
+        // content: listItem.trim(),
+
+        debug: true
+      };
+
+
 
 
       var replaced = replaceWrapper(
@@ -54,6 +86,18 @@ function getParsedLists(parsedSubLists){
 
       return newLine + replaced; 
 
+
+      try {
+
+        const replaced = replaceHeader(config);
+        
+    
+    
+        const result = newLine + replaced + newLine;
+        return result;
+    
+      } catch (error) { catch_error_trace_output(error); }
+
     },
   );
 
@@ -61,6 +105,10 @@ function getParsedLists(parsedSubLists){
 }
 
 
+
+const ul_list_replace_a1 = (text, subList) => {
+
+}
 
 // @TODO it looks even more crazier than it was 2 months ago
 // i'm not suprised that it might get errors(but works fine now)
@@ -76,15 +124,40 @@ function _ulList(text, list) {
 
       const parsedSubItem = getParsedSubList(subList);
 
+      const params = {
+        content: parsedSubItem + newLine,    
+      };
+
       const config = {
-        content: parsedSubItem + newLine,
+        // content: parsedSubItem + newLine,
+
+        name: 'list',
+        debug: true
       };
       
-      var replaced = replaceWrapper(
-        'list', 
-        config
-      );
-      return newLine + replaced; 
+
+
+
+
+
+      // var replaced = replaceWrapper(
+      //   'list', 
+      //   config
+      // );
+      // return newLine + replaced; 
+
+// NOT FINISHED
+      try {
+
+        const replaced = replaceHeader(config);
+        
+    
+    
+        const result = newLine + replaced + newLine;
+        return result;
+    
+      } catch (error) { catch_error_trace_output(error); }
+
 
     },
   );
@@ -94,10 +167,21 @@ function _ulList(text, list) {
 
   const parsedList = getParsedLists(parsedSubListsParts);  
 
-  const config = {
+
+  const params = {
     content: parsedList + newLine,
+
+    name: 'list',
+    debug: true
   };
 
+
+  const config = {
+    // content: parsedList + newLine,
+
+
+  };
+// NOT FINISHED
   const replaced = replaceWrapper(
     'list', 
     config

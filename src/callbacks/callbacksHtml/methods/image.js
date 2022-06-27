@@ -4,9 +4,20 @@ export function _image(text, alt, srcWithTooltip) {
     // eslint-disable-next-line no-useless-escape
     const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
   
-    const config = {
+
+    const params = {
       src: src.trim(),
       altText: alt,
+
+    };
+
+
+    const config = {
+      // src: src.trim(),
+      // altText: alt,
+      params,
+      name: 'image',
+      debug: true
     };
   
     // i dont think it will work well
@@ -16,13 +27,26 @@ export function _image(text, alt, srcWithTooltip) {
   
   
   
+
   
     const replaced = replaceWrapper(
       
       'image', config
       );
   
-    return replaced;
+    // return replaced;
+
+
+    try {
+  
+      const replaced = replacerParagraph(config);
+   
+      return newLine + replaced + newLine;
+  
+    } catch (error) { catch_error_trace_output(error); }
+
+    
+
   }
 
   export default _image

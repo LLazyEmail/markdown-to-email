@@ -7,19 +7,25 @@ import { catch_error_trace_output } from '../../../domain/error-handle'
 // TODO fix issue related to text variable
 function _header(text, chars, content) {
   
-  
+
+  const params = {
+    content: content.trim(),    
+  };
+
   
     const config = {
-      content: content.trim(),
+      // content: content.trim(),
 
+      name: 'header',
       debug: true
     };
     
+    // NOT FINISHED
   console.log(config);
 
-    const titleType = ['title', 'subtitle', 'heading'];
+  const titleType = ['title', 'subtitle', 'heading'];
   
-    const variabl = titleType[chars.length - 1];
+  const variabl = titleType[chars.length - 1];
     // console.log(variabl);
     
     

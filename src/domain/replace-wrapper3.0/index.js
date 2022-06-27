@@ -103,6 +103,10 @@ function WR3_generateNewString(config){
 
     // if(config.debug) console.log(config);
   
+    inspector(config.params);
+
+
+
     const updatedString = _loopForWrapper(config.params, config.literal);
 
     if(config.debug) console.log(config);

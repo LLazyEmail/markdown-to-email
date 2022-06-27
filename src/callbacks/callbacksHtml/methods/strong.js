@@ -1,23 +1,42 @@
+import { replaceHeader } from '../../../domain/replace-wrapper3.0'
+
+import { catch_error_trace_output } from '../../../domain/error-handle'
+
 // TODO make sense to the text variable
 // probably Vadim knows what is doing on here,
 // I think he was the person that did all these funcitons.
 
 function _strong(text, doubleAsterix, content, asterix) {
     
-  
+  const params = {
+    content: `${content + asterix}`,
+  };
+
   const config = {
-      content: `${content + asterix}`,
-    };
+      params,
+
+      name: 'strong',  
+      debug: true
+  };
   
   
   
-  
+    // NOT FINISHED
     
-    const replaced = replaceWrapper(
-      'strong', config
-      );
+    // const replaced = replaceWrapper(
+    //   'strong', config
+    //   );
   
-    return replaced;
+    // return replaced;
+
+    try {
+
+      const replaced = replaceHeader(config);
+
+    
+      return replaced;
+  
+    } catch (error) { catch_error_trace_output(error); }
   }
 
   export default _strong;
