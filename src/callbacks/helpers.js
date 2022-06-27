@@ -36,54 +36,30 @@ function getWrapper(name, config) {
 // here we can have a problem, because we're passing more information into a config that it was before
 
 function _loopForWrapper(config, literal) {
-  // console.log(config);
 
-  // console.log( typeof wrapper);
-// let template = wrapper.toString();
+  try {
 
-try {
-
-  mapKeys(config, function(value, key) {
-    
-   
-  
-    // console.log(key);
-    // console.log(value);
-    // return key + value;
-
-    const regularExpression = new RegExp(`{${key}}`, 'g');
-    // console.log(regularExpression)
-    
-        
-    literal = literal.replace(regularExpression, value);
-    
-       
-
-  });
-
-  return literal;
-
-} catch (error){
-  catch_error_trace_output(error)
-}
-
-  // Object.keys(config).forEach((name) => {
-
-  //   // console.log(name)
-    
-  //   // console.log(config[name])
-  //   const value = config[name];
-
-
-   
-
-
+    mapKeys(config, function(value, key) {
+      
+      // console.log(key);
+      // console.log(value);
     
 
+      const regularExpression = new RegExp(`{${key}}`, 'g');
+      // console.log(regularExpression)
+      
+          
+      literal = literal.replace(regularExpression, value);
+      
 
-  // });
+    });
 
-  
+    return literal;
+
+  } catch (error){
+    catch_error_trace_output(error)
+  }
+
 }
 
 function generateNewString(name, config) {

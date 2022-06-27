@@ -167,7 +167,7 @@ const blockquote = objectBuilder(REGEXP_BLOCKQUOTE, _blockquote, false)
 const hr = objectBuilder(REGEXP_HR, _hr, false)
 
 //  paragraphLiteral
-const paragraphWrapper = objectBuilder(REGEXP_PARAGRAPH, _paragraphWrapper, paragraphLiteral)
+const paragraph = objectBuilder(REGEXP_PARAGRAPH, _paragraphWrapper, paragraphLiteral)
 
 
 const br = objectBuilder(REGEXP_BR, _br)

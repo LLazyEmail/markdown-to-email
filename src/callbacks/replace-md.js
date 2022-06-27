@@ -18,7 +18,7 @@ function prepOurCallback(callback_name) {
 }
 
 function debuggingReplacer(name){
-  let namesArr = ['sponsorship'];
+  let namesArr = ['sponsorship', 'paragraph'];
   return namesArr.includes(name)
 }
 
