@@ -35,7 +35,7 @@ function getWrapper(name, config) {
 
 // here we can have a problem, because we're passing more information into a config that it was before
 
-function loopForWrapper(config, wrapper) {
+function _loopForWrapper(config, wrapper) {
   // console.log(config);
 
   // console.log(wrapper);
@@ -62,7 +62,7 @@ function generateNewString(name, config) {
   const wrapper = getWrapper(name, config);
 
   // stopping it here....
-  const updatedString = loopForWrapper(config, wrapper);
+  const updatedString = _loopForWrapper(config, wrapper);
 
   return updatedString;
 }
@@ -72,4 +72,6 @@ function generateNewString(name, config) {
 export {  
   generateNewString,
   getWrapper,
+
+  _loopForWrapper
 };

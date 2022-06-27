@@ -52,6 +52,7 @@
   "dependencies": {
     "chalk": "5.0.1",
     "cross-env": "7.0.3",
+    "lit-html": "^2.2.6",
     "lodash": "4.17.21",
     "object-assign": "^4.1.1",
     "path-exists": "5.0.0",

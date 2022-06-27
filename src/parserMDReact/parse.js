@@ -3,12 +3,16 @@ import {
   //   replaceMarkdownPreviewText,
 } from '../callbacks';
 
-// import { stateInit } from '../helper';
 
 import stateInit from '../domain/state';
 
+// TODO think about connecting replaceMD object to this file.
+// will it help and simplify something?
+
 import ReactReplacer from './replace';
 // ReactReplacer
+
+
 
 function configureReplacer(state, isFull) {
   // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????

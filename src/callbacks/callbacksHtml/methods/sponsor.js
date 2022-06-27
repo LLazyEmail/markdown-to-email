@@ -1,4 +1,7 @@
-import { replaceWrapper, repSponsor } from '../helpers';
+import { replaceWrapper,  } from '../helpers';
+
+
+import { repSponsor } from '../../../domain/replace-wrapper3.0'
 
 import { catch_error_trace_output } from '../../../domain/error-handle'
 // /domain/error-handle/index';
@@ -20,19 +23,22 @@ export function _sponsorship(text) {
       // eslint-disable-next-line no-useless-escape
       .map((match) => match.replace(regex2, '')); 
   
+  const params = {
+    src: src.trim(),
+    href: href.trim(),
+    content: content.trim(),
+  }
+
 
     const config = {
-      src: src.trim(),
-      href: href.trim(),
-      content: content.trim(),
   
-
+      params,
 
       // we will be able to remove it when we find a way to do it.
-      folder: 'body',
+      // folder: 'body',
 
 
-      name: 'sponsor',
+      name: 'sponsorship',
 
 
 
@@ -49,8 +55,6 @@ export function _sponsorship(text) {
   
   
   
-    // const newString = replaceWrapper2(config);
-    // console.log(newString);
   
 
     // ITS IMPORTANT TO BE ABLE TO FIND A WAY TO GENERATE AN ERROR AND PASS IT TO THE PREV CALLER.
@@ -62,6 +66,12 @@ export function _sponsorship(text) {
     // console.log(replaced);
   
     return replaced;
+
+    // or 
+
+    
+    // const newString = replaceWrapper2(config);
+    // console.log(newString);
 
   } catch (error) {
     

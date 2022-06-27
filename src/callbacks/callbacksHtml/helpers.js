@@ -51,46 +51,6 @@ function replaceOuterTemplate(){
 }
 
 
-function repSponsor(name, config, folder = 'typography', debug = true){
-
-
-  
-  //   // TODO I am not sure is it correct structure
-  const configCopy = Object.assign(config, {
-    layouts: { body, misc },
-    folder,
-  });
-
-  if(debug)  console.log(configCopy);
-
-
-  let newString = generateNewString(name, configCopy);
-
-  if(debug) console.log(newString);
-
-
-  // return newString;
-
-
-  // return generateNewString(name, configCopy);
-
-
-
-
-
-  // if (typeof variable === 'undefined' || variable === null) {
-  //   // variable is undefined or null
-  //   // return false;
-  //   throw new Error('replaceWrapper is blank');
-  // }
-
-
-  // if (!checkerr()) {
-  //   throw new Error('replaceWrapper is blank');
-  // }
-  
-
-}
 
 // TODO each time we are passing a huge variable with layouts for each wrapper.
 // instead we can do it differently
@@ -153,7 +113,7 @@ export {
 
   
   replaceWrapper2,
-  repSponsor,
+  // repSponsor,
 
   replaceContent,
   replaceOuterTemplate
