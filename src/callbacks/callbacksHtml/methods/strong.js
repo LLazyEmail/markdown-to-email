@@ -32,7 +32,7 @@ function _strong(text, doubleAsterix, content, asterix) {
     name: 'strong',  
     valuesObj: mainObj['strong'],
     debug: true, 
-    replaceMethod: replaceHeader
+    replacerMethod: replaceHeader
   }
   
   const factory = new CallbackFactory;  
@@ -40,21 +40,17 @@ function _strong(text, doubleAsterix, content, asterix) {
 
 
     // NOT FINISHED
-    
-    // const replaced = replaceWrapper(
-    //   'strong', config
-    //   );
-  
-    // return replaced;
+   
+    // try {
 
-    try {
-
-      const replaced = replaceHeader(config);
+    //   const replaced = replaceHeader(config);
 
     
-      return replaced;
+    //   return replaced;
   
-    } catch (error) { catch_error_trace_output(error); }
+    // } catch (error) { catch_error_trace_output(error); }
+
+
   }
 
   export default _strong;

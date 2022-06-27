@@ -126,4 +126,4 @@ function WR3_generateNewString(config){
     return updatedString;
 }
 
-  export { repSponsor, replacerParagraph, replaceLink, replaceHeader, WR3_generateNewString }
+  export { repSponsor, replacerParagraph, replaceLink, replaceHeader, WR3_generateNewString, WR3_getWrapper }

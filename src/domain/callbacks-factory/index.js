@@ -5,7 +5,7 @@ import { catch_error_trace_output } from '../../domain/error-handle';
 
 import { inspector } from '../error-handle';
 
-import { WR3_generateNewString } from '../replace-wrapper3.0'
+import { WR3_generateNewString, WR3_getWrapper } from '../replace-wrapper3.0'
 
 
 class CallbackFactory {
@@ -34,7 +34,11 @@ class CallbackFactory {
 
         const { regex, replacer, literal } = valuesObj;
 
-
+        const configCopy = Object.assign(
+          settings, 
+          WR3_getWrapper(name)
+          // this.getWrapper(name)
+        );
 
         // params: {
         //   content: title.trim(),
@@ -47,20 +51,35 @@ class CallbackFactory {
         //here i want to apply a check and see if everything is fine, if not we generate error = true 
         try {
 
-            const replaced = replacerMethod(settings);
-
-
-            console.log(replaced);
-
+  
             // or
 
-        //     let newString = WR3_generateNewString(settings);
+            // let newString = WR3_generateNewString(configCopy);
   
+            // console.log(newString);
         //     return newString;
+
+        // or
+            // let newString = this.WR3_generateNewString(configCopy);
+  
+            // console.log(newString);
           
-        //     return replaced;
         
           } catch (error) { catch_error_trace_output(error); }
+
+
+       
+
+    }
+
+ 
+
+     // WR4_getWrapper = (name) => {
+          //   return { 
+          //     literal: mainObj[name]['literal'] 
+          //   }
+          // }
+    
 
          
           
@@ -80,14 +99,8 @@ class CallbackFactory {
           // display = () => {
           //   this.getPartial();
           // }
-    }
 
-    // WR4_getWrapper = (name) => {
-    //   return { 
-    //     literal: mainObj[name]['literal'] 
-    //   }
-    // }
-    
+
 }
 
 export default CallbackFactory;
