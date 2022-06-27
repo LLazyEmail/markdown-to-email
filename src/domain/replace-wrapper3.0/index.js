@@ -73,6 +73,21 @@ const replaceLink = (config) => {
   return newString;
 }
 
+const replaceHeader = (config) => {
+
+  // const { debug } = config || false;
+
+  const configCopy = Object.assign(
+    config, 
+    WR3_getWrapper(config.name)
+  );
+
+  let newString = WR3_generateNewString(configCopy);
+
+  return newString;
+
+}
+
 
 const inspectorCheck = (string) => {
   if (!inspector(string)) {
@@ -99,4 +114,4 @@ function WR3_generateNewString(config){
     return updatedString;
 }
 
-  export { repSponsor, replacerParagraph, replaceLink }
+  export { repSponsor, replacerParagraph, replaceLink, replaceHeader }

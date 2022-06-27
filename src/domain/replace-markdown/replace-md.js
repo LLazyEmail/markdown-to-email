@@ -21,7 +21,8 @@ function debuggingReplacer(name){
   let namesArr = [
     'sponsorship', 
     'paragraph',
-    'link'
+    'link',
+    'header'
   ];
   return namesArr.includes(name)
 }

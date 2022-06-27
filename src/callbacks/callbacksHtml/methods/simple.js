@@ -32,30 +32,13 @@ function _previewText(text, content) {
 
 
 
-function _header(text, chars, content) {
-  const config = {
-    content: content.trim(),
-  };
-
-  const titleType = ['title', 'subtitle', 'heading'];
-
-
-
-
-  
-  const replaced = replaceWrapper(titleType[chars.length - 1], config);
-
-  const result = newLine + replaced;
-
-  return result;
-}
 
 export {
   // strong,
   // link,
   _blockquote,
   // mem,
-  _header,
+  // _header,
 
   // italic,
   // del,

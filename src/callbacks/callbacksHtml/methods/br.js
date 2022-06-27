@@ -3,8 +3,8 @@ import { replaceWrapper, newLine } from '../helpers';
 
 // TODO remove unused `text` argument
 export function _br(text, newLines) {
+  
   // TODO move out this regex into constants file.
-
   const regex = new RegExp(newLine, 'g');
   const arrNewLines = newLines.match(regex);
 

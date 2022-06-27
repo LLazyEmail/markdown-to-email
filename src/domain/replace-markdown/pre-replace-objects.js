@@ -142,11 +142,8 @@ const previewText = objectBuilder(REGEXP_PREVIEW_TEXT, _previewText, previewText
 //italicLiteral,
 const italic  = objectBuilder(REGEXP_EM, _italic, italicLiteral)
 
-
-//headerLiteral,
 const header  = objectBuilder(REGEXP_HEADER, _header, headingLiteral)
 
-// console.log(header);
 
 // qLiteral,
 const q = objectBuilder(REGEXP_Q, _q, false)

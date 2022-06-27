@@ -1,8 +1,8 @@
 import {  
-  _blockquote,
-  _header
+  _blockquote
 } from './methods/simple';
 
+import _header from './methods/header';
 
 import _strong from './methods/strong';
 import _link from './methods/link';
