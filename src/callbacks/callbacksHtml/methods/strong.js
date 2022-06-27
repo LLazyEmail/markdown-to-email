@@ -9,7 +9,10 @@ import { catch_error_trace_output } from '../../../domain/error-handle'
 
 import CallbackFactory from '../../../domain/callbacks-factory';
 
+import mainObj from '../../../domain/replace-markdown/pre-replace-objects';
 
+
+// SOON CALLBACKS WILL RETURN SETTINGS ONLY
 function _strong(text, doubleAsterix, content, asterix) {
     
   const params = {
@@ -23,15 +26,19 @@ function _strong(text, doubleAsterix, content, asterix) {
       debug: true
   };
 
+
   const settings = {
     params,
-
-
-    debug: true
+    name: 'strong',  
+    valuesObj: mainObj['strong'],
+    debug: true, 
+    replaceMethod: replaceHeader
   }
   
   const factory = new CallbackFactory;  
-  factory.create();
+  factory.create(settings);
+
+
     // NOT FINISHED
     
     // const replaced = replaceWrapper(

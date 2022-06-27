@@ -5,16 +5,8 @@ import { catch_error_trace_output } from '../../domain/error-handle';
 
 import { inspector } from '../error-handle';
 
-function _link(text, title, href) {    
-    const config = {      
-      name: 'link',  
-    };
-}
+import { WR3_generateNewString } from '../replace-wrapper3.0'
 
-
-const WR3_getWrapper = (name) => {
-  return { literal: mainObj[name]['literal'] }
-}
 
 class CallbackFactory {
 
@@ -24,26 +16,25 @@ class CallbackFactory {
 
     create = (settings) => {
         
-
       // if(inspector(settings) throw new Error('nooooo settings')
 
-        // if (!settings)
-        // add error checking here.. probably few versions to test
-        // error = false;
+      // if (!settings)
+      // add error checking here.. probably few versions to test
+      // error = false;
 
 
 
-        // const { 
-        //   config, name, 
-        //   ooobj, replacerMethod, debug 
-        // } = settings || false;
+        const { 
+          params, 
+          name, 
+          valuesObj, 
+          replacerMethod, 
+          debug 
+        } = settings || false;
 
-        // const { regex, replacer, literal } = ooobj;
+        const { regex, replacer, literal } = valuesObj;
 
 
-
-
-        // config.name 
 
         // params: {
         //   content: title.trim(),
@@ -54,18 +45,22 @@ class CallbackFactory {
         // let partial;
 
         //here i want to apply a check and see if everything is fine, if not we generate error = true 
-        // try {
+        try {
 
-        //     const replaced = replacerMethod(config);
+            const replaced = replacerMethod(settings);
 
 
-        //     let newString = WR3_generateNewString(configCopy);
+            console.log(replaced);
+
+            // or
+
+        //     let newString = WR3_generateNewString(settings);
   
         //     return newString;
           
         //     return replaced;
         
-        //   } catch (error) { catch_error_trace_output(error); }
+          } catch (error) { catch_error_trace_output(error); }
 
          
           
@@ -87,7 +82,11 @@ class CallbackFactory {
           // }
     }
 
-
+    // WR4_getWrapper = (name) => {
+    //   return { 
+    //     literal: mainObj[name]['literal'] 
+    //   }
+    // }
     
 }
 
