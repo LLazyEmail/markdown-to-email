@@ -1,7 +1,7 @@
 import {
   replaceMarkdown,
   //   replaceMarkdownPreviewText,
-} from '../callbacks';
+} from '../domain/replace-markdown/replace-md';
 
 
 import stateInit from '../domain/state';

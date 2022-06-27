@@ -10,7 +10,6 @@ import {
 const stateInit = (source) => {
     // TODO rename
     const markdown = readSourceFile(source);
-    // TODO should we move out state from this file?
   
     const stateObject = {
       content: markdown,

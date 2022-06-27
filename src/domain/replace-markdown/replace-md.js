@@ -4,7 +4,7 @@
 // https://www.npmjs.com/package/pupa
 
 import _ from 'lodash';
-import mapObject from '../domain/replace-markdown/pre-replace-objects';
+import mapObject from './pre-replace-objects';
 
 // @TODO replace the name of this method
 function prepOurCallback(callback_name) {

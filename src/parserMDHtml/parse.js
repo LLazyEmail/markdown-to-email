@@ -1,6 +1,6 @@
 // TODO: something wrong with newsletter-constants module
 
-import { replaceMarkdown, replaceMarkdownPreviewText } from '../callbacks';
+import { replaceMarkdown, replaceMarkdownPreviewText } from '../domain/replace-markdown/replace-md';
 
 // import { stateInit } from '../helper';
 
