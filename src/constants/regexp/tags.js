@@ -5,14 +5,13 @@ const platform = os.platform();
 
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
-function beforeBeginingNewLine(string){
+function beforeBeginingNewLine(string) {
   return newLine + string;
 }
-
-function beforeEnd(string){
+// -----------------------
+function beforeEnd(string) {
   return string + newLine;
 }
-
 
 // TODO: make all regex to feel similar
 const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, 'g');
@@ -23,6 +22,7 @@ const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, 'g');
 
 // TODO: make all regex to feel similar
 const REGEXP_IMAGE = /!\[([^\[]+)\]\(([^\)]+)\)/g;
+// ---------------
 // TODO ADD REF PARAMETER TO URL
 const REGEXP_LINK = /\[([^\[]+)\]\(([^\)]+)\)/g;
 const REGEXP_STRONG = /(\*\*|__)(.*?)(\*?)\1/g;
