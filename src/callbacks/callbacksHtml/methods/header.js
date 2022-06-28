@@ -18,7 +18,7 @@ function _header(text, chars, content) {
 
   const config = {
     // content: content.trim(),
-
+    // params,
     name: 'header',
     debug: true,
   };
@@ -33,13 +33,13 @@ function _header(text, chars, content) {
 
   // const replaced = replaceWrapper(titleType[chars.length - 1], config);
 
-  try {
-    const replaced = replaceHeader(config);
+  // try {
+  //   const replaced = replaceHeader(config);
 
-    return newLine + replaced;
-  } catch (error) {
-    catch_error_trace_output(error);
-  }
+  //   return newLine + replaced;
+  // } catch (error) {
+  //   catch_error_trace_output(error);
+  // }
 }
 
 export default _header;

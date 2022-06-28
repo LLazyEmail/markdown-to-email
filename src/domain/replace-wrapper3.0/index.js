@@ -68,6 +68,8 @@ const replaceLink = (config) => {
 const replaceHeader = (config) => {
   // const { debug } = config || false;
 
+  if(inspector(config.params)) throw new Error('no params was passed');
+
   const configCopy = Object.assign(config, WR3_getWrapper(config.name));
 
   const newString = WR3_generateNewString(configCopy);

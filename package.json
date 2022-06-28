@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
-    "parsed": "cross-env PARSE=full node ./src/parser",
     "parse": "npm run build && cross-env PARSE=full node ./dist/bundle",
     "parseNoAdv": "npm run build && cross-env PARSE=noAdv node ./dist/bundle",
     "parse:full": "npm run build && cross-env PARSE=full node ./dist/bundle",
     "parseReact": "npm run build && cross-env PARSE=reactContentOnly node ./dist/bundle",
     "parseReact:full": "npm run build && cross-env PARSE=reactFull node ./dist/bundle",
+    "parsed": "cross-env PARSE=full node ./src/parser",
     "emptyT": "npm run build && cross-env PARSE=plainEmpty node ./dist/bundle",
     "defaultT": "npm run build && cross-env PARSE=plainTemplate node ./dist/bundle",
     "test:react": "npm run checkFolders && jest ./src/parserMDReact/tests",

@@ -22,8 +22,8 @@ function debuggingReplacer(name) {
     // 'sponsorship',
     // 'paragraph',
     // 'link',
-    // 'header'
-    'strong',
+    'header'
+    // 'strong',
   ];
   return namesArr.includes(name);
 }
@@ -76,7 +76,11 @@ function replaceMarkdown(callback_name) {
 
   if (debuggingReplacer(callback_name)) {
     console.log(callback_name);
-    this.content = this.content.replace(fromMap.constant, forReplacer);
+
+    this.content = this.content.replace(
+      fromMap.constant, 
+      forReplacer
+    );
   }
 
   return '';
