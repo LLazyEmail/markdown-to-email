@@ -5,7 +5,11 @@ module.exports = {
       "node": true,
       "jest": true
     },
-    "plugins": ["json", "require-path-exists"],
+    "parser": "@babel/eslint-parser",  
+    "plugins": [
+        "json", 
+        "require-path-exists"
+    ],
     "extends": [
       "airbnb-base",
       "plugin:require-path-exists/recommended",
@@ -16,9 +20,8 @@ module.exports = {
       "Atomics": "readonly",
       "SharedArrayBuffer": "readonly"
     },
-    "parser": "@babel/eslint-parser",  
     "parserOptions": {
-      "ecmaVersion": 2018,
+      "ecmaVersion": 12,
       "requireConfigFile": false,
       "sourceType": "module"
     },
