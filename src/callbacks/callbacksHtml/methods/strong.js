@@ -1,4 +1,4 @@
-import { replaceHeader } from '../../../domain/replace-wrapper3.0';
+import { replaceStrong } from '../../../domain/replace-wrapper3.0';
 
 import { catch_error_trace_output } from '../../../domain/error-handle';
 
@@ -20,29 +20,29 @@ function _strong(text, doubleAsterix, content, asterix) {
     params,
 
     name: 'strong',
-    debug: true,
+    // debug: true,
   };
 
-  const settings = {
-    params,
-    name: 'strong',
-    valuesObj: mainObj.strong,
-    debug: true,
-    replacerMethod: replaceHeader,
-  };
+  // const settings = {
+  //   params,
+  //   name: 'strong',
+  //   valuesObj: mainObj.strong,
+  //   debug: true,
+  //   replacerMethod: replaceHeader,
+  // };
 
-  const factory = new CallbackFactory();
-  factory.create(settings);
+  // const factory = new CallbackFactory();
+  // factory.create(settings);
 
   // NOT FINISHED
 
-  // try {
+  try {
 
-  //   const replaced = replaceHeader(config);
+    const replaced = replaceStrong(config);
 
-  //   return replaced;
+    return replaced;
 
-  // } catch (error) { catch_error_trace_output(error); }
+  } catch (error) { catch_error_trace_output(error); }
 }
 
 export default _strong;

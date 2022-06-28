@@ -1,4 +1,4 @@
-import { replaceHeader } from '../../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 import { catch_error_trace_output } from '../../../domain/error-handle';
 
@@ -11,9 +11,7 @@ function _meme(text, src, href, altText) {
   };
 
   const config = {
-    //   src: src.trim(),
-    //   altText: altText.trim(),
-    //   href: href.trim(),
+
     params,
 
     name: 'image',
@@ -28,9 +26,8 @@ function _meme(text, src, href, altText) {
   //   return replaced;
 
   try {
-    const replaced = replaceHeader(config);
-
-    return newLine + replaced;
+    const replaced = commonReplace(config);
+    return replaced;
   } catch (error) {
     catch_error_trace_output(error);
   }

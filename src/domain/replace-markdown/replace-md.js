@@ -22,8 +22,13 @@ function debuggingReplacer(name) {
     // 'sponsorship',
     // 'paragraph',
     // 'link',
-    'header'
+    // 'header', // not working
     // 'strong',
+    // 'memes',
+    // 'br',
+    // 'separator'
+    'previewText'
+
   ];
   return namesArr.includes(name);
 }

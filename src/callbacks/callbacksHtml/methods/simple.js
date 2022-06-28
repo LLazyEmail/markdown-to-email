@@ -7,32 +7,5 @@ function _blockquote(text, tmp, item) {
   return beforeBeginingNewLine(tag);
 }
 
-// TODO remove unused `text` argument
-function _previewText(text, content) {
-  const config = {
-    content,
-    folder: 'body',
-  };
 
-  this.errors.previewText = true;
-
-  const replaced = replaceWrapper('previewText', config, 'body');
-
-  return replaced;
-}
-
-export {
-  // strong,
-  // link,
-  _blockquote,
-  // mem,
-  // _header,
-
-  // italic,
-  // del,
-  // q,
-  // code,
-  // hr,
-  // empty,
-  _previewText,
-};
+export default  _blockquote;

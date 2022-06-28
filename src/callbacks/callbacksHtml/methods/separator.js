@@ -1,4 +1,7 @@
 import { replaceWrapper, newLine } from '../helpers';
+import { commonReplace } from '../../../domain/replace-wrapper3.0';
+
+import { catch_error_trace_output } from '../../../domain/error-handle';
 
 function _separator() {
   const params = {};
@@ -10,16 +13,8 @@ function _separator() {
     debug: true,
   };
 
-  // NOT FINISHED
-
-  // const replaced = replaceWrapper(
-  //   'separator', config
-  //   );
-
-  // const result = newLine + replaced + newLine;
-
   try {
-    const replaced = replaceHeader(config);
+    const replaced = commonReplace(config);
 
     const result = newLine + replaced + newLine;
     return result;

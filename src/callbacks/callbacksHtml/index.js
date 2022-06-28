@@ -1,5 +1,5 @@
-import { _blockquote } from './methods/simple';
-
+import _blockquote from './methods/simple';
+import _previewText from './methods/preview';
 import _header from './methods/header';
 
 import _strong from './methods/strong';
@@ -44,4 +44,5 @@ export {
   _sponsorship,
   _br,
   _separator,
+  _previewText,
 };

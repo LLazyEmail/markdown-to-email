@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { _previewText } from '../../callbacks/callbacksHtml/methods/simple';
+
 import {
   _strong,
   _link,
@@ -19,6 +19,8 @@ import {
   _sponsorship,
   _br,
   _separator,
+  //
+  _previewText,
 } from '../../callbacks/callbacksHtml/index';
 
 import {

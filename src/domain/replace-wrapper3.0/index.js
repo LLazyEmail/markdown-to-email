@@ -68,7 +68,31 @@ const replaceLink = (config) => {
 const replaceHeader = (config) => {
   // const { debug } = config || false;
 
-  if(inspector(config.params)) throw new Error('no params was passed');
+  if(!inspector(config.params)) throw new Error('no params was passed');
+
+  const configCopy = Object.assign(config, WR3_getWrapper(config.name));
+
+  const newString = WR3_generateNewString(configCopy);
+
+  return newString;
+};
+
+const replaceStrong = (config) => {
+  // const { debug } = config || false;
+
+  if(!inspector(config.params)) throw new Error('no params was passed');
+
+  const configCopy = Object.assign(config, WR3_getWrapper(config.name));
+
+  const newString = WR3_generateNewString(configCopy);
+
+  return newString;
+};
+
+const commonReplace = (config) => {
+  // const { debug } = config || false;
+
+  if(!inspector(config.params)) throw new Error('no params was passed');
 
   const configCopy = Object.assign(config, WR3_getWrapper(config.name));
 
@@ -108,6 +132,8 @@ export {
   replacerParagraph,
   replaceLink,
   replaceHeader,
+  replaceStrong,
+  commonReplace,
   WR3_generateNewString,
   WR3_getWrapper,
 };
