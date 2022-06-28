@@ -5,19 +5,29 @@ import {
   beforeEnd,
 } from '../helpers';
 
-
+import { REGEXP_SUB_LISTS } from '../../../domain/regular-expressions'
 
 
 import { replaceUl, commonReplace } from '../../../domain/replace-wrapper3.0';
 
 import { catch_error_trace_output } from '../../../domain/error-handle';
 
-function getParsedSubList(subList) {
-  // beforeEnd
-  const regex_variable = `\\s{4}\\*(.*?)${newLine}`;
-  const regex = new RegExp(regex_variable, 'g');
 
-  return subList.replace(regex, (text, subItem) => {
+// Case: when you have a sublist inside of your list
+// TODO add _ in the name of this method in order to keep the same logic
+// importing it into pre-replace-objects
+function getParsedSubList(subList) {
+
+
+
+  // beforeEnd
+  // const regex_variable = `\\s{4}\\*(.*?)${newLine}`;
+  // const regex = new RegExp(regex_variable, 'g');
+
+
+
+  return subList.replace(REGEXP_SUB_LISTS, (text, subItem) => {
+
 
     const params = {
       content: subItem.trim(),
@@ -27,12 +37,8 @@ function getParsedSubList(subList) {
       params,
 
       name: 'listItem',
-      debug: true
+      // debug: true
     };
-
-    // const replaced = commonReplace('listItem', config);
-
-
 
     try {
       const replaced = commonReplace(config);      
@@ -40,6 +46,8 @@ function getParsedSubList(subList) {
     } catch (error) {
       catch_error_trace_output(error);
     }
+
+
   });
 }
 
@@ -78,7 +86,7 @@ function getParsedLists(parsedSubLists) {
   return parsedList;
 }
 
-const ul_list_replace_a1 = (text, subList) => {};
+// const ul_list_replace_a1 = (text, subList) => {};
 
 // @TODO it looks even more crazier than it was 2 months ago
 // i'm not suprised that it might get errors(but works fine now)
@@ -86,8 +94,15 @@ function _ulList(text, list) {
   const regex_variable = `((\\s{4}\\*(.*?)${newLine}){1,})`;
   const regex = new RegExp(regex_variable, 'g');
 
+  // console.log(list);
+
+
   // @todo improve this crazy structure.
   const parsedSubListsParts = list.replace(regex, (text, subList) => {
+
+    // console.log(subList);
+
+
     const parsedSubItem = getParsedSubList(subList);
 
     console.log(parsedSubItem);
@@ -141,10 +156,9 @@ function _ulList(text, list) {
 function _olList(text, item) {
   // beforeBeginingNewLine
 
-  return;
-  `${newLine}<ol>${newLine}\t
+  return `${newLine}<ol>${newLine}\t
       <li>${item.trim()}</li>
       ${newLine}</ol>`;
 }
 
-export { _ulList, _olList };
+export { _ulList, _olList, getParsedSubList };

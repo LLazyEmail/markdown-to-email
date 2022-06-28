@@ -101,6 +101,14 @@ const replaceUl = (config) => {
 
 }
 
+
+const getParsedSubListReplace = (config) => {
+
+  console.log(WR3_getWrapper(config.name));
+
+}
+
+
 const commonReplace = (config) => {
   // const { debug } = config || false;
 

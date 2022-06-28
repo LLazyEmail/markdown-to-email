@@ -14,7 +14,7 @@ import {
   _empty,
 } from './methods/simple-without-replacer';
 
-import { _ulList, _olList } from './methods/lists';
+import { _ulList, _olList, getParsedSubList } from './methods/lists';
 
 import _br from './methods/br';
 
@@ -24,6 +24,8 @@ import _meme from './methods/memes';
 import { _sponsorship } from './methods/sponsor';
 
 import { _paragraphWrapper } from './methods/paragraph';
+
+
 
 export {
   _strong,
@@ -37,12 +39,16 @@ export {
   _code,
   _hr,
   _empty,
+  //---
   _ulList,
   _olList,
+  getParsedSubList,
+  //---
   _image,
   _paragraphWrapper,
   _sponsorship,
   _br,
   _separator,
   _previewText,
+
 };

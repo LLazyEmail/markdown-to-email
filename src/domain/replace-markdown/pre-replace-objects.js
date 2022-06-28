@@ -12,8 +12,11 @@ import {
   _code,
   _hr,
   // _empty,
+  //-----
   _ulList,
   _olList,
+  getParsedSubList,
+  //--------------
   _image,
   _paragraphWrapper,
   _sponsorship,
@@ -44,30 +47,16 @@ import {
   REGEXP_SEPARATOR,
 } from '../../constants/index';
 
+import { REGEXP_SUB_LISTS } from '../regular-expressions/';
+
 // import misc from '../templates/OuterTemplate/layouts/misc';
 
 import body from '../../templates/PlainJSOuterTemplate/layouts/body';
 
-// import {
-// sponsor as sponsorLiteral
-// sponsorComponent
 
-// strong as strongLiteral,
 
-// link as linkLiteral,
-// blockquote as blockquoteLiteral,
-// meme as memeLiteral,
-// header as headerLiteral,
-// italic as italicLiteral,
-// del as delLiteral,
-// q as qLiteral,
-// code as codeLiteral,
-// hr  as hrLiteral,
-// empty as emptyLiteral,
-// ulList as ulListLiteral,
-// olList as olListLiteral,
-// image as imageLiteral,
-// paragraph as paragraphLiteral,
+
+
 
 // TODO add here error handlers from domain/error-handle.
 // removing them from this file
@@ -77,14 +66,19 @@ import {
   imageLiteral,
   italicLiteral,
   linkLiteral,
+  //-----
   listLiteral,
   listItemLiteral,
+  //------------
   titleLiteral,
   paragraphLiteral,
   strongLiteral,
   subtitleLiteral,
   separatorLiteral,
 } from '../plainjs-template/typography/index';
+
+
+
 
 const { sponsorLiteral, previewTextLiteral } = body;
 
@@ -138,6 +132,9 @@ const q = objectBuilder(REGEXP_Q, _q, false);
 
 // codeLiteral,
 const code = objectBuilder(REGEXP_CODE, _code, false);
+
+
+const listItem = objectBuilder(REGEXP_SUB_LISTS, getParsedSubList, listItemLiteral);
 
 //  ulListLiteral,
 const ulList = objectBuilder(REGEXP_UL_LIST, _ulList, listLiteral);
@@ -197,8 +194,11 @@ export default {
   header,
   q,
   code,
+  //-----------
   ulList,
   olList,
+  listItem,
+  //-----------
   blockquote,
   hr,
   paragraph,
