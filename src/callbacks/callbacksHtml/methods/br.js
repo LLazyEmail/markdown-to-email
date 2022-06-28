@@ -16,7 +16,7 @@ export function _br(text, newLines) {
     '',
   );
   
-  console.log(result);
+  // console.log(result);
   return result;
 
   // NOT FINISHED

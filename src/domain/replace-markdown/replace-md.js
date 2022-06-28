@@ -23,16 +23,16 @@ function debuggingReplacer(name) {
     // 'sponsorship',
     // 'paragraph',
     // 'link',
-    'header', // not working
+    // 'header', // not working
     // 'strong',
     // 'memes',
     // 'br',
     // 'separator',
-    // 'previewText',
+    'previewText',
     // 'italic',
     // 'olList'
     // 'ulList'
-    ''
+    // 'image'
 
   ];
   return namesArr.includes(name);
@@ -75,18 +75,19 @@ function replaceMarkdown(callback_name) {
   const forReplacer = fromMap.replacer.bind(this);
 
 
+  //-------------- Uncomment for debugging reasons
+  if (debuggingReplacer(callback_name)) {
+    console.log(callback_name);
 
-  // if (debuggingReplacer(callback_name)) {
-  //   console.log(callback_name);
+    this.content = this.content.replace(
+      fromMap.constant, 
+      forReplacer
+    );
+  }
+  return '';
+  //-----------------------
 
-  //   this.content = this.content.replace(
-  //     fromMap.constant, 
-  //     forReplacer
-  //   );
-  // }
-
-  // return '';
-  this.content = this.content.replace(fromMap.replacer, forReplacer);
+  // this.content = this.content.replace(fromMap.constant, forReplacer);
 }
 
 // i think this method would be broken now, because we cant play with "this."

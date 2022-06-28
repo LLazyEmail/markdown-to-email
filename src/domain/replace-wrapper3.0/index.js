@@ -91,9 +91,6 @@ const replaceStrong = (config) => {
 
 const replaceUl = (config) => {
 
-
-
-
   if(!inspector(config.params)) throw new Error('no params was passed');
 
   const configCopy = Object.assign(config, WR3_getWrapper(config.name));
@@ -101,9 +98,6 @@ const replaceUl = (config) => {
   const newString = WR3_generateNewString(configCopy);
 
   return newString;
-
-
-  
 
 }
 
@@ -134,11 +128,6 @@ const inspectorCheck = (string) => {
 };
 
 function WR3_generateNewString(config) {
-  // const wrapper = getWrapper(name, config);
-  // console.log(config.literal)
-  // stopping it here....
-
-  // if(config.debug) console.log(config);
 
   inspector(config.params);
 
