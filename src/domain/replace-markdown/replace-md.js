@@ -17,12 +17,13 @@ function prepOurCallback(callback_name) {
   return settings;
 }
 
+// When you use this function you can specify which types of objects you want to debug
 function debuggingReplacer(name) {
   const namesArr = [
     // 'sponsorship',
     // 'paragraph',
     // 'link',
-    // 'header', // not working
+    'header', // not working
     // 'strong',
     // 'memes',
     // 'br',
@@ -30,11 +31,13 @@ function debuggingReplacer(name) {
     // 'previewText',
     // 'italic',
     // 'olList'
-    'ulList'
+    // 'ulList'
+    ''
 
   ];
   return namesArr.includes(name);
 }
+
 
 // function methodForTestingValues(){
 //   // mapObject.forEach((element) => {
@@ -59,7 +62,8 @@ function replaceMarkdown(callback_name) {
   // methodForTestingValues();
 
   const fromMap = prepOurCallback(callback_name);
-  // @TODO I dont like  names fromMap & nameOfCallback & forReplacer
+
+  // TODO I dont like names fromMap & nameOfCallback & forReplacer
   // fromMap.replacer is a single regex value
   // forReplacer is a new sting that will be applied
 
@@ -67,32 +71,22 @@ function replaceMarkdown(callback_name) {
   // console.log(fromMap.replacer);
   // console.log(fromMap.literal);
 
-  // very cool, but generates an error, so not so cool at all.
-  // const forReplacer =
-  //   typeof fromMap.replacer === 'string'
-  //     ? fromMap.replacer
-  //     : fromMap.replacer.bind(this);
-
-  // TO DEBUG forReplacer I DONT THINK IT"S WORKING CORRECTLY....
+  // TO DEBUG forReplacer I DONT THINK IT"S WORKING CORRECTLY.... 
   const forReplacer = fromMap.replacer.bind(this);
 
-  // console.log(fromMap.replacer);
-  // console.log(forReplacer);
-  // console.log('------');
 
-  // console.log(nameOfCallback);
 
-  if (debuggingReplacer(callback_name)) {
-    console.log(callback_name);
+  // if (debuggingReplacer(callback_name)) {
+  //   console.log(callback_name);
 
-    this.content = this.content.replace(
-      fromMap.constant, 
-      forReplacer
-    );
-  }
+  //   this.content = this.content.replace(
+  //     fromMap.constant, 
+  //     forReplacer
+  //   );
+  // }
 
-  return '';
-  // this.content = this.content.replace(fromMap.replacer, forReplacer);
+  // return '';
+  this.content = this.content.replace(fromMap.replacer, forReplacer);
 }
 
 // i think this method would be broken now, because we cant play with "this."
