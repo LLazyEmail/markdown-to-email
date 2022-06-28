@@ -15,15 +15,11 @@ function _meme(text, src, href, altText) {
     params,
 
     name: 'image',
-    debug: true,
+    // debug: true,
   };
 
   //   //REPLACEWRAPPER CAN BECOME REPLACE LITERAL
-  // const replaced = replaceWrapper(
-  //     'image', config
-  //     );
 
-  //   return replaced;
 
   try {
     const replaced = commonReplace(config);

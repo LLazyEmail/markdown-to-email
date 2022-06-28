@@ -16,7 +16,7 @@ function configureReplacer(state) {
   Replacer.replaceMDBinded = replaceMarkdown.bind(state);
 
   // I think this version isnt working well
-  Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
+  // Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
 
   // TODO crashed when here in FULL mode, needs to be fixed
   Replacer.previewText();
@@ -24,6 +24,7 @@ function configureReplacer(state) {
   // Replacer.comments();
   // ---
   Replacer.typography();
+  Replacer.template();
 
   Replacer.miscellaneous();
 }

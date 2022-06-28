@@ -125,7 +125,10 @@ const previewText = objectBuilder(
 // italicLiteral,
 const italic = objectBuilder(REGEXP_EM, _italic, italicLiteral);
 
+// TODO header arent working as suppose too
 const header = objectBuilder(REGEXP_HEADER, _header, headingLiteral);
+
+
 
 // qLiteral,
 const q = objectBuilder(REGEXP_Q, _q, false);

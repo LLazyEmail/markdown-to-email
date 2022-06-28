@@ -57,7 +57,6 @@ function getParsedLists(parsedSubLists) {
   const parsedList = parsedSubLists.replace(regex, (text, listItem) => {
 
 
-    // NOT FINISHED
     const params = {
       content: listItem.trim(),
     };
@@ -112,7 +111,7 @@ function _ulList(text, list) {
       params,
 
       name: 'list',
-      debug: true,
+      // debug: true,
     };
 
     try {
@@ -132,11 +131,10 @@ function _ulList(text, list) {
   };
 
   const config = {
-    // content: parsedList + newLine,
     params,
 
     name: 'list',
-    debug: true,
+    // debug: true,
   };
 
 

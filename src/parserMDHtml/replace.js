@@ -4,7 +4,7 @@
 class Replace {
   constructor() {
     this.replaceMDBinded = () => {};
-    this.replaceMDBindedPreviewText = () => {};
+    // this.replaceMDBindedPreviewText = () => {};
 
     this.previewText = function () {
       this.replaceMDBinded('previewText');
@@ -140,6 +140,8 @@ class Replace {
     this.hr();
     //-----
     this.paragraph();
+
+
     // TODO fix this
     // this.emptyUl();
     // this.emptyOl();

@@ -23,6 +23,8 @@ isFolderExists('./generated');
 isFolderExists('./tests/_generated');
 
 console.info(process.env.PARSE, '***mode');
+
+
 switch (process.env.PARSE) {
   case 'full':
     // generateFullTemplate();

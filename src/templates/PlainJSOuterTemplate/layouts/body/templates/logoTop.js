@@ -96,8 +96,5 @@ style="
 </tbody>
 </table>`;
 
-const logoTopComponent = () => {
-  return logoTop;
-};
 
-export { logoTop, logoTopComponent };
+export { logoTop };

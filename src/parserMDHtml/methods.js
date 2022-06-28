@@ -58,6 +58,9 @@ function generateFullTemplate2(sourceFile) {
     'full-template-2',
     MESSAGE_HTML_FULL_TEMPLATE2,
   );
+
+
+  
 }
 
 // function generateFullTemplate() {

@@ -21,9 +21,6 @@ function _previewText(text, content) {
         name: 'previewText',
         debug: true,
       };
-
-    // const replaced = replaceWrapper('previewText', config, 'body');
-  
     
     try {
         const replaced = commonReplace(config);
