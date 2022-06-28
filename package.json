@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
+    "parsed": "cross-env PARSE=full node ./src/parser",
     "parse": "npm run build && cross-env PARSE=full node ./dist/bundle",
     "parseNoAdv": "npm run build && cross-env PARSE=noAdv node ./dist/bundle",
     "parse:full": "npm run build && cross-env PARSE=full node ./dist/bundle",
@@ -13,7 +14,7 @@
     "emptyT": "npm run build && cross-env PARSE=plainEmpty node ./dist/bundle",
     "defaultT": "npm run build && cross-env PARSE=plainTemplate node ./dist/bundle",
     "test:react": "npm run checkFolders && jest ./src/parserMDReact/tests",
-    "lint:fix": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
+    "lint:fix": "eslint -c ./eslintrc.js ./src --fix --ignore-pattern \"./package.json\" ",
     "lint": "eslint ./src --ignore-pattern \"./package.json\" ",
     "build:small": "npm run checkFolders && node ./src/index.js",
     "checkFolders": "node ./checkFolders",
@@ -54,7 +55,6 @@
     "cross-env": "7.0.3",
     "lit-html": "^2.2.6",
     "lodash": "4.17.21",
-    "object-assign": "^4.1.1",
     "path-exists": "5.0.0",
     "write": "2.0.0"
   },
@@ -62,10 +62,5 @@
     "src/**/*.{js,ts}": [
       "npm run lint"
     ]
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "@root(.*)$": "<rootDir>/src/$1"
-    }
   }
 }

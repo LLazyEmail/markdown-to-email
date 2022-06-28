@@ -11,11 +11,7 @@ import {
   getWrapper,
 } from './helpers';
 
-
-
 // import { replaceMarkdown, replaceMarkdownPreviewText } from '../domain/replace-markdown/replace-md';
-
-
 
 export {
   PlainCallbacks,
@@ -25,7 +21,6 @@ export {
   // replaceWrapper,
 
   // replaceReactWrapper,
-
   generateNewString,
   getWrapper,
 };

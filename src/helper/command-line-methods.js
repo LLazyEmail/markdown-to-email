@@ -2,7 +2,6 @@
 import chalk from 'chalk';
 import { forEach } from 'lodash';
 
-
 // import { readSourceFile } from './utils';
 
 // TODO should we remake whole state as a class with "frozen" methods?
@@ -15,8 +14,6 @@ import { forEach } from 'lodash';
 // const HTML_EMAIL_ERROR = 'Content has not correct html!!!';
 
 // import { WARNING_IMAGE_VERSION, ERROR_SOURCE_DONT_HAVE, FULL_TEMPLATE_ERROR, HTML_EMAIL_SUCCESS, HTML_EMAIL_ERROR } from './constants';
-
-
 
 function checkWarnings(warnings) {
   forEach(warnings, (index, element) => {
@@ -109,7 +106,6 @@ const printMessage = ({ message, type }) => {
     default:
       console.log(`Sorry, we are out of ${type}.`);
   }
-
 };
 
 // const ERROR_TITLE = '`title` is a required option for `renderTemplate`'

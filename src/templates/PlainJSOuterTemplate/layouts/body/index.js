@@ -7,8 +7,6 @@ import { sponsor, sponsorComponent } from './templates/sponsor';
 
 import { ctaList, ctaComponent } from './templates/ctaList';
 
-
- 
 const body = {
   headline,
   logoBottom,

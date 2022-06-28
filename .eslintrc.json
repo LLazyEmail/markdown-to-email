@@ -16,7 +16,7 @@
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
-  "parser": "@babel/eslint-parser",
+  "parser": "@babel/eslint-parser",  
   "parserOptions": {
     "ecmaVersion": 2018,
     "requireConfigFile": false,
@@ -29,6 +29,18 @@
     "no-param-reassign": 0,
     "import/prefer-default-export": 0,
     "import/no-extraneous-dependencies": 0,
-    "func-names": 0
+    "func-names": 0,
+    "camelcase": 1,
+    "quotes": 0,
+    "comma-dangle": 0,
+    "no-useless-escape": 0,
+    "no-unused-vars": 0,
+    "no-tabs": 0,
+    "max-len": [
+        "error",
+        {
+            "code": 850
+        }
+    ]
   }
 }

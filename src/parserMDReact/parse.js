@@ -3,7 +3,6 @@ import {
   //   replaceMarkdownPreviewText,
 } from '../domain/replace-markdown/replace-md';
 
-
 import stateInit from '../domain/state';
 
 // TODO think about connecting replaceMD object to this file.
@@ -11,8 +10,6 @@ import stateInit from '../domain/state';
 
 import ReactReplacer from './replace';
 // ReactReplacer
-
-
 
 function configureReplacer(state, isFull) {
   // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????

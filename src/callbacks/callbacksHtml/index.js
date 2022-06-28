@@ -1,6 +1,4 @@
-import {  
-  _blockquote
-} from './methods/simple';
+import { _blockquote } from './methods/simple';
 
 import _header from './methods/header';
 
@@ -13,29 +11,25 @@ import {
   _q,
   _code,
   _hr,
-  _empty
- } from './methods/simple-without-replacer';
-
+  _empty,
+} from './methods/simple-without-replacer';
 
 import { _ulList, _olList } from './methods/lists';
 
-import _br  from './methods/br';
+import _br from './methods/br';
 
 import { _image } from './methods/image';
-import _separator  from './methods/separator';
+import _separator from './methods/separator';
 import _meme from './methods/memes';
 import { _sponsorship } from './methods/sponsor';
 
-import { 
-  _paragraphWrapper
- } from './methods/paragraph';
+import { _paragraphWrapper } from './methods/paragraph';
 
 export {
   _strong,
   _link,
   _blockquote,
   _meme,
-
   _header,
   _italic,
   _del,
@@ -46,10 +40,8 @@ export {
   _ulList,
   _olList,
   _image,
-
   _paragraphWrapper,
   _sponsorship,
-
   _br,
   _separator,
 };

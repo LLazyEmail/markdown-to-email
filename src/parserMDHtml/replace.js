@@ -2,7 +2,6 @@
 // we need to pass all constants somewhere, but not to the replaceWrapper
 
 class Replace {
-  
   constructor() {
     this.replaceMDBinded = () => {};
     this.replaceMDBindedPreviewText = () => {};
@@ -86,17 +85,9 @@ class Replace {
       this.replaceMDBinded('br');
     };
 
-
-
-
-
-
     this.sponsorship = function () {
       this.replaceMDBinded('sponsorship');
     };
-
-
-    
 
     // here we have a different name
     this.memes = function () {
@@ -112,10 +103,8 @@ class Replace {
     this.header();
   }
 
-
-  // TODO I think we need to upgrade this class, 
+  // TODO I think we need to upgrade this class,
   // in order to match it with our updated logic of organizing components
-
 
   // test this part
   miscellaneous() {
