@@ -136,6 +136,10 @@ const code = objectBuilder(REGEXP_CODE, _code, false);
 
 const listItem = objectBuilder(REGEXP_SUB_LISTS, getParsedSubList, listItemLiteral);
 
+// this object used only as a stupid way to add a parch for different cases of lists
+// first two params never used
+const list = objectBuilder(REGEXP_UL_LIST, getParsedSubList, listLiteral);
+
 //  ulListLiteral,
 const ulList = objectBuilder(REGEXP_UL_LIST, _ulList, listLiteral);
 
@@ -198,6 +202,7 @@ export default {
   ulList,
   olList,
   listItem,
+  list,
   //-----------
   blockquote,
   hr,

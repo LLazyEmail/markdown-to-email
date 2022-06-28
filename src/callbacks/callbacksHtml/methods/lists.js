@@ -16,15 +16,8 @@ import { catch_error_trace_output } from '../../../domain/error-handle';
 // Case: when you have a sublist inside of your list
 // TODO add _ in the name of this method in order to keep the same logic
 // importing it into pre-replace-objects
+// PLus, I dont like this stupid long return
 function getParsedSubList(subList) {
-
-
-
-  // beforeEnd
-  // const regex_variable = `\\s{4}\\*(.*?)${newLine}`;
-  // const regex = new RegExp(regex_variable, 'g');
-
-
 
   return subList.replace(REGEXP_SUB_LISTS, (text, subItem) => {
 
@@ -51,37 +44,44 @@ function getParsedSubList(subList) {
   });
 }
 
+
+// TODO fix this method. I dont think it works well for a complex lists at all
 function getParsedLists(parsedSubLists) {
+
+  // TODO move it into regex 
   // beforeEnd
 
   const regex_variable = `\\*(.*?)${newLine}`;
   const regex = new RegExp(regex_variable, 'g');
 
   const parsedList = parsedSubLists.replace(regex, (text, listItem) => {
+
+
     // NOT FINISHED
     const params = {
       content: listItem.trim(),
     };
 
     const config = {
-      // content: listItem.trim(),
 
-      debug: true,
+      params,
+
+      name: 'listItem',
+      // debug: true,
     };
 
-    const replaced = replaceWrapper('listItem', config);
-
-    return newLine + replaced;
 
     try {
-      const replaced = replaceHeader(config);
+      const replaced = commonReplace(config);
 
-      const result = newLine + replaced + newLine;
-      return result;
+     return newLine + replaced;
+      // return result;
     } catch (error) {
       catch_error_trace_output(error);
     }
   });
+
+  // console.log(parsedList)
 
   return parsedList;
 }
@@ -91,6 +91,8 @@ function getParsedLists(parsedSubLists) {
 // @TODO it looks even more crazier than it was 2 months ago
 // i'm not suprised that it might get errors(but works fine now)
 function _ulList(text, list) {
+
+
   const regex_variable = `((\\s{4}\\*(.*?)${newLine}){1,})`;
   const regex = new RegExp(regex_variable, 'g');
 
@@ -100,55 +102,53 @@ function _ulList(text, list) {
   // @todo improve this crazy structure.
   const parsedSubListsParts = list.replace(regex, (text, subList) => {
 
-    // console.log(subList);
-
-
     const parsedSubItem = getParsedSubList(subList);
 
-    console.log(parsedSubItem);
+    const params = {
+      content: parsedSubItem + newLine,
+    };
 
-    // const params = {
-    //   content: parsedSubItem + newLine,
-    // };
+    const config = {
+      params,
 
-    // const config = {
-    //   params,
+      name: 'list',
+      debug: true,
+    };
 
-    //   name: 'list',
-    //   debug: true,
-    // };
-
-
-
-    // try {
-    //   const replaced = replaceUl(config);
-
-    //   return newLine + replaced;
-
-    // } catch (error) {
-    //   catch_error_trace_output(error);
-    // }
+    try {
+      const replaced = commonReplace(config);
+      return newLine + replaced;
+    } catch (error) {
+      catch_error_trace_output(error);
+    }
   });
 
 
 
-  // const parsedList = getParsedLists(parsedSubListsParts);
+  const parsedList = getParsedLists(parsedSubListsParts);
 
-  // const params = {
-  //   content: parsedList + newLine,
+  const params = {
+    content: parsedList + newLine,    
+  };
 
-  //   name: 'list',
-  //   debug: true,
-  // };
+  const config = {
+    // content: parsedList + newLine,
+    params,
 
-  // const config = {
-  //   // content: parsedList + newLine,
-  // };
-  // // NOT FINISHED
-  // const replaced = replaceWrapper('list', config);
+    name: 'list',
+    debug: true,
+  };
 
-  // return newLine + replaced + newLine;
 
+
+  try {
+    const replaced = commonReplace(config);
+
+    return newLine + replaced + newLine;
+    // return result;
+  } catch (error) {
+    catch_error_trace_output(error);
+  }
 
 }
 
