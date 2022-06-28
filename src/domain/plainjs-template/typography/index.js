@@ -2,14 +2,13 @@ import headingLiteral from './literals/heading';
 import imageLiteral from './literals/image';
 import italicLiteral from './literals/italic';
 import linkLiteral from './literals/link';
-import listLiteral   from './literals/list';
+import listLiteral from './literals/list';
 import listItemLiteral from './literals/listItem';
-import titleLiteral  from './literals/mainTitle';
+import titleLiteral from './literals/mainTitle';
 import paragraphLiteral from './literals/paragraph';
-import strongLiteral   from './literals/strong';
-import subtitleLiteral  from './literals/subtitle';
+import strongLiteral from './literals/strong';
+import subtitleLiteral from './literals/subtitle';
 import separatorLiteral from './literals/separator';
-
 
 export {
   headingLiteral,
@@ -23,5 +22,4 @@ export {
   strongLiteral,
   subtitleLiteral,
   separatorLiteral,
-
 };

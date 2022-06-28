@@ -24,7 +24,6 @@ const MESSAGE_HTML_FULL_TEMPLATE =
 const MESSAGE_HTML_FULL_TEMPLATE2 =
   'The full-template has been parsed successfully2';
 
-  
 //------------------------------
 const deliver = (template, name, message) => {
   const fileName = generateTemplateName(name);
@@ -124,7 +123,6 @@ export {
 
   generateFullTemplate2,
   // generateFullTemplate,
-
   MESSAGE_HTML_CONTENT_ONLY,
   MESSAGE_HTML_FULL_TEMPLATE,
   MESSAGE_HTML_FULL_TEMPLATE2,

@@ -15,7 +15,7 @@
     "defaultT": "npm run build && cross-env PARSE=plainTemplate node ./dist/bundle",
     "test:react": "npm run checkFolders && jest ./src/parserMDReact/tests",
     "lint:fix": "eslint -c ./eslintrc.js ./src --fix --ignore-pattern \"./package.json\" ",
-    "lint": "eslint ./src --ignore-pattern \"./package.json\" ",
+    "lint": "eslint -c ./eslintrc.js ./src --ignore-pattern \"./package.json\" ",
     "build:small": "npm run checkFolders && node ./src/index.js",
     "checkFolders": "node ./checkFolders",
     "test": "npm run checkFolders && jest ./src/tests",

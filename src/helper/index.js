@@ -14,7 +14,6 @@ import {
   // stateInit,
 } from './command-line-methods';
 
-
 export {
   writeHTML,
   readSourceFile,
