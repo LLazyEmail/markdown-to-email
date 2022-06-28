@@ -5,27 +5,38 @@ import {
   beforeEnd,
 } from '../helpers';
 
+
+
+
+import { replaceUl, commonReplace } from '../../../domain/replace-wrapper3.0';
+
+import { catch_error_trace_output } from '../../../domain/error-handle';
+
 function getParsedSubList(subList) {
   // beforeEnd
   const regex_variable = `\\s{4}\\*(.*?)${newLine}`;
   const regex = new RegExp(regex_variable, 'g');
 
   return subList.replace(regex, (text, subItem) => {
-    const params = {};
 
-    const config = {
+    const params = {
       content: subItem.trim(),
     };
 
-    const replaced = replaceWrapper('listItem', config);
+    const config = {
+      params,
 
-    return newLine + replaced;
+      name: 'listItem',
+      debug: true
+    };
+
+    // const replaced = commonReplace('listItem', config);
+
+
 
     try {
-      const replaced = replaceHeader(config);
-
-      const result = newLine + replaced + newLine;
-      return result;
+      const replaced = commonReplace(config);      
+      return replaced;
     } catch (error) {
       catch_error_trace_output(error);
     }
@@ -79,53 +90,54 @@ function _ulList(text, list) {
   const parsedSubListsParts = list.replace(regex, (text, subList) => {
     const parsedSubItem = getParsedSubList(subList);
 
-    const params = {
-      content: parsedSubItem + newLine,
-    };
+    console.log(parsedSubItem);
 
-    const config = {
-      // content: parsedSubItem + newLine,
+    // const params = {
+    //   content: parsedSubItem + newLine,
+    // };
 
-      name: 'list',
-      debug: true,
-    };
+    // const config = {
+    //   params,
 
-    // var replaced = replaceWrapper(
-    //   'list',
-    //   config
-    // );
-    // return newLine + replaced;
+    //   name: 'list',
+    //   debug: true,
+    // };
 
-    // NOT FINISHED
-    try {
-      const replaced = replaceHeader(config);
 
-      const result = newLine + replaced + newLine;
-      return result;
-    } catch (error) {
-      catch_error_trace_output(error);
-    }
+
+    // try {
+    //   const replaced = replaceUl(config);
+
+    //   return newLine + replaced;
+
+    // } catch (error) {
+    //   catch_error_trace_output(error);
+    // }
   });
 
-  const parsedList = getParsedLists(parsedSubListsParts);
 
-  const params = {
-    content: parsedList + newLine,
 
-    name: 'list',
-    debug: true,
-  };
+  // const parsedList = getParsedLists(parsedSubListsParts);
 
-  const config = {
-    // content: parsedList + newLine,
-  };
-  // NOT FINISHED
-  const replaced = replaceWrapper('list', config);
+  // const params = {
+  //   content: parsedList + newLine,
 
-  return newLine + replaced + newLine;
+  //   name: 'list',
+  //   debug: true,
+  // };
+
+  // const config = {
+  //   // content: parsedList + newLine,
+  // };
+  // // NOT FINISHED
+  // const replaced = replaceWrapper('list', config);
+
+  // return newLine + replaced + newLine;
+
+
 }
 
-// @TODO update this. it's a real shitty method
+// TODO update this. it's a real shitty method
 function _olList(text, item) {
   // beforeBeginingNewLine
 

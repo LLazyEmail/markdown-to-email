@@ -89,6 +89,18 @@ const replaceStrong = (config) => {
   return newString;
 };
 
+const replaceUl = (config) => {
+
+  if(!inspector(config.params)) throw new Error('no params was passed');
+
+  const configCopy = Object.assign(config, WR3_getWrapper(config.name));
+
+  const newString = WR3_generateNewString(configCopy);
+
+  return newString;
+
+}
+
 const commonReplace = (config) => {
   // const { debug } = config || false;
 
@@ -134,6 +146,7 @@ export {
   replaceHeader,
   replaceStrong,
   commonReplace,
+  replaceUl,
   WR3_generateNewString,
   WR3_getWrapper,
 };

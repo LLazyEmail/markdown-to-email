@@ -26,8 +26,11 @@ function debuggingReplacer(name) {
     // 'strong',
     // 'memes',
     // 'br',
-    // 'separator'
-    'previewText'
+    // 'separator',
+    // 'previewText',
+    // 'italic',
+    // 'olList'
+    'ulList'
 
   ];
   return namesArr.includes(name);
