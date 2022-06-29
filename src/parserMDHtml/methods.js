@@ -16,6 +16,8 @@ import {
   generateTemplateComponent,
 } from '../templates/PlainJSOuterTemplate';
 
+import plainV2 from '../domain/plainjs-template/template';
+
 import { parseFullTHing } from './parse';
 
 const MESSAGE_HTML_CONTENT_ONLY = 'The content has been parsed successfully';
@@ -48,11 +50,14 @@ function generateFullTemplate2(sourceFile) {
   // ***
   verification(warnings, content);
 
-  //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
+  //   @TODO HERE WE CAN APPLY THAT PREVIEW-TEXT IS EMPTY INSIDE
   // console.log(content);
 
   // throw new Error("my error message");
 
+
+
+  //----------------------------------------
   deliver(
     fullTemplate({ content, previewText }),
     'full-template-2',

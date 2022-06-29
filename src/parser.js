@@ -4,10 +4,10 @@
 
 import { writeHTML, generateTemplateName, isFolderExists } from './helper';
 import { generateFullTemplate2 } from './parserMDHtml';
-import {
-  generateReactContent,
-  generateReactFullTemplate,
-} from './parserMDReact';
+// import {
+//   generateReactContent,
+//   generateReactFullTemplate,
+// } from './parserMDReact';
 import {
   generateTemplateComponent,
   generateEmptyTemplateComponent,
@@ -33,11 +33,11 @@ switch (process.env.PARSE) {
 
   case 'reactContentOnly':
     // same as default, but with react components instead.
-    generateReactContent(CONTENT_SOURCE);
+    // generateReactContent(CONTENT_SOURCE);
     break;
 
   case 'reactFull':
-    generateReactFullTemplate(FULL_SOURCE);
+    // generateReactFullTemplate(FULL_SOURCE);
     break;
 
   //------------------

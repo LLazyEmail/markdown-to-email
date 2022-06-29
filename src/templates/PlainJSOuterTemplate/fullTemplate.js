@@ -1,4 +1,3 @@
-// import { main } from '../templates/main';
 
 // TODO это может потом понадобится
 // function tempFullTemplate(content) {
@@ -10,7 +9,11 @@
 
 // щас это работает лучше
 function fullTemplate({ content, previewText }) {
+
+  
   content = content.replace(previewText, '');
+
+
   return `<!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
