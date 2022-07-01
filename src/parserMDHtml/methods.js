@@ -16,7 +16,7 @@ import {
   generateTemplateComponent,
 } from '../templates/PlainJSOuterTemplate';
 
-import plainV2 from '../domain/plainjs-template/template';
+// import plainV2 from '../domain/plainjs-template/template';
 
 import { parseFullTHing } from './parse';
 
@@ -28,6 +28,10 @@ const MESSAGE_HTML_FULL_TEMPLATE2 =
 
 //------------------------------
 const deliver = (template, name, message) => {
+
+  // console.log(plainV2());
+
+
   const fileName = generateTemplateName(name);
   writeHTML(fileName, template);
   printMessage(message, 'green2');
@@ -58,8 +62,12 @@ function generateFullTemplate2(sourceFile) {
 
 
   //----------------------------------------
+  const completedTemplate = fullTemplate({
+     content, previewText 
+  });
+    
   deliver(
-    fullTemplate({ content, previewText }),
+    completedTemplate,
     'full-template-2',
     MESSAGE_HTML_FULL_TEMPLATE2,
   );

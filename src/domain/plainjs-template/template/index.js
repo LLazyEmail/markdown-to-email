@@ -7,7 +7,7 @@ import {
 } from 'atherdon-old-newsletter-js-outertemplate';
 
 const plainV2 = () => {
-
+// 
 
     console.log(printMain());
     console.log(printFooter());
