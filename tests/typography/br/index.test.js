@@ -1,13 +1,13 @@
-const { REGEXP_BR } = require('atherdon-newsletter-constants');
+// const { REGEXP_BR } = require('atherdon-newsletter-constants');
 
-const { resolve } = require('path');
-const { write, readSourceFile } = require('@root/utils');
+// const { resolve } = require('path');
+// const { write, readSourceFile } = require('@root/utils');
 
 const { PlainCallbacks, replaceMarkdown } = require('atherdon-callbacks');
 
 
 const { 
-  REGEXP_IMAGE, 
+  REGEXP_BR, 
   write, 
   tests_getMarkdownFile, 
   tests_getOutputFolder, 

@@ -5,6 +5,14 @@ const { REGEXP_SEPARATOR } = require('../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
+const { 
+  REGEXP_SEPARATOR, 
+  write, 
+  tests_getMarkdownFile, 
+  // tests_getOutputFolder, 
+  PlainCallbacks 
+} = require('@domain/testing')
+
 describe('testing separator', () => {
   it('renders separator', () => {
     const markdown = readSourceFile('src/parserMDReact/tests/separator/content.md');

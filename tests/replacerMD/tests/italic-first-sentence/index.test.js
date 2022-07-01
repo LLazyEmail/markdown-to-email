@@ -6,7 +6,7 @@ const { REGEXP_EM } = require('../../constantsMDReact');
 const outFolder = 'src/parserMDReact/tests/_generated';
 
 const { 
-  REGEXP_IMAGE, 
+  REGEXP_EM, 
   write, 
   tests_getMarkdownFile, 
   // tests_getOutputFolder, 

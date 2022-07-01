@@ -6,7 +6,7 @@ const { REGEXP_UL_LIST } = require('../../constantsMDReact');
 const outFolder = 'src/parserMDReact/tests/_generated';
 
 const { 
-  REGEXP_IMAGE, 
+  REGEXP_UL_LIST, 
   write, 
   tests_getMarkdownFile, 
   // tests_getOutputFolder, 

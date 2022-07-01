@@ -6,7 +6,7 @@ const { REGEXP_HTML_COMMENTS } = require('../../constantsMDReact');
 const outFolder = 'src/parserMDReact/tests/_generated';
 
 const { 
-  REGEXP_IMAGE, 
+  REGEXP_HTML_COMMENTS, 
   write, 
   tests_getMarkdownFile, 
   // tests_getOutputFolder, 

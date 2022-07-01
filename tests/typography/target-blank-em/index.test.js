@@ -11,7 +11,7 @@ const outFolder = resolve('src/tests', 'directory', '../_generated');
 
 
 const { 
-  REGEXP_IMAGE, 
+  REGEXP_EM, REGEXP_LINK, 
   write, 
   tests_getMarkdownFile, 
   tests_getOutputFolder, 

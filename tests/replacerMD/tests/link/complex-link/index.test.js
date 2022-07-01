@@ -6,7 +6,7 @@ const { replaceMarkdown } = require('../../parserUtils');
 
 
 const { 
-    REGEXP_IMAGE, 
+  REGEXP_SPONSORSHIP, 
     write, 
     tests_getMarkdownFile, 
     // tests_getOutputFolder, 

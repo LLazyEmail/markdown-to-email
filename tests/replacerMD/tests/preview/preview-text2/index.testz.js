@@ -1,11 +1,11 @@
-const { REGEXP_PREVIEW_TEXT } = require('atherdon-newsletter-constants');
+// const { REGEXP_PREVIEW_TEXT } = require('atherdon-newsletter-constants');
 const { write, readSourceFile } = require('@root/utils');
 const { replaceMarkdownPreviewText } = require('@root/helpers');
 
 const outFolder = 'src/tests/_generated';
 
 const { 
-  REGEXP_IMAGE, 
+  REGEXP_PREVIEW_TEXT, 
   write, 
   tests_getMarkdownFile, 
   // tests_getOutputFolder, 

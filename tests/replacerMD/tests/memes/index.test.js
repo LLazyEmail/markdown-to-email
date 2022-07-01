@@ -8,7 +8,7 @@ const outFolder = 'src/parserMDReact/tests/_generated';
 // const outFolder = 'src/tests/_generated';
 
 const { 
-  REGEXP_IMAGE, 
+  REGEXP_MEM, 
   write, 
   tests_getMarkdownFile, 
   // tests_getOutputFolder, 

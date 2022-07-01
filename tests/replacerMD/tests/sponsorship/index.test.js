@@ -6,6 +6,14 @@ const { REGEXP_SPONSORSHIP } = require('../../constantsMDReact');
 const outFolder = 'src/parserMDReact/tests/_generated';
 // const outFolder = 'src/tests/_generated';
 
+const { 
+  REGEXP_SPONSORSHIP, 
+  write, 
+  tests_getMarkdownFile, 
+  // tests_getOutputFolder, 
+  PlainCallbacks 
+} = require('@domain/testing')
+
 describe('testing sponsorship', () => {
   it('renders sponsorship', () => {
     const markdown = readSourceFile('src/parserMDReact/tests/sponsorship/sponsorship.md');
