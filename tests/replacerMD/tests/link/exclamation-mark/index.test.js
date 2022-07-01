@@ -5,6 +5,15 @@ const { REGEXP_LINK } = require('../../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
+const { 
+  REGEXP_IMAGE, 
+  write, 
+  tests_getMarkdownFile, 
+  // tests_getOutputFolder, 
+  PlainCallbacks 
+} = require('@domain/testing')
+
+
 describe('testing link/exclamation-mark', () => {
   it('renders link/exclamation-mark', () => {
     const markdown = readSourceFile('src/parserMDReact/tests/link/exclamation-mark/content.md');

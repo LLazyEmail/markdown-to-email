@@ -5,6 +5,15 @@ const { REGEXP_LINK } = require('../../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
+const { 
+  REGEXP_IMAGE, 
+  write, 
+  tests_getMarkdownFile, 
+  // tests_getOutputFolder, 
+  PlainCallbacks 
+} = require('@domain/testing')
+
+
 describe('testing links when space before link', () => {
   it('renders testing links when space before link', () => {
     const markdown = readSourceFile('src/parserMDReact/tests/link/removed-space-before-link/content.md');

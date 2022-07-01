@@ -4,6 +4,15 @@ const { write, readSourceFile } = require('@root/utils');
 
 const { replaceMarkdown } = require('../../parserUtils');
 
+
+const { 
+    REGEXP_IMAGE, 
+    write, 
+    tests_getMarkdownFile, 
+    // tests_getOutputFolder, 
+    PlainCallbacks 
+  } = require('@domain/testing')
+
 describe('testing complex links', () => {
 //   it("renders xxx", async () => {
 //     let markdown = await readSourceFile("src/tests/sponsorship/sponsorship.md");

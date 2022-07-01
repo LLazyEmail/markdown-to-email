@@ -5,6 +5,14 @@ const { REGEXP_EM } = require('../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
+const { 
+  REGEXP_IMAGE, 
+  write, 
+  tests_getMarkdownFile, 
+  // tests_getOutputFolder, 
+  PlainCallbacks 
+} = require('@domain/testing')
+
 describe('testing italic-first-sentence', () => {
   it('renders italic-first-sentence', () => {
     const markdown = readSourceFile('src/parserMDReact/tests/italic-first-sentence/italic.md');

@@ -8,6 +8,18 @@ const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
 
 
+
+
+const { 
+  REGEXP_IMAGE, 
+  write, 
+  tests_getMarkdownFile, 
+  tests_getOutputFolder, 
+  PlainCallbacks 
+} = require('@domain/testing')
+
+
+
 describe('testing target-blank-em', () => {
   it('renders target-blank-em', () => {
     const markdown = readSourceFile(`${root}/content.md`);

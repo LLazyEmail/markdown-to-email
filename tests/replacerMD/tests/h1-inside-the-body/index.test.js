@@ -5,6 +5,15 @@ const { REGEXP_HEADER } = require('../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
+const { 
+  REGEXP_IMAGE, 
+  write, 
+  tests_getMarkdownFile, 
+  // tests_getOutputFolder, 
+  PlainCallbacks 
+} = require('@domain/testing')
+
+
 describe('testing h1-inside-the-body', () => {
   it('renders h1-inside-the-body', () => {
     const markdown = readSourceFile('src/parserMDReact/tests/h1-inside-the-body/content.md');

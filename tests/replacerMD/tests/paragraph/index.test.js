@@ -5,6 +5,14 @@ const { REGEXP_PARAGRAPH } = require('../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
+const { 
+  REGEXP_IMAGE, 
+  write, 
+  tests_getMarkdownFile, 
+  // tests_getOutputFolder, 
+  PlainCallbacks 
+} = require('@domain/testing')
+
 describe('testing paragraph', () => {
   it('renders sponsorship', () => {
     const markdown = readSourceFile('src/parserMDReact/tests/paragraph/paragraph.md');

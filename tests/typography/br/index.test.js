@@ -5,6 +5,16 @@ const { write, readSourceFile } = require('@root/utils');
 
 const { PlainCallbacks, replaceMarkdown } = require('atherdon-callbacks');
 
+
+const { 
+  REGEXP_IMAGE, 
+  write, 
+  tests_getMarkdownFile, 
+  tests_getOutputFolder, 
+  PlainCallbacks 
+} = require('@domain/testing')
+
+
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
 

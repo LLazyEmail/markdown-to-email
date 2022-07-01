@@ -5,6 +5,15 @@ const { REGEXP_HTML_COMMENTS } = require('../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
+const { 
+  REGEXP_IMAGE, 
+  write, 
+  tests_getMarkdownFile, 
+  // tests_getOutputFolder, 
+  PlainCallbacks 
+} = require('@domain/testing')
+
+
 describe('testing html-comments', () => {
   it('renders html-comments', () => {
     const markdown = readSourceFile('src/parserMDReact/tests/html-comments/content.md');

@@ -5,6 +5,15 @@ const { REGEXP_LINK } = require('../../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
+const { 
+  REGEXP_IMAGE, 
+  write, 
+  tests_getMarkdownFile, 
+  // tests_getOutputFolder, 
+  PlainCallbacks 
+} = require('@domain/testing')
+
+
 describe('testing links-only', () => {
   it('renders links-only', () => {
     const markdown = readSourceFile('src/parserMDReact/tests/link/links-only/content.md');

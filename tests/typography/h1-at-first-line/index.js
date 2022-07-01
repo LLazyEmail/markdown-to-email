@@ -1,3 +1,7 @@
-// const { resolve } = require('path')
-// const root = resolve(__dirname, '')
-// const outFolder = resolve('src/tests', 'directory', '../_generated');
+const { 
+    // REGEXP_IMAGE, 
+    write, 
+    tests_getMarkdownFile, 
+    tests_getOutputFolder, 
+    PlainCallbacks 
+  } = require('@domain/testing')

@@ -4,6 +4,15 @@ const { replaceMarkdownPreviewText } = require('@root/helpers');
 
 const outFolder = 'src/tests/_generated';
 
+const { 
+  REGEXP_IMAGE, 
+  write, 
+  tests_getMarkdownFile, 
+  // tests_getOutputFolder, 
+  PlainCallbacks 
+} = require('@domain/testing')
+
+
 describe('testing preview-text', () => {
   it('renders preview-text', () => {
     const markdown = readSourceFile('src/tests/preview-text/content.md');
