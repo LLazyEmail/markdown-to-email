@@ -1,1 +1,1 @@
-export const code = '<Code>{content}</Code>';
+export const codeLiteral = '<Code>{content}</Code>';

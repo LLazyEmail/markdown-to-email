@@ -45,23 +45,23 @@ import {
     REGEXP_SEPARATOR,
   } from '../../constants/index';
 
-//   import {
-//     heading,
-//     image,
-//     italic,
-//     link,
-//     list,
-//     listItem,
-//     mainTitle,
-//     paragraph,
-//     strong,
-//     subtitle,
-//     q,
-//     del,
-//     code,
-//     blockquote,
-//     separator 
-// } from '../../../templates/NewsletterReactTemplate/typography';
+  import {
+    headingLiteral,
+    imageLiteral,
+    italicLiteral,
+    linkLiteral,
+    listLiteral,
+    listItemLiteral,
+    mainTitleLiteral,
+    paragraphLiteral,
+    strongLiteral,
+    subtitleLiteral,
+    qLiteral,
+    delLiteral,
+    codeLiteral,
+    blockquoteLiteral,
+    separatorLiteral 
+} from '../../../templates/NewsletterReactTemplate/typography';
 
 
 const ERROR_REGEX_CONSTANT = (value) =>
@@ -178,3 +178,29 @@ function objectBuilder(constant, replacer, literal = false) {
 //   constant: REGEXP_EMPTY_BLOCKQUOTE,
 //   replacer: emptyBlockQuote
 // },
+
+// export default {
+//     strong,
+//     link,
+//     del,
+//     image,
+//     previewText,
+//     italic,
+//     header,
+//     q,
+//     code,
+//     //-----------
+//     ulList,
+//     olList,
+//     listItem,
+//     list,
+//     //-----------
+//     blockquote,
+//     hr,
+//     paragraph,
+//     br,
+//     sponsorship,
+//     memes,
+//     separator,
+//   };
+  

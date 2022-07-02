@@ -1,1 +1,1 @@
-export const subtitle = `<SubTitle>{content}</SubTitle>`;
+export const subtitleLiteral = `<SubTitle>{content}</SubTitle>`;

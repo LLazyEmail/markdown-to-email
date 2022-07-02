@@ -1,1 +1,1 @@
-export const q = '<Q>{content}</Q>';
+export const qLiteral = '<Q>{content}</Q>';

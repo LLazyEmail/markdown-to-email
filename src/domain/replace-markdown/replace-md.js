@@ -39,27 +39,11 @@ function debuggingReplacer(name) {
 }
 
 
-// function methodForTestingValues(){
-//   // mapObject.forEach((element) => {
-//   //   console.log(element.replacer);
 
-//   // })
-
-//   _.map(mapObject, (element) => {
-//     // console.log(element)
-//     // console.log(element.replacer);
-
-//     //
-//     // console.log('----------');
-
-//   });
-
-// }
 
 // Should be working like this this.replaceMDBinded("previewText");
 //----------------------------
 function replaceMarkdown(callback_name) {
-  // methodForTestingValues();
 
   const fromMap = prepOurCallback(callback_name);
 
@@ -71,7 +55,7 @@ function replaceMarkdown(callback_name) {
   // console.log(fromMap.replacer);
   // console.log(fromMap.literal);
 
-  // TO DEBUG forReplacer I DONT THINK IT"S WORKING CORRECTLY.... 
+
   const forReplacer = fromMap.replacer.bind(this);
 
 
@@ -87,6 +71,7 @@ function replaceMarkdown(callback_name) {
   // return '';
   //-----------------------
 
+  //--- You can comment this when you debugging our wrapper
   this.content = this.content.replace(fromMap.constant, forReplacer);
 }
 

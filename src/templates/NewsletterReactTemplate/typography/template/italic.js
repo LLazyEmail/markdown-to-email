@@ -1,1 +1,1 @@
-export const italic = `<Italic>{content}</Italic>`;
+export const italicLiteral = `<Italic>{content}</Italic>`;

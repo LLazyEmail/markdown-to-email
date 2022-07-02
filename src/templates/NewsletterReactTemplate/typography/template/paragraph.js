@@ -1,1 +1,1 @@
-export const paragraph = `<Paragraph>{content}</Paragraph>`;
+export const paragraphLiteral = `<Paragraph>{content}</Paragraph>`;
