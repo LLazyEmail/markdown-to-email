@@ -16,7 +16,9 @@ const {
 
 describe('testing lists-only', () => {
   it('renders lists-only', () => {
+
     const markdown = readSourceFile('src/parserMDReact/tests/lists-only/content.md');
+
     const parsedContent = {
       content: markdown,
     };
@@ -25,6 +27,7 @@ describe('testing lists-only', () => {
 
     const fileName = 'ListsOnly.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
+    
     expect(1).toBe(1);
   });
 });

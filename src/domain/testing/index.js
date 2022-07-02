@@ -76,12 +76,12 @@ export {
     REGEXP_PREVIEW_TEXT,
     REGEXP_PARAGRAPH,
     REGEXP_SEPARATOR,
-//-------------------------
-write, readSourceFile,
-//-------------------------
-PlainCallbacks,
+    //-------------------------
+    write, readSourceFile,
+    //-------------------------
+    PlainCallbacks,
 
-tests_getMarkdownFile, tests_getOutputFolder,
-tests_getInnerMarkdownFile
+    tests_getMarkdownFile, tests_getOutputFolder,
+    tests_getInnerMarkdownFile
 
 }

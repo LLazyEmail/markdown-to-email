@@ -1,7 +1,13 @@
 const { writeReactComponent, readSourceFile } = require('@root/utils');
+
 const { replaceMarkdown } = require('@root/helpers');
+
 const { mem } = require('../../callbacks-simpleMDReact');
-const { REGEXP_MEM } = require('../../constantsMDReact');
+
+
+// const { REGEXP_MEM } = require('../../constantsMDReact');
+
+
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
@@ -18,7 +24,9 @@ const {
 
 describe('testing mem', () => {
   it('renders mem', () => {
+
     const markdown = readSourceFile('src/parserMDReact/tests/memes/content.md');
+
     const parsedContent = {
       content: markdown,
     };
@@ -27,6 +35,7 @@ describe('testing mem', () => {
 
     const fileName = 'Memes.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
+
     expect(1).toBe(1);
   });
 });
