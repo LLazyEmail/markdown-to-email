@@ -1,8 +1,8 @@
-// TODO not clear what it is
+// TODO connect messages to their sources
 // eslint-disable-next-line no-undef
-export const WARNING_IMAGE_VERSION = `WARNING source.md has ${index} ${element}. Replace it with memes`;
+export const WARNING_IMAGE_VERSION = (index, element) => `WARNING source.md has ${index} ${element}. Replace it with memes`;
 // eslint-disable-next-line no-undef
-export const ERROR_SOURCE_DONT_HAVE = `ERROR source.md doesn't have ${error}`;
+export const ERROR_SOURCE_DONT_HAVE = (error) => `ERROR source.md doesn't have ${error}`;
 
 export const FULL_TEMPLATE_ERROR = 'The full template has not been parsed!';
 export const HTML_EMAIL_SUCCESS = 'Content has correct html!!!';
