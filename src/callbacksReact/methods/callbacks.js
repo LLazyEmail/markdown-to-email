@@ -20,7 +20,7 @@ export function _paragraphWrapper(text, line) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'paragraph',
   //   debug: true,
   // };
   const config = {
@@ -44,7 +44,7 @@ export function _image(text, alt, srcWithTooltip) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'image',
   //   debug: true,
   // };
   const config = {
@@ -54,7 +54,7 @@ export function _image(text, alt, srcWithTooltip) {
 
   this.warnings.images++;
 
-  const result = replaceReactWrapper('image', config);
+  // const result = replaceReactWrapper('image', config);
   return result;
 }
 
@@ -85,7 +85,7 @@ export function _sponsorship(text) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'sponsor',
   //   debug: true,
   // };
   const config = {
@@ -100,7 +100,8 @@ export function _sponsorship(text) {
     ? (this.errors.sponsorshipBottom = true)
     : (this.errors.sponsorshipTop = true);
 
-  return replaceReactWrapper('sponsor', config, 'body');
+
+  // return replaceReactWrapper('sponsor', config, 'body');
 
 
 }

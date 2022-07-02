@@ -15,14 +15,16 @@ function getParsedSubList(subList) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'listItem',
   //   debug: true,
   // };
       const config = {
         content: subItem.trim(),
       };
 
-      return `${newLine + replaceWrapper('listItem', config)}`;
+      // return `${newLine + replaceWrapper('listItem', config)}`;
+
+
     },
   );
 }
@@ -42,7 +44,7 @@ function _ulList(text, list) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'list?',
   //   debug: true,
   // };
       const config = {
@@ -50,7 +52,9 @@ function _ulList(text, list) {
         type: 'UL',
       };
 
-      return `${newLine + replaceWrapper('list', config)}`;
+      // return `${newLine + replaceWrapper('list', config)}`;
+
+
     },
   );
 
@@ -64,7 +68,7 @@ function _ulList(text, list) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'listItem?',
   //   debug: true,
   // };
       const config = {
@@ -82,7 +86,7 @@ function _ulList(text, list) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'list',
   //   debug: true,
   // };
 

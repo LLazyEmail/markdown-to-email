@@ -15,7 +15,7 @@ function _code(text, content) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'code',
   //   debug: true,
   // };
 
@@ -35,7 +35,7 @@ function _del(text, content) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'del',
   //   debug: true,
   // };
   const config = {
@@ -54,7 +54,7 @@ function _q(text, content) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'q',
   //   debug: true,
   // };
   const config = {
@@ -73,7 +73,7 @@ function _italic(text, left, _, content, right) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'italic',
   //   debug: true,
   // };
   const config = {
@@ -91,7 +91,7 @@ function _strong(text, doubleAsterix, content, asterix) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'strong',
   //   debug: true,
   // };
   const config = {
@@ -110,7 +110,7 @@ function _link(text, title, href) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'link',
   //   debug: true,
   // };
   const config = {
@@ -129,7 +129,7 @@ function _blockquote(text, tmp, item) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'blockquote',
   //   debug: true,
   // };
   const config = {
@@ -140,7 +140,7 @@ function _blockquote(text, tmp, item) {
   return result;
 }
 
-function _mem(text, src, href, altText) {
+function _meme(text, src, href, altText) {
   
     // const params = {
   //   content: content.trim(),
@@ -148,7 +148,7 @@ function _mem(text, src, href, altText) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'meme',
   //   debug: true,
   // };
   const config = {
@@ -169,7 +169,7 @@ function _header(text, chars, content) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'header',
   //   debug: true,
   // };
   const config = {
@@ -200,7 +200,7 @@ function _previewText(text, content) {
 
   // const config = {    
   //   params,
-  //   name: '',
+  //   name: 'preview',
   //   debug: true,
   // };
   const config = {
@@ -216,7 +216,7 @@ export {
   _strong,
   _link,
   _blockquote,
-  _mem,
+  _meme,
   _header,
   _italic,
   _del,
