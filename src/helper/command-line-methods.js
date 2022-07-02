@@ -6,13 +6,7 @@ import { forEach } from 'lodash';
 
 // TODO should we remake whole state as a class with "frozen" methods?
 
-// const WARNING_IMAGE_VERSION = `WARNING source.md has ${index} ${element}. Replace it with memes`;
-// const ERROR_SOURCE_DONT_HAVE = `ERROR source.md doesn't have ${error}`;;
-
-// const FULL_TEMPLATE_ERROR = 'The full template has not been parsed!';
-// const HTML_EMAIL_SUCCESS = Content has correct html!!!;
-// const HTML_EMAIL_ERROR = 'Content has not correct html!!!';
-
+// TODO enable const messages
 // import { WARNING_IMAGE_VERSION, ERROR_SOURCE_DONT_HAVE, FULL_TEMPLATE_ERROR, HTML_EMAIL_SUCCESS, HTML_EMAIL_ERROR } from './constants';
 
 function checkWarnings(warnings) {
