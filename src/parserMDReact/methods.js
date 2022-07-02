@@ -12,7 +12,7 @@ import {
   // parseMDReactFullThing
 } from './parse';
 
-// TODO add more messages here
+// TODO add more messages here, and finally replace messages in our methods
 const MESSAGE_REACT_FULL_TEMPLATE =
   'The FullTemplate has been parsed successfully';
 const MESSAGE_REACT_CONTENT = 'The Content has been parsed successfully';
