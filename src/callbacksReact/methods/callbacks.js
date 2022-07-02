@@ -7,11 +7,22 @@ import { replaceReactWrapper, newLine } from '../helpers';
 
 export function _paragraphWrapper(text, line) {
   const trimmed = line.trim();
+
   if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
-    // @TODO move out this regex into constants file.
+    // TODO move out this regex into constants file.
     return newLine + line + newLine;
   }
 
+
+  // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
   const config = {
     content: trimmed,
   };
@@ -26,6 +37,16 @@ export function _paragraphWrapper(text, line) {
 export function _image(text, alt, srcWithTooltip) {
   const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
 
+
+  // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
   const config = {
     src: src.trim(),
     altText: alt,
@@ -51,16 +72,28 @@ export function _br(text, newLines) {
 }
 
 export function _sponsorship(text) {
+
   const regex = /\[(.*?)\]/g;
   const [content, href, src] = text
     .match(regex)
     .map((match) => match.replace(/[\[\]]/g, ''));
 
+
+  // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
   const config = {
     src: src.trim(),
     href: href.trim(),
     content: content.trim(),
   };
+
 
   // @TODO nope, not good
   this.errors.sponsorshipTop
@@ -68,6 +101,8 @@ export function _sponsorship(text) {
     : (this.errors.sponsorshipTop = true);
 
   return replaceReactWrapper('sponsor', config, 'body');
+
+
 }
 
 

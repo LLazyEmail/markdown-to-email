@@ -18,7 +18,7 @@ function _header(text, chars, content) {
 
   const config = {
     // content: content.trim(),
-    // params,
+    params,
     name: 'header',
     debug: true,
   };

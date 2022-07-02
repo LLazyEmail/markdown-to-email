@@ -3,10 +3,22 @@ import { replaceWrapper, newLine } from '../helpers';
 
 //----------------------
 
-const _hr = `${newLine}<hr />`;
-const _empty = '';
+const _hr = () => `${newLine}<hr />`;
+const _empty = () => '';
 
 function _code(text, content) {
+
+
+  // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
+
   const config = {
     content,
   };
@@ -16,6 +28,16 @@ function _code(text, content) {
 }
 
 function _del(text, content) {
+  
+    // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
   const config = {
     content,
   };
@@ -25,6 +47,16 @@ function _del(text, content) {
 }
 
 function _q(text, content) {
+  
+    // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
   const config = {
     content,
   };
@@ -34,6 +66,16 @@ function _q(text, content) {
 }
 
 function _italic(text, left, _, content, right) {
+  
+    // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
   const config = {
     content,
   };
@@ -43,6 +85,15 @@ function _italic(text, left, _, content, right) {
 }
 
 function _strong(text, doubleAsterix, content, asterix) {
+    // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
   const config = {
     content: `${content + asterix}`,
   };
@@ -52,6 +103,16 @@ function _strong(text, doubleAsterix, content, asterix) {
 }
 
 function _link(text, title, href) {
+  
+    // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
   const config = {
     content: title.trim(),
     href: href.trim(),
@@ -62,6 +123,15 @@ function _link(text, title, href) {
 }
 
 function _blockquote(text, tmp, item) {
+    // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
   const config = {
     content: `${newLine}${item.trim()}`,
   };
@@ -71,6 +141,16 @@ function _blockquote(text, tmp, item) {
 }
 
 function _mem(text, src, href, altText) {
+  
+    // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
   const config = {
     src: src.trim(),
     altText: altText.trim(),
@@ -82,6 +162,16 @@ function _mem(text, src, href, altText) {
 }
 
 function _header(text, chars, content) {
+  
+    // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
   const config = {
     content: content.trim(),
   };
@@ -94,6 +184,7 @@ function _header(text, chars, content) {
 }
 
 function _separator() {
+  
   const config = {};
 
   const result = `${newLine}${replaceWrapper('separator', config)}${newLine}`;
@@ -102,6 +193,16 @@ function _separator() {
 }
 
 function _previewText(text, content) {
+  
+    // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
   const config = {
     content,
   };

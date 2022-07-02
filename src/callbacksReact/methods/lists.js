@@ -1,13 +1,23 @@
 /* eslint-disable */
 import { replaceWrapper, newLine } from '../helpers';
 
-const _hr = `${newLine}<hr />`;
-const _empty = '';
+const _hr = () => `${newLine}<hr />`;
+const _empty = () => '';
 
 function getParsedSubList(subList) {
   return subList.replace(
     new RegExp(`\\s{4}\\*(.*?)${newLine}`, 'g'),
     (text, subItem) => {
+
+  // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
       const config = {
         content: subItem.trim(),
       };
@@ -26,6 +36,15 @@ function _ulList(text, list) {
     (text, subList) => {
       const parsedSubItem = getParsedSubList(subList);
 
+  // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
       const config = {
         content: parsedSubItem + newLine,
         type: 'UL',
@@ -38,6 +57,16 @@ function _ulList(text, list) {
   const parsedList = parsedSubListsParts.replace(
     new RegExp(`\\*(.*?)${newLine}`, 'g'),
     (text, listItem) => {
+
+  // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
       const config = {
         content: listItem.trim(),
       };
@@ -45,6 +74,17 @@ function _ulList(text, list) {
       return `${newLine + replaceWrapper('listItem', config)}`;
     },
   );
+
+
+  // const params = {
+  //   content: content.trim(),
+  // };
+
+  // const config = {    
+  //   params,
+  //   name: '',
+  //   debug: true,
+  // };
 
   const config = {
     content: parsedList + newLine,
