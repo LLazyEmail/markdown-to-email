@@ -35,10 +35,25 @@ const tests_getMarkdownFile = () => {
     return markdown;
 }
 
+const tests_getInnerMarkdownFile = () => {
+    const root = resolve(__dirname, '');
+
+    console.log()
+    const markdown = readSourceFile(`${root}/content.md`);
+
+
+    return markdown;
+}
+
 const tests_getOutputFolder = () => {
     const outFolder = resolve('src/tests', 'directory', '../_generated');
     return outFolder;
 }
+
+// const tests_getReactOutputFolder = () => {
+//     const outFolder = resolve('src/tests', 'directory', '../_generated');
+//     return outFolder;
+// }
 
 
 export {
@@ -66,7 +81,7 @@ write, readSourceFile,
 //-------------------------
 PlainCallbacks,
 
-tests_getMarkdownFile, tests_getOutputFolder
-
+tests_getMarkdownFile, tests_getOutputFolder,
+tests_getInnerMarkdownFile
 
 }

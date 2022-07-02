@@ -1,12 +1,14 @@
 const { writeReactComponent, readSourceFile } = require('@root/utils');
+
 const { replaceMarkdown } = require('@root/helpers');
-const { blockquote } = require('../../callbacks-simpleMDReact');
-// const { REGEXP_BLOCKQUOTE } = require('../../constantsMDReact');
+const { link } = require('../../../callbacks-simpleMDReact');
+
+// const { REGEXP_LINK } = require('../../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
 const { 
-  REGEXP_BLOCKQUOTE, 
+  REGEXP_LINK, 
   write, 
   tests_getMarkdownFile, 
   // tests_getOutputFolder, 
@@ -14,19 +16,24 @@ const {
 } = require('@domain/testing')
 
 
-describe('testing lists-only', () => {
-  it('renders lists-only', () => {
-    const markdown = readSourceFile(
-      'src/parserMDReact/tests/blockquote/content.md',
-    );
+describe('testing link/exclamation-mark', () => {
+  it('renders link/exclamation-mark', () => {
+
+    const markdown = readSourceFile('src/parserMDReact/tests/link/exclamation-mark/content.md');
+
     const parsedContent = {
       content: markdown,
     };
 
-    replaceMarkdown.call(parsedContent, REGEXP_BLOCKQUOTE, blockquote);
+    replaceMarkdown.call(
+      parsedContent,
+      REGEXP_LINK,
+      link,
+    );
 
-    const fileName = 'Blockquote.js';
+    const fileName = 'ExclamationMark.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
+
     expect(1).toBe(1);
   });
 });

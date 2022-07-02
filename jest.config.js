@@ -4,4 +4,7 @@ module.exports = {
         "@root(.*)$": "<rootDir>/src/$1",
         "@domain(.*)$": "<rootDir>/src/domain/$1"
     },
+    "testMatch": [
+        "<rootDir>/src/tests/**/**/*.test.js"
+    ]
 }

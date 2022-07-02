@@ -1,29 +1,34 @@
 const { writeReactComponent, readSourceFile } = require('@root/utils');
 const { replaceMarkdown } = require('@root/helpers');
-const { br } = require('../../callbacksMDReact');
-const { REGEXP_BR } = require('../../constantsMDReact');
+
+const { italic } = require('../../callbacks-simpleMDReact');
+
+const { REGEXP_EM } = require('../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
 const { 
-  REGEXP_BR, 
+  REGEXP_EM, 
   write, 
   tests_getMarkdownFile, 
   // tests_getOutputFolder, 
   PlainCallbacks 
 } = require('@domain/testing')
 
+describe('testing italic-first-sentence', () => {
+  it('renders italic-first-sentence', () => {
 
-describe('testing br', () => {
-  it('renders br', () => {
-    const markdown = readSourceFile('src/parserMDReact/tests/br/br.md');
+    const markdown = readSourceFile('src/parserMDReact/tests/italic-first-sentence/italic.md');
+
     const parsedContent = {
       content: markdown,
     };
 
-    replaceMarkdown.call(parsedContent, REGEXP_BR, br);
-    const fileName = 'BR.js';
+    replaceMarkdown.call(parsedContent, REGEXP_EM, italic);
+
+    const fileName = 'ItalicFirstSentence.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
+    
     expect(1).toBe(1);
   });
 });

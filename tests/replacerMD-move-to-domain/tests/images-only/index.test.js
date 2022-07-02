@@ -1,12 +1,13 @@
 const { writeReactComponent, readSourceFile } = require('@root/utils');
 const { replaceMarkdown } = require('@root/helpers');
-const { header } = require('../../callbacks-simpleMDReact');
-const { REGEXP_HEADER } = require('../../constantsMDReact');
+
+const { image } = require('../../callbacksMDReact');
+// const { REGEXP_IMAGE } = require('../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
 const { 
-  REGEXP_HEADER, 
+  REGEXP_IMAGE, 
   write, 
   tests_getMarkdownFile, 
   // tests_getOutputFolder, 
@@ -14,21 +15,23 @@ const {
 } = require('@domain/testing')
 
 
-describe('testing h1-inside-the-body', () => {
-  it('renders h1-inside-the-body', () => {
-    const markdown = readSourceFile('src/parserMDReact/tests/h1-inside-the-body/content.md');
+describe('testing images-only', () => {
+  it('renders images-only', () => {
+
+    const markdown = readSourceFile('src/parserMDReact/tests/images-only/content.md');
+
     const parsedContent = {
       content: markdown,
+      warnings: {
+        images: 0,
+      },
     };
 
-    replaceMarkdown.call(
-      parsedContent,
-      REGEXP_HEADER,
-      header,
-    );
+    replaceMarkdown.call(parsedContent, REGEXP_IMAGE, image);
 
-    const fileName = 'H1InsideTheBody.js';
+    const fileName = 'Images.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
+
     expect(1).toBe(1);
   });
 });

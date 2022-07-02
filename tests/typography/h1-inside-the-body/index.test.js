@@ -1,6 +1,3 @@
-// const { REGEXP_HEADER } = require('atherdon-newsletter-constants');
-
-// const { resolve } = require('path');
 // const { write, 
 //   readSourceFile 
 // } = require('@root/utils');
@@ -50,6 +47,7 @@ describe('testing h1-inside-the-body', () => {
 
     const fileName = 'h1-inside-the-body.html';
     write(fileName, parsedContent.content, outFolder);
+    
     expect(1).toBe(1);
   });
 });

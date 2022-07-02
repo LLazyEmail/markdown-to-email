@@ -14,21 +14,20 @@ const {
 } = require('@domain/testing')
 
 
-describe('testing link/exclamation-mark', () => {
-  it('renders link/exclamation-mark', () => {
-    const markdown = readSourceFile('src/parserMDReact/tests/link/exclamation-mark/content.md');
+describe('testing links when space before link', () => {
+  it('renders testing links when space before link', () => {
+
+    const markdown = readSourceFile('src/parserMDReact/tests/link/removed-space-before-link/content.md');
+
     const parsedContent = {
       content: markdown,
     };
 
-    replaceMarkdown.call(
-      parsedContent,
-      REGEXP_LINK,
-      link,
-    );
+    replaceMarkdown.call(parsedContent, REGEXP_LINK, link);
 
-    const fileName = 'ExclamationMark.js';
+    const fileName = 'LinksEmptySpace.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
+    
     expect(1).toBe(1);
   });
 });

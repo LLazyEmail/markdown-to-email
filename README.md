@@ -113,7 +113,24 @@ Links
 - https://www.htmlemailcheck.com/check/
 
 
+---
 
+old tests
+
+```
+// const { REGEXP_HEADER } = require('atherdon-newsletter-constants');
+
+// const { resolve } = require('path');
+// const { write, 
+//   readSourceFile 
+// } = require('@root/utils');
+
+
+// const root = resolve(__dirname, '');
+// const outFolder = resolve('src/tests', 'directory', '../_generated');
+
+
+```
 
 
 #### Arthur Tkachenko articles

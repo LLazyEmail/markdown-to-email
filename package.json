@@ -19,9 +19,9 @@
     "build:small": "npm run checkFolders && node ./src/index.js",
     "checkFolders": "node ./checkFolders",
     "test": "npm run checkFolders && jest ./src/tests",
-    "test:typography": "npm run ./src/tests/typography",
-    "test:methods": "npm run ./src/tests/methods",
-    "test:custom": "npm run ./src/tests/custom",
+    "test:typography": "jest --all --testPathPattern=./src/tests/typography",
+    "test:methods": "jest --watchAll --all --testPathPattern=./src/tests/methods",
+    "test:custom": "jest --watchAll --all --testPathPattern=./src/tests/custom",
     "test:watch": "npm run checkFolders && jest --watch ./src/tests",
     "prepare": "husky install"
   },

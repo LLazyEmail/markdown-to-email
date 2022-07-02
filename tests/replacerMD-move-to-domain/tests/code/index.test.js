@@ -1,12 +1,18 @@
 const { writeReactComponent, readSourceFile } = require('@root/utils');
+
+
 const { replaceMarkdown } = require('@root/helpers');
-const { link } = require('../../../callbacks-simpleMDReact');
-// const { REGEXP_LINK } = require('../../../constantsMDReact');
+
+
+const { code } = require('../../callbacks-simpleMDReact');
+const { REGEXP_CODE } = require('../../constantsMDReact');
+
+
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
 const { 
-  REGEXP_LINK, 
+  REGEXP_CODE, 
   write, 
   tests_getMarkdownFile, 
   // tests_getOutputFolder, 
@@ -14,17 +20,22 @@ const {
 } = require('@domain/testing')
 
 
-describe('testing links when space before link', () => {
-  it('renders testing links when space before link', () => {
-    const markdown = readSourceFile('src/parserMDReact/tests/link/removed-space-before-link/content.md');
+
+
+describe('testing lists-only', () => {
+  it('renders lists-only', () => {
+    const markdown = readSourceFile('src/parserMDReact/tests/code/content.md');
+
     const parsedContent = {
       content: markdown,
     };
 
-    replaceMarkdown.call(parsedContent, REGEXP_LINK, link);
+    replaceMarkdown.call(parsedContent, REGEXP_CODE, code);
 
-    const fileName = 'LinksEmptySpace.js';
+    
+    const fileName = 'Code.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
+
     expect(1).toBe(1);
   });
 });

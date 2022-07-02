@@ -1,12 +1,14 @@
 const { writeReactComponent, readSourceFile } = require('@root/utils');
+
 const { replaceMarkdown } = require('@root/helpers');
-const { code } = require('../../callbacks-simpleMDReact');
-const { REGEXP_CODE } = require('../../constantsMDReact');
+const { link } = require('../../../callbacks-simpleMDReact');
+
+// const { REGEXP_LINK } = require('../../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
 const { 
-  REGEXP_CODE, 
+  REGEXP_LINK, 
   write, 
   tests_getMarkdownFile, 
   // tests_getOutputFolder, 
@@ -14,17 +16,20 @@ const {
 } = require('@domain/testing')
 
 
-describe('testing lists-only', () => {
-  it('renders lists-only', () => {
-    const markdown = readSourceFile('src/parserMDReact/tests/code/content.md');
+describe('testing links-only', () => {
+  it('renders links-only', () => {
+
+    const markdown = readSourceFile('src/parserMDReact/tests/link/links-only/content.md');
+
     const parsedContent = {
       content: markdown,
     };
 
-    replaceMarkdown.call(parsedContent, REGEXP_CODE, code);
+    replaceMarkdown.call(parsedContent, REGEXP_LINK, link);
 
-    const fileName = 'Code.js';
+    const fileName = 'LinksOnly.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
+    
     expect(1).toBe(1);
   });
 });
