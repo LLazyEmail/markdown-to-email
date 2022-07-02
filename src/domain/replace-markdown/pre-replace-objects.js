@@ -101,17 +101,17 @@ function objectBuilder(constant, replacer, literal = false) {
   return { constant, replacer, literal };
 }
 
-// strongLiteral,
+
 const strong = objectBuilder(REGEXP_STRONG, _strong, strongLiteral);
 // console.log(strong);
 
-// linkLiteral,
+
 const link = objectBuilder(REGEXP_LINK, _link, linkLiteral);
 
 // delLiteral,
 const del = objectBuilder(REGEXP_DEL, _del, false);
 
-// imageLiteral,
+
 const image = objectBuilder(REGEXP_IMAGE, _image, imageLiteral);
 
 const previewText = objectBuilder(
@@ -122,12 +122,11 @@ const previewText = objectBuilder(
 
 // empty as emptyLiteral,
 
-// italicLiteral,
+
 const italic = objectBuilder(REGEXP_EM, _italic, italicLiteral);
 
 // TODO header arent working as suppose too
 const header = objectBuilder(REGEXP_HEADER, _header, headingLiteral);
-
 
 
 // qLiteral,
@@ -137,7 +136,11 @@ const q = objectBuilder(REGEXP_Q, _q, false);
 const code = objectBuilder(REGEXP_CODE, _code, false);
 
 
-const listItem = objectBuilder(REGEXP_SUB_LISTS, getParsedSubList, listItemLiteral);
+const listItem = objectBuilder(
+  REGEXP_SUB_LISTS, 
+  getParsedSubList, 
+  listItemLiteral
+  );
 
 // this object used only as a stupid way to add a parch for different cases of lists
 // first two params never used
@@ -155,7 +158,7 @@ const blockquote = objectBuilder(REGEXP_BLOCKQUOTE, _blockquote, false);
 // hrLiteral,
 const hr = objectBuilder(REGEXP_HR, _hr, false);
 
-//  paragraphLiteral
+
 const paragraph = objectBuilder(
   REGEXP_PARAGRAPH,
   _paragraphWrapper,
@@ -164,7 +167,7 @@ const paragraph = objectBuilder(
 
 const br = objectBuilder(REGEXP_BR, _br);
 
-// folder: 'body',
+
 const sponsorship = objectBuilder(
   REGEXP_SPONSORSHIP,
   _sponsorship,
@@ -174,7 +177,11 @@ const sponsorship = objectBuilder(
 //  memeLiteral,
 const memes = objectBuilder(REGEXP_MEM, _meme, false);
 
-const separator = objectBuilder(REGEXP_SEPARATOR, _separator, separatorLiteral);
+const separator = objectBuilder(
+  REGEXP_SEPARATOR, 
+  _separator, 
+  separatorLiteral
+  );
 
 // 'REGEXP_EMPTY_UL': {
 //   constant: REGEXP_EMPTY_UL,
