@@ -9,16 +9,25 @@ function getParsedSubList(subList) {
     new RegExp(`\\s{4}\\*(.*?)${newLine}`, 'g'),
     (text, subItem) => {
 
-  const params = {
-    content: subItem.trim(),
-  };
+      const params = {
+        content: subItem.trim(),
+      };
 
-  const config = {    
-    params,
-    name: 'listItem',
-    debug: true,
-  };
-      
+      const config = {    
+        params,
+        name: 'listItem',
+        debug: true,
+      };
+          
+
+
+      try {
+        const replaced = commonReplace(config);
+
+        return replaced;
+      } catch (error) {
+        catch_error_trace_output(error);
+      }
 
       // return `${newLine + replaceWrapper('listItem', config)}`;
 
@@ -51,6 +60,15 @@ function _ulList(text, list) {
       // return `${newLine + replaceWrapper('list', config)}`;
 
 
+      // try {
+      //   const replaced = commonReplace(config);
+    
+      //   return replaced;
+      // } catch (error) {
+      //   catch_error_trace_output(error);
+      // }
+
+
     },
   );
 
@@ -68,6 +86,14 @@ function _ulList(text, list) {
     debug: true,
   };
  
+  
+  // try {
+  //   const replaced = commonReplace(config);
+
+  //   return replaced;
+  // } catch (error) {
+  //   catch_error_trace_output(error);
+  // }
 
       // return `${newLine + replaceWrapper('listItem', config)}`;
     },

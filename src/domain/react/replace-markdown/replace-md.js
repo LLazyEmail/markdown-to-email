@@ -14,7 +14,7 @@ function prepOurCallback(callback_name) {
 // When you use this function you can specify which types of objects you want to debug
 function debuggingReplacer(name) {
     const namesArr = [
-      // 'sponsorship',
+      'sponsorship',
       // 'paragraph',
       // 'link',
       // 'header', // not working
@@ -22,7 +22,7 @@ function debuggingReplacer(name) {
       // 'memes',
       // 'br',
       // 'separator',
-      'previewText',
+      // 'previewText',
       // 'italic',
       // 'olList'
       // 'ulList'

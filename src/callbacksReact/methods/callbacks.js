@@ -25,6 +25,16 @@ export function _paragraph(text, line) {
   };
  
 
+
+
+  // try {
+  //   const replaced = commonReplace(config);
+
+  //   return replaced;
+  // } catch (error) {
+  //   catch_error_trace_output(error);
+  // }
+
   // const result = newLine + replaceReactWrapper('paragraph', config) + newLine;
   // console.log(config);
 
@@ -48,6 +58,15 @@ export function _image(text, alt, srcWithTooltip) {
   };
 
   this.warnings.images++;
+
+
+  // try {
+  //   const replaced = commonReplace(config);
+
+  //   return replaced;
+  // } catch (error) {
+  //   catch_error_trace_output(error);
+  // }
 
   // const result = replaceReactWrapper('image', config);
   return result;
@@ -86,6 +105,15 @@ export function _sponsorship(text) {
     debug: true,
   };
  
+
+
+  // try {
+  //   const replaced = commonReplace(config);
+
+  //   return replaced;
+  // } catch (error) {
+  //   catch_error_trace_output(error);
+  // }
 
 
   // @TODO nope, not good
