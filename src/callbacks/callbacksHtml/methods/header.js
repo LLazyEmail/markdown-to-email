@@ -37,7 +37,7 @@ function _header(text, chars, content) {
 
 
   try {
-    
+    // console.log('123');
     // const replaced = commonReplace(config);
     const replaced = replaceHeader(config);
     return newLine + replaced;

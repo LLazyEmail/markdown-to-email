@@ -25,8 +25,8 @@ import CallbackFactory from '../callbacks-factory';
 
 const WR3_getWrapper = (name) => {
 
-  console.log(name);
-  console.log(mainObj[name].literal)
+  // console.log(name);
+  // console.log(mainObj[name].literal)
 
   try {
     
@@ -86,6 +86,8 @@ const replaceHeader = (config) => {
   // const { debug } = config || false;
 
   if(!inspector(config.params)) throw new Error('no params was passed');
+
+  // console.log('123');
 
   const configCopy = Object.assign(
     config, WR3_getWrapper(config.name)
