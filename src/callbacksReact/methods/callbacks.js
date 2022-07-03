@@ -5,7 +5,7 @@ import { replaceReactWrapper, newLine } from '../helpers';
 
 /// function is not working as planned
 
-export function _paragraphWrapper(text, line) {
+export function _paragraph(text, line) {
   const trimmed = line.trim();
 
   if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
@@ -14,20 +14,18 @@ export function _paragraphWrapper(text, line) {
   }
 
 
-  // const params = {
-  //   content: content.trim(),
-  // };
-
-  // const config = {    
-  //   params,
-  //   name: 'paragraph',
-  //   debug: true,
-  // };
-  const config = {
+  const params = {
     content: trimmed,
   };
 
-  const result = newLine + replaceReactWrapper('paragraph', config) + newLine;
+  const config = {    
+    params,
+    name: 'paragraph',
+    debug: true,
+  };
+ 
+
+  // const result = newLine + replaceReactWrapper('paragraph', config) + newLine;
   // console.log(config);
 
   return result;
@@ -38,18 +36,15 @@ export function _image(text, alt, srcWithTooltip) {
   const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
 
 
-  // const params = {
-  //   content: content.trim(),
-  // };
-
-  // const config = {    
-  //   params,
-  //   name: 'image',
-  //   debug: true,
-  // };
-  const config = {
+   const params = {
     src: src.trim(),
     altText: alt,
+   };
+
+  const config = {    
+    params,
+    name: 'image',
+    debug: true,
   };
 
   this.warnings.images++;
@@ -79,20 +74,18 @@ export function _sponsorship(text) {
     .map((match) => match.replace(/[\[\]]/g, ''));
 
 
-  // const params = {
-  //   content: content.trim(),
-  // };
-
-  // const config = {    
-  //   params,
-  //   name: 'sponsor',
-  //   debug: true,
-  // };
-  const config = {
+  const params = {
     src: src.trim(),
     href: href.trim(),
     content: content.trim(),
   };
+
+  const config = {    
+    params,
+    name: 'sponsor',
+    debug: true,
+  };
+ 
 
 
   // @TODO nope, not good
@@ -107,4 +100,4 @@ export function _sponsorship(text) {
 }
 
 
-// export { paragraphWrapper, image, sponsorship, br, newLine };
+export { paragraphWrapper, image, sponsorship, br, newLine };
