@@ -7,13 +7,21 @@ import _ from 'lodash';
 import mapObject from './pre-replace-objects';
 
 // @TODO replace the name of this method
-function prepOurCallback(callback_name) {
+function prepOurCallback(callback_name, debug = false) {
   if (!callback_name) {
     throw new Error(`name of ${callback_name} is undefined or empty`);
   }
 
   const settings = mapObject[callback_name];
   // console.log(settings)
+  if(debug){
+    if(!settings.literal){
+      console.log(callback_name, settings.constant);
+      console.log('-----------------');
+    }
+  }
+  
+
   return settings;
 }
 
@@ -22,13 +30,17 @@ function debuggingReplacer(name) {
   const namesArr = [
     // 'sponsorship',
     // 'paragraph',
-    // 'link',
-    // 'header', // not working
+    //  'link',
+     'header', // not working
+       'title', 
+       'subtitle', 
+      //  'heading',
+    //----------------
     // 'strong',
     // 'memes',
     // 'br',
     // 'separator',
-    'previewText',
+    // 'previewText',
     // 'italic',
     // 'olList'
     // 'ulList'
@@ -53,26 +65,33 @@ function replaceMarkdown(callback_name) {
 
   // console.log(fromMap.constant);
   // console.log(fromMap.replacer);
+
   // console.log(fromMap.literal);
 
-
-  const forReplacer = fromMap.replacer.bind(this);
-
+  //--------- comment for debugging purposes
+  // const forReplacer = fromMap.replacer.bind(this);
+  //--- You can comment this when you debugging our wrapper
+  // this.content = this.content.replace(fromMap.constant, forReplacer);
 
   //-------------- Uncomment for debugging reasons
-  // if (debuggingReplacer(callback_name)) {
-  //   console.log(callback_name);
+  if (debuggingReplacer(callback_name)) {
 
-  //   this.content = this.content.replace(
-  //     fromMap.constant, 
-  //     forReplacer
-  //   );
-  // }
-  // return '';
-  //-----------------------
+    // console.log(callback_name);
 
-  //--- You can comment this when you debugging our wrapper
-  this.content = this.content.replace(fromMap.constant, forReplacer);
+    const forReplacer = fromMap.replacer.bind(this);
+
+    this.content = this.content.replace(
+      fromMap.constant, 
+      forReplacer
+    );
+
+    
+  }  
+  return '';
+  //--------------
+  //--------------
+
+  
 }
 
 
@@ -98,6 +117,7 @@ function replaceMarkdown(callback_name) {
 //   this.content = this.content.replace(regexp, () => this.previewText);
 // }
 
-export { replaceMarkdown, 
+export { 
+  replaceMarkdown, 
   // replaceMarkdownPreviewText 
 };

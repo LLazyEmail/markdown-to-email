@@ -24,7 +24,24 @@ import CallbackFactory from '../callbacks-factory';
 // }
 
 const WR3_getWrapper = (name) => {
-  return { literal: mainObj[name].literal };
+
+  console.log(name);
+  console.log(mainObj[name].literal)
+
+  try {
+    
+    // const replaced = commonReplace(config);
+    // const replaced = replaceHeader(config);
+    // return newLine + replaced;
+
+    if(mainObj[name].literal){
+      return { literal: mainObj[name].literal };
+    }
+    
+  } catch (error) {
+    catch_error_trace_output(error);
+  }
+
 };
 
 function repSponsor(config) {
@@ -70,7 +87,9 @@ const replaceHeader = (config) => {
 
   if(!inspector(config.params)) throw new Error('no params was passed');
 
-  const configCopy = Object.assign(config, WR3_getWrapper(config.name));
+  const configCopy = Object.assign(
+    config, WR3_getWrapper(config.name)
+  );
 
   const newString = WR3_generateNewString(configCopy);
 

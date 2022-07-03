@@ -78,15 +78,14 @@ import {
 } from '../plainjs-template/typography/index';
 
 
-
-
 const { sponsorLiteral, previewTextLiteral } = body;
 
 // console.log(paragraphLiteral);
 
 const ERROR_REGEX_CONSTANT = (value) =>
   `something wrong with RegEx constant ${value}`;
-const ERROR_REPLACER_FUNCTION = (value) =>
+
+  const ERROR_REPLACER_FUNCTION = (value) =>
   `something wrong with replacer function ${value}`;
 
 // const objectBuilder = (constant, replacer) => {constant, replacer}
@@ -120,13 +119,16 @@ const previewText = objectBuilder(
   previewTextLiteral,
 );
 
-// empty as emptyLiteral,
+
 
 
 const italic = objectBuilder(REGEXP_EM, _italic, italicLiteral);
 
 // TODO header arent working as suppose too
 const header = objectBuilder(REGEXP_HEADER, _header, headingLiteral);
+
+// sub item for header. not ideal
+const sibtitle = objectBuilder(REGEXP_HEADER, _header, subtitleLiteral);
 
 
 // qLiteral,
@@ -140,7 +142,7 @@ const listItem = objectBuilder(
   REGEXP_SUB_LISTS, 
   getParsedSubList, 
   listItemLiteral
-  );
+);
 
 // this object used only as a stupid way to add a parch for different cases of lists
 // first two params never used
@@ -183,6 +185,9 @@ const separator = objectBuilder(
   separatorLiteral
   );
 
+
+// empty as emptyLiteral,
+
 // 'REGEXP_EMPTY_UL': {
 //   constant: REGEXP_EMPTY_UL,
 //   replacer: emptyUl
@@ -205,7 +210,10 @@ export default {
   image,
   previewText,
   italic,
+  //----------
   header,
+  sibtitle,
+  //-----------
   q,
   code,
   //-----------

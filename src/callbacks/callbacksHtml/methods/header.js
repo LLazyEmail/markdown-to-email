@@ -1,8 +1,10 @@
 import { replaceWrapper, newLine, beforeBeginingNewLine } from '../helpers';
 
-import { replaceHeader } from '../../../domain/replace-wrapper3.0';
+import { replaceHeader, commonReplace } from '../../../domain/replace-wrapper3.0';
 
 import { catch_error_trace_output } from '../../../domain/error-handle';
+
+
 
 import CallbackFactory from '../../../domain/callbacks-factory';
 
@@ -16,30 +18,34 @@ function _header(text, chars, content) {
     content: content.trim(),
   };
 
+  const titleTypes = ['title', 'subtitle', 'heading'];
+
+  const name = titleTypes[chars.length - 1];
+
+  // console.log(name);
+
   const config = {
-    // content: content.trim(),
     params,
-    name: 'header',
+    name,
+    // name: 'header',
     debug: true,
   };
 
   // NOT FINISHED
-  console.log(config);
+  // console.log(config);
 
-  const titleType = ['title', 'subtitle', 'heading'];
 
-  const variabl = titleType[chars.length - 1];
-  // console.log(variabl);
 
-  // const replaced = replaceWrapper(titleType[chars.length - 1], config);
+  try {
+    
+    // const replaced = commonReplace(config);
+    const replaced = replaceHeader(config);
+    return newLine + replaced;
+    
+  } catch (error) {
+    catch_error_trace_output(error);
+  }
 
-  // try {
-  //   const replaced = replaceHeader(config);
-
-  //   return newLine + replaced;
-  // } catch (error) {
-  //   catch_error_trace_output(error);
-  // }
 }
 
 export default _header;
