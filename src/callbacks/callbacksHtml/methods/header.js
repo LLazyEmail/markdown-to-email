@@ -12,7 +12,6 @@ import CallbackFactory from '../../../domain/callbacks-factory';
 function _header(text, chars, content) {
   // const factory = CallbackFactory.create();
 
-  // console.log('123')
 
   const params = {
     content: content.trim(),
@@ -47,5 +46,8 @@ function _header(text, chars, content) {
   }
 
 }
+
+// im thinking about creating few methods that will work separately from 
+// _header callback
 
 export default _header;

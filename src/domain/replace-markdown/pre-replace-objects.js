@@ -63,6 +63,8 @@ import body from '../../templates/PlainJSOuterTemplate/layouts/body';
 
 import {
   headingLiteral,
+  titleLiteral,
+  //---------
   imageLiteral,
   italicLiteral,
   linkLiteral,
@@ -70,7 +72,7 @@ import {
   listLiteral,
   listItemLiteral,
   //------------
-  titleLiteral,
+  
   paragraphLiteral,
   strongLiteral,
   subtitleLiteral,
@@ -130,6 +132,8 @@ const header = objectBuilder(REGEXP_HEADER, _header, headingLiteral);
 // sub item for header. not ideal
 const sibtitle = objectBuilder(REGEXP_HEADER, _header, subtitleLiteral);
 
+// title for header. not sure if it's main title or not
+const title = objectBuilder(REGEXP_HEADER, _header, titleLiteral);
 
 // qLiteral,
 const q = objectBuilder(REGEXP_Q, _q, false);
@@ -213,6 +217,7 @@ export default {
   //----------
   header,
   sibtitle,
+  title,
   //-----------
   q,
   code,

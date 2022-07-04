@@ -1,4 +1,5 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+
 import write from 'write';
 
 import {
@@ -8,16 +9,11 @@ import {
     ERROR_NO_PREVIEW_TEXT,
 } from './constant-messages'
 
-
-
-
-
-// ---
-
 // eslint-disable-next-line default-param-last
 function writeHTML(fileName, content, dir = 'generated', message) {
+// @todo it's not an ideal thing
   // eslint-disable-next-line no-underscore-dangle
-  const _path = `${dir}/${fileName}`; // @todo it's not an ideal thing
+  const _path = `${dir}/${fileName}`; 
 
   // promise
   write(_path, content)

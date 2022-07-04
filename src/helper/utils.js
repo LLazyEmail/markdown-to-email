@@ -1,7 +1,5 @@
-
 //------ This file used for back capability purposes
 // moving things into 'domain' folder.
-
 import {
   writeHTML,
   __write,

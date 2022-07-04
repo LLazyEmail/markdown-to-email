@@ -18,14 +18,19 @@ import mainObj from '../replace-markdown/pre-replace-objects';
 
 import CallbackFactory from '../callbacks-factory';
 
+import { catch_error_trace_output } from '../error-handle';
+
 // const WR3_Template(params){
-//     const  {src, href, content, wrapper}=params;
+//     const  { src, href, content, wrapper } = params;
 //     return html(wrapper);
 // }
 
-const WR3_getWrapper = (name) => {
+const WR3_getWrapper = (name, debug = false) => {
 
-  // console.log(name);
+  if (debug){
+    console.log(name);
+  }
+  
   // console.log(mainObj[name].literal)
 
   try {
@@ -84,13 +89,16 @@ const replaceLink = (config) => {
 
 const replaceHeader = (config) => {
   // const { debug } = config || false;
-
+  // TODO this can be moved into a separate method.
+  // problably at some point we'll have only one replacer method
+  // but at this point we cant have it, so we better to optimize things.
   if(!inspector(config.params)) throw new Error('no params was passed');
 
   // console.log('123');
 
   const configCopy = Object.assign(
-    config, WR3_getWrapper(config.name)
+    config, 
+    WR3_getWrapper(config.name, true)
   );
 
   const newString = WR3_generateNewString(configCopy);

@@ -3,7 +3,8 @@ import {
   readSourceFile,
   isFolderExists,
   generateTemplateName,
-} from './utils';
+} from '../domain/write';
+
 import {
   displayCLIErrors,
   checkErrors,
@@ -13,6 +14,7 @@ import {
 
   // stateInit,
 } from './command-line-methods';
+
 
 export {
   writeHTML,

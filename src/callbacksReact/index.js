@@ -1,8 +1,7 @@
 import Callbacks from './methods/all';
 
 import {
-  newLine,
-
+  newLine
 } from './helpers';
 
 export {
