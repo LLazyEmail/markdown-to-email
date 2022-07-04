@@ -3,7 +3,14 @@ import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 import { catch_error_trace_output } from '../../../domain/error-handle';
 
-function _separator() {
+
+// NOT WORKING AT THIS MOMENT
+function _separator(text, markdown_string) {
+
+  console.log(markdown_string);
+
+  console.log('123');
+
   const params = {};
 
   const config = {
