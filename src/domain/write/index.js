@@ -1,23 +1,16 @@
-
-
-
-
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import write from 'write';
 
-// ---
-// const CONST_FILE_CREATED = '';
-const CONST_FILE_NOT_WRITTEN = 'file not written';
+import {
+    CONST_FILE_NOT_WRITTEN,
+    ERROR_NO_TITLE,
+    ERROR_NO_BODY_CONTENT,
+    ERROR_NO_PREVIEW_TEXT,
+} from './constant-messages'
 
-const ERROR_NO_TITLE = '`title` is a required option for `renderTemplate`';
-const ERROR_NO_BODY_CONTENT =
-  '`bodyContent` is a required option for `renderTemplate`';
-const ERROR_NO_PREVIEW_TEXT =
-  '`previewText` is a required option for `renderTemplate`';
 
-// const WARNING_EMAIL_LENGTH = `Email output is ${Math.round(bytes / 1024)}KB. ` +
-// 'It is recommended to keep the delivered HTML to smaller ' +
-// 'than 100KB, to avoid getting emails cut off or rejected due to spam.';
+
+
 
 // ---
 
@@ -92,16 +85,6 @@ const generateTemplateName = (suffix, ext = 'html') =>
 // };
 
 //-----------
-//------ This file used for back capability purposes
-// moving things into 'domain' folder.
-import {
-  writeHTML,
-  __write,
-  readSourceFile,
-  isFolderExists,
-  generateTemplateName,
-  // countingBytes,
-} from '../domain/write'
 
 export {
   writeHTML,

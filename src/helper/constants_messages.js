@@ -13,9 +13,3 @@ export const HTML_EMAIL_ERROR = 'Content has not correct html!!!';
 export const CONST_FILE_CREATED = '';
 export const CONST_FILE_NOT_WRITTEN = 'file not written';
 
-export const ERROR_NO_TITLE =
-  '`title` is a required option for `renderTemplate`';
-export const ERROR_NO_BODY_CONTENT =
-  '`bodyContent` is a required option for `renderTemplate`';
-export const ERROR_NO_PREVIEW_TEXT =
-  '`previewText` is a required option for `renderTemplate`';
