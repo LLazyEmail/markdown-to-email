@@ -29,17 +29,18 @@ function prepOurCallback(callback_name, debug = false) {
 function debuggingReplacer(name) {
   const namesArr = [
     // 'sponsorship',
-    // 'paragraph',
-    //  'link',
-     'header', // not working
-       'title', 
-       'subtitle', 
+    'paragraph',
+     'link',
+    //-------
+    //  'header', // not working
+      //  'title', 
+      //  'subtitle', 
       //  'heading',
     //----------------
     // 'strong',
     // 'memes',
     // 'br',
-    // 'separator',
+    'separator',
     // 'previewText',
     // 'italic',
     // 'olList'
@@ -69,25 +70,28 @@ function replaceMarkdown(callback_name) {
   // console.log(fromMap.literal);
 
   //--------- comment for debugging purposes
-  // const forReplacer = fromMap.replacer.bind(this);
+  const forReplacer = fromMap.replacer.bind(this);
   //--- You can comment this when you debugging our wrapper
-  // this.content = this.content.replace(fromMap.constant, forReplacer);
+  this.content = this.content.replace(
+    fromMap.constant, 
+    forReplacer
+  );
 
   //-------------- Uncomment for debugging reasons
-  if (debuggingReplacer(callback_name)) {
+  // if (debuggingReplacer(callback_name)) {
 
-    // console.log(callback_name);
+  //   // console.log(callback_name);
 
-    const forReplacer = fromMap.replacer.bind(this);
+  //   const forReplacer = fromMap.replacer.bind(this);
 
-    this.content = this.content.replace(
-      fromMap.constant, 
-      forReplacer
-    );
+  //   this.content = this.content.replace(
+  //     fromMap.constant, 
+  //     forReplacer
+  //   );
 
     
-  }  
-  return '';
+  // }  
+  // return '';
   //--------------
   //--------------
 

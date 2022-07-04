@@ -16,14 +16,15 @@ function _link(text, title, href) {
   const config = {
     params,
     name: 'link',
-
     // debug: true
   };
 
   try {
     const replaced = replaceLink(config);
 
-    return newLine + replaced + newLine;
+    return replaced;
+    // return newLine + replaced + newLine;
+
   } catch (error) {
     catch_error_trace_output(error);
   }

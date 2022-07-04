@@ -2,7 +2,7 @@
 
 import {
   replaceMarkdown,
-  replaceMarkdownPreviewText,
+  // replaceMarkdownPreviewText,
 } from '../domain/replace-markdown/replace-md';
 
 // import { stateInit } from '../helper';
