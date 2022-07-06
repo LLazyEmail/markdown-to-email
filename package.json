@@ -10,7 +10,7 @@
     "parse:full": "npm run build && cross-env PARSE=full node ./dist/bundle",
     "parseReact": "npm run build && cross-env PARSE=reactContentOnly node ./dist/bundle",
     "parseReact:full": "npm run build && cross-env PARSE=reactFull node ./dist/bundle",
-    "parsed": "cross-env PARSE=full node ./src/parser",
+    "parsed": "cross-env PARSE=full node ./src/index",
     "emptyT": "npm run build && cross-env PARSE=plainEmpty node ./dist/bundle",
     "defaultT": "npm run build && cross-env PARSE=plainTemplate node ./dist/bundle",
     "test:react": "npm run checkFolders && jest ./src/parserMDReact/tests",
@@ -25,7 +25,7 @@
     "test:watch": "npm run checkFolders && jest --watch ./src/tests",
     "prepare": "husky install"
   },
-  "author": "hirdbluebird, atherdon, vadim9999",
+  "author": "atherdon, vadim9999, hirdbluebird",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "7.17.10",

@@ -20,11 +20,15 @@ import {
 
 import { parseFullTHing } from './parse';
 
-const MESSAGE_HTML_CONTENT_ONLY = 'The content has been parsed successfully';
+//------------------
+const MESSAGE_HTML_CONTENT_ONLY = 
+  'The content has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE =
   'The full-template has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE2 =
   'The full-template has been parsed successfully2';
+//------------------
+
 
 //------------------------------
 const deliver = (template, name, message) => {
@@ -84,6 +88,7 @@ function generateFullTemplate2(sourceFile) {
 //   deliver(template, 'full-template', MESSAGE_HTML_CONTENT_ONLY);
 // }
 
+
 // this method is depricated.
 // we will remove export of it at some point.
 // const generateContentOnly = (sourceFile) => {
@@ -119,7 +124,11 @@ function compileEmptyTemplate() {
 
   const cleanTemplate = generateEmptyTemplateComponent();
 
-  deliver(cleanTemplate, 'lit-empty', 'Testing LIT template');
+  deliver(
+    cleanTemplate, 
+    'lit-empty', 
+    'Testing LIT template'
+    );
 }
 //--------------
 
@@ -130,7 +139,11 @@ function compileTemplate() {
 
   const template = generateTemplateComponent();
 
-  deliver(template, 'lit-template', 'Testing LIT template');
+  deliver(
+    template, 
+    'lit-template', 
+    'Testing LIT template'
+    );
 }
 //--------------
 

@@ -1,33 +1,41 @@
 // TODO: something wrong with newsletter-constants module
 
-import {
-  replaceMarkdown,
-  // replaceMarkdownPreviewText,
-} from '../domain/replace-markdown/replace-md';
+// import {
+//   replaceMarkdown,
+//   // replaceMarkdownPreviewText,
+// } from '../domain/replace-markdown/replace-md';
 
-// import { stateInit } from '../helper';
+
+import configureReplacer from '../domain/replacer-class/configuration-plain'
+
+
+
+// import Replacer from './replace';
+
+// function configureReplacer(state, replace_method) {
+//   // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????
+//   Replacer.replaceMDBinded = replace_method.bind(state);
+
+//   // I think this version isnt working well
+//   // Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
+
+//   // TODO crashed when here in FULL mode, needs to be fixed
+//   Replacer.previewText();
+//   // Replacer.replaceMDBindedPreviewText();
+//   // Replacer.comments();
+//   // ---
+//   Replacer.typography();
+//   Replacer.template();
+
+//   Replacer.miscellaneous();
+// }
+
+
+
+
 
 import stateInit from '../domain/state';
 
-import Replacer from './replace';
-
-function configureReplacer(state) {
-  // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????
-  Replacer.replaceMDBinded = replaceMarkdown.bind(state);
-
-  // I think this version isnt working well
-  // Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
-
-  // TODO crashed when here in FULL mode, needs to be fixed
-  Replacer.previewText();
-  // Replacer.replaceMDBindedPreviewText();
-  // Replacer.comments();
-  // ---
-  Replacer.typography();
-  Replacer.template();
-
-  Replacer.miscellaneous();
-}
 
 // TODO update this method. I'm sure it can be improved.
 function parse(source) {

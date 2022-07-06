@@ -32,16 +32,19 @@ function debuggingReplacer(name) {
     // 'paragraph',
     //  'link',
     //-------
-     'header', // not working
-       'title', 
-       'subtitle', 
-       'heading',
+
+    //  'header', // not working
+      //  'title', 
+      //  'subtitle', 
+      //  'heading',
 
     // ----------------
     // 'strong',
     // 'memes',
     // 'br',
-    'separator',
+
+    // 'separator',
+
     // 'previewText',
     // 'italic',
 
@@ -100,6 +103,8 @@ function replaceMarkdown(callback_name) {
 
   
 }
+
+
 
 
 // i think this method would be broken now, because we cant play with "this."

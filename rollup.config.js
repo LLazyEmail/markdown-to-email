@@ -5,7 +5,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import nodePolyfills from 'rollup-plugin-node-polyfills';
 
 export default {
-  input: 'src/parser.js',
+  input: 'src/index.js',
   output: {
     file: 'dist/bundle.js',
     format: 'cjs',
