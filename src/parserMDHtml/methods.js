@@ -1,12 +1,16 @@
 // @TODO both layouts things can be moved out from importing it here.
 
-import {
-  writeHTML,
+import {  
   checkWarnings,
   checkHtml,
-  printMessage,
-  generateTemplateName,
+  printMessage,  
 } from '../helper';
+
+
+import { 
+  writeHTML, 
+  generateTemplateName,   
+} from './domain/write';
 
 // rename too something else, because we have a mix there
 import {
@@ -18,7 +22,12 @@ import {
 
 // import plainV2 from '../domain/plainjs-template/template';
 
-import { parseFullTHing } from './parse';
+
+
+import { parseFullTHing } from './index';
+
+
+
 
 //------------------
 const MESSAGE_HTML_CONTENT_ONLY = 
