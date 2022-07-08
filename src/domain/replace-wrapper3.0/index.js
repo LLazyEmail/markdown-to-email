@@ -20,7 +20,7 @@ import CallbackFactory from '../callbacks-factory';
 
 import { catch_error_trace_output } from '../error-handle';
 
-const ERROR_REPLACER = ``;
+const ERROR_REPLACER = `no params was passed`;
 
 // const WR3_Template(params){
 //     const  { src, href, content, wrapper } = params;
@@ -64,6 +64,9 @@ function repSponsor(config) {
 //-------------------
 //--------------------------
 const replacerParagraph = (config) => {
+
+
+  
   // const { debug } = config || false;
 
   const configCopy = Object.assign(config, WR3_getWrapper(config.name));
@@ -100,7 +103,7 @@ const replaceHeader = (config) => {
   // TODO this can be moved into a separate method.
   // problably at some point we'll have only one replacer method
   // but at this point we cant have it, so we better to optimize things.
-  if(!inspector(config.params)) throw new Error('no params was passed');
+  if(!inspector(config.params)) throw new Error(ERROR_REPLACER);
 
   // console.log('123');
 
@@ -118,7 +121,7 @@ const replaceHeader = (config) => {
 const replaceStrong = (config) => {
   // const { debug } = config || false;
 
-  if(!inspector(config.params)) throw new Error('no params was passed');
+  if(!inspector(config.params)) throw new Error(ERROR_REPLACER);
 
   const configCopy = Object.assign(config, WR3_getWrapper(config.name));
 
@@ -130,7 +133,7 @@ const replaceStrong = (config) => {
 //--------------------------
 const replaceUl = (config) => {
 
-  if(!inspector(config.params)) throw new Error('no params was passed');
+  if(!inspector(config.params)) throw new Error(ERROR_REPLACER);
 
   const configCopy = Object.assign(config, WR3_getWrapper(config.name));
 
@@ -153,7 +156,7 @@ const getParsedSubListReplace = (config) => {
 const commonReplace = (config) => {
   // const { debug } = config || false;
 
-  if(!inspector(config.params)) throw new Error('no params was passed');
+  if(!inspector(config.params)) throw new Error(ERROR_REPLACER);
 
   const configCopy = Object.assign(config, WR3_getWrapper(config.name));
 
@@ -169,6 +172,12 @@ const inspectorCheck = (string) => {
     throw new Error('replace wrapper 3.0 is blank');
   }
 };
+
+const inspector2 = (params) => {
+  if (!inspector(string)){
+    throw new Error(ERROR_REPLACER);
+  }
+}
 
 function WR3_generateNewString(config) {
 
