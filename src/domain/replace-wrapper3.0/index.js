@@ -48,7 +48,8 @@ const WR3_getWrapper = (name, debug = false) => {
   }
 
 };
-
+//--------------------------
+//--------------------------
 function repSponsor(config) {
   // const { debug } = config || false;
 
@@ -59,6 +60,7 @@ function repSponsor(config) {
   return newString;
 }
 //-------------------
+//--------------------------
 const replacerParagraph = (config) => {
   // const { debug } = config || false;
 
@@ -71,7 +73,8 @@ const replacerParagraph = (config) => {
 
   return newString;
 };
-
+//--------------------------
+//--------------------------
 const replaceLink = (config) => {
   // const { debug } = config || false;
 
@@ -86,7 +89,8 @@ const replaceLink = (config) => {
 
   return newString;
 };
-
+//--------------------------
+//--------------------------
 const replaceHeader = (config) => {
   // const { debug } = config || false;
   // TODO this can be moved into a separate method.
@@ -105,7 +109,8 @@ const replaceHeader = (config) => {
 
   return newString;
 };
-
+//--------------------------
+//--------------------------
 const replaceStrong = (config) => {
   // const { debug } = config || false;
 
@@ -117,7 +122,8 @@ const replaceStrong = (config) => {
 
   return newString;
 };
-
+//--------------------------
+//--------------------------
 const replaceUl = (config) => {
 
   if(!inspector(config.params)) throw new Error('no params was passed');
@@ -130,14 +136,16 @@ const replaceUl = (config) => {
 
 }
 
-
+//--------------------------
+//--------------------------
 const getParsedSubListReplace = (config) => {
 
   console.log(WR3_getWrapper(config.name));
 
 }
 
-
+//--------------------------
+//--------------------------
 const commonReplace = (config) => {
   // const { debug } = config || false;
 
@@ -150,6 +158,8 @@ const commonReplace = (config) => {
   return newString;
 };
 
+//--------------------------
+//--------------------------
 const inspectorCheck = (string) => {
   if (!inspector(string)) {
     throw new Error('replace wrapper 3.0 is blank');
