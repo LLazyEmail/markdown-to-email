@@ -6,9 +6,12 @@ import {
   
   
   
-  import Replacer from './replace';
+  import Replacer from '../../parserMDHtml/replace';
   
   function configureReplacer(state) {
+
+
+
     // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????
     Replacer.replaceMDBinded = replaceMarkdown.bind(state);
   
@@ -24,6 +27,9 @@ import {
     Replacer.template();
   
     Replacer.miscellaneous();
+
+
+    
   }
 
   export default configureReplacer;

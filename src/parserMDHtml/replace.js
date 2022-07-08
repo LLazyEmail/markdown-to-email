@@ -146,6 +146,12 @@ class Replace {
     // this.emptyUl();
     // this.emptyOl();
   }
+
+
+  runConfigure () {
+    
+  }
+
 }
 
 export default new Replace();
