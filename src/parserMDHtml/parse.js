@@ -1,9 +1,6 @@
 // TODO: something wrong with newsletter-constants module
 
-
 import configureReplacer from '../domain/replacer-class/configuration-plain'
-
-
 
 // import Replacer from './replace';
 
@@ -56,4 +53,6 @@ function parseFullTHing(params) {
   return parse(source);
 }
 
-export { parseFullTHing, parse };
+export { 
+  parseFullTHing, parse 
+};

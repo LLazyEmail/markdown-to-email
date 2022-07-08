@@ -66,7 +66,7 @@ class Replace {
     this.paragraph = () => {
       this.replaceMDBinded('paragraph');
     };
-
+    //---------------------
     this.emptyUl = () => {
       this.replaceMDBinded('REGEXP_EMPTY_UL');
     };
@@ -80,6 +80,7 @@ class Replace {
       // this.replaceMDBinded(this._constants.REGEXP_EMPTY_BLOCKQUOTE, newLine);
       this.replaceMDBinded('REGEXP_EMPTY_BLOCKQUOTE');
     };
+    //---------------------
 
     this.br = function () {
       this.replaceMDBinded('br');
