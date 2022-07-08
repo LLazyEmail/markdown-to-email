@@ -41,6 +41,7 @@ const deliver = (template, name, message) => {
   printMessage(message, 'green2');
 };
 //------------------------------
+
 function verification(warnings, content = false) {
   // ***
   if (warnings) checkWarnings(warnings);
@@ -48,6 +49,8 @@ function verification(warnings, content = false) {
   // ***
   if (content) checkHtml(content);
 }
+
+
 //------------------------------
 function generateFullTemplate2(sourceFile) {
   // should warnings be returned here?
@@ -152,9 +155,11 @@ export {
 
   generateFullTemplate2,
   // generateFullTemplate,
+  //-------------
   MESSAGE_HTML_CONTENT_ONLY,
   MESSAGE_HTML_FULL_TEMPLATE,
   MESSAGE_HTML_FULL_TEMPLATE2,
+  //-------------
   compileEmptyTemplate,
   compileTemplate,
 };

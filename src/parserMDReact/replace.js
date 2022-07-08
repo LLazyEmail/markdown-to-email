@@ -1,7 +1,10 @@
+// TODO merge with Plain Replacer, as we moved out stuff away
+//--------- 
 class ReactReplacer {
-  //   constructor(constants) {
+
   constructor() {
     this.replaceMDBinded = () => {};
+
     this.replaceMDBindedPreviewText = () => {};
 
     this.previewText = function () {

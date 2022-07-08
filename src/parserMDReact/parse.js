@@ -1,26 +1,11 @@
 import stateInit from '../domain/state';
-
-
-import configureReplacer from '../domain/replacer-class/configuration-куфсе'
-
-//--------------------------------------
-//------
-// TODO move this chunk into domain/replacer-class/configuration-react.js
-import {
-  replaceMarkdown,
-  //   replaceMarkdownPreviewText,
-} from '../domain/replace-markdown/replace-md';
-
-import ReactReplacer from './replace';
-
+import configureReplacer from '../domain/replacer-class/configuration-react'
 
 // @todo update this method. I'm sure it can be improved.
 function parseMDReact(source, isFull) {
+  
   const state = stateInit(source);
-
   configureReplacer(state, isFull);
-
- 
 
   return state;
 }

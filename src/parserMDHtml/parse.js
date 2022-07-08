@@ -1,9 +1,5 @@
 // TODO: something wrong with newsletter-constants module
-
 import configureReplacer from '../domain/replacer-class/configuration-plain'
-
-
-
 import stateInit from '../domain/state';
 
 

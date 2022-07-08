@@ -102,6 +102,7 @@ const printMessage = ({ message, type }) => {
   }
 };
 
+//---------------------
 // const ERROR_TITLE = '`title` is a required option for `renderTemplate`'
 const checkingTitle = (title) => {
   if (!title) {
@@ -123,6 +124,8 @@ const checkingPreviewText = (previewText) => {
   }
 };
 
+
+
 // ---
 
 export {
@@ -130,9 +133,11 @@ export {
   checkErrors,
   checkWarnings,
   checkHtml,
+  //-------
   checkingTitle,
   checkingBodyContent,
   checkingPreviewText,
+  //----------------
   printMessage,
   // stateInit,
 };
