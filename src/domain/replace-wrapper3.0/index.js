@@ -55,28 +55,14 @@ const WR3_getWrapper = (name, debug = false) => {
 function repSponsor(config) {
   // const { debug } = config || false;
 
-  const configCopy = Object.assign(config, WR3_getWrapper(config.name));
 
-  const newString = WR3_generateNewString(configCopy);
-
-  return newString;
+  return commonReplace(config);
 }
 //-------------------
 //--------------------------
 const replacerParagraph = (config) => {
 
-
-  
-  // const { debug } = config || false;
-
-  const configCopy = Object.assign(config, WR3_getWrapper(config.name));
-
-  // if(debug) console.log(configCopy);
-  const newString = WR3_generateNewString(configCopy);
-  // if(debug) console.log(newString);
-  // inspectorCheck(newString);
-
-  return newString;
+  return commonReplace(config);
 };
 //--------------------------
 //--------------------------
@@ -103,7 +89,9 @@ const replaceHeader = (config) => {
   // TODO this can be moved into a separate method.
   // problably at some point we'll have only one replacer method
   // but at this point we cant have it, so we better to optimize things.
-  if(!inspector(config.params)) throw new Error(ERROR_REPLACER);
+  // if(!inspector(config.params)) throw new Error(ERROR_REPLACER);
+
+  inspector2(config.params)
 
   // console.log('123');
 
@@ -121,25 +109,15 @@ const replaceHeader = (config) => {
 const replaceStrong = (config) => {
   // const { debug } = config || false;
 
-  if(!inspector(config.params)) throw new Error(ERROR_REPLACER);
-
-  const configCopy = Object.assign(config, WR3_getWrapper(config.name));
-
-  const newString = WR3_generateNewString(configCopy);
-
-  return newString;
+  return commonReplace(config);
 };
 //--------------------------
 //--------------------------
 const replaceUl = (config) => {
 
-  if(!inspector(config.params)) throw new Error(ERROR_REPLACER);
 
-  const configCopy = Object.assign(config, WR3_getWrapper(config.name));
 
-  const newString = WR3_generateNewString(configCopy);
-
-  return newString;
+  return commonReplace(config);
 
 }
 
@@ -149,6 +127,13 @@ const getParsedSubListReplace = (config) => {
 
   console.log(WR3_getWrapper(config.name));
 
+
+  
+  // const configCopy = Object.assign(config, WR3_getWrapper(config.name));
+
+  // const newString = WR3_generateNewString(configCopy);
+
+  // return newString;
 }
 
 //--------------------------
@@ -156,7 +141,8 @@ const getParsedSubListReplace = (config) => {
 const commonReplace = (config) => {
   // const { debug } = config || false;
 
-  if(!inspector(config.params)) throw new Error(ERROR_REPLACER);
+  // if(!inspector(config.params)) throw new Error(ERROR_REPLACER);
+  inspector2(config.params)
 
   const configCopy = Object.assign(config, WR3_getWrapper(config.name));
 
