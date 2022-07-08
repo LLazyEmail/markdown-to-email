@@ -1,4 +1,4 @@
-import stateInit from '../domain/state';
+import stateInit from '../state';
 
 function parse(source, configureReplacer) {
     // passing content into the state,

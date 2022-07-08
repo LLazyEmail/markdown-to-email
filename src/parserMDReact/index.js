@@ -1,18 +1,11 @@
-import stateInit from '../domain/state';
 import configureReplacer from '../domain/replacer-class/configuration-react'
-
-
 import { 
   generateReactContent, 
   generateReactFullTemplate 
 } from './methods';
 
-// import { 
-//   parseMDReact, 
-//   parseMDReactFullThing 
-// } from './parse';
-
-
+// import parse from '../domain/parse'
+import stateInit from '../domain/state';
 
 // @todo update this method. I'm sure it can be improved.
 function parseMDReact(source, isFull) {

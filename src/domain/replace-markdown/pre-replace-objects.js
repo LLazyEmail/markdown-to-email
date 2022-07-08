@@ -24,7 +24,7 @@ import {
   _separator,
   //
   _previewText,
-} from '../../callbacks/callbacksHtml/index';
+} from '../../callbacks/html/index';
 
 import {
   REGEXP_HEADER,
