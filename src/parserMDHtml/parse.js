@@ -1,10 +1,5 @@
 // TODO: something wrong with newsletter-constants module
 
-// import {
-//   replaceMarkdown,
-//   // replaceMarkdownPreviewText,
-// } from '../domain/replace-markdown/replace-md';
-
 
 import configureReplacer from '../domain/replacer-class/configuration-plain'
 

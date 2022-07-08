@@ -1,7 +1,8 @@
 import {
     replaceMarkdown,
     // replaceMarkdownPreviewText,
-  } from '../domain/replace-markdown/replace-md';
+  } from '../replace-markdown/replace-md';
+  
   
   
   
@@ -10,6 +11,8 @@ import {
   
   function configureReplacer(state) {
 
+
+    // TODO I propose to move inner things of this method into Replace -> runConfigure()
 
 
     // CAN WE MOVE OUT CALLBACKS INTO REPLACER?????
@@ -29,7 +32,7 @@ import {
     Replacer.miscellaneous();
 
 
-    
+
   }
 
   export default configureReplacer;

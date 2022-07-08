@@ -2,7 +2,7 @@
 // import {
 //     replaceMarkdown,
     
-//   } from '../domain/replace-markdown/replace-md';
+//   } from '../replace-markdown/replace-md';
 
 //  import Replacer from '../../parserMDHtml/replace';
 

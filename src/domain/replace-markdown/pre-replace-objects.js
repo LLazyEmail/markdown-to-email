@@ -51,8 +51,9 @@ import { REGEXP_SUB_LISTS } from '../regular-expressions/';
 
 // import misc from '../templates/OuterTemplate/layouts/misc';
 
+// TODO replace this layout with plain v3 layout
 import body from '../../templates/PlainJSOuterTemplate/layouts/body';
-
+const { sponsorLiteral, previewTextLiteral } = body;
 
 
 
@@ -77,30 +78,35 @@ import {
   strongLiteral,
   subtitleLiteral,
   separatorLiteral,
-} from '../plainjs-template/typography/index';
+} from '../email-prototypes/plainjs/typography/index';
 
 
-const { sponsorLiteral, previewTextLiteral } = body;
+
+
+import objectBuilder from '../md/object-builder';
+
 
 // console.log(paragraphLiteral);
 
-const ERROR_REGEX_CONSTANT = (value) =>
-  `something wrong with RegEx constant ${value}`;
+// const ERROR_REGEX_CONSTANT = (value) =>
+//   `something wrong with RegEx constant ${value}`;
 
-  const ERROR_REPLACER_FUNCTION = (value) =>
-  `something wrong with replacer function ${value}`;
+//   const ERROR_REPLACER_FUNCTION = (value) =>
+//   `something wrong with replacer function ${value}`;
 
-// const objectBuilder = (constant, replacer) => {constant, replacer}
-function objectBuilder(constant, replacer, literal = false) {
-  // TODO add typeof for checking replacer as a function
-  // console.log( typeof element.replacer === 'undefined' );
+// // const objectBuilder = (constant, replacer) => {constant, replacer}
+// function objectBuilder(constant, replacer, literal = false) {
+//   // TODO add typeof for checking replacer as a function
+//   // console.log( typeof element.replacer === 'undefined' );
 
-  if (!constant) throw new Error(ERROR_REGEX_CONSTANT);
-  if (!replacer) throw new Error(ERROR_REPLACER_FUNCTION);
+//   if (!constant) throw new Error(ERROR_REGEX_CONSTANT);
+//   if (!replacer) throw new Error(ERROR_REPLACER_FUNCTION);
 
-  // i want to replace it later with components
-  return { constant, replacer, literal };
-}
+//   // i want to replace it later with components
+//   return { constant, replacer, literal };
+// }
+
+
 
 
 const strong = objectBuilder(REGEXP_STRONG, _strong, strongLiteral);
