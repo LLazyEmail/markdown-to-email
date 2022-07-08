@@ -1,8 +1,8 @@
 // @TODO both layouts things can be moved out from importing it here.
 
 import {  
-  checkWarnings,
-  checkHtml,
+  // checkWarnings,
+  // checkHtml,
   printMessage,  
 } from '../helper';
 
@@ -12,6 +12,8 @@ import {
   generateTemplateName,   
 } from '../domain/write' 
 
+
+import { verification } from '../domain/helper-methods'
 
 // rename too something else, because we have a mix there
 import {
@@ -52,13 +54,13 @@ const deliver = (template, name, message) => {
 };
 //------------------------------
 
-function verification(warnings, content = false) {
-  // ***
-  if (warnings) checkWarnings(warnings);
+// function verification(warnings, content = false) {
+//   // ***
+//   if (warnings) checkWarnings(warnings);
 
-  // ***
-  if (content) checkHtml(content);
-}
+//   // ***
+//   if (content) checkHtml(content);
+// }
 
 
 //------------------------------

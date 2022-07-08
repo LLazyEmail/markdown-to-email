@@ -4,6 +4,9 @@ import {
   generateReactFullTemplate 
 } from './methods';
 
+//---------------
+// TODO replace with separated parse method
+
 // import parse from '../domain/parse'
 import stateInit from '../domain/state';
 
