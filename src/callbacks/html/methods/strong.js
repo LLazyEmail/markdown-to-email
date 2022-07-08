@@ -36,7 +36,6 @@ function _strong(text, doubleAsterix, content, asterix) {
 
   // NOT FINISHED
 
-
   // const replaced = replaceStrong(config);
   // return replaced;
 

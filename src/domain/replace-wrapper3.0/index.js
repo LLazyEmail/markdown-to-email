@@ -138,20 +138,14 @@ const commonReplace = (config) => {
   const configCopy = Object.assign(config, WR3_getWrapper(config.name));
 
 
+  try {
 
+    const newString = WR3_generateNewString(configCopy);
 
-  const newString = WR3_generateNewString(configCopy);
+    return newString;
 
+  } catch (error) { catch_error_trace_output(error); }
 
-
-
-
-  return newString;
-
-
-
-
-  
 };
 
 
