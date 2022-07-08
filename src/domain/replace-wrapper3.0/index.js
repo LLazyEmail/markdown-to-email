@@ -20,6 +20,8 @@ import CallbackFactory from '../callbacks-factory';
 
 import { catch_error_trace_output } from '../error-handle';
 
+const ERROR_REPLACER = ``;
+
 // const WR3_Template(params){
 //     const  { src, href, content, wrapper } = params;
 //     return html(wrapper);
@@ -93,6 +95,8 @@ const replaceLink = (config) => {
 //--------------------------
 const replaceHeader = (config) => {
   // const { debug } = config || false;
+
+
   // TODO this can be moved into a separate method.
   // problably at some point we'll have only one replacer method
   // but at this point we cant have it, so we better to optimize things.

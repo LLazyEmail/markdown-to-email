@@ -1,6 +1,7 @@
 // import innerComponents from './loyouts/body';
 
-// import { printMain, printFooter, printBody } from './methods';
+
+
 
 // import fullTemplateOLD from './depricated/full-template';
 import { fullTemplate } from './fullTemplate';
@@ -9,6 +10,8 @@ import generateTemplateComponent from './t/generateTemplate';
 import generateEmptyTemplateComponent from './t/emptyTemplate';
 
 export {
+
+
   //   body,
 
   //   //spread misc
@@ -19,6 +22,8 @@ export {
   //   newsletterSponsorshipLink,
   //   unsubscribe,
   //   head,
+
+
 
   // fullTemplateOLD,
   fullTemplate,
