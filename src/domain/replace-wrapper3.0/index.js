@@ -85,12 +85,6 @@ const replaceLink = (config) => {
 const replaceHeader = (config) => {
   // const { debug } = config || false;
 
-
-  // TODO this can be moved into a separate method.
-  // problably at some point we'll have only one replacer method
-  // but at this point we cant have it, so we better to optimize things.
-  // if(!inspector(config.params)) throw new Error(ERROR_REPLACER);
-
   inspector2(config.params)
 
   // console.log('123');
@@ -115,8 +109,6 @@ const replaceStrong = (config) => {
 //--------------------------
 const replaceUl = (config) => {
 
-
-
   return commonReplace(config);
 
 }
@@ -128,7 +120,6 @@ const getParsedSubListReplace = (config) => {
   console.log(WR3_getWrapper(config.name));
 
 
-  
   // const configCopy = Object.assign(config, WR3_getWrapper(config.name));
 
   // const newString = WR3_generateNewString(configCopy);
@@ -146,10 +137,25 @@ const commonReplace = (config) => {
 
   const configCopy = Object.assign(config, WR3_getWrapper(config.name));
 
+
+
+
   const newString = WR3_generateNewString(configCopy);
 
+
+
+
+
   return newString;
+
+
+
+
+  
 };
+
+
+
 
 //--------------------------
 //--------------------------

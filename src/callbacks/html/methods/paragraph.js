@@ -1,6 +1,6 @@
 import { replaceWrapper, newLine } from '../helpers';
 
-import { replacerParagraph } from '../../../domain/replace-wrapper3.0';
+import { replacerParagraph, commonReplace } from '../../../domain/replace-wrapper3.0';
 
 import { catch_error_trace_output } from '../../../domain/error-handle';
 
@@ -32,6 +32,7 @@ export function _paragraphWrapper(text, markdown_string) {
 
   try {
     const replaced = replacerParagraph(config);
+    // commonReplace
 
     return newLine + replaced + newLine;
   } catch (error) {

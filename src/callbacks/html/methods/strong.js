@@ -1,4 +1,4 @@
-import { replaceStrong } from '../../../domain/replace-wrapper3.0';
+import { replaceStrong, commonReplace } from '../../../domain/replace-wrapper3.0';
 
 import { catch_error_trace_output } from '../../../domain/error-handle';
 
@@ -36,13 +36,23 @@ function _strong(text, doubleAsterix, content, asterix) {
 
   // NOT FINISHED
 
+
+  // const replaced = replaceStrong(config);
+  // return replaced;
+
   try {
 
     const replaced = replaceStrong(config);
-
+    // const replaced = commonReplace(config);
+    // commonReplace
     return replaced;
 
   } catch (error) { catch_error_trace_output(error); }
+
+
+
+
+
 }
 
 export default _strong;

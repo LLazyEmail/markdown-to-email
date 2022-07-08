@@ -1,6 +1,6 @@
 // import { replaceWrapper,  } from '../helpers';
 
-import { repSponsor } from '../../../domain/replace-wrapper3.0';
+import { repSponsor, commonReplace } from '../../../domain/replace-wrapper3.0';
 
 import { catch_error_trace_output } from '../../../domain/error-handle';
 
@@ -38,7 +38,7 @@ export function _sponsorship(markdown_string) {
 
   try {
     const replaced = repSponsor(config);
-
+    // commonReplace
     return replaced;
 
     // or
