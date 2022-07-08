@@ -1,7 +1,8 @@
 // TODO: something wrong with newsletter-constants module
 import configureReplacer from '../domain/replacer-class/configuration-plain'
-import stateInit from '../domain/state';
+// import stateInit from '../domain/state';
 
+import parse from '../domain/parse'
 
 import {
   generateFullTemplate2,
@@ -10,28 +11,27 @@ import {
 } from './methods';
 
 
-// TODO update this method. I'm sure it can be improved.
-function parse(source) {
-  // passing content into the state,
-  // so we can do our updates step by step and track any errors
-  const state = stateInit(source);
+// function parse(source) {
+//   // passing content into the state,
+//   // so we can do our updates step by step and track any errors
+//   const state = stateInit(source);
 
-  configureReplacer(state);
+//   configureReplacer(state);
 
-  // i'm adding it only because error warning didnt return red stuff
-  state.innerCheckErrors();
+//   // i'm adding it only because error warning didnt return red stuff
+//   state.innerCheckErrors();
 
-  // console.log(state)
+//   // console.log(state)
 
-  return state;
-}
+//   return state;
+// }
 
 function parseFullTHing(params) {
   // console.log(params);
 
   const { source } = params;
 
-  return parse(source);
+  return parse(source, configureReplacer);
 }
 
 // export { 

@@ -11,7 +11,7 @@ import {
   writeHTML, 
   generateTemplateName, 
   // isFolderExists 
-} from './domain/write';
+} from '../domain/write';
 
 
 import {

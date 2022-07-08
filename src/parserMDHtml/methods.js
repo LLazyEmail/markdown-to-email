@@ -10,7 +10,8 @@ import {
 import { 
   writeHTML, 
   generateTemplateName,   
-} from './domain/write';
+} from '../domain/write' 
+
 
 // rename too something else, because we have a mix there
 import {
