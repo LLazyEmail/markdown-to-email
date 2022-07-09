@@ -24,18 +24,6 @@ function inspector(variable = false) {
   return true;
 }
 
-// later we'll extend this method
-// object assing will help us.
-// const objectBuilder = (constant, replacer) => {constant, replacer}
-function objectBuilder(constant, replacer, literal = false) {
-  // TODO add typeof for checking replacer as a function
-  // console.log( typeof element.replacer === 'undefined' );
-  if (!constant) throw new Error(ERROR_REGEX_CONSTANT);
-  if (!replacer) throw new Error(ERROR_REPLACER_FUNCTION);
-
-  // i want to replace it later with components
-  return { constant, replacer, literal };
-}
 
 const catch_error_trace_output = (error) => {
   // we need to test how it actually work
