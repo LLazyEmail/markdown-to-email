@@ -24,9 +24,13 @@ class Replace {
       this.replaceMDBinded('italic');
     };
 
+
+    // TODO working not ideally, because we have headings & subtitles, so it's confusing a little bit
     this.header = () => {
       this.replaceMDBinded('header');
     };
+
+
 
     this.image = () => {
       this.replaceMDBinded('image');
@@ -127,7 +131,7 @@ class Replace {
     this.strong();
     this.em();
 
-    // this.header();
+    this.header();
 
     this.image();
     this.link();

@@ -13,11 +13,9 @@ function _previewText(text, content) {
     const config = {
 
         params,
-
         folder: 'body',
-
         name: 'previewText',
-        debug: true,
+        // debug: true,
       };
     
 

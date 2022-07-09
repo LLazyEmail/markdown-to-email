@@ -4,12 +4,11 @@ import { replaceHeader, commonReplace } from '../../../domain/replace-wrapper3.0
 
 import { catch_error_trace_output } from '../../../domain/error-handle';
 
-
-
-import CallbackFactory from '../../../domain/callbacks-factory';
+// import CallbackFactory from '../../../domain/callbacks-factory';
 
 // TODO fix issue related to text variable
 function _header(text, chars, content) {
+
   // const factory = CallbackFactory.create();
 
 
@@ -21,16 +20,15 @@ function _header(text, chars, content) {
 
   const name = titleTypes[chars.length - 1];
 
-
   const config = {
     params,
     name,
-    // name: 'header',
-    // debug: true,
+    
+    debug: true,
   };
 
   // NOT FINISHED
-  // console.log(config);
+  console.log(config);
 
   switch (name) {
     case 'subtitle':
@@ -63,25 +61,28 @@ const headingCase = (config) => {
 
 const titleCase = (config) => {
 
-  const replaced = commonReplace(config);
+  const replaced = replaceHeader(config);
+  console.log(replaced);
   return newLine + replaced;  
 
 }
 
 const subtitleCase = (config) => {
+
+  const replaced = replaceHeader(config);
+  console.log(replaced);
+  return newLine + replaced;  
   
-
-
-  try {
-    // console.log('123');
-    // const replaced = commonReplace(config);
-    const replaced = replaceHeader(config);
-    // console.log(replaced);
-    return newLine + replaced;
+  // try {
+  //   // console.log('123');
+  //   // const replaced = commonReplace(config);
+  //   const replaced = replaceHeader(config);
+  //   // console.log(replaced);
+  //   return newLine + replaced;
     
-  } catch (error) {
-    catch_error_trace_output(error);
-  }
+  // } catch (error) {
+  //   catch_error_trace_output(error);
+  // }
 
 }
 
