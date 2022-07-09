@@ -1,9 +1,8 @@
 //----------------
-
 // import { html } from 'lit-html'
 
-import body from '../../templates/PlainJSOuterTemplate/layouts/body';
-import misc from '../../templates/PlainJSOuterTemplate/layouts/misc';
+// import body from '../../templates/PlainJSOuterTemplate/layouts/body';
+// import misc from '../../templates/PlainJSOuterTemplate/layouts/misc';
 
 import {
   getWrapper,
@@ -32,7 +31,10 @@ const WR3_getWrapper = (name, debug = false) => {
     console.log(name);
   }
   
-  // console.log(mainObj[name].literal)
+  if(debug){
+    console.log(mainObj[name].literal)
+  }
+  
 
   try {
     
@@ -49,20 +51,7 @@ const WR3_getWrapper = (name, debug = false) => {
   }
 
 };
-//--------------------------
-//--------------------------
-// function repSponsor(config) {
-//   // const { debug } = config || false;
 
-
-//   return commonReplace(config);
-// }
-//-------------------
-//--------------------------
-// const replacerParagraph = (config) => {
-
-//   return commonReplace(config);
-// };
 //--------------------------
 //--------------------------
 const replaceLink = (config) => {
@@ -97,20 +86,6 @@ const replaceHeader = (config) => {
 
   return newString;
 };
-//--------------------------
-//--------------------------
-// const replaceStrong = (config) => {
-//   // const { debug } = config || false;
-
-//   return commonReplace(config);
-// };
-//--------------------------
-//--------------------------
-// const replaceUl = (config) => {
-
-//   return commonReplace(config);
-
-// }
 
 //--------------------------
 //--------------------------
@@ -131,7 +106,7 @@ const getParsedSubListReplace = (config) => {
 const commonReplace = (config) => {
   // const { debug } = config || false;
 
-  // if(!inspector(config.params)) throw new Error(ERROR_REPLACER);
+
   inspector2(config.params)
 
   const configCopy = Object.assign(config, WR3_getWrapper(config.name));
@@ -160,7 +135,7 @@ const inspectorCheck = (string) => {
 };
 
 const inspector2 = (params) => {
-  if (!inspector(string)){
+  if (!inspector(params)){
     throw new Error(ERROR_REPLACER);
   }
 }

@@ -7,10 +7,10 @@ function debuggingReplacer(name) {
       //  'link',
       //-------
   
-      //  'header', // not working
+       'header', // not working
         //  'title', 
-        //  'subtitle', 
-        //  'heading',
+         'subtitle', 
+         'heading',
   
       // ----------------
       // 'strong',

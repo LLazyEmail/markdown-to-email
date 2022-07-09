@@ -68,6 +68,7 @@ const titleCase = (config) => {
     // console.log('123');
     // const replaced = commonReplace(config);
     const replaced = replaceHeader(config);
+    console.log(replaced);
     return newLine + replaced;
     
   } catch (error) {
@@ -78,6 +79,9 @@ const titleCase = (config) => {
 
 const subtitleCase = (config) => {
   
+  console.log(config.params)
+
+
   try {
     // console.log('123');
     // const replaced = commonReplace(config);

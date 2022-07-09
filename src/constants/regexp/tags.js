@@ -13,11 +13,19 @@ function beforeEnd(string) {
   return string + newLine;
 }
 
+// -----------
 // TODO: make all regex to feel similar
-const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, 'g');
+// prev regEx not working well, as it's eating preview text
+
+const regex_header = `(#+)[^~](.*)`;
+const REGEXP_HEADER = new RegExp(newLine + regex_header, 'g');
+
+// OLD version of header
+// const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, 'g');
 
 // const REGEXP_H3 = /^### (.*$)/gim;
 // const REGEXP_H2 = /^## (.*$)/gim;
+// -----------
 // -----------
 
 // TODO: make all regex to feel similar

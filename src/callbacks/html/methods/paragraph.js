@@ -28,10 +28,8 @@ export function _paragraphWrapper(text, markdown_string) {
     // debug: true
   };
 
-
   const replaced = commonReplace(config);
   return newLine + replaced + newLine;
-
 
 }
 
