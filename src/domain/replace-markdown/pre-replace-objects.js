@@ -110,7 +110,7 @@ const italic = objectBuilder(REGEXP_EM, _italic, italicLiteral);
 const header = objectBuilder(REGEXP_HEADER, _header, headingLiteral);
 
 // sub item for header. not ideal
-const sibtitle = objectBuilder(REGEXP_HEADER, _header, subtitleLiteral);
+const subtitle = objectBuilder(REGEXP_HEADER, _header, subtitleLiteral);
 
 // title for header. not sure if it's main title or not
 const title = objectBuilder(REGEXP_HEADER, _header, titleLiteral);
@@ -196,7 +196,7 @@ export default {
   italic,
   //----------
   header,
-  sibtitle,
+  subtitle,
   title,
   //-----------
   q,

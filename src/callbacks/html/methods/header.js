@@ -21,13 +21,12 @@ function _header(text, chars, content) {
 
   const name = titleTypes[chars.length - 1];
 
-  // console.log(name);
 
   const config = {
     params,
     name,
     // name: 'header',
-    debug: true,
+    // debug: true,
   };
 
   // NOT FINISHED
@@ -64,28 +63,20 @@ const headingCase = (config) => {
 
 const titleCase = (config) => {
 
-  try {
-    // console.log('123');
-    // const replaced = commonReplace(config);
-    const replaced = replaceHeader(config);
-    console.log(replaced);
-    return newLine + replaced;
-    
-  } catch (error) {
-    catch_error_trace_output(error);
-  }
+  const replaced = commonReplace(config);
+  return newLine + replaced;  
 
 }
 
 const subtitleCase = (config) => {
   
-  console.log(config.params)
 
 
   try {
     // console.log('123');
     // const replaced = commonReplace(config);
     const replaced = replaceHeader(config);
+    // console.log(replaced);
     return newLine + replaced;
     
   } catch (error) {

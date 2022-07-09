@@ -32,9 +32,12 @@ const WR3_getWrapper = (name, debug = false) => {
   }
   
   if(debug){
+    console.log(mainObj[name]);
+
     console.log(mainObj[name].literal)
   }
   
+  inspectorCheck(mainObj[name]);
 
   try {
     
@@ -75,7 +78,7 @@ const replaceHeader = (config) => {
 
   inspector2(config.params)
 
-  // console.log('123');
+  // console.log(config);
 
   const configCopy = Object.assign(
     config, 
