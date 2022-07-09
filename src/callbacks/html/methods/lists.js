@@ -1,17 +1,12 @@
 import {
-  replaceWrapper,
+  // replaceWrapper,
   newLine,
   beforeBeginingNewLine,
   beforeEnd,
 } from '../helpers';
 
 import { REGEXP_SUB_LISTS } from '../../../domain/regular-expressions'
-
-
-import { replaceUl, commonReplace } from '../../../domain/replace-wrapper3.0';
-
-import { catch_error_trace_output } from '../../../domain/error-handle';
-
+import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 // Case: when you have a sublist inside of your list
 // TODO add _ in the name of this method in order to keep the same logic
@@ -33,12 +28,8 @@ function getParsedSubList(subList) {
       // debug: true
     };
 
-    try {
-      const replaced = commonReplace(config);      
-      return replaced;
-    } catch (error) {
-      catch_error_trace_output(error);
-    }
+    const replaced = commonReplace(config);      
+    return replaced;
 
 
   });
@@ -70,14 +61,9 @@ function getParsedLists(parsedSubLists) {
     };
 
 
-    try {
-      const replaced = commonReplace(config);
+    const replaced = commonReplace(config);
+    return newLine + replaced;
 
-     return newLine + replaced;
-      // return result;
-    } catch (error) {
-      catch_error_trace_output(error);
-    }
   });
 
   // console.log(parsedList)
@@ -114,12 +100,10 @@ function _ulList(text, list) {
       // debug: true,
     };
 
-    try {
-      const replaced = commonReplace(config);
-      return newLine + replaced;
-    } catch (error) {
-      catch_error_trace_output(error);
-    }
+
+    const replaced = commonReplace(config);
+    return newLine + replaced;
+
   });
 
 
@@ -137,16 +121,10 @@ function _ulList(text, list) {
     // debug: true,
   };
 
+  const replaced = commonReplace(config);
 
+  return newLine + replaced + newLine;
 
-  try {
-    const replaced = commonReplace(config);
-
-    return newLine + replaced + newLine;
-    // return result;
-  } catch (error) {
-    catch_error_trace_output(error);
-  }
 
 }
 

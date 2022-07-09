@@ -1,5 +1,4 @@
 //----------------
-// ----------- propose to move repSponsor here, in order to avoid confusion
 
 // import { html } from 'lit-html'
 
@@ -52,18 +51,18 @@ const WR3_getWrapper = (name, debug = false) => {
 };
 //--------------------------
 //--------------------------
-function repSponsor(config) {
-  // const { debug } = config || false;
+// function repSponsor(config) {
+//   // const { debug } = config || false;
 
 
-  return commonReplace(config);
-}
+//   return commonReplace(config);
+// }
 //-------------------
 //--------------------------
-const replacerParagraph = (config) => {
+// const replacerParagraph = (config) => {
 
-  return commonReplace(config);
-};
+//   return commonReplace(config);
+// };
 //--------------------------
 //--------------------------
 const replaceLink = (config) => {
@@ -100,18 +99,18 @@ const replaceHeader = (config) => {
 };
 //--------------------------
 //--------------------------
-const replaceStrong = (config) => {
-  // const { debug } = config || false;
+// const replaceStrong = (config) => {
+//   // const { debug } = config || false;
 
-  return commonReplace(config);
-};
+//   return commonReplace(config);
+// };
 //--------------------------
 //--------------------------
-const replaceUl = (config) => {
+// const replaceUl = (config) => {
 
-  return commonReplace(config);
+//   return commonReplace(config);
 
-}
+// }
 
 //--------------------------
 //--------------------------
@@ -153,6 +152,7 @@ const commonReplace = (config) => {
 
 //--------------------------
 //--------------------------
+// TODO move to domain/error-handle
 const inspectorCheck = (string) => {
   if (!inspector(string)) {
     throw new Error('replace wrapper 3.0 is blank');
@@ -181,13 +181,13 @@ function WR3_generateNewString(config) {
 }
 
 export {
-  repSponsor,
-  replacerParagraph,
+  // repSponsor,
+  // replacerParagraph,
   replaceLink,
   replaceHeader,
-  replaceStrong,
+  // replaceStrong,
   commonReplace,
-  replaceUl,
+  // replaceUl,
   WR3_generateNewString,
   WR3_getWrapper,
 };
