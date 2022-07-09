@@ -30,14 +30,22 @@ export function _paragraphWrapper(text, markdown_string) {
     // debug: true
   };
 
-  try {
-    const replaced = replacerParagraph(config);
-    // commonReplace
 
-    return newLine + replaced + newLine;
-  } catch (error) {
-    catch_error_trace_output(error);
-  }
+  const replaced = commonReplace(config);
+  return newLine + replaced + newLine;
+
+  // try {
+  //   const replaced = replacerParagraph(config);
+  //   // commonReplace
+
+  
+  // } catch (error) {
+  //   catch_error_trace_output(error);
+  // }
+
+
+
+
 }
 
 export default _paragraphWrapper;

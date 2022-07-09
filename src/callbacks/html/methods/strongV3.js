@@ -1,10 +1,13 @@
 import { replaceStrong, commonReplace } from '../../../domain/replace-wrapper3.0';
 
-import { catch_error_trace_output } from '../../../domain/error-handle';
+// import { catch_error_trace_output } from '../../../domain/error-handle';
+
+
 
 // TODO make sense to the text variable
 // probably Vadim knows what is doing on here,
 // I think he was the person that did all these funcitons.
+
 
 import CallbackFactory from '../../../domain/callbacks-factory';
 
@@ -24,6 +27,7 @@ function _strong(text, doubleAsterix, content, asterix) {
     // debug: true,
   };
 
+
   // const settings = {
   //   params,
   //   name: 'strong',
@@ -42,4 +46,4 @@ function _strong(text, doubleAsterix, content, asterix) {
 
 }
 
-export default _strong;
+// export default _strong;

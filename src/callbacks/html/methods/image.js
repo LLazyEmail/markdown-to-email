@@ -22,13 +22,23 @@ export function _image(text, alt, srcWithTooltip) {
   // eslint-disable-next-line no-plusplus
   this.warnings.images++;  
 
-  try {
-    const replaced = commonReplace(config);
 
-    return replaced;
-  } catch (error) {
-    catch_error_trace_output(error);
-  }
+
+  const replaced = commonReplace(config);
+  return replaced;
+
+  // try {
+  //   const replaced = commonReplace(config);
+
+  //   return replaced;
+  // } catch (error) {
+  //   catch_error_trace_output(error);
+  // }
+
+
+
+
+
 }
 
 export default _image;

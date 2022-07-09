@@ -21,12 +21,21 @@ function _meme(text, src, href, altText) {
   //   //REPLACEWRAPPER CAN BECOME REPLACE LITERAL
 
 
-  try {
-    const replaced = commonReplace(config);
-    return replaced;
-  } catch (error) {
-    catch_error_trace_output(error);
-  }
+
+  const replaced = commonReplace(config);
+  return replaced;
+
+  // try {
+  //   const replaced = commonReplace(config);
+  //   return replaced;
+  // } catch (error) {
+  //   catch_error_trace_output(error);
+  // }
+
+
+
+
+
 }
 
 export default _meme;

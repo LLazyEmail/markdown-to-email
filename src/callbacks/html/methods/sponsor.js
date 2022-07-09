@@ -36,16 +36,24 @@ export function _sponsorship(markdown_string) {
   // TODO ITS IMPORTANT TO BE ABLE TO FIND A WAY TO GENERATE AN ERROR
   // AND PASS IT TO THE PREV CALLER.
 
-  try {
-    const replaced = repSponsor(config);
-    // commonReplace
-    return replaced;
 
-    // or
+  const replaced = commonReplace(config);
+  return replaced;
 
-    // const newString = replaceWrapper2(config);
-    // console.log(newString);
-  } catch (error) {
-    catch_error_trace_output(error);
-  }
+  // try {
+  //   const replaced = repSponsor(config);
+  //   // commonReplace
+  //   return replaced;
+
+  //   // or
+
+  //   // const newString = replaceWrapper2(config);
+  //   // console.log(newString);
+  // } catch (error) {
+  //   catch_error_trace_output(error);
+  // }
+
+
+
+
 }

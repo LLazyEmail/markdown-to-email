@@ -22,12 +22,21 @@ function _previewText(text, content) {
         debug: true,
       };
     
-    try {
-        const replaced = commonReplace(config);
-        return replaced;
-      } catch (error) {
-        catch_error_trace_output(error);
-      }
+
+
+      const replaced = commonReplace(config);
+      return replaced;
+
+    // try {
+    //     const replaced = commonReplace(config);
+    //     return replaced;
+    //   } catch (error) {
+    //     catch_error_trace_output(error);
+    //   }
+
+
+
+
 
 
   }
