@@ -1,8 +1,4 @@
-// import { replaceWrapper,  } from '../helpers';
-
-import { repSponsor, commonReplace } from '../../../domain/replace-wrapper3.0';
-
-import { catch_error_trace_output } from '../../../domain/error-handle';
+import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 export function _sponsorship(markdown_string) {
   // TODO move out this regex into constants file.
@@ -39,21 +35,5 @@ export function _sponsorship(markdown_string) {
 
   const replaced = commonReplace(config);
   return replaced;
-
-  // try {
-  //   const replaced = repSponsor(config);
-  //   // commonReplace
-  //   return replaced;
-
-  //   // or
-
-  //   // const newString = replaceWrapper2(config);
-  //   // console.log(newString);
-  // } catch (error) {
-  //   catch_error_trace_output(error);
-  // }
-
-
-
 
 }

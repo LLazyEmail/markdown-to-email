@@ -27,18 +27,6 @@ export function _image(text, alt, srcWithTooltip) {
   const replaced = commonReplace(config);
   return replaced;
 
-  // try {
-  //   const replaced = commonReplace(config);
-
-  //   return replaced;
-  // } catch (error) {
-  //   catch_error_trace_output(error);
-  // }
-
-
-
-
-
 }
 
 export default _image;

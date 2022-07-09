@@ -1,7 +1,5 @@
 import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
-import { catch_error_trace_output } from '../../../domain/error-handle';
-
 // TODO remove unused `text` argument
 function _previewText(text, content) {
 
@@ -24,21 +22,9 @@ function _previewText(text, content) {
     
 
 
-      const replaced = commonReplace(config);
-      return replaced;
+  const replaced = commonReplace(config);
+  return replaced;
 
-    // try {
-    //     const replaced = commonReplace(config);
-    //     return replaced;
-    //   } catch (error) {
-    //     catch_error_trace_output(error);
-    //   }
-
-
-
-
-
-
-  }
+}
 
 export default _previewText;

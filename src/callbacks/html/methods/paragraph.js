@@ -1,8 +1,6 @@
-import { replaceWrapper, newLine } from '../helpers';
+import { newLine } from '../helpers';
 
-import { replacerParagraph, commonReplace } from '../../../domain/replace-wrapper3.0';
-
-import { catch_error_trace_output } from '../../../domain/error-handle';
+import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 // function now working as planned
 // TODO remove unused `text` argument
@@ -33,17 +31,6 @@ export function _paragraphWrapper(text, markdown_string) {
 
   const replaced = commonReplace(config);
   return newLine + replaced + newLine;
-
-  // try {
-  //   const replaced = replacerParagraph(config);
-  //   // commonReplace
-
-  
-  // } catch (error) {
-  //   catch_error_trace_output(error);
-  // }
-
-
 
 
 }
