@@ -1,7 +1,7 @@
 import {
     replaceMarkdown,
     // replaceMarkdownPreviewText,
-  } from '../replace-markdown/replace-md';
+  } from './replace-markdown/replace-md';
   
   
    

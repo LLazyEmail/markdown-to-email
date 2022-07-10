@@ -24,7 +24,7 @@ import {
   _separator,
   //
   _previewText,
-} from '../../callbacks/html/index';
+} from '../../../callbacks/html/index';
 
 import {
   REGEXP_HEADER,
@@ -45,17 +45,17 @@ import {
   REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
   REGEXP_SEPARATOR,
-} from '../../constants/index';
+} from '../../../constants/index';
 
-import { REGEXP_SUB_LISTS } from '../regular-expressions/';
+import { REGEXP_SUB_LISTS } from '../../regular-expressions';
 
 // import misc from '../templates/OuterTemplate/layouts/misc';
 
 // TODO replace this layout with plain v3 layout
-import body from '../../templates/PlainJSOuterTemplate/layouts/body';
+import body from '../../../templates/PlainJSOuterTemplate/layouts/body';
 const { sponsorLiteral, previewTextLiteral } = body;
 
-import objectBuilder from '../md/object-builder';
+import objectBuilder from '../../md/object-builder';
 
 
 // TODO add here error handlers from domain/error-handle.
@@ -77,7 +77,7 @@ import {
   strongLiteral,
   subtitleLiteral,
   separatorLiteral,
-} from '../email-prototypes/plainjs/typography/index';
+} from '../../email-prototypes/plainjs/typography/index';
 
 
 
