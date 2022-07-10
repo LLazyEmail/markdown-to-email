@@ -1,7 +1,5 @@
 import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
-// import { catch_error_trace_output } from '../../../domain/error-handle';
-
 // TODO make sense to the text variable
 // probably Vadim knows what is doing on here,
 // I think he was the person that did all these funcitons.
