@@ -13,7 +13,7 @@ import {
 import { inspector } from '../error-handle';
 
 
-import mainObj from '../replace-class/replace-markdown/pre-replace-objects';
+import { mainObject } from '../replace-class';
 
 
 import CallbackFactory from '../callbacks-factory';

@@ -4,7 +4,7 @@
 // https://www.npmjs.com/package/pupa
 
 import _ from 'lodash';
-import { mapObject } from '../index';
+import { mainObject } from '../index';
 
 // @TODO replace the name of this method
 function prepOurCallback(callback_name, debug = false) {
@@ -14,7 +14,7 @@ function prepOurCallback(callback_name, debug = false) {
     throw new Error(`name of ${callback_name} is undefined or empty`);
   }
 
-  const settings = mapObject[callback_name];
+  const settings = mainObject[callback_name];
   // console.log(settings)
 
   if(debug){
