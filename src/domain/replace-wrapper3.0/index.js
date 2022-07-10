@@ -12,9 +12,12 @@ import {
 
 import { inspector } from '../error-handle';
 
-import mainObj from '../replace-markdown/pre-replace-objects';
+
+import mainObj from '../replace-class/replace-markdown/pre-replace-objects';
+
 
 import CallbackFactory from '../callbacks-factory';
+
 
 import { catch_error_trace_output } from '../error-handle';
 

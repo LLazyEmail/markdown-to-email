@@ -1,8 +1,6 @@
-import { replaceWrapper, newLine } from '../helpers';
+import { newLine } from '../helpers';
 
-// import { commonReplace } from '../../../domain/replace-wrapper3.0';
-
-// import { catch_error_trace_output } from '../../../domain/error-handle';
+import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 // TODO figure out `text` argument
 export function _br(text, newLines) {
@@ -19,7 +17,11 @@ export function _br(text, newLines) {
   // console.log(result);
   return result;
 
+  // TODO upgrade this method so it fix with out main logic
+  
+  
   // NOT FINISHED
+
   // debug: true
   // const params = {};
 

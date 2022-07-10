@@ -1,11 +1,11 @@
 import {
     replaceMarkdown,
     // replaceMarkdownPreviewText,
-  } from './replace-markdown/replace-md';
+  } from '../replace-markdown/replace-md';
   
   
    
-  import Replacer from '../../parserMDHtml/replace';
+  import Replacer from '../replace-class';
   
   function configureReplacer(state) {
 

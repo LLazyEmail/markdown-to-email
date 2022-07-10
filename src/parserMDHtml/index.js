@@ -1,5 +1,5 @@
 // TODO: something wrong with newsletter-constants module
-import configureReplacer from '../domain/replacer-class/configuration-plain'
+import configureReplacer from '../domain/replace-class/configuration'
 
 import parse from '../domain/parse'
 
@@ -24,5 +24,5 @@ export {
 
   parseFullTHing, parse 
   // generateFullTemplate,
-  // ReactReplacer
+
 };
