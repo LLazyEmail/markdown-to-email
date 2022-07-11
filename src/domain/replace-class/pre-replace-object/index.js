@@ -167,7 +167,7 @@ const separator = objectBuilder(
   REGEXP_SEPARATOR, 
   _separator, 
   separatorLiteral
-  );
+);
 
 
 // empty as emptyLiteral,

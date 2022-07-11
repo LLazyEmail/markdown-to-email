@@ -25,8 +25,7 @@ const REGEXP_STR_BEGIN = '>https';
 const REGEXP_STR_END = 'f<';
 
 // TODO add that beforeMethod
-// const regex_string = `\\[separator\\]`;
-const regex_string = `\[separator\]`;
+const regex_string = `\\[separator\\]`;
 const REGEXP_SEPARATOR = new RegExp(newLine + regex_string + newLine, 'g');
 
 export {

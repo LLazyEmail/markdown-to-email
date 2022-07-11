@@ -7,17 +7,17 @@ function debuggingReplacer(name) {
       //  'link',
       //-------
   
-       'header', // not working
-         'title', 
-         'subtitle', 
-         'heading',
+      //  'header', // not working
+      //    'title', 
+      //    'subtitle', 
+      //    'heading',
   
       // ----------------
       // 'strong',
       // 'memes',
       // 'br',
   
-      // 'separator',
+      'separator',
   
       // 'previewText',
       // 'italic',

@@ -76,23 +76,23 @@ const replaceLink = (config) => {
 };
 //--------------------------
 //--------------------------
-const replaceHeader = (config) => {
-  // const { debug } = config || false;
+// const replaceHeader = (config) => {
+//   // const { debug } = config || false;
 
-  inspector2(config.params)
+//   inspector2(config.params)
 
-  // console.log(config);
+//   // console.log(config);
 
-  const configCopy = Object.assign(
-    config, 
-    WR3_getWrapper(config.name)
-  );
+//   const configCopy = Object.assign(
+//     config, 
+//     WR3_getWrapper(config.name)
+//   );
 
-  const newString = WR3_generateNewString(configCopy);
-    // console.log(newString);
+//   const newString = WR3_generateNewString(configCopy);
+//     // console.log(newString);
     
-  return newString;
-};
+//   return newString;
+// };
 
 //--------------------------
 //--------------------------
@@ -169,7 +169,7 @@ export {
   // repSponsor,
   // replacerParagraph,
   replaceLink,
-  replaceHeader,
+  // replaceHeader,
   // replaceStrong,
   commonReplace,
   // replaceUl,
