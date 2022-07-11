@@ -12,9 +12,9 @@ import {
 
 import { inspector } from '../error-handle';
 
-
-import { mainObject } from '../replace-class';
-
+import { mainObject } from '../replace-class/';
+// import replace from '../replace-class/index';
+// console.log(replace.mainObject);
 
 import CallbackFactory from '../callbacks-factory';
 
@@ -35,12 +35,12 @@ const WR3_getWrapper = (name, debug = false) => {
   }
   
   if(debug){
-    console.log(mainObj[name]);
+    console.log(mainObject[name]);
 
-    console.log(mainObj[name].literal)
+    console.log(mainObject[name].literal)
   }
   
-  inspectorCheck(mainObj[name]);
+  inspectorCheck(mainObject[name]);
 
   try {
     
@@ -48,8 +48,8 @@ const WR3_getWrapper = (name, debug = false) => {
     // const replaced = replaceHeader(config);
     // return newLine + replaced;
 
-    if(mainObj[name].literal){
-      return { literal: mainObj[name].literal };
+    if(mainObject[name].literal){
+      return { literal: mainObject[name].literal };
     }
     
   } catch (error) {

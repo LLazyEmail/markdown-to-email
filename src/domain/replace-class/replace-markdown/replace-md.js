@@ -4,7 +4,10 @@
 // https://www.npmjs.com/package/pupa
 
 import _ from 'lodash';
+// TODO fix this
 import { mainObject } from '../index';
+
+// import mainObject from
 
 // @TODO replace the name of this method
 function prepOurCallback(callback_name, debug = false) {
@@ -38,18 +41,18 @@ import debuggingReplacer from './debugging';
 //----------------------------
 function replaceMarkdown(callback_name) {
 
-  const fromMap = prepOurCallback(callback_name, true);
+  const singleElement = prepOurCallback(callback_name, true);
 
   // TODO I dont like names fromMap & nameOfCallback & forReplacer
   // fromMap.replacer is a single regex value
   // forReplacer is a new sting that will be applied  
 
   // --------- comment for debugging purposes
-  const forReplacer = fromMap.replacer.bind(this);
+  const _replacer = singleElement.replacer.bind(this);
   // --- You can comment this when you debugging our wrapper
   this.content = this.content.replace(
-    fromMap.constant, 
-    forReplacer
+    singleElement.constant, 
+    _replacer
   );
   //------------- end
 
@@ -59,11 +62,11 @@ function replaceMarkdown(callback_name) {
 
   //   // console.log(callback_name);
 
-  //   const forReplacer = fromMap.replacer.bind(this);
+  //   const _replacer = fromMap.replacer.bind(this);
 
   //   this.content = this.content.replace(
-  //     fromMap.constant, 
-  //     forReplacer
+  //     singleElement.constant, 
+  //     _replacer
   //   );
 
     
