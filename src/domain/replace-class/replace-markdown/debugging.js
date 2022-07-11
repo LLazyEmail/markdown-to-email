@@ -8,7 +8,7 @@ function debuggingReplacer(name) {
       //-------
   
        'header', // not working
-        //  'title', 
+         'title', 
          'subtitle', 
          'heading',
   

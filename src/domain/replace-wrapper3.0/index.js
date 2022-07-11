@@ -89,7 +89,7 @@ const replaceHeader = (config) => {
   );
 
   const newString = WR3_generateNewString(configCopy);
-    console.log(newString);
+    // console.log(newString);
     
   return newString;
 };
@@ -116,7 +116,10 @@ const commonReplace = (config) => {
 
   inspector2(config.params)
 
-  const configCopy = Object.assign(config, WR3_getWrapper(config.name));
+  const configCopy = Object.assign(
+      config, 
+      WR3_getWrapper(config.name)
+    );
 
 
   try {
