@@ -4,7 +4,11 @@
 
 class Replace {
   constructor() {
+
     this.replaceMDBinded = () => {};
+
+    // I think this version isnt working well
+    // Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
     // this.replaceMDBindedPreviewText = () => {};
 
     this.previewText = function () {
@@ -25,11 +29,18 @@ class Replace {
     };
 
 
-    // TODO working not ideally, because we have headings & subtitles, so it's confusing a little bit
+    // TODO working not ideally, because we have headings & subtitles, 
+    // so it's confusing a little bit
     this.header = () => {
       this.replaceMDBinded('header');
     };
 
+    this.subtitle = () => {
+      this.replaceMDBinded('header');
+    }
+    this.title = () => {
+      this.replaceMDBinded('header');
+    }
 
 
     this.image = () => {
@@ -72,19 +83,20 @@ class Replace {
       this.replaceMDBinded('paragraph');
     };
     //---------------------
-    this.emptyUl = () => {
-      this.replaceMDBinded('REGEXP_EMPTY_UL');
-    };
+    // TODO hiding for now, let's fix it after our release
+    // this.emptyUl = () => {
+    //   this.replaceMDBinded('REGEXP_EMPTY_UL');
+    // };
+    
+    // this.emptyOl = () => {
+    //   this.replaceMDBinded('REGEXP_EMPTY_OL');
+    // };
 
-    this.emptyOl = () => {
-      this.replaceMDBinded('REGEXP_EMPTY_OL');
-    };
-
-    this.emptyBlockquote = () => {
-      // this line is generating an error
-      // this.replaceMDBinded(this._constants.REGEXP_EMPTY_BLOCKQUOTE, newLine);
-      this.replaceMDBinded('REGEXP_EMPTY_BLOCKQUOTE');
-    };
+    // this line is generating an error
+    // this.replaceMDBinded(this._constants.REGEXP_EMPTY_BLOCKQUOTE, newLine);
+    // this.emptyBlockquote = () => {        
+    //   this.replaceMDBinded('REGEXP_EMPTY_BLOCKQUOTE');
+    // };
     //---------------------
 
     this.br = function () {
@@ -131,7 +143,10 @@ class Replace {
     this.strong();
     this.em();
 
-    this.header();
+
+    this.subtitle();
+    this.title();
+    // this.header();
 
     this.image();
     this.link();
@@ -154,9 +169,9 @@ class Replace {
   }
 
 
-  runConfigure () {
+  // runConfigure () {
     
-  }
+  // }
 
 }
 

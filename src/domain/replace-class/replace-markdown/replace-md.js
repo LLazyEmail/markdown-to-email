@@ -36,20 +36,34 @@ function prepOurCallback(callback_name, debug = false) {
 
 import debuggingReplacer from './debugging';
 
+const simple_debug = (name, params) => {
+  const { callback_name, singleElement } = params;
+  if(callback_name == name){
+    console.log(singleElement)
+  }
+}
 
 // Should be working like this this.replaceMDBinded("previewText");
+// TODO add later an ability to pass debug = true from the top of the configuration,
+// i.e. configureReplacer
+
+// plus i wanna have more control for debugging stuff
 //----------------------------
 function replaceMarkdown(callback_name) {
 
-  const singleElement = prepOurCallback(callback_name, true);
+  const singleElement = prepOurCallback(callback_name, false);  
 
-  // TODO I dont like names fromMap & nameOfCallback & forReplacer
-  // fromMap.replacer is a single regex value
-  // forReplacer is a new sting that will be applied  
+  // let debug_params = {callback_name, singleElement}
+
+  // console.log(singleElement.constant);
+
+
+  // simple_debug('title', debug_params);
+  // simple_debug('subtitle', debug_params);
 
   // --------- comment for debugging purposes
   const _replacer = singleElement.replacer.bind(this);
-  // --- You can comment this when you debugging our wrapper
+  // // --- You can comment this when you debugging our wrapper
   this.content = this.content.replace(
     singleElement.constant, 
     _replacer
