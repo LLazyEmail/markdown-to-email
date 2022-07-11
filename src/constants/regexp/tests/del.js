@@ -1,1 +1,0 @@
-const { REGEXP_DEL } = require('../src/index');

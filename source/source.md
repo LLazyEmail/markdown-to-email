@@ -81,6 +81,7 @@ Investing in the [DevOps tools](https://hackernoon.com/7-best-devops-security-pr
 There's no panacea for [successful DevOps team building](https://hackernoon.com/measuring-devops-metrics-a-how-to-guide-ot113ztl), but the process itself is definitely easier than [quantum physics](https://www.hackernoon.com/how-quantum-dots-technology-driving-advancements-in-lcd-and-oled-display-quality-2e163uxg). The majority of our tips and tricks dispensed above are of common-sense variety. In practice, our [secrets](https://hackernoon.com/are-you-telling-the-story-of-your-software-mc133w92) call for good old-fashioned [hard work](https://hackernoon.com/how-to-approach-strategic-planning-when-the-sky-is-falling-oq5k3yer) and a sprinkle of knowledge.
 
 To deliver top-notch results, employees must be well-settled, teams well-structured, and objectives outlined based on [business priorities](https://hackernoon.com/ceos-survey-on-digital-transformation-in-2017-by-gartner-c2d6e842f86c). And it’s not enough to recruit the right people, retention and training are equally important. Overall, it takes a solid mix of all these components to build a team that truly thrives.
+zaza 
 
 _Join us to welcome today newsletter’s sponsor - [BridgeCrew](https://bit.ly/3n9CgbE). BridgeCrew helps find, fix, and prevent cloud misconfigurations straight from your CI/CD pipeline. Their platform leverages automation and delivers security-as-code to streamline your DevSecOps processes._
 

@@ -51,6 +51,11 @@ const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
 
 const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
 
+
+// italic for asterics  \*(?![*\s])(?:[^*]*[^*\s])?\*
+// italic for underscore /(\s|>)(_)(.*?)\2(\s|<)/
+
+
 export {
   REGEXP_HEADER,
   REGEXP_IMAGE,

@@ -10,13 +10,12 @@ function _separator(text, content) {
     params,
 
     name: 'separator',
-    // debug: true,
+    debug: true,
   };
 
   const replaced = commonReplace(config);
-
-    const result = newLine + replaced + newLine;
-    return result;
+  console.log(replaced);
+  return newLine + replaced + newLine;  
 
 }
 

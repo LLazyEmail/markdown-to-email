@@ -20,7 +20,7 @@ function debuggingReplacer(name) {
       'separator',
   
       // 'previewText',
-      // 'italic',
+      'italic',
   
       // 'olList'
       // 'ulList'

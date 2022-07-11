@@ -81,17 +81,12 @@ function replaceMarkdown(callback_name) {
 
     // console.log(replacedString);
 
-  //   // TODO another case why i dont like this solution with string.replace - when you forget to return something it's hard to catch
+    // TODO another case why i dont like this solution with string.replace - when you forget to return something it's hard to catch
     this.content = this.content.replace(
       singleElement.constant, 
       _replacer
     );
 
-    
-  //   // console.log( this.content);
-  //     // console.log(typeof this.content == 'undefined');
-
-  //     // console.log('-------');
   }  
   return '';
   //--------------

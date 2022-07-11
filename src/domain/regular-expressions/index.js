@@ -12,6 +12,9 @@ const regex_variable = `\\s{4}\\*(.*?)${newLine}`;
 const REGEXP_SUB_LISTS = new RegExp(regex_variable, 'g');
 
 
+// const regex_italic = `\\s{4}\\*(.*?)${newLine}`;
+// const REGEXP_ITALIC = RegExp(regex_italic, 'g');
+
 export {
     REGEXP_SUB_LISTS
 }
