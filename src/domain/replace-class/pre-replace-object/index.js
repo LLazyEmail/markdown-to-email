@@ -106,7 +106,14 @@ const previewText = objectBuilder(
 
 const italic = objectBuilder(REGEXP_EM, _italic, italicLiteral);
 
-// TODO header arent working as suppose too
+// const italic_asterix = objectBuilder(
+//   REGEXP_EM, 
+//   _italic, 
+//   italicLiteral
+// );
+
+
+
 const header = objectBuilder(REGEXP_HEADER, _header, headingLiteral);
 
 // sub item for header. not ideal

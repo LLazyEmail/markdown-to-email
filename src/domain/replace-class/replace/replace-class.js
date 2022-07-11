@@ -28,6 +28,11 @@ class Replace {
       this.replaceMDBinded('italic');
     };
 
+    this.italicAsterix = () => {
+      this.replaceMDBinded('italic_asterix');
+    };
+
+
 
     // TODO working not ideally, because we have headings & subtitles, 
     // so it's confusing a little bit
@@ -141,9 +146,10 @@ class Replace {
 
   typography() {
     this.strong();
+    //---------------
     this.em();
-
-
+    this.italicAsterix();
+    //---------------
     this.subtitle();
     this.title();
     // this.header();

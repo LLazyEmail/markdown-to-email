@@ -43,10 +43,6 @@ const WR3_getWrapper = (name, debug = false) => {
   inspectorCheck(mainObject[name]);
 
   try {
-    
-    // const replaced = commonReplace(config);
-    // const replaced = replaceHeader(config);
-    // return newLine + replaced;
 
     if(mainObject[name].literal){
       return { literal: mainObject[name].literal };
@@ -74,25 +70,7 @@ const replaceLink = (config) => {
 
   return newString;
 };
-//--------------------------
-//--------------------------
-// const replaceHeader = (config) => {
-//   // const { debug } = config || false;
 
-//   inspector2(config.params)
-
-//   // console.log(config);
-
-//   const configCopy = Object.assign(
-//     config, 
-//     WR3_getWrapper(config.name)
-//   );
-
-//   const newString = WR3_generateNewString(configCopy);
-//     // console.log(newString);
-    
-//   return newString;
-// };
 
 //--------------------------
 //--------------------------
@@ -166,11 +144,9 @@ function WR3_generateNewString(config) {
 }
 
 export {
-  // repSponsor,
-  // replacerParagraph,
+
   replaceLink,
-  // replaceHeader,
-  // replaceStrong,
+
   commonReplace,
   // replaceUl,
   WR3_generateNewString,
