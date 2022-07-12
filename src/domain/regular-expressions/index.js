@@ -14,8 +14,8 @@ const REGEXP_SUB_LISTS = new RegExp(regex_variable, 'g');
 
 // italic for underscore /(\s|>)(_)(.*?)\2(\s|<)/
 // `\\s{4}\\*(.*?)${newLine}`;
-const regex_italic_undescore = `/(\s|>)(_)(.*?)\2(\s|<)/`
-const REGEXP_UNDERSCORE_ITALIC = RegExp(regex_italic_undescore, 'g');
+const regex_italic_underscore = `/(\s|>)(_)(.*?)\2(\s|<)/`;
+const REGEXP_UNDERSCORE_ITALIC = RegExp(regex_italic_underscore, 'g');
 
 
 // `\\s{4}\\*(.*?)${newLine}`;

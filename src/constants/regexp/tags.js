@@ -49,7 +49,7 @@ const REGEXP_BR = new RegExp(`((${newLine}){2,})`, 'g');
 
 const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
 
-// old version
+// old
 // const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
 
 // italic for asterics  \*(?![*\s])(?:[^*]*[^*\s])?\*

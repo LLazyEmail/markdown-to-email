@@ -32,19 +32,19 @@ const _italicAsterix = (text, content) => {
     console.log(text)
     console.log(content)   
 
-    // const params = {
-    //     content: text.trim()
-    // };
+    const params = {
+        content: text.trim()
+    };
 
-    // const config = {
-    //     params,
+    const config = {
+        params,
     
-    //     name: 'italic_asterix',
-    //     debug: true,
-    // };
+        name: 'italic_asterix',
+        debug: true,
+    };
 
-    // const replaced = commonReplace(config);
-    // return replaced;  
+    const replaced = commonReplace(config);
+    return replaced;  
 }
 
 
