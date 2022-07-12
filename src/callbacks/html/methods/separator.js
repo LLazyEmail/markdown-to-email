@@ -4,7 +4,12 @@ import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 function _separator(text, content) {
 
-  const params = {};
+  // console.log(text);
+  // console.log(content);
+
+  const params = {
+    content: text.trim() // we have an issue, when we passing empty params
+  };
 
   const config = {
     params,
@@ -14,7 +19,7 @@ function _separator(text, content) {
   };
 
   const replaced = commonReplace(config);
-  console.log(replaced);
+  // console.log(replaced);
   return newLine + replaced + newLine;  
 
 }

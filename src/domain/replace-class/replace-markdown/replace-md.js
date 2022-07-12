@@ -62,33 +62,34 @@ function replaceMarkdown(callback_name) {
   // simple_debug('subtitle', debug_params);
 
   // --------- comment for debugging purposes
-  // const _replacer = singleElement.replacer.bind(this);
+  const _replacer = singleElement.replacer.bind(this);
   // // --- You can comment this when you debugging our wrapper
-  // this.content = this.content.replace(
-    // singleElement.constant, 
-    // _replacer
-  // );
+  this.content = this.content.replace(
+    singleElement.constant, 
+    _replacer
+  );
   // TODO let's handle a case, when this.content.replace( regex, undefined)
   //------------- end
 
 
   //-------------- Uncomment for debugging reasons
-  if (debuggingReplacer(callback_name)) {
+  // if (debuggingReplacer(callback_name)) {
 
-    // console.log(callback_name);
+  //   // console.log(callback_name);
 
-    const _replacer = singleElement.replacer.bind(this);
+  //   const _replacer = singleElement.replacer.bind(this);
 
-    // console.log(replacedString);
+  //   // console.log(replacedString);
 
-    // TODO another case why i dont like this solution with string.replace - when you forget to return something it's hard to catch
-    this.content = this.content.replace(
-      singleElement.constant, 
-      _replacer
-    );
+  //   // TODO another case why i dont like this solution 
+  //   // with string.replace - when you forget to return something it's hard to catch
+  //   this.content = this.content.replace(
+  //     singleElement.constant, 
+  //     _replacer
+  //   );
 
-  }  
-  return '';
+  // }  
+  // return '';
   //--------------
   //--------------
 
