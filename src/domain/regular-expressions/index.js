@@ -12,9 +12,21 @@ const regex_variable = `\\s{4}\\*(.*?)${newLine}`;
 const REGEXP_SUB_LISTS = new RegExp(regex_variable, 'g');
 
 
-// const regex_italic = `\\s{4}\\*(.*?)${newLine}`;
-// const REGEXP_ITALIC = RegExp(regex_italic, 'g');
+// italic for underscore /(\s|>)(_)(.*?)\2(\s|<)/
+// `\\s{4}\\*(.*?)${newLine}`;
+const regex_italic_undescore = `/(\s|>)(_)(.*?)\2(\s|<)/`
+const REGEXP_UNDERSCORE_ITALIC = RegExp(regex_italic_undescore, 'g');
+
+
+// `\\s{4}\\*(.*?)${newLine}`;
+const regex_italic_asterix = `\*(?![*\s])(?:[^*]*[^*\s])?\*`;
+const REGEXP_ASTERIX_ITALIC = RegExp(regex_italic_asterix, 'g');
+
+// const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
+
 
 export {
-    REGEXP_SUB_LISTS
+    REGEXP_SUB_LISTS,
+    REGEXP_UNDERSCORE_ITALIC,
+    REGEXP_ASTERIX_ITALIC,
 }

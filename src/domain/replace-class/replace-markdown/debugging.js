@@ -21,6 +21,7 @@ function debuggingReplacer(name) {
   
       // 'previewText',
       'italic',
+      'italic_asterix',
   
       // 'olList'
       // 'ulList'

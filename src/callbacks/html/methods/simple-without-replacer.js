@@ -26,6 +26,28 @@ const _italic = (text, content, a, b, c) => {
 }
 
 
+
+const _italicAsterix = (text, content) => {
+
+    console.log(text)
+    console.log(content)   
+
+    // const params = {
+    //     content: text.trim()
+    // };
+
+    // const config = {
+    //     params,
+    
+    //     name: 'italic_asterix',
+    //     debug: true,
+    // };
+
+    // const replaced = commonReplace(config);
+    // return replaced;  
+}
+
+
 const _del = () => '<del>$1</del>';
 
 const _q = () => '<q>$1</q>';
@@ -36,4 +58,4 @@ const _hr = () => `${newLine}<hr />`;
 
 const _empty = () => '';
 
-export { _italic, _del, _q, _code, _hr, _empty };
+export { _italic, _italicAsterix, _del, _q, _code, _hr, _empty };

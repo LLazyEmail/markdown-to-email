@@ -28,6 +28,7 @@ class Replace {
       this.replaceMDBinded('italic');
     };
 
+    // TODO finish this case
     this.italicAsterix = () => {
       this.replaceMDBinded('italic_asterix');
     };

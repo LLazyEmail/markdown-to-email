@@ -6,7 +6,10 @@ import {
   _blockquote,
   _meme,
   _header,
+  //--------
   _italic,
+  _italicAsterix,
+  //---------
   _del,
   _q,
   _code,
@@ -47,7 +50,11 @@ import {
   REGEXP_SEPARATOR,
 } from '../../../constants/index';
 
-import { REGEXP_SUB_LISTS } from '../../regular-expressions';
+import { 
+  REGEXP_SUB_LISTS, 
+  // REGEXP_UNDERSCORE_ITALIC,
+  // REGEXP_ASTERIX_ITALIC,
+ } from '../../regular-expressions';
 
 // import misc from '../templates/OuterTemplate/layouts/misc';
 
@@ -102,15 +109,19 @@ const previewText = objectBuilder(
 );
 
 
+// OLD version
+// const italic = objectBuilder(REGEXP_EM, _italic, italicLiteral);
 
+// REGEXP_UNDERSCORE_ITALIC,
+// REGEXP_ASTERIX_ITALIC,
 
-const italic = objectBuilder(REGEXP_EM, _italic, italicLiteral);
+const italic = objectBuilder(REGEXP_UNDERSCORE_ITALIC, _italic, italicLiteral);
 
-// const italic_asterix = objectBuilder(
-//   REGEXP_EM, 
-//   _italic, 
-//   italicLiteral
-// );
+const italic_asterix = objectBuilder(
+  REGEXP_ASTERIX_ITALIC, 
+  _italic, 
+  italicLiteral
+);
 
 
 
@@ -200,7 +211,9 @@ export default {
   del,
   image,
   previewText,
+  //----------
   italic,
+  italic_asterix,
   //----------
   header,
   subtitle,
