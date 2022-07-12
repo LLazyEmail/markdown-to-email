@@ -55,11 +55,7 @@ function replaceMarkdown(callback_name) {
 
   // let debug_params = {callback_name, singleElement}
 
-  // console.log(singleElement.constant);
 
-
-  // simple_debug('title', debug_params);
-  // simple_debug('subtitle', debug_params);
 
   // --------- comment for debugging purposes
   const _replacer = singleElement.replacer.bind(this);

@@ -52,8 +52,8 @@ import {
 
 import { 
   REGEXP_SUB_LISTS, 
-  // REGEXP_UNDERSCORE_ITALIC,
-  // REGEXP_ASTERIX_ITALIC,
+  REGEXP_UNDERSCORE_ITALIC,
+  REGEXP_ASTERIX_ITALIC,
  } from '../../regular-expressions';
 
 // import misc from '../templates/OuterTemplate/layouts/misc';
