@@ -12,18 +12,18 @@ import debuggingReplacer from './debugging';
 // import mainObject from
 
 // @TODO replace the name of this method
-function prepOurCallback(callback_name, debug = false) {
-  if (!callback_name) {
-    throw new Error(`name of ${callback_name} is undefined or empty`);
+function prepOurCallback(callbackName, debug = false) {
+  if (!callbackName) {
+    throw new Error(`name of ${callbackName} is undefined or empty`);
   }
 
-  const settings = mainObject[callback_name];
+  const settings = mainObject[callbackName];
   // console.log(settings)
 
   if (debug) {
     //--------------
     if (!settings.literal) {
-      console.log(callback_name, settings.constant);
+      console.log(callbackName, settings.constant);
       console.log('-----------------');
     }
     //---------------
@@ -34,7 +34,7 @@ function prepOurCallback(callback_name, debug = false) {
 
 const simple_debug = (name, params) => {
   const { callback_name, singleElement } = params;
-  if (callback_name == name) {
+  if (callback_name === name) {
     console.log(singleElement);
   }
 };
@@ -58,22 +58,24 @@ function replaceMarkdown(callback_name) {
   // ------------- end
 }
 
-function replaceMarkdownDebug(callback_name) {
-  // -------------- Uncomment for debugging reasons
-  if (debuggingReplacer(callback_name)) {
-    // console.log(callback_name);
 
-    const _replacer = singleElement.replacer.bind(this);
+// function replaceMarkdownDebug(callback_name) {
+//   // -------------- Uncomment for debugging reasons
+//   if (debuggingReplacer(callback_name)) {
+    
+//     console.log(callback_name);
 
-    // console.log(replacedString);
+//     const _replacer = singleElement.replacer.bind(this);
 
-    // TODO another case why i dont like this solution
-    // with string.replace - when you forget to return something it's hard to catch
-    this.content = this.content.replace(singleElement.constant, _replacer);
-  }
-  return '';
-  //--------------
-  //--------------
-}
+//     console.log(replacedString);
+
+//     // TODO another case why i dont like this solution
+//     // with string.replace - when you forget to return something it's hard to catch
+//     this.content = this.content.replace(singleElement.constant, _replacer);
+//   }
+//   return '';
+//   //--------------
+//   //--------------
+// }
 
 export { replaceMarkdown };

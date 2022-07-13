@@ -14,7 +14,7 @@ import {
   REGEXP_BLOCKQUOTE,
   REGEXP_HR,
   REGEXP_BR,
-  REGEXP_EM,
+  // REGEXP_EM,
   REGEXP_SPONSORSHIP,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
@@ -22,9 +22,14 @@ import {
   REGEXP_SEPARATOR,
 } from '../../constants/index';
 
-import { write, readSourceFile } from '../../helper';
 
-import PlainCallbacks from '../../callbacks/callbacksHtml';
+import {
+  __write,
+  readSourceFile,
+} from '../write'
+
+
+import PlainCallbacks from '../../callbacks/html';
 
 const { resolve } = require('path');
 
@@ -68,14 +73,14 @@ export {
   REGEXP_BLOCKQUOTE,
   REGEXP_HR,
   REGEXP_BR,
-  REGEXP_EM,
+  // REGEXP_EM,
   REGEXP_SPONSORSHIP,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
   REGEXP_SEPARATOR,
   //-------------------------
-  write,
+  __write,
   readSourceFile,
   //-------------------------
   PlainCallbacks,

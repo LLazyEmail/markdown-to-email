@@ -16,7 +16,7 @@ export {
   isFolderExists,
   generateTemplateName,
   // countingBytes,
-  ERROR_NO_TITLE,
-  ERROR_NO_BODY_CONTENT,
-  ERROR_NO_PREVIEW_TEXT,
+  // ERROR_NO_TITLE,
+  // ERROR_NO_BODY_CONTENT,
+  // ERROR_NO_PREVIEW_TEXT,
 };

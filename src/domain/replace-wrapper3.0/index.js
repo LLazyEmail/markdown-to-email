@@ -5,8 +5,8 @@
 // import misc from '../../templates/PlainJSOuterTemplate/layouts/misc';
 
 import {
-  getWrapper,
-  generateNewString,
+  // getWrapper,
+  // generateNewString,
   _loopForWrapper,
 } from '../../callbacks/helpers';
 
@@ -24,6 +24,35 @@ const ERROR_REPLACER = `no params was passed`;
 //     const  { src, href, content, wrapper } = params;
 //     return html(wrapper);
 // }
+
+//--------------------------
+//--------------------------
+// TODO move to domain/error-handle
+const inspectorCheck = (string) => {
+  if (!inspector(string)) {
+    throw new Error('replace wrapper 3.0 is blank');
+  }
+};
+
+const inspector2 = (params) => {
+  if (!inspector(params)) {
+    throw new Error(ERROR_REPLACER);
+  }
+};
+
+function WR3_generateNewString(config) {
+  inspector(config.params);
+
+  const updatedString = _loopForWrapper(config.params, config.literal);
+
+  if (config.debug) console.log(config);
+
+  if (config.debug) console.log(updatedString);
+
+  inspectorCheck(updatedString);
+
+  return updatedString;
+}
 
 const WR3_getWrapper = (name, debug = false) => {
   if (debug) {
@@ -45,6 +74,8 @@ const WR3_getWrapper = (name, debug = false) => {
   } catch (error) {
     catchErrorTraceOutput(error);
   }
+
+  return false;
 };
 
 //--------------------------
@@ -94,34 +125,7 @@ const commonReplace = (config) => {
   }
 };
 
-//--------------------------
-//--------------------------
-// TODO move to domain/error-handle
-const inspectorCheck = (string) => {
-  if (!inspector(string)) {
-    throw new Error('replace wrapper 3.0 is blank');
-  }
-};
 
-const inspector2 = (params) => {
-  if (!inspector(params)) {
-    throw new Error(ERROR_REPLACER);
-  }
-};
-
-function WR3_generateNewString(config) {
-  inspector(config.params);
-
-  const updatedString = _loopForWrapper(config.params, config.literal);
-
-  if (config.debug) console.log(config);
-
-  if (config.debug) console.log(updatedString);
-
-  inspectorCheck(updatedString);
-
-  return updatedString;
-}
 
 export {
   replaceLink,
