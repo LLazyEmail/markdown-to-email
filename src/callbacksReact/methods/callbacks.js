@@ -1,7 +1,9 @@
 // HELPER FROM MAIN CALLBACKS
 // TODO undisable because there is a lot of errors
 /* eslint-disable */
-import { replaceReactWrapper, newLine } from '../helpers';
+import { 
+  // replaceReactWrapper, 
+  newLine } from '../helpers';
 
 /// function is not working as planned
 

@@ -1,5 +1,7 @@
 /* eslint-disable */
-import { replaceWrapper, newLine } from '../helpers';
+import { 
+  // replaceWrapper, 
+  newLine } from '../helpers';
 
 const _hr = () => `${newLine}<hr />`;
 const _empty = () => '';

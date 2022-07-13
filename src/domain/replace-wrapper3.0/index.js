@@ -16,7 +16,7 @@ import { mainObject } from '../replace-class';
 // import replace from '../replace-class/index';
 // console.log(replace.mainObject);
 
-import CallbackFactory from '../callbacks-factory';
+// import CallbackFactory from '../callbacks-factory';
 
 const ERROR_REPLACER = `no params was passed`;
 
