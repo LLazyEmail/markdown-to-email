@@ -23,7 +23,8 @@
     "test:methods": "jest --watchAll --all --testPathPattern=./src/tests/methods",
     "test:custom": "jest --watchAll --all --testPathPattern=./src/tests/custom",
     "test:watch": "npm run checkFolders && jest --watch ./src/tests",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "fix:prettier": "prettier --write '**/*.js'"
   },
   "author": "atherdon, vadim9999, hirdbluebird",
   "license": "ISC",
