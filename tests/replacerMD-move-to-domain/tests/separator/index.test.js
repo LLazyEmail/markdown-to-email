@@ -8,18 +8,19 @@ const { REGEXP_SEPARATOR } = require('../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
-const { 
-  REGEXP_SEPARATOR, 
-  write, 
-  tests_getMarkdownFile, 
-  // tests_getOutputFolder, 
-  PlainCallbacks 
-} = require('@domain/testing')
+const {
+  REGEXP_SEPARATOR,
+  write,
+  tests_getMarkdownFile,
+  // tests_getOutputFolder,
+  PlainCallbacks,
+} = require('@domain/testing');
 
 describe('testing separator', () => {
   it('renders separator', () => {
-
-    const markdown = readSourceFile('src/parserMDReact/tests/separator/content.md');
+    const markdown = readSourceFile(
+      'src/parserMDReact/tests/separator/content.md',
+    );
 
     const parsedContent = {
       content: markdown,
@@ -29,7 +30,7 @@ describe('testing separator', () => {
 
     const fileName = 'SeparatorTest.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
-    
+
     expect(1).toBe(1);
   });
 });

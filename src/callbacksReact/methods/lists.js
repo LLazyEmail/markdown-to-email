@@ -8,18 +8,15 @@ function getParsedSubList(subList) {
   return subList.replace(
     new RegExp(`\\s{4}\\*(.*?)${newLine}`, 'g'),
     (text, subItem) => {
-
       const params = {
         content: subItem.trim(),
       };
 
-      const config = {    
+      const config = {
         params,
         name: 'listItem',
         debug: true,
       };
-          
-
 
       try {
         const replaced = commonReplace(config);
@@ -30,8 +27,6 @@ function getParsedSubList(subList) {
       }
 
       // return `${newLine + replaceWrapper('listItem', config)}`;
-
-
     },
   );
 }
@@ -45,67 +40,60 @@ function _ulList(text, list) {
     (text, subList) => {
       const parsedSubItem = getParsedSubList(subList);
 
-  const params = {
-    content: parsedSubItem + newLine,
-    type: 'UL',
-  };
+      const params = {
+        content: parsedSubItem + newLine,
+        type: 'UL',
+      };
 
-  const config = {    
-    params,
-    name: 'list?',
-    debug: true,
-  };
-     
+      const config = {
+        params,
+        name: 'list?',
+        debug: true,
+      };
 
       // return `${newLine + replaceWrapper('list', config)}`;
 
-
       // try {
       //   const replaced = commonReplace(config);
-    
+
       //   return replaced;
       // } catch (error) {
       //   catchErrorTraceOutput(error);
       // }
-
-
     },
   );
 
   const parsedList = parsedSubListsParts.replace(
     new RegExp(`\\*(.*?)${newLine}`, 'g'),
     (text, listItem) => {
+      const params = {
+        content: listItem.trim(),
+      };
 
-  const params = {
-           content: listItem.trim(),
-  };
+      const config = {
+        params,
+        name: 'listItem?',
+        debug: true,
+      };
 
-  const config = {    
-    params,
-    name: 'listItem?',
-    debug: true,
-  };
- 
-  
-  // try {
-  //   const replaced = commonReplace(config);
+      // try {
+      //   const replaced = commonReplace(config);
 
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
+      //   return replaced;
+      // } catch (error) {
+      //   catchErrorTraceOutput(error);
+      // }
 
       // return `${newLine + replaceWrapper('listItem', config)}`;
     },
   );
-
 
   const params = {
     content: parsedList + newLine,
     type: 'UL',
   };
 
-  const config = {    
+  const config = {
     params,
     name: 'list',
     debug: true,

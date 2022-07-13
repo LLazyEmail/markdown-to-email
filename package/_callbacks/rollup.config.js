@@ -1,12 +1,12 @@
-import commonjs from "@rollup/plugin-commonjs";
-import resolve from "@rollup/plugin-node-resolve";
+import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
 // import json from "rollup-plugin-json";
-import builtins from "rollup-plugin-node-builtins";
-import babel from "@rollup/plugin-babel";
+import builtins from 'rollup-plugin-node-builtins';
+import babel from '@rollup/plugin-babel';
 // import notify from "rollup-plugin-notify";
-import pkg from "./package.json";
-import globals from "rollup-plugin-node-globals";
-import includePaths from "rollup-plugin-includepaths";
+import pkg from './package.json';
+import globals from 'rollup-plugin-node-globals';
+import includePaths from 'rollup-plugin-includepaths';
 import nodePolyfills from 'rollup-plugin-node-polyfills';
 
 // import eslint from "rollup-plugin-eslint";
@@ -14,21 +14,25 @@ import nodePolyfills from 'rollup-plugin-node-polyfills';
 // not all files you want to resolve are .js files
 // Default: [ '.mjs', '.js', '.json', '.node' ]
 const extensions = [
-  ".js",
+  '.js',
   //".json"
 ];
 
-const name = "newsletterCallbacks";
+const name = 'newsletterCallbacks';
 
 // packages that should be treated as external dependencies, not bundled
 // e.g. ['axios']
-const external = ["os", "atherdon-newsletter-js-layouts", "atherdon-newsletter-react"];
+const external = [
+  'os',
+  'atherdon-newsletter-js-layouts',
+  'atherdon-newsletter-react',
+];
 
 const includePathOptions = {
   include: {},
-  paths: ["src"],
+  paths: ['src'],
   external: [],
-  extensions
+  extensions,
 };
 
 // list of plugins used during building process
@@ -40,7 +44,7 @@ const plugins = () => [
     // the fields to scan in a package.json to determine the entry point
     // if this list contains "browser", overrides specified in "pkg.browser"
     // will be used
-    mainFields: ["module", "main", "browser"] // Default: ['module', 'main']
+    mainFields: ['module', 'main', 'browser'], // Default: ['module', 'main']
   }),
 
   // Allows verification of entry point and all imported files with ESLint.
@@ -55,18 +59,18 @@ const plugins = () => [
 
   // Allow bundling cjs modules. Rollup doesn't understand cjs
   commonjs({
-    ignore: ["conditional-runtime-dependency"]
+    ignore: ['conditional-runtime-dependency'],
   }),
 
   // use Babel to compile TypeScript/JavaScript files to ES5
   babel({
     extensions,
-    include: ["src/*"],
+    include: ['src/*'],
     // ignore node_modules/ in transpilation process
     exclude: [
-      "node_modules/**",
-       // "/src/data/__tests__"
-     ],
+      'node_modules/**',
+      // "/src/data/__tests__"
+    ],
     // ignore .babelrc (if defined) and use options defined here
     // babelrc: false,
     // use recommended babel-preset-env without es modules enabled
@@ -95,11 +99,11 @@ const plugins = () => [
   includePaths(includePathOptions),
   // notify(),
   globals({
-      os: 'os'
+    os: 'os',
   }),
   builtins(),
-  
-  nodePolyfills()
+
+  nodePolyfills(),
 
   // remove flow annotations from output
   // flow(),
@@ -124,7 +128,7 @@ const plugins = () => [
 
 export default {
   // source file / entrypoint
-  input: "src/index.js",
+  input: 'src/index.js',
   external,
   plugins: plugins(),
   // output configuration
@@ -133,31 +137,31 @@ export default {
       // output file location
       file: pkg.main,
       // format of generated JS file, also: esm, and others are available
-      format: "cjs"
+      format: 'cjs',
     },
     {
       // output file location
       file: pkg.module,
       // format of generated JS file, also: esm, and others are available
-      format: "es",
+      format: 'es',
       // format: 'esm',
       // add sourcemaps
-      sourcemap: true
+      sourcemap: true,
     },
     {
       // output file location
       file: pkg.browser,
       // format of generated JS file, also: esm, and others are available
-      format: "iife",
+      format: 'iife',
       // name visible for other scripts
       name,
 
       // https://rollupjs.org/guide/en#output-globals-g-globals
       globals: {
-        path: "path"
-      }
-    }
-  ]
+        path: 'path',
+      },
+    },
+  ],
 
   // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
   // https://rollupjs.org/guide/en#external-e-external

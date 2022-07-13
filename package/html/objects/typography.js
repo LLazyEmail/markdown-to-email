@@ -1,9 +1,6 @@
-
-
 // https://github.com/atherdon/markdown-regex/blob/main/src/index.js
 
 const Typography = {
-
   strong: {
     key: 'REGEXP_STRONG',
     value: strong,
@@ -17,7 +14,7 @@ const Typography = {
     key: 'REGEXP_IMAGE',
     value: image,
   },
-  
+
   link: {
     key: 'REGEXP_LINK',
     value: link,
@@ -31,12 +28,10 @@ const Typography = {
   q: {
     key: 'REGEXP_Q',
     value: q,
-
   },
   code: {
     key: 'REGEXP_CODE',
     value: code,
-
   },
 
   ulList: {
@@ -55,9 +50,8 @@ const Typography = {
 
   hr: {
     key: 'REGEXP_HR',
-    value: hr,    
+    value: hr,
   },
-
 
   paragraph: {
     key: 'REGEXP_PARAGRAPH',

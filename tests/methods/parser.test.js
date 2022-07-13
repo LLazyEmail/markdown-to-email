@@ -22,7 +22,11 @@ const {
   //   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
 
-const { PlainCallbacks, replaceMarkdown, newLine } = require('atherdon-callbacks');
+const {
+  PlainCallbacks,
+  replaceMarkdown,
+  newLine,
+} = require('atherdon-callbacks');
 const { readSourceFile, FULL_SOURCE } = require('../../utils');
 
 const {
@@ -53,9 +57,7 @@ const { parse } = require('../../parse');
 
 describe('tests for all functionality', () => {
   test('function parse', () => {
-    const {
-      previewText, content, errors, warnings,
-    } = parse(FULL_SOURCE);
+    const { previewText, content, errors, warnings } = parse(FULL_SOURCE);
 
     let check = false;
 
@@ -65,7 +67,11 @@ describe('tests for all functionality', () => {
       check = false;
     }
 
-    if (errors.previewText && errors.sponsorshipBottom && errors.sponsorshipTop === true) {
+    if (
+      errors.previewText &&
+      errors.sponsorshipBottom &&
+      errors.sponsorshipTop === true
+    ) {
       check = true;
     } else {
       check = false;

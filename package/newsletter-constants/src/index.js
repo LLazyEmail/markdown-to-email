@@ -11,7 +11,6 @@ import {
   REGEXP_SEPARATOR,
 } from "./customTags";
 
-
 import {
   REGEXP_HEADER,
   REGEXP_IMAGE,
@@ -20,22 +19,17 @@ import {
   REGEXP_DEL,
   REGEXP_Q,
   REGEXP_CODE,
-
   REGEXP_BLOCKQUOTE,
   REGEXP_HR,
   REGEXP_PARAGRAPH,
-
   REGEXP_BR,
   REGEXP_EMPTY_BLOCKQUOTE,
   REGEXP_EM,
-
   REGEXP_UL_LIST,
   REGEXP_OL_LIST,
   REGEXP_EMPTY_UL,
-  REGEXP_EMPTY_OL 
+  REGEXP_EMPTY_OL,
 } from "markdown-regex";
-
-
 
 export {
   REGEXP_HEADER,

@@ -2,38 +2,27 @@ import PlainCallbacks from 'atherdon-html-callbacks';
 
 // import ReactCallbacks from './react/index';
 
-
-
-
 import {
-  // newLine, 
-  // replaceWrapper, 
+  // newLine,
+  // replaceWrapper,
   // replaceReactWrapper
 
-  generateNewString, getWrapper
-
+  generateNewString,
+  getWrapper,
 } from './helpers';
 
-import {
-  replaceMarkdown, 
-  replaceMarkdownPreviewText
-} from './replace-md'
+import { replaceMarkdown, replaceMarkdownPreviewText } from './replace-md';
 
 export {
   PlainCallbacks,
   // ReactCallbacks,
 
-  
-
-
   // newLine,
   // replaceWrapper,
-
 
   // replaceReactWrapper,
   replaceMarkdown,
   replaceMarkdownPreviewText,
-
-  generateNewString, getWrapper
-
+  generateNewString,
+  getWrapper,
 };

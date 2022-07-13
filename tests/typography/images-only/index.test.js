@@ -1,21 +1,19 @@
-const { 
+const {
   // PlainCallbacks,
-   replaceMarkdown } = require('atherdon-callbacks');
+  replaceMarkdown,
+} = require('atherdon-callbacks');
 
-   const { 
-    REGEXP_IMAGE, 
-    write, 
-    tests_getMarkdownFile, 
-    tests_getOutputFolder, 
-    PlainCallbacks 
-  } = require('@domain/testing')
-
-
+const {
+  REGEXP_IMAGE,
+  write,
+  tests_getMarkdownFile,
+  tests_getOutputFolder,
+  PlainCallbacks,
+} = require('@domain/testing');
 
 const outFolder = tests_getOutputFolder();
 
 const image_replacer = PlainCallbacks._image;
-
 
 describe('testing images-only', () => {
   it('renders images-only', () => {

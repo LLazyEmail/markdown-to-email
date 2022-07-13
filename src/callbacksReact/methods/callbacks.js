@@ -13,19 +13,15 @@ export function _paragraph(text, line) {
     return newLine + line + newLine;
   }
 
-
   const params = {
     content: trimmed,
   };
 
-  const config = {    
+  const config = {
     params,
     name: 'paragraph',
     debug: true,
   };
- 
-
-
 
   // try {
   //   const replaced = commonReplace(config);
@@ -45,20 +41,18 @@ export function _paragraph(text, line) {
 export function _image(text, alt, srcWithTooltip) {
   const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
 
-
-   const params = {
+  const params = {
     src: src.trim(),
     altText: alt,
-   };
+  };
 
-  const config = {    
+  const config = {
     params,
     name: 'image',
     debug: true,
   };
 
   this.warnings.images++;
-
 
   // try {
   //   const replaced = commonReplace(config);
@@ -86,12 +80,10 @@ export function _br(text, newLines) {
 }
 
 export function _sponsorship(text) {
-
   const regex = /\[(.*?)\]/g;
   const [content, href, src] = text
     .match(regex)
     .map((match) => match.replace(/[\[\]]/g, ''));
-
 
   const params = {
     src: src.trim(),
@@ -99,13 +91,11 @@ export function _sponsorship(text) {
     content: content.trim(),
   };
 
-  const config = {    
+  const config = {
     params,
     name: 'sponsor',
     debug: true,
   };
- 
-
 
   // try {
   //   const replaced = commonReplace(config);
@@ -115,17 +105,12 @@ export function _sponsorship(text) {
   //   catchErrorTraceOutput(error);
   // }
 
-
   // @TODO nope, not good
   this.errors.sponsorshipTop
     ? (this.errors.sponsorshipBottom = true)
     : (this.errors.sponsorshipTop = true);
 
-
   // return replaceReactWrapper('sponsor', config, 'body');
-
-
 }
-
 
 export { paragraphWrapper, image, sponsorship, br, newLine };

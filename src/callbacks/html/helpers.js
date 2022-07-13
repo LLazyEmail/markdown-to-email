@@ -15,10 +15,4 @@ function beforeEnd(string) {
   return string + newLine;
 }
 
-
-
-export {
-  newLine,
-  beforeBeginingNewLine,
-  beforeEnd,
-};
+export { newLine, beforeBeginingNewLine, beforeEnd };

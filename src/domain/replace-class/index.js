@@ -3,8 +3,6 @@ import configureReplacer from './configuration';
 
 export { mainObject, configureReplacer };
 
-
-
 // replaceWrapper
 // function replaceContent() {}
 

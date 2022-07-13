@@ -5,19 +5,19 @@ const { REGEXP_UL_LIST } = require('../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
-const { 
-  REGEXP_UL_LIST, 
-  write, 
-  tests_getMarkdownFile, 
-  // tests_getOutputFolder, 
-  PlainCallbacks 
-} = require('@domain/testing')
-
+const {
+  REGEXP_UL_LIST,
+  write,
+  tests_getMarkdownFile,
+  // tests_getOutputFolder,
+  PlainCallbacks,
+} = require('@domain/testing');
 
 describe('testing lists-only', () => {
   it('renders lists-only', () => {
-
-    const markdown = readSourceFile('src/parserMDReact/tests/lists-only/content.md');
+    const markdown = readSourceFile(
+      'src/parserMDReact/tests/lists-only/content.md',
+    );
 
     const parsedContent = {
       content: markdown,
@@ -27,7 +27,7 @@ describe('testing lists-only', () => {
 
     const fileName = 'ListsOnly.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
-    
+
     expect(1).toBe(1);
   });
 });

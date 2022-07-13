@@ -5,19 +5,19 @@ const { link } = require('../../../callbacks-simpleMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
-const { 
-  REGEXP_LINK, 
-  write, 
-  tests_getMarkdownFile, 
-  // tests_getOutputFolder, 
-  PlainCallbacks 
-} = require('@domain/testing')
-
+const {
+  REGEXP_LINK,
+  write,
+  tests_getMarkdownFile,
+  // tests_getOutputFolder,
+  PlainCallbacks,
+} = require('@domain/testing');
 
 describe('testing links when space before link', () => {
   it('renders testing links when space before link', () => {
-
-    const markdown = readSourceFile('src/parserMDReact/tests/link/removed-space-before-link/content.md');
+    const markdown = readSourceFile(
+      'src/parserMDReact/tests/link/removed-space-before-link/content.md',
+    );
 
     const parsedContent = {
       content: markdown,
@@ -27,7 +27,7 @@ describe('testing links when space before link', () => {
 
     const fileName = 'LinksEmptySpace.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
-    
+
     expect(1).toBe(1);
   });
 });

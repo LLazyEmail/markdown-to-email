@@ -6,21 +6,21 @@ const { paragraphWrapper } = require('../../callbacksMDReact');
 
 // const { REGEXP_PARAGRAPH } = require('../../constantsMDReact');
 
-
 const outFolder = 'src/parserMDReact/tests/_generated';
 
-const { 
-  REGEXP_PARAGRAPH, 
-  write, 
-  tests_getMarkdownFile, 
-  // tests_getOutputFolder, 
-  PlainCallbacks 
-} = require('@domain/testing')
-
+const {
+  REGEXP_PARAGRAPH,
+  write,
+  tests_getMarkdownFile,
+  // tests_getOutputFolder,
+  PlainCallbacks,
+} = require('@domain/testing');
 
 describe('testing paragraph', () => {
   it('renders sponsorship', () => {
-    const markdown = readSourceFile('src/parserMDReact/tests/paragraph/paragraph.md');
+    const markdown = readSourceFile(
+      'src/parserMDReact/tests/paragraph/paragraph.md',
+    );
 
     const parsedContent = {
       content: markdown,
@@ -29,7 +29,7 @@ describe('testing paragraph', () => {
 
     const fileName = 'Paragraph.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
-    
+
     expect(1).toBe(1);
   });
 });

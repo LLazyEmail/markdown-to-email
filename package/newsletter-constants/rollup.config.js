@@ -6,8 +6,7 @@ import pkg from "./package.json";
 import globals from "rollup-plugin-node-globals";
 import includePaths from "rollup-plugin-includepaths";
 
-import nodePolyfills from 'rollup-plugin-node-polyfills';
-
+import nodePolyfills from "rollup-plugin-node-polyfills";
 
 // import json from "rollup-plugin-json";
 // import notify from "rollup-plugin-notify";
@@ -30,7 +29,7 @@ const includePathOptions = {
   include: {},
   paths: ["src"],
   external: [],
-  extensions
+  extensions,
 };
 
 // list of plugins used during building process
@@ -42,7 +41,7 @@ const plugins = () => [
     // the fields to scan in a package.json to determine the entry point
     // if this list contains "browser", overrides specified in "pkg.browser"
     // will be used
-    mainFields: ["module", "main", "browser"] // Default: ['module', 'main']
+    mainFields: ["module", "main", "browser"], // Default: ['module', 'main']
   }),
 
   // Allows verification of entry point and all imported files with ESLint.
@@ -57,7 +56,7 @@ const plugins = () => [
 
   // Allow bundling cjs modules. Rollup doesn't understand cjs
   commonjs({
-    ignore: ["conditional-runtime-dependency"]
+    ignore: ["conditional-runtime-dependency"],
   }),
 
   // use Babel to compile TypeScript/JavaScript files to ES5
@@ -67,8 +66,8 @@ const plugins = () => [
     // ignore node_modules/ in transpilation process
     exclude: [
       "node_modules/**",
-       // "/src/data/__tests__"
-     ],
+      // "/src/data/__tests__"
+    ],
     // ignore .babelrc (if defined) and use options defined here
     // babelrc: false,
     // use recommended babel-preset-env without es modules enabled
@@ -108,7 +107,7 @@ const plugins = () => [
   //   dest: 'dist',
   // }),
 
-  nodePolyfills()
+  nodePolyfills(),
 ];
 
 // example for adding plugin for env only
@@ -133,7 +132,7 @@ export default {
       // output file location
       file: pkg.main,
       // format of generated JS file, also: esm, and others are available
-      format: "cjs"
+      format: "cjs",
     },
     {
       // output file location
@@ -142,7 +141,7 @@ export default {
       format: "es",
       // format: 'esm',
       // add sourcemaps
-      sourcemap: true
+      sourcemap: true,
     },
     {
       // output file location
@@ -155,10 +154,10 @@ export default {
       // https://rollupjs.org/guide/en#output-globals-g-globals
       globals: {
         // path: "path"
-        os: "os"
-      }
-    }
-  ]
+        os: "os",
+      },
+    },
+  ],
 
   // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
   // https://rollupjs.org/guide/en#external-e-external

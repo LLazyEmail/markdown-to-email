@@ -4,22 +4,20 @@ const { replaceMarkdown } = require('@root/helpers');
 
 const { del } = require('../../callbacks-simpleMDReact');
 
-
 // const { REGEXP_DEL } = require('../../constantsMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
-const { 
-  REGEXP_DEL, 
-  write, 
-  tests_getMarkdownFile, 
-  // tests_getOutputFolder, 
-  ReactCallbacks 
-} = require('@domain/testing')
+const {
+  REGEXP_DEL,
+  write,
+  tests_getMarkdownFile,
+  // tests_getOutputFolder,
+  ReactCallbacks,
+} = require('@domain/testing');
 
 describe('testing lists-only', () => {
   it('renders lists-only', () => {
-
     const markdown = readSourceFile('src/parserMDReact/tests/del/content.md');
 
     const parsedContent = {
@@ -30,7 +28,7 @@ describe('testing lists-only', () => {
 
     const fileName = 'Del.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
-    
+
     expect(1).toBe(1);
   });
 });

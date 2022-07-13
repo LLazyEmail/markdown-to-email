@@ -7,7 +7,7 @@ import {
   isFolderExists,
   generateTemplateName,
   // countingBytes,
-} from '../domain/write'
+} from '../domain/write';
 
 export {
   writeHTML,

@@ -1,5 +1,4 @@
-const ctaList = 
-`<div dir="ltr" style="text-align: justify;">
+const ctaList = `<div dir="ltr" style="text-align: justify;">
    <strong style="font-weight: bolder;">Ready to Claim Your Internet Name on Hacker Noon?</strong>
    <ol>
       <li dir="ltr" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
@@ -30,4 +29,4 @@ const ctaList =
    </ol>
 </div>`;
 
-export { ctaList }
+export { ctaList };

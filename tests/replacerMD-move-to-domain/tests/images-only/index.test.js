@@ -6,19 +6,19 @@ const { image } = require('../../callbacksMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
-const { 
-  REGEXP_IMAGE, 
-  write, 
-  tests_getMarkdownFile, 
-  // tests_getOutputFolder, 
-  PlainCallbacks 
-} = require('@domain/testing')
-
+const {
+  REGEXP_IMAGE,
+  write,
+  tests_getMarkdownFile,
+  // tests_getOutputFolder,
+  PlainCallbacks,
+} = require('@domain/testing');
 
 describe('testing images-only', () => {
   it('renders images-only', () => {
-
-    const markdown = readSourceFile('src/parserMDReact/tests/images-only/content.md');
+    const markdown = readSourceFile(
+      'src/parserMDReact/tests/images-only/content.md',
+    );
 
     const parsedContent = {
       content: markdown,

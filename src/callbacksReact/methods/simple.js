@@ -7,18 +7,15 @@ const _hr = () => `${newLine}<hr />`;
 const _empty = () => '';
 
 function _code(text, content) {
-
-
   const params = {
     content: content,
   };
 
-  const config = {    
+  const config = {
     params,
     name: 'code',
     debug: true,
   };
-
 
   // try {
   //   const replaced = commonReplace(config);
@@ -32,17 +29,15 @@ function _code(text, content) {
 }
 
 function _del(text, content) {
-  
   const params = {
-    content: content
+    content: content,
   };
 
-  const config = {    
+  const config = {
     params,
     name: 'del',
     debug: true,
   };
-
 
   // try {
   //   const replaced = commonReplace(config);
@@ -57,18 +52,16 @@ function _del(text, content) {
 }
 
 function _q(text, content) {
-  
-    const params = {
+  const params = {
     content: content,
   };
 
-  const config = {    
+  const config = {
     params,
     name: 'q',
     debug: true,
   };
- 
-  
+
   // try {
   //   const replaced = commonReplace(config);
 
@@ -82,18 +75,15 @@ function _q(text, content) {
 }
 
 function _italic(text, left, _, content, right) {
-  
-    const params = {
+  const params = {
     content: content,
   };
 
-  const config = {    
+  const config = {
     params,
     name: 'italic',
     debug: true,
   };
- 
-
 
   // try {
   //   const replaced = commonReplace(config);
@@ -108,16 +98,15 @@ function _italic(text, left, _, content, right) {
 }
 
 function _strong(text, doubleAsterix, content, asterix) {
-    const params = {
-      content: `${content + asterix}`,
+  const params = {
+    content: `${content + asterix}`,
   };
 
-  const config = {    
+  const config = {
     params,
     name: 'strong',
     debug: true,
   };
-
 
   // try {
   //   const replaced = commonReplace(config);
@@ -132,30 +121,27 @@ function _strong(text, doubleAsterix, content, asterix) {
 }
 
 function _link(text, title, href) {
-  
   const params = {
     content: title.trim(),
     href: href.trim(),
   };
 
-  const config = {    
+  const config = {
     params,
     name: 'link',
     debug: true,
   };
-
 
   const result = replaceWrapper('link', config);
   return result;
 }
 
 function _blockquote(text, tmp, item) {
-
   const params = {
-      content: `${newLine}${item.trim()}`,
+    content: `${newLine}${item.trim()}`,
   };
 
-  const config = {    
+  const config = {
     params,
     name: 'blockquote',
     debug: true,
@@ -166,31 +152,28 @@ function _blockquote(text, tmp, item) {
 }
 
 function _meme(text, src, href, altText) {
-  
   const params = {
     src: src.trim(),
     altText: altText.trim(),
     href: href.trim(),
   };
 
-  const config = {    
+  const config = {
     params,
     name: 'meme',
     debug: true,
   };
-
 
   // const result = replaceWrapper('image', config);
   return result;
 }
 
 function _header(text, chars, content) {
-  
   const params = {
     content: content.trim(),
   };
 
-  const config = {    
+  const config = {
     params,
     name: 'header',
     debug: true,
@@ -204,7 +187,6 @@ function _header(text, chars, content) {
 }
 
 function _separator() {
-  
   const config = {};
 
   // const result = `${newLine}${replaceWrapper('separator', config)}${newLine}`;
@@ -213,17 +195,15 @@ function _separator() {
 }
 
 function _previewText(text, content) {
-  
-    const params = {
+  const params = {
     content: content,
   };
 
-  const config = {    
+  const config = {
     params,
     name: 'preview',
     debug: true,
   };
-
 
   this.previewText = true;
 

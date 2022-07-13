@@ -5,11 +5,12 @@ const {
   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
 
-const { PlainCallbacks, replaceMarkdown, replaceMarkdownPreviewText } = require('atherdon-callbacks');
 const {
-  readSourceFile,
-  FULL_SOURCE,
-} = require('../../utils');
+  PlainCallbacks,
+  replaceMarkdown,
+  replaceMarkdownPreviewText,
+} = require('atherdon-callbacks');
+const { readSourceFile, FULL_SOURCE } = require('../../utils');
 
 // @TODO looks like the same thing for me
 const markdown = readSourceFile(FULL_SOURCE);
@@ -18,7 +19,10 @@ const staticMarkdown = readSourceFile(FULL_SOURCE);
 
 // @TODO finish this line later
 const root = resolve(__dirname, '');
-const htmlTeamplate = resolve(`${__dirname}/source_full_code_test/test.html`, '');
+const htmlTeamplate = resolve(
+  `${__dirname}/source_full_code_test/test.html`,
+  '',
+);
 
 const staticState = {
   content: staticMarkdown,

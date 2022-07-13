@@ -1,4 +1,3 @@
-
 const Template = {
   header: {
     key: 'REGEXP_HEADER',
@@ -22,4 +21,4 @@ const Template = {
   },
 };
 
-export default Template
+export default Template;

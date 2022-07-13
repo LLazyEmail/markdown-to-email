@@ -1,4 +1,3 @@
-
 import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 const _italic = (text, content, a, b, c) => {
@@ -42,4 +41,4 @@ const _italicAsterix = (text, content) => {
   return replaced;
 };
 
-export { _italic, _italicAsterix }
+export { _italic, _italicAsterix };

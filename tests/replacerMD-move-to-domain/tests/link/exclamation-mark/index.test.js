@@ -7,29 +7,25 @@ const { link } = require('../../../callbacks-simpleMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
-const { 
-  REGEXP_LINK, 
-  write, 
-  tests_getMarkdownFile, 
-  // tests_getOutputFolder, 
-  PlainCallbacks 
-} = require('@domain/testing')
-
+const {
+  REGEXP_LINK,
+  write,
+  tests_getMarkdownFile,
+  // tests_getOutputFolder,
+  PlainCallbacks,
+} = require('@domain/testing');
 
 describe('testing link/exclamation-mark', () => {
   it('renders link/exclamation-mark', () => {
-
-    const markdown = readSourceFile('src/parserMDReact/tests/link/exclamation-mark/content.md');
+    const markdown = readSourceFile(
+      'src/parserMDReact/tests/link/exclamation-mark/content.md',
+    );
 
     const parsedContent = {
       content: markdown,
     };
 
-    replaceMarkdown.call(
-      parsedContent,
-      REGEXP_LINK,
-      link,
-    );
+    replaceMarkdown.call(parsedContent, REGEXP_LINK, link);
 
     const fileName = 'ExclamationMark.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);

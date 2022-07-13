@@ -1,7 +1,6 @@
 import { newLine } from '../helpers';
 import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
-
 const _del = () => '<del>$1</del>';
 
 const _q = () => '<q>$1</q>';

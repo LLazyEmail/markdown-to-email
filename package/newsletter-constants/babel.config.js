@@ -4,9 +4,9 @@ const presets = [
   [
     "@babel/preset-env",
     {
-      modules: false
-    }
-  ]
+      modules: false,
+    },
+  ],
   // {
   //
   // }
@@ -31,7 +31,7 @@ const plugins = [
   //     // }
   //   }
   // ],
-  ["@babel/plugin-syntax-dynamic-import"]
+  ["@babel/plugin-syntax-dynamic-import"],
   // ["@babel/proposal-object-rest-spread"]
 ];
 

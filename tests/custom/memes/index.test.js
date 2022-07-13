@@ -6,7 +6,6 @@ const { PlainCallbacks, replaceMarkdown } = require('atherdon-callbacks');
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
 
-
 describe('testing mem', () => {
   it('renders mem', () => {
     const markdown = readSourceFile(`${root}/content.md`);

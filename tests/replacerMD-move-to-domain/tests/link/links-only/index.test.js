@@ -7,19 +7,19 @@ const { link } = require('../../../callbacks-simpleMDReact');
 
 const outFolder = 'src/parserMDReact/tests/_generated';
 
-const { 
-  REGEXP_LINK, 
-  write, 
-  tests_getMarkdownFile, 
-  // tests_getOutputFolder, 
-  PlainCallbacks 
-} = require('@domain/testing')
-
+const {
+  REGEXP_LINK,
+  write,
+  tests_getMarkdownFile,
+  // tests_getOutputFolder,
+  PlainCallbacks,
+} = require('@domain/testing');
 
 describe('testing links-only', () => {
   it('renders links-only', () => {
-
-    const markdown = readSourceFile('src/parserMDReact/tests/link/links-only/content.md');
+    const markdown = readSourceFile(
+      'src/parserMDReact/tests/link/links-only/content.md',
+    );
 
     const parsedContent = {
       content: markdown,
@@ -29,7 +29,7 @@ describe('testing links-only', () => {
 
     const fileName = 'LinksOnly.js';
     writeReactComponent(fileName, parsedContent.content, outFolder);
-    
+
     expect(1).toBe(1);
   });
 });
