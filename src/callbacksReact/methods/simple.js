@@ -124,7 +124,7 @@ function _strong(text, doubleAsterix, content, asterix) {
 
   //   return replaced;
   // } catch (error) {
-  //   catchErrorTraceOutput(error);
+  //   catch_error_trace_output(error);
   // }
 
   // const result = replaceWrapper('strong', config);
