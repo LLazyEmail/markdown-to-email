@@ -1,15 +1,15 @@
-import PlainCallbacks from './callbacksHtml';
+import PlainCallbacks from './html';
 import {
   // newLine,
   // replaceWrapper,
 
   generateNewString,
-  getWrapper,
+  // getWrapper,
 } from './helpers';
 
 export {
   PlainCallbacks,
   // replaceWrapper,
   generateNewString,
-  getWrapper,
+  // getWrapper,
 };

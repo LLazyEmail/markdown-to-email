@@ -32,5 +32,3 @@ export function _br(text, newLines) {
   //   catchErrorTraceOutput(error);
   // }
 }
-
-export default _br;

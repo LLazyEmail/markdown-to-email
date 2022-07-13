@@ -1,4 +1,4 @@
-import { replaceWrapper, newLine, beforeBeginingNewLine } from '../helpers';
+import { beforeBeginingNewLine } from '../helpers';
 
 // explore why some methods dont have a config,
 // but others have it and call replaceWrapper

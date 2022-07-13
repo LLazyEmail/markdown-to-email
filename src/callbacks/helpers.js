@@ -8,18 +8,18 @@ import { catchErrorTraceOutput } from '../domain/error-handle/index';
 
 // I think this method will be deleted or we'll update our
 // current version like W3_getWrapper
-function getWrapper(name, config) {
-  const { layouts, folder } = config;
+// function getWrapper(name, config) {
+//   const { layouts, folder } = config;
 
-  // console.log(layouts);
+//   // console.log(layouts);
 
-  try {
-    const wrapper = layouts[folder][name];
-    return wrapper;
-  } catch (error) {
-    catchErrorTraceOutput(error);
-  }
-}
+//   try {
+//     const wrapper = layouts[folder][name];
+//     return wrapper;
+//   } catch (error) {
+//     catchErrorTraceOutput(error);
+//   }
+// }
 
 // console.log(wrapper);
 
@@ -41,6 +41,8 @@ function _loopForWrapper(config, literal) {
   } catch (error) {
     catchErrorTraceOutput(error);
   }
+
+
 }
 
 function generateNewString(name, config) {
@@ -54,4 +56,4 @@ function generateNewString(name, config) {
 
 //-----------------
 
-export { generateNewString, getWrapper, _loopForWrapper };
+export { generateNewString, _loopForWrapper };

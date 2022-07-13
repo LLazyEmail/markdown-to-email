@@ -1,5 +1,4 @@
 import {
-  replaceStrong,
   commonReplace,
 } from '../../../domain/replace-wrapper3.0';
 
@@ -9,9 +8,9 @@ import {
 // probably Vadim knows what is doing on here,
 // I think he was the person that did all these funcitons.
 
-import CallbackFactory from '../../../domain/callbacks-factory';
+// import CallbackFactory from '../../../domain/callbacks-factory';
 
-import mainObj from '../../../domain/replace-markdown/pre-replace-objects';
+// import mainObj from '../../../domain/replace-markdown/pre-replace-objects';
 
 // SOON CALLBACKS WILL RETURN SETTINGS ONLY
 function _strong(text, doubleAsterix, content, asterix) {

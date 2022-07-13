@@ -113,4 +113,4 @@ export function _sponsorship(text) {
   // return replaceReactWrapper('sponsor', config, 'body');
 }
 
-export { paragraphWrapper, image, sponsorship, br, newLine };
+export { _paragraph, _image, _sponsorship, _br, newLine };
