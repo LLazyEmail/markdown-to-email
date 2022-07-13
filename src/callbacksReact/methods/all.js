@@ -35,7 +35,7 @@ export default {
   _olList,
   //------------
   _image,
-  _paragraphWrapper,
+  _paragraph,
   _sponsorship,
   _br,
   //------------

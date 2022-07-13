@@ -15,10 +15,11 @@ function getWrapper(name, config) {
 
   try {
     const wrapper = layouts[folder][name];
+    return wrapper;
   } catch (error) {
     catchErrorTraceOutput(error);
   }
-  return wrapper;
+  return false;
 }
 
 // console.log(wrapper);
