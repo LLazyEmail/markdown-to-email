@@ -1,27 +1,27 @@
-import configureReplacer from '../domain/replacer-class/configuration-react';
-import { generateReactContent, generateReactFullTemplate } from './methods';
+// import configureReplacer from '../domain/replacer-class/configuration-react';
+// import { generateReactContent, generateReactFullTemplate } from './methods';
 
-//---------------
-// TODO replace with separated parse method
+// //---------------
+// // TODO replace with separated parse method
 
-// import parse from '../domain/parse'
-import stateInit from '../domain/state';
+// // import parse from '../domain/parse'
+// import stateInit from '../domain/state';
 
-// @todo update this method. I'm sure it can be improved.
-function parseMDReact(source, isFull) {
-  const state = stateInit(source);
-  configureReplacer(state, isFull);
+// // @todo update this method. I'm sure it can be improved.
+// function parseMDReact(source, isFull) {
+//   const state = stateInit(source);
+//   configureReplacer(state, isFull);
 
-  return state;
-}
+//   return state;
+// }
 
-function parseMDReactFullThing(source) {
-  return parseMDReact(source, true);
-}
+// function parseMDReactFullThing(source) {
+//   return parseMDReact(source, true);
+// }
 
-export {
-  generateReactContent,
-  generateReactFullTemplate,
-  parseMDReact,
-  parseMDReactFullThing,
-};
+// export {
+//   generateReactContent,
+//   generateReactFullTemplate,
+//   parseMDReact,
+//   parseMDReactFullThing,
+// };

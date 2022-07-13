@@ -39,7 +39,8 @@ module.exports = {
       "no-useless-escape": 0,
       "no-unused-vars": 0,
       "no-tabs": 0,
-      "no-underscore-dangle":0,
+      "no-underscore-dangle":0, // maybe fix it later and remove _header variables
+      "import/no-cycle": 0, // TODO https://github.com/LLazyEmail/markdown-to-email/issues/1286
       "max-len": [
           "error",
           {
