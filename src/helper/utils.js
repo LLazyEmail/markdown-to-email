@@ -1,4 +1,4 @@
-//------ This file used for back capability purposes
+// ------ This file used for back capability purposes
 // moving things into 'domain' folder.
 import {
   writeHTML,

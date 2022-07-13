@@ -20,4 +20,4 @@
 //   this.content = this.content.replace(regexp, () => this.previewText);
 // }
 
-export { replaceMarkdownPreviewText };
+// export { replaceMarkdownPreviewText };

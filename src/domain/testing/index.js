@@ -22,12 +22,7 @@ import {
   REGEXP_SEPARATOR,
 } from '../../constants/index';
 
-
-import {
-  __write,
-  readSourceFile,
-} from '../write'
-
+import { __write, readSourceFile } from '../write';
 
 import PlainCallbacks from '../../callbacks/html';
 

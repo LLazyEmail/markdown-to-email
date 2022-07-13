@@ -16,7 +16,7 @@ import {
 import {
   parseMDReact,
   // parseMDReactFullThing
-} from './parse';
+} from './index';
 
 //-----------------
 // TODO add more messages here, and finally replace messages in our methods
@@ -54,7 +54,7 @@ function generateReactContent(sourceFile) {
 
   // ***
   // checkWarnings(warnings);
-  verification(warnings);
+  // verification(warnings);
 
   const fileName = generateTemplateName('Content', 'js');
   writeReactComponent(fileName, content);
@@ -72,7 +72,7 @@ function generateReactFullTemplate(sourceFile) {
 
   // ***
   // checkWarnings(warnings);
-  verification(warnings);
+  // verification(warnings);
 
   const fullContent = reactLayouts.reactFullTemplate(content);
 

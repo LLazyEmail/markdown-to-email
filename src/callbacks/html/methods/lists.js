@@ -70,7 +70,7 @@ function _ulList(text, list) {
   // console.log(list);
 
   // @todo improve this crazy structure.
-  const parsedSubListsParts = list.replace(regex, (text, subList) => {
+  const parsedSubListsParts = list.replace(regex, (text1, subList) => {
     const parsedSubItem = getParsedSubList(subList);
 
     const params = {

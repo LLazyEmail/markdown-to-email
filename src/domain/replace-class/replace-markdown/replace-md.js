@@ -58,11 +58,10 @@ function replaceMarkdown(callback_name) {
   // ------------- end
 }
 
-
 // function replaceMarkdownDebug(callback_name) {
 //   // -------------- Uncomment for debugging reasons
 //   if (debuggingReplacer(callback_name)) {
-    
+
 //     console.log(callback_name);
 
 //     const _replacer = singleElement.replacer.bind(this);

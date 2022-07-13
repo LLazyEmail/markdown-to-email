@@ -118,14 +118,12 @@ const commonReplace = (config) => {
 
   try {
     const newString = WR3_generateNewString(configCopy);
-
     return newString;
   } catch (error) {
     catchErrorTraceOutput(error);
   }
+  return false;
 };
-
-
 
 export {
   replaceLink,
