@@ -6,13 +6,16 @@ import _strong from './methods/strong';
 import _link from './methods/link';
 
 import {
-  _italic,
+  // _italic,
+
   _del,
   _q,
   _code,
   _hr,
   _empty,
 } from './methods/simple-without-replacer';
+
+import { _italic, _italicAsterix } from './methods/italic';
 
 import { _ulList, _olList, getParsedSubList } from './methods/lists';
 
@@ -31,7 +34,10 @@ export {
   _blockquote,
   _meme,
   _header,
+  //------------
   _italic,
+  _italicAsterix,
+  //---------
   _del,
   _q,
   _code,
