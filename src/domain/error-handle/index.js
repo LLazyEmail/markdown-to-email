@@ -24,7 +24,6 @@ function inspector(variable = false) {
   return true;
 }
 
-
 const catch_error_trace_output = (error) => {
   // we need to test how it actually work
   const caller_line = error.stack.split('\n')[4];

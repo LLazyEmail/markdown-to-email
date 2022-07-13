@@ -3,17 +3,17 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import write from 'write';
 
 import {
-    CONST_FILE_NOT_WRITTEN,
-    ERROR_NO_TITLE,
-    ERROR_NO_BODY_CONTENT,
-    ERROR_NO_PREVIEW_TEXT,
-} from './constant-messages'
+  CONST_FILE_NOT_WRITTEN,
+  ERROR_NO_TITLE,
+  ERROR_NO_BODY_CONTENT,
+  ERROR_NO_PREVIEW_TEXT,
+} from './constant-messages';
 
 // eslint-disable-next-line default-param-last
 function writeHTML(fileName, content, dir = 'generated', message) {
-// @todo it's not an ideal thing
+  // @todo it's not an ideal thing
   // eslint-disable-next-line no-underscore-dangle
-  const _path = `${dir}/${fileName}`; 
+  const _path = `${dir}/${fileName}`;
 
   // promise
   write(_path, content)

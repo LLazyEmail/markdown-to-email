@@ -4,6 +4,4 @@ const getYear = () => {
   return new Date().getFullYear();
 };
 
-
-
 export { copyrights };

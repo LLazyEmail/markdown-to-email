@@ -1,7 +1,6 @@
 // TODO merge with Plain Replacer, as we moved out stuff away
-//--------- 
+// ---------
 class ReactReplacer {
-
   constructor() {
     this.replaceMDBinded = () => {};
 

@@ -1,19 +1,15 @@
-import {  
-    checkWarnings,
-    checkHtml,
-    // printMessage,  
+import {
+  checkWarnings,
+  checkHtml,
+  // printMessage,
 } from '../../helper';
 
-
 function verification(warnings, content = false) {
-    // ***
-    if (warnings) checkWarnings(warnings);
+  // ***
+  if (warnings) checkWarnings(warnings);
 
-    // ***
-    if (content) checkHtml(content);
+  // ***
+  if (content) checkHtml(content);
 }
-  
 
-export {
-    verification
-}
+export { verification };

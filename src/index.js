@@ -1,12 +1,11 @@
 //-------------------
-import { 
-  writeHTML, 
-  generateTemplateName, 
-  isFolderExists 
+import {
+  writeHTML,
+  generateTemplateName,
+  isFolderExists,
 } from './domain/write';
 
 import { generateFullTemplate2 } from './parserMDHtml';
-
 
 // import {
 //   generateReactContent,

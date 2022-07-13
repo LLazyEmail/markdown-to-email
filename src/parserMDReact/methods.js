@@ -7,12 +7,11 @@ import {
   // generateTemplateName,
 } from '../helper';
 
-import { 
-  writeHTML, 
-  generateTemplateName, 
-  // isFolderExists 
+import {
+  writeHTML,
+  generateTemplateName,
+  // isFolderExists
 } from '../domain/write';
-
 
 import {
   parseMDReact,
@@ -43,15 +42,11 @@ function reactComponentReplace(content) {
   return reactComponent.replace(/{content}/g, content);
 }
 
-
-
 // eslint-disable-next-line default-param-last
 function writeReactComponent(fileName, content, dir = 'generated', message) {
   const result = reactComponentReplace(content);
   writeHTML(fileName, result, dir, message);
 }
-
-
 
 function generateReactContent(sourceFile) {
   const { content, warnings } = parseMDReact(sourceFile);
@@ -67,8 +62,6 @@ function generateReactContent(sourceFile) {
   const message = 'The Content has been parsed successfully';
   printMessage(message, 'green2');
 }
-
-
 
 function generateReactFullTemplate(sourceFile) {
   const {
@@ -89,8 +82,6 @@ function generateReactFullTemplate(sourceFile) {
   const message = 'The FullTemplate has been parsed successfully';
   printMessage(message, 'green2');
 }
-
-
 
 export {
   reactComponent,

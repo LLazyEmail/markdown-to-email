@@ -15,5 +15,4 @@ function objectBuilder(constant, replacer, literal = false) {
   return { constant, replacer, literal };
 }
 
-
-export default objectBuilder
+export default objectBuilder;

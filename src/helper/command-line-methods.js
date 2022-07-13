@@ -124,8 +124,6 @@ const checkingPreviewText = (previewText) => {
   }
 };
 
-
-
 // ---
 
 export {

@@ -168,6 +168,4 @@ style="
 </tbody>
 </table>`;
 
-
-
 export { sponsor };

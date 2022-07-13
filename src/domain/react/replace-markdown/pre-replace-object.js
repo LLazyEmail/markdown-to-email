@@ -1,83 +1,77 @@
 import { Callbacks } from '../../../callbacksReact';
 
-const {_strong,
-    _link,
-    _blockquote,
-    _mem,
-    _header,
-    _italic,
-    _del,
-    _q,
-    _code,
-    _hr,
-    _empty,
-    //------------
-    _ulList,
-    _olList,
-    //------------
-    _image,
-    _paragraphWrapper,
-    _sponsorship,
-    _br,
-    //------------
-    _separator,
-} = Callbacks;
+import {
+  REGEXP_HEADER,
+  REGEXP_IMAGE,
+  REGEXP_LINK,
+  REGEXP_STRONG,
+  REGEXP_DEL,
+  REGEXP_Q,
+  REGEXP_CODE,
+  REGEXP_UL_LIST,
+  REGEXP_OL_LIST,
+  REGEXP_BLOCKQUOTE,
+  REGEXP_HR,
+  REGEXP_BR,
+  REGEXP_EM,
+  REGEXP_SPONSORSHIP,
+  REGEXP_MEM,
+  REGEXP_PREVIEW_TEXT,
+  REGEXP_PARAGRAPH,
+  REGEXP_SEPARATOR,
+} from '../../constants/index';
 
 import {
-    REGEXP_HEADER,
-    REGEXP_IMAGE,
-    REGEXP_LINK,
-    REGEXP_STRONG,
-    REGEXP_DEL,
-    REGEXP_Q,
-    REGEXP_CODE,
-    REGEXP_UL_LIST,
-    REGEXP_OL_LIST,
-    REGEXP_BLOCKQUOTE,
-    REGEXP_HR,
-    REGEXP_BR,
-    REGEXP_EM,
-    REGEXP_SPONSORSHIP,
-    REGEXP_MEM,
-    REGEXP_PREVIEW_TEXT,
-    REGEXP_PARAGRAPH,
-    REGEXP_SEPARATOR,
-  } from '../../constants/index';
-
-  import {
-    headingLiteral,
-    imageLiteral,
-    italicLiteral,
-    linkLiteral,
-    listLiteral,
-    listItemLiteral,
-    mainTitleLiteral,
-    paragraphLiteral,
-    strongLiteral,
-    subtitleLiteral,
-    qLiteral,
-    delLiteral,
-    codeLiteral,
-    blockquoteLiteral,
-    separatorLiteral 
+  headingLiteral,
+  imageLiteral,
+  italicLiteral,
+  linkLiteral,
+  listLiteral,
+  listItemLiteral,
+  mainTitleLiteral,
+  paragraphLiteral,
+  strongLiteral,
+  subtitleLiteral,
+  qLiteral,
+  delLiteral,
+  codeLiteral,
+  blockquoteLiteral,
+  separatorLiteral,
 } from '../../../templates/NewsletterReactTemplate/typography';
-
 
 import objectBuilder from '../../md/object-builder';
 
-
-
-
+const {
+  _strong,
+  _link,
+  _blockquote,
+  _mem,
+  _header,
+  _italic,
+  _del,
+  _q,
+  _code,
+  _hr,
+  _empty,
+  //------------
+  _ulList,
+  _olList,
+  //------------
+  _image,
+  _paragraphWrapper,
+  _sponsorship,
+  _br,
+  //------------
+  _separator,
+} = Callbacks;
 
 // const strong = objectBuilder(REGEXP_STRONG, _strong, strongLiteral);
 // // console.log(strong);
-
 
 // const link = objectBuilder(REGEXP_LINK, _link, linkLiteral);
 
 // // delLiteral,
 // const del = objectBuilder(REGEXP_DEL, _del, false);
-
 
 // const image = objectBuilder(REGEXP_IMAGE, _image, imageLiteral);
 
@@ -89,12 +83,10 @@ import objectBuilder from '../../md/object-builder';
 
 // // empty as emptyLiteral,
 
-
 // const italic = objectBuilder(REGEXP_EM, _italic, italicLiteral);
 
 // // TODO header arent working as suppose too
 // const header = objectBuilder(REGEXP_HEADER, _header, headingLiteral);
-
 
 // // qLiteral,
 // const q = objectBuilder(REGEXP_Q, _q, false);
@@ -102,10 +94,9 @@ import objectBuilder from '../../md/object-builder';
 // // codeLiteral,
 // const code = objectBuilder(REGEXP_CODE, _code, false);
 
-
 // const listItem = objectBuilder(
-//   REGEXP_SUB_LISTS, 
-//   getParsedSubList, 
+//   REGEXP_SUB_LISTS,
+//   getParsedSubList,
 //   listItemLiteral
 //   );
 
@@ -125,7 +116,6 @@ import objectBuilder from '../../md/object-builder';
 // // hrLiteral,
 // const hr = objectBuilder(REGEXP_HR, _hr, false);
 
-
 // const paragraph = objectBuilder(
 //   REGEXP_PARAGRAPH,
 //   _paragraphWrapper,
@@ -133,7 +123,6 @@ import objectBuilder from '../../md/object-builder';
 // );
 
 // const br = objectBuilder(REGEXP_BR, _br);
-
 
 // const sponsorship = objectBuilder(
 //   REGEXP_SPONSORSHIP,
@@ -145,8 +134,8 @@ import objectBuilder from '../../md/object-builder';
 // const memes = objectBuilder(REGEXP_MEM, _meme, false);
 
 // const separator = objectBuilder(
-//   REGEXP_SEPARATOR, 
-//   _separator, 
+//   REGEXP_SEPARATOR,
+//   _separator,
 //   separatorLiteral
 //   );
 
@@ -189,4 +178,3 @@ import objectBuilder from '../../md/object-builder';
 //     memes,
 //     separator,
 //   };
-  

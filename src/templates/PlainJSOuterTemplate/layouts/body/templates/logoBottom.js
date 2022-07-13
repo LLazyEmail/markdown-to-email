@@ -96,5 +96,4 @@ style="
 </tbody>
 </table>`;
 
-
 export { logoBottom };

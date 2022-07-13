@@ -32,8 +32,6 @@ export function _sponsorship(markdown_string) {
   // TODO ITS IMPORTANT TO BE ABLE TO FIND A WAY TO GENERATE AN ERROR
   // AND PASS IT TO THE PREV CALLER.
 
-
   const replaced = commonReplace(config);
   return replaced;
-
 }

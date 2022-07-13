@@ -1,18 +1,17 @@
-import { replaceStrong, commonReplace } from '../../../domain/replace-wrapper3.0';
+import {
+  replaceStrong,
+  commonReplace,
+} from '../../../domain/replace-wrapper3.0';
 
 // import { catch_error_trace_output } from '../../../domain/error-handle';
-
-
 
 // TODO make sense to the text variable
 // probably Vadim knows what is doing on here,
 // I think he was the person that did all these funcitons.
 
-
 import CallbackFactory from '../../../domain/callbacks-factory';
 
 import mainObj from '../../../domain/replace-markdown/pre-replace-objects';
-
 
 // SOON CALLBACKS WILL RETURN SETTINGS ONLY
 function _strong(text, doubleAsterix, content, asterix) {
@@ -26,7 +25,6 @@ function _strong(text, doubleAsterix, content, asterix) {
     name: 'strong',
     // debug: true,
   };
-
 
   // const settings = {
   //   params,
@@ -43,7 +41,6 @@ function _strong(text, doubleAsterix, content, asterix) {
 
   const replaced = commonReplace(config);
   return replaced;
-
 }
 
 // export default _strong;

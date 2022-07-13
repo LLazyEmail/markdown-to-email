@@ -8,7 +8,6 @@ import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 // import mainObj from '../../../domain/replace-markdown/pre-replace-objects';
 
-
 // SOON CALLBACKS WILL RETURN SETTINGS ONLY
 function _strong(text, doubleAsterix, content, asterix) {
   const params = {
@@ -37,7 +36,6 @@ function _strong(text, doubleAsterix, content, asterix) {
 
   const replaced = commonReplace(config);
   return replaced;
-
 }
 
 export default _strong;

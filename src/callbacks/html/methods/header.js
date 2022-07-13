@@ -6,7 +6,6 @@ import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 // TODO fix issue related to text variable
 function _header(text, chars, content) {
-
   // const factory = CallbackFactory.create();
 
   const params = {
@@ -20,14 +19,12 @@ function _header(text, chars, content) {
   const config = {
     params,
     name,
-    
+
     // debug: true,
   };
 
   const replaced = commonReplace(config);
-return newLine + replaced;
-
-
+  return newLine + replaced;
 }
 
 export default _header;

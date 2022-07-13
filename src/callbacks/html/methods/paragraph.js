@@ -30,7 +30,6 @@ export function _paragraphWrapper(text, markdown_string) {
 
   const replaced = commonReplace(config);
   return newLine + replaced + newLine;
-
 }
 
 export default _paragraphWrapper;

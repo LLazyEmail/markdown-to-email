@@ -17,8 +17,6 @@ const fakeTitleGenerator = () => {
     .substr(0, 5);
 };
 
-
-
 const generateTemplateComponent = () => {
   const title = fakeTitleGenerator();
 
@@ -33,7 +31,5 @@ const generateTemplateComponent = () => {
 
   return mainComponent(TemplateHead, bodyWithContent);
 };
-
-
 
 export default generateTemplateComponent;

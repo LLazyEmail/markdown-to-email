@@ -25,8 +25,6 @@ import { _sponsorship } from './methods/sponsor';
 
 import { _paragraphWrapper } from './methods/paragraph';
 
-
-
 export {
   _strong,
   _link,
@@ -50,5 +48,4 @@ export {
   _br,
   _separator,
   _previewText,
-
 };

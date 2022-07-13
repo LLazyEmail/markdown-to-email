@@ -10,7 +10,6 @@ import {
 export {
   PlainCallbacks,
   // replaceWrapper,
-
   generateNewString,
   getWrapper,
 };

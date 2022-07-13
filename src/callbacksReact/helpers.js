@@ -8,8 +8,6 @@ console.log(reactLayouts);
 const platform = os.platform();
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
-
-
 // function replaceReactWrapper(wrapperName, config, folder = 'typography') {
 //   // console.log(reactLayouts.Typography.strong);
 //   // console.log("name", config);
@@ -25,10 +23,6 @@ const newLine = platform === 'win32' ? '\r\n' : '\n';
 //   return wrapper;
 // }
 
-
-
-
-
 // function replaceReactWrapper(name, config, folder = 'typography') {
 //   // console.log(reactLayouts.Typography.strong);
 //   // console.log("name", config);
@@ -42,9 +36,6 @@ const newLine = platform === 'win32' ? '\r\n' : '\n';
 
 //   return generateNewString(name, configCopy);
 // }
-
-
-
 
 export {
   newLine,

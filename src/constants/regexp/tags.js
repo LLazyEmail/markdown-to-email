@@ -55,7 +55,6 @@ const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
 // italic for asterics  \*(?![*\s])(?:[^*]*[^*\s])?\*
 // italic for underscore /(\s|>)(_)(.*?)\2(\s|<)/
 
-
 export {
   REGEXP_HEADER,
   REGEXP_IMAGE,

@@ -7,5 +7,4 @@ function _blockquote(text, tmp, item) {
   return beforeBeginingNewLine(tag);
 }
 
-
-export default  _blockquote;
+export default _blockquote;

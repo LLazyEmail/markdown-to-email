@@ -9,15 +9,13 @@ function _meme(text, src, href, altText) {
   };
 
   const config = {
-
     params,
     name: 'image',
     // debug: true,
-  };  
+  };
 
   const replaced = commonReplace(config);
   return replaced;
-
 }
 
 export default _meme;

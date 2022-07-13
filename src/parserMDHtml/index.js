@@ -1,14 +1,13 @@
 // TODO: something wrong with newsletter-constants module
-import configureReplacer from '../domain/replace-class/configuration'
+import configureReplacer from '../domain/replace-class/configuration';
 
-import parse from '../domain/parse'
+import parse from '../domain/parse';
 
 import {
   generateFullTemplate2,
   // generateFullTemplate,
   // generateContentOnly,
 } from './methods';
-
 
 function parseFullTHing(params) {
   // console.log(params);
@@ -21,8 +20,7 @@ function parseFullTHing(params) {
 export {
   // generateContentOnly, // depricated method
   generateFullTemplate2,
-
-  parseFullTHing, parse 
+  parseFullTHing,
+  parse,
   // generateFullTemplate,
-
 };

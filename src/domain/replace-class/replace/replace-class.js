@@ -1,10 +1,8 @@
 // @TODO include things from a new module that we have.
 // we need to pass all constants somewhere, but not to the replaceWrapper
 
-
 class Replace {
   constructor() {
-
     this.replaceMDBinded = () => {};
 
     // I think this version isnt working well
@@ -33,9 +31,7 @@ class Replace {
       this.replaceMDBinded('italic_asterix');
     };
 
-
-
-    // TODO working not ideally, because we have headings & subtitles, 
+    // TODO working not ideally, because we have headings & subtitles,
     // so it's confusing a little bit
     this.header = () => {
       this.replaceMDBinded('header');
@@ -43,11 +39,10 @@ class Replace {
 
     this.subtitle = () => {
       this.replaceMDBinded('header');
-    }
+    };
     this.title = () => {
       this.replaceMDBinded('header');
-    }
-
+    };
 
     this.image = () => {
       this.replaceMDBinded('image');
@@ -93,14 +88,14 @@ class Replace {
     // this.emptyUl = () => {
     //   this.replaceMDBinded('REGEXP_EMPTY_UL');
     // };
-    
+
     // this.emptyOl = () => {
     //   this.replaceMDBinded('REGEXP_EMPTY_OL');
     // };
 
     // this line is generating an error
     // this.replaceMDBinded(this._constants.REGEXP_EMPTY_BLOCKQUOTE, newLine);
-    // this.emptyBlockquote = () => {        
+    // this.emptyBlockquote = () => {
     //   this.replaceMDBinded('REGEXP_EMPTY_BLOCKQUOTE');
     // };
     //---------------------
@@ -169,17 +164,14 @@ class Replace {
     //-----
     this.paragraph();
 
-
     // TODO fix this
     // this.emptyUl();
     // this.emptyOl();
   }
 
-
   // runConfigure () {
-    
-  // }
 
+  // }
 }
 
 export default new Replace();

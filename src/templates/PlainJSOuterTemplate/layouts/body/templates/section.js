@@ -89,6 +89,4 @@ const section = `
                     </tbody>
                   </table>`;
 
-
-   
 export { section };

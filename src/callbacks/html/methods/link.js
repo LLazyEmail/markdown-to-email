@@ -24,7 +24,6 @@ function _link(text, title, href) {
 
     return replaced;
     // return newLine + replaced + newLine;
-
   } catch (error) {
     catch_error_trace_output(error);
   }

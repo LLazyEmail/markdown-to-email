@@ -1,4 +1,4 @@
-import { commonReplace } from "../../../domain/replace-wrapper3.0";
+import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 // TODO remove unused `text` argument
 export function _image(text, alt, srcWithTooltip) {
@@ -12,7 +12,6 @@ export function _image(text, alt, srcWithTooltip) {
   };
 
   const config = {
-
     params,
     name: 'image',
     // debug: true,
@@ -20,13 +19,10 @@ export function _image(text, alt, srcWithTooltip) {
 
   // i dont think it will work well
   // eslint-disable-next-line no-plusplus
-  this.warnings.images++;  
-
-
+  this.warnings.images++;
 
   const replaced = commonReplace(config);
   return replaced;
-
 }
 
 export default _image;

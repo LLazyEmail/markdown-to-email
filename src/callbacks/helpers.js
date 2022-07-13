@@ -6,8 +6,7 @@ import { catch_error_trace_output } from '../domain/error-handle/index';
 // const platform = os.platform();
 // const newLine = platform === 'win32' ? '\r\n' : '\n';
 
-
-// I think this method will be deleted or we'll update our 
+// I think this method will be deleted or we'll update our
 // current version like W3_getWrapper
 function getWrapper(name, config) {
   const { layouts, folder } = config;
@@ -21,7 +20,6 @@ function getWrapper(name, config) {
     catch_error_trace_output(error);
   }
 }
-
 
 // console.log(wrapper);
 

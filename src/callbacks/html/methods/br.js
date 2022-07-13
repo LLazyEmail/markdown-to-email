@@ -13,13 +13,12 @@ export function _br(text, newLines) {
     (acc, current, index) => (index > 0 ? `${acc}<br/>${current}` : current),
     '',
   );
-  
+
   // console.log(result);
   return result;
 
   // TODO upgrade this method so it fix with out main logic
-  
-  
+
   // NOT FINISHED
 
   // debug: true
