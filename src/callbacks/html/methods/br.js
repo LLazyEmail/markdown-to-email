@@ -3,7 +3,7 @@ import { newLine } from '../helpers';
 import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 // TODO figure out `text` argument
-export function _br(text, newLines) {
+function _br(text, newLines) {
   // TODO move out this regex into constants file.
   const regex = new RegExp(newLine, 'g');
   const arrNewLines = newLines.match(regex);
@@ -32,3 +32,5 @@ export function _br(text, newLines) {
   //   catchErrorTraceOutput(error);
   // }
 }
+
+export default _br;
