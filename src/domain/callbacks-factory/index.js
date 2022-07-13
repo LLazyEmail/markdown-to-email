@@ -1,7 +1,7 @@
 //-------------------
 // ----- examples below
 
-import { catch_error_trace_output, inspector } from '../error-handle';
+import { catchErrorTraceOutput, inspector } from '../error-handle';
 
 import { WR3_generateNewString, WR3_getWrapper } from '../replace-wrapper3.0';
 
@@ -43,7 +43,7 @@ class CallbackFactory {
       // let newString = this.WR3_generateNewString(configCopy);
       // console.log(newString);
     } catch (error) {
-      catch_error_trace_output(error);
+      catchErrorTraceOutput(error);
     }
   };
 

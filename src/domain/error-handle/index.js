@@ -24,11 +24,11 @@ function inspector(variable = false) {
   return true;
 }
 
-const catch_error_trace_output = (error) => {
+const catchErrorTraceOutput = (error) => {
   // we need to test how it actually work
-  const caller_line = error.stack.split('\n')[4];
-  const index = caller_line.indexOf('at ');
-  const clean = caller_line.slice(index + 2, caller_line.length);
+  const callerLine = error.stack.split('\n')[4];
+  const index = callerLine.indexOf('at ');
+  const clean = callerLine.slice(index + 2, callerLine.length);
 
   throw error;
 };
@@ -43,12 +43,12 @@ const tracingVariables = (regexp, replacer, callback) => {
     // ... add more here later
   } catch (err) {
     // we need to test how it actually work
-    const caller_line = err.stack.split('\n')[4];
-    const index = caller_line.indexOf('at ');
-    const clean = caller_line.slice(index + 2, caller_line.length);
+    const callerLine = err.stack.split('\n')[4];
+    const index = callerLine.indexOf('at ');
+    const clean = callerLine.slice(index + 2, callerLine.length);
 
     throw err;
   }
 };
 
-export { catch_error_trace_output, inspector };
+export { catchErrorTraceOutput, inspector };

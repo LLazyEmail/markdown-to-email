@@ -1,5 +1,5 @@
 import { mapKeys } from 'lodash';
-import { catch_error_trace_output } from '../domain/error-handle/index';
+import { catchErrorTraceOutput } from '../domain/error-handle/index';
 
 // import os from 'os';
 
@@ -17,7 +17,7 @@ function getWrapper(name, config) {
     const wrapper = layouts[folder][name];
     return wrapper;
   } catch (error) {
-    catch_error_trace_output(error);
+    catchErrorTraceOutput(error);
   }
 }
 
@@ -39,7 +39,7 @@ function _loopForWrapper(config, literal) {
 
     return literal;
   } catch (error) {
-    catch_error_trace_output(error);
+    catchErrorTraceOutput(error);
   }
 }
 

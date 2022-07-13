@@ -10,7 +10,7 @@ import {
   _loopForWrapper,
 } from '../../callbacks/helpers';
 
-import { inspector, catch_error_trace_output } from '../error-handle';
+import { inspector, catchErrorTraceOutput } from '../error-handle';
 
 import { mainObject } from '../replace-class';
 // import replace from '../replace-class/index';
@@ -43,7 +43,7 @@ const WR3_getWrapper = (name, debug = false) => {
       return { literal: mainObject[name].literal };
     }
   } catch (error) {
-    catch_error_trace_output(error);
+    catchErrorTraceOutput(error);
   }
 };
 
@@ -90,7 +90,7 @@ const commonReplace = (config) => {
 
     return newString;
   } catch (error) {
-    catch_error_trace_output(error);
+    catchErrorTraceOutput(error);
   }
 };
 

@@ -29,7 +29,7 @@ export function _br(text, newLines) {
 
   //   return newLine + replaced;
   // } catch (error) {
-  //   catch_error_trace_output(error);
+  //   catchErrorTraceOutput(error);
   // }
 }
 

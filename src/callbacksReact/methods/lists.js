@@ -26,7 +26,7 @@ function getParsedSubList(subList) {
 
         return replaced;
       } catch (error) {
-        catch_error_trace_output(error);
+        catchErrorTraceOutput(error);
       }
 
       // return `${newLine + replaceWrapper('listItem', config)}`;
@@ -65,7 +65,7 @@ function _ulList(text, list) {
     
       //   return replaced;
       // } catch (error) {
-      //   catch_error_trace_output(error);
+      //   catchErrorTraceOutput(error);
       // }
 
 
@@ -92,7 +92,7 @@ function _ulList(text, list) {
 
   //   return replaced;
   // } catch (error) {
-  //   catch_error_trace_output(error);
+  //   catchErrorTraceOutput(error);
   // }
 
       // return `${newLine + replaceWrapper('listItem', config)}`;

@@ -32,7 +32,7 @@ export function _paragraph(text, line) {
 
   //   return replaced;
   // } catch (error) {
-  //   catch_error_trace_output(error);
+  //   catchErrorTraceOutput(error);
   // }
 
   // const result = newLine + replaceReactWrapper('paragraph', config) + newLine;
@@ -65,7 +65,7 @@ export function _image(text, alt, srcWithTooltip) {
 
   //   return replaced;
   // } catch (error) {
-  //   catch_error_trace_output(error);
+  //   catchErrorTraceOutput(error);
   // }
 
   // const result = replaceReactWrapper('image', config);
@@ -112,7 +112,7 @@ export function _sponsorship(text) {
 
   //   return replaced;
   // } catch (error) {
-  //   catch_error_trace_output(error);
+  //   catchErrorTraceOutput(error);
   // }
 
 

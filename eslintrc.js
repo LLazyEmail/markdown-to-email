@@ -39,6 +39,7 @@ module.exports = {
       "no-useless-escape": 0,
       "no-unused-vars": 0,
       "no-tabs": 0,
+      "no-underscore-dangle":0,
       "max-len": [
           "error",
           {

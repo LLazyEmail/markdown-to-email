@@ -25,7 +25,7 @@ function _code(text, content) {
 
   //   return replaced;
   // } catch (error) {
-  //   catch_error_trace_output(error);
+  //   catchErrorTraceOutput(error);
   // }
   // const result = replaceWrapper('code', config);
   return result;
@@ -49,7 +49,7 @@ function _del(text, content) {
 
   //   return replaced;
   // } catch (error) {
-  //   catch_error_trace_output(error);
+  //   catchErrorTraceOutput(error);
   // }
 
   // const result = replaceWrapper('del', config);
@@ -74,7 +74,7 @@ function _q(text, content) {
 
   //   return replaced;
   // } catch (error) {
-  //   catch_error_trace_output(error);
+  //   catchErrorTraceOutput(error);
   // }
 
   // const result = replaceWrapper('q', config);
@@ -100,7 +100,7 @@ function _italic(text, left, _, content, right) {
 
   //   return replaced;
   // } catch (error) {
-  //   catch_error_trace_output(error);
+  //   catchErrorTraceOutput(error);
   // }
 
   // const result = replaceWrapper('italic', config);
@@ -124,7 +124,7 @@ function _strong(text, doubleAsterix, content, asterix) {
 
   //   return replaced;
   // } catch (error) {
-  //   catch_error_trace_output(error);
+  //   catchErrorTraceOutput(error);
   // }
 
   // const result = replaceWrapper('strong', config);

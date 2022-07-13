@@ -2,7 +2,7 @@ import { replaceWrapper, newLine } from '../helpers';
 
 import { replaceLink } from '../../../domain/replace-wrapper3.0';
 
-import { catch_error_trace_output } from '../../../domain/error-handle';
+import { catchErrorTraceOutput } from '../../../domain/error-handle';
 
 // TODO remove unused `text` argument
 // check text variable later
@@ -25,7 +25,7 @@ function _link(text, title, href) {
     return replaced;
     // return newLine + replaced + newLine;
   } catch (error) {
-    catch_error_trace_output(error);
+    catchErrorTraceOutput(error);
   }
 
   return replaced;
