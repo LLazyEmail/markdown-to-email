@@ -39,18 +39,18 @@ export function _paragraph(text, line) {
 /// !end function is not working as planned
 
 export function _image(text, alt, srcWithTooltip) {
-  const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
+  // const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
 
-  const params = {
-    src: src.trim(),
-    altText: alt,
-  };
+  // const params = {
+  //   src: src.trim(),
+  //   altText: alt,
+  // };
 
-  const config = {
-    params,
-    name: 'image',
-    debug: true,
-  };
+  // const config = {
+  //   params,
+  //   name: 'image',
+  //   debug: true,
+  // };
 
   this.warnings.images++;
 
@@ -85,17 +85,17 @@ export function _sponsorship(text) {
     .match(regex)
     .map((match) => match.replace(/[\[\]]/g, ''));
 
-  const params = {
-    src: src.trim(),
-    href: href.trim(),
-    content: content.trim(),
-  };
+  // const params = {
+  //   src: src.trim(),
+  //   href: href.trim(),
+  //   content: content.trim(),
+  // };
 
-  const config = {
-    params,
-    name: 'sponsor',
-    debug: true,
-  };
+  // const config = {
+  //   params,
+  //   name: 'sponsor',
+  //   debug: true,
+  // };
 
   // try {
   //   const replaced = commonReplace(config);

@@ -40,16 +40,16 @@ function _ulList(text, list) {
     (text, subList) => {
       const parsedSubItem = getParsedSubList(subList);
 
-      const params = {
-        content: parsedSubItem + newLine,
-        type: 'UL',
-      };
+      // const params = {
+      //   content: parsedSubItem + newLine,
+      //   type: 'UL',
+      // };
 
-      const config = {
-        params,
-        name: 'list?',
-        debug: true,
-      };
+      // const config = {
+      //   params,
+      //   name: 'list?',
+      //   debug: true,
+      // };
 
       // return `${newLine + replaceWrapper('list', config)}`;
 
@@ -66,15 +66,15 @@ function _ulList(text, list) {
   const parsedList = parsedSubListsParts.replace(
     new RegExp(`\\*(.*?)${newLine}`, 'g'),
     (text, listItem) => {
-      const params = {
-        content: listItem.trim(),
-      };
+      // const params = {
+      //   content: listItem.trim(),
+      // };
 
-      const config = {
-        params,
-        name: 'listItem?',
-        debug: true,
-      };
+      // const config = {
+      //   params,
+      //   name: 'listItem?',
+      //   debug: true,
+      // };
 
       // try {
       //   const replaced = commonReplace(config);
@@ -88,16 +88,16 @@ function _ulList(text, list) {
     },
   );
 
-  const params = {
-    content: parsedList + newLine,
-    type: 'UL',
-  };
+  // const params = {
+  //   content: parsedList + newLine,
+  //   type: 'UL',
+  // };
 
-  const config = {
-    params,
-    name: 'list',
-    debug: true,
-  };
+  // const config = {
+  //   params,
+  //   name: 'list',
+  //   debug: true,
+  // };
 
   // const config = {
 
