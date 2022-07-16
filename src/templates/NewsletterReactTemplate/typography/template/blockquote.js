@@ -1,1 +1,1 @@
-export const blockquote = '<Blockquote>{content}</Blockquote>';
+export const blockquoteLiteral = '<Blockquote>{content}</Blockquote>';

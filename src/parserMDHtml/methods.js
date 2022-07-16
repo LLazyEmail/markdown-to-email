@@ -1,12 +1,14 @@
 // @TODO both layouts things can be moved out from importing it here.
 
 import {
-  writeHTML,
-  checkWarnings,
-  checkHtml,
+  // checkWarnings,
+  // checkHtml,
   printMessage,
-  generateTemplateName,
 } from '../helper';
+
+import { writeHTML, generateTemplateName } from '../domain/write';
+
+import { verification } from '../domain/helper-methods';
 
 // rename too something else, because we have a mix there
 import {
@@ -14,30 +16,39 @@ import {
   // fullTemplateOLD,
   generateEmptyTemplateComponent,
   generateTemplateComponent,
-} from '../templates/OuterTemplate';
+} from '../templates/PlainJSOuterTemplate';
 
-import { parseFullTHing } from './parse';
+// import plainV2 from '../domain/plainjs-template/template';
 
+import { parseFullTHing } from './index';
+
+//------------------
 const MESSAGE_HTML_CONTENT_ONLY = 'The content has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE =
   'The full-template has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE2 =
   'The full-template has been parsed successfully2';
+//------------------
 
+//------------------------------
 const deliver = (template, name, message) => {
+  // console.log(plainV2());
+
   const fileName = generateTemplateName(name);
   writeHTML(fileName, template);
   printMessage(message, 'green2');
 };
+//------------------------------
 
-function verification(warnings, content = false) {
-  // ***
-  if (warnings) checkWarnings(warnings);
+// function verification(warnings, content = false) {
+//   // ***
+//   if (warnings) checkWarnings(warnings);
 
-  // ***
-  if (content) checkHtml(content);
-}
+//   // ***
+//   if (content) checkHtml(content);
+// }
 
+//------------------------------
 function generateFullTemplate2(sourceFile) {
   // should warnings be returned here?
   const { content, warnings, previewText } = parseFullTHing({
@@ -47,16 +58,18 @@ function generateFullTemplate2(sourceFile) {
   // ***
   verification(warnings, content);
 
-  //   @TODO HERE WE CAN APPLY THAT PREVIEWTEXT IS EMPTY INSIDE
+  //   @TODO HERE WE CAN APPLY THAT PREVIEW-TEXT IS EMPTY INSIDE
   // console.log(content);
 
   // throw new Error("my error message");
 
-  deliver(
-    fullTemplate({ content, previewText }),
-    'full-template-2',
-    MESSAGE_HTML_FULL_TEMPLATE2,
-  );
+  //----------------------------------------
+  const completedTemplate = fullTemplate({
+    content,
+    previewText,
+  });
+
+  deliver(completedTemplate, 'full-template-2', MESSAGE_HTML_FULL_TEMPLATE2);
 }
 
 // function generateFullTemplate() {
@@ -77,13 +90,15 @@ function generateFullTemplate2(sourceFile) {
 
 //   deliver(content, 'content', MESSAGE_HTML_CONTENT_ONLY);
 // };
-
+//------------------------------
+//------------------------------
 // const generateInterior = (sourceFile) => {
 //   const { content, warnings, previewText } = parse(sourceFile);
 
 //   verification(warnings);
 // };
-
+//------------------------------
+//------------------------------
 // function generateFullTemplate(sourceFile) {
 //   // same as from top
 
@@ -93,7 +108,8 @@ function generateFullTemplate2(sourceFile) {
 //   printMessage(message, 'green2');
 // }
 
-//--------------
+//-----------------------------
+//------------------------------
 function compileEmptyTemplate() {
   //---------------------
 
@@ -119,10 +135,11 @@ export {
 
   generateFullTemplate2,
   // generateFullTemplate,
-
+  //-------------
   MESSAGE_HTML_CONTENT_ONLY,
   MESSAGE_HTML_FULL_TEMPLATE,
   MESSAGE_HTML_FULL_TEMPLATE2,
+  //-------------
   compileEmptyTemplate,
   compileTemplate,
 };

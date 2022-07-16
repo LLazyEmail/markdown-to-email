@@ -7,7 +7,6 @@ const { PlainCallbacks, replaceMarkdown } = require('atherdon-callbacks');
 const root = resolve(__dirname, '');
 const outFolder = resolve('src/tests', 'directory', '../_generated');
 
-
 describe('testing sponsorship', () => {
   it('renders sponsorship', () => {
     const markdown = readSourceFile(`${root}/sponsorship.md`);
@@ -17,7 +16,11 @@ describe('testing sponsorship', () => {
         sponsorshipTop: false,
       },
     };
-    replaceMarkdown.call(parsedContent, REGEXP_SPONSORSHIP, PlainCallbacks.sponsorship);
+    replaceMarkdown.call(
+      parsedContent,
+      REGEXP_SPONSORSHIP,
+      PlainCallbacks.sponsorship,
+    );
     const fileName = 'sponsorship.html';
     write(fileName, parsedContent.content, outFolder);
     expect(1).toBe(1);

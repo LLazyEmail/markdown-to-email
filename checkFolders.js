@@ -1,4 +1,5 @@
-const { isFolderExists } = require('./src/utils');
+const { isFolderExists } = require('./src/helper');
+// ./helper');
 
 isFolderExists('generated');
 isFolderExists('./src/tests/_generated');

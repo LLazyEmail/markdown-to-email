@@ -1,1 +1,1 @@
-export const separator = `<Separator />`;
+export const separatorLiteral = `<Separator />`;

@@ -1,4 +1,5 @@
 /* eslint-disable prefer-regex-literals */
+// https://regex101.com/
 import os from 'os';
 
 const platform = os.platform();
@@ -23,7 +24,9 @@ const REGEXP_LINK_HTTPS = new RegExp('>https', 'g');
 const REGEXP_STR_BEGIN = '>https';
 const REGEXP_STR_END = 'f<';
 
-const REGEXP_SEPARATOR = new RegExp(`${newLine}\\[separator\\]${newLine}`, 'g');
+// TODO add that beforeMethod
+const regex_string = `\\[separator\\]`;
+const REGEXP_SEPARATOR = new RegExp(newLine + regex_string + newLine, 'g');
 
 export {
   REGEXP_SPONSORSHIP,

@@ -5,10 +5,7 @@ const {
   REGEXP_PREVIEW_TEXT,
 } = require('atherdon-newsletter-constants');
 
-const {
-  header,
-  sponsorship,
-} = require('../callbacks');
+const { header, sponsorship } = require('../callbacks');
 
 // const layouts = require("atherdon-newsletter-constants");
 

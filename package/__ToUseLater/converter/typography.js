@@ -4,7 +4,7 @@
 
 //   REGEXP_IMAGE,
 //   REGEXP_LINK,
-  
+
 //   REGEXP_DEL,
 //   REGEXP_Q,
 //   REGEXP_CODE,
@@ -18,15 +18,12 @@
 //   REGEXP_PARAGRAPH,
 
 //   REGEXP_EMPTY_UL,
-//   REGEXP_EMPTY_OL   
+//   REGEXP_EMPTY_OL
 // } = require('atherdon-newsletter-constants');
 
-import { 
-  PlainCallbacks
-} from 'atherdon-callbacks';
+import { PlainCallbacks } from 'atherdon-callbacks';
 
 const {
-  
   strong,
   italic,
   image,
@@ -40,18 +37,17 @@ const {
 
   blockquote,
   hr,
-  
+
   paragraphWrapper,
 
   // br,
   // strong,
-  empty
+  empty,
 } = PlainCallbacks;
 
 // https://github.com/atherdon/markdown-regex/blob/main/src/index.js
 
 const Typography = {
-
   strong: {
     key: 'REGEXP_STRONG',
     value: strong,
@@ -65,7 +61,7 @@ const Typography = {
     key: 'REGEXP_IMAGE',
     value: image,
   },
-  
+
   link: {
     key: 'REGEXP_LINK',
     value: link,
@@ -79,12 +75,10 @@ const Typography = {
   q: {
     key: 'REGEXP_Q',
     value: q,
-
   },
   code: {
     key: 'REGEXP_CODE',
     value: code,
-
   },
 
   ulList: {
@@ -103,9 +97,8 @@ const Typography = {
 
   hr: {
     key: 'REGEXP_HR',
-    value: hr,    
+    value: hr,
   },
-
 
   paragraph: {
     key: 'REGEXP_PARAGRAPH',

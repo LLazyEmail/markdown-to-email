@@ -5,15 +5,32 @@ const platform = os.platform();
 
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
+function beforeBeginingNewLine(string) {
+  return newLine + string;
+}
+// -----------------------
+function beforeEnd(string) {
+  return string + newLine;
+}
+
+// -----------
 // TODO: make all regex to feel similar
-const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, 'g');
+// prev regEx not working well, as it's eating preview text
+
+const regex_header = `(#+)[^~](.*)`;
+const REGEXP_HEADER = new RegExp(newLine + regex_header, 'g');
+
+// OLD version of header
+// const REGEXP_HEADER = new RegExp(`${newLine}(#+)(.*)`, 'g');
 
 // const REGEXP_H3 = /^### (.*$)/gim;
 // const REGEXP_H2 = /^## (.*$)/gim;
 // -----------
+// -----------
 
 // TODO: make all regex to feel similar
 const REGEXP_IMAGE = /!\[([^\[]+)\]\(([^\)]+)\)/g;
+// ---------------
 // TODO ADD REF PARAMETER TO URL
 const REGEXP_LINK = /\[([^\[]+)\]\(([^\)]+)\)/g;
 const REGEXP_STRONG = /(\*\*|__)(.*?)(\*?)\1/g;
@@ -32,7 +49,11 @@ const REGEXP_BR = new RegExp(`((${newLine}){2,})`, 'g');
 
 const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
 
-const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
+// old
+// const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
+
+// italic for asterics  \*(?![*\s])(?:[^*]*[^*\s])?\*
+// italic for underscore /(\s|>)(_)(.*?)\2(\s|<)/
 
 export {
   REGEXP_HEADER,
@@ -49,5 +70,5 @@ export {
   // -----------
   REGEXP_BR,
   REGEXP_EMPTY_BLOCKQUOTE,
-  REGEXP_EM,
+  // REGEXP_EM,
 };

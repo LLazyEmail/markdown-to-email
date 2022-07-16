@@ -1,35 +1,35 @@
-import { heading } from './template/heading';
-import { image } from './template/image';
-import { italic } from './template/italic';
-import { link } from './template/link';
-import { list } from './template/list';
-import { listItem } from './template/listItem';
-import { mainTitle } from './template/mainTitle';
-import { paragraph } from './template/paragraph';
-import { strong } from './template/strong';
-import { subtitle } from './template/subtitle';
-import { q } from './template/q';
-import { del } from './template/del';
-import { code } from './template/code';
-import { blockquote } from './template/blockquote';
-import { separator } from './template/separator';
+import { headingLiteral } from './template/heading';
+import { imageLiteral } from './template/image';
+import { italicLiteral } from './template/italic';
+import { linkLiteral } from './template/link';
+import { listLiteral } from './template/list';
+import { listItemLiteral } from './template/listItem';
+import { mainTitleLiteral } from './template/mainTitle';
+import { paragraphLiteral } from './template/paragraph';
+import { strongLiteral } from './template/strong';
+import { subtitleLiteral } from './template/subtitle';
+import { qLiteral } from './template/q';
+import { delLiteral } from './template/del';
+import { codeLiteral } from './template/code';
+import { blockquoteLiteral } from './template/blockquote';
+import { separatorLiteral } from './template/separator';
 
 const typography = {
-  heading,
-  image,
-  italic,
-  link,
-  list,
-  listItem,
-  mainTitle,
-  paragraph,
-  strong,
-  subtitle,
-  q,
-  del,
-  code,
-  blockquote,
-  separator,
+  headingLiteral,
+  imageLiteral,
+  italicLiteral,
+  linkLiteral,
+  listLiteral,
+  listItemLiteral,
+  mainTitleLiteral,
+  paragraphLiteral,
+  strongLiteral,
+  subtitleLiteral,
+  qLiteral,
+  delLiteral,
+  codeLiteral,
+  blockquoteLiteral,
+  separatorLiteral,
 };
 
 export default typography;

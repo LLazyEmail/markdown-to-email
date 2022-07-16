@@ -1,22 +1,29 @@
 import reactLayouts from '../templates/NewsletterReactTemplate';
 
 import {
-  writeHTML,
-  checkWarnings,
+  // writeHTML,
+  // checkWarnings,
   printMessage,
-  generateTemplateName,
+  // generateTemplateName,
 } from '../helper';
+
+import {
+  writeHTML,
+  generateTemplateName,
+  // isFolderExists
+} from '../domain/write';
 
 import {
   parseMDReact,
   // parseMDReactFullThing
-} from './parse';
+} from './index';
 
-// TODO add more messages here
+//-----------------
+// TODO add more messages here, and finally replace messages in our methods
 const MESSAGE_REACT_FULL_TEMPLATE =
   'The FullTemplate has been parsed successfully';
 const MESSAGE_REACT_CONTENT = 'The Content has been parsed successfully';
-
+//----------------
 const reactComponent = `
 import React from "react";
 
@@ -46,7 +53,8 @@ function generateReactContent(sourceFile) {
   // console.log("parsedContent", { content, warnings, previewText });
 
   // ***
-  checkWarnings(warnings);
+  // checkWarnings(warnings);
+  // verification(warnings);
 
   const fileName = generateTemplateName('Content', 'js');
   writeReactComponent(fileName, content);
@@ -63,7 +71,8 @@ function generateReactFullTemplate(sourceFile) {
   } = parseMDReact(sourceFile);
 
   // ***
-  checkWarnings(warnings);
+  // checkWarnings(warnings);
+  // verification(warnings);
 
   const fullContent = reactLayouts.reactFullTemplate(content);
 
@@ -77,9 +86,13 @@ function generateReactFullTemplate(sourceFile) {
 export {
   reactComponent,
   reactComponentReplace,
+  //-------------
   writeReactComponent,
+  //-------------
   generateReactContent,
   generateReactFullTemplate,
+
+  //-------------
   MESSAGE_REACT_FULL_TEMPLATE,
   MESSAGE_REACT_CONTENT,
 };

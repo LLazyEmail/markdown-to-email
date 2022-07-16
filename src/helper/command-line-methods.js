@@ -1,45 +1,13 @@
 /* eslint-disable no-use-before-define */
 import chalk from 'chalk';
 import { forEach } from 'lodash';
-import { readSourceFile } from './utils';
 
-// const WARNING_IMAGE_VERSION = `WARNING source.md has ${index} ${element}. Replace it with memes`;
-// const ERROR_SOURCE_DONT_HAVE = `ERROR source.md doesn't have ${error}`;;
+// import { readSourceFile } from './utils';
 
-// const FULL_TEMPLATE_ERROR = 'The full template has not been parsed!';
-// const HTML_EMAIL_SUCCESS = Content has correct html!!!;
-// const HTML_EMAIL_ERROR = 'Content has not correct html!!!';
+// TODO should we remake whole state as a class with "frozen" methods?
 
+// TODO enable const messages
 // import { WARNING_IMAGE_VERSION, ERROR_SOURCE_DONT_HAVE, FULL_TEMPLATE_ERROR, HTML_EMAIL_SUCCESS, HTML_EMAIL_ERROR } from './constants';
-
-// convert into singleton
-const stateInit = (source) => {
-  // TODO rename
-  const markdown = readSourceFile(source);
-  // TODO should we move out state from this file?
-
-  const stateObject = {
-    content: markdown,
-    previewText: '',
-    warnings: {
-      images: 0,
-    },
-    errors: {
-      previewText: false,
-      sponsorshipTop: false,
-      sponsorshipBottom: false,
-    },
-
-    innerCheckErrors() {
-      checkErrors(this.errors);
-    },
-    innerWarnings() {
-      checkWarnings(this.warnings);
-    },
-  };
-
-  return stateObject;
-};
 
 function checkWarnings(warnings) {
   forEach(warnings, (index, element) => {
@@ -132,27 +100,9 @@ const printMessage = ({ message, type }) => {
     default:
       console.log(`Sorry, we are out of ${type}.`);
   }
-
-  //  if (type == 'yellow') {
-  //    console.log(chalk.yellow(message));
-  //  }
-
-  //  if (type == 'red') {
-  //    console.log(chalk.red(message));
-  //  }
-
-  //  if (type == 'red2') {
-  //    console.log(chalk.red.bold(message));
-  //  }
-
-  //  if (type == 'green1') {
-  //    console.log(chalk.green(message));
-  //  }
-  //  if (type == 'green2') {
-  //    console.log(chalk.green.bold(message));
-  //  }
 };
 
+//---------------------
 // const ERROR_TITLE = '`title` is a required option for `renderTemplate`'
 const checkingTitle = (title) => {
   if (!title) {
@@ -181,9 +131,11 @@ export {
   checkErrors,
   checkWarnings,
   checkHtml,
+  //-------
   checkingTitle,
   checkingBodyContent,
   checkingPreviewText,
+  //----------------
   printMessage,
-  stateInit,
+  // stateInit,
 };

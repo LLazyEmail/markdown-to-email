@@ -92,13 +92,13 @@ add `[separator]`
 ## Work principles
 The parser reads source file from `source/source.md` and based on opening tag renders goes in `layouts` folder and chooses relevant typography or section (sponsorship) element. Supported tags displayed in this document.
 
-![mindmap](https://github.com/atherdon/markdown-to-email/blob/main/MindMap1.png?raw=true)
+![mindmap](https://github.com/atherdon/markdown-to-email/blob/main/images/MindMap1.png?raw=true)
 
 ## Reasons to use generator instead of pretending that human errors didnt exists(especially human reactions on deadlines)
 
-![oops](https://raw.githubusercontent.com/atherdon/markdown-to-email/main/Correction.png)
+![oops](https://raw.githubusercontent.com/atherdon/markdown-to-email/main/images/Correction.png)
 
-![ooops2](https://raw.githubusercontent.com/atherdon/markdown-to-email/main/Oops-I.png)
+![ooops2](https://raw.githubusercontent.com/atherdon/markdown-to-email/main/images/Oops-I.png)
 
 Links
 - https://codepen.io/rh/pen/BoyNdy
@@ -113,7 +113,24 @@ Links
 - https://www.htmlemailcheck.com/check/
 
 
+---
 
+old tests
+
+```
+// const { REGEXP_HEADER } = require('atherdon-newsletter-constants');
+
+// const { resolve } = require('path');
+// const { write, 
+//   readSourceFile 
+// } = require('@root/utils');
+
+
+// const root = resolve(__dirname, '');
+// const outFolder = resolve('src/tests', 'directory', '../_generated');
+
+
+```
 
 
 #### Arthur Tkachenko articles

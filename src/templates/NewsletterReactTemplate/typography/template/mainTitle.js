@@ -1,1 +1,1 @@
-export const mainTitle = `<MainTitle>{content}</MainTitle>`;
+export const mainTitleLiteral = `<MainTitle>{content}</MainTitle>`;

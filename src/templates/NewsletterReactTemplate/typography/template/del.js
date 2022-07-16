@@ -1,1 +1,1 @@
-export const del = '<Del>{content}</Del>';
+export const delLiteral = '<Del>{content}</Del>';

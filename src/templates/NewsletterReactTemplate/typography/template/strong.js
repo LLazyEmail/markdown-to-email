@@ -1,1 +1,1 @@
-export const strong = `<Strong>{content}</Strong>`;
+export const strongLiteral = `<Strong>{content}</Strong>`;

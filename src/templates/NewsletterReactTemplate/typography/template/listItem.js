@@ -1,1 +1,1 @@
-export const listItem = `<ListItem>{content}</ListItem>`;
+export const listItemLiteral = `<ListItem>{content}</ListItem>`;

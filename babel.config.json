@@ -7,5 +7,10 @@
       }
     ]
   ],
-  "ignore": ["src/tests", "tests", "src/parserMDReact/tests"]
+  "ignore": ["src/tests", "tests", "src/parserMDReact/tests"],
+  "env": {
+    "test": {
+      "plugins": ["@babel/plugin-transform-modules-commonjs"]
+    }
+  }
 }

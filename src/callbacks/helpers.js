@@ -1,101 +1,59 @@
+import { mapKeys } from 'lodash';
+import { catchErrorTraceOutput } from '../domain/error-handle/index';
+
 // import os from 'os';
-// import { mapKeys } from 'lodash';
 
 // const platform = os.platform();
 // const newLine = platform === 'win32' ? '\r\n' : '\n';
 
+// I think this method will be deleted or we'll update our
+// current version like W3_getWrapper
 function getWrapper(name, config) {
   const { layouts, folder } = config;
 
-  console.log(layouts);
+  // console.log(layouts);
 
-  const wrapper = layouts[folder][name];
-  console.log(wrapper);
-
-  return wrapper;
+  try {
+    const wrapper = layouts[folder][name];
+    return wrapper;
+  } catch (error) {
+    catchErrorTraceOutput(error);
+  }
+  return false;
 }
+
+// console.log(wrapper);
 
 // here we can have a problem, because we're passing more information into a config that it was before
 
-function loopForWrapper(config, wrapper) {
-  console.log(config);
+function _loopForWrapper(config, literal) {
+  try {
+    mapKeys(config, function (value, key) {
+      // console.log(key);
+      // console.log(value);
 
-  console.log(wrapper);
+      const regularExpression = new RegExp(`{${key}}`, 'g');
+      // console.log(regularExpression)
 
-  // _.mapKeys(config, function(value, key) {
-  //   return key + value;
-  // });
+      literal = literal.replace(regularExpression, value);
+    });
 
-  // @TODO replace with lodash
-  Object.keys(config).forEach((name) => {
-    const currentConfig = config[name];
-    const regularExpression = new RegExp(`{${name}}`, 'g');
-
-    wrapper = wrapper.replace(regularExpression, currentConfig);
-  });
-
-  return wrapper;
+    return literal;
+  } catch (error) {
+    catchErrorTraceOutput(error);
+  }
+  return false;
 }
 
 function generateNewString(name, config) {
   const wrapper = getWrapper(name, config);
 
   // stopping it here....
-  const updatedString = loopForWrapper(config, wrapper);
+  const updatedString = _loopForWrapper(config, wrapper);
 
   return updatedString;
 }
+
 //-----------------
 
-// moving into separated callbacks
-// function replaceWrapper(name, config, folder = 'typography') {
-
-//   // TODO later we can get rid of it completely.
-//   // right now it's only for back campatibility purposes
-//   let configCopy = Object.assign(config, {
-//       'layouts': layouts,
-//       'folder': folder
-//     })
-
-//   // console.log(configCopy);
-
-//   return generateNewString(name, configCopy);
-// }
-
-// function replaceReactWrapper(name, config, folder = 'typography') {
-//   // console.log(reactLayouts.Typography.strong);
-//   // console.log("name", config);
-
-//   let configCopy = Object.assign(config, {
-//     'layouts': reactLayouts,
-//     'folder': folder
-//   })
-
-//   // console.log(configCopy);
-
-//   return generateNewString(name, configCopy);
-// }
-
-// function _NewReplace(name, config){
-//  // TODO later we can get rid of it completely.
-//  // right now it's only for back campatibility purposes
-//  // let configCopy = Object.assign(config, { 'layouts':layouts, 'folder': folder })
-
-//  // let wrapper = getWrapper(name, configCopy)
-
-//  // let updatedString = loopForWrapper(configCopy, wrapper);
-//  // return updatedString;
-//  return generateNewString(name, config);
-// }
-
-export {
-  // newLine,
-
-  generateNewString,
-  // replaceReactWrapper,
-  // replaceWrapper,
-
-  // _NewReplace,
-
-  getWrapper,
-};
+export { generateNewString, _loopForWrapper };

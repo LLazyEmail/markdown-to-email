@@ -10,21 +10,23 @@
     "parse:full": "npm run build && cross-env PARSE=full node ./dist/bundle",
     "parseReact": "npm run build && cross-env PARSE=reactContentOnly node ./dist/bundle",
     "parseReact:full": "npm run build && cross-env PARSE=reactFull node ./dist/bundle",
+    "parsed": "cross-env PARSE=full node ./src/index",
     "emptyT": "npm run build && cross-env PARSE=plainEmpty node ./dist/bundle",
     "defaultT": "npm run build && cross-env PARSE=plainTemplate node ./dist/bundle",
     "test:react": "npm run checkFolders && jest ./src/parserMDReact/tests",
-    "lint:fix": "eslint ./src --fix --ignore-pattern \"./package.json\" ",
-    "lint": "eslint ./src --ignore-pattern \"./package.json\" ",
+    "lint:fix": "eslint -c ./eslintrc.js ./src --fix --ignore-pattern \"./package.json\" ",
+    "lint": "eslint -c  ./eslintrc.js ./src --quiet --ignore-pattern  \"./package.json\" ",
     "build:small": "npm run checkFolders && node ./src/index.js",
     "checkFolders": "node ./checkFolders",
     "test": "npm run checkFolders && jest ./src/tests",
-    "test:typography": "npm run ./src/tests/typography",
-    "test:methods": "npm run ./src/tests/methods",
-    "test:custom": "npm run ./src/tests/custom",
+    "test:typography": "jest --all --testPathPattern=./src/tests/typography",
+    "test:methods": "jest --watchAll --all --testPathPattern=./src/tests/methods",
+    "test:custom": "jest --watchAll --all --testPathPattern=./src/tests/custom",
     "test:watch": "npm run checkFolders && jest --watch ./src/tests",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "fix:prettier": "prettier --write '**/*.js'"
   },
-  "author": "hirdbluebird, atherdon, vadim9999",
+  "author": "atherdon, vadim9999, hirdbluebird",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "7.17.10",
@@ -34,6 +36,7 @@
     "@rollup/plugin-babel": "5.3.1",
     "@rollup/plugin-commonjs": "22.0.0",
     "@rollup/plugin-node-resolve": "13.3.0",
+    "babel-preset-react-app": "^10.0.1",
     "eslint": "8.18.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "8.5.0",
@@ -46,11 +49,14 @@
     "lint-staged": "12.4.1",
     "prettier": "2.7.0",
     "rollup": "2.75.6",
-    "rollup-plugin-node-polyfills": "0.2.1"
+    "rollup-plugin-node-polyfills": "0.2.1",
+    "winston": "^3.8.0"
   },
   "dependencies": {
+    "atherdon-old-newsletter-js-outertemplate": "^2.8.5",
     "chalk": "5.0.1",
     "cross-env": "7.0.3",
+    "lit-html": "^2.2.6",
     "lodash": "4.17.21",
     "path-exists": "5.0.0",
     "write": "2.0.0"
@@ -59,10 +65,5 @@
     "src/**/*.{js,ts}": [
       "npm run lint"
     ]
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "@root(.*)$": "<rootDir>/src/$1"
-    }
   }
 }

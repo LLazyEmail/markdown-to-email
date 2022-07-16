@@ -3,14 +3,16 @@ import {
   readSourceFile,
   isFolderExists,
   generateTemplateName,
-} from './utils';
+} from '../domain/write';
+
 import {
   displayCLIErrors,
   checkErrors,
   checkWarnings,
   checkHtml,
   printMessage,
-  stateInit,
+
+  // stateInit,
 } from './command-line-methods';
 
 export {
@@ -23,5 +25,5 @@ export {
   checkWarnings,
   checkHtml,
   printMessage,
-  stateInit,
+  // stateInit,
 };

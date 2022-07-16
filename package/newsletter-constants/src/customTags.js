@@ -4,7 +4,6 @@ const platform = os.platform();
 
 const newLine = platform === "win32" ? "\r\n" : "\n";
 
-
 const REGEXP_SPONSORSHIP = /~(\[(.*?)\]){3}/g;
 const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
 const REGEXP_MEM = /\!\[(.*?)\]\[(.*?)\]\[(.*?)\]/g;
@@ -21,7 +20,10 @@ const REGEXP_LINK_HTTPS = new RegExp(">https", "g");
 const REGEXP_STR_BEGIN = ">https";
 const REGEXP_STR_END = "f<";
 
-const REGEXP_SEPARATOR = new RegExp(`${newLine}\\[separator\\]${newLine}`, 'g');
+const REGEXP_SEPARATOR = new RegExp(
+  `${newLine}\\[separator\\]${newLine}`,
+  "g"
+);
 
 export {
   REGEXP_SPONSORSHIP,
@@ -33,5 +35,5 @@ export {
   REGEXP_LINK_G,
   REGEXP_STR_BEGIN,
   REGEXP_STR_END,
-  REGEXP_SEPARATOR
+  REGEXP_SEPARATOR,
 };
