@@ -23,8 +23,8 @@ const _italic = (text, content, a, b, c) => {
 };
 
 const _italicAsterix = (text, content) => {
-  console.log(text);
-  console.log(content);
+  // console.log(text);
+  // console.log(content);
 
   const params = {
     content: text.trim(),
