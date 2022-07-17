@@ -1,12 +1,9 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/atherdon/markdown-to-email)
 
 
-install  "pixel-email-cli" and try it https://github.com/LLazyEmail/pixel-email-cli
 
 Maintainer notes:
 
-- Replacer v.0.4 working fine
-- Methods in package/* might be broken for some time
 - **Generator Module was moved out into https://github.com/LLazyEmail/generator-module**
 - **Replacer for React DOM right now is broken. I'm moving it out into https://github.com/LLazyEmail/react-plain-template-example**
 - **React version isn't working now. Probably we'll skip few releases and make it work as it should be.**
@@ -131,6 +128,10 @@ old tests
 
 
 ```
+
+
+
+install  "pixel-email-cli" and try it https://github.com/LLazyEmail/pixel-email-cli
 
 
 #### Arthur Tkachenko articles
