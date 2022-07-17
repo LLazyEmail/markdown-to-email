@@ -1,11 +1,10 @@
-// import configureReplacer from '../domain/replacer-class/configuration-react';
+import configureReplacer from '../domain/replacer-class/configuration-react';
 // import { generateReactContent, generateReactFullTemplate } from './methods';
 
 // //---------------
 // // TODO replace with separated parse method
 
-// // import parse from '../domain/parse'
-// import stateInit from '../domain/state';
+import parse from '../domain/parse'
 
 // // @todo update this method. I'm sure it can be improved.
 // function parseMDReact(source, isFull) {
@@ -15,13 +14,18 @@
 //   return state;
 // }
 
-// function parseMDReactFullThing(source) {
-//   return parseMDReact(source, true);
-// }
+function parseReactFullTemplate(source) {
 
-// export {
+ // console.log(params);
+const { source } = params;
+
+return parse(source, configureReplacer);
+ 
+}
+
+export {
 //   generateReactContent,
 //   generateReactFullTemplate,
-//   parseMDReact,
-//   parseMDReactFullThing,
-// };
+  parse,
+  parseReactFullTemplate,
+};
