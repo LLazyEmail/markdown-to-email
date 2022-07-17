@@ -159,9 +159,9 @@ const sponsorship = objectBuilder(
 export default {
     strong,
     link,
-    del,
+    // del,
     image,
-    previewText,
+    // previewText,
     italic,
     header,
     q,
@@ -169,14 +169,14 @@ export default {
     //-----------
     ulList,
     olList,
-    listItem,
-    list,
+    // listItem,
+    // list,
     //-----------
     blockquote,
     hr,
     paragraph,
     br,
     sponsorship,
-    memes,
+    // memes,
     separator,
   };
