@@ -6,6 +6,10 @@ import {
 const _hr = () => `${newLine}<hr />`;
 const _empty = () => '';
 
+
+import {commonReplace} from '../../domain/replace-wrapper3.0'
+
+
 function getParsedSubList(subList) {
   return subList.replace(
     new RegExp(`\\s{4}\\*(.*?)${newLine}`, 'g'),
@@ -20,15 +24,11 @@ function getParsedSubList(subList) {
         debug: true,
       };
 
-      try {
-        const replaced = commonReplace(config);
+      const replaced = commonReplace(config);
 
-        return replaced;
-      } catch (error) {
-        catchErrorTraceOutput(error);
-      }
+      return newLine + replaced;
 
-      // return `${newLine + replaceWrapper('listItem', config)}`;
+          
     },
   );
 }
@@ -49,19 +49,14 @@ function _ulList(text, list) {
 
       // const config = {
       //   params,
-      //   name: 'list?',
+      //   name: 'list',
       //   debug: true,
       // };
 
-      // return `${newLine + replaceWrapper('list', config)}`;
+      const replaced = commonReplace(config);
 
-      // try {
-      //   const replaced = commonReplace(config);
-
-      //   return replaced;
-      // } catch (error) {
-      //   catchErrorTraceOutput(error);
-      // }
+      return newLine + replaced;
+    
     },
   );
 
@@ -78,15 +73,13 @@ function _ulList(text, list) {
       //   debug: true,
       // };
 
-      // try {
-      //   const replaced = commonReplace(config);
+        const replaced = commonReplace(config);
 
-      //   return replaced;
-      // } catch (error) {
-      //   catchErrorTraceOutput(error);
-      // }
+        return newLine + replaced;
 
-      // return `${newLine + replaceWrapper('listItem', config)}`;
+      
+
+      
     },
   );
 

@@ -1,154 +1,125 @@
 /* eslint-disable */
-import { replaceWrapper, newLine } from '../helpers';
+import { newLine } from '../helpers';
 
 //----------------------
+import {commonReplace} from '../../domain/replace-wrapper3.0'
+
 
 const _hr = () => `${newLine}<hr />`;
 const _empty = () => '';
 
 function _code(text, content) {
-  // const params = {
-  //   content: content,
-  // };
+  const params = {
+    content: content,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'code',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'code',
+    debug: true,
+  };
 
-  // try {
-  //   const replaced = commonReplace(config);
+    const replaced = commonReplace(config);
 
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
-  // const result = replaceWrapper('code', config);
-  return result;
+    return replaced;
+
 }
 
 function _del(text, content) {
-  // const params = {
-  //   content: content,
-  // };
+  const params = {
+    content: content,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'del',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'del',
+    debug: true,
+  };
+  const replaced = commonReplace(config);
 
-  // try {
-  //   const replaced = commonReplace(config);
+    return replaced;
 
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
-
-  // const result = replaceWrapper('del', config);
-  return result;
 }
 
 function _q(text, content) {
-  // const params = {
-  //   content: content,
-  // };
+  const params = {
+    content: content,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'q',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'q',
+    debug: true,
+  };
+  const replaced = commonReplace(config);
 
-  // try {
-  //   const replaced = commonReplace(config);
+    return replaced;
 
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
-
-  // const result = replaceWrapper('q', config);
-  return result;
 }
 
 function _italic(text, left, _, content, right) {
-  // const params = {
-  //   content: content,
-  // };
+  const params = {
+    content: content,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'italic',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'italic',
+    debug: true,
+  };
 
-  // try {
-  //   const replaced = commonReplace(config);
+  const replaced = commonReplace(config);
 
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
+    return replaced;
 
-  // const result = replaceWrapper('italic', config);
-  return result;
 }
 
 function _strong(text, doubleAsterix, content, asterix) {
-  // const params = {
-  //   content: `${content + asterix}`,
-  // };
+  const params = {
+    content: `${content + asterix}`,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'strong',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'strong',
+    debug: true,
+  };
+  const replaced = commonReplace(config);
 
-  // try {
-  //   const replaced = commonReplace(config);
-
-  //   return replaced;
-  // } catch (error) {
-  //   catch_error_trace_output(error);
-  // }
-
-  // const result = replaceWrapper('strong', config);
-  return result;
+  return replaced;
 }
 
 function _link(text, title, href) {
-  // const params = {
-  //   content: title.trim(),
-  //   href: href.trim(),
-  // };
+  const params = {
+    content: title.trim(),
+    href: href.trim(),
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'link',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'link',
+    debug: true,
+  };
 
-  const result = replaceWrapper('link', config);
-  return result;
+
+  // const replaced = commonReplace(config);
+
+  // return replaced;
+
 }
 
 function _blockquote(text, tmp, item) {
-  // const params = {
-  //   content: `${newLine}${item.trim()}`,
-  // };
+  const params = {
+    content: `${newLine}${item.trim()}`,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'blockquote',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'blockquote',
+    debug: true,
+  };
 
-  // const result = replaceWrapper('blockquote', config);
-  return result;
+
 }
 
 function _meme(text, src, href, altText) {
@@ -164,50 +135,63 @@ function _meme(text, src, href, altText) {
   //   debug: true,
   // };
 
-  // const result = replaceWrapper('image', config);
+  
   return result;
 }
 
 function _header(text, chars, content) {
-  // const params = {
-  //   content: content.trim(),
-  // };
-
-  // const config = {
-  //   params,
-  //   name: 'header',
-  //   debug: true,
-  // };
+  const params = {
+    content: content.trim(),
+  };
 
   const titleType = ['mainTitle', 'subtitle', 'heading'];
+  const name = titleTypes[chars.length - 1];
 
-  // const result = newLine + replaceWrapper(titleType[chars.length - 1], config);
+   const config = {
+    params,
+    name,
 
-  return result;
+    // debug: true,
+  };
+
+  const replaced = commonReplace(config);
+  return newLine + replaced;
+
 }
 
 function _separator() {
-  const config = {};
+  const params = {
+    content: text.trim(), // we have an issue, when we passing empty params
+  };
 
-  // const result = `${newLine}${replaceWrapper('separator', config)}${newLine}`;
+  const config = {
+    params,
 
-  return result;
+    name: 'separator',
+    debug: true,
+  };
+
+  const replaced = commonReplace(config);
+  return newLine + replaced + newLine;
+
 }
 
 function _previewText(text, content) {
-  // const params = {
-  //   content: content,
-  // };
+  const params = {
+    content: content,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'preview',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'preview',
+    debug: true,
+  };
 
-  this.previewText = true;
+  // this.previewText = true;
 
-  // return replaceWrapper('previewText', config, 'body');
+  const replaced = commonReplace(config);
+  return replaced;
+
 }
 
 export {

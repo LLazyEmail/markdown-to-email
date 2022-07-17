@@ -1,9 +1,11 @@
-// HELPER FROM MAIN CALLBACKS
 // TODO undisable because there is a lot of errors
 /* eslint-disable */
 import { 
   // replaceReactWrapper, 
-  newLine } from '../helpers';
+  newLine 
+} from '../helpers';
+
+import {commonReplace} from '../../domain/replace-wrapper3.0'
 
 /// function is not working as planned
 
@@ -25,94 +27,87 @@ export function _paragraph(text, line) {
     debug: true,
   };
 
-  // try {
-  //   const replaced = commonReplace(config);
-
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
-
-  // const result = newLine + replaceReactWrapper('paragraph', config) + newLine;
   // console.log(config);
+  const replaced = commonReplace(config);
+  const result = newLine + replaced + newLine;
 
   return result;
 }
 /// !end function is not working as planned
 
 export function _image(text, alt, srcWithTooltip) {
-  // const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
+  const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
 
-  // const params = {
-  //   src: src.trim(),
-  //   altText: alt,
-  // };
+  const params = {
+    src: src.trim(),
+    altText: alt,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'image',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'image',
+    debug: true,
+  };
 
   this.warnings.images++;
 
-  // try {
-  //   const replaced = commonReplace(config);
+  const replaced = commonReplace(config);
 
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
-
-  // const result = replaceReactWrapper('image', config);
-  return result;
+  return replaced;
 }
 
 export function _br(text, newLines) {
   const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
 
-  // @TODO well, it's not good. can be improved with lodash
-  // @TODO I REALLY HATE THIS LINE
+  // TODO well, it's not good. can be improved with lodash
+  // I REALLY HATE THIS LINE
   const result = arrNewLines.reduce(
     (acc, current, index) => (index > 0 ? `${acc}<br/>${current}` : current),
     '',
   );
 
   return result;
+
+
 }
 
 export function _sponsorship(text) {
+  // TODO move out this regex into constants file.
   const regex = /\[(.*?)\]/g;
+    
+  const regex2 = /[\[\]]/g;
+
   const [content, href, src] = text
     .match(regex)
-    .map((match) => match.replace(/[\[\]]/g, ''));
+    .map((match) => match.replace(regex2, ''));
 
-  // const params = {
-  //   src: src.trim(),
-  //   href: href.trim(),
-  //   content: content.trim(),
-  // };
+  const params = {
+    src: src.trim(),
+    href: href.trim(),
+    content: content.trim(),
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'sponsor',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'sponsor',
+    debug: true,
+  };
+  const replaced = commonReplace(config);
+  return replaced;
 
-  // try {
-  //   const replaced = commonReplace(config);
+  // TODO upgrade a way to handle errors in state object
+  // eslint-disable-next-line no-unused-expressions
+  // this.errors.sponsorshipTop
+  //   ? (this.errors.sponsorshipBottom = true)
+  //   : (this.errors.sponsorshipTop = true);
 
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
 
-  // @TODO nope, not good
-  this.errors.sponsorshipTop
-    ? (this.errors.sponsorshipBottom = true)
-    : (this.errors.sponsorshipTop = true);
-
-  // return replaceReactWrapper('sponsor', config, 'body');
 }
 
-// export { _paragraph, _image, _sponsorship, _br, newLine };
+export { 
+  _paragraph, 
+  _image, 
+  _sponsorship, 
+  _br 
+};
+
