@@ -1,7 +1,5 @@
 /* eslint-disable */
 import { newLine } from '../helpers';
-
-//----------------------
 import {commonReplace} from '../../domain/replace-wrapper3.0'
 
 
@@ -123,20 +121,21 @@ function _blockquote(text, tmp, item) {
 }
 
 function _meme(text, src, href, altText) {
-  // const params = {
-  //   src: src.trim(),
-  //   altText: altText.trim(),
-  //   href: href.trim(),
-  // };
+  const params = {
+    src: src.trim(),
+    altText: altText.trim(),
+    href: href.trim(),
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'meme',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'meme',
+    debug: true,
+  };
 
-  
-  return result;
+  const replaced = commonReplace(config);
+  return replaced;
+
 }
 
 function _header(text, chars, content) {

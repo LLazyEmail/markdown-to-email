@@ -1,4 +1,5 @@
-// import mapObject from './pre-replace-objects';
+import { mainObject, prepOurCallback }  from '../index';
+import debuggingReplacer from './debugging';
 
 // // TODO replace the name of this method
 // function prepOurCallback(callback_name) {
@@ -6,35 +7,18 @@
 //     throw new Error(`name of ${callback_name} is undefined or empty`);
 //   }
 
-//   const settings = mapObject[callback_name];
+//   const settings = mainObject[callback_name];
 //   // console.log(settings)
 //   return settings;
 // }
 
-// // When you use this function you can specify which types of objects you want to debug
-// function debuggingReplacer(name) {
-//   const namesArr = [
-//     'sponsorship',
-//     // 'paragraph',
-//     // 'link',
-//     // 'header', // not working
-//     // 'strong',
-//     // 'memes',
-//     // 'br',
-//     // 'separator',
-//     // 'previewText',
-//     // 'italic',
-//     // 'olList'
-//     // 'ulList'
-//     // 'image'
-//   ];
-//   return namesArr.includes(name);
-// }
+function replaceMarkdownReact(callback_name) {
 
-// function replaceMarkdownReact(callback_name) {
-//   const fromMap = prepOurCallback(callback_name);
-
-//   const forReplacer = fromMap.replacer.bind(this);
+    const singleElement = prepOurCallback(callback_name, false);
+  // --------- comment for debugging purposes
+  // // --- You can comment this when you debugging our wrapper
+  const _replacer = singleElement.replacer.bind(this);
+  this.content = this.content.replace(singleElement.constant, _replacer);
 
 //   // -------------- Uncomment for debugging reasons
 //   // if (debuggingReplacer(callback_name)) {
@@ -47,9 +31,26 @@
 //   // }
 //   // return '';
 //   //-----------------------
+}
 
-//   // --- You can comment this when you debugging our wrapper
-//   this.content = this.content.replace(fromMap.constant, forReplacer);
+
+// function replaceMarkdownDebug(callback_name) {
+//   // -------------- Uncomment for debugging reasons
+//   if (debuggingReplacer(callback_name)) {
+
+//     console.log(callback_name);
+
+//     const _replacer = singleElement.replacer.bind(this);
+
+//     console.log(replacedString);
+
+//     // TODO another case why i dont like this solution
+//     // with string.replace - when you forget to return something it's hard to catch
+//     this.content = this.content.replace(singleElement.constant, _replacer);
+//   }
+//   return '';
+//   //--------------
+//   //--------------
 // }
 
-// export default replaceMarkdownReact;
+export { replaceMarkdownReact };
