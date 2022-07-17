@@ -1,10 +1,7 @@
-//--------------------
+import {
+    replaceMarkdown,
+} from '../replace-markdown/replace-md';
 
-//--------------------
-// import {
-//     replaceMarkdown,
-
-//   } from '../replace-markdown/replace-md';
 
 // import Replacer from '../../parserMDReact/replace';
 

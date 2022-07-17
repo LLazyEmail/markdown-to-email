@@ -1,14 +1,12 @@
-// TODO merge with Plain Replacer, as we moved out stuff away
-// ---------
-class ReactReplacer {
+class Replacer {
   constructor() {
     this.replaceMDBinded = () => {};
 
-    this.replaceMDBindedPreviewText = () => {};
+    // this.replaceMDBindedPreviewText = () => {};
 
-    this.previewText = function () {
-      this.replaceMDBinded('previewText');
-    };
+    // this.previewText = function () {
+    //   this.replaceMDBinded('previewText');
+    // };
 
     this.comments = function () {
       this.replaceMDBinded('empty');
@@ -34,9 +32,9 @@ class ReactReplacer {
       this.replaceMDBinded('link');
     };
 
-    this.del = function () {
-      this.replaceMDBinded('del');
-    };
+    // this.del = function () {
+    //   this.replaceMDBinded('del');
+    // };
 
     this.q = function () {
       this.replaceMDBinded('q');
@@ -54,7 +52,7 @@ class ReactReplacer {
       this.replaceMDBinded('olList');
     };
 
-    this.blockQuote = function () {
+    this.blockquote = function () {
       this.replaceMDBinded('blockquote');
     };
 
@@ -66,17 +64,17 @@ class ReactReplacer {
       this.replaceMDBinded('paragraph');
     };
 
-    this.emptyUl = function () {
-      this.replaceMDBinded('REGEXP_EMPTY_UL');
-    };
+    // this.emptyUl = function () {
+    //   this.replaceMDBinded('REGEXP_EMPTY_UL');
+    // };
 
-    this.emptyOl = function () {
-      this.replaceMDBinded('REGEXP_EMPTY_OL');
-    };
+    // this.emptyOl = function () {
+    //   this.replaceMDBinded('REGEXP_EMPTY_OL');
+    // };
 
-    this.emptyBlockQuote = function () {
-      this.replaceMDBinded('REGEXP_EMPTY_BLOCKQUOTE');
-    };
+    // this.emptyBlockQuote = function () {
+    //   this.replaceMDBinded('REGEXP_EMPTY_BLOCKQUOTE');
+    // };
 
     this.br = function () {
       this.replaceMDBinded('REGEXP_BR');
@@ -86,13 +84,13 @@ class ReactReplacer {
       this.replaceMDBinded('sponsorship');
     };
 
-    this.mem = function () {
-      this.replaceMDBinded('mem');
-    };
+    // this.mem = function () {
+    //   this.replaceMDBinded('mem');
+    // };
 
-    this.separator = function () {
-      this.replaceMDBinded('separator');
-    };
+    // this.separator = function () {
+    //   this.replaceMDBinded('separator');
+    // };
   }
 
   typography() {
@@ -116,4 +114,4 @@ class ReactReplacer {
   }
 }
 
-export default new ReactReplacer();
+export default new Replacer();
