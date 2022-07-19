@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import typography from 'atherdon-newsletter-js-layouts-typography';
 
 import {
   _strong,
@@ -66,110 +67,77 @@ import objectBuilder from '../../md/object-builder';
 // TODO add here error handlers from domain/error-handle.
 // removing them from this file
 
-import {
-  headingLiteral,
-  titleLiteral,
-  //---------
-  imageLiteral,
-  italicLiteral,
-  linkLiteral,
-  //-----
-  listLiteral,
-  listItemLiteral,
-  //------------
-  paragraphLiteral,
-  strongLiteral,
-  subtitleLiteral,
-  separatorLiteral,
-} from '../../email-prototypes/plainjs/typography/index';
+const {
+  headingComponent,
+  titleComponent,
+  imageComponent,
+  italicComponent,
+  linkComponent,
+  listComponent,
+  listItemComponent,
+  paragraphComponent,
+  subtitleComponent,
+  separatorComponent,
+  strongComponent,
+} = typography;
 
 const { sponsorLiteral, previewTextLiteral } = body;
 
-const strong = objectBuilder(REGEXP_STRONG, _strong, strongLiteral);
-// console.log(strong);
-
-const link = objectBuilder(REGEXP_LINK, _link, linkLiteral);
-
-// delLiteral,
-const del = objectBuilder(REGEXP_DEL, _del, false);
-
-const image = objectBuilder(REGEXP_IMAGE, _image, imageLiteral);
-
-const previewText = objectBuilder(
-  REGEXP_PREVIEW_TEXT,
-  _previewText,
-  previewTextLiteral,
-);
+const map = {
+  strong: objectBuilder(REGEXP_STRONG, _strong, strongComponent),
+  link: objectBuilder(REGEXP_LINK, _link, linkComponent),
+  del: objectBuilder(REGEXP_DEL, _del, false),
+  image: objectBuilder(REGEXP_IMAGE, _image, imageComponent),
+  previewText: objectBuilder(
+    REGEXP_PREVIEW_TEXT,
+    _previewText,
+    previewTextLiteral,
+  ),
+  italic: objectBuilder(REGEXP_UNDERSCORE_ITALIC, _italic, italicComponent),
+  italic_asterix: objectBuilder(
+    REGEXP_ASTERIX_ITALIC,
+    _italic,
+    italicComponent,
+  ),
+  header: objectBuilder(REGEXP_HEADER, _header, headingComponent),
+  subtitle: objectBuilder(REGEXP_HEADER, _header, subtitleComponent),
+  title: objectBuilder(REGEXP_HEADER, _header, titleComponent),
+  q: objectBuilder(REGEXP_Q, _q, false),
+  code: objectBuilder(REGEXP_CODE, _code, false),
+  listItem: objectBuilder(
+    REGEXP_SUB_LISTS,
+    getParsedSubList,
+    listItemComponent,
+  ),
+  // this object used only as a stupid way to add a parch for different cases of lists
+  // first two params never used
+  list: objectBuilder(REGEXP_UL_LIST, getParsedSubList, listComponent),
+  //  ulListLiteral,
+  ulList: objectBuilder(REGEXP_UL_LIST, _ulList, listComponent),
+  //  olListLiteral,
+  olList: objectBuilder(REGEXP_OL_LIST, _olList, false),
+  //  blockquoteLiteral,
+  blockquote: objectBuilder(REGEXP_BLOCKQUOTE, _blockquote, false),
+  // hrLiteral,
+  hr: objectBuilder(REGEXP_HR, _hr, false),
+  paragraph: objectBuilder(
+    REGEXP_PARAGRAPH,
+    _paragraphWrapper,
+    paragraphComponent,
+  ),
+  br: objectBuilder(REGEXP_BR, _br),
+  sponsorship: objectBuilder(REGEXP_SPONSORSHIP, _sponsorship, sponsorLiteral),
+  //  memeLiteral,
+  memes: objectBuilder(REGEXP_MEM, _meme, false),
+  separator: objectBuilder(REGEXP_SEPARATOR, _separator, separatorComponent),
+};
 
 // OLD version
-// const italic = objectBuilder(REGEXP_EM, _italic, italicLiteral);
+// const italic:objectBuilder(REGEXP_EM, _italic, italicLiteral);
 
 // REGEXP_UNDERSCORE_ITALIC,
 // REGEXP_ASTERIX_ITALIC,
-
-const italic = objectBuilder(REGEXP_UNDERSCORE_ITALIC, _italic, italicLiteral);
-
-const italic_asterix = objectBuilder(
-  REGEXP_ASTERIX_ITALIC,
-  _italic,
-  italicLiteral,
-);
-
-const header = objectBuilder(REGEXP_HEADER, _header, headingLiteral);
-
-// sub item for header. not ideal
-const subtitle = objectBuilder(REGEXP_HEADER, _header, subtitleLiteral);
-
-// title for header. not sure if it's main title or not
-const title = objectBuilder(REGEXP_HEADER, _header, titleLiteral);
-
 // qLiteral,
-const q = objectBuilder(REGEXP_Q, _q, false);
-
-// codeLiteral,
-const code = objectBuilder(REGEXP_CODE, _code, false);
-
-const listItem = objectBuilder(
-  REGEXP_SUB_LISTS,
-  getParsedSubList,
-  listItemLiteral,
-);
-
-// this object used only as a stupid way to add a parch for different cases of lists
-// first two params never used
-const list = objectBuilder(REGEXP_UL_LIST, getParsedSubList, listLiteral);
-
-//  ulListLiteral,
-const ulList = objectBuilder(REGEXP_UL_LIST, _ulList, listLiteral);
-
-//  olListLiteral,
-const olList = objectBuilder(REGEXP_OL_LIST, _olList, false);
-
-//  blockquoteLiteral,
-const blockquote = objectBuilder(REGEXP_BLOCKQUOTE, _blockquote, false);
-
-// hrLiteral,
-const hr = objectBuilder(REGEXP_HR, _hr, false);
-
-const paragraph = objectBuilder(
-  REGEXP_PARAGRAPH,
-  _paragraphWrapper,
-  paragraphLiteral,
-);
-
-const br = objectBuilder(REGEXP_BR, _br);
-
-const sponsorship = objectBuilder(
-  REGEXP_SPONSORSHIP,
-  _sponsorship,
-  sponsorLiteral,
-);
-
-//  memeLiteral,
-const memes = objectBuilder(REGEXP_MEM, _meme, false);
-
-const separator = objectBuilder(REGEXP_SEPARATOR, _separator, separatorLiteral);
-
 // empty as emptyLiteral,
 
 // 'REGEXP_EMPTY_UL': {
@@ -187,33 +155,4 @@ const separator = objectBuilder(REGEXP_SEPARATOR, _separator, separatorLiteral);
 //   replacer: emptyBlockQuote
 // },
 
-export default {
-  strong,
-  link,
-  del,
-  image,
-  previewText,
-  //----------
-  italic,
-  italic_asterix,
-  //----------
-  header,
-  subtitle,
-  title,
-  //-----------
-  q,
-  code,
-  //-----------
-  ulList,
-  olList,
-  listItem,
-  list,
-  //-----------
-  blockquote,
-  hr,
-  paragraph,
-  br,
-  sponsorship,
-  memes,
-  separator,
-};
+export default map;

@@ -18,7 +18,7 @@ import {
   generateTemplateComponent,
 } from '../templates/PlainJSOuterTemplate';
 
-// import plainV2 from '../domain/plainjs-template/template';
+// import plainV2 from '../domain/email-prototypes/plainjs/template';
 
 import { parseFullTHing } from './index';
 
@@ -33,6 +33,8 @@ const MESSAGE_HTML_FULL_TEMPLATE2 =
 //------------------------------
 const deliver = (template, name, message) => {
   // console.log(plainV2());
+  // console.log('name', name);
+  // console.log("template", template);
 
   const fileName = generateTemplateName(name);
   writeHTML(fileName, template);

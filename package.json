@@ -53,6 +53,7 @@
     "winston": "^3.8.0"
   },
   "dependencies": {
+    "atherdon-newsletter-js-layouts-typography": "^2.1.0",
     "atherdon-old-newsletter-js-outertemplate": "^2.8.5",
     "chalk": "5.0.1",
     "cross-env": "7.0.3",
