@@ -1,1 +1,3 @@
-export default qLiteral = '<Q>{content}</Q>';
+const qLiteral = '<Q>{content}</Q>';
+
+export default qLiteral;

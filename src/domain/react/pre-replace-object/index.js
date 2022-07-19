@@ -13,12 +13,12 @@ import {
   REGEXP_BLOCKQUOTE,
   REGEXP_HR,
   REGEXP_BR,
-//   REGEXP_EM,
+  // // REGEXP_EM,
   REGEXP_SPONSORSHIP,
-  REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT,
+  // REGEXP_MEM,
+  // REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
-  REGEXP_SEPARATOR,
+  // REGEXP_SEPARATOR,
 } from '../../../constants/index';
 
 import {
@@ -48,7 +48,7 @@ const {
   _blockquote,
 //   _mem,
   _header,
-  _italic,
+  // _italic,
   _del,
   _q,
   _code,
@@ -66,6 +66,8 @@ const {
   _separator,
 } = Callbacks;
 
+
+// import _header from '.'
 
 const strong = objectBuilder(REGEXP_STRONG, _strong, strongLiteral);
 
@@ -85,10 +87,13 @@ const image = objectBuilder(REGEXP_IMAGE, _image, imageLiteral);
 
 // // // empty as emptyLiteral,
 
-const italic = objectBuilder(REGEXP_EM, _italic, italicLiteral);
+// const italic = objectBuilder(REGEXP_EM, _italic, italicLiteral);
 
 // // // TODO header arent working as suppose too
 const header = objectBuilder(REGEXP_HEADER, _header, headingLiteral);
+// const subtitle = objectBuilder(REGEXP_HEADER, _header, subtitleLiteral);
+// const title = objectBuilder(REGEXP_HEADER, _header, titleLiteral);
+
 
 // // // qLiteral,
 const q = objectBuilder(REGEXP_Q, _q, false);
@@ -162,7 +167,7 @@ export default {
     // del,
     image,
     // previewText,
-    italic,
+    // italic,
     header,
     q,
     code,

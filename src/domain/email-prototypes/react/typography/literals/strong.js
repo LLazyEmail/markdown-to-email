@@ -1,1 +1,3 @@
-export default strongLiteral = `<Strong>{content}</Strong>`;
+const strongLiteral = `<Strong>{content}</Strong>`;
+
+export default strongLiteral;

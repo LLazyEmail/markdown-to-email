@@ -1,1 +1,3 @@
-export default italicLiteral = `<Italic>{content}</Italic>`;
+const italicLiteral = `<Italic>{content}</Italic>`;
+
+export default italicLiteral ;

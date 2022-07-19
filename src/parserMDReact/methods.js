@@ -64,7 +64,13 @@ function generateReactContent(sourceFile) {
   printMessage(message, 'green2');
 }
 
+
+//------------------------
+//------------------------
+//------------------------
 function generateReactFullTemplate(sourceFile) {
+
+
   const {
     content,
     warnings,
@@ -72,16 +78,23 @@ function generateReactFullTemplate(sourceFile) {
   } = parse(sourceFile);
 
   // ***
-  // checkWarnings(warnings);
-  // verification(warnings);
+  checkWarnings(warnings);
+  verification(warnings);
+
+
+
 
   const fullContent = reactLayouts.reactFullTemplate(content);
+
+
 
   const fileName = generateTemplateName('FullTemplate', 'js');
   writeHTML(fileName, fullContent);
 
   const message = 'The FullTemplate has been parsed successfully';
   printMessage(message, 'green2');
+
+
 }
 
 export {

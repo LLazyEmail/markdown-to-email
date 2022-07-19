@@ -3,8 +3,9 @@ import {
   _link,
   _blockquote,
   // _meme,
-  _header,
-  _italic,
+  // _header,
+
+  // _italic,
   _del,
   _q,
   _code,
@@ -18,13 +19,15 @@ import { _image, _paragraph, _sponsorship, _br } from './callbacks';
 
 import { _ulList, _olList } from './lists';
 
+import _header from './header';
+
 export default {
   _strong,
   _link,
   _blockquote,
   // _mem,
   _header,
-  _italic,
+  // _italic,
   _del,
   _q,
   _code,

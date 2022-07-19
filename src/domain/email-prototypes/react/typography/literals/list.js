@@ -1,2 +1,5 @@
 /* values of type UL, OL  */
-export default listLiteral = `<List type="{type}">{content}</List>`;
+const listLiteral = `<List type="{type}">{content}</List>`;
+
+export default listLiteral;
+

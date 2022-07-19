@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { newLine } from '../helpers';
-import {commonReplace} from '../../domain/replace-wrapper3.0'
+import { commonReplace } from '../../domain/replace-wrapper3.0'
 
 
 const _hr = () => `${newLine}<hr />`;
@@ -138,25 +138,25 @@ function _meme(text, src, href, altText) {
 
 }
 
-function _header(text, chars, content) {
-  const params = {
-    content: content.trim(),
-  };
+// function _header(text, chars, content) {
+//   const params = {
+//     content: content.trim(),
+//   };
 
-  const titleType = ['mainTitle', 'subtitle', 'heading'];
-  const name = titleTypes[chars.length - 1];
+//   const titleType = ['mainTitle', 'subtitle', 'heading'];
+//   const name = titleTypes[chars.length - 1];
 
-   const config = {
-    params,
-    name,
+//    const config = {
+//     params,
+//     name,
 
-    // debug: true,
-  };
+//     // debug: true,
+//   };
 
-  const replaced = commonReplace(config);
-  return newLine + replaced;
+//   const replaced = commonReplace(config);
+//   return newLine + replaced;
 
-}
+// }
 
 function _separator() {
   const params = {
@@ -198,8 +198,8 @@ export {
   _link,
   _blockquote,
   _meme,
-  _header,
-  _italic,
+  // _header,
+  // _italic,
   _del,
   _q,
   _code,

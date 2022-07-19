@@ -1,1 +1,3 @@
-export default subtitleLiteral = `<SubTitle>{content}</SubTitle>`;
+const subtitleLiteral = `<SubTitle>{content}</SubTitle>`;
+
+export default subtitleLiteral;
