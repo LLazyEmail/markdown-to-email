@@ -29,6 +29,7 @@ isFolderExists('./tests/_generated');
 console.info(process.env.PARSE, '***mode');
 //-------------------
 
+// TODO rewrite on object
 switch (process.env.PARSE) {
   case 'full':
     // generateFullTemplate();
