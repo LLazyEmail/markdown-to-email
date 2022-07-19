@@ -45,9 +45,9 @@ function WR3_generateNewString(config) {
 
   const updatedString = _loopForWrapper(config.params, config.literal);
 
-  if (config.debug) console.log(config);
+  // if (config.debug) console.log(config);
 
-  if (config.debug) console.log(updatedString);
+  // if (config.debug) console.log(updatedString);
 
   inspectorCheck(updatedString);
 

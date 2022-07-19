@@ -1,4 +1,4 @@
-const sponsor = `<table
+const sponsor = ({ src, content, href }) => `<table
 border="0"
 cellpadding="0"
 cellspacing="0"
@@ -57,7 +57,7 @@ style="
               "
             >
               <a
-                href="{href}"
+                href="${href}"
                 title=""
                 class=""
                 target="_blank"
@@ -69,7 +69,7 @@ style="
               >
                 <img
                   alt=""
-                  src="{src}"
+                  src="${src}"
                   width="150"
                   style="
                     max-width: 150px;
@@ -143,7 +143,7 @@ style="
               >
                 <br />
                 <a
-                  href="{href}"
+                  href="${href}"
                   style="
                     mso-line-height-rule: exactly;
                     -ms-text-size-adjust: 100%;
@@ -155,7 +155,7 @@ style="
                 >
                   <strong
                     id="docs-internal-guid-98b2620b-7fff-d936-82b8-a8d3a3d3c470"
-                    >{content}</strong
+                    >${content}</strong
                   ></a
                 >
               </h1>

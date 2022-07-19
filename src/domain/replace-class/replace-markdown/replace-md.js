@@ -12,24 +12,12 @@ import debuggingReplacer from './debugging';
 // import mainObject from
 
 // @TODO replace the name of this method
-function prepOurCallback(callbackName, debug = false) {
+function prepOurCallback(callbackName) {
   if (!callbackName) {
     throw new Error(`name of ${callbackName} is undefined or empty`);
   }
 
-  const settings = mainObject[callbackName];
-  // console.log(settings)
-
-  if (debug) {
-    //--------------
-    if (!settings.literal) {
-      console.log(callbackName, settings.constant);
-      console.log('-----------------');
-    }
-    //---------------
-  }
-
-  return settings;
+  return mainObject[callbackName];
 }
 
 const simple_debug = (name, params) => {
@@ -46,7 +34,7 @@ const simple_debug = (name, params) => {
 // plus i wanna have more control for debugging stuff
 //----------------------------
 function replaceMarkdown(callback_name) {
-  const singleElement = prepOurCallback(callback_name, false);
+  const singleElement = prepOurCallback(callback_name);
 
   // let debug_params = {callback_name, singleElement}
 
