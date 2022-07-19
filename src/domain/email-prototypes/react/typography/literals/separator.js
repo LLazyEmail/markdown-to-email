@@ -1,3 +1,3 @@
 const separatorLiteral = `<Separator />`;
 
-export default separatorLiteral = `<Separator />`;
+export default separatorLiteral;
