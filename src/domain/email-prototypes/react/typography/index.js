@@ -13,6 +13,7 @@ import separatorLiteral from './literals/separator';
 import blockquoteLiteral from './literals/blockquote';
 import codeLiteral from './literals/code';
 import delLiteral from './literals/del';
+
 export {
   headingLiteral,
   imageLiteral,

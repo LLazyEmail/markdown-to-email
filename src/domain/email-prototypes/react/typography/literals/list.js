@@ -1,2 +1,2 @@
 /* values of type UL, OL  */
-export const listLiteral = `<List type="{type}">{content}</List>`;
+export default listLiteral = `<List type="{type}">{content}</List>`;

@@ -5,11 +5,11 @@ import {
   newLine 
 } from '../helpers';
 
-import {commonReplace} from '../../domain/replace-wrapper3.0'
+import { commonReplace } from '../../domain/replace-wrapper3.0'
 
 /// function is not working as planned
 
-export function _paragraph(text, line) {
+function _paragraph(text, line) {
   const trimmed = line.trim();
 
   if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
@@ -35,7 +35,7 @@ export function _paragraph(text, line) {
 }
 /// !end function is not working as planned
 
-export function _image(text, alt, srcWithTooltip) {
+function _image(text, alt, srcWithTooltip) {
   const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
 
   const params = {
@@ -56,7 +56,7 @@ export function _image(text, alt, srcWithTooltip) {
   return replaced;
 }
 
-export function _br(text, newLines) {
+function _br(text, newLines) {
   const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
 
   // TODO well, it's not good. can be improved with lodash
@@ -71,7 +71,7 @@ export function _br(text, newLines) {
 
 }
 
-export function _sponsorship(text) {
+function _sponsorship(text) {
   // TODO move out this regex into constants file.
   const regex = /\[(.*?)\]/g;
     

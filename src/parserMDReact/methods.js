@@ -14,7 +14,8 @@ import {
 } from '../domain/write';
 
 import {
-  parseMDReact,
+  // parseMDReact,
+  parse
   // parseMDReactFullThing
 } from './index';
 
@@ -49,7 +50,7 @@ function writeReactComponent(fileName, content, dir = 'generated', message) {
 }
 
 function generateReactContent(sourceFile) {
-  const { content, warnings } = parseMDReact(sourceFile);
+  const { content, warnings } = parse(sourceFile);
   // console.log("parsedContent", { content, warnings, previewText });
 
   // ***
@@ -68,7 +69,7 @@ function generateReactFullTemplate(sourceFile) {
     content,
     warnings,
     // previewText
-  } = parseMDReact(sourceFile);
+  } = parse(sourceFile);
 
   // ***
   // checkWarnings(warnings);

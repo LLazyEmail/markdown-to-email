@@ -7,10 +7,9 @@ import {
 
 import { generateFullTemplate2 } from './parserMDHtml';
 
-// import {
-//   generateReactContent,
-//   generateReactFullTemplate,
-// } from './parserMDReact';
+import {
+  generateReactFullTemplate
+} from './domain/email-prototypes/react/full-template'
 
 import {
   generateTemplateComponent,
@@ -29,6 +28,8 @@ isFolderExists('./tests/_generated');
 console.info(process.env.PARSE, '***mode');
 //-------------------
 
+// TODO if I comment any of those cases - i wouldnt get any warning or something in our command line.
+
 switch (process.env.PARSE) {
   case 'full':
     // generateFullTemplate();
@@ -41,7 +42,7 @@ switch (process.env.PARSE) {
     break;
 
   case 'reactFull':
-    // generateReactFullTemplate(FULL_SOURCE);
+    generateReactFullTemplate(FULL_SOURCE);
     break;
 
   //------------------

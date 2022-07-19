@@ -1,6 +1,10 @@
 import mainObject from './pre-replace-object';
 import configureReplacer from './configuration';
 
+import { replaceMarkdownReact } from './replace-markdown/replace-md';
+
+import Replacer from './replace-class/replace';
+
 function prepOurCallback(callbackName, debug = false) {
     if (!callbackName) {
       throw new Error(`name of ${callbackName} is undefined or empty`);
@@ -21,4 +25,10 @@ function prepOurCallback(callbackName, debug = false) {
     return settings;
   }
 
-export { mainObject, configureReplacer, prepOurCallback };
+export { 
+  mainObject, 
+  configureReplacer, 
+  replaceMarkdownReact, 
+  Replacer,
+  prepOurCallback 
+};

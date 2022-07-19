@@ -1,4 +1,7 @@
-import configureReplacer from '../domain/replacer-class/configuration-react';
+import { configureReplacer } from '../domain/react';
+
+
+
 // import { generateReactContent, generateReactFullTemplate } from './methods';
 
 // //---------------
@@ -17,7 +20,7 @@ import parse from '../domain/parse'
 function parseReactFullTemplate(source) {
 
  // console.log(params);
-const { source } = params;
+// const { source } = params;
 
 return parse(source, configureReplacer);
  
