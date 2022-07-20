@@ -26,8 +26,8 @@ function configureReplacer(state, isFull) {
 
   Replacer.br();
   Replacer.sponsorship();
-  Replacer.mem();
-  Replacer.separator();
+  // Replacer.mem();
+  // Replacer.separator();
 }
 
 export default configureReplacer;

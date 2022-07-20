@@ -1,5 +1,6 @@
+// lodash
+
 import {
-  // checkWarnings,
   // checkHtml,
   printMessage,
 } from '../../helper';
@@ -9,7 +10,7 @@ import {
 
 
 function checkWarnings(warnings) {
-  forEach(warnings, (index, element) => {
+  warnings.forEach( (index, element) => {
     if (index) {
       const message = `WARNING source.md has ${index} ${element}. Replace it with memes`;
 

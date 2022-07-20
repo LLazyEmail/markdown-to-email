@@ -5,10 +5,8 @@ import { configureReplacer } from '../domain/react';
 // // TODO replace with separated parse method
 import parse from '../domain/parse';
 
-
 function parseReactFullTemplate(source) {
   // console.log(source);
-
 
   return parse(source, configureReplacer);
 }
