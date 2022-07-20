@@ -5,6 +5,7 @@ import { replaceMarkdownReact } from './replace-markdown/replace-md';
 
 import Replacer from './replace-class/replace';
 
+// TODO move to domain/helper-methods
 function prepOurCallback(callbackName, debug = false) {
   if (!callbackName) {
     throw new Error(`name of ${callbackName} is undefined or empty`);

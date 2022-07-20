@@ -37,7 +37,7 @@ import {
   //----------
   // blockquoteLiteral,
   // codeLiteral,
-  // delLiteral
+  delLiteral
 } from '../../email-prototypes/react/typography';
 
 import objectBuilder from '../../md/object-builder';
@@ -59,7 +59,7 @@ const {
   _olList,
   //------------
   _image,
-  _paragraphWrapper,
+  _paragraph,
   _sponsorship,
   _br,
   //------------
@@ -115,18 +115,18 @@ const header = objectBuilder(REGEXP_HEADER, _header, headingLiteral);
 // const olList = objectBuilder(REGEXP_OL_LIST, _olList, false);
 
 // // //  blockquoteLiteral,
-// const blockquote = objectBuilder(REGEXP_BLOCKQUOTE, _blockquote, false);
+const blockquote = objectBuilder(REGEXP_BLOCKQUOTE, _blockquote, false);
 
 // // // hrLiteral,
-// const hr = objectBuilder(REGEXP_HR, _hr, false);
+const hr = objectBuilder(REGEXP_HR, _hr, false);
 
 const paragraph = objectBuilder(
   REGEXP_PARAGRAPH,
-  _paragraphWrapper,
+  _paragraph,
   paragraphLiteral,
 );
 
-// const br = objectBuilder(REGEXP_BR, _br);
+const br = objectBuilder(REGEXP_BR, _br);
 
 // const sponsorship = objectBuilder(
 //   REGEXP_SPONSORSHIP,
@@ -161,7 +161,7 @@ const paragraph = objectBuilder(
 export default {
   strong,
   link,
-  // del,
+  del,
   image,
   // previewText,
   // italic,
@@ -174,10 +174,10 @@ export default {
   // listItem,
   // list,
   //-----------
-  // blockquote,
+  blockquote,
   hr,
   paragraph,
-  // br,
+  br,
   // sponsorship,
   // memes,
   // separator,

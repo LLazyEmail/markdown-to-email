@@ -100,7 +100,7 @@ class Replacer {
     this.header();
     this.image();
     this.link();
-    this.del();
+    // this.del();
     this.q();
     this.code();
 

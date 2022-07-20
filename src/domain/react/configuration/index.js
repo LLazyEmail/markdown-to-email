@@ -1,10 +1,4 @@
-// import {
-//     replaceMarkdown,
-// } from '../replace-markdown/replace-md';
-
 import { replaceMarkdownReact, Replacer } from '../index';
-
-// import Replacer from '../replace-class/replace';
 
 function configureReplacer(state, isFull) {
   Replacer.replaceMDBinded = replaceMarkdownReact.bind(state);
@@ -21,14 +15,14 @@ function configureReplacer(state, isFull) {
   // TODO UPDATE OLLIST CALLBACK, IT'S NOT WORKING
   //   Replacer.olList()
 
-  Replacer.blockQuote();
+  // Replacer.blockquote();
   Replacer.hr();
   Replacer.paragraph();
 
   // TODO CHECK CASES WHEN CONTENT CAN HAVE EMPTY LISTS OR BLOCKQUOTE
   //   Replacer.emptyUl();
   //   Replacer.emptyOl();
-  //   Replacer.emptyBlockQuote();
+  //   Replacer.emptyBlockquote();
 
   Replacer.br();
   Replacer.sponsorship();

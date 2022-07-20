@@ -2,11 +2,12 @@ import reactLayouts from '../templates/NewsletterReactTemplate';
 
 import {
   // writeHTML,
-
-  checkWarnings,
   printMessage,
   // generateTemplateName,
 } from '../helper';
+
+
+import { verification } from '../domain/helper-methods'
 
 import {
   writeHTML,
@@ -15,9 +16,8 @@ import {
 } from '../domain/write';
 
 import {
-  // parseMDReact,
-  parse,
-  // parseMDReactFullThing
+  // parse,
+  parseReactFullTemplate
 } from './index';
 
 //-----------------
@@ -55,7 +55,7 @@ function generateReactContent(sourceFile) {
   // console.log("parsedContent", { content, warnings, previewText });
 
   // ***
-  // checkWarnings(warnings);
+
   // verification(warnings);
 
   const fileName = generateTemplateName('Content', 'js');
@@ -69,14 +69,18 @@ function generateReactContent(sourceFile) {
 //------------------------
 //------------------------
 function generateReactFullTemplate(sourceFile) {
+
+  // const parseResults = parse(sourceFile, );
+
+  const parseResults = parseReactFullTemplate(sourceFile)
+
   const {
     content,
     warnings,
     // previewText
-  } = parse(sourceFile);
+  } = parseResults;
 
   // ***
-  checkWarnings(warnings);
   verification(warnings);
 
   const fullContent = reactLayouts.reactFullTemplate(content);
