@@ -7,9 +7,7 @@ import {
 
 import { generateFullTemplate2 } from './parserMDHtml';
 
-import {
-  generateReactFullTemplate
-} from './domain/email-prototypes/react/full-template'
+import { generateReactFullTemplate } from './domain/email-prototypes/react/full-template';
 
 import {
   generateTemplateComponent,

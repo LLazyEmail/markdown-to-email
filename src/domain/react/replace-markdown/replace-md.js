@@ -1,4 +1,4 @@
-import { mainObject, prepOurCallback }  from '../index';
+import { mainObject, prepOurCallback } from '../index';
 import debuggingReplacer from './debugging';
 
 // // TODO replace the name of this method
@@ -13,26 +13,21 @@ import debuggingReplacer from './debugging';
 // }
 
 function replaceMarkdownReact(callback_name) {
-
-    const singleElement = prepOurCallback(callback_name, false);
+  const singleElement = prepOurCallback(callback_name, false);
   // --------- comment for debugging purposes
   // // --- You can comment this when you debugging our wrapper
-  const _replacer = singleElement.replacer.bind(this);
-  this.content = this.content.replace(singleElement.constant, _replacer);
+  // const _replacer = singleElement.replacer.bind(this);
+  // this.content = this.content.replace(singleElement.constant, _replacer);
 
-//   // -------------- Uncomment for debugging reasons
-//   // if (debuggingReplacer(callback_name)) {
-//   //   console.log(callback_name);
+  //   // -------------- Uncomment for debugging reasons
+  if (debuggingReplacer(callback_name)) {
+    console.log(callback_name);
 
-//   //   this.content = this.content.replace(
-//   //     fromMap.constant,
-//   //     forReplacer
-//   //   );
-//   // }
-//   // return '';
-//   //-----------------------
+    this.content = this.content.replace(singleElement.constant, forReplacer);
+  }
+  return '';
+  //   //-----------------------
 }
-
 
 // function replaceMarkdownDebug(callback_name) {
 //   // -------------- Uncomment for debugging reasons

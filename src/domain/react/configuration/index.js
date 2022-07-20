@@ -2,15 +2,12 @@
 //     replaceMarkdown,
 // } from '../replace-markdown/replace-md';
 
-import { 
-  // replaceMarkdownReact,
-   Replacer } from '../index';
+import { replaceMarkdownReact, Replacer } from '../index';
 
 // import Replacer from '../replace-class/replace';
 
 function configureReplacer(state, isFull) {
-
-  Replacer.replaceMDBinded = replaceMarkdown.bind(state);
+  Replacer.replaceMDBinded = replaceMarkdownReact.bind(state);
 
   // NOTE DON'T CHANGE ORDER OF FUNCTION CALLS
   if (isFull) {

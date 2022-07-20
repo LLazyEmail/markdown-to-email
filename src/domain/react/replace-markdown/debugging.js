@@ -18,4 +18,4 @@ function debuggingReplacer(name) {
   return namesArr.includes(name);
 }
 
-export  default debuggingReplacer;
+export default debuggingReplacer;

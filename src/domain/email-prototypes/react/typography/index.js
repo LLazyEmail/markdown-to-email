@@ -27,8 +27,8 @@ export {
   strongLiteral,
   subtitleLiteral,
   separatorLiteral,
-//----------
+  //----------
   blockquoteLiteral,
   codeLiteral,
-  delLiteral
+  delLiteral,
 };

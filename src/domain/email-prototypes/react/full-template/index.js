@@ -4,7 +4,4 @@ import { generateReactFullTemplate } from '../../../../parserMDReact/methods';
 //   generateReactContent,
 // } from './parserMDReact';
 
-
-export {
-    generateReactFullTemplate
-}
+export { generateReactFullTemplate };

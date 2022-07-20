@@ -2,7 +2,8 @@ import reactLayouts from '../templates/NewsletterReactTemplate';
 
 import {
   // writeHTML,
-  // checkWarnings,
+
+  checkWarnings,
   printMessage,
   // generateTemplateName,
 } from '../helper';
@@ -15,7 +16,7 @@ import {
 
 import {
   // parseMDReact,
-  parse
+  parse,
   // parseMDReactFullThing
 } from './index';
 
@@ -64,13 +65,10 @@ function generateReactContent(sourceFile) {
   printMessage(message, 'green2');
 }
 
-
 //------------------------
 //------------------------
 //------------------------
 function generateReactFullTemplate(sourceFile) {
-
-
   const {
     content,
     warnings,
@@ -81,20 +79,13 @@ function generateReactFullTemplate(sourceFile) {
   checkWarnings(warnings);
   verification(warnings);
 
-
-
-
   const fullContent = reactLayouts.reactFullTemplate(content);
-
-
 
   const fileName = generateTemplateName('FullTemplate', 'js');
   writeHTML(fileName, fullContent);
 
   const message = 'The FullTemplate has been parsed successfully';
   printMessage(message, 'green2');
-
-
 }
 
 export {

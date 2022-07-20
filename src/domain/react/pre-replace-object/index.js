@@ -22,22 +22,22 @@ import {
 } from '../../../constants/index';
 
 import {
-    headingLiteral,
-    imageLiteral,
-    italicLiteral,
-    linkLiteral,
-    listLiteral,
-    listItemLiteral,
-    // titleLiteral,
-    paragraphLiteral,
-    // qLiteral,
-    strongLiteral,
-    // subtitleLiteral,
-    separatorLiteral,
-    //----------
-    // blockquoteLiteral,
-    // codeLiteral,
-    // delLiteral
+  headingLiteral,
+  imageLiteral,
+  // italicLiteral,
+  linkLiteral,
+  listLiteral,
+  listItemLiteral,
+  // titleLiteral,
+  paragraphLiteral,
+  // qLiteral,
+  strongLiteral,
+  // subtitleLiteral,
+  // separatorLiteral,
+  //----------
+  // blockquoteLiteral,
+  // codeLiteral,
+  // delLiteral
 } from '../../email-prototypes/react/typography';
 
 import objectBuilder from '../../md/object-builder';
@@ -46,14 +46,14 @@ const {
   _strong,
   _link,
   _blockquote,
-//   _mem,
+  //   _mem,
   _header,
   // _italic,
   _del,
   _q,
   _code,
   _hr,
-//   _empty,
+  //   _empty,
   //------------
   _ulList,
   _olList,
@@ -66,11 +66,9 @@ const {
   _separator,
 } = Callbacks;
 
-
 // import _header from '.'
 
 const strong = objectBuilder(REGEXP_STRONG, _strong, strongLiteral);
-
 
 const link = objectBuilder(REGEXP_LINK, _link, linkLiteral);
 
@@ -94,12 +92,11 @@ const header = objectBuilder(REGEXP_HEADER, _header, headingLiteral);
 // const subtitle = objectBuilder(REGEXP_HEADER, _header, subtitleLiteral);
 // const title = objectBuilder(REGEXP_HEADER, _header, titleLiteral);
 
-
 // // // qLiteral,
-const q = objectBuilder(REGEXP_Q, _q, false);
+// const q = objectBuilder(REGEXP_Q, _q, false);
 
 // // // codeLiteral,
-const code = objectBuilder(REGEXP_CODE, _code, false);
+// const code = objectBuilder(REGEXP_CODE, _code, false);
 
 // const listItem = objectBuilder(
 //   REGEXP_SUB_LISTS,
@@ -112,16 +109,16 @@ const code = objectBuilder(REGEXP_CODE, _code, false);
 // const list = objectBuilder(REGEXP_UL_LIST, getParsedSubList, listLiteral);
 
 // // //  ulListLiteral,
-const ulList = objectBuilder(REGEXP_UL_LIST, _ulList, listLiteral);
+// const ulList = objectBuilder(REGEXP_UL_LIST, _ulList, listLiteral);
 
 // // //  olListLiteral,
-const olList = objectBuilder(REGEXP_OL_LIST, _olList, false);
+// const olList = objectBuilder(REGEXP_OL_LIST, _olList, false);
 
 // // //  blockquoteLiteral,
-const blockquote = objectBuilder(REGEXP_BLOCKQUOTE, _blockquote, false);
+// const blockquote = objectBuilder(REGEXP_BLOCKQUOTE, _blockquote, false);
 
 // // // hrLiteral,
-const hr = objectBuilder(REGEXP_HR, _hr, false);
+// const hr = objectBuilder(REGEXP_HR, _hr, false);
 
 const paragraph = objectBuilder(
   REGEXP_PARAGRAPH,
@@ -129,13 +126,13 @@ const paragraph = objectBuilder(
   paragraphLiteral,
 );
 
-const br = objectBuilder(REGEXP_BR, _br);
+// const br = objectBuilder(REGEXP_BR, _br);
 
-const sponsorship = objectBuilder(
-  REGEXP_SPONSORSHIP,
-  _sponsorship,
-  sponsorLiteral,
-);
+// const sponsorship = objectBuilder(
+//   REGEXP_SPONSORSHIP,
+//   _sponsorship,
+//   sponsorLiteral,
+// );
 
 // // //  memeLiteral,
 // const memes = objectBuilder(REGEXP_MEM, _meme, false);
@@ -162,26 +159,26 @@ const sponsorship = objectBuilder(
 // // },
 
 export default {
-    strong,
-    link,
-    // del,
-    image,
-    // previewText,
-    // italic,
-    header,
-    q,
-    code,
-    //-----------
-    ulList,
-    olList,
-    // listItem,
-    // list,
-    //-----------
-    blockquote,
-    hr,
-    paragraph,
-    br,
-    sponsorship,
-    // memes,
-    // separator,
-  };
+  strong,
+  link,
+  // del,
+  image,
+  // previewText,
+  // italic,
+  header,
+  // q,
+  // code,
+  //-----------
+  // ulList,
+  // olList,
+  // listItem,
+  // list,
+  //-----------
+  // blockquote,
+  hr,
+  paragraph,
+  // br,
+  // sponsorship,
+  // memes,
+  // separator,
+};
