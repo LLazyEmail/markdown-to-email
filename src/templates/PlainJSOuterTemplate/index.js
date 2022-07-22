@@ -1,10 +1,6 @@
-// import innerComponents from './loyouts/body';
-
-// import fullTemplateOLD from './depricated/full-template';
-import { fullTemplate } from './fullTemplate';
-
 import generateTemplateComponent from './t/generateTemplate';
 import generateEmptyTemplateComponent from './t/emptyTemplate';
+import { generateFullTemplateHackernoon } from './generateFullTemplate';
 
 export {
   //   body,
@@ -19,7 +15,6 @@ export {
   //   head,
 
   // fullTemplateOLD,
-  fullTemplate,
   // headline,
   // logoBottom,
   // logoTop,
@@ -29,6 +24,7 @@ export {
   // ctaList,
   generateTemplateComponent,
   generateEmptyTemplateComponent,
+  generateFullTemplateHackernoon,
   // printMain,
   // printFooter,
   // printBody,
