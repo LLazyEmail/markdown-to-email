@@ -16,7 +16,7 @@ import {
   // // REGEXP_EM,
   REGEXP_SPONSORSHIP,
   // REGEXP_MEM,
-  // REGEXP_PREVIEW_TEXT,
+  REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
   // REGEXP_SEPARATOR,
 } from '../../../constants/index';
@@ -37,7 +37,9 @@ import {
   //----------
   // blockquoteLiteral,
   // codeLiteral,
-  delLiteral
+  delLiteral,
+  previewTextLiteral
+
 } from '../../email-prototypes/react/typography';
 
 import objectBuilder from '../../md/object-builder';
@@ -64,6 +66,8 @@ const {
   _br,
   //------------
   _separator,
+
+  _previewText
 } = Callbacks;
 
 // import _header from '.'
@@ -77,11 +81,11 @@ const del = objectBuilder(REGEXP_DEL, _del, false);
 
 const image = objectBuilder(REGEXP_IMAGE, _image, imageLiteral);
 
-// const previewText = objectBuilder(
-//   REGEXP_PREVIEW_TEXT,
-//   _previewText,
-//   previewTextLiteral,
-// );
+const previewText = objectBuilder(
+  REGEXP_PREVIEW_TEXT,
+  _previewText,
+  previewTextLiteral,
+);
 
 // // // empty as emptyLiteral,
 
@@ -163,7 +167,7 @@ export default {
   link,
   del,
   image,
-  // previewText,
+  previewText,
   // italic,
   header,
   // q,

@@ -11,7 +11,7 @@ import {
   _code,
   _hr,
   _empty,
-  // previewText,
+  _previewText,
   _separator,
 } from './simple';
 

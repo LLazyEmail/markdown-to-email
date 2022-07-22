@@ -5,9 +5,9 @@ function debuggingReplacer(name) {
     // 'paragraph',
     // 'link',
     // 'header', // not working
-    'strong',
+    // 'strong',
     // 'memes',
-    'br',
+    // 'br',
     // 'separator',
     'previewText',
     // 'italic',
