@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import typography from 'atherdon-newsletter-js-layouts-typography';
+import body from 'atherdon-newsletter-js-layouts-body';
 
 import {
   _strong,
@@ -60,7 +61,7 @@ import {
 // import misc from '../templates/OuterTemplate/layouts/misc';
 
 // TODO replace this layout with plain v3 layout
-import body from '../../../templates/PlainJSOuterTemplate/layouts/body';
+// import body from '../../../templates/PlainJSOuterTemplate/layouts/body';
 
 import objectBuilder from '../../md/object-builder';
 
@@ -81,7 +82,7 @@ const {
   strongComponent,
 } = typography;
 
-const { sponsorLiteral, previewTextLiteral } = body;
+const { sponsorComponent, previewTextComponent } = body;
 
 const map = {
   strong: objectBuilder(REGEXP_STRONG, _strong, strongComponent),
@@ -91,7 +92,7 @@ const map = {
   previewText: objectBuilder(
     REGEXP_PREVIEW_TEXT,
     _previewText,
-    previewTextLiteral,
+    previewTextComponent,
   ),
   italic: objectBuilder(REGEXP_UNDERSCORE_ITALIC, _italic, italicComponent),
   italic_asterix: objectBuilder(
@@ -112,13 +113,9 @@ const map = {
   // this object used only as a stupid way to add a parch for different cases of lists
   // first two params never used
   list: objectBuilder(REGEXP_UL_LIST, getParsedSubList, listComponent),
-  //  ulListLiteral,
   ulList: objectBuilder(REGEXP_UL_LIST, _ulList, listComponent),
-  //  olListLiteral,
   olList: objectBuilder(REGEXP_OL_LIST, _olList, false),
-  //  blockquoteLiteral,
   blockquote: objectBuilder(REGEXP_BLOCKQUOTE, _blockquote, false),
-  // hrLiteral,
   hr: objectBuilder(REGEXP_HR, _hr, false),
   paragraph: objectBuilder(
     REGEXP_PARAGRAPH,
@@ -126,8 +123,11 @@ const map = {
     paragraphComponent,
   ),
   br: objectBuilder(REGEXP_BR, _br),
-  sponsorship: objectBuilder(REGEXP_SPONSORSHIP, _sponsorship, sponsorLiteral),
-  //  memeLiteral,
+  sponsorship: objectBuilder(
+    REGEXP_SPONSORSHIP,
+    _sponsorship,
+    sponsorComponent,
+  ),
   memes: objectBuilder(REGEXP_MEM, _meme, false),
   separator: objectBuilder(REGEXP_SEPARATOR, _separator, separatorComponent),
 };
