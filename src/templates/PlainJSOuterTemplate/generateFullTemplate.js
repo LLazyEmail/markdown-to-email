@@ -46,24 +46,14 @@ export const generateFullTemplateHackernoon = (sourceFile) => {
 // };
 //------------------------------
 //------------------------------
-// function generateFullTemplate(sourceFile) {
-//   // same as from top
 
-//   const fullContent = layouts.fullTemplate(content);
-//   const fileName = generateTemplateName('full-template');
-//   const message = 'The full-template has been parsed successfully';
-//   printMessage(message, 'green2');
-// }
 
 //-----------------------------
 //------------------------------
 /* function compileEmptyTemplate() {
   //---------------------
 
-  const cleanTemplate = generateEmptyTemplateComponent();
-
-  deliver(cleanTemplate, 'lit-empty', 'Testing LIT template');
-}
+//}
 //--------------
 
 function compileTemplate() {
@@ -84,7 +74,7 @@ export {
   // generateFullTemplate,
   //------------
   //-------------
-  compileEmptyTemplate,
+  
   compileTemplate,
 };
  */
