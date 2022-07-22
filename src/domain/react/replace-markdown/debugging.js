@@ -2,8 +2,8 @@
 function debuggingReplacer(name) {
   const namesArr = [
     // 'sponsorship',
-    'paragraph',
-    // 'link',
+    // 'paragraph',
+    'link',
     // 'header', // not working
     // 'strong',
     // 'memes',

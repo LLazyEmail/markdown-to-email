@@ -1,5 +1,6 @@
 /* eslint-disable */
-import { newLine } from '../helpers';
+import { newLine } from '../../domain/helper-methods';
+
 import { commonReplace } from '../../domain/replace-wrapper3.0'
 
 
@@ -96,13 +97,13 @@ function _link(text, title, href) {
   const config = {
     params,
     name: 'link',
-    debug: true,
+    // debug: true,
   };
 
 
-  // const replaced = commonReplace(config);
+  const replaced = commonReplace(config);
 
-  // return replaced;
+  return replaced;
 
 }
 

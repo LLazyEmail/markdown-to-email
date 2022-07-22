@@ -1,22 +1,31 @@
-// lodash
+import { forEach } from 'lodash';
 
 import {
   // checkHtml,
   printMessage,
 } from '../../helper';
 
+import os from 'os';
+const platform = os.platform();
+
 // TODO enable const messages
 // import { WARNING_IMAGE_VERSION, ERROR_SOURCE_DONT_HAVE, FULL_TEMPLATE_ERROR, HTML_EMAIL_SUCCESS, HTML_EMAIL_ERROR } from './constants';
 
+// TODO make is as fat arrow function
+const newLine = platform === 'win32' ? '\r\n' : '\n';
+
+
 
 function checkWarnings(warnings) {
-  warnings.forEach( (index, element) => {
+
+  forEach({ 'a': 1, 'b': 2 }, function(value, index) {
     if (index) {
-      const message = `WARNING source.md has ${index} ${element}. Replace it with memes`;
+      const message = `WARNING source.md has ${index} ${value}. Replace it with memes`;
 
       printMessage(message, 'yellow');
     }
   });
+
 } 
 
 // TODO should we move away checks?
@@ -34,6 +43,7 @@ function checkHtml(content) {
   }
 
   // hmm, it can be a problem
+  // TODO replace with lodash
   // eslint-disable-next-line no-plusplus
   for (let i = ind; i < ind + 5000; i++) {
     tempStr += content[i];
@@ -56,6 +66,4 @@ function verification(warnings, content = false) {
   if (content) checkHtml(content);
 }
 
-
-
-export { verification, checkWarnings, checkHtml };
+export { verification, checkWarnings, checkHtml, newLine };

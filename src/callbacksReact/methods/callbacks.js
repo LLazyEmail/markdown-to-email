@@ -1,9 +1,6 @@
 // TODO undisable because there is a lot of errors
 /* eslint-disable */
-import { 
-  // replaceReactWrapper, 
-  newLine 
-} from '../helpers';
+import { newLine } from '../../domain/helper-methods';
 
 import { commonReplace } from '../../domain/replace-wrapper3.0'
 

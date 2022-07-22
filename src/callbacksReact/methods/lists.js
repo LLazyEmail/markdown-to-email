@@ -1,7 +1,5 @@
 /* eslint-disable */
-import { 
-  // replaceWrapper, 
-  newLine } from '../helpers';
+import { newLine } from '../../domain/helper-methods';
 
 const _hr = () => `${newLine}<hr />`;
 const _empty = () => '';

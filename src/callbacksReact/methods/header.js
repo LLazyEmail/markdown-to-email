@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { newLine } from '../helpers';
+import { newLine } from '../../domain/helper-methods';
 import { commonReplace } from '../../domain/replace-wrapper3.0'
 
 function _header(text, chars, content) {
