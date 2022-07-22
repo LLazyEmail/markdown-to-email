@@ -1,4 +1,3 @@
-// TODO: something wrong with newsletter-constants module
 import parse from '../../domain/parse';
 import configureReplacer from '../../domain/replace-class/configuration';
 import { deliver } from '../../domain/deliver/deliver';
