@@ -1,23 +1,15 @@
 import { mainObject, prepOurCallback } from '../index';
 import debuggingReplacer from './debugging';
 
-import { replaceMarkdown } from '../../replace-class/'
+import { replaceMarkdown } from '../../replace-class';
 
 // TODO we finally can replaceMarkdown()*** for this one.
 
-
 function replaceMarkdownReact(callback_name) {
-
   // it must work....
   // replaceMarkdown(callback_name);
 
-
-
-
   // const debugging = new replaceMarkdownDebug(callback_name);
-
-
-
 
   const singleElement = prepOurCallback(callback_name, false);
   // --------- comment for debugging purposes
@@ -27,21 +19,18 @@ function replaceMarkdownReact(callback_name) {
 
   //   // -------------- Uncomment for debugging reasons
   if (debuggingReplacer(callback_name)) {
-
     // console.log(callback_name);
 
     const _replacer = singleElement.replacer.bind(this);
 
-//     console.log(replacedString);
+    //     console.log(replacedString);
 
-
-//     // TODO another case why i dont like this solution
-//     // with string.replace - when you forget to return something it's hard to catch
+    //     // TODO another case why i dont like this solution
+    //     // with string.replace - when you forget to return something it's hard to catch
     this.content = this.content.replace(singleElement.constant, _replacer);
-    
   }
   return '';
-    //-----------------------
+  //-----------------------
 }
 
 // function replaceMarkdownDebug(callback_name) {
@@ -62,9 +51,7 @@ function replaceMarkdownReact(callback_name) {
 //   //--------------
 // }
 
-
-
-// TODO mayber replace it with class? 
+// TODO mayber replace it with class?
 // class replaceMarkdownReact {
 //   constructor(callback_name) {
 //     const singleElement = prepOurCallback(callback_name, false);
@@ -88,6 +75,5 @@ function replaceMarkdownReact(callback_name) {
 //     //   //-----------------------
 //   }
 // }
-
 
 export { replaceMarkdownReact };

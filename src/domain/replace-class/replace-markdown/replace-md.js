@@ -60,12 +60,9 @@ function replaceMarkdown(callback_name) {
 
 class replaceMarkdownDebug {
   constructor(callback_name) {
-
     const singleElement = prepOurCallback(callback_name, false);
 
-
     if (debuggingReplacer(callback_name)) {
-
       console.log(callback_name);
 
       const _replacer = singleElement.replacer.bind(this);
@@ -77,7 +74,6 @@ class replaceMarkdownDebug {
       this.content = this.content.replace(singleElement.constant, _replacer);
     }
     return '';
-
   }
 }
 

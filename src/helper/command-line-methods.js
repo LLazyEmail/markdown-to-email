@@ -6,10 +6,7 @@ import { forEach } from 'lodash';
 
 // TODO should we remake whole state as a class with "frozen" methods?
 
-
 import { checkWarnings, checkHtml } from '../domain/helper-methods';
-
-
 
 // TODO enable const messages
 // import { WARNING_IMAGE_VERSION, ERROR_SOURCE_DONT_HAVE, FULL_TEMPLATE_ERROR, HTML_EMAIL_SUCCESS, HTML_EMAIL_ERROR } from './constants';
@@ -41,10 +38,6 @@ function displayCLIErrors(errors, warnings) {
     checkWarnings(warnings);
   }
 }
-
-
-
-
 
 const printMessage = ({ message, type }) => {
   if (!message) return;

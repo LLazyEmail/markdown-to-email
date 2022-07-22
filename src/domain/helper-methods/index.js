@@ -1,11 +1,11 @@
 import { forEach } from 'lodash';
 
+import os from 'os';
 import {
   // checkHtml,
   printMessage,
 } from '../../helper';
 
-import os from 'os';
 const platform = os.platform();
 
 // TODO enable const messages
@@ -14,19 +14,15 @@ const platform = os.platform();
 // TODO make is as fat arrow function
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
-
-
 function checkWarnings(warnings) {
-
-  forEach({ 'a': 1, 'b': 2 }, function(value, index) {
+  forEach({ a: 1, b: 2 }, function (value, index) {
     if (index) {
       const message = `WARNING source.md has ${index} ${value}. Replace it with memes`;
 
       printMessage(message, 'yellow');
     }
   });
-
-} 
+}
 
 // TODO should we move away checks?
 function checkHtml(content) {

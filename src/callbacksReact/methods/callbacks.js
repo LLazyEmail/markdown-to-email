@@ -46,6 +46,9 @@ function _image(text, alt, srcWithTooltip) {
     debug: true,
   };
 
+
+  console.log(config);
+
   this.warnings.images++;
 
   const replaced = commonReplace(config);

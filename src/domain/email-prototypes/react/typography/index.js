@@ -33,5 +33,5 @@ export {
   codeLiteral,
   delLiteral,
   //----------
-  previewTextLiteral
+  previewTextLiteral,
 };

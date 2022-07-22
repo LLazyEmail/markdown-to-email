@@ -38,8 +38,7 @@ import {
   // blockquoteLiteral,
   // codeLiteral,
   delLiteral,
-  previewTextLiteral
-
+  previewTextLiteral,
 } from '../../email-prototypes/react/typography';
 
 import objectBuilder from '../../md/object-builder';
@@ -67,7 +66,7 @@ const {
   //------------
   _separator,
 
-  _previewText
+  _previewText,
 } = Callbacks;
 
 // import _header from '.'
@@ -124,11 +123,7 @@ const blockquote = objectBuilder(REGEXP_BLOCKQUOTE, _blockquote, false);
 // // // hrLiteral,
 const hr = objectBuilder(REGEXP_HR, _hr, false);
 
-const paragraph = objectBuilder(
-  REGEXP_PARAGRAPH,
-  _paragraph,
-  paragraphLiteral,
-);
+const paragraph = objectBuilder(REGEXP_PARAGRAPH, _paragraph, paragraphLiteral);
 
 const br = objectBuilder(REGEXP_BR, _br);
 

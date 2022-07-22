@@ -6,8 +6,7 @@ import {
   // generateTemplateName,
 } from '../helper';
 
-
-import { verification } from '../domain/helper-methods'
+import { verification } from '../domain/helper-methods';
 
 import {
   writeHTML,
@@ -17,7 +16,7 @@ import {
 
 import {
   // parse,
-  parseReactFullTemplate
+  parseReactFullTemplate,
 } from './index';
 
 //-----------------
@@ -69,10 +68,9 @@ function generateReactContent(sourceFile) {
 //------------------------
 //------------------------
 function generateReactFullTemplate(sourceFile) {
-
   // const parseResults = parse(sourceFile, );
 
-  const parseResults = parseReactFullTemplate(sourceFile)
+  const parseResults = parseReactFullTemplate(sourceFile);
 
   const {
     content,

@@ -9,11 +9,11 @@ function debuggingReplacer(name) {
     // 'memes',
     // 'br',
     // 'separator',
-    'previewText',
+    // 'previewText',
     // 'italic',
     // 'olList'
     // 'ulList'
-    // 'image'
+    'image'
   ];
   return namesArr.includes(name);
 }

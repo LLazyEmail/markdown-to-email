@@ -94,7 +94,6 @@ class Replacer {
   }
 
   typography() {
-
     this.previewText();
     //---------------
     this.strong();
