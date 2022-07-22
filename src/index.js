@@ -5,8 +5,6 @@ import {
   isFolderExists,
 } from './domain/write';
 
-import { generateFullTemplate2 } from './parserMDHtml';
-
 // import {
 //   generateReactContent,
 //   generateReactFullTemplate,
@@ -15,6 +13,7 @@ import { generateFullTemplate2 } from './parserMDHtml';
 import {
   generateTemplateComponent,
   generateEmptyTemplateComponent,
+  generateFullTemplateHackernoon,
 } from './templates/PlainJSOuterTemplate';
 //-------------------
 // @TODO add path, in order to make it work PERFECTLY
@@ -34,7 +33,7 @@ console.info(process.env.PARSE, '***mode');
 switch (process.env.PARSE) {
   case 'full':
     // generateFullTemplate();
-    generateFullTemplate2(FULL_SOURCE);
+    generateFullTemplateHackernoon(FULL_SOURCE);
     break;
 
   case 'reactContentOnly':

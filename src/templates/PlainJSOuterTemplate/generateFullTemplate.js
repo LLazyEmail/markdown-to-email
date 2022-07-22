@@ -1,41 +1,18 @@
-// @TODO both layouts things can be moved out from importing it here.
+// TODO: something wrong with newsletter-constants module
+import parse from '../../domain/parse';
+import configureReplacer from '../../domain/replace-class/configuration';
+import { deliver } from '../../domain/deliver/deliver';
+import { MESSAGE_HTML_FULL_TEMPLATE2 } from '../../domain/deliver/deliver.constants';
+import { verification } from '../../domain/helper-methods';
+import { hackernoonTemplate } from './fullTemplate';
 
-import {
-  // checkWarnings,
-  // checkHtml,
-  printMessage,
-} from '../helper';
-
-import { writeHTML, generateTemplateName } from '../domain/write';
-
-import { verification } from '../domain/helper-methods';
-
-import {
-  hackernoonTemplate,
-  // fullTemplateOLD,
-  generateEmptyTemplateComponent,
-  generateTemplateComponent,
-} from '../templates/PlainJSOuterTemplate';
-
-// import plainV2 from '../domain/email-prototypes/plainjs/template';
-
-import { parseFullTHing } from './index';
-
-const MESSAGE_HTML_CONTENT_ONLY = 'The content has been parsed successfully';
-const MESSAGE_HTML_FULL_TEMPLATE =
-  'The full-template has been parsed successfully';
-const MESSAGE_HTML_FULL_TEMPLATE2 =
-  'The full-template has been parsed successfully2';
-
-const deliver = (template, name, message) => {
-  const fileName = generateTemplateName(name);
-  writeHTML(fileName, template);
-  printMessage(message, 'green2');
+const parseContent = ({ source }) => {
+  return parse(source, configureReplacer);
 };
 
-function generateFullTemplate2(sourceFile) {
+export const generateFullTemplateHackernoon = (sourceFile) => {
   // should warnings be returned here?
-  const { content, warnings, previewText } = parseFullTHing({
+  const { content, warnings, previewText } = parseContent({
     source: sourceFile,
   });
 
@@ -48,7 +25,7 @@ function generateFullTemplate2(sourceFile) {
     'hackernoon-full-template',
     MESSAGE_HTML_FULL_TEMPLATE2,
   );
-}
+};
 
 // this method is depricated.
 // we will remove export of it at some point.
@@ -80,7 +57,7 @@ function generateFullTemplate2(sourceFile) {
 
 //-----------------------------
 //------------------------------
-function compileEmptyTemplate() {
+/* function compileEmptyTemplate() {
   //---------------------
 
   const cleanTemplate = generateEmptyTemplateComponent();
@@ -105,11 +82,9 @@ export {
 
   generateFullTemplate2,
   // generateFullTemplate,
-  //-------------
-  MESSAGE_HTML_CONTENT_ONLY,
-  MESSAGE_HTML_FULL_TEMPLATE,
-  MESSAGE_HTML_FULL_TEMPLATE2,
+  //------------
   //-------------
   compileEmptyTemplate,
   compileTemplate,
 };
+ */
