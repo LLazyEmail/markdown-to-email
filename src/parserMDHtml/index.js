@@ -9,11 +9,7 @@ import {
   // generateContentOnly,
 } from './methods';
 
-function parseFullTHing(params) {
-  // console.log(params);
-
-  const { source } = params;
-
+function parseFullTHing({ source }) {
   return parse(source, configureReplacer);
 }
 

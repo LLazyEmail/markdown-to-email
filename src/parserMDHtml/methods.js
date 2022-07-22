@@ -10,10 +10,8 @@ import { writeHTML, generateTemplateName } from '../domain/write';
 
 import { verification } from '../domain/helper-methods';
 
-// rename too something else, because we have a mix there
 import {
-  fullTemplate,
-  betterFullTemplate,
+  hackernoonTemplate,
   // fullTemplateOLD,
   generateEmptyTemplateComponent,
   generateTemplateComponent,
@@ -23,69 +21,34 @@ import {
 
 import { parseFullTHing } from './index';
 
-//------------------
 const MESSAGE_HTML_CONTENT_ONLY = 'The content has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE =
   'The full-template has been parsed successfully';
 const MESSAGE_HTML_FULL_TEMPLATE2 =
   'The full-template has been parsed successfully2';
-//------------------
 
-//------------------------------
 const deliver = (template, name, message) => {
-  // console.log(plainV2());
-  // console.log('name', name);
-  // console.log("template", template);
-
   const fileName = generateTemplateName(name);
   writeHTML(fileName, template);
   printMessage(message, 'green2');
 };
-//------------------------------
 
-//------------------------------
 function generateFullTemplate2(sourceFile) {
   // should warnings be returned here?
   const { content, warnings, previewText } = parseFullTHing({
     source: sourceFile,
   });
 
-  // ***
   verification(warnings, content);
 
-  //   @TODO HERE WE CAN APPLY THAT PREVIEW-TEXT IS EMPTY INSIDE
-  // console.log(content);
+  const hackernoonFullTemplate = hackernoonTemplate(content);
 
-  // throw new Error("my error message");
-
-  //----------------------------------------
-  const completedTemplate = fullTemplate({
-    content,
-    previewText,
-  });
-
-  deliver(completedTemplate, 'full-template-2', MESSAGE_HTML_FULL_TEMPLATE2);
-
-  //---------------------
-  // ------------------- ADDING another template here.....
-  // TODO @Vadim to take a look
-  // betterFullTemplate
-
-  const NEEEEEEEWTemplate = betterFullTemplate(content);
   deliver(
-    NEEEEEEEWTemplate,
-    'components-full-template-2',
+    hackernoonFullTemplate,
+    'hackernoon-full-template',
     MESSAGE_HTML_FULL_TEMPLATE2,
   );
 }
-
-// function generateFullTemplate() {
-//   // same as from top
-
-//   const template = fullTemplateOLD({ content });
-
-//   deliver(template, 'full-template', MESSAGE_HTML_CONTENT_ONLY);
-// }
 
 // this method is depricated.
 // we will remove export of it at some point.
