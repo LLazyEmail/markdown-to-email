@@ -1,7 +1,9 @@
 import mainObject from './pre-replace-object';
 import configureReplacer from './configuration';
 
-export { mainObject, configureReplacer };
+import { replaceMarkdown, replaceMarkdownDebug } from './replace-markdown/replace-md';
+
+export { mainObject, configureReplacer, replaceMarkdown, replaceMarkdownDebug };
 
 // replaceWrapper
 // function replaceContent() {}

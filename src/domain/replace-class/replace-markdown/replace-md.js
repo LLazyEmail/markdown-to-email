@@ -58,23 +58,27 @@ function replaceMarkdown(callback_name) {
   // ------------- end
 }
 
-// function replaceMarkdownDebug(callback_name) {
-//   // -------------- Uncomment for debugging reasons
-//   if (debuggingReplacer(callback_name)) {
+class replaceMarkdownDebug {
+  constructor(callback_name) {
 
-//     console.log(callback_name);
+    const singleElement = prepOurCallback(callback_name, false);
 
-//     const _replacer = singleElement.replacer.bind(this);
 
-//     console.log(replacedString);
+    if (debuggingReplacer(callback_name)) {
 
-//     // TODO another case why i dont like this solution
-//     // with string.replace - when you forget to return something it's hard to catch
-//     this.content = this.content.replace(singleElement.constant, _replacer);
-//   }
-//   return '';
-//   //--------------
-//   //--------------
-// }
+      console.log(callback_name);
 
-export { replaceMarkdown };
+      const _replacer = singleElement.replacer.bind(this);
+
+      console.log(replacedString);
+
+      // TODO another case why i dont like this solution
+      // with string.replace - when you forget to return something it's hard to catch
+      this.content = this.content.replace(singleElement.constant, _replacer);
+    }
+    return '';
+
+  }
+}
+
+export { replaceMarkdown, replaceMarkdownDebug };

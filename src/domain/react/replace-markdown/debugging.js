@@ -3,13 +3,13 @@ function debuggingReplacer(name) {
   const namesArr = [
     // 'sponsorship',
     // 'paragraph',
-    'link',
+    // 'link',
     // 'header', // not working
-    // 'strong',
+    'strong',
     // 'memes',
-    // 'br',
+    'br',
     // 'separator',
-    // 'previewText',
+    'previewText',
     // 'italic',
     // 'olList'
     // 'ulList'

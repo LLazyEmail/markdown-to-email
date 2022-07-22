@@ -21,7 +21,7 @@ function _paragraph(text, line) {
   const config = {
     params,
     name: 'paragraph',
-    debug: true,
+    // debug: true,
   };
 
   // console.log(config);

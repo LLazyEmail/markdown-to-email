@@ -1,9 +1,24 @@
 import { mainObject, prepOurCallback } from '../index';
 import debuggingReplacer from './debugging';
 
+import { replaceMarkdown } from '../../replace-class/'
+
+// TODO we finally can replaceMarkdown()*** for this one.
 
 
 function replaceMarkdownReact(callback_name) {
+
+  // it must work....
+  // replaceMarkdown(callback_name);
+
+
+
+
+  // const debugging = new replaceMarkdownDebug(callback_name);
+
+
+
+
   const singleElement = prepOurCallback(callback_name, false);
   // --------- comment for debugging purposes
   // // --- You can comment this when you debugging our wrapper
@@ -26,7 +41,7 @@ function replaceMarkdownReact(callback_name) {
     
   }
   return '';
-  //   //-----------------------
+    //-----------------------
 }
 
 // function replaceMarkdownDebug(callback_name) {

@@ -4,9 +4,9 @@ class Replacer {
 
     // this.replaceMDBindedPreviewText = () => {};
 
-    // this.previewText = function () {
-    //   this.replaceMDBinded('previewText');
-    // };
+    this.previewText = function () {
+      this.replaceMDBinded('previewText');
+    };
 
     this.comments = function () {
       this.replaceMDBinded('empty');
@@ -94,6 +94,9 @@ class Replacer {
   }
 
   typography() {
+
+    this.previewText();
+    //---------------
     this.strong();
     this.italic();
     // this.em();
@@ -108,7 +111,7 @@ class Replacer {
     // this.olList();
     // this.blockquote();
     // this.hr();
-    // this.paragraph();
+    this.paragraph();
     // this.emptyUl();
     // this.emptyOl();
   }
