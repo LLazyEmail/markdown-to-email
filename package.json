@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "atherdon-newsletter-js-layouts-typography": "^3.0.0",
-    "atherdon-old-newsletter-js-outertemplate": "^2.10.0",
+    "atherdon-old-newsletter-js-outertemplate": "^2.11.0",
     "chalk": "5.0.1",
     "cross-env": "7.0.3",
     "lit-html": "^2.2.6",
