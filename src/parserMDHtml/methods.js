@@ -13,6 +13,7 @@ import { verification } from '../domain/helper-methods';
 // rename too something else, because we have a mix there
 import {
   fullTemplate,
+  betterFullTemplate,
   // fullTemplateOLD,
   generateEmptyTemplateComponent,
   generateTemplateComponent,
@@ -72,6 +73,18 @@ function generateFullTemplate2(sourceFile) {
   });
 
   deliver(completedTemplate, 'full-template-2', MESSAGE_HTML_FULL_TEMPLATE2);
+
+  //---------------------
+  // ------------------- ADDING another template here.....
+  // TODO @Vadim to take a look
+  // betterFullTemplate
+
+  const NEEEEEEEWTemplate = betterFullTemplate(content);
+  deliver(
+    NEEEEEEEWTemplate,
+    'components-full-template-2',
+    MESSAGE_HTML_FULL_TEMPLATE2,
+  );
 }
 
 // function generateFullTemplate() {

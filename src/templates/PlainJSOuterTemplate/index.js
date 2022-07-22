@@ -1,7 +1,7 @@
 // import innerComponents from './loyouts/body';
 
 // import fullTemplateOLD from './depricated/full-template';
-import { fullTemplate } from './fullTemplate';
+import { fullTemplate, betterFullTemplate } from './fullTemplate';
 
 import generateTemplateComponent from './t/generateTemplate';
 import generateEmptyTemplateComponent from './t/emptyTemplate';
@@ -20,6 +20,7 @@ export {
 
   // fullTemplateOLD,
   fullTemplate,
+  betterFullTemplate,
   // headline,
   // logoBottom,
   // logoTop,

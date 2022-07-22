@@ -6,6 +6,14 @@
 //   `;
 // }
 
+import TObject from 'atherdon-old-newsletter-js-outertemplate';
+
+// import {} from '../../domain/email-prototypes'
+
+function betterFullTemplate(content) {
+  return TObject.printTemplate(content);
+}
+
 // щас это работает лучше
 function fullTemplate({ content, previewText }) {
   content = content.replace(previewText, '');
@@ -853,4 +861,4 @@ function fullTemplate({ content, previewText }) {
 </html>`;
 }
 
-export { fullTemplate };
+export { fullTemplate, betterFullTemplate };
