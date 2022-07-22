@@ -58,10 +58,7 @@ import {
   REGEXP_ASTERIX_ITALIC,
 } from '../../regular-expressions';
 
-// import misc from '../templates/OuterTemplate/layouts/misc';
-
-// TODO replace this layout with plain v3 layout
-// import body from '../../../templates/PlainJSOuterTemplate/layouts/body';
+// TODO why need this module? atherdon-newsletter-js-layouts-misc
 
 import objectBuilder from '../../md/object-builder';
 

@@ -1,5 +1,3 @@
-import generateTemplateComponent from './t/generateTemplate';
-import generateEmptyTemplateComponent from './t/emptyTemplate';
 import { generateFullTemplateHackernoon } from './generateFullTemplate';
 
 export {
@@ -22,8 +20,6 @@ export {
   // section,
   // sponsor,
   // ctaList,
-  generateTemplateComponent,
-  generateEmptyTemplateComponent,
   generateFullTemplateHackernoon,
   // printMain,
   // printFooter,

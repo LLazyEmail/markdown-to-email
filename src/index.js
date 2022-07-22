@@ -1,33 +1,19 @@
-//-------------------
-import {
-  writeHTML,
-  generateTemplateName,
-  isFolderExists,
-} from './domain/write';
+import { isFolderExists } from './domain/write';
 
 // import {
 //   generateReactContent,
 //   generateReactFullTemplate,
 // } from './parserMDReact';
 
-import {
-  generateTemplateComponent,
-  generateEmptyTemplateComponent,
-  generateFullTemplateHackernoon,
-} from './templates/PlainJSOuterTemplate';
+import { generateFullTemplateHackernoon } from './templates/PlainJSOuterTemplate';
 //-------------------
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
 
-// I left this variable here just for depricated methods. it's time to use full-template at all places
-const CONTENT_SOURCE = 'source/source.md';
-
 isFolderExists('./generated');
 isFolderExists('./tests/_generated');
 
-console.info(process.env.PARSE, '***mode');
-
-//-------------------
+console.info('MODE: ', process.env.PARSE, '');
 
 // TODO rewrite on object
 switch (process.env.PARSE) {
@@ -44,27 +30,6 @@ switch (process.env.PARSE) {
   case 'reactFull':
     // generateReactFullTemplate(FULL_SOURCE);
     break;
-
-  //------------------
-  case 'plainEmpty':
-    // compileEmptyTemplate();
-    // generateEmptyTemplateComponent()
-
-    // TODO find out and remove disabling rules
-    // eslint-disable-next-line no-case-declarations
-    const content = generateEmptyTemplateComponent();
-    // eslint-disable-next-line no-case-declarations
-    const fileName = generateTemplateName('lit-empty');
-
-    writeHTML(fileName, content);
-
-    break;
-
-  case 'plainTemplate':
-    // compileTemplate();
-    generateTemplateComponent();
-    break;
-  //------------------
 
   default:
     // generateFullTemplate(FULL_SOURCE);
