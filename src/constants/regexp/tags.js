@@ -5,13 +5,13 @@ const platform = os.platform();
 
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
-function beforeBeginingNewLine(string) {
-  return newLine + string;
-}
+// function beforeBeginingNewLine(string) {
+//   return newLine + string;
+// }
 // -----------------------
-function beforeEnd(string) {
-  return string + newLine;
-}
+// function beforeEnd(string) {
+//   return string + newLine;
+// }
 
 // -----------
 // TODO: make all regex to feel similar

@@ -4,7 +4,7 @@ import {
   readSourceFile,
   checkErrors,
   checkWarnings,
-  checkHtml,
+  // checkHtml,
 } from '../../helper';
 
 // TODO convert into singleton

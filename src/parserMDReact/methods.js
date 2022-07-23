@@ -50,7 +50,13 @@ function writeReactComponent(fileName, content, dir = 'generated', message) {
 }
 
 function generateReactContent(sourceFile) {
-  const { content, warnings } = parse(sourceFile);
+
+
+  const {
+    content,
+    // warnings
+  } = parseMDReact(sourceFile);
+
   // console.log("parsedContent", { content, warnings, previewText });
 
   // ***
@@ -74,7 +80,7 @@ function generateReactFullTemplate(sourceFile) {
 
   const {
     content,
-    warnings,
+    // warnings,
     // previewText
   } = parseResults;
 

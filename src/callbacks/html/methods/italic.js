@@ -1,6 +1,12 @@
 import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
-const _italic = (text, content, a, b, c) => {
+const _italic = (
+  text,
+  // content,
+  // a,
+  // b,
+  // c
+) => {
   // TODO we need to debug italic
   // https://github.com/LLazyEmail/markdown-to-email/issues/1265
   // console.log(text)
@@ -22,7 +28,10 @@ const _italic = (text, content, a, b, c) => {
   return replaced;
 };
 
-const _italicAsterix = (text, content) => {
+const _italicAsterix = (
+  text,
+  // content
+) => {
   // console.log(text);
   // console.log(content);
 

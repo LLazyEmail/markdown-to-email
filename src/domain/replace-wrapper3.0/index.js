@@ -45,9 +45,9 @@ function WR3_generateNewString(config) {
 
   const updatedString = _loopForWrapper(config.params, config.literal);
 
-  if (config.debug) console.log(config);
+  // if (config.debug) console.log(config);
 
-  if (config.debug) console.log(updatedString);
+  // if (config.debug) console.log(updatedString);
 
   inspectorCheck(updatedString);
 
@@ -97,15 +97,15 @@ const replaceLink = (config) => {
 
 //--------------------------
 //--------------------------
-const getParsedSubListReplace = (config) => {
-  console.log(WR3_getWrapper(config.name));
+// const getParsedSubListReplace = (config) => {
+//   console.log(WR3_getWrapper(config.name));
 
-  // const configCopy = Object.assign(config, WR3_getWrapper(config.name));
+//   // const configCopy = Object.assign(config, WR3_getWrapper(config.name));
 
-  // const newString = WR3_generateNewString(configCopy);
+//   // const newString = WR3_generateNewString(configCopy);
 
-  // return newString;
-};
+//   // return newString;
+// };
 
 //--------------------------
 //--------------------------
