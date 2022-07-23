@@ -15,23 +15,10 @@ isFolderExists('./tests/_generated');
 
 console.info('MODE: ', process.env.PARSE, '');
 
-// TODO rewrite on object
-switch (process.env.PARSE) {
-  case 'full':
-    // generateFullTemplate();
-    generateFullTemplateHackernoon(FULL_SOURCE);
-    break;
+const modeMap = {
+  full: () => generateFullTemplateHackernoon(FULL_SOURCE),
+  // reactContentOnly: () => generateReactContent(CONTENT_SOURCE),
+  // reactFull: () => generateReactFullTemplate(FULL_SOURCE),
+};
 
-  case 'reactContentOnly':
-    // same as default, but with react components instead.
-    // generateReactContent(CONTENT_SOURCE);
-    break;
-
-  case 'reactFull':
-    // generateReactFullTemplate(FULL_SOURCE);
-    break;
-
-  default:
-    // generateFullTemplate(FULL_SOURCE);
-    break;
-}
+modeMap[process.env.PARSE ?? 'full']();
