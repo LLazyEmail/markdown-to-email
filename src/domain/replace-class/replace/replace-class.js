@@ -9,113 +9,39 @@ class Replace {
     // Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
     // this.replaceMDBindedPreviewText = () => {};
 
-    this.previewText = function () {
-      this.replaceMDBinded('previewText');
-    };
+    this.previewText = () => this.replaceMDBinded('previewText');
 
-    // this.comments = () => {
-    //   // HEEEEEEYY
-    //   this.replaceMDBinded('');
-    // };
-
-    this.strong = () => {
-      this.replaceMDBinded('strong');
-    };
-
-    this.em = () => {
-      this.replaceMDBinded('italic');
-    };
-
+    this.strong = () => this.replaceMDBinded('strong');
+    this.em = () => this.replaceMDBinded('italic');
     // TODO finish this case
-    this.italicAsterix = () => {
-      this.replaceMDBinded('italic_asterix');
-    };
-
+    this.italicAsterix = () => this.replaceMDBinded('italic_asterix');
     // TODO working not ideally, because we have headings & subtitles,
     // so it's confusing a little bit
-    this.header = () => {
-      this.replaceMDBinded('header');
-    };
-
-    this.subtitle = () => {
-      this.replaceMDBinded('header');
-    };
-    this.title = () => {
-      this.replaceMDBinded('header');
-    };
-
-    this.image = () => {
-      this.replaceMDBinded('image');
-    };
-
-    this.link = () => {
-      this.replaceMDBinded('link');
-    };
-
-    this.del = () => {
-      this.replaceMDBinded('del');
-    };
-
-    this.q = () => {
-      this.replaceMDBinded('q');
-    };
-
-    this.code = () => {
-      this.replaceMDBinded('code');
-    };
-
-    this.ul = () => {
-      this.replaceMDBinded('ulList');
-    };
-
-    this.ol = () => {
-      this.replaceMDBinded('olList');
-    };
-
-    this.blockquote = () => {
-      this.replaceMDBinded('blockquote');
-    };
-
-    this.hr = () => {
-      this.replaceMDBinded('hr');
-    };
-
-    this.paragraph = () => {
-      this.replaceMDBinded('paragraph');
-    };
-    //---------------------
-    // TODO hiding for now, let's fix it after our release
-    // this.emptyUl = () => {
-    //   this.replaceMDBinded('REGEXP_EMPTY_UL');
-    // };
-
-    // this.emptyOl = () => {
-    //   this.replaceMDBinded('REGEXP_EMPTY_OL');
-    // };
-
-    // this line is generating an error
-    // this.replaceMDBinded(this._constants.REGEXP_EMPTY_BLOCKQUOTE, newLine);
-    // this.emptyBlockquote = () => {
-    //   this.replaceMDBinded('REGEXP_EMPTY_BLOCKQUOTE');
-    // };
-    //---------------------
-
-    this.br = function () {
-      this.replaceMDBinded('br');
-    };
-
-    this.sponsorship = function () {
-      this.replaceMDBinded('sponsorship');
-    };
-
+    this.header = () => this.replaceMDBinded('header');
+    this.subtitle = () => this.replaceMDBinded('header');
+    this.title = () => this.replaceMDBinded('header');
+    this.image = () => this.replaceMDBinded('image');
+    this.link = () => this.replaceMDBinded('link');
+    this.del = () => this.replaceMDBinded('del');
+    this.q = () => this.replaceMDBinded('q');
+    this.code = () => this.replaceMDBinded('code');
+    this.ul = () => this.replaceMDBinded('ulList');
+    this.ol = () => this.replaceMDBinded('olList');
+    this.blockquote = () => this.replaceMDBinded('blockquote');
+    this.hr = () => this.replaceMDBinded('hr');
+    this.paragraph = () => this.replaceMDBinded('paragraph');
+    this.br = () => this.replaceMDBinded('br');
+    this.sponsorship = () => this.replaceMDBinded('sponsorship');
     // here we have a different name
-    this.memes = function () {
-      this.replaceMDBinded('memes');
-    };
+    this.memes = () => this.replaceMDBinded('memes');
+    this.separator = () => this.replaceMDBinded('separator');
 
-    this.separator = function () {
-      this.replaceMDBinded('separator');
-    };
+    // TODO hiding for now, let's fix it after our release
+    // this.emptyUl = () => this.replaceMDBinded('REGEXP_EMPTY_UL');
+    // this.emptyOl = () => this.replaceMDBinded('REGEXP_EMPTY_OL');
+    // this.comments = () => this.replaceMDBinded('');
+    // this.emptyBlockquote = () =>
+    //   this.replaceMDBinded('REGEXP_EMPTY_BLOCKQUOTE');
   }
 
   template() {
@@ -142,10 +68,10 @@ class Replace {
 
   typography() {
     this.strong();
-    //---------------
+
     this.em();
     this.italicAsterix();
-    //---------------
+
     this.subtitle();
     this.title();
     // this.header();
@@ -155,13 +81,13 @@ class Replace {
     this.del();
     this.q();
     this.code();
-    //-----
+
     this.ul();
     this.ol();
-    //-----
+
     this.blockquote();
     this.hr();
-    //-----
+
     this.paragraph();
 
     // TODO fix this
