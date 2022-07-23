@@ -3,11 +3,10 @@
 // https://www.npmjs.com/package/batch-replace
 // https://www.npmjs.com/package/pupa
 
-import _ from 'lodash';
 // TODO fix this
 import { mainObject } from '../index';
 
-import debuggingReplacer from './debugging';
+// import debuggingReplacer from './debugging';
 
 // import mainObject from
 
@@ -20,12 +19,12 @@ function prepOurCallback(callbackName) {
   return mainObject[callbackName];
 }
 
-const simple_debug = (name, params) => {
+/* const simple_debug = (name, params) => {
   const { callback_name, singleElement } = params;
   if (callback_name === name) {
     console.log(singleElement);
   }
-};
+}; */
 
 // Should be working like this this.replaceMDBinded("previewText");
 // TODO add later an ability to pass debug = true from the top of the configuration,

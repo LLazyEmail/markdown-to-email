@@ -13,7 +13,11 @@ const hackernoonTemplate = (content) => TObject.printTemplate(content);
 
 export const generateFullTemplateHackernoon = (sourceFile) => {
   // should warnings be returned here?
-  const { content, warnings, previewText } = parseContent({
+  const {
+    content,
+    warnings,
+    // previewText
+  } = parseContent({
     source: sourceFile,
   });
 

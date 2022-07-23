@@ -1,5 +1,3 @@
-import { map } from 'lodash';
-
 // function callbacksFactory(name = "Hello", regEx = "World", replace = "", isError = false) {
 //   return {
 //     log: () => `${regEx}, ${name}`,
