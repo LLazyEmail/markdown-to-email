@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import typography from 'atherdon-newsletter-js-layouts-typography';
 import body from 'atherdon-newsletter-js-layouts-body';
 
@@ -10,7 +9,7 @@ import {
   _header,
   //--------
   _italic,
-  _italicAsterix,
+  // _italicAsterix,
   //---------
   _del,
   _q,
@@ -58,7 +57,7 @@ import {
   REGEXP_ASTERIX_ITALIC,
 } from '../../regular-expressions';
 
-// TODO why need this module? atherdon-newsletter-js-layouts-misc
+// atherdon-newsletter-js-layouts-misc
 
 import objectBuilder from '../../md/object-builder';
 

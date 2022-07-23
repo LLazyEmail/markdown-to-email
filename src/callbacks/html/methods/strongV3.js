@@ -1,4 +1,4 @@
-import { commonReplace } from '../../../domain/replace-wrapper3.0';
+// import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 // import { catchErrorTraceOutput } from '../../../domain/error-handle';
 
@@ -11,33 +11,33 @@ import { commonReplace } from '../../../domain/replace-wrapper3.0';
 // import mainObj from '../../../domain/replace-markdown/pre-replace-objects';
 
 // SOON CALLBACKS WILL RETURN SETTINGS ONLY
-function _strong(text, doubleAsterix, content, asterix) {
-  const params = {
-    content: `${content + asterix}`,
-  };
+// function _strong(text, doubleAsterix, content, asterix) {
+//   const params = {
+//     content: `${content + asterix}`,
+//   };
 
-  const config = {
-    params,
+//   const config = {
+//     params,
 
-    name: 'strong',
-    // debug: true,
-  };
+//     name: 'strong',
+//     // debug: true,
+//   };
 
-  // const settings = {
-  //   params,
-  //   name: 'strong',
-  //   valuesObj: mainObj.strong,
-  //   debug: true,
-  //   replacerMethod: replaceHeader,
-  // };
+//   // const settings = {
+//   //   params,
+//   //   name: 'strong',
+//   //   valuesObj: mainObj.strong,
+//   //   debug: true,
+//   //   replacerMethod: replaceHeader,
+//   // };
 
-  // const factory = new CallbackFactory();
-  // factory.create(settings);
+//   // const factory = new CallbackFactory();
+//   // factory.create(settings);
 
-  // NOT FINISHED
+//   // NOT FINISHED
 
-  const replaced = commonReplace(config);
-  return replaced;
-}
+//   const replaced = commonReplace(config);
+//   return replaced;
+// }
 
 // export default _strong;

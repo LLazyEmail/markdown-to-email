@@ -2,7 +2,10 @@ import { newLine } from '../helpers';
 
 import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
-function _separator(text, content) {
+function _separator(
+  text,
+  // content
+) {
   // console.log(text);
   // console.log(content);
 

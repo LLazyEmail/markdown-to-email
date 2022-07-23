@@ -1,8 +1,8 @@
 import {
   // replaceWrapper,
   newLine,
-  beforeBeginingNewLine,
-  beforeEnd,
+  // beforeBeginingNewLine,
+  // beforeEnd,
 } from '../helpers';
 
 import { REGEXP_SUB_LISTS } from '../../../domain/regular-expressions';

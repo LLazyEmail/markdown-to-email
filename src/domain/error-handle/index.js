@@ -2,7 +2,7 @@
 
 // something like
 
-const ERROR_REGEX_CONSTANT = (value) =>
+/* const ERROR_REGEX_CONSTANT = (value) =>
   `something wrong with RegEx constant ${value}`;
 const ERROR_REPLACER_FUNCTION = (value) =>
   `something wrong with replacer function ${value}`;
@@ -10,7 +10,7 @@ const ERROR_REPLACER_FUNCTION = (value) =>
 function extractOptions(converter, key) {
   if (!converter.key) throw new Error('no options for this converter');
   return converter.key;
-}
+} */
 
 // TODO WE NEED MAKE IT WORK
 function inspector(variable = false) {
@@ -28,27 +28,28 @@ const catchErrorTraceOutput = (error) => {
   // we need to test how it actually work
   const callerLine = error.stack.split('\n')[4];
   const index = callerLine.indexOf('at ');
+  // eslint-disable-next-line no-unused-vars
   const clean = callerLine.slice(index + 2, callerLine.length);
 
   throw error;
 };
 
-const tracingVariables = (regexp, replacer, callback) => {
-  try {
-    if (!regexp) throw new Error('regular expression is blank');
-    if (!callback) throw new Error('no callback presented');
+// const tracingVariables = (regexp, replacer, callback) => {
+//   try {
+//     if (!regexp) throw new Error('regular expression is blank');
+//     if (!callback) throw new Error('no callback presented');
 
-    // should we do something here?
+//     // should we do something here?
 
-    // ... add more here later
-  } catch (err) {
-    // we need to test how it actually work
-    const callerLine = err.stack.split('\n')[4];
-    const index = callerLine.indexOf('at ');
-    const clean = callerLine.slice(index + 2, callerLine.length);
+//     // ... add more here later
+//   } catch (err) {
+//     // we need to test how it actually work
+//     const callerLine = err.stack.split('\n')[4];
+//     const index = callerLine.indexOf('at ');
+//     const clean = callerLine.slice(index + 2, callerLine.length);
 
-    throw err;
-  }
-};
+//     throw err;
+//   }
+// };
 
 export { catchErrorTraceOutput, inspector };

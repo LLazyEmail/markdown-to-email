@@ -1,5 +1,5 @@
 import { newLine } from '../helpers';
-import { commonReplace } from '../../../domain/replace-wrapper3.0';
+// import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 const _del = () => '<del>$1</del>';
 

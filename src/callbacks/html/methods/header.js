@@ -1,4 +1,7 @@
-import { newLine, beforeBeginingNewLine } from '../helpers';
+import {
+  newLine,
+  // beforeBeginingNewLine
+} from '../helpers';
 
 import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
