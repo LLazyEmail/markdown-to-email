@@ -5,7 +5,7 @@ import { isFolderExists } from './domain/write';
 //   generateReactFullTemplate,
 // } from './parserMDReact';
 
-import { generateFullTemplateHackernoon } from './templates/PlainJSOuterTemplate';
+import { generateFullTemplateHackernoon } from './templates/HackernoonTemplate';
 //-------------------
 // @TODO add path, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
