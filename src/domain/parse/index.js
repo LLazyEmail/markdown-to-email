@@ -10,8 +10,6 @@ function parse(source, configureReplacer) {
   // i'm adding it only because error warning didnt return red stuff
   state.innerCheckErrors();
 
-  // console.log(state)
-
   return state;
 }
 

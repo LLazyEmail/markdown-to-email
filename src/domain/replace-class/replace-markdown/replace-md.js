@@ -8,16 +8,13 @@ import { mainObject } from '../index';
 
 // import debuggingReplacer from './debugging';
 
-// import mainObject from
-
-// @TODO replace the name of this method
-function prepOurCallback(callbackName) {
+const getDataForReplaceByName = (callbackName) => {
   if (!callbackName) {
     throw new Error(`name of ${callbackName} is undefined or empty`);
   }
 
   return mainObject[callbackName];
-}
+};
 
 /* const simple_debug = (name, params) => {
   const { callback_name, singleElement } = params;
@@ -32,17 +29,16 @@ function prepOurCallback(callbackName) {
 
 // plus i wanna have more control for debugging stuff
 //----------------------------
-function replaceMarkdown(callback_name) {
-  const singleElement = prepOurCallback(callback_name);
+export function replaceMarkdown(callbackName) {
+  const singleElement = getDataForReplaceByName(callbackName);
 
   // let debug_params = {callback_name, singleElement}
 
   // --------- comment for debugging purposes
-  // // --- You can comment this when you debugging our wrapper
+  // --- You can comment this when you debugging our wrapper
   const _replacer = singleElement.replacer.bind(this);
   this.content = this.content.replace(singleElement.constant, _replacer);
   // TODO let's handle a case, when this.content.replace( regex, undefined)
-  // ------------- end
 }
 
 // function replaceMarkdownDebug(callback_name) {
@@ -63,5 +59,3 @@ function replaceMarkdown(callback_name) {
 //   //--------------
 //   //--------------
 // }
-
-export { replaceMarkdown };

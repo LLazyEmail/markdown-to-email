@@ -1,5 +1,6 @@
 // @TODO include things from a new module that we have.
 // we need to pass all constants somewhere, but not to the replaceWrapper
+import { replaceMarkdown } from '../replace-markdown/replace-md';
 
 class Replace {
   constructor() {
@@ -42,6 +43,18 @@ class Replace {
     // this.comments = () => this.replaceMDBinded('');
     // this.emptyBlockquote = () =>
     //   this.replaceMDBinded('REGEXP_EMPTY_BLOCKQUOTE');
+  }
+
+  configure(state) {
+    this.replaceMDBinded = replaceMarkdown.bind(state);
+
+    // TODO crashed when here in FULL mode, needs to be fixed
+    this.previewText();
+
+    // Replacer.comments();
+    this.typography();
+    this.template();
+    this.miscellaneous();
   }
 
   template() {
