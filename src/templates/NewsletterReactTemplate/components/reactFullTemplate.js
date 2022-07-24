@@ -1,5 +1,5 @@
-import head from './head';
-import getBody from './body';
+import head from '../head';
+import getBody from '../body';
 
 function reactFullTemplate(parsedContent) {
   return `

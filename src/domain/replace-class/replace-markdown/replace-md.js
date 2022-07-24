@@ -56,8 +56,9 @@ class replaceMarkdownDebug {
       // with string.replace - when you forget to return something it's hard to catch
       this.content = this.content.replace(singleElement.constant, _replacer);
     }
+
     return '';
   }
 }
 
-export { replaceMarkdown, replaceMarkdownDebug };
+export { replaceMarkdownDebug };

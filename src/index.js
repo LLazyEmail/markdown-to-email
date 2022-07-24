@@ -1,7 +1,6 @@
 import { isFolderExists } from './domain/write';
 
-import { generateReactFullTemplate } from './domain/email-prototypes/react/full-template';
-
+import { generateReactFullTemplate } from './templates/NewsletterReactTemplate';
 import { generateFullTemplateHackernoon } from './templates/HackernoonTemplate';
 //-------------------
 // @TODO add path package, in order to make it work PERFECTLY
