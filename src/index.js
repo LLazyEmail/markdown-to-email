@@ -8,7 +8,7 @@ const FULL_SOURCE = 'source/source.md';
 
 isFolderExists('./generated');
 isFolderExists('./tests/_generated');
-// TODO Parse is always undefined fix it
+
 console.log('Mode', process.env.PARSE);
 
 // TODO if I comment any of those cases - i wouldnt get any warning or something in our command line.

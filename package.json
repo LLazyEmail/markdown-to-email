@@ -4,9 +4,9 @@
   "description": "Translate 'Markdown' Syntax into HTML For Email Newsletters",
   "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=production rollup -c",
+    "build": "cross-env NODE_ENV=production rollup -c",
     "parse": "npm run build && cross-env PARSE=full node ./dist/bundle",
-    "dev": "rollup -c -w",
+    "dev": "cross-env PARSE=full rollup -c -w",
     "parseNoAdv": "npm run build && cross-env PARSE=noAdv node ./dist/bundle",
     "parse:full": "npm run build && cross-env PARSE=full node ./dist/bundle",
     "parseReact": "npm run build && cross-env PARSE=reactContentOnly node ./dist/bundle",
