@@ -80,11 +80,11 @@ const del = objectBuilder(REGEXP_DEL, _del, false);
 
 const image = objectBuilder(REGEXP_IMAGE, _image, imageLiteral);
 
-const previewText = objectBuilder(
-  REGEXP_PREVIEW_TEXT,
-  _previewText,
-  previewTextLiteral,
-);
+// const previewText = objectBuilder(
+//   REGEXP_PREVIEW_TEXT,
+//   _previewText,
+//   previewTextLiteral,
+// );
 
 // // // empty as emptyLiteral,
 
@@ -162,7 +162,7 @@ export default {
   link,
   del,
   image,
-  previewText,
+  // previewText,
   // italic,
   header,
   // q,

@@ -4,8 +4,9 @@
   "description": "Translate 'Markdown' Syntax into HTML For Email Newsletters",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c",
+    "build": "NODE_ENV=production rollup -c",
     "parse": "npm run build && cross-env PARSE=full node ./dist/bundle",
+    "dev": "rollup -c -w",
     "parseNoAdv": "npm run build && cross-env PARSE=noAdv node ./dist/bundle",
     "parse:full": "npm run build && cross-env PARSE=full node ./dist/bundle",
     "parseReact": "npm run build && cross-env PARSE=reactContentOnly node ./dist/bundle",
@@ -34,8 +35,9 @@
     "@babel/eslint-parser": "7.18.9",
     "@babel/preset-env": "7.18.9",
     "@rollup/plugin-babel": "5.3.1",
-    "@rollup/plugin-commonjs": "22.0.0",
+    "@rollup/plugin-commonjs": "22.0.1",
     "@rollup/plugin-node-resolve": "13.3.0",
+    "@rollup/plugin-run": "2.1.0",
     "babel-preset-react-app": "^10.0.1",
     "eslint": "8.20.0",
     "eslint-config-airbnb-base": "15.0.0",
@@ -50,6 +52,7 @@
     "prettier": "2.7.0",
     "rollup": "2.75.6",
     "rollup-plugin-node-polyfills": "0.2.1",
+    "source-map-support": "0.5.21",
     "winston": "^3.8.0"
   },
   "dependencies": {
