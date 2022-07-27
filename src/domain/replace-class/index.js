@@ -3,10 +3,15 @@ import configureReplacer from './configuration';
 
 import {
   replaceMarkdown,
-  replaceMarkdownDebug,
+  // replaceMarkdownDebug,
 } from './replace-markdown/replace-md';
 
-export { mainObject, configureReplacer, replaceMarkdown, replaceMarkdownDebug };
+export {
+  mainObject,
+  configureReplacer,
+  replaceMarkdown,
+  // replaceMarkdownDebug
+};
 
 // replaceWrapper
 // function replaceContent() {}

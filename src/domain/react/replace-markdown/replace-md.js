@@ -1,7 +1,10 @@
-import { mainObject, prepOurCallback } from '../index';
+import {
+  // mainObject,
+  prepOurCallback,
+} from '../index';
 import debuggingReplacer from './debugging';
 
-import { replaceMarkdown } from '../../replace-class';
+// import { replaceMarkdown } from '../../replace-class';
 
 // TODO we finally can replaceMarkdown()*** for this one.
 

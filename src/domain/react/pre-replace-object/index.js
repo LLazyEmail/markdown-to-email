@@ -6,17 +6,17 @@ import {
   REGEXP_LINK,
   REGEXP_STRONG,
   REGEXP_DEL,
-  REGEXP_Q,
-  REGEXP_CODE,
-  REGEXP_UL_LIST,
-  REGEXP_OL_LIST,
+  // REGEXP_Q,
+  // REGEXP_CODE,
+  // REGEXP_UL_LIST,
+  // REGEXP_OL_LIST,
   REGEXP_BLOCKQUOTE,
   REGEXP_HR,
   REGEXP_BR,
   // // REGEXP_EM,
-  REGEXP_SPONSORSHIP,
+  // REGEXP_SPONSORSHIP,
   // REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT,
+  // REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
   // REGEXP_SEPARATOR,
 } from '../../../constants/index';
@@ -26,8 +26,8 @@ import {
   imageLiteral,
   // italicLiteral,
   linkLiteral,
-  listLiteral,
-  listItemLiteral,
+  // listLiteral,
+  // listItemLiteral,
   // titleLiteral,
   paragraphLiteral,
   // qLiteral,
@@ -37,8 +37,8 @@ import {
   //----------
   // blockquoteLiteral,
   // codeLiteral,
-  delLiteral,
-  previewTextLiteral,
+  // delLiteral,
+  // previewTextLiteral,
 } from '../../email-prototypes/react/typography';
 
 import objectBuilder from '../../md/object-builder';
@@ -51,22 +51,22 @@ const {
   _header,
   // _italic,
   _del,
-  _q,
-  _code,
+  // _q,
+  // _code,
   _hr,
   //   _empty,
   //------------
-  _ulList,
-  _olList,
+  // _ulList,
+  // _olList,
   //------------
   _image,
   _paragraph,
-  _sponsorship,
+  // _sponsorship,
   _br,
   //------------
-  _separator,
+  // _separator,
 
-  _previewText,
+  // _previewText,
 } = Callbacks;
 
 // import _header from '.'

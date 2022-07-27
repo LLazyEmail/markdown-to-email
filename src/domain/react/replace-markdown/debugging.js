@@ -13,7 +13,7 @@ function debuggingReplacer(name) {
     // 'italic',
     // 'olList'
     // 'ulList'
-    'image'
+    'image',
   ];
   return namesArr.includes(name);
 }

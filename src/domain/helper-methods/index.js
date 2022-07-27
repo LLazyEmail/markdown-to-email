@@ -14,7 +14,7 @@ const platform = os.platform();
 // TODO make is as fat arrow function
 const newLine = platform === 'win32' ? '\r\n' : '\n';
 
-function checkWarnings(warnings) {
+function checkWarnings() {
   forEach({ a: 1, b: 2 }, function (value, index) {
     if (index) {
       const message = `WARNING source.md has ${index} ${value}. Replace it with memes`;
