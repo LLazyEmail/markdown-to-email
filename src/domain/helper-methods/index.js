@@ -19,7 +19,7 @@ function checkWarnings() {
     if (index) {
       const message = `WARNING source.md has ${index} ${value}. Replace it with memes`;
 
-      printMessage(message, 'yellow');
+      printMessage({ message, type: 'yellow' });
     }
   });
 }
