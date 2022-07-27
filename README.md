@@ -8,9 +8,26 @@ Maintainer notes:
 - **Replacer for React DOM right now is broken. I'm moving it out into https://github.com/LLazyEmail/react-plain-template-example**
 - **React version isn't working now. Probably we'll skip few releases and make it work as it should be.**
 
+# How to run this module
+
+There are two modes development and production. 
+In development mode all changes that was made automatically rebuilds and creates a file html or js.  Development mode has two variants: 
+
+`npm run dev:parseFull` - runs parsing from Markdown to html.
+
+`npm run dev:parseReactFull` - runs parsing from Markdown to React DOM tree.
+
+In production mode builds an optimized module. Production mode has two options:
+
+`npm run prod:parseFull` and `prod:parseReactFull`.
+
+# Debugging the module
+
+In VS Code needs to open a tab "Run and Debug", then in select input choose `Launch via NPM`, the process will start automatically (builds and create a file). Put a breakpoint in line you need then save a file.
+
 # Markdown to email template generator
 
-This simple and light tool generates email template from markdown. The command is `npm run parse`. 
+This simple and light tool generates email template from markdown. The command is `npm run dev:parseFull`. 
 The path to markdown file must be `./source/source.md`, and output directory is `generated/newEmail.html`.
 
 We tried to create our own wheel, then we failed. Arthur get bored trying to fix it and make it work properly.
