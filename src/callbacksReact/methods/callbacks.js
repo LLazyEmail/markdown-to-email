@@ -2,7 +2,7 @@
 /* eslint-disable */
 import { newLine } from '../../domain/helper-methods';
 
-import { commonReplace } from '../../domain/replace-wrapper3.0'
+import { commonReplaceReact } from '../../domain/replace-wrapper3.0'
 
 /// function is not working as planned
 
@@ -25,7 +25,7 @@ function _paragraph(text, line) {
   };
 
   // console.log(config);
-  const replaced = commonReplace(config);
+  const replaced = commonReplaceReact(config);
   const result = newLine + replaced + newLine;
 
   return result;
@@ -51,7 +51,7 @@ function _image(text, alt, srcWithTooltip) {
 
   this.warnings.images++;
 
-  const replaced = commonReplace(config);
+  const replaced = commonReplaceReact(config);
 
   return replaced;
 }
@@ -92,7 +92,7 @@ function _sponsorship(text) {
     name: 'sponsor',
     debug: true,
   };
-  const replaced = commonReplace(config);
+  const replaced = commonReplaceReact(config);
   return replaced;
 
   // TODO upgrade a way to handle errors in state object

@@ -5,7 +5,7 @@ const _hr = () => `${newLine}<hr />`;
 const _empty = () => '';
 
 
-import {commonReplace} from '../../domain/replace-wrapper3.0'
+import {commonReplaceReact} from '../../domain/replace-wrapper3.0'
 
 
 function getParsedSubList(subList) {
@@ -22,7 +22,7 @@ function getParsedSubList(subList) {
         debug: true,
       };
 
-      const replaced = commonReplace(config);
+      const replaced = commonReplaceReact(config);
 
       return newLine + replaced;
 
@@ -51,7 +51,7 @@ function _ulList(text, list) {
       //   debug: true,
       // };
 
-      const replaced = commonReplace(config);
+      const replaced = commonReplaceReact(config);
 
       return newLine + replaced;
     
@@ -71,7 +71,7 @@ function _ulList(text, list) {
       //   debug: true,
       // };
 
-        const replaced = commonReplace(config);
+        const replaced = commonReplaceReact(config);
 
         return newLine + replaced;
 

@@ -13,10 +13,10 @@ import {
   REGEXP_BLOCKQUOTE,
   REGEXP_HR,
   REGEXP_BR,
-  // // REGEXP_EM,
+  REGEXP_EM,
   // REGEXP_SPONSORSHIP,
   // REGEXP_MEM,
-  // REGEXP_PREVIEW_TEXT,
+  REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
   // REGEXP_SEPARATOR,
 } from '../../../constants/index';
@@ -24,21 +24,21 @@ import {
 import {
   headingLiteral,
   imageLiteral,
-  // italicLiteral,
+  italicLiteral,
   linkLiteral,
   // listLiteral,
   // listItemLiteral,
-  // titleLiteral,
+  titleLiteral,
   paragraphLiteral,
   // qLiteral,
   strongLiteral,
-  // subtitleLiteral,
+  subtitleLiteral,
   // separatorLiteral,
   //----------
   // blockquoteLiteral,
   // codeLiteral,
   // delLiteral,
-  // previewTextLiteral,
+  previewTextLiteral,
 } from '../../email-prototypes/react/typography';
 
 import objectBuilder from '../../md/object-builder';
@@ -49,7 +49,7 @@ const {
   _blockquote,
   //   _mem,
   _header,
-  // _italic,
+  _italic,
   _del,
   // _q,
   // _code,
@@ -66,7 +66,7 @@ const {
   //------------
   // _separator,
 
-  // _previewText,
+  _previewText,
 } = Callbacks;
 
 const map = {
@@ -74,16 +74,16 @@ const map = {
   link: objectBuilder(REGEXP_LINK, _link, linkLiteral),
   del: objectBuilder(REGEXP_DEL, _del, false),
   image: objectBuilder(REGEXP_IMAGE, _image, imageLiteral),
-  // previewText:objectBuilder(
-  //   REGEXP_PREVIEW_TEXT,
-  //   _previewText,
-  //   previewTextLiteral,
-  // ),
-  // italic:objectBuilder(REGEXP_EM, _italic, italicLiteral),
+  previewText: objectBuilder(
+    REGEXP_PREVIEW_TEXT,
+    _previewText,
+    previewTextLiteral,
+  ),
+  italic: objectBuilder(REGEXP_EM, _italic, italicLiteral),
   header: objectBuilder(REGEXP_HEADER, _header, headingLiteral),
-  // // // TODO header arent working as suppose too
-  // subtitle:objectBuilder(REGEXP_HEADER, _header, subtitleLiteral),
-  // title:objectBuilder(REGEXP_HEADER, _header, titleLiteral),
+  // TODO header arent working as suppose too
+  subtitle: objectBuilder(REGEXP_HEADER, _header, subtitleLiteral),
+  title: objectBuilder(REGEXP_HEADER, _header, titleLiteral),
   // q:objectBuilder(REGEXP_Q, _q, false),
   // code:objectBuilder(REGEXP_CODE, _code, false),
 

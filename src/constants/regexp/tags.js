@@ -50,7 +50,7 @@ const REGEXP_BR = new RegExp(`((${newLine}){2,})`, 'g');
 const REGEXP_EMPTY_BLOCKQUOTE = /<\/blockquote><blockquote>/g;
 
 // old
-// const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
+const REGEXP_EM = /(\s|>)(\*|_)(.*?)\2(\s|<)/g;
 
 // italic for asterics  \*(?![*\s])(?:[^*]*[^*\s])?\*
 // italic for underscore /(\s|>)(_)(.*?)\2(\s|<)/
@@ -70,5 +70,5 @@ export {
   // -----------
   REGEXP_BR,
   REGEXP_EMPTY_BLOCKQUOTE,
-  // REGEXP_EM,
+  REGEXP_EM,
 };

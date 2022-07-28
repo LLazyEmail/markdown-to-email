@@ -2,16 +2,15 @@ import {
   _strong,
   _link,
   _blockquote,
-  // _meme,
+  _meme,
   // _header,
-
-  // _italic,
+  _italic,
   _del,
   _q,
   _code,
   _hr,
   _empty,
-  // _previewText,
+  _previewText,
   _separator,
 } from './simple';
 
@@ -22,13 +21,13 @@ import { _ulList, _olList } from './lists';
 import _header from './header';
 
 export default {
+  _previewText,
   _strong,
   _link,
   _blockquote,
-  // _mem,
+  _meme,
   _header,
-  // _italic,
-
+  _italic,
   _del,
   _q,
   _code,

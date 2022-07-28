@@ -1,8 +1,7 @@
 /* eslint-disable */
 import { newLine } from '../../domain/helper-methods';
 
-import { commonReplace } from '../../domain/replace-wrapper3.0'
-
+import { commonReplaceReact } from '../../domain/replace-wrapper3.0';
 
 const _hr = () => `${newLine}<hr />`;
 const _empty = () => '';
@@ -18,10 +17,9 @@ function _code(text, content) {
     debug: true,
   };
 
-    const replaced = commonReplace(config);
+  const replaced = commonReplaceReact(config);
 
-    return replaced;
-
+  return replaced;
 }
 
 function _del(text, content) {
@@ -34,10 +32,9 @@ function _del(text, content) {
     name: 'del',
     debug: true,
   };
-  const replaced = commonReplace(config);
+  const replaced = commonReplaceReact(config);
 
-    return replaced;
-
+  return replaced;
 }
 
 function _q(text, content) {
@@ -50,27 +47,21 @@ function _q(text, content) {
     name: 'q',
     debug: true,
   };
-  const replaced = commonReplace(config);
+  const replaced = commonReplaceReact(config);
 
-    return replaced;
-
+  return replaced;
 }
 
 function _italic(text, left, _, content, right) {
-  const params = {
-    content: content,
-  };
-
   const config = {
-    params,
+    params: {
+      content: content,
+    },
     name: 'italic',
     debug: true,
   };
 
-  const replaced = commonReplace(config);
-
-    return replaced;
-
+  return commonReplaceReact(config);
 }
 
 function _strong(text, doubleAsterix, content, asterix) {
@@ -83,7 +74,7 @@ function _strong(text, doubleAsterix, content, asterix) {
     name: 'strong',
     debug: true,
   };
-  const replaced = commonReplace(config);
+  const replaced = commonReplaceReact(config);
 
   return replaced;
 }
@@ -100,11 +91,9 @@ function _link(text, title, href) {
     // debug: true,
   };
 
-
-  const replaced = commonReplace(config);
+  const replaced = commonReplaceReact(config);
 
   return replaced;
-
 }
 
 function _blockquote(text, tmp, item) {
@@ -117,8 +106,6 @@ function _blockquote(text, tmp, item) {
     name: 'blockquote',
     debug: true,
   };
-
-
 }
 
 function _meme(text, src, href, altText) {
@@ -134,9 +121,8 @@ function _meme(text, src, href, altText) {
     debug: true,
   };
 
-  const replaced = commonReplace(config);
+  const replaced = commonReplaceReact(config);
   return replaced;
-
 }
 
 // function _header(text, chars, content) {
@@ -154,7 +140,7 @@ function _meme(text, src, href, altText) {
 //     // debug: true,
 //   };
 
-//   const replaced = commonReplace(config);
+//   const replaced = commonReplaceReact(config);
 //   return newLine + replaced;
 
 // }
@@ -171,9 +157,8 @@ function _separator() {
     debug: true,
   };
 
-  const replaced = commonReplace(config);
+  const replaced = commonReplaceReact(config);
   return newLine + replaced + newLine;
-
 }
 
 function _previewText(text, content) {
@@ -183,15 +168,14 @@ function _previewText(text, content) {
 
   const config = {
     params,
-    name: 'preview',
+    name: 'previewText',
     debug: true,
   };
 
   // this.previewText = true;
 
-  const replaced = commonReplace(config);
+  const replaced = commonReplaceReact(config);
   return replaced;
-
 }
 
 export {
@@ -200,7 +184,7 @@ export {
   _blockquote,
   _meme,
   // _header,
-  // _italic,
+  _italic,
   _del,
   _q,
   _code,

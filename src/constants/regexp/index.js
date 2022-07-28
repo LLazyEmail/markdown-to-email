@@ -13,7 +13,7 @@ import {
   // -----------
   REGEXP_BR,
   REGEXP_EMPTY_BLOCKQUOTE,
-  // REGEXP_EM,
+  REGEXP_EM,
 } from './tags';
 import {
   REGEXP_UL_LIST,
@@ -40,5 +40,5 @@ export {
   REGEXP_BR,
   REGEXP_EMPTY_BLOCKQUOTE,
   //-----------
-  // REGEXP_EM,
+  REGEXP_EM,
 };
