@@ -37,8 +37,6 @@ class Replacer {
   configure(state) {
     this.replaceMDBinded = replaceMarkdownReact.bind(state);
 
-    this.previewText();
-
     this.typography();
   }
 
