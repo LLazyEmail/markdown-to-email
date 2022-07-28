@@ -3,7 +3,7 @@ import configureReplacer from './configuration';
 
 import { replaceMarkdownReact } from './replace-markdown/replace-md';
 
-import Replacer from './replace-class/replace';
+import Replacer from './Replacer.class';
 
 // TODO move to domain/helper-methods
 function prepOurCallback(callbackName, debug = false) {

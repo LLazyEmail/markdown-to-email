@@ -8,7 +8,7 @@ import debuggingReplacer from './debugging';
 
 // TODO we finally can replaceMarkdown()*** for this one.
 
-function replaceMarkdownReact(callback_name) {
+export function replaceMarkdownReact(callback_name) {
   // it must work....
   // replaceMarkdown(callback_name);
 
@@ -78,5 +78,3 @@ function replaceMarkdownReact(callback_name) {
 //     //   //-----------------------
 //   }
 // }
-
-export { replaceMarkdownReact };
