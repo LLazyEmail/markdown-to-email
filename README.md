@@ -23,7 +23,7 @@ In production mode builds an optimized module. Production mode has two options:
 
 # Debugging the module
 
-In VS Code needs to open a tab "Run and Debug", then in select input choose `Launch via NPM`, the process will start automatically (builds and create a file). Put a breakpoint in line you need then save a file.
+In VS Code needs to open a tab "Run and Debug", then in select input choose `Launch via NPM parseFull` - for html and `Launch via NPM parseReactFull`, the process will start automatically (builds and create a file). Put a breakpoint in line you need then save a file.
 
 # Markdown to email template generator
 
