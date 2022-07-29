@@ -1,24 +1,22 @@
 import { isFolderExists } from './domain/write';
 
-// import {
-//   generateReactContent,
-//   generateReactFullTemplate,
-// } from './parserMDReact';
-
+import { generateReactFullTemplate } from './templates/NewsletterReactTemplate';
 import { generateFullTemplateHackernoon } from './templates/HackernoonTemplate';
 //-------------------
-// @TODO add path, in order to make it work PERFECTLY
+// @TODO add path package, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
 
 isFolderExists('./generated');
 isFolderExists('./tests/_generated');
 
-console.info('MODE: ', process.env.PARSE, '');
+console.log('Mode', process.env.PARSE);
+
+// TODO if I comment any of those cases - i wouldnt get any warning or something in our command line.
 
 const modeMap = {
   full: () => generateFullTemplateHackernoon(FULL_SOURCE),
   // reactContentOnly: () => generateReactContent(CONTENT_SOURCE),
-  // reactFull: () => generateReactFullTemplate(FULL_SOURCE),
+  reactFull: () => generateReactFullTemplate(FULL_SOURCE),
 };
 
 modeMap[process.env.PARSE ?? 'full']();

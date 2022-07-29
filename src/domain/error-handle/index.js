@@ -28,7 +28,7 @@ const catchErrorTraceOutput = (error) => {
   // we need to test how it actually work
   const callerLine = error.stack.split('\n')[4];
   const index = callerLine.indexOf('at ');
-  
+
   // TODO debug clean variable, maybe we should return it???
   // eslint-disable-next-line no-unused-vars
   const clean = callerLine.slice(index + 2, callerLine.length);

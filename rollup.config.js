@@ -3,12 +3,16 @@ import resolve from '@rollup/plugin-node-resolve';
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import nodePolyfills from 'rollup-plugin-node-polyfills';
+import run from '@rollup/plugin-run';
+
+const dev = process.env.NODE_ENV !== 'production';
 
 export default {
   input: 'src/index.js',
   output: {
     file: 'dist/bundle.js',
     format: 'cjs',
+    sourcemap: true,
   },
   plugins: [
     resolve({
@@ -25,5 +29,9 @@ export default {
       babelHelpers: 'bundled',
     }),
     nodePolyfills(),
+    dev &&
+      run({
+        execArgv: ['-r', 'source-map-support/register'],
+      }),
   ],
 };

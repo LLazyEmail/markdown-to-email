@@ -1,13 +1,7 @@
-import body from './body/';
-import misc from './misc';
-import typography from './typography';
-import { reactFullTemplate } from './reactFullTemplate';
+// import body from './body/';
+// import misc from './misc';
+// import typography from './typography';
+// import { reactFullTemplate } from './reactFullTemplate';
+import { generateReactFullTemplate } from './generateReactFullTemplate';
 
-const layout = {
-  body,
-  misc,
-  typography,
-  reactFullTemplate,
-};
-
-export default layout;
+export { generateReactFullTemplate };

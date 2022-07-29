@@ -12,7 +12,9 @@ import {
 
 import { inspector, catchErrorTraceOutput } from '../error-handle';
 
-import { mainObject } from '../replace-class';
+import { mainObject as mainObjectHtml } from '../replace-class';
+import { mainObject as mainObjectReact } from '../react';
+
 // import replace from '../replace-class/index';
 // console.log(replace.mainObject);
 
@@ -54,22 +56,12 @@ function WR3_generateNewString(config) {
   return updatedString;
 }
 
-const WR3_getWrapper = (name, debug = false) => {
-  if (debug) {
-    console.log(name);
-  }
-
-  if (debug) {
-    console.log(mainObject[name]);
-
-    console.log(mainObject[name].literal);
-  }
-
-  inspectorCheck(mainObject[name]);
+const WR3_getWrapper = (name, mainObjectCCL) => {
+  inspectorCheck(mainObjectCCL[name]);
 
   try {
-    if (mainObject[name].literal) {
-      return { literal: mainObject[name].literal };
+    if (mainObjectCCL[name].literal) {
+      return { literal: mainObjectCCL[name].literal };
     }
   } catch (error) {
     catchErrorTraceOutput(error);
@@ -78,8 +70,7 @@ const WR3_getWrapper = (name, debug = false) => {
   return false;
 };
 
-//--------------------------
-//--------------------------
+// TODO needs to fix
 const replaceLink = (config) => {
   // const { debug } = config || false;
 
@@ -107,14 +98,18 @@ const replaceLink = (config) => {
 //   // return newString;
 // };
 
-//--------------------------
-//--------------------------
-const commonReplace = (config) => {
-  // const { debug } = config || false;
-
+const commonReplaceCommon = (config, mode) => {
   inspector2(config.params);
 
-  const configCopy = Object.assign(config, WR3_getWrapper(config.name));
+  const mainObjectCCL = {
+    html: mainObjectHtml,
+    react: mainObjectReact,
+  };
+
+  const configCopy = Object.assign(
+    config,
+    WR3_getWrapper(config.name, mainObjectCCL[mode]),
+  );
 
   try {
     const newString = WR3_generateNewString(configCopy);
@@ -125,10 +120,14 @@ const commonReplace = (config) => {
   return false;
 };
 
+const commonReplaceReact = (config) => {
+  return commonReplaceCommon(config, 'react');
+};
+const commonReplace = (config) => commonReplaceCommon(config, 'html');
+
 export {
   replaceLink,
   commonReplace,
+  commonReplaceReact,
   // replaceUl,
-  WR3_generateNewString,
-  WR3_getWrapper,
 };

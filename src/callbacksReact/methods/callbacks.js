@@ -1,13 +1,10 @@
-// HELPER FROM MAIN CALLBACKS
-// TODO undisable because there is a lot of errors
-/* eslint-disable */
-import { 
-  // replaceReactWrapper, 
-  newLine } from '../helpers';
+import { newLine } from '../../domain/helper-methods';
+
+import { commonReplaceReact } from '../../domain/replace-wrapper3.0';
 
 /// function is not working as planned
 
-export function _paragraph(text, line) {
+function _paragraph(text, line) {
   const trimmed = line.trim();
 
   if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
@@ -22,57 +19,43 @@ export function _paragraph(text, line) {
   const config = {
     params,
     name: 'paragraph',
-    debug: true,
+    // debug: true,
   };
 
-  // try {
-  //   const replaced = commonReplace(config);
-
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
-
-  // const result = newLine + replaceReactWrapper('paragraph', config) + newLine;
   // console.log(config);
+  const replaced = commonReplaceReact(config);
+  const result = newLine + replaced + newLine;
 
   return result;
 }
 /// !end function is not working as planned
 
-export function _image(text, alt, srcWithTooltip) {
-  // const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
+function _image(text, alt, srcWithTooltip) {
+  const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
 
-  // const params = {
-  //   src: src.trim(),
-  //   altText: alt,
-  // };
+  const params = {
+    src: src.trim(),
+    altText: alt,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'image',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'image',
+    debug: true,
+  };
 
-  this.warnings.images++;
+  this.warnings.images += 1;
 
-  // try {
-  //   const replaced = commonReplace(config);
+  const replaced = commonReplaceReact(config);
 
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
-
-  // const result = replaceReactWrapper('image', config);
-  return result;
+  return replaced;
 }
 
-export function _br(text, newLines) {
+function _br(text, newLines) {
   const arrNewLines = newLines.match(new RegExp(newLine, 'g'));
 
-  // @TODO well, it's not good. can be improved with lodash
-  // @TODO I REALLY HATE THIS LINE
+  // TODO well, it's not good. can be improved with lodash
+  // I REALLY HATE THIS LINE
   const result = arrNewLines.reduce(
     (acc, current, index) => (index > 0 ? `${acc}<br/>${current}` : current),
     '',
@@ -81,38 +64,35 @@ export function _br(text, newLines) {
   return result;
 }
 
-export function _sponsorship(text) {
+function _sponsorship(text) {
+  // TODO move out this regex into constants file.
   const regex = /\[(.*?)\]/g;
+
+  const regex2 = /[\[\]]/g;
+
   const [content, href, src] = text
     .match(regex)
-    .map((match) => match.replace(/[\[\]]/g, ''));
+    .map((match) => match.replace(regex2, ''));
 
-  // const params = {
-  //   src: src.trim(),
-  //   href: href.trim(),
-  //   content: content.trim(),
-  // };
+  const params = {
+    src: src.trim(),
+    href: href.trim(),
+    content: content.trim(),
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'sponsor',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'sponsor',
+    debug: true,
+  };
+  const replaced = commonReplaceReact(config);
+  return replaced;
 
-  // try {
-  //   const replaced = commonReplace(config);
-
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
-
-  // @TODO nope, not good
-  this.errors.sponsorshipTop
-    ? (this.errors.sponsorshipBottom = true)
-    : (this.errors.sponsorshipTop = true);
-
-  // return replaceReactWrapper('sponsor', config, 'body');
+  // TODO upgrade a way to handle errors in state object
+  // eslint-disable-next-line no-unused-expressions
+  // this.errors.sponsorshipTop
+  //   ? (this.errors.sponsorshipBottom = true)
+  //   : (this.errors.sponsorshipTop = true);
 }
 
-// export { _paragraph, _image, _sponsorship, _br, newLine };
+export { _paragraph, _image, _sponsorship, _br };

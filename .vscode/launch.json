@@ -5,6 +5,32 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch via NPM parseFull",
+            "request": "launch",
+            "runtimeArgs": [
+                "run-script",
+                "dev:parseFull"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Launch via NPM parseReactFull",
+            "request": "launch",
+            "runtimeArgs": [
+                "run-script",
+                "dev:parseReactFull"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",

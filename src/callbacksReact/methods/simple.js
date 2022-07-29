@@ -1,213 +1,188 @@
-/* eslint-disable */
-import { replaceWrapper, newLine } from '../helpers';
+import { newLine } from '../../domain/helper-methods';
 
-//----------------------
+import { commonReplaceReact } from '../../domain/replace-wrapper3.0';
 
 const _hr = () => `${newLine}<hr />`;
 const _empty = () => '';
 
 function _code(text, content) {
-  // const params = {
-  //   content: content,
-  // };
+  const params = {
+    content,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'code',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'code',
+    debug: true,
+  };
 
-  // try {
-  //   const replaced = commonReplace(config);
+  const replaced = commonReplaceReact(config);
 
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
-  // const result = replaceWrapper('code', config);
-  return result;
+  return replaced;
 }
 
 function _del(text, content) {
-  // const params = {
-  //   content: content,
-  // };
+  const params = {
+    content,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'del',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'del',
+    debug: true,
+  };
+  const replaced = commonReplaceReact(config);
 
-  // try {
-  //   const replaced = commonReplace(config);
-
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
-
-  // const result = replaceWrapper('del', config);
-  return result;
+  return replaced;
 }
 
 function _q(text, content) {
-  // const params = {
-  //   content: content,
-  // };
+  const params = {
+    content,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'q',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'q',
+    debug: true,
+  };
+  const replaced = commonReplaceReact(config);
 
-  // try {
-  //   const replaced = commonReplace(config);
-
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
-
-  // const result = replaceWrapper('q', config);
-  return result;
+  return replaced;
 }
 
-function _italic(text, left, _, content, right) {
-  // const params = {
-  //   content: content,
-  // };
+function _italic(
+  text,
+  left,
+  _,
+  content,
+  // right
+) {
+  const config = {
+    params: {
+      content,
+    },
+    name: 'italic',
+    debug: true,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'italic',
-  //   debug: true,
-  // };
-
-  // try {
-  //   const replaced = commonReplace(config);
-
-  //   return replaced;
-  // } catch (error) {
-  //   catchErrorTraceOutput(error);
-  // }
-
-  // const result = replaceWrapper('italic', config);
-  return result;
+  return commonReplaceReact(config);
 }
 
 function _strong(text, doubleAsterix, content, asterix) {
-  // const params = {
-  //   content: `${content + asterix}`,
-  // };
+  const params = {
+    content: `${content + asterix}`,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'strong',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'strong',
+    debug: true,
+  };
+  const replaced = commonReplaceReact(config);
 
-  // try {
-  //   const replaced = commonReplace(config);
-
-  //   return replaced;
-  // } catch (error) {
-  //   catch_error_trace_output(error);
-  // }
-
-  // const result = replaceWrapper('strong', config);
-  return result;
+  return replaced;
 }
 
 function _link(text, title, href) {
-  // const params = {
-  //   content: title.trim(),
-  //   href: href.trim(),
-  // };
+  const params = {
+    content: title.trim(),
+    href: href.trim(),
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'link',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'link',
+    // debug: true,
+  };
 
-  const result = replaceWrapper('link', config);
-  return result;
+  const replaced = commonReplaceReact(config);
+
+  return replaced;
 }
 
-function _blockquote(text, tmp, item) {
+function _blockquote() {
+  // text,
+  // tmp,
+  // item
   // const params = {
   //   content: `${newLine}${item.trim()}`,
   // };
-
   // const config = {
   //   params,
   //   name: 'blockquote',
   //   debug: true,
   // };
-
-  // const result = replaceWrapper('blockquote', config);
-  return result;
 }
 
 function _meme(text, src, href, altText) {
-  // const params = {
-  //   src: src.trim(),
-  //   altText: altText.trim(),
-  //   href: href.trim(),
-  // };
+  const params = {
+    src: src.trim(),
+    altText: altText.trim(),
+    href: href.trim(),
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'meme',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'meme',
+    debug: true,
+  };
 
-  // const result = replaceWrapper('image', config);
-  return result;
+  const replaced = commonReplaceReact(config);
+  return replaced;
 }
 
-function _header(text, chars, content) {
-  // const params = {
-  //   content: content.trim(),
-  // };
+// function _header(text, chars, content) {
+//   const params = {
+//     content: content.trim(),
+//   };
 
-  // const config = {
-  //   params,
-  //   name: 'header',
-  //   debug: true,
-  // };
+//   const titleType = ['mainTitle', 'subtitle', 'heading'];
+//   const name = titleTypes[chars.length - 1];
 
-  const titleType = ['mainTitle', 'subtitle', 'heading'];
+//    const config = {
+//     params,
+//     name,
 
-  // const result = newLine + replaceWrapper(titleType[chars.length - 1], config);
+//     // debug: true,
+//   };
 
-  return result;
-}
+//   const replaced = commonReplaceReact(config);
+//   return newLine + replaced;
 
-function _separator() {
-  const config = {};
+// }
 
-  // const result = `${newLine}${replaceWrapper('separator', config)}${newLine}`;
+function _separator(text) {
+  const params = {
+    content: text.trim(), // we have an issue, when we passing empty params
+  };
 
-  return result;
+  const config = {
+    params,
+
+    name: 'separator',
+    debug: true,
+  };
+
+  const replaced = commonReplaceReact(config);
+  return newLine + replaced + newLine;
 }
 
 function _previewText(text, content) {
-  // const params = {
-  //   content: content,
-  // };
+  const params = {
+    content,
+  };
 
-  // const config = {
-  //   params,
-  //   name: 'preview',
-  //   debug: true,
-  // };
+  const config = {
+    params,
+    name: 'previewText',
+    debug: true,
+  };
 
-  this.previewText = true;
+  // this.previewText = true;
 
-  // return replaceWrapper('previewText', config, 'body');
+  const replaced = commonReplaceReact(config);
+  return replaced;
 }
 
 export {
@@ -215,7 +190,7 @@ export {
   _link,
   _blockquote,
   _meme,
-  _header,
+  // _header,
   _italic,
   _del,
   _q,

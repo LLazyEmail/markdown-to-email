@@ -41,21 +41,24 @@ export function replaceMarkdown(callbackName) {
   // TODO let's handle a case, when this.content.replace( regex, undefined)
 }
 
-// function replaceMarkdownDebug(callback_name) {
-//   // -------------- Uncomment for debugging reasons
-//   if (debuggingReplacer(callback_name)) {
+// class replaceMarkdownDebug {
+//   constructor(callback_name) {
+//     const singleElement = prepOurCallback(callback_name, false);
 
-//     console.log(callback_name);
+//     if (debuggingReplacer(callback_name)) {
+//       console.log(callback_name);
 
-//     const _replacer = singleElement.replacer.bind(this);
+//       const _replacer = singleElement.replacer.bind(this);
 
-//     console.log(replacedString);
+//       console.log(replacedString);
 
-//     // TODO another case why i dont like this solution
-//     // with string.replace - when you forget to return something it's hard to catch
-//     this.content = this.content.replace(singleElement.constant, _replacer);
+//       // TODO another case why i dont like this solution
+//       // with string.replace - when you forget to return something it's hard to catch
+//       this.content = this.content.replace(singleElement.constant, _replacer);
+//     }
+
+//     return '';
 //   }
-//   return '';
-//   //--------------
-//   //--------------
 // }
+
+// export { replaceMarkdownDebug };

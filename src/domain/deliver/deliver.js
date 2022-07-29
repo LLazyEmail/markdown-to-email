@@ -4,5 +4,5 @@ import { printMessage } from '../../helper';
 export const deliver = (template, name, message) => {
   const fileName = generateTemplateName(name);
   writeHTML(fileName, template);
-  printMessage(message, 'green2');
+  printMessage({ message, type: 'green2' });
 };
