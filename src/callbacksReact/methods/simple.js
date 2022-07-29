@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { newLine } from '../../domain/helper-methods';
 
 import { commonReplaceReact } from '../../domain/replace-wrapper3.0';
@@ -8,7 +7,7 @@ const _empty = () => '';
 
 function _code(text, content) {
   const params = {
-    content: content,
+    content,
   };
 
   const config = {
@@ -24,7 +23,7 @@ function _code(text, content) {
 
 function _del(text, content) {
   const params = {
-    content: content,
+    content,
   };
 
   const config = {
@@ -39,7 +38,7 @@ function _del(text, content) {
 
 function _q(text, content) {
   const params = {
-    content: content,
+    content,
   };
 
   const config = {
@@ -52,10 +51,16 @@ function _q(text, content) {
   return replaced;
 }
 
-function _italic(text, left, _, content, right) {
+function _italic(
+  text,
+  left,
+  _,
+  content,
+  // right
+) {
   const config = {
     params: {
-      content: content,
+      content,
     },
     name: 'italic',
     debug: true,
@@ -96,16 +101,18 @@ function _link(text, title, href) {
   return replaced;
 }
 
-function _blockquote(text, tmp, item) {
-  const params = {
-    content: `${newLine}${item.trim()}`,
-  };
-
-  const config = {
-    params,
-    name: 'blockquote',
-    debug: true,
-  };
+function _blockquote() {
+  // text,
+  // tmp,
+  // item
+  // const params = {
+  //   content: `${newLine}${item.trim()}`,
+  // };
+  // const config = {
+  //   params,
+  //   name: 'blockquote',
+  //   debug: true,
+  // };
 }
 
 function _meme(text, src, href, altText) {
@@ -145,7 +152,7 @@ function _meme(text, src, href, altText) {
 
 // }
 
-function _separator() {
+function _separator(text) {
   const params = {
     content: text.trim(), // we have an issue, when we passing empty params
   };
@@ -163,7 +170,7 @@ function _separator() {
 
 function _previewText(text, content) {
   const params = {
-    content: content,
+    content,
   };
 
   const config = {
