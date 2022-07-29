@@ -21,25 +21,7 @@ import {
   // REGEXP_SEPARATOR,
 } from '../../../constants/index';
 
-import {
-  headingLiteral,
-  imageLiteral,
-  italicLiteral,
-  linkLiteral,
-  // listLiteral,
-  // listItemLiteral,
-  titleLiteral,
-  paragraphLiteral,
-  // qLiteral,
-  strongLiteral,
-  subtitleLiteral,
-  // separatorLiteral,
-  //----------
-  // blockquoteLiteral,
-  // codeLiteral,
-  // delLiteral,
-  previewTextLiteral,
-} from '../../email-prototypes/react/typography';
+import * as typography from '../../../templates/NewsletterReactTemplate/typography';
 
 import objectBuilder from '../../md/object-builder';
 
@@ -68,6 +50,26 @@ const {
 
   _previewText,
 } = Callbacks;
+
+const {
+  headingLiteral,
+  imageLiteral,
+  italicLiteral,
+  linkLiteral,
+  // listLiteral,
+  // listItemLiteral,
+  titleLiteral,
+  paragraphLiteral,
+  // qLiteral,
+  strongLiteral,
+  subtitleLiteral,
+  // separatorLiteral,
+  //----------
+  // blockquoteLiteral,
+  // codeLiteral,
+  // delLiteral,
+  previewTextLiteral,
+} = typography;
 
 const map = {
   strong: objectBuilder(REGEXP_STRONG, _strong, strongLiteral),
