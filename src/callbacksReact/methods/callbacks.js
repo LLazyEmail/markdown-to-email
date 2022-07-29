@@ -1,8 +1,6 @@
-// TODO undisable because there is a lot of errors
-/* eslint-disable */
 import { newLine } from '../../domain/helper-methods';
 
-import { commonReplaceReact } from '../../domain/replace-wrapper3.0'
+import { commonReplaceReact } from '../../domain/replace-wrapper3.0';
 
 /// function is not working as planned
 
@@ -46,10 +44,7 @@ function _image(text, alt, srcWithTooltip) {
     debug: true,
   };
 
-
-  console.log(config);
-
-  this.warnings.images++;
+  this.warnings.images += 1;
 
   const replaced = commonReplaceReact(config);
 
@@ -67,14 +62,12 @@ function _br(text, newLines) {
   );
 
   return result;
-
-
 }
 
 function _sponsorship(text) {
   // TODO move out this regex into constants file.
   const regex = /\[(.*?)\]/g;
-    
+
   const regex2 = /[\[\]]/g;
 
   const [content, href, src] = text
@@ -100,14 +93,6 @@ function _sponsorship(text) {
   // this.errors.sponsorshipTop
   //   ? (this.errors.sponsorshipBottom = true)
   //   : (this.errors.sponsorshipTop = true);
-
-
 }
 
-export { 
-  _paragraph, 
-  _image, 
-  _sponsorship, 
-  _br 
-};
-
+export { _paragraph, _image, _sponsorship, _br };
