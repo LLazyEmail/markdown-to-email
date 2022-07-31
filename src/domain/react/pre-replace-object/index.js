@@ -1,3 +1,4 @@
+import typography from 'atherdon-newsletter-react-layouts-typography';
 import { Callbacks } from '../../../callbacksReact';
 
 import {
@@ -6,8 +7,8 @@ import {
   REGEXP_LINK,
   REGEXP_STRONG,
   REGEXP_DEL,
-  // REGEXP_Q,
-  // REGEXP_CODE,
+  REGEXP_Q,
+  REGEXP_CODE,
   // REGEXP_UL_LIST,
   // REGEXP_OL_LIST,
   REGEXP_BLOCKQUOTE,
@@ -16,12 +17,10 @@ import {
   REGEXP_EM,
   // REGEXP_SPONSORSHIP,
   // REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT,
+  // REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
   // REGEXP_SEPARATOR,
 } from '../../../constants/index';
-
-import * as typography from '../../../templates/NewsletterReactTemplate/typography';
 
 import objectBuilder from '../../md/object-builder';
 
@@ -33,8 +32,8 @@ const {
   _header,
   _italic,
   _del,
-  // _q,
-  // _code,
+  _q,
+  _code,
   _hr,
   //   _empty,
   //------------
@@ -48,46 +47,40 @@ const {
   //------------
   // _separator,
 
-  _previewText,
+  // _previewText,
 } = Callbacks;
 
 const {
-  headingLiteral,
-  imageLiteral,
-  italicLiteral,
-  linkLiteral,
-  // listLiteral,
-  // listItemLiteral,
-  titleLiteral,
-  paragraphLiteral,
-  // qLiteral,
-  strongLiteral,
-  subtitleLiteral,
-  // separatorLiteral,
-  //----------
-  // blockquoteLiteral,
-  // codeLiteral,
-  // delLiteral,
-  previewTextLiteral,
+  headingComponent,
+  imageComponent,
+  italicComponent,
+  linkComponent,
+  mainTitleComponent,
+  paragraphComponent,
+  strongComponent,
+  subtitleComponent,
+  qComponent,
+  codeComponent,
 } = typography;
 
 const map = {
-  strong: objectBuilder(REGEXP_STRONG, _strong, strongLiteral),
-  link: objectBuilder(REGEXP_LINK, _link, linkLiteral),
+  strong: objectBuilder(REGEXP_STRONG, _strong, strongComponent),
+  link: objectBuilder(REGEXP_LINK, _link, linkComponent),
   del: objectBuilder(REGEXP_DEL, _del, false),
-  image: objectBuilder(REGEXP_IMAGE, _image, imageLiteral),
-  previewText: objectBuilder(
-    REGEXP_PREVIEW_TEXT,
-    _previewText,
-    previewTextLiteral,
-  ),
-  italic: objectBuilder(REGEXP_EM, _italic, italicLiteral),
-  header: objectBuilder(REGEXP_HEADER, _header, headingLiteral),
+  image: objectBuilder(REGEXP_IMAGE, _image, imageComponent),
+  // TODO find out what module to use to import previewText
+  // previewText: objectBuilder(
+  //   REGEXP_PREVIEW_TEXT,
+  //   _previewText,
+  //   previewTextLiteral,
+  // ),
+  italic: objectBuilder(REGEXP_EM, _italic, italicComponent),
+  header: objectBuilder(REGEXP_HEADER, _header, headingComponent),
   // TODO header arent working as suppose too
-  subtitle: objectBuilder(REGEXP_HEADER, _header, subtitleLiteral),
-  title: objectBuilder(REGEXP_HEADER, _header, titleLiteral),
-  // q:objectBuilder(REGEXP_Q, _q, false),
-  // code:objectBuilder(REGEXP_CODE, _code, false),
+  subtitle: objectBuilder(REGEXP_HEADER, _header, subtitleComponent),
+  title: objectBuilder(REGEXP_HEADER, _header, mainTitleComponent),
+  q: objectBuilder(REGEXP_Q, _q, qComponent),
+  code: objectBuilder(REGEXP_CODE, _code, codeComponent),
 
   // listItem:objectBuilder(
   //   REGEXP_SUB_LISTS,
@@ -102,7 +95,7 @@ const map = {
   // olList:objectBuilder(REGEXP_OL_LIST, _olList, false),
   blockquote: objectBuilder(REGEXP_BLOCKQUOTE, _blockquote, false),
   hr: objectBuilder(REGEXP_HR, _hr, false),
-  paragraph: objectBuilder(REGEXP_PARAGRAPH, _paragraph, paragraphLiteral),
+  paragraph: objectBuilder(REGEXP_PARAGRAPH, _paragraph, paragraphComponent),
   br: objectBuilder(REGEXP_BR, _br),
 };
 // sponsorship:objectBuilder(
