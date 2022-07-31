@@ -11,8 +11,6 @@ isFolderExists('./tests/_generated');
 
 console.log('Mode', process.env.PARSE);
 
-// TODO if I comment any of those cases - i wouldnt get any warning or something in our command line.
-
 const modeMap = {
   full: () => generateFullTemplateHackernoon(FULL_SOURCE),
   // reactContentOnly: () => generateReactContent(CONTENT_SOURCE),
