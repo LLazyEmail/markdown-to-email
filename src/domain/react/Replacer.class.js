@@ -4,10 +4,7 @@ class Replacer {
   constructor() {
     this.replaceMDBinded = () => {};
 
-    // this.replaceMDBindedPreviewText = () => {};
-
-    this.previewText = () => this.replaceMDBinded('previewText');
-
+    // this.previewText = () => this.replaceMDBinded('previewText');
     this.comments = () => this.replaceMDBinded('empty');
     this.strong = () => this.replaceMDBinded('strong');
     this.italic = () => this.replaceMDBinded('italic');
@@ -41,7 +38,7 @@ class Replacer {
   }
 
   typography() {
-    this.previewText();
+    // this.previewText();
     //---------------
     this.strong();
     this.italic();
