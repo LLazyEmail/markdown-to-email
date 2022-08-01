@@ -46,8 +46,7 @@
     "prettier": "2.7.0",
     "rollup": "2.75.6",
     "rollup-plugin-node-polyfills": "0.2.1",
-    "source-map-support": "0.5.21",
-    "winston": "^3.8.0"
+    "source-map-support": "0.5.21"
   },
   "dependencies": {
     "atherdon-newsletter-js-layouts-body": "^3.2.0",
@@ -56,7 +55,6 @@
     "atherdon-old-newsletter-js-outertemplate": "^3.7.0",
     "chalk": "5.0.1",
     "cross-env": "7.0.3",
-    "lit-html": "^2.2.6",
     "lodash": "4.17.21",
     "path-exists": "5.0.0",
     "write": "2.0.0"
