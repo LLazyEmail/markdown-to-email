@@ -1,4 +1,4 @@
-import { replaceLink } from '../../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../../domain/replace-wrapper3.0';
 
 import { catchErrorTraceOutput } from '../../../domain/error-handle';
 
@@ -19,7 +19,7 @@ function _link(text, title, href) {
 
   let replaced = '';
   try {
-    replaced = replaceLink(config);
+    replaced = commonReplace(config);
     // return newLine + replaced + newLine;
   } catch (error) {
     catchErrorTraceOutput(error);

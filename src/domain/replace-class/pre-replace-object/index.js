@@ -1,5 +1,6 @@
 import typography from 'atherdon-newsletter-js-layouts-typography';
 import body from 'atherdon-newsletter-js-layouts-body';
+// import * as typography1 from 'nmtg-template-mailerlite-typography';
 
 import {
   _strong,
@@ -60,7 +61,7 @@ import {
 // atherdon-newsletter-js-layouts-misc
 
 import objectBuilder from '../../md/object-builder';
-
+// console.log(typography1);
 // TODO add here error handlers from domain/error-handle.
 // removing them from this file
 

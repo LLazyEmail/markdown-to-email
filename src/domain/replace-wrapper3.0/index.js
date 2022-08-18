@@ -70,22 +70,6 @@ const WR3_getWrapper = (name, mainObjectCCL) => {
   return false;
 };
 
-// TODO needs to fix
-const replaceLink = (config) => {
-  // const { debug } = config || false;
-
-  const configCopy = Object.assign(config, WR3_getWrapper(config.name));
-
-  // if(debug) console.log(configCopy);
-
-  const newString = WR3_generateNewString(configCopy);
-
-  // if(debug) console.log(newString);
-  // inspectorCheck(newString);
-
-  return newString;
-};
-
 //--------------------------
 //--------------------------
 // const getParsedSubListReplace = (config) => {
@@ -120,13 +104,11 @@ const commonReplaceCommon = (config, mode) => {
   return false;
 };
 
-const commonReplaceReact = (config) => {
-  return commonReplaceCommon(config, 'react');
-};
+const commonReplaceReact = (config) => commonReplaceCommon(config, 'react');
 const commonReplace = (config) => commonReplaceCommon(config, 'html');
 
 export {
-  replaceLink,
+  // replaceLink,
   commonReplace,
   commonReplaceReact,
   // replaceUl,
