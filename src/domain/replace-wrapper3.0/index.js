@@ -12,8 +12,8 @@ import {
 
 import { inspector, catchErrorTraceOutput } from '../error-handle';
 
-import { mainObject as mainObjectHtml } from '../replace-class';
-import { mainObject as mainObjectReact } from '../react';
+// import { mainObject as mainObjectHtml } from '../replace-class';
+// import { mainObject as mainObjectReact } from '../react';
 
 // import replace from '../replace-class/index';
 // console.log(replace.mainObject);
@@ -82,17 +82,16 @@ const WR3_getWrapper = (name, mainObjectCCL) => {
 //   // return newString;
 // };
 
-const commonReplaceCommon = (config, mode) => {
+const commonReplace = (config) => {
   inspector2(config.params);
 
-  const mainObjectCCL = {
-    html: mainObjectHtml,
-    react: mainObjectReact,
-  };
+  if (!config.configurationMap) {
+    throw new Error('Configuratin map is not passed from callbacks');
+  }
 
   const configCopy = Object.assign(
     config,
-    WR3_getWrapper(config.name, mainObjectCCL[mode]),
+    WR3_getWrapper(config.name, config.configurationMap),
   );
 
   try {
@@ -104,12 +103,8 @@ const commonReplaceCommon = (config, mode) => {
   return false;
 };
 
-const commonReplaceReact = (config) => commonReplaceCommon(config, 'react');
-const commonReplace = (config) => commonReplaceCommon(config, 'html');
-
 export {
   // replaceLink,
   commonReplace,
-  commonReplaceReact,
   // replaceUl,
 };

@@ -12,6 +12,7 @@ export function _image(text, alt, srcWithTooltip) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'image',
     // debug: true,

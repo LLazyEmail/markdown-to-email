@@ -1,6 +1,6 @@
 import { newLine } from '../../domain/helper-methods';
 
-import { commonReplaceReact } from '../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../domain/replace-wrapper3.0';
 
 const _hr = () => `${newLine}<hr />`;
 const _empty = () => '';
@@ -16,7 +16,7 @@ function _code(text, content) {
     debug: true,
   };
 
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
 
   return replaced;
 }
@@ -31,7 +31,7 @@ function _del(text, content) {
     name: 'del',
     debug: true,
   };
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
 
   return replaced;
 }
@@ -46,7 +46,7 @@ function _q(text, content) {
     name: 'q',
     debug: true,
   };
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
 
   return replaced;
 }
@@ -66,7 +66,7 @@ function _italic(
     debug: true,
   };
 
-  return commonReplaceReact(config);
+  return commonReplace(config);
 }
 
 function _strong(text, doubleAsterix, content, asterix) {
@@ -79,7 +79,7 @@ function _strong(text, doubleAsterix, content, asterix) {
     name: 'strong',
     debug: true,
   };
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
 
   return replaced;
 }
@@ -96,7 +96,7 @@ function _link(text, title, href) {
     // debug: true,
   };
 
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
 
   return replaced;
 }
@@ -128,7 +128,7 @@ function _meme(text, src, href, altText) {
     debug: true,
   };
 
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
   return replaced;
 }
 
@@ -147,7 +147,7 @@ function _meme(text, src, href, altText) {
 //     // debug: true,
 //   };
 
-//   const replaced = commonReplaceReact(config);
+//   const replaced = commonReplace(config);
 //   return newLine + replaced;
 
 // }
@@ -164,7 +164,7 @@ function _separator(text) {
     debug: true,
   };
 
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
   return newLine + replaced + newLine;
 }
 
@@ -181,7 +181,7 @@ function _previewText(text, content) {
 
   // this.previewText = true;
 
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
   return replaced;
 }
 

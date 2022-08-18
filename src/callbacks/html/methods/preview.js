@@ -5,11 +5,16 @@ function _previewText(text, content) {
   const params = {
     content,
   };
-
+  console.log('this', this);
   // TODO figure out a way to handle errors
   // this.errors.previewText = true;
 
+  (() => {
+    console.log('this**', this);
+  })();
+
   const config = {
+    configurationMap: this.configurationMap,
     params,
     folder: 'body',
     name: 'previewText',

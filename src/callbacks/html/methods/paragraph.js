@@ -23,6 +23,7 @@ export function _paragraphWrapper(text, markdown_string) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'paragraph',
     // debug: true

@@ -14,6 +14,7 @@ function _separator(
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
 
     name: 'separator',

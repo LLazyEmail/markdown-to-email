@@ -11,6 +11,7 @@ function _strong(text, doubleAsterix, content, asterix) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
 
     name: 'strong',

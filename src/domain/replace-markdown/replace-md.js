@@ -3,12 +3,9 @@
 // https://www.npmjs.com/package/batch-replace
 // https://www.npmjs.com/package/pupa
 
-// TODO fix this
-import { mainObject } from '../index';
-
 // import debuggingReplacer from './debugging';
 
-const getDataForReplaceByName = (callbackName) => {
+const getDataForReplaceByName = (callbackName, mainObject) => {
   if (!callbackName) {
     throw new Error(`name of ${callbackName} is undefined or empty`);
   }
@@ -30,7 +27,10 @@ const getDataForReplaceByName = (callbackName) => {
 // plus i wanna have more control for debugging stuff
 //----------------------------
 export function replaceMarkdown(callbackName) {
-  const singleElement = getDataForReplaceByName(callbackName);
+  const singleElement = getDataForReplaceByName(
+    callbackName,
+    this.configurationMap,
+  );
 
   // let debug_params = {callback_name, singleElement}
 

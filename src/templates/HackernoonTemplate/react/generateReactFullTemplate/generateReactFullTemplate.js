@@ -1,12 +1,12 @@
-import parse from '../../domain/parse';
-import { configureReplacer } from '../../domain/react';
-import { verification } from '../../domain/helper-methods';
-import { generateTemplateName, printMessage } from '../../helper';
+import parse from '../../../../domain/parse';
+import { configureReplacer } from '../../../../domain/react';
+import { verification } from '../../../../domain/helper-methods';
+import { generateTemplateName, printMessage } from '../../../../helper';
 import { reactFullTemplate } from './components/reactFullTemplate';
 import {
   writeHTML,
   // isFolderExists
-} from '../../domain/write';
+} from '../../../../domain/write';
 
 // TODO add more messages here, and finally replace messages in our methods
 const MESSAGE_REACT_FULL_TEMPLATE =

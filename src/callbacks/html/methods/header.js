@@ -10,7 +10,7 @@ import { commonReplace } from '../../../domain/replace-wrapper3.0';
 // TODO fix issue related to text variable
 function _header(text, chars, content) {
   // const factory = CallbackFactory.create();
-
+  console.log('this', this);
   const params = {
     content: content.trim(),
   };
@@ -20,9 +20,9 @@ function _header(text, chars, content) {
   const name = titleTypes[chars.length - 1];
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name,
-
     // debug: true,
   };
 

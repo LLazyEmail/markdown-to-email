@@ -19,6 +19,7 @@ function getParsedSubList(subList) {
     };
 
     const config = {
+      configurationMap: this.configurationMap,
       params,
 
       name: 'listItem',
@@ -44,6 +45,7 @@ function getParsedLists(parsedSubLists) {
     };
 
     const config = {
+      configurationMap: this.configurationMap,
       params,
 
       name: 'listItem',
@@ -78,6 +80,7 @@ function _ulList(text, list) {
     };
 
     const config = {
+      configurationMap: this.configurationMap,
       params,
 
       name: 'list',
@@ -95,6 +98,7 @@ function _ulList(text, list) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
 
     name: 'list',

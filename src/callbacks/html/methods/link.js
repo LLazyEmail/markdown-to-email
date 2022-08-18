@@ -12,6 +12,7 @@ function _link(text, title, href) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'link',
     // debug: true

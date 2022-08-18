@@ -1,6 +1,6 @@
 import { newLine } from '../../domain/helper-methods';
 
-import { commonReplaceReact } from '../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../domain/replace-wrapper3.0';
 
 function _header(text, chars, content) {
   const params = {
@@ -17,7 +17,7 @@ function _header(text, chars, content) {
     // debug: true,
   };
 
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
   return newLine + replaced;
 }
 

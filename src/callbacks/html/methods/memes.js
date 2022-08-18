@@ -9,6 +9,7 @@ function _meme(text, src, href, altText) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'image',
     // debug: true,

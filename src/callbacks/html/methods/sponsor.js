@@ -19,6 +19,7 @@ export function _sponsorship(markdown_string) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'sponsorship',
   };
