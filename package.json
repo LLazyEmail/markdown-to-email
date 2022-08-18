@@ -58,6 +58,7 @@
     "cross-env": "7.0.3",
     "lit-html": "^2.2.6",
     "lodash": "4.17.21",
+    "nmtg-template-mailerlite-typography": "^3.1.0",
     "path-exists": "5.0.0",
     "write": "2.0.0"
   },
