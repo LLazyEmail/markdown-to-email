@@ -1,6 +1,6 @@
 // @TODO include things from a new module that we have.
 // we need to pass all constants somewhere, but not to the replaceWrapper
-import { replaceMarkdown } from '../../../../domain/replace-markdown/replace-md';
+import { replaceMarkdown } from '../../../../domain/replace-markdown/html/replace-md';
 
 class Replace {
   constructor() {

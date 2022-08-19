@@ -1,6 +1,6 @@
 import { newLine } from '../helpers';
 
-import { commonReplace } from '../../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../../domain/replace-wrapper3.0/commonReplace';
 
 // function now working as planned
 // TODO remove unused `text` argument

@@ -6,7 +6,7 @@ import {
 } from '../helpers';
 
 import { REGEXP_SUB_LISTS } from '../../../domain/regular-expressions';
-import { commonReplace } from '../../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../../domain/replace-wrapper3.0/commonReplace';
 
 // Case: when you have a sublist inside of your list
 // TODO add _ in the name of this method in order to keep the same logic

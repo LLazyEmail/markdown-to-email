@@ -1,4 +1,4 @@
-import { commonReplace } from '../../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../../domain/replace-wrapper3.0/commonReplace';
 
 export function _sponsorship(markdown_string) {
   // TODO move out this regex into constants file.

@@ -1,6 +1,6 @@
 import { newLine } from '../../domain/helper-methods';
 
-import { commonReplace } from '../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../domain/replace-wrapper3.0/commonReplace';
 
 function _header(text, chars, content) {
   const params = {

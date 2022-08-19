@@ -60,7 +60,7 @@ import {
 
 // atherdon-newsletter-js-layouts-misc
 
-import objectBuilder from '../../../../domain/md/object-builder';
+import objectBuilder from '../../../../domain/objectBuilder';
 // console.log(typography1);
 // TODO add here error handlers from domain/error-handle.
 // removing them from this file

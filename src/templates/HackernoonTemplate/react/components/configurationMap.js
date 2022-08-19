@@ -22,7 +22,7 @@ import {
   // REGEXP_SEPARATOR,
 } from '../../../../constants/index';
 
-import objectBuilder from '../../../../domain/md/object-builder';
+import objectBuilder from '../../../../domain/objectBuilder';
 
 const {
   _strong,

@@ -1,4 +1,4 @@
-import { commonReplace } from '../../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../../domain/replace-wrapper3.0/commonReplace';
 
 import { catchErrorTraceOutput } from '../../../domain/error-handle';
 

@@ -1,4 +1,4 @@
-import stateInit from '../state';
+import stateInit from './state';
 
 function parse(source, configureReplacer, configurationMap) {
   // passing content into the state,

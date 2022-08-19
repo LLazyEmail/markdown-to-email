@@ -3,14 +3,13 @@ import {
   // beforeBeginingNewLine
 } from '../helpers';
 
-import { commonReplace } from '../../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../../domain/replace-wrapper3.0/commonReplace';
 
 // import CallbackFactory from '../../../domain/callbacks-factory';
 
 // TODO fix issue related to text variable
 function _header(text, chars, content) {
   // const factory = CallbackFactory.create();
-  console.log('this', this);
   const params = {
     content: content.trim(),
   };
