@@ -1,7 +1,6 @@
 // @TODO include things from a new module that we have.
 // we need to pass all constants somewhere, but not to the replaceWrapper
 import { replaceMarkdown } from '../../../../domain/replace-markdown/replace-md';
-import configurationMap from './configurationMap';
 
 class Replace {
   constructor() {
@@ -47,10 +46,7 @@ class Replace {
   }
 
   configure(state) {
-    this.replaceMDBinded = replaceMarkdown.bind({
-      ...state,
-      configurationMap,
-    });
+    this.replaceMDBinded = replaceMarkdown.bind(state);
 
     // TODO crashed when here in FULL mode, needs to be fixed
     this.previewText();
