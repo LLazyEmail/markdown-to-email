@@ -6,6 +6,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup -c",
     "dev:parseFull": "cross-env PARSE=full rollup -c -w",
+    "dev:parseFullRecipes": "cross-env PARSE=recipesFull rollup -c -w",
     "dev:parseReactFull": "cross-env PARSE=reactFull rollup -c -w",
     "prod:parseFull": "npm run build && cross-env PARSE=full node ./dist/bundle",
     "prod:parseReactFull": "npm run build && cross-env PARSE=reactFull node ./dist/bundle",
