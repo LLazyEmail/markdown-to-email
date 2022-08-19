@@ -11,6 +11,7 @@ function _code(text, content) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'code',
     debug: true,
@@ -27,6 +28,7 @@ function _del(text, content) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'del',
     debug: true,
@@ -42,6 +44,7 @@ function _q(text, content) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'q',
     debug: true,
@@ -59,6 +62,7 @@ function _italic(
   // right
 ) {
   const config = {
+    configurationMap: this.configurationMap,
     params: {
       content,
     },
@@ -75,6 +79,7 @@ function _strong(text, doubleAsterix, content, asterix) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'strong',
     debug: true,
@@ -91,6 +96,7 @@ function _link(text, title, href) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'link',
     // debug: true,
@@ -109,6 +115,7 @@ function _blockquote() {
   //   content: `${newLine}${item.trim()}`,
   // };
   // const config = {
+  // configurationMap: this.configurationMap,
   //   params,
   //   name: 'blockquote',
   //   debug: true,
@@ -123,6 +130,7 @@ function _meme(text, src, href, altText) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'meme',
     debug: true,
@@ -141,6 +149,7 @@ function _meme(text, src, href, altText) {
 //   const name = titleTypes[chars.length - 1];
 
 //    const config = {
+// configurationMap: this.configurationMap,
 //     params,
 //     name,
 
@@ -158,6 +167,7 @@ function _separator(text) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
 
     name: 'separator',
@@ -174,6 +184,7 @@ function _previewText(text, content) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'previewText',
     debug: true,

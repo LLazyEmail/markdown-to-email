@@ -1,4 +1,4 @@
-import { replaceMarkdownReact } from './replace-markdown/replace-md';
+import { replaceMarkdownReact } from '../../../../domain/react/replace-markdown/replace-md';
 
 class Replacer {
   constructor() {

@@ -1,13 +1,12 @@
 // import debuggingReplacer from './debugging';
-import mainObject from '../pre-replace-object/index';
 // import { replaceMarkdown } from '../../replace-class';
 
-const prepOurCallback = (name) => {
+const prepOurCallback = (name, configurationMap) => {
   if (!name) {
     throw new Error(`name of ${name} is undefined or empty`);
   }
 
-  const settings = mainObject[name];
+  const settings = configurationMap[name];
 
   if (!settings) {
     throw new Error(`object by name ${name} not found`);
@@ -29,7 +28,7 @@ const prepOurCallback = (name) => {
 export function replaceMarkdownReact(callback_name) {
   // const debugging = new replaceMarkdownDebug(callback_name);
 
-  const singleElement = prepOurCallback(callback_name, false);
+  const singleElement = prepOurCallback(callback_name, this.configurationMap);
 
   // --------- comment for debugging purposes
   // // --- You can comment this when you debugging our wrapper

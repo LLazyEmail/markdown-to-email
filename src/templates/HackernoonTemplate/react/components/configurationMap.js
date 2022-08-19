@@ -1,5 +1,5 @@
 import typography from 'atherdon-newsletter-react-layouts-typography';
-import { Callbacks } from '../../../callbacksReact';
+import { Callbacks } from '../../../../callbacksReact';
 
 import {
   REGEXP_HEADER,
@@ -20,9 +20,9 @@ import {
   // REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
   // REGEXP_SEPARATOR,
-} from '../../../constants/index';
+} from '../../../../constants/index';
 
-import objectBuilder from '../../md/object-builder';
+import objectBuilder from '../../../../domain/md/object-builder';
 
 const {
   _strong,

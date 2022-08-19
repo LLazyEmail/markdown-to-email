@@ -11,6 +11,7 @@ function _header(text, chars, content) {
   const name = titleTypes[chars.length - 1];
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name,
 

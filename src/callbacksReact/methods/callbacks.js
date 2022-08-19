@@ -17,6 +17,7 @@ function _paragraph(text, line) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'paragraph',
     // debug: true,
@@ -39,6 +40,7 @@ function _image(text, alt, srcWithTooltip) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'image',
     debug: true,
@@ -81,6 +83,7 @@ function _sponsorship(text) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'sponsor',
     debug: true,
