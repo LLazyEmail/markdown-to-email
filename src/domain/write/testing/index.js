@@ -22,6 +22,7 @@ import {
   REGEXP_SEPARATOR,
 } from '../../../constants/index';
 
+// TODO replace it with latest write method, in order to avoid confusion
 import { __write, readSourceFile } from '..';
 
 import PlainCallbacks from '../../../callbacks/html';
