@@ -6,7 +6,7 @@ import {
 } from '../helpers';
 
 import { REGEXP_SUB_LISTS } from '../../../domain/regular-expressions';
-import { commonReplace } from '../../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../../domain/replace-wrapper3.0/commonReplace';
 
 // Case: when you have a sublist inside of your list
 // TODO add _ in the name of this method in order to keep the same logic
@@ -19,6 +19,7 @@ function getParsedSubList(subList) {
     };
 
     const config = {
+      configurationMap: this.configurationMap,
       params,
 
       name: 'listItem',
@@ -44,6 +45,7 @@ function getParsedLists(parsedSubLists) {
     };
 
     const config = {
+      configurationMap: this.configurationMap,
       params,
 
       name: 'listItem',
@@ -78,6 +80,7 @@ function _ulList(text, list) {
     };
 
     const config = {
+      configurationMap: this.configurationMap,
       params,
 
       name: 'list',
@@ -95,6 +98,7 @@ function _ulList(text, list) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
 
     name: 'list',

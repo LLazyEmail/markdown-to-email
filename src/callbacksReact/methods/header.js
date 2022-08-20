@@ -1,6 +1,6 @@
 import { newLine } from '../../domain/helper-methods';
 
-import { commonReplaceReact } from '../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../domain/replace-wrapper3.0/commonReplace';
 
 function _header(text, chars, content) {
   const params = {
@@ -11,13 +11,14 @@ function _header(text, chars, content) {
   const name = titleTypes[chars.length - 1];
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name,
 
     // debug: true,
   };
 
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
   return newLine + replaced;
 }
 

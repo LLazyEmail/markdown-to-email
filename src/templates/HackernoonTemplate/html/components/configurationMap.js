@@ -1,5 +1,6 @@
 import typography from 'atherdon-newsletter-js-layouts-typography';
 import body from 'atherdon-newsletter-js-layouts-body';
+// import * as typography1 from 'nmtg-template-mailerlite-typography';
 
 import {
   _strong,
@@ -28,7 +29,7 @@ import {
   _separator,
   //
   _previewText,
-} from '../../../callbacks/html/index';
+} from '../../../../callbacks/html/index';
 
 import {
   REGEXP_HEADER,
@@ -49,18 +50,18 @@ import {
   REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
   REGEXP_SEPARATOR,
-} from '../../../constants/index';
+} from '../../../../constants/index';
 
 import {
   REGEXP_SUB_LISTS,
   REGEXP_UNDERSCORE_ITALIC,
   REGEXP_ASTERIX_ITALIC,
-} from '../../regular-expressions';
+} from '../../../../domain/regular-expressions';
 
 // atherdon-newsletter-js-layouts-misc
 
-import objectBuilder from '../../md/object-builder';
-
+import objectBuilder from '../../../../domain/objectBuilder';
+// console.log(typography1);
 // TODO add here error handlers from domain/error-handle.
 // removing them from this file
 

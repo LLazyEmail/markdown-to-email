@@ -1,9 +1,9 @@
-import stateInit from '../state';
+import stateInit from './state';
 
-function parse(source, configureReplacer) {
+function parse(source, configureReplacer, configurationMap) {
   // passing content into the state,
   // so we can do our updates step by step and track any errors
-  const state = stateInit(source);
+  const state = stateInit(source, configurationMap);
 
   configureReplacer(state);
 

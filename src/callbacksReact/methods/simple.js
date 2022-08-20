@@ -1,6 +1,6 @@
 import { newLine } from '../../domain/helper-methods';
 
-import { commonReplaceReact } from '../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../domain/replace-wrapper3.0/commonReplace';
 
 const _hr = () => `${newLine}<hr />`;
 const _empty = () => '';
@@ -11,12 +11,13 @@ function _code(text, content) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'code',
     debug: true,
   };
 
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
 
   return replaced;
 }
@@ -27,11 +28,12 @@ function _del(text, content) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'del',
     debug: true,
   };
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
 
   return replaced;
 }
@@ -42,11 +44,12 @@ function _q(text, content) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'q',
     debug: true,
   };
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
 
   return replaced;
 }
@@ -59,6 +62,7 @@ function _italic(
   // right
 ) {
   const config = {
+    configurationMap: this.configurationMap,
     params: {
       content,
     },
@@ -66,7 +70,7 @@ function _italic(
     debug: true,
   };
 
-  return commonReplaceReact(config);
+  return commonReplace(config);
 }
 
 function _strong(text, doubleAsterix, content, asterix) {
@@ -75,11 +79,12 @@ function _strong(text, doubleAsterix, content, asterix) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'strong',
     debug: true,
   };
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
 
   return replaced;
 }
@@ -91,12 +96,13 @@ function _link(text, title, href) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'link',
     // debug: true,
   };
 
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
 
   return replaced;
 }
@@ -109,6 +115,7 @@ function _blockquote() {
   //   content: `${newLine}${item.trim()}`,
   // };
   // const config = {
+  // configurationMap: this.configurationMap,
   //   params,
   //   name: 'blockquote',
   //   debug: true,
@@ -123,12 +130,13 @@ function _meme(text, src, href, altText) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'meme',
     debug: true,
   };
 
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
   return replaced;
 }
 
@@ -141,13 +149,14 @@ function _meme(text, src, href, altText) {
 //   const name = titleTypes[chars.length - 1];
 
 //    const config = {
+// configurationMap: this.configurationMap,
 //     params,
 //     name,
 
 //     // debug: true,
 //   };
 
-//   const replaced = commonReplaceReact(config);
+//   const replaced = commonReplace(config);
 //   return newLine + replaced;
 
 // }
@@ -158,13 +167,14 @@ function _separator(text) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
 
     name: 'separator',
     debug: true,
   };
 
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
   return newLine + replaced + newLine;
 }
 
@@ -174,6 +184,7 @@ function _previewText(text, content) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'previewText',
     debug: true,
@@ -181,7 +192,7 @@ function _previewText(text, content) {
 
   // this.previewText = true;
 
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
   return replaced;
 }
 

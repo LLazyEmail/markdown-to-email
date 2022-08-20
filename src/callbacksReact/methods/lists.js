@@ -3,7 +3,7 @@ import { newLine } from '../../domain/helper-methods';
 // const _hr = () => `${newLine}<hr />`;
 // const _empty = () => '';
 
-// import { commonReplaceReact } from '../../domain/replace-wrapper3.0';
+// import { commonReplace } from '../../domain/replace-wrapper3.0';
 
 // function getParsedSubList(subList) {
 //   return subList.replace(
@@ -19,7 +19,7 @@ import { newLine } from '../../domain/helper-methods';
 //         debug: true,
 //       };
 
-//       const replaced = commonReplaceReact(config);
+//       const replaced = commonReplace(config);
 
 //       return newLine + replaced;
 //     },
@@ -51,7 +51,7 @@ function _ulList() {
   //       //   debug: true,
   //       // };
 
-  //       // const replaced = commonReplaceReact(config);
+  //       // const replaced = commonReplace(config);
 
   //       // return newLine + replaced;
   //       return 'this is UL list callback needs to revise it';
@@ -71,7 +71,7 @@ function _ulList() {
   //     //   debug: true,
   //     // };
 
-  //     const replaced = commonReplaceReact(config);
+  //     const replaced = commonReplace(config);
 
   //     return newLine + replaced;
   //   },
