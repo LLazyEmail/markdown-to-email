@@ -14,7 +14,7 @@ function _header(text, chars, content) {
     content: content.trim(),
   };
 
-  const titleTypes = ['title', 'subtitle', 'heading'];
+  const titleTypes = ['title', 'subtitle', 'header'];
 
   const name = titleTypes[chars.length - 1];
 

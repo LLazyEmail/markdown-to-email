@@ -16,10 +16,9 @@ console.log('Mode', process.env.PARSE);
 
 const modeMap = {
   full: () => generateHtmlFullTemplateHackernoon(FULL_SOURCE),
-  recipesFull: () =>
-    generateHtmlFullTemplateRecipes('source/recipes/recipes.md'),
-  // reactContentOnly: () => generateReactContent(CONTENT_SOURCE),
   reactFull: () => generateReactFullTemplate(FULL_SOURCE),
+  recipesFull: () =>
+    generateHtmlFullTemplateRecipes('source/recipes/source-nmtg.md'),
 };
 
 modeMap[process.env.PARSE ?? 'full']();
