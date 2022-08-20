@@ -6,9 +6,8 @@ import {
   checkWarnings,
   // checkHtml,
 } from '../../helper';
-
 // TODO convert into singleton
-const stateInit = (source) => {
+const stateInit = (source, configurationMap) => {
   // TODO rename
   const markdown = readSourceFile(source);
 
@@ -30,6 +29,7 @@ const stateInit = (source) => {
     innerWarnings() {
       checkWarnings(this.warnings);
     },
+    configurationMap,
   };
 
   return stateObject;

@@ -1,6 +1,6 @@
 import { newLine } from '../../domain/helper-methods';
 
-import { commonReplaceReact } from '../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../domain/replace-wrapper3.0/commonReplace';
 
 /// function is not working as planned
 
@@ -17,13 +17,14 @@ function _paragraph(text, line) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'paragraph',
     // debug: true,
   };
 
   // console.log(config);
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
   const result = newLine + replaced + newLine;
 
   return result;
@@ -39,6 +40,7 @@ function _image(text, alt, srcWithTooltip) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'image',
     debug: true,
@@ -46,7 +48,7 @@ function _image(text, alt, srcWithTooltip) {
 
   this.warnings.images += 1;
 
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
 
   return replaced;
 }
@@ -81,11 +83,12 @@ function _sponsorship(text) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'sponsor',
     debug: true,
   };
-  const replaced = commonReplaceReact(config);
+  const replaced = commonReplace(config);
   return replaced;
 
   // TODO upgrade a way to handle errors in state object

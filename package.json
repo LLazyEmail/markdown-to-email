@@ -6,6 +6,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup -c",
     "dev:parseFull": "cross-env PARSE=full rollup -c -w",
+    "dev:parseFullRecipes": "cross-env PARSE=recipesFull rollup -c -w",
     "dev:parseReactFull": "cross-env PARSE=reactFull rollup -c -w",
     "prod:parseFull": "npm run build && cross-env PARSE=full node ./dist/bundle",
     "prod:parseReactFull": "npm run build && cross-env PARSE=reactFull node ./dist/bundle",
@@ -46,8 +47,7 @@
     "prettier": "2.7.0",
     "rollup": "2.75.6",
     "rollup-plugin-node-polyfills": "0.2.1",
-    "source-map-support": "0.5.21",
-    "winston": "^3.8.0"
+    "source-map-support": "0.5.21"
   },
   "dependencies": {
     "atherdon-newsletter-js-layouts-body": "^3.2.0",
@@ -56,8 +56,8 @@
     "atherdon-old-newsletter-js-outertemplate": "^3.7.0",
     "chalk": "5.0.1",
     "cross-env": "7.0.3",
-    "lit-html": "^2.2.6",
     "lodash": "4.17.21",
+    "nmtg-template-mailerlite-typography": "^3.1.0",
     "path-exists": "5.0.0",
     "write": "2.0.0"
   },

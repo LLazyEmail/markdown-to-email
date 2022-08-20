@@ -28,6 +28,7 @@ function writeHTML(fileName, content, dir = 'generated', message) {
     });
 }
 
+// TODO I think we can delete this method
 // __write - an old version of a method that we have
 // eslint-disable-next-line no-underscore-dangle
 function __write(

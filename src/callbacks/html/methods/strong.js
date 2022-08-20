@@ -1,4 +1,4 @@
-import { commonReplace } from '../../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../../domain/replace-wrapper3.0/commonReplace';
 
 // TODO make sense to the text variable
 // probably Vadim knows what is doing on here,
@@ -11,6 +11,7 @@ function _strong(text, doubleAsterix, content, asterix) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
 
     name: 'strong',

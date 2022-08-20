@@ -1,12 +1,12 @@
-import { commonReplace } from '../../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../../domain/replace-wrapper3.0/commonReplace';
 
-const _italic = (
+function _italic(
   text,
   // content,
   // a,
   // b,
   // c
-) => {
+) {
   // TODO we need to debug italic
   // https://github.com/LLazyEmail/markdown-to-email/issues/1265
   // console.log(text)
@@ -18,6 +18,7 @@ const _italic = (
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
 
     name: 'italic',
@@ -26,12 +27,12 @@ const _italic = (
 
   const replaced = commonReplace(config);
   return replaced;
-};
+}
 
-const _italicAsterix = (
+function _italicAsterix(
   text,
   // content
-) => {
+) {
   // console.log(text);
   // console.log(content);
 
@@ -40,6 +41,7 @@ const _italicAsterix = (
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
 
     name: 'italic_asterix',
@@ -48,6 +50,6 @@ const _italicAsterix = (
 
   const replaced = commonReplace(config);
   return replaced;
-};
+}
 
 export { _italic, _italicAsterix };

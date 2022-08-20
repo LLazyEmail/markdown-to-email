@@ -1,12 +1,8 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/atherdon/markdown-to-email)
 
+This simple and light tool generates email template from markdown. The command is `npm run dev:parseFull`. 
+The path to markdown file must be `./source/source.md`, and output directory is `generated/newEmail.html`.
 
-
-Maintainer notes:
-
-- **Generator Module was moved out into https://github.com/LLazyEmail/generator-module**
-- **Replacer for React DOM right now is broken. I'm moving it out into https://github.com/LLazyEmail/react-plain-template-example**
-- **React version isn't working now. Probably we'll skip few releases and make it work as it should be.**
 
 # How to run this module
 
@@ -25,26 +21,6 @@ In production mode builds an optimized module. Production mode has two options:
 
 In VS Code needs to open a tab "Run and Debug", then in select input choose `Launch via NPM parseFull` - for html and `Launch via NPM parseReactFull`, the process will start automatically (builds and create a file). Put a breakpoint in line you need then save a file.
 
-# Markdown to email template generator
-
-This simple and light tool generates email template from markdown. The command is `npm run dev:parseFull`. 
-The path to markdown file must be `./source/source.md`, and output directory is `generated/newEmail.html`.
-
-We tried to create our own wheel, then we failed. Arthur get bored trying to fix it and make it work properly.
-So he just decide to google a working version that can solve his problems.
-
-Story: 
-0. I find this link https://gist.github.com/jbroadway/2836900
-1. then this link https://gist.github.com/budparr/112f08a3033dd878d0e271e2af61faef
-2. and then I added javascript into my google Search https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
-3. then we tried different approaches, failed few times and find out how to fix some bugs.
-4. then I tried to google our repository and find out the latest version of this module - https://github.com/showdownjs/showdown
-5. then I find out that all template engines still sucks and decide to migrate "frontend" part to react
-6. i'm exploring the best known to me tools for markdown: remark and rehype. plus, as docusaurus using them and mdx format - we'll try it too
-
-how to run a parser
-
-```yarn parse```
 
 if you need help with markdown - Great Online Preview tool https://dillinger.io/
 
@@ -114,6 +90,8 @@ The parser reads source file from `source/source.md` and based on opening tag re
 
 ![ooops2](https://raw.githubusercontent.com/atherdon/markdown-to-email/main/images/Oops-I.png)
 
+
+
 Links
 - https://codepen.io/rh/pen/BoyNdy
 - https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
@@ -122,33 +100,28 @@ Links
 - https://gist.github.com/budparr/112f08a3033dd878d0e271e2af61faef
 - https://gist.github.com/jbroadway/2836900
 - https://stackoverflow.com/questions/47016770/replace-markdown-characters-with-regex
-
-
 - https://www.htmlemailcheck.com/check/
 
-
 ---
-
-old tests
-
-```
-// const { REGEXP_HEADER } = require('atherdon-newsletter-constants');
-
-// const { resolve } = require('path');
-// const { write, 
-//   readSourceFile 
-// } = require('@root/utils');
-
-
-// const root = resolve(__dirname, '');
-// const outFolder = resolve('src/tests', 'directory', '../_generated');
-
-
-```
 
 
 
 install  "pixel-email-cli" and try it https://github.com/LLazyEmail/pixel-email-cli
+
+
+# Markdown to email template generator
+
+We tried to create our own wheel, then we failed. Arthur get bored trying to fix it and make it work properly.
+So he just decide to google a working version that can solve his problems.
+
+Story: 
+0. I find this link https://gist.github.com/jbroadway/2836900
+1. then this link https://gist.github.com/budparr/112f08a3033dd878d0e271e2af61faef
+2. and then I added javascript into my google Search https://gist.github.com/renehamburger/12f14a9bd9297394e5bd
+3. then we tried different approaches, failed few times and find out how to fix some bugs.
+4. then I tried to google our repository and find out the latest version of this module - https://github.com/showdownjs/showdown
+5. then I find out that all template engines still sucks and decide to migrate "frontend" part to react
+6. i'm exploring the best known to me tools for markdown: remark and rehype. plus, as docusaurus using them and mdx format - we'll try it too
 
 
 #### Arthur Tkachenko articles
@@ -164,3 +137,4 @@ install  "pixel-email-cli" and try it https://github.com/LLazyEmail/pixel-email-
 * [https://hackernoon.com/together4victory-list-of-email-marketing-tools](https://hackernoon.com/together4victory-list-of-email-marketing-tools)
 * [https://hackernoon.com/cool-newsletters-for-developers-part-1](https://hackernoon.com/cool-newsletters-for-developers-part-1)
 * [https://hackernoon.com/cool-resources-for-sending-emails](https://hackernoon.com/cool-resources-for-sending-emails)
+
