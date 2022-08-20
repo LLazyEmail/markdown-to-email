@@ -1,6 +1,6 @@
 import { newLine } from '../helpers';
 
-import { commonReplace } from '../../../domain/replace-wrapper3.0';
+import { commonReplace } from '../../../domain/replace-wrapper3.0/commonReplace';
 
 // function now working as planned
 // TODO remove unused `text` argument
@@ -23,6 +23,7 @@ export function _paragraphWrapper(text, markdown_string) {
   };
 
   const config = {
+    configurationMap: this.configurationMap,
     params,
     name: 'paragraph',
     // debug: true
