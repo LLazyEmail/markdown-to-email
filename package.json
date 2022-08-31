@@ -45,7 +45,7 @@
     "jest": "27.5.1",
     "lint-staged": "12.4.1",
     "prettier": "2.7.0",
-    "rollup": "2.75.6",
+    "rollup": "2.79.0",
     "rollup-plugin-node-polyfills": "0.2.1",
     "source-map-support": "0.5.21"
   },
