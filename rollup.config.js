@@ -8,7 +8,7 @@ import run from '@rollup/plugin-run';
 const dev = process.env.NODE_ENV !== 'production';
 
 export default {
-  input: 'src/index.js',
+  input: dev ? './start.js' : 'src/index.js',
   output: {
     file: 'dist/bundle.js',
     format: 'cjs',
