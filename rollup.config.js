@@ -10,7 +10,7 @@ const dev = process.env.NODE_ENV !== 'production';
 export default {
   input: dev ? './start.js' : 'src/index.js',
   output: {
-    file: 'dist/bundle.js',
+    file: 'dist/index.js',
     format: 'cjs',
     sourcemap: true,
   },
