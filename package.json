@@ -1,8 +1,8 @@
 {
-  "name": "markdown-to-email",
+  "name": "@lazyemail/markdown-to-email",
   "version": "3.0.2",
   "description": "Translate 'Markdown' Syntax into HTML For Email Newsletters",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup -c",
     "dev:parseFull": "cross-env PARSE=full rollup -c -w",
@@ -65,5 +65,16 @@
     "src/**/*.{js,ts}": [
       "npm run lint"
     ]
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LLazyEmail/markdown-to-email.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LLazyEmail/markdown-to-email/issues"
+  },
+  "homepage": "https://github.com/LLazyEmail/markdown-to-email#readme"
 }
