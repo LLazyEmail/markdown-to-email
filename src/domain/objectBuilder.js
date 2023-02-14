@@ -17,11 +17,10 @@ const ERROR_REGEX_CONSTANT = (value) =>
 const ERROR_REPLACER_FUNCTION = (value) =>
   `something wrong with replacer function ${value}`;
 
-
 // TODO to make this method working better [improvement]
 // 1. to handle a case when literal is false, it's very scary
 // 2. we really need to be able to handle a situation when replacer isn't defined before (by different reasons)
-// 3. does this function works fine with `components` 
+// 3. does this function works fine with `components`
 // 4. when something wrong - i want to have a better output about params that we passed
 
 function objectBuilder(constant, replacer, literal = false) {

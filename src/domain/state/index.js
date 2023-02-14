@@ -1,16 +1,12 @@
 //------------------
 // ---- helper > command-line-methods
 import {
-  readSourceFile,
   checkErrors,
   checkWarnings,
   // checkHtml,
 } from '../../helper';
 // TODO convert into singleton
-const stateInit = (source, configurationMap) => {
-  // TODO rename
-  const markdown = readSourceFile(source);
-
+const stateInit = (markdown, configurationMap) => {
   const stateObject = {
     content: markdown,
     previewText: '',
