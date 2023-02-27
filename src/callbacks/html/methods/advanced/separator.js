@@ -1,6 +1,6 @@
-import { newLine } from '../helpers';
+import { newLine } from '../../helpers';
 
-import { commonReplace } from '../../../domain/replace-wrapper3.0/commonReplace';
+import { commonReplace } from '../../../../domain/replace-wrapper3.0/commonReplace';
 
 function _separator(
   text,
