@@ -200,7 +200,6 @@ export {
   _strong,
   _link,
   _blockquote,
-  _meme,
   // _header,
   _italic,
   _del,
@@ -210,4 +209,5 @@ export {
   _empty,
   _previewText,
   _separator,
+  _meme,
 };
