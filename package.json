@@ -11,8 +11,6 @@
     "prod:parseFull": "npm run build && cross-env PARSE=full node ./dist/bundle",
     "prod:parseReactFull": "npm run build && cross-env PARSE=reactFull node ./dist/bundle",
     "test:react": "npm run checkFolders && jest ./src/parserMDReact/tests",
-    "lint:fix": "eslint -c ./.eslintrc.js ./src --fix --ignore-pattern \"./package.json\" ",
-    "lint": "eslint -c  ./.eslintrc.js ./src --quiet --ignore-pattern  \"./package.json\" ",
     "checkFolders": "node ./checkFolders",
     "test": "npm run checkFolders && jest ./src/tests",
     "test:typography": "jest --all --testPathPattern=./src/tests/typography",
@@ -20,9 +18,9 @@
     "test:custom": "jest --watchAll --all --testPathPattern=./src/tests/custom",
     "test:watch": "npm run checkFolders && jest --watch ./src/tests",
     "prepare": "husky install",
-    "fix:prettier": "prettier --write '**/*.js'",
     "prettier:fix": "bash ./bash/prettier-fix.sh",
-    "lint2": "bash ./bash/lint-fix.sh"
+    "lint": "eslint -c  ./.eslintrc.js ./src --quiet --ignore-pattern  \"./package.json\" ",
+    "lint:fix": "bash ./bash/lint-fix.sh"
   },
   "author": "atherdon, vadim9999, hirdbluebird",
   "license": "ISC",
