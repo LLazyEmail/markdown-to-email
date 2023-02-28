@@ -20,7 +20,9 @@
     "test:custom": "jest --watchAll --all --testPathPattern=./src/tests/custom",
     "test:watch": "npm run checkFolders && jest --watch ./src/tests",
     "prepare": "husky install",
-    "fix:prettier": "prettier --write '**/*.js'"
+    "fix:prettier": "prettier --write '**/*.js'",
+    "prettier:fix": "bash ./bash/prettier-fix.sh",
+    "lint2": "bash ./bash/lint-fix.sh"
   },
   "author": "atherdon, vadim9999, hirdbluebird",
   "license": "ISC",
