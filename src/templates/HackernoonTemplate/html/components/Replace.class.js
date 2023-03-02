@@ -5,7 +5,6 @@ import { replaceMarkdown } from '../../../../domain/replace-markdown/html/replac
 class Replace {
   constructor() {
     this.replaceMDBinded = () => {};
-
     // I think this version isnt working well
     // Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
     this.strong = () => this.replaceMDBinded('strong');
@@ -14,7 +13,6 @@ class Replace {
     this.italicAsterix = () => this.replaceMDBinded('italic_asterix');
     // TODO working not ideally, because we have headings & subtitles,
     // so it's confusing a little bit
-    this.previewText = () => this.replaceMDBinded('previewText');
     this.header = () => this.replaceMDBinded('header');
     this.subtitle = () => this.replaceMDBinded('header');
     this.title = () => this.replaceMDBinded('header');
@@ -32,6 +30,7 @@ class Replace {
     this.br = () => this.replaceMDBinded('br');
     //-------
     // those methods might get replaced with front-matter
+    this.previewText = () => this.replaceMDBinded('previewText');
     this.sponsorship = () => this.replaceMDBinded('sponsorship');
     // here we have a different name
     this.memes = () => this.replaceMDBinded('memes');
