@@ -57,7 +57,7 @@
     "chalk": "5.0.1",
     "cross-env": "7.0.3",
     "lodash": "4.17.21",
-    "nmtg-template-mailerlite-typography": "^3.1.0",
+    "nmtg-template-mailerlite-typography": "^7.0.0",
     "path-exists": "5.0.0",
     "write": "2.0.0"
   },
