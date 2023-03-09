@@ -1,5 +1,5 @@
 import {
-  writeHTML, 
+  writeHTML,
   isFolderExists,
   readSourceFile,
   generateTemplateName,
