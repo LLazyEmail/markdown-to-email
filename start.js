@@ -1,20 +1,15 @@
 import {
-  generateHtmlFullTemplateHackernoon,
-  generateReactFullTemplateHackernoon,
-  generateHtmlFullTemplateRecipes,
-} from './src';
-import {
-  // readSourceFile,
-  // generateTemplateName,
-  printMessage,
-} from './src/helper';
-
-import { 
   writeHTML, 
   isFolderExists, 
   readSourceFile,
   generateTemplateName
  } from 'markup-generator';
+import {
+  generateHtmlFullTemplateHackernoon,
+  generateReactFullTemplateHackernoon,
+  generateHtmlFullTemplateRecipes,
+} from './src';
+import { printMessage } from './src/helper';
 
 import { deliver } from './src/domain/deliver/deliver';
 import { MESSAGE_HTML_FULL_TEMPLATE2 } from './src/domain/deliver/deliver.constants';
