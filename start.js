@@ -2,7 +2,7 @@ import {
   writeHTML, 
   isFolderExists, 
   readSourceFile,
-  generateTemplateName
+  generateTemplateName,
  } from 'markup-generator';
 import {
   generateHtmlFullTemplateHackernoon,
