@@ -1,9 +1,9 @@
 import {
   writeHTML, 
-  isFolderExists, 
+  isFolderExists,
   readSourceFile,
   generateTemplateName,
- } from 'markup-generator';
+} from 'markup-generator';
 import {
   generateHtmlFullTemplateHackernoon,
   generateReactFullTemplateHackernoon,
