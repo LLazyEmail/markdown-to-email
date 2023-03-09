@@ -1,6 +1,9 @@
+// TODO replace it with latest write method, in order to avoid confusion
+import { readSourceFile } from 'markup-generator';
+import { resolve } from 'path';
+
 //--------------
 // --- Typography
-
 import {
   REGEXP_HEADER,
   REGEXP_IMAGE,
@@ -22,12 +25,7 @@ import {
   REGEXP_SEPARATOR,
 } from '../../../constants/index';
 
-// TODO replace it with latest write method, in order to avoid confusion
-import { __write, readSourceFile } from '..';
-
 import PlainCallbacks from '../../../callbacks/html';
-
-const { resolve } = require('path');
 
 // import replace stuff
 // TODO probably move out this method into helpers
@@ -76,7 +74,6 @@ export {
   REGEXP_PARAGRAPH,
   REGEXP_SEPARATOR,
   //-------------------------
-  __write,
   readSourceFile,
   //-------------------------
   PlainCallbacks,
