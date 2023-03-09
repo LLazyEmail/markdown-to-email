@@ -4,11 +4,18 @@ import {
   generateHtmlFullTemplateRecipes,
 } from './src';
 import {
-  readSourceFile,
-  generateTemplateName,
+  // readSourceFile,
+  // generateTemplateName,
   printMessage,
 } from './src/helper';
-import { writeHTML, isFolderExists } from './src/domain/write';
+
+import { 
+  writeHTML, 
+  isFolderExists, 
+  readSourceFile,
+  generateTemplateName
+ } from 'markup-generator';
+
 import { deliver } from './src/domain/deliver/deliver';
 import { MESSAGE_HTML_FULL_TEMPLATE2 } from './src/domain/deliver/deliver.constants';
 
@@ -42,7 +49,7 @@ export const modes = {
 
     // TODO replace this three rows on deliver function
     const fileName = generateTemplateName('FullTemplate', 'js');
-    writeHTML(fileName, fullContent);
+    writeHTML(fileName, fullContent, 'generated', '');
     printMessage(MESSAGE_REACT_FULL_TEMPLATE, 'green2');
   },
   recipesFull: () => {
