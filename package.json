@@ -44,7 +44,7 @@
     "husky": "7.0.0",
     "jest": "27.5.1",
     "lint-staged": "12.4.1",
-    "markup-generator": "^2.4.0",
+    "markup-generator": "^2.5.0",
     "prettier": "2.7.0",
     "rollup": "2.75.6",
     "rollup-plugin-node-polyfills": "0.2.1",

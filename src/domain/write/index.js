@@ -7,8 +7,6 @@ import {
   generateTemplateName,
 } from 'markup-generator';
 
-// import write from 'write';
-
 import {
   CONST_FILE_NOT_WRITTEN,
   ERROR_NO_TITLE,
