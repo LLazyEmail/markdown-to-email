@@ -1,3 +1,4 @@
+// importing main object
 import parse from '../../../domain/parse';
 import { verification } from '../../../domain/helper-methods';
 import Replace from './components/Replace.class';

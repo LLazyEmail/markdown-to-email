@@ -1,16 +1,3 @@
-// TODO looks interesting to implement
-// class MissingFieldsError extends Error {
-//   constructor(fields, ...params) {
-//     super(...params);
-//     this.fields_ = fields;
-//   }
-
-//   getMissingFields() {
-//     return this.fields_;
-//   }
-// }
-// throw new MissingFieldsError("msg")
-
 const ERROR_REGEX_CONSTANT = (value) =>
   `something wrong with RegEx constant ${value}`;
 

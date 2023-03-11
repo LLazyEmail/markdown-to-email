@@ -1,9 +1,3 @@
-//----------------
-// import { html } from 'lit-html'
-
-// import body from '../../templates/PlainJSOuterTemplate/layouts/body';
-// import misc from '../../templates/PlainJSOuterTemplate/layouts/misc';
-
 import {
   // getWrapper,
   // generateNewString,
@@ -21,11 +15,6 @@ import { inspector, catchErrorTraceOutput } from '../error-handle';
 // import CallbackFactory from '../callbacks-factory';
 
 const ERROR_REPLACER = `no params was passed`;
-
-// const WR3_Template(params){
-//     const  { src, href, content, wrapper } = params;
-//     return html(wrapper);
-// }
 
 //--------------------------
 //--------------------------
