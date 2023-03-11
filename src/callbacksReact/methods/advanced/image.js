@@ -1,9 +1,7 @@
+// import { newLine } from '../../../domain/helper-methods';
 import { commonReplace } from '../../../domain/replace-wrapper3.0/commonReplace';
 
-// TODO remove unused `text` argument
-export function _image(text, alt, srcWithTooltip) {
-  // eslint-disable-next-line no-useless-escape
-  // TODO img-tooltip-regex was defined in constants but was not replaced here...
+function _image(text, alt, srcWithTooltip) {
   const src = srcWithTooltip.trim().replace(/\"image_tooltip\"/, '');
 
   const params = {
@@ -15,15 +13,13 @@ export function _image(text, alt, srcWithTooltip) {
     configurationMap: this.configurationMap,
     params,
     name: 'image',
-    // debug: true,
+    debug: true,
   };
 
-  // i dont think it will work well
-  // eslint-disable-next-line no-plusplus
-  this.warnings.images++;
+  this.warnings.images += 1;
 
   const replaced = commonReplace(config);
+
   return replaced;
 }
-
 export default _image;

@@ -1,4 +1,4 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/atherdon/markdown-to-email)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/LLazyEmail/markdown-to-email)
 
 This simple and light tool generates email template from markdown. The command is `npm run dev:parseFull`. 
 The path to markdown file must be `./source/source.md`, and output directory is `generated/newEmail.html`.

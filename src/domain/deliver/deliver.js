@@ -1,4 +1,3 @@
-// import { writeHTML, generateTemplateName } from '../write';
 import { writeHTML, generateTemplateName } from 'markup-generator';
 import { printMessage } from '../../helper';
 

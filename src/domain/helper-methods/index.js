@@ -1,10 +1,6 @@
-import { forEach } from 'lodash';
-
 import os from 'os';
-import {
-  // checkHtml,
-  printMessage,
-} from '../../helper';
+import { forEach } from 'lodash';
+import { checkErrors, printMessage } from './cli';
 
 const platform = os.platform();
 
@@ -60,4 +56,19 @@ function verification(warnings, content = false) {
   if (content) checkHtml(content);
 }
 
-export { verification, checkWarnings, checkHtml, newLine };
+function displayCLIErrors(errors, warnings) {
+  if (checkErrors(errors)) {
+    // there should be something in here
+  } else {
+    checkWarnings(warnings);
+  }
+}
+
+export {
+  verification,
+  checkWarnings,
+  checkHtml,
+  newLine,
+  displayCLIErrors,
+  checkErrors,
+};
