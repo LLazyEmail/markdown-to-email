@@ -3,13 +3,14 @@ import {
   isFolderExists,
   readSourceFile,
   generateTemplateName,
+  // readFrontMatter
 } from 'markup-generator';
 import {
   generateHtmlFullTemplateHackernoon,
   generateReactFullTemplateHackernoon,
   generateHtmlFullTemplateRecipes,
 } from './src';
-import { printMessage } from './src/helper';
+import { printMessage } from './src/domain/helper-methods/cli';
 
 import { deliver } from './src/domain/deliver/deliver';
 import { MESSAGE_HTML_FULL_TEMPLATE2 } from './src/domain/deliver/deliver.constants';
@@ -23,6 +24,9 @@ const MESSAGE_REACT_FULL_TEMPLATE =
 // @TODO add path package, in order to make it work PERFECTLY
 const FULL_SOURCE = 'source/source.md';
 const RECIPES_SOURCE = 'source/recipes/source-nmtg.md';
+// updated version
+const FRONT_FULL_SOURCE = 'source/front-matter/03-hackernoon-source.md';
+const FRONT_RECIPES_SOURCE = 'sourcefront-matter/05-source-weekly-menu.md';
 
 const markdown = readSourceFile(FULL_SOURCE);
 
