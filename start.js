@@ -25,8 +25,10 @@ const MESSAGE_REACT_FULL_TEMPLATE =
 const FULL_SOURCE = 'source/source.md';
 const RECIPES_SOURCE = 'source/recipes/source-nmtg.md';
 // updated version
-const FRONT_FULL_SOURCE = 'source/front-matter/03-hackernoon-source.md';
-const FRONT_RECIPES_SOURCE = 'sourcefront-matter/05-source-weekly-menu.md';
+// const FRONT_HN_SOURCE = 'source/front-matter/03-hackernoon-source.md';
+// const FRONT_NMTG_SOURCE = 'sourcefront-matter/05-source-weekly-menu.md';
+// const front_markdown_hackernoon = readFrontMatter(FRONT_HN_SOURCE);
+// const front_makrdown_nmtg = readFrontMatter(FRONT_NMTG_SOURCE);
 
 const markdown = readSourceFile(FULL_SOURCE);
 
