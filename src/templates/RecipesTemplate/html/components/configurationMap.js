@@ -1,4 +1,3 @@
-// import * as typography from 'nmtg-template-mailerlite-typography';
 import {
   heading,
   renderSubHeading,
@@ -22,7 +21,6 @@ import {
   _strong,
   _link,
   _blockquote,
-  // _meme,
   _header,
   //--------
   // _italic,
@@ -40,11 +38,8 @@ import {
   //--------------
   _image,
   _paragraphWrapper,
-  // _sponsorship,
   _br,
   _separator,
-  //
-  // _previewText,
 } from '../../../../callbacks/html/index';
 
 import {
@@ -61,9 +56,6 @@ import {
   REGEXP_HR,
   REGEXP_BR,
   // REGEXP_EM,
-  // REGEXP_SPONSORSHIP,
-  // REGEXP_MEM,
-  // REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
   REGEXP_SEPARATOR,
 } from '../../../../constants/index';
@@ -73,11 +65,6 @@ import objectBuilder from '../../../../domain/objectBuilder';
 // removing them from this file
 
 const map = {
-  // previewText: objectBuilder(
-  //   REGEXP_PREVIEW_TEXT,
-  //   _previewText,
-  //   previewTextComponent,
-  // ),
   strong: objectBuilder(REGEXP_STRONG, _strong, strongComponent),
   link: objectBuilder(REGEXP_LINK, _link, linkComponent),
   del: objectBuilder(REGEXP_DEL, _del, false),
