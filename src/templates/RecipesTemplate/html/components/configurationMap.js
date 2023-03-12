@@ -1,10 +1,28 @@
-import * as typography from 'nmtg-template-mailerlite-typography';
+// import * as typography from 'nmtg-template-mailerlite-typography';
+import {
+  heading,
+  renderSubHeading,
+  // spanHeadingBlock,  // will pick it back, disabled for husky
+  separatorComponent,
+} from 'nmtg-template-mailerlite-typography';
+import {
+  // buttonComponent,   // will pick it back, disabled for husky
+  // divComponent,      // will pick it back, disabled for husky
+  imageComponent,
+  // imageLink,         // will pick it back, disabled for husky
+  // italicComponent,   // will pick it back, disabled for husky
+  linkComponent,
+  // listComponent,     // will pick it back, disabled for husky
+  // listItemComponent, // will pick it back, disabled for husky
+  paragraphComponent,
+  strongComponent,
+} from 'html-typography-tags';
 
 import {
   _strong,
   _link,
   _blockquote,
-  _meme,
+  // _meme,
   _header,
   //--------
   // _italic,
@@ -44,7 +62,7 @@ import {
   REGEXP_BR,
   // REGEXP_EM,
   // REGEXP_SPONSORSHIP,
-  REGEXP_MEM,
+  // REGEXP_MEM,
   // REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
   REGEXP_SEPARATOR,
@@ -54,27 +72,13 @@ import objectBuilder from '../../../../domain/objectBuilder';
 // TODO add here error handlers from domain/error-handle.
 // removing them from this file
 
-const {
-  // buttonComponent,
-  // buttonComponent2,
-  heading,
-  strong,
-  subheading,
-  //------
-  imageComponent,
-  // imgWrapper,
-  paragraphComponent,
-  linkComponent,
-  separatorComponent,
-} = typography;
-
 const map = {
   // previewText: objectBuilder(
   //   REGEXP_PREVIEW_TEXT,
   //   _previewText,
   //   previewTextComponent,
   // ),
-  strong: objectBuilder(REGEXP_STRONG, _strong, strong),
+  strong: objectBuilder(REGEXP_STRONG, _strong, strongComponent),
   link: objectBuilder(REGEXP_LINK, _link, linkComponent),
   del: objectBuilder(REGEXP_DEL, _del, false),
   image: objectBuilder(REGEXP_IMAGE, _image, imageComponent),
@@ -85,7 +89,7 @@ const map = {
   //   italicComponent,
   // ),
   header: objectBuilder(REGEXP_HEADER, _header, heading),
-  subtitle: objectBuilder(REGEXP_HEADER, _header, subheading),
+  subtitle: objectBuilder(REGEXP_HEADER, _header, renderSubHeading),
   // title: objectBuilder(REGEXP_HEADER, _header, titleComponent),
   q: objectBuilder(REGEXP_Q, _q, false),
   code: objectBuilder(REGEXP_CODE, _code, false),
@@ -105,12 +109,6 @@ const map = {
     paragraphComponent,
   ),
   br: objectBuilder(REGEXP_BR, _br),
-  // sponsorship: objectBuilder(
-  //   REGEXP_SPONSORSHIP,
-  //   _sponsorship,
-  //   sponsorComponent,
-  // ),
-  memes: objectBuilder(REGEXP_MEM, _meme, false),
   separator: objectBuilder(REGEXP_SEPARATOR, _separator, separatorComponent),
 };
 
