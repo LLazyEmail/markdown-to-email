@@ -60,9 +60,8 @@ export const modes = {
   hackernnonFront: () => {
     // const markdownRecipes = nomoretogoContent;
 
-    const recipesFullTemplate = generateHtmlFullTemplateHackernoon(
-      front_markdown_hackernoon.markdown,
-      front_markdown_hackernoon.frontMatter,
+    const recipesFullTemplate = generateFrontHackernoon(
+      front_markdown_hackernoon,
     );
 
     // deliver(
