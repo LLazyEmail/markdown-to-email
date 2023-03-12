@@ -31,8 +31,6 @@ images:
 
 [separator]
 
-# Secrets Of High-Performing Teams: Part II
-
 ## This is our second newsletter in the series of Secrets of Top-Performing DevOps Teams. In the first part, we’ve got to grips with the [DevOps approach](https://hackernoon.com/devops-fundamentals-you-ever-wanted-to-know-zt2m3uh6) and the way it has [amplified the IT workflow](https://hackernoon.com/tagged/workflow).
 
 
@@ -40,7 +38,7 @@ images:
 [WE NEED TO REPLACE AN IMAGE]
 
 ![alt_text](https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image3.gif "image_tooltip")
-
+[image3]
 
 <!-- Link: [https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy.gif](https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy.gif)  -->
 
@@ -71,7 +69,7 @@ Successful DevOps teams are more likely to tie their tech projects to revenue, m
 
 [WE NEED TO REPLACE AN IMAGE]
 ![alt_text](https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image4.gif "image_tooltip")
-
+[image4]
 
 
 <!--     Link: [https://media.giphy.com/media/l2JeierkQlHpJsGWY/giphy.gif](https://media.giphy.com/media/l2JeierkQlHpJsGWY/giphy.gif)  -->
@@ -89,7 +87,7 @@ A [developer is no longer just a developer](https://hackernoon.com/highest-paid-
 
 [WE NEED TO REPLACE AN IMAGE]    
 ![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image6.gif][https://media.giphy.com/media/PvvSfSDFoAL5e/giphy.gif][alt text]
-
+[image6]
 
 ** 3. Automation technology is not an option for a [dazzling performance](https://hackernoon.com/my-top-three-priorities-as-a-software-development-manager-cq2x32c1)**
 
@@ -101,6 +99,7 @@ Investing in the [DevOps tools](https://hackernoon.com/7-best-devops-security-pr
 
 [WE NEED TO REPLACE AN IMAGE]
 ![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image1.gif][https://media.giphy.com/media/3oFzmjFxbBiPQW4qVa/giphy.gif][alt text]
+[image1]
 
 -------
 
@@ -129,3 +128,5 @@ _Join us to welcome today newsletter’s sponsor - [BridgeCrew](https://bit.ly/3
 
 [WE NEED TO REPLACE AN IMAGE]
 ![https://gitlab.com/hackernoon/creative/-/raw/master/newsletters/memes/2020/november/18.11/image5.gif][https://media.giphy.com/media/3orieTeAMaKc4yhwmk/giphy.gif][alt text]
+
+[image5]

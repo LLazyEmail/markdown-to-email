@@ -1,9 +1,7 @@
 import {
   writeHTML,
   isFolderExists,
-  readSourceFile,
   generateTemplateName,
-  readFrontMatter,
 } from 'markup-generator';
 import {
   generateHtmlFullTemplateHackernoon,
@@ -13,25 +11,17 @@ import {
 import { printMessage } from './src/domain/helper-methods/cli';
 import { deliver } from './src/domain/deliver/deliver';
 import { MESSAGE_HTML_FULL_TEMPLATE2 } from './src/domain/deliver/deliver.constants';
-import { hackernoonContent, FULL_SOURCE } from './src/domain/content-source';
+import {
+  hackernoonContent,
+  FULL_SOURCE,
+  nomoretogoContent,
+  front_markdown_hackernoon,
+} from './src/domain/content-source';
 // TODO add more messages here, and finally replace messages in our methods
 const MESSAGE_REACT_FULL_TEMPLATE =
   'The FullTemplate has been parsed successfully';
 // const MESSAGE_REACT_CONTENT = 'The Content has been parsed successfully';
-
-//-------------------
-// @TODO add path package, in order to make it work PERFECTLY
-// const FULL_SOURCE = 'source/source.md';
-// const RECIPES_SOURCE = 'source/recipes/source-nmtg.md';
-// updated version
-// const FRONT_HN_SOURCE = 'source/front-matter/03-hackernoon-source.md';
-// const FRONT_NMTG_SOURCE = 'sourcefront-matter/05-source-weekly-menu.md';
-// const front_markdown_hackernoon = readFrontMatter(FRONT_HN_SOURCE);
-// const front_makrdown_nmtg = readFrontMatter(FRONT_NMTG_SOURCE);
-
-// console.log(front_markdown_hackernoon);
-
-// const markdown = readSourceFile(FULL_SOURCE);
+// connection to source files moved into /domain/content-source/index.js
 const markdown = hackernoonContent;
 
 isFolderExists('./generated');
@@ -56,7 +46,7 @@ export const modes = {
     printMessage(MESSAGE_REACT_FULL_TEMPLATE, 'green2');
   },
   recipesFull: () => {
-    const markdownRecipes = readSourceFile(RECIPES_SOURCE);
+    const markdownRecipes = nomoretogoContent;
 
     const recipesFullTemplate =
       generateHtmlFullTemplateRecipes(markdownRecipes);
@@ -66,6 +56,20 @@ export const modes = {
       'recipes-full-template',
       MESSAGE_HTML_FULL_TEMPLATE2,
     );
+  },
+  hackernnonFront: () => {
+    // const markdownRecipes = nomoretogoContent;
+
+    const recipesFullTemplate = generateHtmlFullTemplateHackernoon(
+      front_markdown_hackernoon.markdown,
+      front_markdown_hackernoon.frontMatter,
+    );
+
+    // deliver(
+    //   recipesFullTemplate,
+    //   'recipes-full-template',
+    //   MESSAGE_HTML_FULL_TEMPLATE2,
+    // );
   },
 };
 

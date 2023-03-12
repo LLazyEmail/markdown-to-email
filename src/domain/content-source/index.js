@@ -8,22 +8,22 @@ const RECIPES_SOURCE = resolve('./source/recipes/source-nmtg.md');
 const FRONT_HN_SOURCE = resolve(
   './source/front-matter/03-hackernoon-source.md',
 );
-const FRONT_NMTG_SOURCE = resolve(
-  './source/front-matter/05-source-weekly-menu.md',
-);
+// const FRONT_NMTG_SOURCE = resolve(
+//   './source/front-matter/05-source-weekly-menu.md',
+// );
 // --------------
 const front_markdown_hackernoon = readFrontMatter(FRONT_HN_SOURCE);
-const front_makrdown_nmtg = readFrontMatter(FRONT_NMTG_SOURCE);
+// const front_makrdown_nmtg = readFrontMatter(FRONT_NMTG_SOURCE);
 
-// console.log(front_markdown_hackernoon);
+console.log(front_markdown_hackernoon);
 
 const hackernoonContent = readSourceFile(FULL_SOURCE);
-const nomoretogoContent = front_makrdown_nmtg;
+const nomoretogoContent = readSourceFile(RECIPES_SOURCE);
 
 export {
   hackernoonContent,
   FULL_SOURCE,
   nomoretogoContent,
-  RECIPES_SOURCE,
+  //   RECIPES_SOURCE,
   front_markdown_hackernoon,
 };
