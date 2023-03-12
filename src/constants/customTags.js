@@ -29,6 +29,9 @@ const REGEXP_LINK_HTTPS = new RegExp('>https', 'g');
 const REGEXP_STR_BEGIN = '>https';
 const REGEXP_STR_END = 'f<';
 
+const regex_string2 = `\\[image\d\\]`;
+const REGEXP_IMAGES_FRONT = new RegExp(newLine + regex_string2 + newLine, 'g');
+
 export {
   REGEXP_SPONSORSHIP,
   REGEXP_HTML_COMMENTS,
@@ -40,4 +43,6 @@ export {
   REGEXP_STR_BEGIN,
   REGEXP_STR_END,
   REGEXP_SEPARATOR,
+  // ------------
+  REGEXP_IMAGES_FRONT,
 };
