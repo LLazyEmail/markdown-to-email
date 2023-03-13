@@ -16,7 +16,7 @@ import {
   hackernoonContent,
   FULL_SOURCE,
   nomoretogoContent,
-  front_markdown_hackernoon,
+  frontMarkdownHackernoon,
 } from './src/domain/content-source';
 // TODO add more messages here, and finally replace messages in our methods
 const MESSAGE_REACT_FULL_TEMPLATE =
@@ -25,7 +25,7 @@ const MESSAGE_REACT_FULL_TEMPLATE =
 // connection to source files moved into /domain/content-source/index.js
 const markdown = hackernoonContent;
 // console.log('-----');
-// console.log(front_markdown_hackernoon);
+// console.log(frontMarkdownHackernoon);
 
 isFolderExists('./generated');
 isFolderExists('./tests/_generated');
@@ -64,7 +64,7 @@ export const modes = {
     // const markdownRecipes = nomoretogoContent;
 
     const HNFrontFullTemplate = generateFrontHackernoon(
-      front_markdown_hackernoon,
+      frontMarkdownHackernoon,
     );
 
     deliver(

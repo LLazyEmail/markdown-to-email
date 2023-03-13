@@ -15,11 +15,11 @@ const FRONT_HN_SOURCE = resolve(
 //   './source/front-matter/05-source-weekly-menu.md',
 // );
 // --------------
-const front_markdown_hackernoon = readFrontMatter(FRONT_HN_SOURCE);
+const frontMarkdownHackernoon = readFrontMatter(FRONT_HN_SOURCE);
 // const front_makrdown_nmtg = readFrontMatter(FRONT_NMTG_SOURCE);
 
-// console.log(front_markdown_hackernoon);
-// const dddata = front_markdown_hackernoon.frontMatter;
+// console.log(frontMarkdownHackernoon);
+// const dddata = frontMarkdownHackernoon.frontMatter;
 // adding it here right now just for trsting purposes
 
 // getPreview(dddata), getTitle(dddata), getAds(dddata), getImages(dddata);
@@ -36,5 +36,5 @@ export {
   FULL_SOURCE,
   nomoretogoContent,
   //   RECIPES_SOURCE,
-  front_markdown_hackernoon,
+  frontMarkdownHackernoon,
 };
