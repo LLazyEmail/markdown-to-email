@@ -7,6 +7,7 @@ import {
   generateHtmlFullTemplateHackernoon,
   generateReactFullTemplateHackernoon,
   generateHtmlFullTemplateRecipes,
+  generateFrontHackernoon,
 } from './src';
 import { printMessage } from './src/domain/helper-methods/cli';
 import { deliver } from './src/domain/deliver/deliver';
@@ -60,7 +61,7 @@ export const modes = {
   hackernnonFront: () => {
     // const markdownRecipes = nomoretogoContent;
 
-    const recipesFullTemplate = generateFrontHackernoon(
+    const HNFrontFullTemplate = generateFrontHackernoon(
       front_markdown_hackernoon,
     );
 

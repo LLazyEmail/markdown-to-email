@@ -13,8 +13,8 @@ const REGEXP_MEM = /\!\[(.*?)\]\[(.*?)\]\[(.*?)\]/g;
 const REGEXP_PREVIEW_TEXT = new RegExp(`#~(.*?)${newLine}`);
 //-------
 // TODO add that beforeMethod
-const regex_string = `\\[separator\\]`;
-const REGEXP_SEPARATOR = new RegExp(newLine + regex_string + newLine, 'g');
+const regexString = `\\[separator\\]`;
+const REGEXP_SEPARATOR = new RegExp(newLine + regexString + newLine, 'g');
 //----------
 
 const REGEXP_HASH_TAG = new RegExp(
@@ -29,8 +29,8 @@ const REGEXP_LINK_HTTPS = new RegExp('>https', 'g');
 const REGEXP_STR_BEGIN = '>https';
 const REGEXP_STR_END = 'f<';
 
-const regex_string2 = `\\[image\d\\]`;
-const REGEXP_IMAGES_FRONT = new RegExp(newLine + regex_string2 + newLine, 'g');
+const regexString2 = `\\[image\\d\\]`;
+const REGEXP_IMAGES_FRONT = new RegExp(newLine + regexString2 + newLine, 'g');
 
 export {
   REGEXP_SPONSORSHIP,

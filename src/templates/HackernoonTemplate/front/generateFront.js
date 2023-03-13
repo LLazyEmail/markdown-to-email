@@ -13,7 +13,7 @@ const parseContent = ({ markdown, data }) => {
   );
 };
 // printTemplate must support content + data attributes
-const hackernoonTemplate = (content, data) =>
+const hackernoonFrontTemplate = (content, data) =>
   TObject.printTemplateData(content, data);
 // i'm using 2 arguments for back dependency ability
 export const generateFrontHackernoon = ({ markdown, data }) => {
@@ -29,7 +29,14 @@ export const generateFrontHackernoon = ({ markdown, data }) => {
 
   verification(warnings, content);
 
-  const hackernoonFullTemplate = hackernoonTemplate(content, data);
+  const settings = {
+    string: content,
+    data,
+  };
+
+  const hackernoonFullTemplate = hackernoonFrontTemplate(settings);
+
+  console.log(hackernoonFullTemplate);
 
   return hackernoonFullTemplate;
 };
