@@ -24,6 +24,8 @@ const MESSAGE_REACT_FULL_TEMPLATE =
 // const MESSAGE_REACT_CONTENT = 'The Content has been parsed successfully';
 // connection to source files moved into /domain/content-source/index.js
 const markdown = hackernoonContent;
+// console.log('-----');
+// console.log(front_markdown_hackernoon);
 
 isFolderExists('./generated');
 isFolderExists('./tests/_generated');
@@ -65,11 +67,11 @@ export const modes = {
       front_markdown_hackernoon,
     );
 
-    // deliver(
-    //   recipesFullTemplate,
-    //   'recipes-full-template',
-    //   MESSAGE_HTML_FULL_TEMPLATE2,
-    // );
+    deliver(
+      HNFrontFullTemplate,
+      'frontmatter-full-template',
+      MESSAGE_HTML_FULL_TEMPLATE2,
+    );
   },
 };
 
