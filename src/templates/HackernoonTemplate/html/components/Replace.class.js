@@ -5,13 +5,8 @@ import { replaceMarkdown } from '../../../../domain/replace-markdown/html/replac
 class Replace {
   constructor() {
     this.replaceMDBinded = () => {};
-
     // I think this version isnt working well
     // Replacer.replaceMDBindedPreviewText = replaceMarkdownPreviewText.bind(state);
-    // this.replaceMDBindedPreviewText = () => {};
-
-    this.previewText = () => this.replaceMDBinded('previewText');
-
     this.strong = () => this.replaceMDBinded('strong');
     this.em = () => this.replaceMDBinded('italic');
     // TODO finish this case
@@ -21,6 +16,7 @@ class Replace {
     this.header = () => this.replaceMDBinded('header');
     this.subtitle = () => this.replaceMDBinded('header');
     this.title = () => this.replaceMDBinded('header');
+    //---
     this.image = () => this.replaceMDBinded('image');
     this.link = () => this.replaceMDBinded('link');
     this.del = () => this.replaceMDBinded('del');
@@ -32,11 +28,13 @@ class Replace {
     this.hr = () => this.replaceMDBinded('hr');
     this.paragraph = () => this.replaceMDBinded('paragraph');
     this.br = () => this.replaceMDBinded('br');
+    //-------
+    // those methods might get replaced with front-matter
+    this.previewText = () => this.replaceMDBinded('previewText');
     this.sponsorship = () => this.replaceMDBinded('sponsorship');
     // here we have a different name
     this.memes = () => this.replaceMDBinded('memes');
     this.separator = () => this.replaceMDBinded('separator');
-
     // TODO hiding for now, let's fix it after our release
     // this.emptyUl = () => this.replaceMDBinded('REGEXP_EMPTY_UL');
     // this.emptyOl = () => this.replaceMDBinded('REGEXP_EMPTY_OL');
@@ -57,10 +55,6 @@ class Replace {
     this.miscellaneous();
   }
 
-  template() {
-    this.header();
-  }
-
   // TODO I think we need to upgrade this class,
   // in order to match it with our updated logic of organizing components
 
@@ -74,9 +68,13 @@ class Replace {
     if (!process.env.PARSE === 'noAdv' || process.env.PARSE === 'full') {
       this.sponsorship();
     }
-
+    // might get removed after integration of front-matter
     this.memes();
     this.separator();
+  }
+
+  template() {
+    this.header();
   }
 
   typography() {

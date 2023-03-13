@@ -5,12 +5,17 @@ import os from 'os';
 const platform = os.platform();
 
 const newLine = platform === 'win32' ? '\r\n' : '\n';
-
+// those RegEx`es might gone after integration of front matter
 const REGEXP_SPONSORSHIP = /~(\[(.*?)\]){3}/g;
 const REGEXP_HTML_COMMENTS = /<!--(([\r\n]|.)*?)-->/g;
 // eslint-disable-next-line no-useless-escape
 const REGEXP_MEM = /\!\[(.*?)\]\[(.*?)\]\[(.*?)\]/g;
 const REGEXP_PREVIEW_TEXT = new RegExp(`#~(.*?)${newLine}`);
+//-------
+// TODO add that beforeMethod
+const regexString = `\\[separator\\]`;
+const REGEXP_SEPARATOR = new RegExp(newLine + regexString + newLine, 'g');
+//----------
 
 const REGEXP_HASH_TAG = new RegExp(
   // eslint-disable-next-line no-control-regex
@@ -24,9 +29,8 @@ const REGEXP_LINK_HTTPS = new RegExp('>https', 'g');
 const REGEXP_STR_BEGIN = '>https';
 const REGEXP_STR_END = 'f<';
 
-// TODO add that beforeMethod
-const regex_string = `\\[separator\\]`;
-const REGEXP_SEPARATOR = new RegExp(newLine + regex_string + newLine, 'g');
+const regexString2 = `\\[image\\d\\]`;
+const REGEXP_IMAGES_FRONT = new RegExp(newLine + regexString2 + newLine, 'g');
 
 export {
   REGEXP_SPONSORSHIP,
@@ -39,4 +43,6 @@ export {
   REGEXP_STR_BEGIN,
   REGEXP_STR_END,
   REGEXP_SEPARATOR,
+  // ------------
+  REGEXP_IMAGES_FRONT,
 };

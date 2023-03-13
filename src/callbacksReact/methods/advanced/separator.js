@@ -1,14 +1,7 @@
-import { newLine } from '../helpers';
-
 import { commonReplace } from '../../../domain/replace-wrapper3.0/commonReplace';
+import { newLine } from '../../../domain/helper-methods';
 
-function _separator(
-  text,
-  // content
-) {
-  // console.log(text);
-  // console.log(content);
-
+function _separator(text) {
   const params = {
     content: text.trim(), // we have an issue, when we passing empty params
   };
@@ -22,7 +15,6 @@ function _separator(
   };
 
   const replaced = commonReplace(config);
-  // console.log(replaced);
   return newLine + replaced + newLine;
 }
 
