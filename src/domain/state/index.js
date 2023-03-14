@@ -1,14 +1,11 @@
-//------------------
-// ---- helper > command-line-methods
-import {
-  checkErrors,
-  checkWarnings,
-  // checkHtml,
-} from '../../helper';
+import { checkErrors } from '../helper-methods/cli';
+import { checkWarnings } from '../helper-methods';
+
 // TODO convert into singleton
-const stateInit = (markdown, configurationMap) => {
+const stateInit = (markdown, configurationMap, data = false) => {
   const stateObject = {
     content: markdown,
+    data: data || false,
     previewText: '',
     warnings: {
       images: 0,

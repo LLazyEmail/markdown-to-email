@@ -1,6 +1,5 @@
-// import { writeHTML, generateTemplateName } from '../write';
 import { writeHTML, generateTemplateName } from 'markup-generator';
-import { printMessage } from '../../helper';
+import { printMessage } from '../helper-methods/cli';
 
 export const deliver = (template, name, message) => {
   const fileName = generateTemplateName(name, 'html');

@@ -4,10 +4,7 @@ import body from 'atherdon-newsletter-js-layouts-body';
 
 import {
   _strong,
-  _link,
   _blockquote,
-  _meme,
-  _header,
   //--------
   _italic,
   // _italicAsterix,
@@ -22,12 +19,15 @@ import {
   _olList,
   getParsedSubList,
   //--------------
-  _image,
   _paragraphWrapper,
-  _sponsorship,
   _br,
+  // those callbacks might get replaced with front-matter integration
+  _image,
+  _link,
+  _meme,
+  _header,
+  _sponsorship,
   _separator,
-  //
   _previewText,
 } from '../../../../callbacks/html/index';
 
@@ -35,6 +35,7 @@ import {
   REGEXP_HEADER,
   REGEXP_IMAGE,
   REGEXP_LINK,
+  REGEXP_PARAGRAPH,
   REGEXP_STRONG,
   REGEXP_DEL,
   REGEXP_Q,
@@ -48,7 +49,6 @@ import {
   REGEXP_SPONSORSHIP,
   REGEXP_MEM,
   REGEXP_PREVIEW_TEXT,
-  REGEXP_PARAGRAPH,
   REGEXP_SEPARATOR,
 } from '../../../../constants/index';
 
@@ -79,6 +79,7 @@ const {
   strongComponent,
 } = typography;
 
+// custom components that can be simplified with front-matter
 const { sponsorComponent, previewTextComponent } = body;
 
 const map = {
@@ -86,20 +87,13 @@ const map = {
   link: objectBuilder(REGEXP_LINK, _link, linkComponent),
   del: objectBuilder(REGEXP_DEL, _del, false),
   image: objectBuilder(REGEXP_IMAGE, _image, imageComponent),
-  previewText: objectBuilder(
-    REGEXP_PREVIEW_TEXT,
-    _previewText,
-    previewTextComponent,
-  ),
+
   italic: objectBuilder(REGEXP_UNDERSCORE_ITALIC, _italic, italicComponent),
   italic_asterix: objectBuilder(
     REGEXP_ASTERIX_ITALIC,
     _italic,
     italicComponent,
   ),
-  header: objectBuilder(REGEXP_HEADER, _header, headingComponent),
-  subtitle: objectBuilder(REGEXP_HEADER, _header, subtitleComponent),
-  title: objectBuilder(REGEXP_HEADER, _header, titleComponent),
   q: objectBuilder(REGEXP_Q, _q, false),
   code: objectBuilder(REGEXP_CODE, _code, false),
   listItem: objectBuilder(
@@ -120,6 +114,15 @@ const map = {
     paragraphComponent,
   ),
   br: objectBuilder(REGEXP_BR, _br),
+  // custom and complex objects, front-matter replacable
+  previewText: objectBuilder(
+    REGEXP_PREVIEW_TEXT,
+    _previewText,
+    previewTextComponent,
+  ),
+  header: objectBuilder(REGEXP_HEADER, _header, headingComponent),
+  subtitle: objectBuilder(REGEXP_HEADER, _header, subtitleComponent),
+  title: objectBuilder(REGEXP_HEADER, _header, titleComponent),
   sponsorship: objectBuilder(
     REGEXP_SPONSORSHIP,
     _sponsorship,
@@ -131,25 +134,5 @@ const map = {
 
 // OLD version
 // const italic:objectBuilder(REGEXP_EM, _italic, italicLiteral);
-
-// REGEXP_UNDERSCORE_ITALIC,
-// REGEXP_ASTERIX_ITALIC,
-// qLiteral,
-// empty as emptyLiteral,
-
-// 'REGEXP_EMPTY_UL': {
-//   constant: REGEXP_EMPTY_UL,
-//   replacer: emptyUl
-// },
-
-// 'REGEXP_EMPTY_OL': {
-//   constant: REGEXP_EMPTY_OL,
-//   replacer: emptyOl
-// },
-
-// 'REGEXP_EMPTY_BLOCKQUOTE': {
-//   constant: REGEXP_EMPTY_BLOCKQUOTE,
-//   replacer: emptyBlockQuote
-// },
 
 export default map;

@@ -122,85 +122,10 @@ function _blockquote() {
   // };
 }
 
-function _meme(text, src, href, altText) {
-  const params = {
-    src: src.trim(),
-    altText: altText.trim(),
-    href: href.trim(),
-  };
-
-  const config = {
-    configurationMap: this.configurationMap,
-    params,
-    name: 'meme',
-    debug: true,
-  };
-
-  const replaced = commonReplace(config);
-  return replaced;
-}
-
-// function _header(text, chars, content) {
-//   const params = {
-//     content: content.trim(),
-//   };
-
-//   const titleType = ['mainTitle', 'subtitle', 'heading'];
-//   const name = titleTypes[chars.length - 1];
-
-//    const config = {
-// configurationMap: this.configurationMap,
-//     params,
-//     name,
-
-//     // debug: true,
-//   };
-
-//   const replaced = commonReplace(config);
-//   return newLine + replaced;
-
-// }
-
-function _separator(text) {
-  const params = {
-    content: text.trim(), // we have an issue, when we passing empty params
-  };
-
-  const config = {
-    configurationMap: this.configurationMap,
-    params,
-
-    name: 'separator',
-    debug: true,
-  };
-
-  const replaced = commonReplace(config);
-  return newLine + replaced + newLine;
-}
-
-function _previewText(text, content) {
-  const params = {
-    content,
-  };
-
-  const config = {
-    configurationMap: this.configurationMap,
-    params,
-    name: 'previewText',
-    debug: true,
-  };
-
-  // this.previewText = true;
-
-  const replaced = commonReplace(config);
-  return replaced;
-}
-
 export {
   _strong,
   _link,
   _blockquote,
-  _meme,
   // _header,
   _italic,
   _del,
@@ -208,6 +133,4 @@ export {
   _code,
   _hr,
   _empty,
-  _previewText,
-  _separator,
 };
