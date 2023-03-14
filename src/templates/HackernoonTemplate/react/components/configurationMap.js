@@ -15,13 +15,13 @@ import {
   REGEXP_HR,
   REGEXP_BR,
   REGEXP_EM,
-  // REGEXP_SPONSORSHIP,
-  // REGEXP_MEM,
-  // REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
-  // REGEXP_SEPARATOR,
 } from '../../../../constants/index';
-
+import // REGEXP_SPONSORSHIP,
+// REGEXP_MEM,
+// REGEXP_PREVIEW_TEXT,
+// REGEXP_SEPARATOR,
+'../../../../domain/regular-expressions/index';
 import objectBuilder from '../../../../domain/objectBuilder';
 
 const {

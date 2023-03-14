@@ -46,16 +46,20 @@ import {
   REGEXP_HR,
   REGEXP_BR,
   // REGEXP_EM,
-  REGEXP_SPONSORSHIP,
-  REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT,
-  REGEXP_SEPARATOR,
+  // REGEXP_SPONSORSHIP,
+  // REGEXP_MEM,
+  // REGEXP_PREVIEW_TEXT,
+  // REGEXP_SEPARATOR,
 } from '../../../../constants/index';
-
+// custom tags
 import {
   REGEXP_SUB_LISTS,
   REGEXP_UNDERSCORE_ITALIC,
   REGEXP_ASTERIX_ITALIC,
+  REGEXP_SPONSORSHIP,
+  REGEXP_MEM,
+  REGEXP_PREVIEW_TEXT,
+  REGEXP_SEPARATOR,
 } from '../../../../domain/regular-expressions';
 
 // atherdon-newsletter-js-layouts-misc

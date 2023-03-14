@@ -43,13 +43,14 @@ import {
   REGEXP_HR,
   REGEXP_BR,
   // REGEXP_EM,
+  REGEXP_PARAGRAPH,
+} from '../../../../constants/index';
+import {
   // REGEXP_SPONSORSHIP,
   REGEXP_MEM,
   // REGEXP_PREVIEW_TEXT,
-  REGEXP_PARAGRAPH,
   REGEXP_SEPARATOR,
-} from '../../../../constants/index';
-
+} from '../../../../domain/regular-expressions/index';
 import objectBuilder from '../../../../domain/objectBuilder';
 // TODO add here error handlers from domain/error-handle.
 // removing them from this file

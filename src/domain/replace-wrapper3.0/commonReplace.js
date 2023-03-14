@@ -1,24 +1,9 @@
-//----------------
-// import { html } from 'lit-html'
-
-// import body from '../../templates/PlainJSOuterTemplate/layouts/body';
-// import misc from '../../templates/PlainJSOuterTemplate/layouts/misc';
-
 import {
   // getWrapper,
   // generateNewString,
   _loopForWrapper,
 } from '../../callbacks/helpers';
-
 import { inspector, catchErrorTraceOutput } from '../error-handle';
-
-// import { mainObject as mainObjectHtml } from '../replace-class';
-// import { mainObject as mainObjectReact } from '../react';
-
-// import replace from '../replace-class/index';
-// console.log(replace.mainObject);
-
-// import CallbackFactory from '../callbacks-factory';
 
 const ERROR_REPLACER = `no params was passed`;
 

@@ -18,12 +18,19 @@ import {
   REGEXP_HR,
   REGEXP_BR,
   // REGEXP_EM,
-  REGEXP_SPONSORSHIP,
-  REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT,
+  // REGEXP_SPONSORSHIP,
+  // REGEXP_MEM,
+  // REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
-  REGEXP_SEPARATOR,
+  // REGEXP_SEPARATOR,
 } from '../../../constants/index';
+// custom tags
+// import {
+//   REGEXP_SPONSORSHIP,
+//   REGEXP_MEM,
+//   REGEXP_PREVIEW_TEXT,
+//   REGEXP_SEPARATOR
+// } from '../../regular-expressions/index'
 
 import PlainCallbacks from '../../../callbacks/html';
 
@@ -68,11 +75,11 @@ export {
   REGEXP_HR,
   REGEXP_BR,
   // REGEXP_EM,
-  REGEXP_SPONSORSHIP,
-  REGEXP_MEM,
-  REGEXP_PREVIEW_TEXT,
+  // REGEXP_SPONSORSHIP,
+  // REGEXP_MEM,
+  // REGEXP_PREVIEW_TEXT,
   REGEXP_PARAGRAPH,
-  REGEXP_SEPARATOR,
+  // REGEXP_SEPARATOR,
   //-------------------------
   readSourceFile,
   //-------------------------
