@@ -1,4 +1,5 @@
 import stateInit from './state';
+// import { verification } from './helper-methods';
 
 function parse(markdown, configureReplacer, config, data = false) {
   // passing content into the state,
@@ -13,5 +14,31 @@ function parse(markdown, configureReplacer, config, data = false) {
 
   return state;
 }
+
+// const parseContent = ({ markdown, data }, config) => {
+//   return parse(
+//     markdown,
+//     // (state) => Replace.configure(state),
+//     config,
+//     data,
+//   );
+// };
+
+// const verificationAndParcing = (options) => {
+//   // const { frontMatter, markdown } = options;
+
+//   const {
+//     content,
+//     warnings,
+//     // previewText
+//   } = parseContent(options);
+
+//   verification(warnings, content);
+
+//   return {
+//     content,
+//     warnings,
+//   };
+// };
 
 export default parse;

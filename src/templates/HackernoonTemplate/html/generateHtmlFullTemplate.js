@@ -28,6 +28,11 @@ export const generateHtmlFullTemplateHackernoon = (markdown, data = false) => {
 
   verification(warnings, content);
 
+  // const {
+  // content,
+  // warnings,
+  // } = verificationAndParcing(options)
+
   const hackernoonFullTemplate = hackernoonTemplate(content);
 
   return hackernoonFullTemplate;

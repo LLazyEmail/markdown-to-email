@@ -16,6 +16,11 @@ export const generateReactFullTemplateHackernoon = (markdown) => {
 
   verification(warnings);
 
+  // const {
+  // content,
+  // warnings,
+  // } = verificationAndParcing(options)
+
   const fullContent = reactFullTemplate(content);
 
   return fullContent;

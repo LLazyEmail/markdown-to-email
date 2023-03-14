@@ -21,6 +21,11 @@ export const generateHtmlFullTemplateRecipes = (markdown) => {
 
   verification(warnings, content);
 
+  // const {
+  // content,
+  // warnings,
+  // } = verificationAndParcing(options)
+
   const recipesFullTemplate = recipesTemplate(content);
 
   return recipesFullTemplate;

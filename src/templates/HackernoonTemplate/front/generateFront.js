@@ -35,6 +35,11 @@ export const generateFrontHackernoon = (options) => {
 
   verification(warnings, content);
 
+  // const {
+  // content,
+  // warnings,
+  // } = verificationAndParcing(options)
+
   const settings = {
     string: content,
     data: frontMatter,
