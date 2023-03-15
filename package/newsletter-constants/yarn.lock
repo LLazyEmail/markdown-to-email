@@ -2535,9 +2535,11 @@ make-dir@^2.1.0:
     semver "^5.6.0"
 
 markdown-regex@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/markdown-regex/-/markdown-regex-1.0.1.tgz#360130885f51482744aff8d728f474d11b32f3e3"
-  integrity sha512-UV6AFgtBa6O9Dp1lOYIeV54/v39O/bsJFidP1Z9cQ2aonFuuM0Ob2uhNa5JlzZ40J/mqMHfK1/ih8l8tntqFww==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/markdown-regex/-/markdown-regex-1.2.0.tgz#6e9bea407a0380fd24e495459525dd23388d9917"
+  integrity sha512-hTIeUnrdr5qiZ493EXOzFA3/sl80HpXY72Yk8AcpBAJN9HuZKGYcSZ7J3SLB8tMRCuW51TzTxIg/F4P7KBkDlg==
+  dependencies:
+    os "0.1.2"
 
 md5.js@^1.3.4:
   version "1.3.5"
