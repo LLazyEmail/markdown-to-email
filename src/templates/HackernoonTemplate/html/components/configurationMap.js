@@ -118,6 +118,7 @@ const map = {
     paragraphComponent,
   ),
   br: objectBuilder(REGEXP_BR, _br),
+  // adding another line to separate our settings map
   // custom and complex objects, front-matter replacable
   previewText: objectBuilder(
     REGEXP_PREVIEW_TEXT,
