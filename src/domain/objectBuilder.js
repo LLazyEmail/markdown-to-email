@@ -1,17 +1,3 @@
-// TODO looks interesting to implement
-// class MissingFieldsError extends Error {
-//   constructor(fields, ...params) {
-//     super(...params);
-//     this.fields_ = fields;
-//   }
-
-//   getMissingFields() {
-//     return this.fields_;
-//   }
-// }
-// throw new MissingFieldsError("msg")
-
-
 const objectBuilderMap = {
   // Case 1: constant is a string, replacer is a function, literal is a function
   withConstant: {
@@ -200,7 +186,7 @@ const objectBuilderMap = {
     buildObject: (constant, replacer, literal) => ({ replacer, literal }),
   },
 };
-
+// ----------------
 
 function hasConstant(constant) {
   return Boolean(constant);
@@ -210,27 +196,7 @@ function isFunction(obj) {
   return typeof obj === "function";
 }
 
-function ERROR_INVALID_ARGUMENTS(constant, replacer, literal) {
-  return `Invalid arguments: constant=${constant}, replacer=${replacer}, literal=${literal}`;
-}
 
-
-function objectBuilder(constant = '', replacer = () => {}, literal = false) {
-  const options = getOptions(constant, replacer, literal);
-  return options;
-}
-
-
-function getOptions(constant, replacer, literal = false) {
-  const key = getKey(constant, replacer, literal);
-  const objectBuilder = objectBuilderMap[key];
-
-  if (!objectBuilder) {
-    throw new Error(`Invalid combination of arguments: ${key}`);
-  }
-
-  return objectBuilder(constant, replacer, literal);
-}
 
 function getKey(constant, replacer, literal) {
   const hasConstant = Boolean(constant);
@@ -250,5 +216,31 @@ function getKey(constant, replacer, literal) {
 
   throw new Error(`Invalid combination of arguments: ${hasConstant}, ${hasReplacer}, ${literal}`);
 }
+
+function ERROR_INVALID_ARGUMENTS(constant, replacer, literal) {
+  return `Invalid arguments: constant=${constant}, replacer=${replacer}, literal=${literal}`;
+}
+
+
+function getOptions(constant, replacer, literal = false) {
+  const key = getKey(constant, replacer, literal);
+  const objectBuilder = objectBuilderMap[key];
+
+  if (!objectBuilder) {
+    throw new Error(`Invalid combination of arguments: ${key}`);
+  }
+
+  return objectBuilder(constant, replacer, literal);
+}
+
+
+function objectBuilder(constant = '', replacer = () => {}, literal = false) {
+  const options = getOptions(constant, replacer, literal);
+  return options;
+}
+
+
+
+
 
 
