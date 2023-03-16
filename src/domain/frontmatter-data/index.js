@@ -1,16 +1,20 @@
 import _ from 'lodash';
 
+const getValueByName = (obj, propName) => {
+  return _.get(obj, propName);
+};
 const getPreview = (data) => {
-  return _.get(data, 'preview');
+  return getValueByName(data, 'preview');
 };
 const getTitle = (data) => {
-  return _.get(data, 'title');
+  return getValueByName(data, 'title');
 };
 const getAds = (data) => {
-  return _.get(data, 'ads');
+  return getValueByName(data, 'ads');
 };
 const getImages = (data) => {
-  return _.get(data, 'images');
+  return getValueByName(data, 'images');
 };
 
-export { getPreview, getTitle, getAds, getImages };
+
+export { getValueByName, getPreview, getTitle, getAds, getImages };
