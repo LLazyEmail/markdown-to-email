@@ -16,7 +16,7 @@
 // `markdown`: the Markdown content to parse and use for generating the template.
 // `parseOptions`: an object containing any options that need to be passed to the parseContent function. This object is used to specify how the Markdown content should be parsed.
 // `templateFunction`: the function to use for generating the HTML template.
-export const generateFullTemplate = (
+const generateFullTemplate = (
   markdown,
   parseOptions,
   templateFunction,
@@ -46,3 +46,5 @@ export const generateFullTemplate = (
 // export const generateHtmlFullTemplateRecipes = (markdown) => {
 //   return generateFullTemplate(markdown, { markdown }, recipesTemplate);
 // };
+
+export default generateFullTemplate;

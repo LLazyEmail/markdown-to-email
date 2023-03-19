@@ -1,10 +1,10 @@
 import TObject from 'atherdon-old-newsletter-js-outertemplate';
 import parse from '../../../domain/parse';
 import { verification } from '../../../domain/helper-methods';
-import Replace from '../html/components/Replace.class';
+import Replace from './Replace.class';
 import configurationMap from '../html/components/configurationMap';
 
-// import generateFullTemplate from '../../../domain/template-helper';
+import generateFullTemplate from '../../../domain/template-helper';
 
 // this method will be updated in order to fit with front matter integration
 const parseContent = ({ markdown, data }) => {
@@ -22,6 +22,7 @@ const parseContent = ({ markdown, data }) => {
 // printTemplate must support content + data attributes
 const hackernoonFrontTemplate = (settings) =>
   TObject.printTemplateData(settings);
+// ---
 // i'm using 2 arguments for back dependency ability
 export const generateFrontHackernoon = (options) => {
   const { frontMatter, markdown } = options;
@@ -31,16 +32,18 @@ export const generateFrontHackernoon = (options) => {
   //
   // console.log(markdown);
   // console.log(frontMatter);
-  const {
-    content,
-    warnings,
-    // previewText
-  } = parseContent({
-    markdown,
-    frontMatter,
-  });
+  // const {
+  //   content,
+  //   warnings,
+  //   // previewText
+  // } = parseContent({
+  //   markdown,
+  //   frontMatter,
+  // });
 
-  verification(warnings, content);
+  // verification(warnings, content);
+
+  const content = parseContent(options);
 
   // const {
   // content,
@@ -55,7 +58,18 @@ export const generateFrontHackernoon = (options) => {
   const hackernoonFullTemplate = hackernoonFrontTemplate(settings);
 
   // console.log(hackernoonFullTemplate);
+
+  console.log(
+    generateFullTemplate(
+      markdown,
+      settings,
+      hackernoonFrontTemplate,
+      parseContent,
+    ),
+  );
+
   return hackernoonFullTemplate;
+
   // return generateFullTemplate(markdown, {markdown, data}, hackernoonFrontTemplate);
 };
 

@@ -18,7 +18,7 @@ import _br from './methods/br';
 // advanced callbacks that might get replaced with front matter
 import { _image } from './methods/advanced/image';
 import _separator from './methods/advanced/separator';
-import _meme from './methods/advanced/memes';
+import { _meme, _memeData } from './methods/advanced/memes';
 import { _sponsorship } from './methods/advanced/sponsor';
 import _previewText from './methods/advanced/preview';
 //---------------
@@ -50,4 +50,5 @@ export {
   _separator,
   _previewText,
   _meme,
+  _memeData,
 };
