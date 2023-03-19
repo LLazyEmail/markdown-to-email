@@ -45,27 +45,27 @@ class Replacer {
     // this.template();
     // this.typography();
   }
-// Define miscellaneous, template, and typography methods as abstract methods
-//   miscellaneous() {
-//     throw new Error("Method 'miscellaneous' must be implemented.");
-//   }
-//   template() {
-//     throw new Error("Method 'template' must be implemented.");
-//   }
-//   typography() {
-//     throw new Error("Method 'typography' must be implemented.");
-//   }
-// Add a method to add more methods to the class
-//   addMethods(newMethods) {
-//     this.methods.push(...newMethods);
-//   }
+  // Define miscellaneous, template, and typography methods as abstract methods
+  //   miscellaneous() {
+  //     throw new Error("Method 'miscellaneous' must be implemented.");
+  //   }
+  //   template() {
+  //     throw new Error("Method 'template' must be implemented.");
+  //   }
+  //   typography() {
+  //     throw new Error("Method 'typography' must be implemented.");
+  //   }
+  // Add a method to add more methods to the class
+  //   addMethods(newMethods) {
+  //     this.methods.push(...newMethods);
+  //   }
 
-//   // Call methods added through addMethods
-//   runMethods() {
-//     for (const method of this.methods) {
-//       this[method]();
-//     }
-//   }
+  //   // Call methods added through addMethods
+  //   runMethods() {
+  //     for (const method of this.methods) {
+  //       this[method]();
+  //     }
+  //   }
 }
 
 export default Replacer;

@@ -1,41 +1,42 @@
-import { verification } from './helper-methods';
-import parse from './parse';
-import Replace from '../templates/HackernoonTemplate/html/components/Replace.class';
+// import { verification } from './helper-methods';
+// import parse from './parse';
+// import Replace from '../templates/HackernoonTemplate/html/components/Replace.class';
 
-const configurationMap = [];
-const parseContent = ({ markdown, data }) => {
-  return parse(
-    markdown,
-    (state) => Replace.configure(state),
-    configurationMap,
-    data,
-  );
-};
+// const configurationMap = [];
+// const parseContent = ({ markdown, data }) => {
+//   return parse(
+//     markdown,
+//     (state) => Replace.configure(state),
+//     configurationMap,
+//     data,
+//   );
+// };
 
-// The `generateHtmlFullTemplate` function takes three arguments:
+// The `generateFullTemplate` function takes three arguments:
 // `markdown`: the Markdown content to parse and use for generating the template.
 // `parseOptions`: an object containing any options that need to be passed to the parseContent function. This object is used to specify how the Markdown content should be parsed.
 // `templateFunction`: the function to use for generating the HTML template.
-export const generateHtmlFullTemplate = (
+export const generateFullTemplate = (
   markdown,
   parseOptions,
   templateFunction,
+  parseContentFunction,
 ) => {
   const {
     content,
-    warnings,
+    // warnings,
     // previewText
-  } = parseContent(parseOptions);
+  } = parseContentFunction(parseOptions);
 
-  verification(warnings, content);
+  // verification(warnings, content);
 
-  const fullTemplate = templateFunction(content);
+  const generatedTemplate = templateFunction(content);
 
-  return fullTemplate;
+  return generatedTemplate;
 };
 
 // export const generateHtmlFullTemplateHackernoon = (markdown, data = false) => {
-//   return generateHtmlFullTemplate(
+//   return generateFullTemplate(
 //     markdown,
 //     { markdown, data },
 //     hackernoonTemplate,
@@ -43,5 +44,5 @@ export const generateHtmlFullTemplate = (
 // };
 
 // export const generateHtmlFullTemplateRecipes = (markdown) => {
-//   return generateHtmlFullTemplate(markdown, { markdown }, recipesTemplate);
+//   return generateFullTemplate(markdown, { markdown }, recipesTemplate);
 // };
