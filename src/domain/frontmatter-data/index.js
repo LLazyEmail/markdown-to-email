@@ -16,5 +16,4 @@ const getImages = (data) => {
   return getValueByName(data, 'images');
 };
 
-
 export { getValueByName, getPreview, getTitle, getAds, getImages };

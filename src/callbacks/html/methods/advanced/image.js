@@ -25,7 +25,7 @@ export function _image(text, alt, srcWithTooltip) {
   const replaced = commonReplace(config);
   return replaced;
 }
-
+// this version will be used to call few times with frontMatter data integration
 function _imageData(text, alt, srcWithTooltip) {
   // eslint-disable-next-line no-useless-escape
   // TODO img-tooltip-regex was defined in constants but was not replaced here...
@@ -51,4 +51,4 @@ function _imageData(text, alt, srcWithTooltip) {
   return replaced;
 }
 
-export default _image;
+export default _imageData;

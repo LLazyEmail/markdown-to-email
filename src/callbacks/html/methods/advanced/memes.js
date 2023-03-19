@@ -37,4 +37,4 @@ function _memeData(text, src, href, altText) {
   return replaced;
 }
 
-export default _meme;
+export { _meme, _memeData };
