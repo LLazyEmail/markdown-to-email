@@ -1,9 +1,9 @@
 import TObject from 'atherdon-old-newsletter-js-outertemplate';
-import parse from '../../../domain/parse';
+import { parse, newParse } from '../../../domain/parse';
 import { verification } from '../../../domain/helper-methods';
 import Replace from './components/Replace.class';
 import configurationMap from './components/configurationMap';
-// import generateFullTemplate from '../../../domain/template-helper';
+import generateFullTemplate from '../../../domain/template-helper';
 // this method will be updated in order to fit with front matter integration
 const parseContent = ({ markdown, data }) => {
   // return parse(
@@ -18,6 +18,8 @@ const parseContent = ({ markdown, data }) => {
     configurationMap,
     data,
   );
+
+  if (!content) throw new Error('Content is missing in parseContent');
 
   verification(warnings, content);
 
@@ -44,23 +46,22 @@ export const generateHtmlFullTemplateHackernoon = (markdown, data = false) => {
 
   // verification(warnings, content);
 
+  const newContent = newParse({ markdown, data }, configurationMap, Replace);
+
+  console.log(newContent);
+
   const content = parseContent({ markdown, data });
 
-  // const settings = {
-  //   string: content,
-  //   data: data || false,
-  // };
+  const settings = {
+    string: content,
+    data: data || false,
+  };
 
-  const hackernoonFullTemplate = hackernoonTemplate(content);
+  // const hackernoonFullTemplate = hackernoonTemplate(content);
 
-  // console.log(
-  //   generateFullTemplate(
-  //     markdown,
-  //     settings,
-  //     hackernoonTemplate,
-  //     parseContent,
-  //   ),
-  // );
+  console.log(
+    generateFullTemplate(markdown, settings, hackernoonTemplate, parseContent),
+  );
 
-  return hackernoonFullTemplate;
+  // return hackernoonFullTemplate;
 };

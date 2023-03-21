@@ -54,6 +54,8 @@ function verification(warnings, content = false) {
   if (warnings) checkWarnings(warnings);
 
   if (content) checkHtml(content);
+
+  if (!content) throw new Error('Content is missing in parseContent');
 }
 
 function displayCLIErrors(errors, warnings) {

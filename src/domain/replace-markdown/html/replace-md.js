@@ -13,6 +13,10 @@ const getDataForReplaceByName = (callbackName, mainObject) => {
   return mainObject[callbackName];
 };
 
+function ERROR_INVALID_ARGUMENT(replacer) {
+  return console.log(`Invalid argument: replacer`, replacer);
+}
+
 /* const simple_debug = (name, params) => {
   const { callback_name, singleElement } = params;
   if (callback_name === name) {
@@ -37,7 +41,16 @@ export function replaceMarkdown(callbackName) {
   // --------- comment for debugging purposes
   // --- You can comment this when you debugging our wrapper
   const _replacer = singleElement.replacer.bind(this);
-  this.content = this.content.replace(singleElement.constant, _replacer);
+
+  if (this.content) {
+    this.content = this.content.replace(singleElement.constant, _replacer);
+  } else {
+    // console.log(singleElement);
+    // console.log(this.content);
+    // throw new Error(ERROR_INVALID_ARGUMENT(_replacer));
+    console.log(ERROR_INVALID_ARGUMENT(singleElement));
+  }
+
   // TODO let's handle a case, when this.content.replace( regex, undefined)
 }
 
