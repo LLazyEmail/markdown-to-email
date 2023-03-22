@@ -7,6 +7,7 @@ function parse(markdown, configureReplacer, config, data = false) {
   const state = stateInit(markdown, config, dataX);
 
   configureReplacer(state);
+  // configureReplacer(config);
 
   // i'm adding it only because error warning didnt return red stuff
   state.innerCheckErrors();

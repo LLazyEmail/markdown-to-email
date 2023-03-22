@@ -21,9 +21,14 @@ const parseContent = ({ markdown, data }) => {
   a.configure('123');
   console.log(a);
 
+  // const replacingStateWithConfigurationMap = {
+  //   configurationMap,
+  //   'something': '123'
+  // }
+
   const { content, warnings } = parse(
     markdown,
-    (state) => Replace.configure(state),
+    (config) => Replace.configure(config),
     configurationMap,
     data,
   );

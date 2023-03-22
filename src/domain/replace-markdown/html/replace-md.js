@@ -31,8 +31,11 @@ function ERROR_INVALID_ARGUMENT(replacer) {
 // plus i wanna have more control for debugging stuff
 //----------------------------
 export function replaceMarkdown(callbackName) {
+  console.log(this);
+
   const singleElement = getDataForReplaceByName(
     callbackName,
+    // this,
     this.configurationMap,
   );
 
@@ -53,6 +56,25 @@ export function replaceMarkdown(callbackName) {
 
   // TODO let's handle a case, when this.content.replace( regex, undefined)
 }
+
+// function old__replaceMarkdown(callbackName) {
+//   const singleElement = getDataForReplaceByName(
+//     callbackName,
+//     this.configurationMap,
+//   );
+
+//   // --------- comment for debugging purposes
+//   // --- You can comment this when you debugging our wrapper
+//   const _replacer = singleElement.replacer.bind(this);
+
+//   if (this.content) {
+//     this.content = this.content.replace(singleElement.constant, _replacer);
+//   } else {
+//     console.log(ERROR_INVALID_ARGUMENT(singleElement));
+//   }
+
+//   // TODO let's handle a case, when this.content.replace( regex, undefined)
+// }
 
 // class replaceMarkdownDebug {
 //   constructor(callback_name) {

@@ -44,7 +44,10 @@ class Replace {
   }
 
   configure(state) {
+    console.log(state);
     this.replaceMDBinded = replaceMarkdown.bind(state);
+
+    // console.log(this.replaceMDBinded)
 
     // TODO crashed when here in FULL mode, needs to be fixed
     // this.previewText();

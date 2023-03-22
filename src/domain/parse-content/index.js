@@ -10,6 +10,7 @@ function newParse({ markdown, data }, config, configureReplacer) {
 
   // here is going a function that is eating our state
   configureReplacer(state);
+  // configureReplacer({config});
 
   state.innerCheckErrors();
 
