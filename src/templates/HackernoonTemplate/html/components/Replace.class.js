@@ -47,7 +47,7 @@ class Replace {
     this.replaceMDBinded = replaceMarkdown.bind(state);
 
     // TODO crashed when here in FULL mode, needs to be fixed
-    this.previewText();
+    // this.previewText();
 
     // Replacer.comments();
     this.typography();
@@ -105,10 +105,6 @@ class Replace {
     // this.emptyUl();
     // this.emptyOl();
   }
-
-  // runConfigure () {
-
-  // }
 }
 
 export default new Replace();

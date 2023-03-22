@@ -34,44 +34,49 @@ export const modes = {
   full: () => {
     const hackernoonFullTemplate = generateHtmlFullTemplateHackernoon(markdown);
 
-    deliver(
-      hackernoonFullTemplate,
-      'hackernoon-full-template',
-      MESSAGE_HTML_FULL_TEMPLATE2,
-    );
+    if (hackernoonFullTemplate) {
+      deliver(
+        hackernoonFullTemplate,
+        'hackernoon-full-template',
+        MESSAGE_HTML_FULL_TEMPLATE2,
+      );
+    }
   },
   reactFull: () => {
     const fullContent = generateReactFullTemplateHackernoon(markdown);
 
-    // TODO replace this three rows on deliver function
-    const fileName = generateTemplateName('FullTemplate', 'js');
-    writeHTML(fileName, fullContent, 'generated', '');
-    printMessage(MESSAGE_REACT_FULL_TEMPLATE, 'green2');
+    if (fullContent) {
+      // TODO replace this three rows on deliver function
+      const fileName = generateTemplateName('FullTemplate', 'js');
+      writeHTML(fileName, fullContent, 'generated', '');
+      printMessage(MESSAGE_REACT_FULL_TEMPLATE, 'green2');
+    }
   },
   recipesFull: () => {
     const markdownRecipes = nomoretogoContent;
-
     const recipesFullTemplate =
       generateHtmlFullTemplateRecipes(markdownRecipes);
 
-    deliver(
-      recipesFullTemplate,
-      'recipes-full-template',
-      MESSAGE_HTML_FULL_TEMPLATE2,
-    );
+    if (recipesFullTemplate) {
+      deliver(
+        recipesFullTemplate,
+        'recipes-full-template',
+        MESSAGE_HTML_FULL_TEMPLATE2,
+      );
+    }
   },
   hackernnonFront: () => {
     // const markdownRecipes = nomoretogoContent;
-
     const HNFrontFullTemplate = generateFrontHackernoon(
       frontMarkdownHackernoon,
     );
-
-    deliver(
-      HNFrontFullTemplate,
-      'frontmatter-full-template',
-      MESSAGE_HTML_FULL_TEMPLATE2,
-    );
+    if (HNFrontFullTemplate) {
+      deliver(
+        HNFrontFullTemplate,
+        'frontmatter-full-template',
+        MESSAGE_HTML_FULL_TEMPLATE2,
+      );
+    }
   },
 };
 
