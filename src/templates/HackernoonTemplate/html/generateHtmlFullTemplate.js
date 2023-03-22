@@ -3,6 +3,9 @@ import parse from '../../../domain/parse';
 // import newParse from '../../../domain/parse-content';
 import { verification } from '../../../domain/helper-methods';
 import Replace from './components/Replace.class';
+// -----------
+
+import ReplacerClassTwo from '../../../domain/replaceClass/second';
 import configurationMap from './components/configurationMap';
 // import generateFullTemplate from '../../../domain/template-helper';
 // this method will be updated in order to fit with front matter integration
@@ -13,6 +16,11 @@ const parseContent = ({ markdown, data }) => {
   //   //   configurationMap,
   //   //   data,
   //   // );
+
+  const a = new ReplacerClassTwo();
+  a.configure('123');
+  console.log(a);
+
   const { content, warnings } = parse(
     markdown,
     (state) => Replace.configure(state),
