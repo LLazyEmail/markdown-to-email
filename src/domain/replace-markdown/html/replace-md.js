@@ -6,6 +6,8 @@
 // import debuggingReplacer from './debugging';
 
 const getDataForReplaceByName = (callbackName, mainObject) => {
+  // console.log('xxxx')
+  // console.log(mainObject)
   if (!callbackName) {
     throw new Error(`name of ${callbackName} is undefined or empty`);
   }
@@ -31,8 +33,8 @@ function ERROR_INVALID_ARGUMENT(replacer) {
 // plus i wanna have more control for debugging stuff
 //----------------------------
 export function replaceMarkdown(callbackName) {
-  console.log(this);
-
+  // console.log(this);
+  // TODO replace this with a default array[param];
   const singleElement = getDataForReplaceByName(
     callbackName,
     // this,
