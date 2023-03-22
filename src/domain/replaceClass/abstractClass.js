@@ -1,4 +1,5 @@
 /* eslint-disable */
+// https://stackoverflow.com/questions/597769/how-do-i-create-an-abstract-base-class-in-javascript
 /**
  * Abstract Class Replace.
  *
