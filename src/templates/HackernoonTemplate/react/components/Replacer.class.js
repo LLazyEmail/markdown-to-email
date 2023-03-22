@@ -1,5 +1,11 @@
 import { replaceMarkdownReact } from '../../../../domain/replace-markdown/react/replace-md';
-
+// const methodsList = [
+//     // ---------------
+//     { name: '', type: '', arg: '' },
+//     { name: '', type: '', arg: '' },
+//     { name: '', type: '', arg: '' },
+//     { name: '', type: '', arg: '' },
+// ];
 class Replacer {
   constructor() {
     this.replaceMDBinded = () => {};

@@ -1,7 +1,13 @@
 // @TODO include things from a new module that we have.
 // we need to pass all constants somewhere, but not to the replaceWrapper
 import { replaceMarkdown } from '../../../../domain/replace-markdown/html/replace-md';
-
+// const methodsList = [
+//     // ---------------
+//     { name: '', type: '', arg: '' },
+//     { name: '', type: '', arg: '' },
+//     { name: '', type: '', arg: '' },
+//     { name: '', type: '', arg: '' },
+// ];
 class Replace {
   constructor() {
     this.replaceMDBinded = () => {};
