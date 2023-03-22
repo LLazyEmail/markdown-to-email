@@ -6,6 +6,32 @@ import { replaceMarkdownReact } from '../../../../domain/replace-markdown/react/
 //     { name: '', type: '', arg: '' },
 //     { name: '', type: '', arg: '' },
 // ];
+// const methodsList = [
+//   // ---------------
+//   { name: 'comments', type: '', arg: 'empty' },
+//   { name: 'strong', type: 'typography', arg: 'strong' },
+//   { name: 'italic', type: 'typography', arg: 'italic' },
+//   { name: 'header', type: 'typography', arg: 'header' },
+//   { name: 'image', type: 'typography', arg: 'image' },
+//   { name: 'link', type: 'typography', arg: 'link' },
+//   // this.del = () => this.replaceMDBinded('del');
+//   { name: 'q', type: 'typography', arg: 'q' },
+//   { name: 'code', type: 'typography', arg: 'code' },
+//   { name: 'ulList', type: '', arg: 'ulList' },
+//   { name: 'olList', type: '', arg: 'olList' },
+//   { name: 'blockquote', type: '', arg: 'blockquote' },
+//   { name: 'hr', type: '', arg: 'hr' },
+//   { name: 'paragraph', type: 'typography', arg: 'paragraph' },
+//   // this.emptyUl = () => this.replaceMDBinded('REGEXP_EMPTY_UL');
+//   // this.emptyOl = () => this.replaceMDBinded('REGEXP_EMPTY_OL');
+//   // this.emptyBlockQuote = () =>
+//   //   this.replaceMDBinded('REGEXP_EMPTY_BLOCKQUOTE');
+//   { name: 'br', type: '', arg: 'REGEXP_BR' },
+//   { name: 'sponsorship', type: '', arg: 'sponsorship' },
+//   // { name: 'mem', type: '', arg: 'mem' },
+//   // { name: 'separator', type: '', arg: 'separator' },
+// ];
+
 class Replacer {
   constructor() {
     this.replaceMDBinded = () => {};

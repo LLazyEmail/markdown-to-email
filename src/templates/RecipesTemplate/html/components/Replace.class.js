@@ -8,6 +8,23 @@ import { replaceMarkdown } from '../../../../domain/replace-markdown/html/replac
 //     { name: '', type: '', arg: '' },
 //     { name: '', type: '', arg: '' },
 // ];
+// const methodsList = [
+//   { name: 'strong', type: '', arg: 'strong' },
+//   { name: 'header', type: '', arg: 'header' },
+//   { name: 'subtitle', type: '', arg: 'header' },
+//   { name: 'image', type: '', arg: 'image' },
+//   { name: 'link', type: '', arg: 'link' },
+//   { name: 'del', type: '', arg: 'del' },
+//   { name: 'q', type: '', arg: 'q' },
+//   { name: 'code', type: '', arg: 'code' },
+//   { name: 'ol', type: '', arg: 'olList' },
+//   { name: 'blockquote', type: '', arg: 'blockquote' },
+//   { name: 'hr', type: '', arg: 'hr' },
+//   { name: 'paragraph', type: '', arg: 'paragraph' },
+//   { name: 'br', type: '', arg: 'br' },
+//   { name: 'memes', type: '', arg: 'memes' },
+//   { name: 'separator', type: '', arg: 'separator' },
+// ];
 class Replace {
   constructor() {
     this.replaceMDBinded = () => {};
