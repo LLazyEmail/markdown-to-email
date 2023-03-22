@@ -21,21 +21,6 @@ function parse(markdown, configureReplacer, config, data = false) {
   // return content;
 }
 
-// markdown is going from a file
-// data
-// const parseContent = ({ markdown, data, replaceClass }, config) => {
-//   const { content, warnings } = parse(
-//     markdown,
-//     (state) => replaceClass.configure(state),
-//     config,
-//     data,
-//   );
-
-//   verification(warnings, content);
-
-//   return content;
-// };
-
 // const parseContent = ({ markdown, data }) => {
 //   // return parse(
 //   //   markdown,
