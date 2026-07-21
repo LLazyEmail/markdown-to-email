@@ -58,7 +58,7 @@
     "atherdon-old-newsletter-js-outertemplate": "^3.9.0",
     "chalk": "5.0.1",
     "cross-env": "7.0.3",
-    "lodash": "4.17.21",
+    "lodash": "4.18.1",
     "nmtg-template-mailerlite-typography": "^3.1.0",
     "path-exists": "5.0.0",
     "write": "2.0.0"
