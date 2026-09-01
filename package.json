@@ -43,7 +43,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-require-path-exists": "1.1.9",
     "husky": "7.0.0",
-    "jest": "27.5.1",
+    "jest": "30.5.1",
     "lint-staged": "12.4.1",
     "markup-generator": "^2.7.0",
     "prettier": "2.7.0",
