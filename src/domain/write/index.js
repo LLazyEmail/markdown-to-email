@@ -2,7 +2,7 @@ import {
   writeHTML,
   readSourceFile,
   isFolderExists,
-  generateTemplateName,
+  generateFileName,
 } from 'markup-generator';
 
 import {
@@ -22,7 +22,7 @@ export {
   writeHTML,
   readSourceFile,
   isFolderExists,
-  generateTemplateName,
+  generateFileName,
   // countingBytes,
   ERROR_NO_TITLE,
   ERROR_NO_BODY_CONTENT,

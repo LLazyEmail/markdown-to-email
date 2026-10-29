@@ -4,7 +4,7 @@ import {
   writeHTML,
   readSourceFile,
   isFolderExists,
-  generateTemplateName,
+  generateFileName,
 } from 'markup-generator';
 
-export { writeHTML, readSourceFile, isFolderExists, generateTemplateName };
+export { writeHTML, readSourceFile, isFolderExists, generateFileName };
