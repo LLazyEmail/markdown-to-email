@@ -47,6 +47,6 @@
     "access": "public"
   },
   "dependencies": {
-    "markdown-regex": "^1.0.1"
+    "markdown-regex": "^2.1.1"
   }
 }
