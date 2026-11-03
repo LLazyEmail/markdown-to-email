@@ -1,7 +1,7 @@
 import {
   writeHTML,
   isFolderExists,
-  generateTemplateName,
+  generateFileName,
 } from 'markup-generator';
 import {
   generateHtmlFullTemplateHackernoon,
@@ -44,7 +44,7 @@ export const modes = {
     const fullContent = generateReactFullTemplateHackernoon(markdown);
 
     // TODO replace this three rows on deliver function
-    const fileName = generateTemplateName('FullTemplate', 'js');
+    const fileName = generateFileName('FullTemplate', 'js');
     writeHTML(fileName, fullContent, 'generated', '');
     printMessage(MESSAGE_REACT_FULL_TEMPLATE, 'green2');
   },

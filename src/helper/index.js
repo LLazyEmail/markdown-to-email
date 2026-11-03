@@ -2,13 +2,13 @@ import {
   writeHTML,
   readSourceFile,
   isFolderExists,
-  generateTemplateName,
+  generateFileName,
 } from '../domain/write';
 
 export {
   writeHTML,
   readSourceFile,
   isFolderExists,
-  generateTemplateName,
+  generateFileName,
   // stateInit,
 };
