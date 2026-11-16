@@ -17,6 +17,18 @@ In production mode builds an optimized module. Production mode has two options:
 
 `npm run prod:parseFull` and `prod:parseReactFull`.
 
+# Running the tests
+
+```bash
+npm test
+```
+
+`npm test` runs `checkFolders.js` (creates `generated/` and the `_generated` output folders), then Jest over `src/tests/` (see `jest.config.js`). Today that folder holds the unit tests in `src/tests/unit/`, for example `sponsorship.test.js`. Test files are CommonJS because `babel.config.json` ignores the test folders; `jest.config.js` keeps babel-jest from transforming them while the `src/` modules they `require` are still transformed.
+
+The older suites in the top-level `tests/` folder (typography, methods, custom) were moved out of `src/tests` in October 2021 and are **not** matched by `jest.config.js`, so `npm test` does not run them. They need fixture and import updates before they can be re-enabled.
+
+There is no lockfile in git (`package-lock.json` is ignored), so `npm install` resolves the newest compatible Babel plugins; `@babel/core` is pinned to a 7.29 release so those plugins load.
+
 # Debugging the module
 
 In VS Code needs to open a tab "Run and Debug", then in select input choose `Launch via NPM parseFull` - for html and `Launch via NPM parseReactFull`, the process will start automatically (builds and create a file). Put a breakpoint in line you need then save a file.
@@ -57,6 +69,8 @@ Subtitle, can be seen anywhere in email body.
 ~[content][href][src]
 ```
 The first symbol should be tilde `~`, and all other attributes should be not empty, or this will cause errors. `src` - absolute path to image or may be url, `href` - the link of sponsorship block, `content` - the text near the image (also link, wrapped in `href`). Where ever you place sponsorship block, it will be concatenated and parsed at the top and bottom of email body.
+
+Sponsorship blocks are rendered in every mode except ad-free builds: set `PARSE=noAdv` or the `noAdv` environment variable to skip them. The rule lives in `src/helper/sponsorship.js` (`shouldRenderSponsorship`). Before it, the check was `!process.env.PARSE === 'noAdv' || process.env.PARSE === 'full'`; because `!` binds tighter than `===`, that only ever rendered sponsors when `PARSE` was exactly `full`.
 
 ### Image or GIF
 ```

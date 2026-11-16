@@ -1,6 +1,7 @@
 // @TODO include things from a new module that we have.
 // we need to pass all constants somewhere, but not to the replaceWrapper
 import { replaceMarkdown } from '../../../../domain/replace-markdown/html/replace-md';
+import { shouldRenderSponsorship } from '../../../../helper/sponsorship';
 
 class Replace {
   constructor() {
@@ -65,7 +66,7 @@ class Replace {
     // this.emptyBlockquote();
     this.br();
 
-    if (!process.env.PARSE === 'noAdv' || process.env.PARSE === 'full') {
+    if (shouldRenderSponsorship()) {
       this.sponsorship();
     }
     // might get removed after integration of front-matter
