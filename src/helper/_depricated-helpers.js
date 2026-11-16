@@ -77,7 +77,8 @@ function __parse(source) {
   Replacer.emptyBlockquote();
   Replacer.br();
 
-  if (!process.env.PARSE === 'noAdv' || process.env.PARSE === 'full') {
+  // Fixed precedence bug; same rule as src/helper/sponsorship.js
+  if (process.env.PARSE !== 'noAdv' && !process.env.noAdv) {
     Replacer.sponsorship();
   }
 
